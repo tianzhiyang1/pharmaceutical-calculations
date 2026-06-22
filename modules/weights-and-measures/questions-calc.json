@@ -1,0 +1,1262 @@
+[
+    {
+        "id": 24,
+        "type": "calc",
+        "question": "A liquid contains 0.46 mg of a substance per milliliter. How many grams of the substance will 7.2 L contain?",
+        "answerValue": 3.312,
+        "answerUnit": "g",
+        "steps": [
+          {
+            "text": "Identify the ratio and proportion information",
+            "type": "INFORMATION",
+            "hasInputs": true,
+            "content": [
+              {
+                "text": "The liquid contains ",
+                "input": {
+                  "answer": 0.46,
+                  "unit": "mg of substance per milliliter",
+                  "hint": "Look at the question for the concentration of the substance in the liquid."
+                }
+              },
+              {
+                "text": "The dose to be administered is ",
+                "input": {
+                  "answer": 7.2,
+                  "unit": "L",
+                  "hint": "Look at the question for the volume to be administered."
+                }
+              }
+            ]
+          },
+          {
+            "text": "Set up the proportion",
+            "type": "OPERATION",
+            "content": "Construct the proportion comparing the known equivalent with the unknown equivalent:",
+            "operands": [
+              {
+                "type": "fraction",
+                "numerator": {
+                  "type": "input",
+                  "answer": 0.46,
+                  "unit": "mg"
+                },
+                "denominator": {
+                  "type": "input",
+                  "answer": 1,
+                  "unit": "mL"
+                },
+                "hint": "Look at the question for the concentration of the substance in the liquid. It should be 0.46 mg/ 1 mL."
+              },
+              {
+                "type": "fraction",
+                "numerator": "X mg",
+                "denominator": {
+                  "type": "input",
+                  "answer": 7200,
+                  "unit": "mL"
+                },
+                "hint": "Look at the question for the volume to be administered. It should be 7.2 L, which is 7200 mL."
+              }
+            ],
+            "operators": ["="]
+          },
+          {
+            "text": "Solve for the final answer",
+            "type": "OPERATION",
+            "content": "Calculate the unknown value by isolating X:",
+            "operands": [
+              {
+                "type": "text",
+                "value": "X mg"
+              },
+              {
+                "type": "input",
+                "answer": 3312,
+                "unit": "mg"
+              },
+              {
+                "type": "input",
+                "answer": 3.312,
+                "unit": "g"
+              }
+            ],
+            "operators": ["=", "="],
+            "hint": "Multiply 0.46 mg/mL by 7200 mL to find the amount in mg, then convert mg to g. It should be 3312 mg, and since there are 1000 mg in 1 g, it should be 3.312 g."
+          }
+        ]
+    },
+    {
+        "id": 25,
+        "type": "calc",
+        "question": "If an intravenous solution containing 246 mg of a drug substance in each 500-mL bottle is to be administered at the rate of 400 mcg of drug per minute, how many milliliters of the solution would be given per hour? Round your answer to two decimal places.",
+        "answerValue": 48.78,
+        "answerUnit": "mL/hr",
+        "steps": [
+          {
+            "text": "Identify the unit of the answer wanted",
+            "type": "MULTIPLE_CHOICE",
+            "options": ["? mL/hr =", "? mg =", "? tablet ="],
+            "answer": "? mL/hr =",
+            "hint": "Look at what the question is asking for - the total units of activity the patient will receive."
+          },
+          {
+            "text": "Set up the equation with unit cancellation",
+            "type": "OPERATION",
+            "content": "Construct the equation to calculate total units by multiplying.",
+            "operands": [
+              {
+                "type": "text",
+                "value": "? mL/hr"
+              },
+              {
+                "type": "fraction",
+                "numerator": {
+                  "type": "input",
+                  "answer": 500,
+                  "unit": "mL"
+                },
+                "denominator": {
+                  "type": "input",
+                  "answer": 246,
+                  "unit": "mg"
+                },
+                "hint": "For the first fraction, look for what we know about the bottle. It should be 500 mL containing 246 mg of the drug substance."
+              },
+              {
+                "type": "fraction",
+                "numerator": {
+                  "type": "input",
+                  "answer": 1,
+                  "unit": "mg"
+                },
+                "denominator": {
+                  "type": "input",
+                  "answer": 1000,
+                  "unit": "mcg"
+                },
+                "hint": "For the second fraction, remember that our goal is to create a chain where each denominator cancels out with the next numerator... What should we do to cancel out the 'mg'? There are 1000 mcg in 1 mg."
+              },
+              {
+                "type": "fraction",
+                "numerator": {
+                  "type": "input",
+                  "answer": 400,
+                  "unit": "mcg"
+                },
+                "denominator": {
+                  "type": "input",
+                  "answer": 1,
+                  "unit": "min"
+                },
+                "hint": "For the third fraction, look at the problem again and identify how we should cancel out the 'mcg'... 400 mcg are given per minute."
+              },
+              {
+                "type": "fraction",
+                "numerator": {
+                  "type": "input",
+                  "answer": 60,
+                  "unit": "min"
+                },
+                "denominator": {
+                  "type": "input",
+                  "answer": 1,
+                  "unit": "hr"
+                },
+                "hint": "For the fourth fraction, to cancel out the 'min', how long will the patient be taking the medication? It should be 1 hour."
+              }
+            ],
+            "operators": ["=", "×", "×", "×"],
+            "hint": "Chain all the conversion factors together, making sure units cancel appropriately."
+          },
+          {
+            "text": "Calculate the final answer (Final calculation)",
+            "type": "OPERATION",
+            "content": "After canceling units, calculate the total units of activity the patient receives. Round your answer to two decimal places:",
+            "operands": [
+              {
+                "type": "text",
+                "value": "? mL/hr"
+              },
+              {
+                "type": "input",
+                "answer": 48.78,
+                "unit": "mL/hr"
+              }
+            ],
+            "operators": ["="],
+            "hint": "Multiply all the numbers in the equation after canceling units."
+          }
+        ]
+    },
+    {
+      "id": 26,
+      "type": "calc",
+      "question": "An inhalation aerosol contains 125 mg of metaproterenol sulfate, which is sufficient for 167 inhalations. How many micrograms (mcg) of metaproterenol sulfate would be contained in each inhalation? Round your answer to one decimal place.",
+      "answerValue": 748.5,
+      "answerUnit": "mcg",
+      "steps": [
+        {
+          "text": "Identify the ratio and proportion information",
+          "type": "INFORMATION",
+          "hasInputs": true,
+          "content": [
+            {
+              "text": "An inhalation aerosol contains ",
+              "input": {
+                "answer": 125,
+                "unit": "mg of metaproterenol sulfate",
+                "hint": "An inhalation aerosol contains 125 mg of metaproterenol sulfate."
+              }
+            },
+            {
+              "text": "Based on the total amount of metaproterenol sulfate, how many inhalations can be administered from one aerosol?",
+              "input": {
+                "answer": 167,
+                "unit": "",
+                "hint": "It is sufficient for 167 inhalations."
+              }
+            }
+          ]
+        },
+        {
+          "text": "Set up the proportion",
+          "type": "OPERATION",
+          "content": "Construct the proportion comparing the known equivalent with the unknown equivalent:",
+          "operands": [
+            {
+              "type": "fraction",
+              "numerator": {
+                "type": "input",
+                "answer": 125,
+                "unit": "mg"
+              },
+              "denominator": {
+                "type": "input",
+                "answer": 167,
+                "unit": "inhalations"
+              },
+              "hint": "Look at the question. It should be 125 mg/ 167 inhalations."
+            },
+            {
+              "type": "fraction",
+              "numerator": "X mg",
+              "denominator": {
+                "type": "input",
+                "answer": 1,
+                "unit": "inhalation"
+              },
+              "hint": "Look at the question. It should be X mg / 1 inhalation."
+            }
+          ],
+          "operators": ["="]
+        },
+        {
+          "text": "Solve for the final answer",
+          "type": "OPERATION",
+          "content": "Calculate the unknown value by isolating X. Round your answer to one decimal place:",
+          "operands": [
+            {
+              "type": "text",
+              "value": "X"
+            },
+            {
+              "type": "input",
+              "answer": 0.7485,
+              "unit": "mg"
+            },
+            {
+              "type": "input",
+              "answer": 748.5,
+              "unit": "mcg"
+            }
+          ],
+          "operators": ["=", "="],
+          "hint": "X = 125 mg/ 167 inhalation = 0.7485 mg = 0.7485 × 1000 = 748.5 mcg"
+        }
+      ]
+  },
+  {
+    "id": 27,
+    "type": "calc",
+    "question": "Drug A contains 400 mcg colchicine per tablet. How many colchicine tablets may be prepared from 20 g of colchicine?",
+    "answerValue": 50000,
+    "answerUnit": "tablets",
+    "steps": [
+      {
+        "text": "Identify the ratio and proportion information",
+        "type": "INFORMATION",
+        "hasInputs": true,
+        "content": [
+          {
+            "text": "Drug A contains ",
+            "input": {
+              "answer": 400,
+              "unit": "mcg colchicine per tablet",
+              "hint": "Drug A contains 400 mcg colchicine per tablet."
+            }
+          },
+          {
+            "text": "Question text place holder",
+            "input": {
+              "answer": 20,
+              "unit": "g",
+              "hint": "It is 20 g of colchicine."
+            }
+          },
+          {
+            "text": "Convert g to mcg:\n 20 g = ",
+            "input": {
+              "answer": 20000000,
+              "unit": "mcg",
+              "hint": "It is 20000000 g."
+            }
+          }
+        ]
+      },
+      {
+        "text": "Set up the proportion",
+        "type": "OPERATION",
+        "content": "Construct the proportion comparing the known equivalent with the unknown equivalent:",
+        "operands": [
+          {
+            "type": "fraction",
+            "numerator": {
+              "type": "input",
+              "answer": 400,
+              "unit": "mcg"
+            },
+            "denominator": {
+              "type": "input",
+              "answer": 1,
+              "unit": "tablet"
+            },
+            "hint": "Look at the question. It should be 400 mcg/ 1 tablet."
+          },
+          {
+            "type": "fraction",
+            "numerator": {
+              "type": "input",
+              "answer": 20000000,
+              "unit": "mcg"
+            },
+            "denominator": "X tablet",
+            "hint": "Look at the question. It should be 20000000 mg / X tablet."
+          }
+        ],
+        "operators": ["="]
+      },
+      {
+        "text": "Solve for the final answer",
+        "type": "OPERATION",
+        "content": "Calculate the unknown value by isolating X:",
+        "operands": [
+          {
+            "type": "text",
+            "value": "X"
+          },
+          {
+            "type": "input",
+            "answer": 50000,
+            "unit": "tablet"
+          }
+        ],
+        "operators": ["="],
+        "hint": "X = 20000000 mcg / 400 mcg = 50000 tablets"
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "type": "calc",
+    "question": "A cold tablet contains 325 mg of acetaminophen, 2 mg of chlorpheniramine maleate dextromethorphan, and 15 mg of dextromethorphan hydrobromide. How many tablets may be prepared if a manufacturing pharmacist has 2 kg of acetaminophen, 100 g of cholorpheniramine maleate, and unlimited qualities of dextromethorphan hydrobromide? Round your answer to the nearest whole number.",
+    "answerValue": 6153,
+    "answerUnit": "tablets",
+    "steps": [
+      {
+        "text": "Identify the ratio and proportion information",
+        "type": "INFORMATION",
+        "hasInputs": true,
+        "content": [
+          {
+            "text": "A cold tablet contains  ",
+            "input": {
+              "answer": 325,
+              "unit": "mg of acetaminophen",
+              "hint": "A cold tablet contains 325 mg of acetaminophen."
+            }
+          },
+          {
+            "text": "Question text place holder",
+            "input": {
+              "answer": 2,
+              "unit": "kg",
+              "hint": "It is 2 kg of acetaminophen."
+            }
+          },
+          {
+            "text": "Convert kg to mg:\n 2 kg = ",
+            "input": {
+              "answer": 2000000,
+              "unit": "mg",
+              "hint": "It is 2000000 mg."
+            }
+          }
+        ]
+      },
+      {
+        "text": "Set up the proportion",
+        "type": "OPERATION",
+        "content": "Construct the proportion comparing the known equivalent with the unknown equivalent:",
+        "operands": [
+          {
+            "type": "fraction",
+            "numerator": {
+              "type": "input",
+              "answer": 325,
+              "unit": "mg"
+            },
+            "denominator": {
+              "type": "input",
+              "answer": 1,
+              "unit": "tablet"
+            },
+            "hint": "Look at the question. It should be 325 mg/ 1 tablet."
+          },
+          {
+            "type": "fraction",
+            "numerator": {
+              "type": "input",
+              "answer": 2000000,
+              "unit": "mg"
+            },
+            "denominator": "X tablet",
+            "hint": "Look at the question. It should be 2000000 mg / X tablet."
+          }
+        ],
+        "operators": ["="]
+      },
+      {
+        "text": "Solve for the final answer",
+        "type": "OPERATION",
+        "content": "Calculate the unknown value by isolating X. Round your answer to the nearest whole number:",
+        "operands": [
+          {
+            "type": "text",
+            "value": "X"
+          },
+          {
+            "type": "input",
+            "answer": 6153,
+            "unit": "tablet"
+          }
+        ],
+        "operators": ["="],
+        "hint": "X = 2000000 mg / 325 mg = 6153 tablets"
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "type": "calc",
+    "question": "If an injectable solution contains 50 mcg of a drug substance in each 1 mL, how many milliliters would be required to provide a patient with 0.5 mg of the drug substance?  ",
+    "answerValue": 10,
+    "answerUnit": "mL",
+    "steps": [
+      {
+        "text": "Identify the ratio and proportion information",
+        "type": "INFORMATION",
+        "hasInputs": true,
+        "content": [
+          {
+            "text": "An injectable solution contains ",
+            "input": {
+              "answer": 50,
+              "unit": "mcg of a drug substance in each 1 mL",
+              "hint": "An injectable solution contains 50 mcg of a drug substance in each 1 mL."
+            }
+          },
+          {
+            "text": "Question text place holder",
+            "input": {
+              "answer": 0.5,
+              "unit": "mg",
+              "hint": "It is 0.5 mg of the drug substance."
+            }
+          },
+          {
+            "text": "Convert mg to mcg:\n 0.5 mg = ",
+            "input": {
+              "answer": 500,
+              "unit": "mcg",
+              "hint": "It is 500 mcg."
+            }
+          }
+        ]
+      },
+      {
+        "text": "Set up the proportion",
+        "type": "OPERATION",
+        "content": "Construct the proportion comparing the known equivalent with the unknown equivalent:",
+        "operands": [
+          {
+            "type": "fraction",
+            "numerator": {
+              "type": "input",
+              "answer": 1,
+              "unit": "mL"
+            },
+            "denominator": {
+              "type": "input",
+              "answer": 50,
+              "unit": "mcg"
+            },
+            "hint": "Look at the question. It should be 1 mL/ 50 mcg."
+          },
+          {
+            "type": "fraction",
+            "numerator": "X mL",
+            "denominator": {
+              "type": "input",
+              "answer": 500,
+              "unit": "mcg"
+            },
+            
+            "hint": "Look at the question. It should be X mL / 500 mcg."
+          }
+        ],
+        "operators": ["="]
+      },
+      {
+        "text": "Solve for the final answer",
+        "type": "OPERATION",
+        "content": "Calculate the unknown value by isolating X:",
+        "operands": [
+          {
+            "type": "text",
+            "value": "X"
+          },
+          {
+            "type": "input",
+            "answer": 10,
+            "unit": "mL"
+          }
+        ],
+        "operators": ["="],
+        "hint": "X = 500 mcg / 50 mcg = 10 mL"
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "type": "calc",
+    "question": "An oral liquid concentrate of drug XYZ contains 35 mg/mL of the drug. How many grams of XYZ are in each 90-mL container of the concentrate?",
+    "answerValue": 3015,
+    "answerUnit": "g",
+    "steps": [
+      {
+        "text": "Identify the ratio and proportion information",
+        "type": "INFORMATION",
+        "hasInputs": true,
+        "content": [
+          {
+            "text": "An oral liquid concentrate of drug XYZ contains ",
+            "input": {
+              "answer": 35,
+              "unit": "mg/mL of the drug.",
+              "hint": "An oral liquid concentrate of drug XYZ contains 35 mg/mL of the drug."
+            }
+          },
+          {
+            "text": "Question text place holder",
+            "input": {
+              "answer": 90,
+              "unit": "mL",
+              "hint": "It is 90 mL container."
+            }
+          }
+        ]
+      },
+      {
+        "text": "Set up the proportion",
+        "type": "OPERATION",
+        "content": "Construct the proportion comparing the known equivalent with the unknown equivalent:",
+        "operands": [
+          {
+            "type": "fraction",
+            "numerator": {
+              "type": "input",
+              "answer": 35,
+              "unit": "mg"
+            },
+            "denominator": {
+              "type": "input",
+              "answer": 1,
+              "unit": "mL"
+            },
+            "hint": "Look at the question. It should be 35 mg/ 1 mL."
+          },
+          {
+            "type": "fraction",
+            "numerator": "X mg",
+            "denominator": {
+              "type": "input",
+              "answer": 90,
+              "unit": "mL"
+            },
+            
+            "hint": "Look at the question. It should be X mg / 90 mL."
+          }
+        ],
+        "operators": ["="]
+      },
+      {
+        "text": "Solve for the final answer",
+        "type": "OPERATION",
+        "content": "Calculate the unknown value by isolating X:",
+        "operands": [
+          {
+            "type": "text",
+            "value": "X"
+          },
+          {
+            "type": "input",
+            "answer": 3150,
+            "unit": "mg"
+          },
+          {
+            "type": "input",
+            "answer": 3.15,
+            "unit": "g"
+          }
+        ],
+        "operators": ["=", "="],
+        "hint": "X = 35 mg × 90 mL = 3150 mg = 3.15 g"
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "type": "calc",
+    "question": "Digoxin (LANOXIN) is available for parenteral pediatric use in a concentration of 0.1 mg/mL. How many milliliters would provide a dose of 60 mcg? ",
+    "answerValue": 0.6,
+    "answerUnit": "mL",
+    "steps": [
+      {
+        "text": "Identify the ratio and proportion information",
+        "type": "INFORMATION",
+        "hasInputs": true,
+        "content": [
+          {
+            "text": "Digoxin (LANOXIN) is available for parenteral pediatric use in a concentration of ",
+            "input": {
+              "answer": 30.1,
+              "unit": "mg/mL of the drug.",
+              "hint": "Digoxin (LANOXIN) is available for parenteral pediatric use in a concentration of 0.1 mg/mL."
+            }
+          },
+          {
+            "text": "Question text place holder",
+            "input": {
+              "answer": 60,
+              "unit": "mcg",
+              "hint": "It is a dose of 60 mcg."
+            }
+          },
+          {
+            "text": "Convert mcg to mg:\n 60 mcg = ",
+            "input": {
+              "answer": 0.06,
+              "unit": "mg",
+              "hint": "60 / 1000 = 0.06 mg."
+            }
+          }
+        ]
+      },
+      {
+        "text": "Set up the proportion",
+        "type": "OPERATION",
+        "content": "Construct the proportion comparing the known equivalent with the unknown equivalent:",
+        "operands": [
+          {
+            "type": "fraction",
+            "numerator": {
+              "type": "input",
+              "answer": 0.1,
+              "unit": "mg"
+            },
+            "denominator": {
+              "type": "input",
+              "answer": 1,
+              "unit": "mL"
+            },
+            "hint": "Look at the question. It should be 0.1 mg/ 1 mL."
+          },
+          {
+            "type": "fraction",
+            "numerator": {
+              "type": "input",
+              "answer": 0.06,
+              "unit": "mg"
+            },
+            "denominator": "X mL",
+            
+            "hint": "Look at the question. It should be 0.06 mg / X mL."
+          }
+        ],
+        "operators": ["="]
+      },
+      {
+        "text": "Solve for the final answer",
+        "type": "OPERATION",
+        "content": "Calculate the unknown value by isolating X:",
+        "operands": [
+          {
+            "type": "text",
+            "value": "X"
+          },
+          {
+            "type": "input",
+            "answer": 0.6,
+            "unit": "mL"
+          }
+        ],
+        "operators": ["="],
+        "hint": "X = 0.06 mg × 1 mL / 0.1 mg = 0.6 mL"
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "type": "calc",
+    "question": "A liquid oral concentrate of drug XY contains 4.8 g of morphine sulfate in a 240-mL bottle. Calculate the concentration of morphine sulfate on a mg/mL basic.",
+    "answerValue": 20,
+    "answerUnit": "mg/mL",
+    "steps": [
+      {
+        "text": "Identify the ratio and proportion information",
+        "type": "INFORMATION",
+        "hasInputs": true,
+        "content": [
+          {
+            "text": "A liquid oral concentrate of drug XY contains",
+            "input": {
+              "answer": 4.8,
+              "unit": "g of  morphine sulfate.",
+              "hint": "A liquid oral concentrate of drug XY contains 4.8 g of morphine sulfate."
+            }
+          },
+          {
+            "text": "What is the volume of the bottle?",
+            "input": {
+              "answer": 240,
+              "unit": "mL",
+              "hint": "It is a 240-mL bottle."
+            }
+          },
+          {
+            "text": "Convert g to mg:\n 4.8 g = ",
+            "input": {
+              "answer": 4800,
+              "unit": "mg",
+              "hint": "1 g = 1000 mg"
+            }
+          }
+        ]
+      },
+      {
+        "text": "Set up the proportion",
+        "type": "OPERATION",
+        "content": "Construct the proportion comparing the known equivalent with the unknown equivalent:",
+        "operands": [
+          {
+            "type": "fraction",
+            "numerator": {
+              "type": "input",
+              "answer": 4800,
+              "unit": "mg"
+            },
+            "denominator": {
+              "type": "input",
+              "answer": 240,
+              "unit": "mL"
+            },
+            "hint": "Look at the question. It should be 4800 mg/ 240 mL."
+          },
+          {
+            "type": "fraction",
+            "numerator": "X mg",
+            "denominator": {
+              "type": "input",
+              "answer": 1,
+              "unit": "mL"
+            },
+                        
+            "hint": "Look at the question. It should be X mg / mL."
+          }
+        ],
+        "operators": ["="]
+      },
+      {
+        "text": "Solve for the final answer",
+        "type": "OPERATION",
+        "content": "Calculate the unknown value by isolating X:",
+        "operands": [
+          {
+            "type": "text",
+            "value": "X"
+          },
+          {
+            "type": "input",
+            "answer": 20,
+            "unit": "mg/mL"
+          }
+        ],
+        "operators": ["="],
+        "hint": "X = 4800 mg / 240 mL = 20 mg/mL"
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "type": "calc",
+    "question": "One milligrams of an antibiotic A contains 325 mcg of streptomycin base. How many grams of the antibiotic would be the equivalent of 0.5 g of streptomycin base? Round your answer to three decimal places.",
+    "answerValue": 1.538,
+    "answerUnit": "g",
+    "steps": [
+      {
+        "text": "Identify the ratio and proportion information",
+        "type": "INFORMATION",
+        "hasInputs": true,
+        "content": [
+          {
+            "text": "One milligrams of an antibiotic A contains",
+            "input": {
+              "answer": 325,
+              "unit": "mcg of streptomycin base.",
+              "hint": "One milligrams of an antibiotic A contains 325 mcg of streptomycin base."
+            }
+          },
+          {
+            "text": "We need to obtain",
+            "input": {
+              "answer": 0.5,
+              "unit": "g of streptomycin base",
+              "hint": "We need to obtain 0.5 g of streptomycin base."
+            }
+          },
+          {
+            "text": "Convert g to mcg:\n 0.5 g = ",
+            "input": {
+              "answer": 500000,
+              "unit": "mcg",
+              "hint": "1 g = 1000000 mcg"
+            }
+          }
+        ]
+      },
+      {
+        "text": "Set up the proportion",
+        "type": "OPERATION",
+        "content": "Construct the proportion comparing the known equivalent with the unknown equivalent:",
+        "operands": [
+          {
+            "type": "fraction",
+            "numerator": {
+              "type": "input",
+              "answer": 1,
+              "unit": "mg antibiotic A"
+            },
+            "denominator": {
+              "type": "input",
+              "answer": 325,
+              "unit": "mcg streptomycin"
+            },
+            "hint": "Look at the question. It should be 1 mg of antibiotic A / 325 mcg of streptomycin base."
+          },
+          {
+            "type": "fraction",
+            "numerator": "X mg antibiotic A",
+            "denominator": {
+              "type": "input",
+              "answer": 500000,
+              "unit": "mcg streptomycin"
+            },
+                        
+            "hint": "Look at the question. It should be X mg of antibiotic A / 500000 mcg of streptomycin base."
+          }
+        ],
+        "operators": ["="]
+      },
+      {
+        "text": "Solve for the final answer",
+        "type": "OPERATION",
+        "content": "Calculate the unknown value by isolating X. Round your answer to three decimal places:",
+        "operands": [
+          {
+            "type": "text",
+            "value": "X mg of antibiotic A"
+          },
+          {
+            "type": "input",
+            "answer": 1538,
+            "unit": "mg of antibiotic A (rounded to the nearest whole number)"
+          },
+          {
+            "type": "input",
+            "answer": 1.538,
+            "unit": "g of antibiotic A (rounded to three decimal places)"
+          }
+        ],
+        "operators": ["=", "="],
+        "hint": "X = 1 mg of antibiotic A / 325 mcg of streptomycin base × 500000 mcg of streptomycin base = 1538 mg of antibiotic A = 1.538 g of antibiotic A"
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "type": "calc",
+    "question": "A prefilled syringe contains 35 mg of drug in 3.5 mL of solution. How many mcg of drug would be administered by an injection of 1.25 mL of the solution?",
+    "answerValue": 12500,
+    "answerUnit": "mcg",
+    "steps": [
+      {
+        "text": "Identify the unit of the answer wanted",
+        "type": "MULTIPLE_CHOICE",
+        "options": ["? mL/hr =", "? mg =", "? mcg ="],
+        "answer": "? mcg =",
+        "hint": "Look at what the question is asking for - the total mcg of drug that should be administered."
+      },
+      {
+        "text": "Set up the equation with unit cancellation",
+        "type": "OPERATION",
+        "content": "Construct the equation to calculate total units by multiplying.",
+        "operands": [
+          {
+            "type": "text",
+            "value": "? mcg"
+          },
+          {
+            "type": "fraction",
+            "numerator": {
+              "type": "input",
+              "answer": 1000,
+              "unit": "mcg"
+            },
+            "denominator": {
+              "type": "input",
+              "answer": 1,
+              "unit": "mg"
+            },
+            "hint": "In the first fraction, we place the conversion factor that will cancel out the 'mg' unit. It should be 1000 mcg / 1 mg."
+          },
+          {
+            "type": "fraction",
+            "numerator": {
+              "type": "input",
+              "answer": 35,
+              "unit": "mg"
+            },
+            "denominator": {
+              "type": "input",
+              "answer": 3.5,
+              "unit": "mL"
+            },
+            "hint": "For the second fraction, remember that our goal is to create a chain where each denominator cancels out with the next numerator... What should we do to cancel out the 'mg'? There are 35 mg in 3.5 mL, so 3.5 mL / 35 mg."
+          },
+          {
+            "type": "input",
+            "answer": 1.25,
+            "unit": "mL",
+            "hint": "To cancel out the 'mL', how many mL of the solution are being administered? It should be 1.25 mL."
+          }
+        ],
+        "operators": ["=", "×", "×"],
+        "hint": "Chain all the conversion factors together, making sure units cancel appropriately."
+      },
+      {
+        "text": "Calculate the final answer (Final calculation)",
+        "type": "OPERATION",
+        "content": "After canceling units, calculate the total units of activity the patient receives:",
+        "operands": [
+          {
+            "type": "text",
+            "value": "? mcg"
+          },
+          {
+            "type": "input",
+            "answer": 12500,
+            "unit": "mcg"
+          }
+        ],
+        "operators": ["="],
+        "hint": "Multiply all the numbers in the equation after canceling units. 1000 mcg / 1 mg * 35 mg / 3.5 mL * 1.25 mL = 12500 mcg"
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "type": "calc",
+    "question": "One-half liter of solution for intravenous infusion contains 2.5 g of drug. How many mL of the solution would contain 0.75 mg of drug?",
+    "answerValue": 0.15,
+    "answerUnit": "mL",
+    "steps": [
+      {
+        "text": "Identify the unit of the answer wanted",
+        "type": "MULTIPLE_CHOICE",
+        "options": ["? mL =", "? mg =", "? mcg ="],
+        "answer": "? mL =",
+        "hint": "Look at what the question is asking for - the total mL of solution that contains 0.75 mg of drug."
+      },
+      {
+        "text": "Set up the equation with unit cancellation",
+        "type": "OPERATION",
+        "content": "Construct the equation to calculate total units by multiplying.",
+        "operands": [
+          {
+            "type": "text",
+            "value": "? mL"
+          },
+          {
+            "type": "fraction",
+            "numerator": {
+              "type": "input",
+              "answer": 1000,
+              "unit": "mL"
+            },
+            "denominator": {
+              "type": "input",
+              "answer": 1,
+              "unit": "L"
+            },
+            "hint": "The first fraction should be 1000 mL / 1 L, since we need the mL as the final unit, and we will need to cancel out the other units."
+          },
+          {
+            "type": "fraction",
+            "numerator": {
+              "type": "input",
+              "answer": 0.5,
+              "unit": "L"
+            },
+            "denominator": {
+              "type": "input",
+              "answer": 2.5,
+              "unit": "g"
+            },
+            "hint": "For the second fraction, remember that our goal is to create a chain where each denominator cancels out with the next numerator... What should we do to cancel out the 'g'? There are 2.5 g in 0.5 L, so 0.5 L / 2.5 g."
+          },
+          {
+            "type": "fraction",
+            "numerator": {
+              "type": "input",
+              "answer": 1,
+              "unit": "g"
+            },
+            "denominator": {
+              "type": "input",
+              "answer": 1000,
+              "unit": "mg"
+            },
+            "hint": "We need to cancel out the 'g', so here we're using the conversion from g to mg. It should be 1g / 1000 mg."
+          },
+          {
+            "type": "input",
+            "answer": 0.75,
+            "unit": "mg",
+            "hint": "To cancel out the 'mg', how many mg of the drug are being administered? It should be 0.75 mg."
+          }
+        ],
+        "operators": ["=", "×", "×", "×"],
+        "hint": "Chain all the conversion factors together, making sure units cancel appropriately."
+      },
+      {
+        "text": "Calculate the final answer (Final calculation)",
+        "type": "OPERATION",
+        "content": "After canceling units, calculate the total units of activity the patient receives:",
+        "operands": [
+          {
+            "type": "text",
+            "value": "? mL"
+          },
+          {
+            "type": "input",
+            "answer": 0.15,
+            "unit": "mL"
+          }
+        ],
+        "operators": ["="],
+        "hint": "Multiply all the numbers in the equation after canceling units. 1000 mL / 1 L * 0.5 L / 2.5 g * 1 g / 1000 mg * 0.75 mg = 0.15 mL"
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "type": "calc",
+    "question": "If an albuterol inhaler contains 9 mg of albuterol, how many inhalation-doses can be delivered if each inhalation-dose contains 45 mcg?",
+    "answerValue": 200,
+    "answerUnit": "inhalation-doses",
+    "steps": [
+      {
+        "text": "Identify the unit of the answer wanted",
+        "type": "MULTIPLE_CHOICE",
+        "options": ["? mL =", "? mg =", "? inhalation-doses ="],
+        "answer": "? inhalation-doses =",
+        "hint": "Look at what the question is asking for - the total inhalation-doses that can be delivered."
+      },
+      {
+        "text": "Set up the equation with unit cancellation",
+        "type": "OPERATION",
+        "content": "Construct the equation to calculate total units by multiplying.",
+        "operands": [
+          {
+            "type": "text",
+            "value": "? inhalation-doses"
+          },
+          {
+            "type": "fraction",
+            "numerator": {
+              "type": "input",
+              "answer": 1,
+              "unit": "inhalation-doses"
+            },
+            "denominator": {
+              "type": "input",
+              "answer": 45,
+              "unit": "mcg"
+            },
+            "hint": "The first fraction should be 1 inhalation-dose / 45 mcg, since we need the inhalation-doses as the final unit, and we will need to cancel out the other units."
+          },
+          {
+            "type": "fraction",
+            "numerator": {
+              "type": "input",
+              "answer": 1000,
+              "unit": "mcg"
+            },
+            "denominator": {
+              "type": "input",
+              "answer": 1,
+              "unit": "mg"
+            },
+            "hint": "For the second fraction, remember that our goal is to create a chain where each denominator cancels out with the next numerator... Thus we place the conversion factor that will cancel out the 'mcg' unit. It should be 1000 mcg / 1 mg."
+          },
+          {
+            "type": "input",
+            "answer": 9,
+            "unit": "mg",
+            "hint": "To cancel out the 'mg', we see from the question that there are 9 mg of albuterol in the inhaler. Thus, we should use 9 mg here."
+          }
+        ],
+        "operators": ["=", "×", "×"],
+        "hint": "Chain all the conversion factors together, making sure units cancel appropriately."
+      },
+      {
+        "text": "Calculate the final answer (Final calculation)",
+        "type": "OPERATION",
+        "content": "After canceling units, calculate the total units of activity the patient receives:",
+        "operands": [
+          {
+            "type": "text",
+            "value": "? inhalation-doses"
+          },
+          {
+            "type": "input",
+            "answer": 200,
+            "unit": "inhalation-doses"
+          }
+        ],
+        "operators": ["="],
+        "hint": "Multiply all the numbers in the equation after canceling units. 1 inhalation-dose / 45 mcg * 1000 mcg / 1 mg * 9 mg = 200 inhalation-doses"
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "type": "calc",
+    "question": "A solution for direct IV bolus injection contains 250 mg of drug in each 50 mL of injection. What is the concentration of drug in terms of mcg/mcL?",
+    "answerValue": 5,
+    "answerUnit": "mcg/mcL",
+    "steps": [
+      {
+        "text": "Identify the unit of the answer wanted",
+        "type": "MULTIPLE_CHOICE",
+        "options": ["? mcg/mcL =", "? mg/mL =", "? mg/L ="],
+        "answer": "? mcg/mcL =",
+        "hint": "Look at what the question is asking for - the concentration of drug in terms of mcg/mcL."
+      },
+      {
+        "text": "Set up the equation with unit cancellation",
+        "type": "OPERATION",
+        "content": "Construct the equation to calculate total units by multiplying.",
+        "operands": [
+          {
+            "type": "text",
+            "value": "? mcg/mcL"
+          },
+          {
+            "type": "fraction",
+            "numerator": {
+              "type": "input",
+              "answer": 1000,
+              "unit": "mcg (how many mcg in 1 mg?)"
+            },
+            "denominator": {
+              "type": "input",
+              "answer": 1,
+              "unit": "mg"
+            },
+            "hint": "The first fraction should be 1000 mcg / 1 mg. Since we need the mcg as the final unit, and the question is in mg, we need to place a conversion factor that will cancel out the 'mg' unit. It should be 1000 mcg / 1 mg."
+          },
+          {
+            "type": "fraction",
+            "numerator": {
+              "type": "input",
+              "answer": 250,
+              "unit": "mg"
+            },
+            "denominator": {
+              "type": "input",
+              "answer": 50,
+              "unit": "mL"
+            },
+            "hint": "For the second fraction, remember that our goal is to create a chain where each denominator cancels out with the next numerator... Thus 250 mg / 25 mL. For the next fraction, we need to find a way to cancel out the 'mL'."
+          },
+          {
+            "type": "fraction",
+            "numerator": {
+              "type": "input",
+              "answer": 1,
+              "unit": "mL"
+            },
+            "denominator": {
+              "type": "input",
+              "answer": 1000,
+              "unit": "mcL (how many mcL in 1 mL?)"
+            },
+            "hint": "To cancel out the 'mL', and since the final unit contains mcL, we need to place a conversion factor that will cancel out the 'mL' unit. It should be 1000 mcL / 1 mL."
+          }
+        ],
+        "operators": ["=", "×", "×", "×"],
+        "hint": "Chain all the conversion factors together, making sure units cancel appropriately."
+      },
+      {
+        "text": "Calculate the final answer (Final calculation)",
+        "type": "OPERATION",
+        "content": "After canceling units, calculate the total units of activity the patient receives:",
+        "operands": [
+          {
+            "type": "text",
+            "value": "? mcg/mcL"
+          },
+          {
+            "type": "input",
+            "answer": 5,
+            "unit": "mcg/mcL"
+          }
+        ],
+        "operators": ["="],
+        "hint": "Multiply all the numbers in the equation after canceling units. 1000 mcg / 1 mg * 250 mg / 25 mL * 1 mL / 1000 mcL = 5 mcg/mcL"
+      }
+    ]
+  }
+]

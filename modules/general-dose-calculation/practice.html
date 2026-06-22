@@ -1,0 +1,259 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>General Dose Calculations Practice</title>
+        <link rel="stylesheet" href="../../master.css">
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>General Dose Calculations Practice</h1>
+            </header>
+
+            <div id="questionNavigator" style="text-align: right; margin-bottom: 10px;"></div>
+
+            <div class="progress-container">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+
+            <div class="stats">
+                <div class="stat-item">
+                    <div class="stat-value" id="questionsCompleted">0</div>
+                    <div class="stat-label">Completed</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value" id="questionsRemaining">0</div>
+                    <div class="stat-label">Remaining</div>
+                </div>
+            </div>
+
+            <!-- Filter Options -->
+            <div class="filter-container">
+                <div class="filter-title">Choose what you want to practice:</div>
+                <div class="filter-options">
+                    <label class="filter-option">
+                        <input type="checkbox" id="generalFilter" checked>
+                        <span class="filter-label">General Dose Calculations</span>
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox" id="weightFilter" checked>
+                        <span class="filter-label">Dose Based on Body Weight</span>
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox" id="splittingFilter" checked>
+                        <span class="filter-label">Calculation with Tablet Splitting</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Question Card -->
+            <div class="card" id="questionCard">
+                <div class="question-container">
+                    <div class="question" id="questionText"></div>
+                    <div id="answerContainer" class="answer-container">
+                        <!-- Answer inputs will be dynamically created here -->
+                    </div>
+                    <div class="feedback" id="answerFeedback"></div>
+                </div>
+
+                <div class="button-row">
+                    <button id="checkAnswer">Check Answer</button>
+                    <button id="showStepsBtn" class="button-accent">Step-by-Step Guide</button>
+                    <button id="prevQuestion" class="button-secondary">Previous Question</button>
+                    <button id="nextQuestion" class="button-secondary">Next Question</button>
+                </div>
+
+                <div class="steps-container" id="stepsContainer">
+                    <h3>Step-by-Step Solution</h3>
+                    <div id="steps"></div>
+                </div>
+            </div>
+
+            <!-- Results Card (hidden by default) -->
+            <div class="card" id="results" style="display: none;">
+                <div class="results-title">Practice Completed!</div>
+                <div class="results-message">You've successfully completed all practice questions.</div>
+                <div class="button-row">
+                    <button id="restartBtn">Practice Again</button>
+                </div>
+            </div>
+
+            <!-- Reference section with collapsible cards -->
+            <div class="reference-container">
+                <!-- Single Reference Card containing all topics -->
+                <div class="reference-card">
+                    <div class="reference-header" id="mainReferenceHeader">
+                        <h3>General Dose Calculation Formulas</h3>
+                        <span class="expand-icon">+</span>
+                    </div>
+                    <div class="reference-content" id="mainReferenceContent">
+                        
+                        <!-- Topic: General Dose Calculation Formulas -->
+                        <div class="reference-card">
+                            <div class="reference-header" id="generalFormulasHeader">
+                                <h3>General Dose Calculations</h3>
+                                <span class="expand-icon">+</span>
+                            </div>
+                            <div class="reference-content" id="generalFormulasContent">
+                                <div class="formula-box-content">
+                                    <div class="formula-box">
+                                        <p style="text-align: center;"><strong>1. Number of doses</strong></p>
+                                        <div class="horizontal-operation" style="justify-content: center;">
+                                            <span><span class="dose-number">Number of doses</span> &nbsp;= </span>
+                                            <div class="fraction">
+                                                <div class="fraction-numerator"><span class="dose-total">Total quantity</span></div>
+                                                <div class="fraction-denominator"><span class="dose-size">Size of dose</span></div>
+                                            </div>
+                                        </div>
+                                        
+                                        <p style="margin-top: 20px; text-align: center;"><strong>2. Size of dose</strong></p>
+                                        <div class="horizontal-operation" style="justify-content: center;">
+                                            <span><span class="dose-size">Size of dose</span> &nbsp;= </span>
+                                            <div class="fraction">
+                                                <div class="fraction-numerator"><span class="dose-total">Total quantity</span></div>
+                                                <div class="fraction-denominator"><span class="dose-number">Number of doses</span></div>
+                                            </div>
+                                        </div>
+                                        
+                                        <p style="margin-top: 20px; text-align: center; margin-bottom: 20px;"><strong>3. Total quantity to dispense</strong></p>
+                                        <p style="text-align: center;"><span class="dose-total">Total quantity</span> &nbsp;= &nbsp;<span class="dose-number">Number of doses</span> &nbsp;× &nbsp;<span class="dose-size">Size of dose</span></p>
+                                    </div>
+                                </div>
+                                
+                                <p><strong><br>Steps to solve general dose calculation problems:</strong></p>
+                                <ol>
+                                    <li>Understand the question.</li>
+                                    <li>Use the formula to calculate the unknown.</li>
+                                </ol>
+                            </div>
+                        </div>
+
+                        <!-- Topic: Dosing by Weight -->
+                        <div class="reference-card">
+                            <div class="reference-header" id="dosingByWeightRefHeader">
+                                <h3>Dosing by Weight</h3>
+                                <span class="expand-icon">+</span>
+                            </div>
+                            <div class="reference-content" id="dosingByWeightRefContent">
+                                <div class="formula-box-content">
+                                    <div class="formula-box">
+                                        <p><strong>Dose = Dose per weight × weight (kg)</strong></p>
+                                    </div>
+                                </div>
+                                
+                                <p><strong><br>Steps to solve dosing by weight problems:</strong></p>
+                                <ol>
+                                    <li>Convert weight from lb to kg (if needed)</li>
+                                    <li>Convert dose units from mcg to mg (if needed)</li>
+                                    <li>Calculate the total daily dose by using the formula</li>
+                                </ol>
+                            </div>
+                        </div>
+
+                        <!-- Topic: Fixed-Dose Combination Products -->
+                        <div class="reference-card">
+                            <div class="reference-header" id="fixedDoseRefHeader">
+                                <h3>Fixed-Dose Combination Products</h3>
+                                <span class="expand-icon">+</span>
+                            </div>
+                            <div class="reference-content" id="fixedDoseRefContent">
+                                <p><strong>Steps to solve fixed-dose combination problems:</strong></p>
+                                <ol>
+                                    <li>Determine the dose of each component in one tablet</li>
+                                    <li>Calculate how many tablets are needed to reach the prescribed dose for each component</li>
+                                    <li>Check that both component doses align with the number of tablets</li>
+                                </ol>
+                            </div>
+                        </div>
+
+                        <!-- Topic: Tablet Splitting -->
+                        <div class="reference-card">
+                            <div class="reference-header" id="tabletSplittingRefHeader">
+                                <h3>Tablet Splitting</h3>
+                                <span class="expand-icon">+</span>
+                            </div>
+                            <div class="reference-content" id="tabletSplittingRefContent">    
+                                <p><strong>Steps to solve tablet splitting problems:</strong></p>
+                                <ol>
+                                    <li>Determine how the tablet can be split</li>
+                                    <li>Calculate the total number of doses needed</li>
+                                    <li>Calculate the number of tablets needed</li>
+                                </ol>
+                            </div>
+                        </div>
+
+                        <!-- Topic: Dose Range -->
+                        <div class="reference-card">
+                            <div class="reference-header" id="doseRangeRefHeader">
+                                <h3>Dose Range</h3>
+                                <span class="expand-icon">+</span>
+                            </div>
+                            <div class="reference-content" id="doseRangeRefContent">
+                                <p><strong>Steps to solve dose range problems:</strong></p>
+                                <ol>
+                                    <li>Convert weight from lb to kg (if needed)</li>
+                                    <li>Calculate the lower end of the dose range</li>
+                                    <li>Calculate the upper end of the dose range</li>
+                                </ol>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="clear-progress-container">
+                <p>Want to see your question history? 
+                    <a href="#" id="viewHistoryBtn" class="clear-data-link">View history</a>
+                </p>
+                <p>Want to clear your saved progress data?
+                    <a href="#" id="clearProgressBtn" class="clear-data-link">Clear saved data</a>
+                </p>
+                <p>Want to see the tutorial again?
+                    <a href="index.html" class="clear-data-link">Go back to tutorial</a>
+                </p>
+            </div>
+        </div>
+
+        <!-- History Modal -->
+        <div id="historyModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Question History</h2>
+                    <span class="close-modal">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <p class="history-description">
+                        Click on any green button to view the solution to a completed question. Gray buttons represent questions that have not been completed yet.
+                    </p>
+                    <div class="history-list" id="historyList">
+                        <!-- Question buttons will be dynamically inserted here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Solution Modal -->
+        <div id="solutionModal" class="modal">
+            <div class="modal-content solution-modal-content">
+                <div class="modal-header">
+                    <h2>Solution</h2>
+                    <span class="close-solution-modal">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <div id="solutionQuestion" class="solution-question"></div>
+                    <div class="steps-container solution-steps" id="solutionSteps">
+                        <!-- Steps will be inserted here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- The shared engine + config; collapsible reference cards are wired by
+             reference.js via config.onReady. -->
+        <script type="module" src="main.js"></script>
+    </body>
+    </html>

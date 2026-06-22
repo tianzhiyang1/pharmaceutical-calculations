@@ -1,0 +1,919 @@
+[
+    {
+        "number": 1,
+        "text": "Interpret the following subscription (direction to the pharmacist): <b> M. et ft caps. dtd xxiv </b>",
+        "options": ["Mix", "and", "make", "capsules", "Dispense", "24", "doses"],
+        "correctAnswer": ["Mix", "and", "make", "capsules", "Dispense", "24", "doses"],
+        "type": "drag"
+    },
+    {
+        "number": 2,
+        "text": "Interpret the following Signa (direction to the patient): <b>Tsp. ii in 1/2 gl. aq. q. 8 h.</b>",
+        "options": ["Take 2 teaspoons", "in one-half glass of", "water", "every 8 hours"],
+        "correctAnswer": ["Take 2 teaspoons", "in one-half glass of", "water", "every 8 hours"],
+        "type": "drag"
+    },
+	{
+        "number": 3,
+        "text": "Interpret the following subscription (direction to the pharmacist): <b> Disp. supp. rect. no. ix </b>",
+        "options": ["Dispense", "9", "rectal", "suppositories"],
+        "correctAnswer": ["Dispense", "9", "rectal", "suppositories"],
+        "type": "drag"
+    },
+    {
+        "number": 4,
+        "text": "Interpret the following signa (direction to the patient): <b> Gtt. ii each eye q. 6 h. p.r.n. pain </b>",
+        "options": ["Instill", "2 drops", "in each eye", "every six(6) hours", "as needed", "for pain"],
+        "correctAnswer": ["Instill", "2 drops", "in each eye", "every six(6) hours", "as needed", "for pain"],
+        "type": "drag"
+    },
+	{
+        "number": 5,
+        "text": "Interpret the following Subscription (direction to the pharmacist): <b> M. et ft. susp. 5mg/mL. Disp 100 mL stat </b>",
+        "options": ["Mix and make", "a suspension", "containing 5 milligrams per milliliter", "Dispense 100 milliliters", "immediately" ],
+        "correctAnswer": ["Mix and make", "a suspension", "containing 5 milligrams per milliliter", "Dispense 100 milliliters", "immediately"],
+        "type": "drag"
+    },
+    {
+        "number": 6,
+        "text": "Interpret the following signa (direction to the patient): <b> Caps ii p.o q 6 h p.r.n pain </b>",
+        "options": ["Take 2 capsules", "by mouth", "every 6 hours", "as needed", "for pain"],
+        "correctAnswer": ["Take 2 capsules", "by mouth", "every 6 hours", "as needed", "for pain"],
+        "type": "drag"
+    },
+	{
+        "number": 7,
+        "text": "Interpret the following Subscription (direction to the pharmacist): <b> Disp. iii sl tabs </b>",
+        "options": ["Dispense", "3", "sublingual", "tablets"],
+        "correctAnswer": ["Dispense", "3", "sublingual", "tablets"],
+        "type": "drag"
+    },
+    {
+        "number": 8,
+        "text": "Interpret the following signa (direction to the patient): <b>Tab. i sublingually. N. R. </b>",
+        "options": ["Place 1 tablet", "under", "the tongue.", "Do", "not", "repeat."],
+        "correctAnswer": ["Place 1 tablet", "under", "the tongue.", "Do", "not", "repeat."],
+        "type": "drag"
+    },
+	{
+        "number": 9,
+        "text": "Interpret the following Roman numerals on prescriptions: <b>vss</b>",
+        "options": ["5½", "5¼", "4½", "6", "4¾"],
+        "correctAnswer": ["5½"],
+        "type": "drag"
+    },
+    {
+        "number": 10,
+        "text": "Interpret the following signa (direction to the patient): <b>Tab. iii stat tab. ii q 8 h X 7 d.</b>",
+        "options": ["Take 3 tablets", "immediately,", "then take 2 tablets", "every", "8 hours", "for 7 days"],
+        "correctAnswer": ["Take 3 tablets", "immediately,", "then take 2 tablets", "every", "8 hours", "for 7 days"],
+        "type": "drag"
+    },
+	{
+        "number": 11,
+        "text": "Interpret the following medication order: <b> Humulin N xxv units SubQ qAM</b>",
+        "options": ["Take Humulin N", "25 units", "subcutaneously", "every morning"],
+        "correctAnswer": ["Take Humulin N", "25 units", "subcutaneously", "every morning"],
+        "type": "drag"
+    },
+	{
+        "number": 12,
+        "text": "Interpret the following signa (direction to the patient): <b>Supp. i pr qAM </b>",
+        "options": ["Insert", "1", "suppository", "rectally", "every morning"],
+        "correctAnswer": ["Insert", "1", "suppository", "rectally", "every morning"],
+        "type": "drag"
+    },
+    {
+        "number": 13,
+        "text": "Interpret the following medication order: <b>KCl xv mEq p.o. t.i.d. p.c. </b>",
+        "options": ["Take 15 milliequivalents of", "potassium chloride", "by mouth", "three times a day", "after meals"],
+        "correctAnswer": ["Take 15 milliequivalents of", "potassium chloride", "by mouth", "three times a day", "after meals"],
+        "type": "drag"
+    },
+    {
+        "number": 14,
+        "text": "Interpret the following signa (direction to the patient): <b>Appl. ung. right eye q. 24 h. X 7 d. </b>",
+        "options": ["Apply ointment to", "the right eye", "every", "twenty-four (24) hours", "for seven (7) days"],
+        "correctAnswer": ["Apply ointment to", "the right eye", "every", "twenty-four (24) hours", "for seven (7) days"],
+        "type": "drag"
+    },
+	{
+        "number": 15,
+        "text": "Interpret the following Subscription (direction to the pharmacist): <b>M. et div. in pulv. no. xij </b>",
+        "options": ["Mix", "and", "divide", "into", "12", "powders"],
+        "correctAnswer": ["Mix", "and", "divide", "into", "12", "powders"],
+        "type": "drag"
+    },
+    {
+        "number": 16,
+        "text": "Interpret the following signa (direction to the patient): <b> Cap ii qAM HBP </b>",
+        "options": ["Take", "2 capsules", "every", "morning", "for", "high blood pressure"],
+        "correctAnswer": ["Take", "2 capsules", "every", "morning", "for", "high blood pressure"],
+        "type": "drag"
+    },
+    {
+        "number": 17,
+        "text": "Interpret the following medication order: <b>Metoprolol Tartrate 50 mg p.o. b.i.d.</b>",
+        "options": ["Take 50 milligrams of", "metoprolol tartrate", "by mouth", "two times a day"],
+        "correctAnswer": ["Take 50 milligrams of", "metoprolol tartrate", "by mouth", "two times a day"],
+        "type": "drag"
+    },
+	{
+        "number": 18,
+        "text": "Interpret the following subscription (direction to the pharmacist): <b>M. et ft I.V. sol. q.s. ad cxx mL</b>",
+        "options": ["Mix and make", "intravenous solution", "a sufficient quantity to", "make 120 milliliters"],
+        "correctAnswer": ["Mix and make", "intravenous solution", "a sufficient quantity to", "make 120 milliliters"],
+        "type": "drag"
+    },
+    {
+        "number": 19,
+        "text": "Interpret the following Signa (direction to the patient): <b>Cap. ii po a.c. et h.s.</b>",
+        "options": ["Take 2 capsules", "by mouth", "before meals", "and", "at bedtime"],
+        "correctAnswer": ["Take 2 capsules", "by mouth", "before meals", "and", "at bedtime"],
+        "type": "drag"
+    },
+	{
+        "number": 20,
+        "text": "Interpret the following medication order: <b>Admin. Prochlorperazine 25 mg p.r. q. 12h. N&V</b>",
+        "options": ["Administer 25 milligrams of", "prochloperzapine", "rectally", "every 12 hours", "for nausea and vomiting"],
+        "correctAnswer": ["Administer 25 milligrams of", "prochloperzapine", "rectally", "every 12 hours", "for nausea and vomiting"],
+        "type": "drag"
+    },
+    {
+        "number": 21,
+        "text": "Interpret the following Signa (direction to the patient): <b>Tab ii po qd prn UTI </b>",
+        "options": ["Take 2 tablets", "by mouth", "every day", "as needed", "for urinary tract infection"],
+        "correctAnswer": ["Take 2 tablets", "by mouth", "every day", "as needed", "for urinary tract infection"],
+        "type": "drag"
+    },
+    {
+        "number": 22,
+        "text": "Interpret the following Subscription (direction to the pharmacist): <b>dil. cl g i gal. disp. ii L.</b>",
+        "options": ["Dilute 150 grams", "in 1 gallon", "Dispense", "2 liters"],
+        "correctAnswer": ["Dilute 150 grams", "in 1 gallon", "Dispense", "2 liters"],
+        "type": "drag"
+    },
+	{
+        "number": 23,
+        "text": "Interpret the following medication order: <b> 1.5 g/kg/day amino acids TPN </b>",
+        "options": ["Administer 1.5 grams", "per kilogram of body weight", "per day", "of amino acids", "in total parenteral nutrition"],
+        "correctAnswer": ["Administer 1.5 grams", "per kilogram of body weight", "per day", "of amino acids", "in total parenteral nutrition"],
+        "type": "drag"
+    },
+    {
+        "number": 24,
+        "text": "Interpret the following Signa (direction to the patient): <b>Appl. 1 mcg top. q.i.d.</b>",
+        "options": ["Apply one microgram", "topically", "four times a day"],
+        "correctAnswer": ["Apply one microgram", "topically", "four times a day"],
+        "type": "drag"
+    },
+	{
+        "number": 25,
+        "text": "Interpret the following subscription (direction to the pharmacist): <b>M. ft. D5NS. Disp. 100 mL </b>",
+        "options": ["Mix and make", "dextrose 5% in normal saline.", "Dispense", "100 mL."],
+        "correctAnswer": ["Mix and make", "dextrose 5% in normal saline.", "Dispense", "100 mL."],
+        "type": "drag"
+    },
+    {
+        "number": 26,
+        "text": "Interpret the following Signa (direction to the patient): <b>ii tbsp. po q.i.d </b>",
+        "options": ["Take 2 tablespoonful", "by mouth", "4 times a day"],
+        "correctAnswer": ["Take 2 tablespoonful", "by mouth", "4 times a day"],
+        "type": "drag"
+    },
+	{
+        "number": 27,
+        "text": "Interpret the following subscription (direction to the pharmacist): <b> M. ft. ung </b>",
+        "options": ["Mix", "and", "make", "an", "ointment."],
+        "correctAnswer": ["Mix", "and", "make", "an", "ointment."],
+        "type": "drag"
+    },
+    {
+        "number": 28,
+        "text": "You receive the following prescription. How many tablets should you dispense?",
+        "path": "images/q1.png",
+        "type": "applied",
+        "answerValue": 30,
+        "answerUnit": "tablets",
+        "steps": [
+            {
+                "text": "Click on the prescription image to identify the following:",
+                "type": "INFORMATION",
+                "format": "hotspot",
+                "content": [
+                    {
+                        "text": "Medication",
+                        "position": {
+                            "x1": 270,
+                            "y1": 135,
+                            "x2": 440,
+                            "y2": 160
+                        },
+                        "hint": "Look for the name of the medication. Don't be confused with instructions or patient info."
+                    },
+                    {
+                        "text": "Sig (Directions to the patient)",
+                        "position": {
+                            "x1": 100,
+                            "y1": 165,
+                            "x2": 620,
+                            "y2": 190
+                        },
+                        "hint": "Try looking for the section that tells the patient how to take the medication - like how many pills and how often."
+                    },
+                    {
+                        "text": "Dispense quantity (Disp #)",
+                        "position": {
+                            "x1": 250,
+                            "y1": 195,
+                            "x2": 440,
+                            "y2": 220
+                        },
+                        "hint": "Find the quantity the pharmacy is giving the patient."
+                    },
+                    {
+                        "position": {
+                            "x1": 60,
+                            "y1": 70,
+                            "x2": 200,
+                            "y2": 110
+                        }
+                    },
+                    {
+                        "position": {
+                            "x1": 205,
+                            "y1": 18,
+                            "x2": 520,
+                            "y2": 90
+                        }
+                    },
+                    {
+                        "position": {
+                            "x1": 60,
+                            "y1": 240,
+                            "x2": 140,
+                            "y2": 265
+                        }
+                    },
+                    {
+                        "position": {
+                            "x1": 60,
+                            "y1": 270,
+                            "x2": 140,
+                            "y2": 295
+                        }
+                    },
+                    {
+                        "position": {
+                            "x1": 480,
+                            "y1": 240,
+                            "x2": 600,
+                            "y2": 295
+                        }
+                    }
+                ]
+            },
+            {
+                "text": "Interpret the abbreviations in the Sig:",
+                "type": "INTERPRETATION",
+                "content": [
+                    {
+                        "text": "PO QD = *blank1*",
+                        "type": "short-answer",
+                        "blank1": [
+                            "by mouth daily",
+                            "by mouth each day",
+                            "by mouth a day",
+                            "by mouth each day",
+                            "by mouth everyday",
+                            "by mouth every day",
+                            "by mouth per day",
+                            "orally daily",
+                            "orally each day",
+                            "orally a day",
+                            "orally each day",
+                            "orally everyday",
+                            "orally every day",
+                            "orally per day"
+                        ],
+                        "hint": "PO QD = by mouth everyday"
+                    },
+                    {
+                        "text": "The dosing increases every *blank1* days over a *blank2*-day period",
+                        "type": "fill-blanks",
+                        "blanks": {
+                            "blank1": {"answer": 10},
+                            "blank2": {"answer": 30}
+                        },
+                        "hint": "The dosing increases every 10 days over a 30-day period."
+                    }
+                ]
+            },
+            {
+                "text": "Now calculate how many 10-mg tablets are needed to fulfill the entire regimen",
+                "type": "CALCULATION",
+                "content": [
+                    {
+                        "text": "Step 1: How many tablets should you dispense for the first 10 days? \n *blank* tablets",
+                        "type": "fill-blanks",
+                        "blanks": {
+                            "blank": {"answer": 5}
+                        },
+                        "hint": "5 mg once daily for 10 days = 5 mg × 10 = 50 mg total \n Since only 10-mg tablets are available, 50 mg ÷ 10 mg/tablet = 5 tablets"
+                    },
+                    {
+                        "text": "Step 2: How many tablets should you dispense for the second 10 days? \n *blank* tablets",
+                        "type": "fill-blanks",
+                        "blanks": {
+                            "blank": {"answer": 10}                            
+                        },
+                        "hint": "10 mg once daily for 10 days = 10 mg × 10 = 100 mg total \n 100 mg ÷ 10 mg/tablet = 10 tablets"
+                    },
+                    {
+                        "text": "Step 3: How many tablets should you dispense for the last 10 days? \n *blank* tablets",
+                        "type": "fill-blanks",
+                        "blanks": {
+                            "blank": {"answer": 15}
+                        },
+                        "hint": "15 mg once daily for 10 days = 15 mg × 10 = 150 mg total \n 150 mg ÷ 10 mg/tablet = 15 tablets"
+                    },
+                    {
+                        "text": "Step 4: Calculate the total tablets to dispense: *blank* tablets",
+                        "type": "fill-blanks",
+                        "blanks": {
+                            "blank": {"answer": 30}
+                        },
+                        "hint": "5 tablets + 10 tablets + 15 tablets = 30 tablets"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "number": 29,
+        "text": "You receive the following prescription. How many tablets should you dispense?",
+        "path": "images/q2.png",
+        "type": "applied",
+        "answerValue": 56,
+        "answerUnit": "tablets",
+        "steps": [
+            {
+                "text": "Click on the prescription image to identify the following:",
+                "type": "INFORMATION",
+                "format": "hotspot",
+                "content": [
+                    {
+                        "text": "Medication",
+                        "position": {
+                            "x1": 285,
+                            "y1": 130,
+                            "x2": 445,
+                            "y2": 160
+                        },
+                        "hint": "Look for the name of the medication. Don't confused with instructions or patient info."
+                    },
+                    {
+                        "text": "Sig (Directions to the patient)",
+                        "position": {
+                            "x1": 200,
+                            "y1": 165,
+                            "x2": 540,
+                            "y2": 190
+                        },
+                        "hint": "Try looking for the section that tells the patient how to take the medication - like how many pills and how often."
+                    },
+                    {
+                        "text": "Dispense quantity (Disp #)",
+                        "position": {
+                            "x1": 260,
+                            "y1": 195,
+                            "x2": 400,
+                            "y2": 220
+                        },
+                        "hint": "Find the quantity the pharmacy is giving the patient."
+                    },
+                    {
+                        "position": {
+                            "x1": 60,
+                            "y1": 70,
+                            "x2": 200,
+                            "y2": 110
+                        }
+                    },
+                    {
+                        "position": {
+                            "x1": 205,
+                            "y1": 18,
+                            "x2": 520,
+                            "y2": 90
+                        }
+                    },
+                    {
+                        "position": {
+                            "x1": 60,
+                            "y1": 240,
+                            "x2": 140,
+                            "y2": 265
+                        }
+                    },
+                    {
+                        "position": {
+                            "x1": 60,
+                            "y1": 270,
+                            "x2": 140,
+                            "y2": 295
+                        }
+                    },
+                    {
+                        "position": {
+                            "x1": 480,
+                            "y1": 240,
+                            "x2": 600,
+                            "y2": 295
+                        }
+                    }
+                ]
+            },
+            {
+                "text": "Interpret the abbreviations in the Sig:",
+                "type": "INTERPRETATION",
+                "content": [
+                    {
+                        "text": "PO QD = *blank1*",
+                        "type": "short-answer",
+                        "blank1": [
+                            "by mouth daily",
+                            "by mouth each day",
+                            "by mouth a day",
+                            "by mouth each day",
+                            "by mouth everyday",
+                            "by mouth every day",
+                            "by mouth per day",
+                            "orally daily",
+                            "orally each day",
+                            "orally a day",
+                            "orally each day",
+                            "orally everyday",
+                            "orally every day",
+                            "orally per day"
+                        ],
+                        "hint": "PO QD = by mouth every day"
+                    },
+                    {
+                        "text": "The dosing of *blank1* mg after *blank2* days, and tapers at *blank3* mg for *blank4* days.",
+                        "type": "fill-blanks",
+                        "blanks": {
+                            "blank1": {"answer": 300},
+                            "blank2": {"answer": 14},
+                            "blank3": {"answer": 200},
+                            "blank4": {"answer": 7}
+                        },
+                        "hint": "The dosing of 300 mg after 14 days, and tapers at 200 mg for 7 days."
+                    }
+                ]
+            },
+            {
+                "text": "Now calculate how many 100-mg tablets are needed to fulfill the entire regimen.",
+                "type": "CALCULATION",
+                "content": [
+                    {
+                        "text": "Step 1: How many tablets should you dispense for the first 14 days? \n *blank* tablets",
+                        "type": "fill-blanks",
+                        "blanks": {
+                            "blank": {"answer": 42}
+                        },
+                        "hint": "300 mg once daily for 14 days = 300 mg × 14 = 4200 mg total \n Since only 100-mg tablets are available, 4200 mg ÷ 100 mg/tablet = 42 tablets"
+                    },
+                    {
+                        "text": "Step 2: How many tablets should you dispense for the following 7 days? \n *blank* tablets",
+                        "type": "fill-blanks",
+                        "blanks": {
+                            "blank": {"answer": 14}                            
+                        },
+                        "hint": "200 mg once daily for 7 days = 200 mg × 7 = 1400 mg total \n 1400 mg ÷ 100 mg/tablet = 14 tablets"
+                    },
+                    {
+                        "text": "Step 3: Calculate the total tablets to dispense: *blank* tablets",
+                        "type": "fill-blanks",
+                        "blanks": {
+                            "blank": {"answer": 56}
+                        },
+                        "hint": "42 tablets + 14 tablets = 56 tablets"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "number": 30,
+        "text": "A child’s father brings the following prescription to your pharmacy to be filled. How many milliliters of amoxicillin/clavulanate suspension should be dispensed? \n (Note: assume there is no loss of product, and the parent can draw up every last milliliter of suspension)",
+        "path": "images/q3.png",
+        "type": "applied",
+        "answerValue": 100,
+        "answerUnit": "mL",
+        "steps": [
+            {
+                "text": "Click on the prescription image to identify the following:",
+                "type": "INFORMATION",
+                "format": "hotspot",
+                "content": [
+                    {
+                        "text": "Medication",
+                        "position": {
+                            "x1": 265,
+                            "y1": 130,
+                            "x2": 590,
+                            "y2": 160
+                        },
+                        "hint": "Look for the name of the medication. Don't confused with instructions or patient info."
+                    },
+                    {
+                        "text": "Sig (Directions to the patient)",
+                        "position": {
+                            "x1": 290,
+                            "y1": 165,
+                            "x2": 520,
+                            "y2": 190
+                        },
+                        "hint": "Try looking for the section that tells the patient how to take the medication - like how many pills and how often."
+                    },
+                    {
+                        "text": "Dispense quantity (Disp #)",
+                        "position": {
+                            "x1": 345,
+                            "y1": 195,
+                            "x2": 425,
+                            "y2": 220
+                        },
+                        "hint": "Find the quantity the pharmacy is giving the patient."
+                    },
+                    {
+                        "position": {
+                            "x1": 60,
+                            "y1": 70,
+                            "x2": 200,
+                            "y2": 110
+                        }
+                    },
+                    {
+                        "position": {
+                            "x1": 205,
+                            "y1": 18,
+                            "x2": 520,
+                            "y2": 90
+                        }
+                    },
+                    {
+                        "position": {
+                            "x1": 60,
+                            "y1": 240,
+                            "x2": 140,
+                            "y2": 265
+                        }
+                    },
+                    {
+                        "position": {
+                            "x1": 60,
+                            "y1": 270,
+                            "x2": 140,
+                            "y2": 295
+                        }
+                    },
+                    {
+                        "position": {
+                            "x1": 480,
+                            "y1": 240,
+                            "x2": 600,
+                            "y2": 295
+                        }
+                    }
+                ]
+            },
+            {
+                "text": "Interpret the abbreviations in the Sig:",
+                "type": "INTERPRETATION",
+                "content": [
+                    {
+                        "text": "1 tsp = *blank1* teaspoonful = *blank2* mL,",
+                        "type": "fill-blanks",
+                        "blanks": {
+                            "blank1": {"answer": 1},
+                            "blank2": {"answer": 5}
+                        },
+                        "hint": "1 tsp = 1 teaspoonful = 5 mL "
+                        
+                    },
+                    {
+                        "text": "Q 12 hours = *blank1* hours = *blank2* (BID) ",
+                        "type": "short-answer",
+                        "blank1": [
+                            "every 12",
+                            "every twelve",
+                            "each 12",
+                            "each twelve"
+                        ],
+                        "blank2": [
+                            "twice daily",
+                            "twice a day",
+                            "twice every day",
+                            "twice everyday"
+                        ],
+                        "hint": "Q 12 hours = every 12 hours = twice daily"
+                    },
+                    {
+                        "text": "Duration = *blank1* days.",
+                        "type": "fill-blanks",
+                        "blanks": {
+                            "blank1": {"answer": 10}
+                        },
+                        "hint": "Duration = 10 days"
+                    }
+                ]
+            },
+            {
+                "text": "Now  calculate the total volume (in mL) of medication required for the full 10-day course.",
+                "type": "CALCULATION",
+                "content": [
+                    {
+                        "text": "Step 1: Calculate the required volume (in mL) of medication per day: \n Each dose = *blank1* tsp = *blank2* mL \n Doses per day = *blank3* \n Total doses per day = *blank4* mL/day",
+                        "type": "fill-blanks",
+                        "blanks": {
+                            "blank1": {"answer": 1},
+                            "blank2":{"answer": 5},
+                            "blank3":{"answer": 2},
+                            "blank4":{"answer": 10}
+                        },
+                        "hint": "Each dose = 1 tsp = 5 mL \n Doses per day = 2 (every 12 hours) \n Total per day = 5 mL × 2 = 10 mL/day"
+                    },
+                    {
+                        "text": "Step 2: Calculate the total volume (in mL) of medication required for the full 10-day course: \n *blank* mL",
+                        "type": "fill-blanks",
+                        "blanks": {
+                            "blank": {"answer": 100}                            
+                        },
+                        "hint": "10 mL/day × 10 days = 100 mL total "
+                    }                    
+                ]
+            }
+        ]
+    },
+    {
+        "number": 31,
+        "text": "A prescription is to be taken as follows: 1 tablet q.i.d. the first day; 1 tablet t.i.d. the second day; 1 tablet b.i.d. × 5 d; and 1 tablet q.d. thereafter. How many tablets should be dispensed to equal a 30-day supply?",
+        "type": "applied",
+        "answerValue": 40,
+        "answerUnit": "tablets",
+        "steps": [
+            {
+                "text": "Highlight the given information in the question: \n e.g., 1 tablet q.i.d the first day",
+                "type": "INFORMATION",
+                "format": "highlight",
+                "content": [
+                    {
+                        "highlight": "1 tablet q.i.d. the first day",
+                        "feedback": "Yes, that’s one part of the given information."
+                    },
+                    {  
+                        "highlight": "1 tablet t.i.d. the second day",
+                        "feedback": "Yes, that’s one part of the given information."
+                    },
+                    {
+                        "highlight": "1 tablet b.i.d. × 5 d",
+                        "feedback": "Yes, that’s one part of the given information."
+                    },
+                    {
+                        "highlight": "1 tablet q.d. thereafter",
+                        "feedback": "Yes, that’s one part of the given information."
+                    },
+                    {
+                        "highlight": "30-day supply",
+                        "feedback": "Yes, that’s one part of the given information."
+                    }
+                ]
+            },
+            {
+                "text": "Now interpret the dosing instructions:",
+                "type": "INTERPRETATION",
+                "format": "select",
+                "content": [
+                    {
+                        "options":{
+                            "answer1": "1 tablet 4 times a day",
+                            "answer2": "1 tablet 3 times a day",
+                            "answer3": "1 tablet 2 times a day for 5 days",
+                            "answer4": "1 tablet once daily"
+                        }
+                    },
+                    {
+                        "text": "Day 1: *answer1*",
+                        "hint": "For day 1: 1 tablet 4 times a day"
+                    },
+                    {
+                        "text": "Day 2: *answer2*",
+                        "hint": "For day 2: 1 tablet 3 times a day"
+                    },
+                    {
+                        "text": "Days 3-7: *answer3*",
+                        "hint": "For days 3-7: 1 tablet 2 times a day for 5 days"
+                    },
+                    {
+                        "text": "Days 8-30: *answer4*",
+                        "hint": "For days 8-30: 1 tablet once daily for the remaining days."
+                    }
+                ]
+            },
+            {
+                "text": "Now calculate the total number of tablets to dispense:",
+                "type": "CALCULATION",
+                "format": "fill-blanks",
+                "content": [
+                    {
+                        "text": "Step 1: Day 1 - QID \n *blank1* tablet × *blank2* times per day × *blank3* day = *blank4* tablets",
+                        "type": "fill-blanks",
+                        "blanks": {
+                            "blank1": {"answer": 1},
+                            "blank2": {"answer": 4},
+                            "blank3": {"answer": 1},
+                            "blank4": {"answer": 4}
+                        },
+                        "hint": "For step 1:1 tablet × 4 times per day × 1 day = 4 tablets"
+                    },
+                    {
+                        "text": "Step 2: Day 2 - TID \n *blank1* tablet × *blank2* times per day × *blank3* day = *blank4* tablets",
+                        "type": "fill-blanks",
+                        "blanks": {
+                            "blank1": {"answer": 1},
+                            "blank2": {"answer": 3},
+                            "blank3": {"answer": 1},
+                            "blank4": {"answer": 3}                            
+                        },
+                        "hint": "For step 2: 1 tablet × 3 times per day × 1 day = 3 tablets"
+                    },
+                    {
+                        "text": "Step 3: Days 3-7 - BID for 5 days \n *blank1* tablet × *blank2* times per day × *blank3* days = *blank4* tablets",
+                        "type": "fill-blanks",
+                        "blanks": {
+                            "blank1": {"answer": 1},
+                            "blank2": {"answer": 2},
+                            "blank3": {"answer": 5},
+                            "blank4": {"answer": 10}                            
+                        },
+                        "hint": "For step 3: 1 tablet × 2 times per day × 5 days = 10 tablets"
+                    },
+                    {
+                        "text": "Step 4: Days 8-30 - QD for 23 days \n Total days in regimen = *blank1* days \n Days already accounted for = *blank2* (QID) + *blank3* (TID) + *blank4* (BID) = *blank5* days \n Remaining days = 30 - *blank5* = *blank6* days \n 1 tablet × 1 time per day × *blank6* days = *blank7* tablets",
+                        "type": "fill-blanks",
+                        "blanks": {
+                            "blank1": {"answer": 30},
+                            "blank2": {"answer": 1},
+                            "blank3": {"answer": 1},
+                            "blank4": {"answer": 5},
+                            "blank5": {"answer": 7},
+                            "blank6": {"answer": 23},
+                            "blank7": {"answer": 23}                            
+                        },
+                        "hint": "For step 4: Total days in regimen = 30 days \n Days already accounted for = 1 (QID) + 1 (TID) + 5 (BID) = 7 days \n Remaining days = 30 - 7 = 23 days \n 1 tablet × 1 time per day × 23 days = 23 tablets"
+                    },
+                    {
+                        "text": "Step 5: Total Tablets to Dispense: \n *blank1* tablet (Day 1) + *blank2* tablet (Day 2) + *blank3* tablet (Days 3-7) + *blank4* tablet (Days 8-30) = *blank5* tablets",
+                        "type": "fill-blanks",
+                        "blanks": {
+                            "blank1": {"answer": 4},
+                            "blank2": {"answer": 3},
+                            "blank3": {"answer": 10},
+                            "blank4": {"answer": 23},
+                            "blank5": {"answer": 40}
+                        },
+                        "hint": "For step 5: 4 tablets (Day 1) + 3 tablets (Day 2) + 10 tablets (Days 3-7) + 23 tablets (Days 8-30) = 40 tablets"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "number": 32,
+        "text": "You receive a prescription for prednisone 5 mg tablets with the following directions: 20 mg PO QD × 5 days, 15 mg PO QD × 4 days, 10 mg PO QD × 3 days, 5 mg PO QD × 2 days. How many tablets will you dispense?",
+        "type": "applied",
+        "answerValue": 40,
+        "answerUnit": "tablets",
+        "steps": [
+            {
+                "text": "Highlight the given information in the question: \n e.g., prednisone 5 mg tablets",
+                "type": "INFORMATION",
+                "format": "highlight",
+                "content": [
+                    {
+                        "highlight": "prednisone 5 mg tablets",
+                        "feedback": "Yes, that’s one part of the given information."
+                    },
+                    {  
+                        "highlight": "20 mg PO QD × 5 days",
+                        "feedback": "Yes, that’s one part of the given information."
+                    },
+                    {
+                        "highlight": "15 mg PO QD × 4 days",
+                        "feedback": "Yes, that’s one part of the given information."
+                    },
+                    {
+                        "highlight": "10 mg PO QD × 3 days",
+                        "feedback": "Yes, that’s one part of the given information."
+                    },
+                    {
+                        "highlight": "5 mg PO QD × 2 days",
+                        "feedback": "Yes, that’s one part of the given information."
+                    }
+                ]
+            },
+            {
+                "text": "Now interpret abbreviations in the 'Sig':",
+                "type": "INTERPRETATION",
+                "format": "select",
+                "content": [
+                    {
+                        "options":{
+                            "answer1": "by mouth",
+                            "answer2": "per rectum",
+                            "answer3": "once daily",
+                            "answer4": "four times a day"
+                        }
+                    },
+                    {
+                        "text": "PO = *answer1*",
+                        "hint": "For PO: by mouth"
+                    },
+                    {
+                        "text": "QD = *answer3*",
+                        "hint": "For QD: once daily"
+                    }
+                ]
+            },
+            {
+                "text": "Now calculate the total number of tablets to dispense:",
+                "type": "CALCULATION",
+                "format": "fill-blanks",
+                "content": [
+                    {
+                        "text": "Step 1: 20 mg QD × 5 days \n Total Dosage: *blank1* mg × *blank2* days = *blank3* mg \n Since each tablet is 5 mg, number of tablets: *blank3* ÷ *blank4* mg = *blank5* tablets",
+                        "type": "fill-blanks",
+                        "blanks": {
+                            "blank1": {"answer": 20},
+                            "blank2": {"answer": 5},
+                            "blank3": {"answer": 100},
+                            "blank4": {"answer": 5},
+                            "blank5": {"answer": 20}
+                        },
+                        "hint": "For step 1: Total dosage: 20 mg × 5 days = 100 mg \n Since each tablet is 5 mg, number of tablets = 100 mg ÷ 5 mg = 20 tablets"
+                    },
+                    {
+                        "text": "Step 2: 15 mg QD × 4 days \n Total dosage: *blank1* mg × *blank2* days = *blank3* mg \n Since each tablet is 5 mg, number of tablets: *blank3* mg ÷ *blank4* mg = *blank5* tablets ",
+                        "type": "fill-blanks",
+                        "blanks": {
+                            "blank1": {"answer": 15},
+                            "blank2": {"answer": 4},
+                            "blank3": {"answer": 60},
+                            "blank4": {"answer": 5},
+                            "blank5": {"answer": 12}                            
+                        },
+                        "hint": "For step 2: Total dosage: 15 mg × 4 days = 60 mg \n Since each tablet is 5 mg, Number of tablets = 60 mg ÷ 5 mg = 12 tablets"
+                    },
+                    {
+                        "text": "Step 3: 10 mg QD × 3 days \n Total dosage: *blank1* mg × *blank2* days = *blank3* mg \n Since each tablet is 5 mg, number of tablets: *blank3* mg ÷ *blank4* mg = *blank5* tablets",
+                        "type": "fill-blanks",
+                        "blanks": {
+                            "blank1": {"answer": 10},
+                            "blank2": {"answer": 3},
+                            "blank3": {"answer": 30},
+                            "blank4": {"answer": 5},
+                            "blank5":{"answer": 6}                           
+                        },
+                        "hint": "For step 3: Total dosage: 10 mg × 3 days = 30 mg \n Since each tablet is 5 mg, number of tablets: 30 mg ÷ 5 mg = 6 tablets"
+                    },
+                    {
+                        "text": "Step 4: 5 mg QD × 2 days \n Total dosage: *blank1* mg × *blank2* days = *blank3* mg \n Since each tablet is 5 mg, Number of tablets = *blank3* mg ÷ *blank4* mg = *blank5* tablets ",
+                        "type": "fill-blanks",
+                        "blanks": {
+                            "blank1": {"answer": 5},
+                            "blank2": {"answer": 2},
+                            "blank3": {"answer": 10},
+                            "blank4": {"answer": 5},
+                            "blank5": {"answer": 2}                           
+                        },
+                        "hint": "For step 4: Total dosage: 5 mg × 2 days = 10 mg \n Since each tablet is 5 mg, Number of tablets = 10 mg ÷ 5 mg = 2 tablets"
+                    },
+                    {
+                        "text": "Step 5: Total Tablets to Dispense: \n *blank1* tablet + *blank2* tablet + *blank3* tablet + *blank4* tablet = *blank5* tablets",
+                        "type": "fill-blanks",
+                        "blanks": {
+                            "blank1": {"answer": 20},
+                            "blank2": {"answer": 12},
+                            "blank3": {"answer": 6},
+                            "blank4": {"answer": 2},
+                            "blank5": {"answer": 40}
+                        },
+                        "hint": "For step 5: Total tablets to be dispensed = 20 Tab + 12 Tab + 6 Tab + 2 Tab = 40 tablets"
+                    }
+                ]
+            }
+        ]
+    }
+]

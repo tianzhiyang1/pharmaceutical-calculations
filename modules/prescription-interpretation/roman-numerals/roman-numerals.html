@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roman Numeral Memory Game</title>
+    <link rel="stylesheet" href="../../../master.css">
+    <link rel="stylesheet" href="roman-numerals.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Roman Numeral Memory Game</h1>
+        </header>
+        
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+        
+        <div class="stats">
+            <div class="stat-item">
+                <div class="stat-value" id="questionsCompleted">0</div>
+                <div class="stat-label">Pairs Matched</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value" id="questionsRemaining">10</div> <!-- Default value -->
+                <div class="stat-label">Pairs Remaining</div>
+            </div>
+        </div>
+        
+        <!-- Game Card -->
+        <div class="card" id="game-card">
+            <!-- Heads-Up Display -->
+            <div id="moves-container" class="game-stat">
+                Moves: <span id="moves" class="game-stat-value">0</span>
+            </div>
+            
+            <!-- Canvas for Game Drawing -->
+            <canvas id="gameCanvas"></canvas>
+            
+            <!-- Start Game Screen -->
+            <div id="start-game" class="game-overlay">
+                <div class="game-description">
+                    <p><strong>How to Play:</strong></p>
+                    <ol>
+                        <li>Half of the cards show numbers (1-100).</li>
+                        <li>The other half show their Roman numeral equivalents (I-C).</li>
+                        <li>Click on any card first - it will turn dark blue.</li>
+                        <li>Then click on its matching pair (number with Roman numeral).</li>
+                        <li>Correct matches turn green and score points!</li>
+                        <li>Incorrect pairs flash red briefly.</li>
+                        <li>Match all pairs to finish.</li>
+                    </ol>
+                </div>
+                <div class="button-container">
+                    <button id="start-button" class="button-accent">Start Now!</button>
+                </div>
+            </div>
+            
+            <!-- Game Over Screen -->
+            <div id="game-over" class="game-overlay" style="display: none;">
+                <h1>All Pairs Matched!</h1>
+                <p>Total moves: <span id="final-moves" class="game-stat-value">0</span></p>
+                <div class="button-container">
+                    <button id="restart-button" class="button-accent">Play Again</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="clear-progress-container">
+        <p>Want to see the tutorial again?
+            <a href="../index.html" class="clear-data-link">Go back to tutorial</a>
+        </p>
+    </div>
+    
+    <script src="roman-numerals.js"></script>
+</body>
+</html> 

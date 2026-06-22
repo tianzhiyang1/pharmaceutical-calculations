@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specific Gravity; Enlarging and Reducing Formulas Practice</title>
+    <link rel="stylesheet" href="../../master.css">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Specific Gravity; Enlarging and Reducing Formulas Practice</h1>
+        </header>
+
+        <div id="questionNavigator" style="text-align: right; margin-bottom: 10px;"></div>
+
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+
+        <div class="stats">
+            <div class="stat-item">
+                <div class="stat-value" id="questionsCompleted">0</div>
+                <div class="stat-label">Completed</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value" id="questionsRemaining">0</div>
+                <div class="stat-label">Remaining</div>
+            </div>
+        </div>
+
+        <!-- Filter Options -->
+        <div class="filter-container">
+            <div class="filter-title">Choose what you want to practice:</div>
+            <div class="filter-options">
+                <label class="filter-option">
+                    <input type="checkbox" id="specificGravityFilter" checked>
+                    <span class="filter-label">Specific Gravity</span>
+                </label>
+                <label class="filter-option">
+                    <input type="checkbox" id="enlargingReducingFilter" checked>
+                    <span class="filter-label">Enlarging and Reducing Formulas</span>
+                </label>
+            </div>
+        </div>
+
+        <!-- Question Card -->
+        <div class="card" id="questionCard">
+            <div class="question-container">
+                <div class="question" id="questionText"></div>
+                <div id="answerContainer" class="answer-container">
+                    <!-- Answer inputs will be dynamically created here -->
+                </div>
+                <div class="feedback" id="answerFeedback"></div>
+            </div>
+
+            <div class="button-row">
+                <button id="checkAnswer">Check Answer</button>
+                <button id="showStepsBtn" class="button-accent">Step-by-Step Guide</button>
+                <button id="prevQuestion" class="button-secondary">Previous Question</button>
+                <button id="nextQuestion" class="button-secondary">Next Question</button>
+            </div>
+
+            <div class="steps-container" id="stepsContainer">
+                <h3>Step-by-Step Solution</h3>
+                <div id="steps"></div>
+            </div>
+        </div>
+
+        <!-- Results Card (hidden by default) -->
+        <div class="card" id="results" style="display: none;">
+            <div class="results-title">Practice Completed!</div>
+            <div class="results-message">You've successfully completed all practice questions.</div>
+            <div class="button-row">
+                <button id="restartBtn">Practice Again</button>
+            </div>
+        </div>
+
+        <!-- Reference section with collapsible cards -->
+        <div class="reference-container">
+            <!-- Topic: Density and Specific Gravity -->
+            <div class="reference-card">
+                <div class="reference-header" id="densityHeader">
+                    <h3>Density and Specific Gravity</h3>
+                    <span class="expand-icon">+</span>
+                </div>
+                <div class="reference-content" id="densityContent">
+                    <p><strong>Conversion Tips:</strong></p>
+                    <ul>
+                        <li><strong>Volume to Weight:</strong> Weight (g) = Volume (mL) × Specific Gravity</li>
+                        <li><strong>Weight to Volume:</strong> Volume (mL) = Weight (g) ÷ Specific Gravity</li>
+                        <li><strong>Finding Specific Gravity:</strong> SG = Weight (g) ÷ Volume (mL)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Topic: Enlarging and Reducing Formulas -->
+            <div class="reference-card">
+                <div class="reference-header" id="formulaScalingHeader">
+                    <h3>Enlarging and Reducing Formulas</h3>
+                    <span class="expand-icon">+</span>
+                </div>
+                <div class="reference-content" id="formulaScalingContent">
+                    <p><strong>Steps for enlarging or reducing formulas:</strong></p>
+                    <p><strong>Step 1: Calculate the Conversion Factor</strong></p>
+                    <div class="horizontal-operation">
+                        <span>Conversion Factor = </span>
+                        <div class="fraction">
+                            <div class="fraction-numerator">Desired Quantity</div>
+                            <div class="fraction-denominator">Original Quantity</div>
+                        </div>
+                    </div>
+                    
+                    <p><strong>Step 2: Apply the Conversion Factor to Each Ingredient</strong></p>
+                    <p>New Amount = Original Amount × Conversion Factor</p>
+                    
+                </div>
+            </div>
+        </div>
+
+            <div class="clear-progress-container">
+                <p>Want to see your question history? 
+                    <a href="#" id="viewHistoryBtn" class="clear-data-link">View history</a>
+                </p>
+                <p>Want to clear your saved progress data?
+                    <a href="#" id="clearProgressBtn" class="clear-data-link">Clear saved data</a>
+                </p>
+                <p>Want to see the tutorial again?
+                    <a href="index.html" class="clear-data-link">Go back to tutorial</a>
+                </p>
+            </div>
+        </div>
+
+        <!-- History Modal -->
+        <div id="historyModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Question History</h2>
+                    <span class="close-modal">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <p class="history-description">
+                        Click on any green button to view the solution to a completed question. Gray buttons represent questions that have not been completed yet.
+                    </p>
+                    <div class="history-list" id="historyList">
+                        <!-- Question buttons will be dynamically inserted here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Solution Modal -->
+        <div id="solutionModal" class="modal">
+            <div class="modal-content solution-modal-content">
+                <div class="modal-header">
+                    <h2>Solution</h2>
+                    <span class="close-solution-modal">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <div id="solutionQuestion" class="solution-question"></div>
+                    <div class="steps-container solution-steps" id="solutionSteps">
+                        <!-- Steps will be inserted here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <script type="module" src="main.js"></script>
+
+
+    </body>
+    </html>

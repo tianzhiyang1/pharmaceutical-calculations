@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutritional Dosing Practice</title>
+    <link rel="stylesheet" href="../../master.css">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Nutritional Dosing Practice</h1>
+        </header>
+
+        <div id="questionNavigator" style="text-align: right; margin-bottom: 10px;"></div>
+
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+
+        <div class="stats">
+            <div class="stat-item">
+                <div class="stat-value" id="questionsCompleted">0</div>
+                <div class="stat-label">Completed</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value" id="questionsRemaining">0</div>
+                <div class="stat-label">Remaining</div>
+            </div>
+        </div>
+
+        <!-- Filter Options -->
+        <div class="filter-container">
+            <div class="filter-title">Choose what you want to practice:</div>
+            <div class="filter-options">
+                <label class="filter-option">
+                    <input type="checkbox" id="beeFilter" checked>
+                    <span class="filter-label">BEE and TDE Calculations</span>
+                </label>
+                <label class="filter-option">
+                    <input type="checkbox" id="caloricFilter" checked>
+                    <span class="filter-label">Caloric Conversion Questions</span>
+                </label>
+                <label class="filter-option">
+                    <input type="checkbox" id="additionalFilter" checked>
+                    <span class="filter-label">Additional Questions</span>
+                </label>
+            </div>
+        </div>
+
+        <!-- Question Card -->
+        <div class="card" id="questionCard">
+            <div class="question-container">
+                <div class="question" id="questionText"></div>
+                <div class="answer-section">
+                    <div id="answerContainer" class="answer-container">
+                        <!-- Answer inputs will be dynamically created here -->
+                    </div>
+                    <div id="answerFeedback" class="feedback"></div>
+                </div>
+            </div>
+
+            <div class="button-row">
+                <button id="checkAnswer">Check Answer</button>
+                <button id="showStepsBtn" class="button-accent">Step-by-Step Guide</button>
+                <button id="prevQuestion" class="button-secondary">Previous Question</button>
+                <button id="nextQuestion" class="button-secondary">Next Question</button>
+            </div>
+
+            <div class="steps-container" id="stepsContainer">
+                <h3>Step-by-Step Solution</h3>
+                <div id="steps"></div>
+            </div>
+        </div>
+
+        <!-- Results Card (hidden by default) -->
+        <div class="card" id="results" style="display: none;">
+            <div class="results-title">Practice Completed!</div>
+            <div class="results-message">You've successfully completed all practice questions.</div>
+            <div class="button-row">
+                <button id="restartBtn">Practice Again</button>
+            </div>
+        </div>
+
+        <!-- Reference section with collapsible cards -->
+        <div class="reference-container">
+            <!-- BEE and TDE Calculations Reference Card -->
+            <div class="reference-card">
+                <div class="reference-header" id="beeStepsHeader">
+                    <h3>BEE and TDE Calculations</h3>
+                    <span class="expand-icon">+</span>
+                </div>
+                <div class="reference-content" id="beeStepsContent">
+                    <div class="horizontal-operation" style="font-weight: bold; justify-content: center;">
+                        <span>M: BEE = 66 + (13.7 × W) + (5 × H) – (6.8 × A)</span>
+                    </div>
+                    
+                    <div class="horizontal-operation" style="font-weight: bold; justify-content: center;">
+                        <span>F: BEE = 655 + (9.6 × W) + (1.8 × H) – (4.7 × A)</span>
+                    </div>
+                    
+                    <div class="horizontal-operation" style="font-weight: bold; justify-content: center;">
+                        <span>TDE = BEE × activity factor × stress factor</span>
+                    </div>
+
+                    <p><strong>Step 1: Gather patient information and convert units if necessary</strong></p>
+                    <ul>
+                        <li>Age (in years)</li>
+                        <li>Weight (in kg)</li>
+                        <li>Height (in cm)</li>
+                        <li>Sex (male or female)</li>
+                    </ul>
+                    
+                    <p><strong>Step 2: Calculate BEE using the Harris-Benedict equation</strong></p>
+                    <ul>
+                        <li>Use the appropriate formula based on sex</li>
+                        <li>W = weight (kg), H = height (cm), A = age (years)</li>
+                        <li>BEE is expressed in kcal/day</li>
+                    </ul>
+                    
+                    <p><strong>Step 3: Apply activity and stress factors if needed</strong></p>
+                    <ul>
+                        <li>Activity factors: Confined to bed (1.2), Ambulatory (1.3)</li>
+                        <li>Stress factors: Non-stressed (1.0), Surgery (1.2), Infection (1.4–1.6), Trauma (1.3–1.5), Burns (1.5–2.1)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Caloric Conversion Questions Reference Card -->
+            <div class="reference-card">
+                <div class="reference-header" id="caloricHeader">
+                    <h3>Caloric Conversion Questions</h3>
+                    <span class="expand-icon">+</span>
+                </div>
+                <div class="reference-content" id="caloricContent">
+                    <p><strong>Step 1: Know the caloric conversion values</strong></p>
+                    <ul>
+                        <li>Carbohydrates: 4 kcal/g (enteral), 3.4 kcal/g (parenteral)</li>
+                        <li>Proteins: 4 kcal/g (both enteral and parenteral)</li>
+                        <li>Fats: 9 kcal/g (enteral), 10%: 1.1 kcal/mL, 20%: 2 kcal/mL, 30%: 3 kcal/mL (parenteral)</li>
+                    </ul>
+                    
+                    <p><strong>Step 2: Set up the ratio and proportion and solve for x</strong></p>
+                    <div class="horizontal-operation">
+                        <div class="fraction">
+                            <div class="fraction-numerator">kcal per g or mL</div>
+                            <div class="fraction-denominator">1 g or mL</div>
+                        </div>
+                        <span> = </span>
+                        <div class="fraction">
+                            <div class="fraction-numerator">x kcal or target kcal</div>
+                            <div class="fraction-denominator">given amount or x amount</div>
+                        </div>
+                    </div>
+                    <p><strong>Step 3 (if needed):</strong> Add kcal from all macronutrients to get total energy.</p>
+                    <p>Total kcal = kcal<sub>carbs</sub> + kcal<sub>protein</sub> + kcal<sub>fat</sub></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="clear-progress-container">
+            <p>Want to see your question history? 
+                <a href="#" id="viewHistoryBtn" class="clear-data-link">View history</a>
+            </p>
+            <p>Want to clear your saved progress data?
+                <a href="#" id="clearProgressBtn" class="clear-data-link">Clear saved data</a>
+            </p>
+            <p>Want to see the tutorial again?
+                <a href="index.html" class="clear-data-link">Go back to tutorial</a>
+            </p>
+        </div>
+    </div>
+
+    <!-- History Modal -->
+    <div id="historyModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Question History</h2>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <p class="history-description">
+                    Click on any green button to view the solution to a completed question. Gray buttons represent questions that have not been completed yet.
+                </p>
+                <div class="history-list" id="historyList">
+                    <!-- Question buttons will be dynamically inserted here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Solution Modal -->
+    <div id="solutionModal" class="modal">
+        <div class="modal-content solution-modal-content">
+            <div class="modal-header">
+                <h2>Solution</h2>
+                <span class="close-solution-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div id="solutionQuestion" class="solution-question"></div>
+                <div class="steps-container solution-steps" id="solutionSteps">
+                    <!-- Steps will be inserted here -->
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script type="module" src="main.js"></script>
+</body>
+</html>

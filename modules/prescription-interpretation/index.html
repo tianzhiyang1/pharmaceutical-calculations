@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prescription Interpretation</title>
+  <link rel="stylesheet" href="../../../master.css">
+</head>
+<body>
+  <div class="index-container">
+    <header>
+      <h1>Pharmacy Calculations:<br>Prescription Interpretation</h1>
+    </header>
+
+    <div class="card overview-card">
+      <h2>Overview</h2>
+      <p>There are two sections in this module:</p>
+
+      <div class="method-list">
+        <div class="method-item">
+          <h3 id="prescriptionInterpretationTitle" class="method-title">1. Prescription Interpretation</h3>
+          <p class="tutorial-notice">Click the title to view the tutorial</p>
+          <ul>
+            <li>Define prescription and medication order</li>
+            <li>List components of a typical prescription</li>
+            <li>Interpret abbreviations and symbols used on prescriptions and medication orders</li>
+          </ul>
+        </div>
+
+        <div class="method-item">
+          <h3 id="romanNumeralsTitle" class="method-title">2. Roman Numerals</h3>
+          <p class="tutorial-notice">Click the title to view the tutorial</p>
+          <ul>
+            <li>Describe the differences between the Arabic and Roman systems of notations</li>
+            <li>Recognize common roman numbers</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="button-container">
+        <!-- Practice page is now a sibling of index.html, not nested. -->
+        <a href="interpretation.html" class="practice-btn">Practice Prescription Interpretation</a>
+      </div>
+      <div class="button-container">
+        <a href="abbreviation/abbreviation.html" class="practice-btn">🎈 Abbreviation Game 🎈</a>
+        <a href="roman-numerals/roman-numerals.html" class="practice-btn">🎮 Roman Numeral Game 🎮</a>
+      </div>
+    </div>
+
+    <!-- Prescription Interpretation Tutorial -->
+    <div class="card tutorial-card" id="prescriptionInterpretationTutorial" style="display: none;">
+      <h2>Tutorial - Components of a prescription</h2>
+      <div class="tutorial-content">
+        <div class="tutorial-section">
+          <ol>
+            <li><strong>Prescriber information</strong></li>
+            <li><strong>Patient information (name &amp; address)</strong></li>
+            <li><strong>Date prescription was written</strong></li>
+            <li><strong>Superscription symbol</strong>: <em>Rx</em>
+              <p>Literally means "Take thou, or you take"</p>
+              <p><em>This may or may not appear on the prescription</em></p>
+            </li>
+            <li><strong>Inscription</strong>: Medication (Name &amp; strength)
+              <p>Also called the body of the prescription</p>
+            </li>
+            <li><strong>Subscription:</strong> Dispensing instructions to the pharmacist
+              <p><em>Usually includes quantity to be dispensed</em></p>
+              <p>eg. amount of tablets, capsules, suppositories, grams, ml, fluidounces, etc.</p>
+              <p>Examples:</p>
+              <ul>
+                <li>No.</li>
+                <li>M ft tabs No. CXX</li>
+                <li>M ft ungt Disp 5 g</li>
+                <li>Disp caps No. xl (or XL)</li>
+                <li>Disp. tabs # C</li>
+              </ul>
+            </li>
+            <li><strong>Signa or Sig</strong>: Directions to the patient
+              <p><em>"Signa" or "Sig" means "Mark thou."</em></p>
+              <p>Prescriber indicates the directions for the patient's use of the medication</p>
+              <p><em>Commonly are written using abbreviated forms of English or Latin terms,</em></p>
+              <p><em>new terms made up by each prescriber, or a combination of each.</em></p>
+            </li>
+            <li><strong>Special instruction</strong>
+              <p>Include refill instructions, drug storage, etc</p>
+            </li>
+            <li><strong>Prescriber's signature and identification</strong>
+              <p>Include DEA # &amp; license #</p>
+            </li>
+          </ol>
+        </div>
+
+        <div class="back-to-top">
+          <button id="backToOverviewBtn" class="back-btn">← Back to Overview</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Roman Numerals Tutorial -->
+    <div class="card tutorial-card" id="romanNumeralsTutorial" style="display: none;">
+      <h2>Tutorial - Number systems (Arabic and Roman)</h2>
+      <div class="tutorial-content">
+        <div class="tutorial-section">
+          <h3>ARABIC NUMERALS: A decimal system; Ten figures: zero and 9 digits</h3>
+          <p>Rules:</p>
+          <ol>
+            <li>Different values are assigned to the digits according to the place they occupy in a row.
+              <p>Example: 123, 132, 213, 231, 321, 312</p>
+            </li>
+            <li>The value of a digit is increased tenfold each time it moves one place to left
+              <p>Example: 9, 90, 900, 9000</p>
+            </li>
+            <li>The value of a digit is decreased by one-tenth each time it moves one place to the right.
+              <p>Example: 50000, 5000, 500, 50</p>
+            </li>
+          </ol>
+        </div>
+
+        <div class="section-divider"></div>
+
+        <div class="tutorial-section">
+          <h3>ROMAN NUMERALS: Positional notation</h3>
+          <p>Rules:</p>
+          <ol>
+            <li>Roman numerals merely record quantities; they are of no use in computation</li>
+            <li>Eight letters of fixed values used to express quantities in the Roman system
+              <div class="example-calculation">
+                <table class="roman-table">
+                  <tr><th>Roman Letters</th><th>Value</th></tr>
+                  <tr><td>ss</td><td>1/2</td></tr>
+                  <tr><td>I or i</td><td>1</td></tr>
+                  <tr><td>V or v</td><td>5</td></tr>
+                  <tr><td>X or x</td><td>10</td></tr>
+                  <tr><td>L or l</td><td>50</td></tr>
+                  <tr><td>C or c</td><td>100</td></tr>
+                  <tr><td>D or d</td><td>500</td></tr>
+                  <tr><td>M or m</td><td>1000</td></tr>
+                </table>
+                <p>Terminal i sometimes becomes a j</p>
+              </div>
+            </li>
+            <li>When combining the symbols
+              <ol>
+                <li>When the second letter is equal to or less than the first letter, their values are added
+                  <p>Example: LX = 50 + 10 = 60</p>
+                </li>
+                <li>When the second letter has a value greater than the first, the smaller is subtracted from the larger
+                  <p>Example: XL = 50 - 10 = 40</p>
+                </li>
+              </ol>
+            </li>
+            <!--
+              NOTE: The original index.html had additional rules in this list (about
+              repetition, the "no four-in-a-row" exception, etc.) that I couldn't
+              fully retrieve from the project knowledge in this turn. The two rules
+              above match the source verbatim. If you want the remaining rules
+              ported, paste them into me and I'll add them — I'd rather flag the
+              gap than invent content.
+            -->
+          </ol>
+        </div>
+
+        <div class="back-to-top">
+          <button id="backToOverviewBtn2" class="back-btn">← Back to Overview</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Tutorial show/hide toggles. Ported verbatim from the old index.html.
+    document.addEventListener('DOMContentLoaded', () => {
+      const prescriptionInterpretationTitle = document.getElementById('prescriptionInterpretationTitle');
+      const romanNumeralsTitle = document.getElementById('romanNumeralsTitle');
+      const prescriptionInterpretationTutorial = document.getElementById('prescriptionInterpretationTutorial');
+      const romanNumeralsTutorial = document.getElementById('romanNumeralsTutorial');
+      const backToOverviewBtn = document.getElementById('backToOverviewBtn');
+      const backToOverviewBtn2 = document.getElementById('backToOverviewBtn2');
+
+      prescriptionInterpretationTitle.addEventListener('click', () => {
+        prescriptionInterpretationTutorial.style.display = 'block';
+        romanNumeralsTutorial.style.display = 'none';
+        prescriptionInterpretationTitle.classList.add('active');
+        romanNumeralsTitle.classList.remove('active');
+        prescriptionInterpretationTutorial.scrollIntoView({ behavior: 'smooth' });
+      });
+
+      romanNumeralsTitle.addEventListener('click', () => {
+        romanNumeralsTutorial.style.display = 'block';
+        prescriptionInterpretationTutorial.style.display = 'none';
+        romanNumeralsTitle.classList.add('active');
+        prescriptionInterpretationTitle.classList.remove('active');
+        romanNumeralsTutorial.scrollIntoView({ behavior: 'smooth' });
+      });
+
+      backToOverviewBtn.addEventListener('click', () => {
+        prescriptionInterpretationTutorial.style.display = 'none';
+        prescriptionInterpretationTitle.classList.remove('active');
+        document.querySelector('.overview-card').scrollIntoView({ behavior: 'smooth' });
+      });
+
+      backToOverviewBtn2.addEventListener('click', () => {
+        romanNumeralsTutorial.style.display = 'none';
+        romanNumeralsTitle.classList.remove('active');
+        document.querySelector('.overview-card').scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+</body>
+</html>

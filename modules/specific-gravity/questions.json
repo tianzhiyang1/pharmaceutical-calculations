@@ -1,0 +1,1833 @@
+{
+    "questions": [
+        {
+            "number": 1,
+            "tag": "gravity",
+            "question": "A pharmacist dispenses 120 mL of a cough syrup with a specific gravity of 1.15. What is the weight in grams of the syrup?",
+            "answerValue": [138],
+            "answerUnit": ["g"],
+            "rounding": false,
+            "steps": [
+                {
+                    "text": "Convert from volume to weight using the formula:",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "weight"
+                        },
+                        {
+                            "type": "text",
+                            "value": "volume"
+                        },
+                        {
+                            "type": "text",
+                            "value": "SG"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1.15,
+                            "unit": ""
+                        },
+                        {
+                            "type": "input",
+                            "answer": 120,
+                            "unit": "mL"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 138,
+                            "unit": "g"
+                        }
+                    ],
+                    "operators1": ["=", "×", "=", "×", "="],
+                    "hint": "The formula to convert volume to weight is: weight = volume × SG. The specific gravity is 1.15, and volume is 120 mL, so the weight of the syrup is 120 mL × 1.15 = 138 g."
+                }
+            ]
+        },
+        {
+            "number": 2,
+            "tag": "enlarging",
+            "question": "You have a prescription to compound 180 sertraline capsules. The following formula yields 50 sertraline capsules. Calculate the quantity of sertraline needed to prepare 180 capsules.<br><br>Original formula:<br>",
+            "tableHeaders": ["Ingredient", "Amount per 50 sertraline capsules"],
+            "tableRows": [
+                [
+                    [{"type": "text", "value": "Sertraline Hydrochloride"}],
+                    [{"type": "text", "value": "350 mg"}]
+                ],
+                [
+                    [{"type": "text", "value": "Silica Gel"}],
+                    [{"type": "text", "value": "8 g"}]
+                ],
+                [
+                    [{"type": "text", "value": "Calcium Citrate"}],
+                    [{"type": "text", "value": "6 g"}]
+                ]
+            ],
+            "answerValue": [1260],
+            "answerUnit": ["mg"],
+            "rounding": false,
+            "steps": [
+                {
+                    "text": "Determine the conversion factor",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Conversion factor"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": "Desired quantity",
+                            "denominator": "Original quantity"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 180,
+                                "unit": "capsules"
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": 50,
+                                "unit": "capsules"
+                            }
+                        },
+                        {
+                            "type": "input",
+                            "answer": 3.6,
+                            "unit": ""
+                        }
+                    ],
+                    "operators1": ["=", "=", "="],
+                    "hint": "The conversion factor is the number of capsules in the original formula / the number of capsules in the new formula. The original formula yields 50 capsules, and the new formula requires 180 capsules, so the conversion factor is 180 ÷ 50 = 3.6."
+                },
+                {
+                    "text": "Multiply each ingredient by the conversion factor",
+                    "type": "TABLE",
+                    "tableHeaders": ["Ingredient", "Original Amount", "Calculation", "New Amount"],
+                    "tableRows": [
+                        [
+                            [{"type": "text", "value": "Sertraline Hydrochloride"}],
+                            [{"type": "input", "answer": 350, "unit": "mg"}],
+                            [{"type": "input", "answer": 350, "unit": "mg"}, {"type": "text", "value": " × "}, {"type": "input", "answer": 3.6, "unit": ""}],
+                            [{"type": "input", "answer": 1260, "unit": "mg"}]
+                        ]
+                    ],
+                    "hint": "From the question, the original amount of sertraline is 350 mg. Multiplying by the conversion factor of 3.6 gives the new amount of sertraline needed: 350 mg × 3.6 = 1260 mg."
+                }
+            ]
+        },
+        {
+            "number": 3,
+            "tag": "enlarging",
+            "question": "You have a prescription to compound 300 Vitamin B-12 capsules. The following formula yields 35 Vitamin B-12 capsules. Calculate the quantity of each ingredient needed to prepare 300 capsules. Round to the nearest whole number. <br><br>Original formula:<br>",
+            "tableHeaders": ["Ingredient", "Amount per 35 capsules"],
+            "tableRows": [
+                [
+                    [{"type": "text", "value": "Cyanocobalamin"}],
+                    [{"type": "text", "value": "250 mcg"}]
+                ],
+                [
+                    [{"type": "text", "value": "Soybean Oil"}],
+                    [{"type": "text", "value": "1050 mg"}]
+                ],
+                [
+                    [{"type": "text", "value": "Purified Water"}],
+                    [{"type": "text", "value": "1 g"}]
+                ]
+            ],
+            "answerValue": [2143, 9000, 8571],
+            "answerUnit": ["mcg of Cyanocobalamin", "mg of Soybean Oil", "mg of Purified Water"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Determine the conversion factor",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Conversion factor"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": "Desired quantity",
+                            "denominator": "Original quantity"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 300,
+                                "unit": "capsules"
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": 35,
+                                "unit": "capsules"
+                            }
+                        },
+                        {
+                            "type": "input",
+                            "answer": 8.5714,
+                            "unit": "(round to 4 decimal places)"
+                        }
+                    ],
+                    "operators1": ["=", "=", "="],
+                    "hint": "The conversion factor is the number of capsules in the original formula / the number of capsules in the new formula. The original formula yields 35 capsules, and the new formula requires 300 capsules, so the conversion factor is 300 ÷ 35 = 8.5714."
+                },
+                {
+                    "text": "Multiply each ingredient by the conversion factor",
+                    "type": "TABLE",
+                    "tableHeaders": ["Ingredient", "Original Amount", "Calculation", "New Amount"],
+                    "tableRows": [
+                        [
+                            [{"type": "text", "value": "Cyanocobalamin"}],
+                            [{"type": "input", "answer": 250, "unit": "mcg"}],
+                            [{"type": "input", "answer": 250, "unit": "mcg"}, {"type": "text", "value": " × "}, {"type": "input", "answer": 8.5714, "unit": ""}],
+                            [{"type": "input", "answer": 2143, "unit": "mcg"}]
+                        ],
+                        [
+                            [{"type": "text", "value": "Soybean Oil"}],
+                            [{"type": "input", "answer": 1050, "unit": "mg"}],
+                            [{"type": "input", "answer": 1050, "unit": "mg"}, {"type": "text", "value": " × "}, {"type": "input", "answer": 8.5714, "unit": ""}],
+                            [{"type": "input", "answer": 9000, "unit": "mg"}]
+                        ],
+                        [
+                            [{"type": "text", "value": "Purified Water"}],
+                            [{"type": "input", "answer": 1, "unit": "g"}],
+                            [{"type": "input", "answer": 1, "unit": "g"}, {"type": "text", "value": " × "}, {"type": "input", "answer": 8.5714, "unit": ""}],
+                            [{"type": "input", "answer": 8571, "unit": "mg"}]
+                        ]
+                    ],
+                    "hint": "From the question, the original amount of cyanocobalamin is 100 mcg. Multiplying by the conversion factor of 8.5714 gives the new amount of cyanocobalamin needed: 100 mcg × 8.5714 = 857.14 mcg. <br>From the question, the original amount of soybean oil is 1050 mg. Multiplying by the conversion factor of 8.5714 (although it is better to use the original ratio of 300/35 since 1050 can be divided by 35) gives the new amount of soybean oil needed: 1050 mg × (300/35) = 9000 mg. <br>From the question, the original amount of purified water is 1 g. Multiplying by the conversion factor of 8.5714 gives the new amount of purified water needed: 1 g × 8.5714 = 8571 mg."
+                }
+            ]
+        },
+        {
+            "number": 4,
+            "tag": "gravity",
+            "question": "A prescription requires 10 g of castor oil (SG = 0.961). Convert this quantity to milliliters. Round to the nearest hundredth.",
+            "answerValue": [10.41],
+            "answerUnit": ["mL"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Convert from weight to volume using the formula:",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "volume" },
+                        { "type": "text", "value": "weight" },
+                        { "type": "text", "value": "SG" },
+                        { "type": "input", "answer": 10, "unit": "g" },
+                        { "type": "input", "answer": 0.961, "unit": "" },
+                        { "type": "input", "answer": 10.41, "unit": "mL" }
+                    ],
+                    "operators1": ["=", "÷", "=", "÷", "="],
+                    "hint": "The formula to convert weight to volume is: volume = weight ÷ SG. The specific gravity is 0.961, and weight is 10 g, so the volume of castor oil is 10 g ÷ 0.961 = 10.41 mL (rounded to the nearest hundredth)."
+                }
+            ]
+        },
+        {
+            "number": 5,
+            "tag": "gravity",
+            "question": "What is the weight in kilograms of 2 liters of a glucose solution with a specific gravity of 1.22?",
+            "answerValue": [2.44],
+            "answerUnit": ["kg"],
+            "rounding": false,
+            "steps": [
+                {
+                    "text": "Convert the volume from liters to milliliters:",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "Volume (mL)" },
+                        { "type": "text", "value": "Volume (L)" },
+                        { "type": "input", "answer": 2, "unit": "L" },
+                        { "type": "text", "value": "× 1000" },
+                        { "type": "input", "answer": 2000, "unit": "mL" }
+                    ],
+                    "operators1": ["=", "=", "×", "="],
+                    "hint": "1 L = 1000 mL, so 2 L × 1000 = 2000 mL."
+                },
+                {
+                    "text": "Convert from volume to weight using the formula:",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "Weight (g)" },
+                        { "type": "text", "value": "Volume (mL)" },
+                        { "type": "text", "value": "SG" },
+                        { "type": "input", "answer": 2000, "unit": "mL" },
+                        { "type": "input", "answer": 1.22, "unit": "" },
+                        { "type": "input", "answer": 2440, "unit": "g" }
+                    ],
+                    "operators1": ["=", "×", "=", "×", "="],
+                    "hint": "The formula to convert volume to weight is: weight = volume × SG. The specific gravity is 1.22, and volume is 2000 mL, so the weight is 2000 mL × 1.22 = 2440 g."
+                },
+                {
+                    "text": "Convert the weight from grams to kilograms:",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "Weight (kg)" },
+                        { "type": "text", "value": "Weight (g)" },
+                        { "type": "input", "answer": 2440, "unit": "g" },
+                        { "type": "text", "value": "÷ 1000" },
+                        { "type": "input", "answer": 2.44, "unit": "kg" }
+                    ],
+                    "operators1": ["=", "=", "÷", "="],
+                    "hint": "1 kg = 1000 g, so 2440 g ÷ 1000 = 2.44 kg."
+                }
+            ]
+        },
+        {
+            "number": 6,
+            "tag": "gravity",
+            "question": "A patient is given 300 mL of a contrast agent with SG = 1.03 before an MRI. What is the weight in grams?",
+            "answerValue": [309],
+            "answerUnit": ["g"],
+            "rounding": false,
+            "steps": [
+                {
+                    "text": "Convert from volume to weight using the formula:",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "Weight (g)" },
+                        { "type": "text", "value": "Volume (mL)" },
+                        { "type": "text", "value": "SG" },
+                        { "type": "input", "answer": 300, "unit": "mL" },
+                        { "type": "input", "answer": 1.03, "unit": "" },
+                        { "type": "input", "answer": 309, "unit": "g" }
+                    ],
+                    "operators1": ["=", "×", "=", "×", "="],
+                    "hint": "The formula to convert volume to weight is: weight = volume × SG. The specific gravity is 1.03, and volume is 300 mL, so the weight is 300 mL × 1.03 = 309 g."
+                }
+            ]
+        },
+        {
+            "number": 7,
+            "tag": "gravity",
+            "question": "A lotion requires 250 mL of a solution with SG = 0.95. What is the weight in grams of this solution? Round final answer to the nearest tenth.",
+            "answerValue": [237.5],
+            "answerUnit": ["g"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Convert from volume to weight using the formula:",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "Weight (g)" },
+                        { "type": "text", "value": "Volume (mL)" },
+                        { "type": "text", "value": "SG" },
+                        { "type": "input", "answer": 250, "unit": "mL" },
+                        { "type": "input", "answer": 0.95, "unit": "" },
+                        { "type": "input", "answer": 237.5, "unit": "g" }
+                    ],
+                    "operators1": ["=", "×", "=", "×", "="],
+                    "hint": "The formula to convert volume to weight is: weight = volume × SG. The specific gravity is 0.95, and volume is 250 mL, so the weight is 250 mL × 0.95 = 237.5 g (rounded to the nearest tenth)."
+                }
+            ]
+        },
+        {
+            "number": 8,
+            "tag": "gravity",
+            "question": "How many mL of glycerin (SG = 1.25) are needed to provide 150 g of glycerin?",
+            "answerValue": [120],
+            "answerUnit": ["mL"],
+            "rounding": false,
+            "steps": [
+                {
+                    "text": "Convert from weight to volume using the formula:",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "Volume (mL)" },
+                        { "type": "text", "value": "Weight (g)" },
+                        { "type": "text", "value": "SG" },
+                        { "type": "input", "answer": 150, "unit": "g" },
+                        { "type": "input", "answer": 1.25, "unit": "" },
+                        { "type": "input", "answer": 120, "unit": "mL" }
+                    ],
+                    "operators1": ["=", "÷", "=", "÷", "="],
+                    "hint": "The formula to convert weight to volume is: volume = weight ÷ SG. The specific gravity is 1.25, and weight is 150 g, so the volume is 150 g ÷ 1.25 = 120 mL."
+                }
+            ]
+        },
+        {
+            "number": 9,
+            "tag": "gravity",
+            "question": "A pharmacist uses 80 mL of a liquid with SG = 0.78. What is the corresponding weight?",
+            "answerValue": [62.4],
+            "answerUnit": ["g"],
+            "rounding": false,
+            "steps": [
+                {
+                    "text": "Convert from volume to weight using the formula:",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "Weight (g)" },
+                        { "type": "text", "value": "Volume (mL)" },
+                        { "type": "text", "value": "SG" },
+                        { "type": "input", "answer": 80, "unit": "mL" },
+                        { "type": "input", "answer": 0.78, "unit": "" },
+                        { "type": "input", "answer": 62.4, "unit": "g" }
+                    ],
+                    "operators1": ["=", "×", "=", "×", "="],
+                    "hint": "The formula to convert volume to weight is: weight = volume × SG. The specific gravity is 0.78, and volume is 80 mL, so the weight is 80 mL × 0.78 = 62.4 g."
+                }
+            ]
+        },
+        {
+            "number": 10,
+            "tag": "gravity",
+            "question": "An intravenous solution has a specific gravity of 1.01. What is the weight of 1 pint (473 mL) of this solution?",
+            "answerValue": [477.73],
+            "answerUnit": ["g"],
+            "rounding": false,
+            "steps": [
+                {
+                    "text": "Convert from volume to weight using the formula:",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "Weight (g)" },
+                        { "type": "text", "value": "Volume (mL)" },
+                        { "type": "text", "value": "SG" },
+                        { "type": "input", "answer": 473, "unit": "mL" },
+                        { "type": "input", "answer": 1.01, "unit": "" },
+                        { "type": "input", "answer": 477.73, "unit": "g" }
+                    ],
+                    "operators1": ["=", "×", "=", "×", "="],
+                    "hint": "The formula to convert volume to weight is: weight = volume × SG. The specific gravity is 1.01, and volume is 473 mL, so the weight is 473 mL × 1.01 = 477.73 g."
+                }
+            ]
+        },
+        {
+            "number": 11,
+            "tag": "gravity",
+            "question": "If 300 mL of sesame oil (SG = 0.92) is used in a 1-liter formulation, how many grams of sesame oil are used in a 2-gallon preparation of the same formula? Round final answer to the nearest tenth.",
+            "answerValue": [2089.3],
+            "answerUnit": ["g"],
+            "rounding": false,
+            "steps": [
+                {
+                    "text": "Convert gallons to milliliters:",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "Volume (mL)" },
+                        { "type": "text", "value": "Volume (gallons)" },
+                        { "type": "input", "answer": 2, "unit": "gallons" },
+                        { "type": "text", "value": "3785" },
+                        { "type": "input", "answer": 7570, "unit": "mL" }
+                    ],
+                    "operators1": ["=", "=", "×", "="],
+                    "hint": "1 US gallon = 3785 mL, so 2 gallons × 3785 = 7570 mL."
+                },
+                {
+                    "text": "Use ratio and proportion to find the amount of sesame oil needed:",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "Sesame oil (mL)" },
+                        { "type": "fraction", "numerator": { "type": "input", "answer": 300, "unit": "mL" }, "denominator": { "type": "input", "answer": 1000, "unit": "mL" } },
+                        { "type": "input", "answer": 7570, "unit": "mL" },
+                        { "type": "input", "answer": 2271, "unit": "mL" }
+                    ],
+                    "operators1": ["=", "x", "=", "="],
+                    "hint": "The original formula uses 300 mL sesame oil per 1000 mL (1 L) total. For 7570 mL total, the amount of sesame oil is (300/1000) × 7570 = 2271 mL."
+                },
+                {
+                    "text": "Convert sesame oil volume to weight using SG:",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "Weight (g)" },
+                        { "type": "text", "value": "Volume (mL)" },
+                        { "type": "text", "value": "SG" },
+                        { "type": "input", "answer": 2271, "unit": "mL" },
+                        { "type": "input", "answer": 0.92, "unit": "" },
+                        { "type": "input", "answer": 2089.3, "unit": "g" }
+                    ],
+                    "operators1": ["=", "×", "=", "×", "="],
+                    "hint": "The formula to convert volume to weight is: weight = volume × SG. So, 2271 mL × 0.92 = 2089.3 g."
+                }
+            ]
+        },
+        {
+            "number": 12,
+            "tag": "gravity",
+            "question": "A formula for 40 suppositories includes 72 g of a base with SG = 0.94. How many mL of the base are needed to make 100 suppositories?",
+            "answerValue": [191.5],
+            "answerUnit": ["mL"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Convert 72 g of base to mL using SG:",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "Volume (mL)" },
+                        { "type": "text", "value": "Weight (g)" },
+                        { "type": "text", "value": "SG" },
+                        { "type": "input", "answer": 72, "unit": "g" },
+                        { "type": "input", "answer": 0.94, "unit": "" },
+                        { "type": "input", "answer": 76.6, "unit": "mL" }
+                    ],
+                    "operators1": ["=", "÷", "=", "÷", "="],
+                    "hint": "The formula to convert weight to volume is: volume = weight ÷ SG. So, 72 g ÷ 0.94 = 76.6 mL."
+                },
+                {
+                    "text": "Set up a ratio and proportion to scale up to 100 suppositories:",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "Base (mL) for 100 suppositories" },
+                        { "type": "fraction", "numerator": { "type": "input", "answer": 76.6, "unit": "mL" }, "denominator": { "type": "input", "answer": 40, "unit": "suppositories" } },
+                        { "type": "input", "answer": 100, "unit": "suppositories" },
+                        { "type": "input", "answer": 191.5, "unit": "mL" }
+                    ],
+                    "operators1": ["=", "=", "x", "="],
+                    "hint": "The original formula uses 76.6 mL base per 40 suppositories. For 100 suppositories, the amount of base is (76.6/40) x 100 = 191.5 mL."
+                }
+            ]
+        },
+        {
+            "number": 13,
+            "tag": "enlarging",
+            "question": "From the following formula for a Nicolette nasal spray, calculate the quantity of each ingredient needed to prepare ten 20-ml containers of the spray. <br><br>Original formula:<br>",
+            "tableHeaders": ["Ingredient", "Amount per 1 mL"],
+            "tableRows": [
+                [
+                    [{"type": "text", "value": "Nicotine"}],
+                    [{"type": "text", "value": "10 mg"}]
+                ],
+                [
+                    [{"type": "text", "value": "Anhydrous Citric Acid"}],
+                    [{"type": "text", "value": "54 mg"}]
+                ],
+                [
+                    [{"type": "text", "value": "Purified Water qs ad"}],
+                    [{"type": "text", "value": "1 mL"}]
+                ]
+            ],
+            "answerValue": [2000, 10800],
+            "answerUnit": ["mg of Nicotine", "mg of Anhydrous Citric Acid"],
+            "rounding": false,
+            "steps": [
+                {
+                    "text": "Determine the conversion factor",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "Conversion factor" },
+                        { "type": "fraction", "numerator": "Desired quantity", "denominator": "Original quantity" },
+                        { "type": "fraction", "numerator": { "type": "input", "answer": 200, "unit": "mL" }, "denominator": { "type": "input", "answer": 1, "unit": "mL" } },
+                        { "type": "input", "answer": 200, "unit": "" }
+                    ],
+                    "operators1": ["=", "=", "=", "="],
+                    "hint": "The conversion factor is the total desired volume divided by the original formula volume. 10 containers × 20 mL = 200 mL total. The original formula is for 1 mL, so the conversion factor is 200 ÷ 1 = 200."
+                },
+                {
+                    "text": "Multiply each ingredient by the conversion factor",
+                    "type": "TABLE",
+                    "tableHeaders": ["Ingredient", "Original Amount", "Calculation", "New Amount"],
+                    "tableRows": [
+                        [
+                            [{"type": "text", "value": "Nicotine"}],
+                            [{"type": "input", "answer": 10, "unit": "mg"}],
+                            [{"type": "input", "answer": 10, "unit": "mg"}, {"type": "text", "value": " × "}, {"type": "input", "answer": 200, "unit": ""}],
+                            [{"type": "input", "answer": 2000, "unit": "mg"}]
+                        ],
+                        [
+                            [{"type": "text", "value": "Anhydrous Citric Acid"}],
+                            [{"type": "input", "answer": 54, "unit": "mg"}],
+                            [{"type": "input", "answer": 54, "unit": "mg"}, {"type": "text", "value": " × "}, {"type": "input", "answer": 200, "unit": ""}],
+                            [{"type": "input", "answer": 10800, "unit": "mg"}]
+                        ]
+                    ],
+                    "hint": "Multiply each ingredient by the conversion factor of 200 to get the new amounts needed for 200 mL (ten 20-mL containers)."
+                }
+            ]
+        },
+        {
+            "number": 14,
+            "tag": "enlarging",
+            "question": "From the following formula for a Imigran nasal spray, calculate the quantity of sumatriptan needed to prepare a 15-ml container of the spray. <br><br>Original formula:<br>",
+            "tableHeaders": ["Ingredient", "Amount per 1 mL"],
+            "tableRows": [
+                [
+                    [{"type": "text", "value": "Sumatriptan"}],
+                    [{"type": "text", "value": "20 mg"}]
+                ],
+                [
+                    [{"type": "text", "value": "Sulphuric acid"}],
+                    [{"type": "text", "value": "34 mg"}]
+                ],
+                [
+                    [{"type": "text", "value": "Sodium Hydroxide"}],
+                    [{"type": "text", "value": "18 mg"}]
+                ],
+                [
+                    [{"type": "text", "value": "Purified Water qs ad"}],
+                    [{"type": "text", "value": "1 mL"}]
+                ]
+            ],
+            "answerValue": [300],
+            "answerUnit": ["mg of Sumatriptan"],
+            "rounding": false,
+            "steps": [
+                {
+                    "text": "Determine the conversion factor",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "Conversion factor" },
+                        { "type": "fraction", "numerator": "Desired quantity", "denominator": "Original quantity" },
+                        { "type": "fraction", "numerator": { "type": "input", "answer": 15, "unit": "mL" }, "denominator": { "type": "input", "answer": 1, "unit": "mL" } },
+                        { "type": "input", "answer": 15, "unit": "" }
+                    ],
+                    "operators1": ["=", "=", "=", "="],
+                    "hint": "The conversion factor is the total desired volume divided by the original formula volume. The original formula is for 1 mL, so the conversion factor is 15 ÷ 1 = 15."
+                },
+                {
+                    "text": "Multiply each ingredient by the conversion factor",
+                    "type": "TABLE",
+                    "tableHeaders": ["Ingredient", "Original Amount", "Calculation", "New Amount"],
+                    "tableRows": [
+                        [
+                            [{"type": "text", "value": "Sumatriptan"}],
+                            [{"type": "input", "answer": 20, "unit": "mg"}],
+                            [{"type": "input", "answer": 20, "unit": "mg"}, {"type": "text", "value": " × "}, {"type": "input", "answer": 15, "unit": ""}],
+                            [{"type": "input", "answer": 300, "unit": "mg"}]
+                        ]
+                    ],
+                    "hint": "Multiply sumatriptan by the conversion factor of 15 to get the new amount needed for 15 mL."
+                }
+            ]
+        },
+        {
+            "number": 15,
+            "tag": "enlarging",
+            "question": "Using the following formula, calculate the quantities of methylparaben and propylparaben required to make 10 lb. of hydrophilic ointment. Round final answers to the nearest hundredth.<br><br>Original formula:<br>.",
+            "tableHeaders": ["Ingredient", "Amount per 1000 g"],
+            "tableRows": [
+                [
+                    [{"type": "text", "value": "Methylparaben"}],
+                    [{"type": "text", "value": "0.30 g"}]
+                ],
+                [
+                    [{"type": "text", "value": "Propylparaben"}],
+                    [{"type": "text", "value": "0.10 g"}]
+                ],
+                [
+                    [{"type": "text", "value": "Sodium Lauryl Sulfate"}],
+                    [{"type": "text", "value": "12 g"}]
+                ],
+                [
+                    [{"type": "text", "value": "Propylene Glycol"}],
+                    [{"type": "text", "value": "125 g"}]
+                ],
+                [
+                    [{"type": "text", "value": "Stearyl Alcohol"}],
+                    [{"type": "text", "value": "250 g"}]
+                ],
+                [
+                    [{"type": "text", "value": "White Petrolatum"}],
+                    [{"type": "text", "value": "250 g"}]
+                ],
+                [
+                    [{"type": "text", "value": "Purified Water qs ad"}],
+                    [{"type": "text", "value": "1000 g"}]
+                ]
+            ],
+            "answerValue": [1.36, 0.45],
+            "answerUnit": ["g of Methylparaben", "g of Propylparaben"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Convert 10 lb to grams:",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "Weight (g)" },
+                        { "type": "text", "value": "Weight (lb)" },
+                        { "type": "input", "answer": 10, "unit": "lb" },
+                        { "type": "text", "value": "× 454" },
+                        { "type": "input", "answer": 4540, "unit": "g" }
+                    ],
+                    "operators1": ["=", "=", "×", "="],
+                    "hint": "1 lb = 454 g, so 10 lb × 454 = 4540 g."
+                },
+                {
+                    "text": "Determine the conversion factor",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "Conversion factor" },
+                        { "type": "fraction", "numerator": "Desired quantity", "denominator": "Original quantity" },
+                        { "type": "fraction", "numerator": { "type": "input", "answer": 4540, "unit": "g" }, "denominator": { "type": "input", "answer": 1000, "unit": "g" } },
+                        { "type": "input", "answer": 4.54, "unit": "" }
+                    ],
+                    "operators1": ["=", "=", "=", "="],
+                    "hint": "The conversion factor is the total desired weight divided by the original formula weight. The original formula is for 1000 g, so the conversion factor is 4540 ÷ 1000 = 4.54."
+                },
+                {
+                    "text": "Multiply each ingredient by the conversion factor",
+                    "type": "TABLE",
+                    "tableHeaders": ["Ingredient", "Original Amount", "Calculation", "New Amount"],
+                    "tableRows": [
+                        [
+                            [{"type": "text", "value": "Methylparaben"}],
+                            [{"type": "input", "answer": 0.30, "unit": "g"}],
+                            [{"type": "input", "answer": 0.30, "unit": "g"}, {"type": "text", "value": " × "}, {"type": "input", "answer": 4.54, "unit": ""}],
+                            [{"type": "input", "answer": 1.36, "unit": "g"}]
+                        ],
+                        [
+                            [{"type": "text", "value": "Propylparaben"}],
+                            [{"type": "input", "answer": 0.10, "unit": "g"}],
+                            [{"type": "input", "answer": 0.10, "unit": "g"}, {"type": "text", "value": " × "}, {"type": "input", "answer": 4.54, "unit": ""}],
+                            [{"type": "input", "answer": 0.45, "unit": "g"}]
+                        ]
+                    ],
+                    "hint": "Multiply methylparaben and propylparaben by the conversion factor of 4.54 to get the new amounts needed for 4540 g (10 lb)."
+                }
+            ]
+        },
+        {
+            "number": 16,
+            "tag": "enlarging",
+            "question": "You have a prescription for Chloramphenicol ophthalmic ointment. Calculate the quantity of each ingredient needed to prepare 30-ml of the ointment. <br><br>Original formula:<br>",
+            "tableHeaders": ["Ingredient", "Amount per 100 mL"],
+            "tableRows": [
+                [
+                    [{"type": "text", "value": "Chloramphenicol"}],
+                    [{"type": "text", "value": "350 mg"}]
+                ],
+                [
+                    [{"type": "text", "value": "Liquid Paraffin qs ad"}],
+                    [{"type": "text", "value": "100 mL"}]
+                ]
+            ],
+            "answerValue": [105],
+            "answerUnit": ["mg of Chloramphenicol"],
+            "rounding": false,
+            "steps": [
+                {
+                    "text": "Determine the conversion factor",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "Conversion factor" },
+                        { "type": "fraction", "numerator": "Desired quantity", "denominator": "Original quantity" },
+                        { "type": "fraction", "numerator": { "type": "input", "answer": 30, "unit": "mL" }, "denominator": { "type": "input", "answer": 100, "unit": "mL" } },
+                        { "type": "input", "answer": 0.3, "unit": "" }
+                    ],
+                    "operators1": ["=", "=", "=", "="],
+                    "hint": "The conversion factor is the total desired volume divided by the original formula volume. The original formula is for 100 mL, so the conversion factor is 30 ÷ 100 = 0.3."
+                },
+                {
+                    "text": "Multiply each ingredient by the conversion factor",
+                    "type": "TABLE",
+                    "tableHeaders": ["Ingredient", "Original Amount", "Calculation", "New Amount"],
+                    "tableRows": [
+                        [
+                            [{"type": "text", "value": "Chloramphenicol"}],
+                            [{"type": "input", "answer": 350, "unit": "mg"}],
+                            [{"type": "input", "answer": 350, "unit": "mg"}, {"type": "text", "value": " × "}, {"type": "input", "answer": 0.3, "unit": ""}],
+                            [{"type": "input", "answer": 105, "unit": "mg"}]
+                        ]
+                    ],
+                    "hint": "Multiply chloramphenicol by the conversion factor of 0.3 to get the new amount needed for 30 mL."
+                }
+            ]
+        },
+        {
+            "number": 17,
+            "tag": "enlarging",
+            "question": "From the following formula for 100 grams of clotrimazole cream, calculate the quantity of clotrimazole needed to make 28 grams. <br><br>Original formula:<br>",
+            "tableHeaders": ["Ingredient", "Amount per 100 g"],
+            "tableRows": [
+                [
+                    [{"type": "text", "value": "Clotrimazole"}],
+                    [{"type": "text", "value": "1 g"}]
+                ],
+                [
+                    [{"type": "text", "value": "Sorbitan Stearate"}],
+                    [{"type": "text", "value": "22 g"}]
+                ],
+                [
+                    [{"type": "text", "value": "Cetyl Esters Wax"}],
+                    [{"type": "text", "value": "20 g"}]
+                ],
+                [
+                    [{"type": "text", "value": "Polysorbate 60"}],
+                    [{"type": "text", "value": "18 g"}]
+                ],
+                [
+                    [{"type": "text", "value": "Purified water qs ad"}],
+                    [{"type": "text", "value": "100 g"}]
+                ]
+            ],
+            "answerValue": [0.28],
+            "answerUnit": ["g of Clotrimazole"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Determine the conversion factor",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "Conversion factor" },
+                        { "type": "fraction", "numerator": "Desired quantity", "denominator": "Original quantity" },
+                        { "type": "fraction", "numerator": { "type": "input", "answer": 28, "unit": "g" }, "denominator": { "type": "input", "answer": 100, "unit": "g" } },
+                        { "type": "input", "answer": 0.28, "unit": "" }
+                    ],
+                    "operators1": ["=", "=", "=", "="],
+                    "hint": "The conversion factor is the total desired weight divided by the original formula weight. The original formula is for 100 g, so the conversion factor is 28 ÷ 100 = 0.28."
+                },
+                {
+                    "text": "Multiply each ingredient by the conversion factor",
+                    "type": "TABLE",
+                    "tableHeaders": ["Ingredient", "Original Amount", "Calculation", "New Amount"],
+                    "tableRows": [
+                        [
+                            [{"type": "text", "value": "Clotrimazole"}],
+                            [{"type": "input", "answer": 1, "unit": "g"}],
+                            [{"type": "input", "answer": 1, "unit": "g"}, {"type": "text", "value": " × "}, {"type": "input", "answer": 0.28, "unit": ""}],
+                            [{"type": "input", "answer": 0.28, "unit": "g"}]
+                        ]
+                    ],
+                    "hint": "Multiply clotrimazole by the conversion factor of 0.28 to get the new amount needed for 28 g."
+                }
+            ]
+        },
+        {
+            "number": 18,
+            "tag": "enlarging",
+            "question": "From the following formula for 10 grams of Bactroban Nasal Ointment, calculate the quantity of each ingredient to make 80 milligrams. <br><br>Original formula:<br>",
+            "tableHeaders": ["Ingredient", "Amount per 10 g"],
+            "tableRows": [
+                [
+                    [{"type": "text", "value": "Bactroban"}],
+                    [{"type": "text", "value": "1 g"}]
+                ],
+                [
+                    [{"type": "text", "value": "White Soft Paraffin"}],
+                    [{"type": "text", "value": "4 g"}]
+                ],
+                [
+                    [{"type": "text", "value": "Softisan 649"}],
+                    [{"type": "text", "value": "5 g"}]
+                ]
+            ],
+            "answerValue": [8, 32, 40],
+            "answerUnit": ["mg of Bactroban", "mg of White Soft Paraffin", "mg of Softisan 649"],
+            "rounding": false,
+            "steps": [
+                {
+                    "text": "Determine the conversion factor",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "Conversion factor" },
+                        { "type": "fraction", "numerator": "Desired quantity", "denominator": "Original quantity" },
+                        { "type": "fraction", "numerator": { "type": "input", "answer": 80, "unit": "mg" }, "denominator": { "type": "input", "answer": 10000, "unit": "mg" } },
+                        { "type": "input", "answer": 0.008, "unit": "" }
+                    ],
+                    "operators1": ["=", "=", "=", "="],
+                    "hint": "The conversion factor is the total desired weight divided by the original formula weight. Convert 10 g to 10000 mg. The original formula is for 10000 mg, so the conversion factor is 80 ÷ 10000 = 0.008."
+                },
+                {
+                    "text": "Multiply each ingredient by the conversion factor",
+                    "type": "TABLE",
+                    "tableHeaders": ["Ingredient", "Original Amount", "Calculation", "New Amount"],
+                    "tableRows": [
+                        [
+                            [{"type": "text", "value": "Bactroban"}],
+                            [{"type": "input", "answer": 1000, "unit": "mg"}],
+                            [{"type": "input", "answer": 1000, "unit": "mg"}, {"type": "text", "value": " × "}, {"type": "input", "answer": 0.008, "unit": ""}],
+                            [{"type": "input", "answer": 8, "unit": "mg"}]
+                        ],
+                        [
+                            [{"type": "text", "value": "White Soft Paraffin"}],
+                            [{"type": "input", "answer": 4000, "unit": "mg"}],
+                            [{"type": "input", "answer": 4000, "unit": "mg"}, {"type": "text", "value": " × "}, {"type": "input", "answer": 0.008, "unit": ""}],
+                            [{"type": "input", "answer": 32, "unit": "mg"}]
+                        ],
+                        [
+                            [{"type": "text", "value": "Softisan 649"}],
+                            [{"type": "input", "answer": 5000, "unit": "mg"}],
+                            [{"type": "input", "answer": 5000, "unit": "mg"}, {"type": "text", "value": " × "}, {"type": "input", "answer": 0.008, "unit": ""}],
+                            [{"type": "input", "answer": 40, "unit": "mg"}]
+                        ]
+                    ],
+                    "hint": "Multiply each ingredient by the conversion factor of 0.008 to get the new amounts needed for 80 mg. Convert original amounts from grams to milligrams first."
+                }
+            ]
+        },
+        {
+            "number": 19,
+            "tag": "enlarging",
+            "question": "Adrenaline (epinephrine) contains the following in 0.5 ml pre-filled syringes. How much of the first two ingredients are needed to make 1,000 syringes?<br><br>Original formula:<br><br>",
+            "tableHeaders": ["Ingredient", "Amount per 0.5 mL"],
+            "tableRows": [
+                [
+                    [{"type": "text", "value": "Epinephrine Acid Tartrate"}],
+                    [{"type": "text", "value": "0.005 mg"}]
+                ],
+                [
+                    [{"type": "text", "value": "Sodium Chloride"}],
+                    [{"type": "text", "value": "0.3 mg"}]
+                ],
+                [
+                    [{"type": "text", "value": "Citric Acid Monohydrate"}],
+                    [{"type": "text", "value": "0.08 mg"}]
+                ],
+                [
+                    [{"type": "text", "value": "Sodium Citrate Dihydrate"}],
+                    [{"type": "text", "value": "0.02 mg"}]
+                ],
+                [
+                    [{"type": "text", "value": "Water for injection qs ad"}],
+                    [{"type": "text", "value": "0.5 ml"}]
+                ]
+            ],
+            "answerValue": [5, 300],
+            "answerUnit": ["mg of Epinephrine Acid Tartrate", "mg of Sodium Chloride"],
+            "rounding": false,
+            "steps": [
+                {
+                    "text": "Determine the conversion factor",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "Conversion factor" },
+                        { "type": "fraction", "numerator": "Desired quantity", "denominator": "Original quantity" },
+                        { "type": "fraction", "numerator": { "type": "input", "answer": 1000, "unit": "syringes" }, "denominator": { "type": "input", "answer": 1, "unit": "syringe" } },
+                        { "type": "input", "answer": 1000, "unit": "" }
+                    ],
+                    "operators1": ["=", "=", "=", "="],
+                    "hint": "The conversion factor is the number of syringes desired divided by the original formula quantity. The original formula is for 1 syringe, so the conversion factor is 1000 ÷ 1 = 1000."
+                },
+                {
+                    "text": "Multiply each ingredient by the conversion factor",
+                    "type": "TABLE",
+                    "tableHeaders": ["Ingredient", "Original Amount", "Calculation", "New Amount"],
+                    "tableRows": [
+                        [
+                            [{"type": "text", "value": "Epinephrine Acid Tartrate"}],
+                            [{"type": "input", "answer": 0.005, "unit": "mg"}],
+                            [{"type": "input", "answer": 0.005, "unit": "mg"}, {"type": "text", "value": " × "}, {"type": "input", "answer": 1000, "unit": ""}],
+                            [{"type": "input", "answer": 5, "unit": "mg"}]
+                        ],
+                        [
+                            [{"type": "text", "value": "Sodium Chloride"}],
+                            [{"type": "input", "answer": 0.3, "unit": "mg"}],
+                            [{"type": "input", "answer": 0.3, "unit": "mg"}, {"type": "text", "value": " × "}, {"type": "input", "answer": 1000, "unit": ""}],
+                            [{"type": "input", "answer": 300, "unit": "mg"}]
+                        ]
+                    ],
+                    "hint": "Multiply the first two ingredients by the conversion factor of 1000 to get the new amounts needed for 1000 syringes."
+                }
+            ]
+        },
+        {
+            "number": 20,
+            "tag": "enlarging",
+            "question": "Abilify (aripiprazole) contains the following in 1 ml pre-filled syringes. How much of the first three ingredients are needed to make 400 syringes?<br><br>Original formula:<br><br>",
+            "tableHeaders": ["Ingredient", "Amount per 1 mL"],
+            "tableRows": [
+                [
+                    [{"type": "text", "value": "Aripiprazole"}],
+                    [{"type": "text", "value": "200 mg"}]
+                ],
+                [
+                    [{"type": "text", "value": "Mannitol"}],
+                    [{"type": "text", "value": "22 mg"}]
+                ],
+                [
+                    [{"type": "text", "value": "Phosphate Monohydrate"}],
+                    [{"type": "text", "value": "33 mg"}]
+                ],
+                [
+                    [{"type": "text", "value": "Sodium Hydroxide"}],
+                    [{"type": "text", "value": "56 mg"}]
+                ],
+                [
+                    [{"type": "text", "value": "Water for injection qs ad"}],
+                    [{"type": "text", "value": "1 ml"}]
+                ]
+            ],
+            "answerValue": [80, 8.8, 13.2],
+            "answerUnit": ["g of Aripiprazole", "g of Mannitol", "g of Phosphate Monohydrate"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Determine the conversion factor",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "Conversion factor" },
+                        { "type": "fraction", "numerator": "Desired quantity", "denominator": "Original quantity" },
+                        { "type": "fraction", "numerator": { "type": "input", "answer": 400, "unit": "syringes" }, "denominator": { "type": "input", "answer": 1, "unit": "syringe" } },
+                        { "type": "input", "answer": 400, "unit": "" }
+                    ],
+                    "operators1": ["=", "=", "=", "="],
+                    "hint": "The conversion factor is the number of syringes desired divided by the original formula quantity. The original formula is for 1 syringe, so the conversion factor is 400 ÷ 1 = 400."
+                },
+                {
+                    "text": "Multiply each ingredient by the conversion factor",
+                    "type": "TABLE",
+                    "tableHeaders": ["Ingredient", "Original Amount", "Calculation", "New Amount (mg)"],
+                    "tableRows": [
+                        [
+                            [{"type": "text", "value": "Aripiprazole"}],
+                            [{"type": "input", "answer": 200, "unit": "mg"}],
+                            [{"type": "input", "answer": 200, "unit": "mg"}, {"type": "text", "value": " × "}, {"type": "input", "answer": 400, "unit": ""}],
+                            [{"type": "input", "answer": 80000, "unit": "mg"}]
+                        ],
+                        [
+                            [{"type": "text", "value": "Mannitol"}],
+                            [{"type": "input", "answer": 22, "unit": "mg"}],
+                            [{"type": "input", "answer": 22, "unit": "mg"}, {"type": "text", "value": " × "}, {"type": "input", "answer": 400, "unit": ""}],
+                            [{"type": "input", "answer": 8800, "unit": "mg"}]
+                        ],
+                        [
+                            [{"type": "text", "value": "Phosphate Monohydrate"}],
+                            [{"type": "input", "answer": 33, "unit": "mg"}],
+                            [{"type": "input", "answer": 33, "unit": "mg"}, {"type": "text", "value": " × "}, {"type": "input", "answer": 400, "unit": ""}],
+                            [{"type": "input", "answer": 13200, "unit": "mg"}]
+                        ]
+                    ],
+                    "hint": "Multiply the first three ingredients by the conversion factor of 400 to get the new amounts needed for 400 syringes."
+                },
+                {
+                    "text": "Convert milligrams to grams",
+                    "type": "TABLE",
+                    "tableHeaders": ["Ingredient", "Amount (mg)", "Calculation", "Amount (g)"],
+                    "tableRows": [
+                        [
+                            [{"type": "text", "value": "Aripiprazole"}],
+                            [{"type": "input", "answer": 80000, "unit": "mg"}],
+                            [{"type": "input", "answer": 80000, "unit": "mg"}, {"type": "text", "value": " ÷ "}, {"type": "input", "answer": 1000, "unit": ""}],
+                            [{"type": "input", "answer": 80, "unit": "g"}]
+                        ],
+                        [
+                            [{"type": "text", "value": "Mannitol"}],
+                            [{"type": "input", "answer": 8800, "unit": "mg"}],
+                            [{"type": "input", "answer": 8800, "unit": "mg"}, {"type": "text", "value": " ÷ "}, {"type": "input", "answer": 1000, "unit": ""}],
+                            [{"type": "input", "answer": 8.8, "unit": "g"}]
+                        ],
+                        [
+                            [{"type": "text", "value": "Phosphate Monohydrate"}],
+                            [{"type": "input", "answer": 13200, "unit": "mg"}],
+                            [{"type": "input", "answer": 13200, "unit": "mg"}, {"type": "text", "value": " ÷ "}, {"type": "input", "answer": 1000, "unit": ""}],
+                            [{"type": "input", "answer": 13.2, "unit": "g"}]
+                        ]
+                    ],
+                    "hint": "Convert milligrams to grams by dividing by 1000. 1 g = 1000 mg."
+                }
+            ]
+        },
+        {
+            "number": 21,
+            "tag": "enlarging",
+            "question": "The formula for ciprofloxacin otic drops is as follows. How many grams of ciprofloxacin would be needed to prepare 250 30-ml bottles of the otic drop?<br><br>Original formula:<br>",
+            "tableHeaders": ["Ingredient", "Amount per 100 mL"],
+            "tableRows": [
+                [
+                    [{"type": "text", "value": "Ciprofloxacin"}],
+                    [{"type": "text", "value": "1 g"}]
+                ],
+                [
+                    [{"type": "text", "value": "Propylene Glycol"}],
+                    [{"type": "text", "value": "50 mL"}]
+                ],
+                [
+                    [{"type": "text", "value": "Glycerin qs ad"}],
+                    [{"type": "text", "value": "100 ml"}]
+                ]
+            ],
+            "answerValue": [75],
+            "answerUnit": ["g of Ciprofloxacin"],
+            "rounding": false,
+            "steps": [
+                {
+                    "text": "Determine the conversion factor",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "Conversion factor" },
+                        { "type": "fraction", "numerator": "Desired quantity", "denominator": "Original quantity" },
+                        { "type": "fraction", "numerator": { "type": "input", "answer": 7500, "unit": "mL" }, "denominator": { "type": "input", "answer": 100, "unit": "mL" } },
+                        { "type": "input", "answer": 75, "unit": "" }
+                    ],
+                    "operators1": ["=", "=", "=", "="],
+                    "hint": "The conversion factor is the total desired volume divided by the original formula volume. 250 bottles × 30 mL = 7500 mL total. The original formula is for 100 mL, so the conversion factor is 7500 ÷ 100 = 75."
+                },
+                {
+                    "text": "Multiply each ingredient by the conversion factor",
+                    "type": "TABLE",
+                    "tableHeaders": ["Ingredient", "Original Amount", "Calculation", "New Amount"],
+                    "tableRows": [
+                        [
+                            [{"type": "text", "value": "Ciprofloxacin"}],
+                            [{"type": "input", "answer": 1, "unit": "g"}],
+                            [{"type": "input", "answer": 1, "unit": "g"}, {"type": "text", "value": " × "}, {"type": "input", "answer": 75, "unit": ""}],
+                            [{"type": "input", "answer": 75, "unit": "g"}]
+                        ]
+                    ],
+                    "hint": "Multiply ciprofloxacin by the conversion factor of 75 to get the new amount needed for 7500 mL (250 bottles × 30 mL each)."
+                }
+            ]
+        },
+        {
+            "number": 22,
+            "tag": "enlarging",
+            "question": "You have a prescription for migraine suppositories. Calculate the quantities of each ingredient, in grams, needed to prepare 500 suppositories.<br><br>Original formula:<br>",
+            "tableHeaders": ["Ingredient", "Amount per 3 g"],
+            "tableRows": [
+                [
+                    [{"type": "text", "value": "Ergotamine Tartrate"}],
+                    [{"type": "text", "value": "5 mg"}]
+                ],
+                [
+                    [{"type": "text", "value": "Caffeine"}],
+                    [{"type": "text", "value": "120 mg"}]
+                ],
+                [
+                    [{"type": "text", "value": "Hyoscyamine Sulfate"}],
+                    [{"type": "text", "value": "0.50 mg"}]
+                ],
+                [
+                    [{"type": "text", "value": "Pentobarbital Sodium"}],
+                    [{"type": "text", "value": "100 mg"}]
+                ],
+                [
+                    [{"type": "text", "value": "FATTIBASE qs ad"}],
+                    [{"type": "text", "value": "3 g"}]
+                ]
+            ],
+            "answerValue": [2.5, 60, 0.25, 50],
+            "answerUnit": ["g of Ergotamine Tartrate", "g of Caffeine", "g of Hyoscyamine Sulfate", "g of Pentobarbital Sodium"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Determine the conversion factor",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "Conversion factor" },
+                        { "type": "fraction", "numerator": "Desired quantity", "denominator": "Original quantity" },
+                        { "type": "fraction", "numerator": { "type": "input", "answer": 500, "unit": "suppositories" }, "denominator": { "type": "input", "answer": 1, "unit": "suppository" } },
+                        { "type": "input", "answer": 500, "unit": "" }
+                    ],
+                    "operators1": ["=", "=", "=", "="],
+                    "hint": "The conversion factor is the number of suppositories desired divided by the original formula quantity. The original formula is for 1 suppository, so the conversion factor is 500 ÷ 1 = 500."
+                },
+                {
+                    "text": "Multiply each ingredient by the conversion factor",
+                    "type": "TABLE",
+                    "tableHeaders": ["Ingredient", "Original Amount", "Calculation", "New Amount (mg)"],
+                    "tableRows": [
+                        [
+                            [{"type": "text", "value": "Ergotamine Tartrate"}],
+                            [{"type": "input", "answer": 5, "unit": "mg"}],
+                            [{"type": "input", "answer": 5, "unit": "mg"}, {"type": "text", "value": " × "}, {"type": "input", "answer": 500, "unit": ""}],
+                            [{"type": "input", "answer": 2500, "unit": "mg"}]
+                        ],
+                        [
+                            [{"type": "text", "value": "Caffeine"}],
+                            [{"type": "input", "answer": 120, "unit": "mg"}],
+                            [{"type": "input", "answer": 120, "unit": "mg"}, {"type": "text", "value": " × "}, {"type": "input", "answer": 500, "unit": ""}],
+                            [{"type": "input", "answer": 60000, "unit": "mg"}]
+                        ],
+                        [
+                            [{"type": "text", "value": "Hyoscyamine Sulfate"}],
+                            [{"type": "input", "answer": 0.50, "unit": "mg"}],
+                            [{"type": "input", "answer": 0.50, "unit": "mg"}, {"type": "text", "value": " × "}, {"type": "input", "answer": 500, "unit": ""}],
+                            [{"type": "input", "answer": 250, "unit": "mg"}]
+                        ],
+                        [
+                            [{"type": "text", "value": "Pentobarbital Sodium"}],
+                            [{"type": "input", "answer": 100, "unit": "mg"}],
+                            [{"type": "input", "answer": 100, "unit": "mg"}, {"type": "text", "value": " × "}, {"type": "input", "answer": 500, "unit": ""}],
+                            [{"type": "input", "answer": 50000, "unit": "mg"}]
+                        ]
+                    ],
+                    "hint": "Multiply each ingredient by the conversion factor of 500 to get the new amounts needed for 500 suppositories."
+                },
+                {
+                    "text": "Convert milligrams to grams",
+                    "type": "TABLE",
+                    "tableHeaders": ["Ingredient", "Amount (mg)", "Calculation", "Amount (g)"],
+                    "tableRows": [
+                        [
+                            [{"type": "text", "value": "Ergotamine Tartrate"}],
+                            [{"type": "input", "answer": 2500, "unit": "mg"}],
+                            [{"type": "input", "answer": 2500, "unit": "mg"}, {"type": "text", "value": " ÷ "}, {"type": "input", "answer": 1000, "unit": ""}],
+                            [{"type": "input", "answer": 2.5, "unit": "g"}]
+                        ],
+                        [
+                            [{"type": "text", "value": "Caffeine"}],
+                            [{"type": "input", "answer": 60000, "unit": "mg"}],
+                            [{"type": "input", "answer": 60000, "unit": "mg"}, {"type": "text", "value": " ÷ "}, {"type": "input", "answer": 1000, "unit": ""}],
+                            [{"type": "input", "answer": 60, "unit": "g"}]
+                        ],
+                        [
+                            [{"type": "text", "value": "Hyoscyamine Sulfate"}],
+                            [{"type": "input", "answer": 250, "unit": "mg"}],
+                            [{"type": "input", "answer": 250, "unit": "mg"}, {"type": "text", "value": " ÷ "}, {"type": "input", "answer": 1000, "unit": ""}],
+                            [{"type": "input", "answer": 0.25, "unit": "g"}]
+                        ],
+                        [
+                            [{"type": "text", "value": "Pentobarbital Sodium"}],
+                            [{"type": "input", "answer": 50000, "unit": "mg"}],
+                            [{"type": "input", "answer": 50000, "unit": "mg"}, {"type": "text", "value": " ÷ "}, {"type": "input", "answer": 1000, "unit": ""}],
+                            [{"type": "input", "answer": 50, "unit": "g"}]
+                        ]
+                    ],
+                    "hint": "Convert milligrams to grams by dividing by 1000. 1 g = 1000 mg."
+                }
+            ]
+        },
+        {
+            "number": 23,
+            "tag": "enlarging",
+            "question": "The following formula is used to make 300 Dulcolax suppositories. How much bisacodyl is needed to make 72 suppositories?<br><br>Original formula:<br>",
+            "tableHeaders": ["Ingredient", "Amount per 300 suppositories"],
+            "tableRows": [
+                [
+                    [{"type": "text", "value": "Bisacodyl"}],
+                    [{"type": "text", "value": "3 g"}]
+                ],
+                [
+                    [{"type": "text", "value": "FATTIBASE qs ad"}],
+                    [{"type": "text", "value": "600 g"}]
+                ]
+            ],
+            "answerValue": [0.72],
+            "answerUnit": ["g of Bisacodyl"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Determine the conversion factor",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "Conversion factor" },
+                        { "type": "fraction", "numerator": "Desired quantity", "denominator": "Original quantity" },
+                        { "type": "fraction", "numerator": { "type": "input", "answer": 72, "unit": "suppositories" }, "denominator": { "type": "input", "answer": 300, "unit": "suppositories" } },
+                        { "type": "input", "answer": 0.24, "unit": "" }
+                    ],
+                    "operators1": ["=", "=", "=", "="],
+                    "hint": "The conversion factor is the number of suppositories desired divided by the original formula quantity. The original formula is for 300 suppositories, so the conversion factor is 72 ÷ 300 = 0.24."
+                },
+                {
+                    "text": "Multiply each ingredient by the conversion factor",
+                    "type": "TABLE",
+                    "tableHeaders": ["Ingredient", "Original Amount", "Calculation", "New Amount"],
+                    "tableRows": [
+                        [
+                            [{"type": "text", "value": "Bisacodyl"}],
+                            [{"type": "input", "answer": 3, "unit": "g"}],
+                            [{"type": "input", "answer": 3, "unit": "g"}, {"type": "text", "value": " × "}, {"type": "input", "answer": 0.24, "unit": ""}],
+                            [{"type": "input", "answer": 0.72, "unit": "g"}]
+                        ]
+                    ],
+                    "hint": "Multiply bisacodyl by the conversion factor of 0.24 to get the new amount needed for 72 suppositories."
+                }
+            ]
+        },
+        {
+            "number": 24,
+            "tag": "enlarging",
+            "question": "The following formula is for a gastric lavage. Calculate the quantity of sodium bicarbonate needed to prepare 1500 ml of the formula.<br><br>Original formula:<br>",
+            "tableHeaders": ["Ingredient", "Amount per 5 L"],
+            "tableRows": [
+                [
+                    [{"type": "text", "value": "Polyethylene Glycol"}],
+                    [{"type": "text", "value": "70 ml"}]
+                ],
+                [
+                    [{"type": "text", "value": "Sodium Chloride"}],
+                    [{"type": "text", "value": "1.36 g"}]
+                ],
+                [
+                    [{"type": "text", "value": "Potassium Chloride"}],
+                    [{"type": "text", "value": "0.824 g"}]
+                ],
+                [
+                    [{"type": "text", "value": "Sodium Bicarbonate"}],
+                    [{"type": "text", "value": "0.98 g"}]
+                ],
+                [
+                    [{"type": "text", "value": "Sodium Sulfate"}],
+                    [{"type": "text", "value": "3.74 g"}]
+                ],
+                [
+                    [{"type": "text", "value": "Water qs ad"}],
+                    [{"type": "text", "value": "5 L"}]
+                ]
+            ],
+            "answerValue": [0.294],
+            "answerUnit": ["g of Sodium Bicarbonate"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Convert 5 L to milliliters:",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "Volume (mL)" },
+                        { "type": "text", "value": "Volume (L)" },
+                        { "type": "input", "answer": 5, "unit": "L" },
+                        { "type": "text", "value": "1000" },
+                        { "type": "input", "answer": 5000, "unit": "mL" }
+                    ],
+                    "operators1": ["=", "=", "×", "="],
+                    "hint": "1 L = 1000 mL, so 5 L × 1000 = 5000 mL."
+                },
+                {
+                    "text": "Determine the conversion factor",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "Conversion factor" },
+                        { "type": "fraction", "numerator": "Desired quantity", "denominator": "Original quantity" },
+                        { "type": "fraction", "numerator": { "type": "input", "answer": 1500, "unit": "mL" }, "denominator": { "type": "input", "answer": 5000, "unit": "mL" } },
+                        { "type": "input", "answer": 0.3, "unit": "" }
+                    ],
+                    "operators1": ["=", "=", "=", "="],
+                    "hint": "The conversion factor is the total desired volume divided by the original formula volume. The original formula is for 5000 mL (5 L), so the conversion factor is 1500 ÷ 5000 = 0.3."
+                },
+                {
+                    "text": "Multiply each ingredient by the conversion factor",
+                    "type": "TABLE",
+                    "tableHeaders": ["Ingredient", "Original Amount", "Calculation", "New Amount"],
+                    "tableRows": [
+                        [
+                            [{"type": "text", "value": "Sodium Bicarbonate"}],
+                            [{"type": "input", "answer": 0.98, "unit": "g"}],
+                            [{"type": "input", "answer": 0.98, "unit": "g"}, {"type": "text", "value": " × "}, {"type": "input", "answer": 0.3, "unit": ""}],
+                            [{"type": "input", "answer": 0.294, "unit": "g"}]
+                        ]
+                    ],
+                    "hint": "Multiply sodium bicarbonate by the conversion factor of 0.3 to get the new amount needed for 1500 mL."
+                }
+            ]
+        },
+        {
+            "number": 25,
+            "tag": "enlarging",
+            "question": "The following formula is for a gastric lavage. Calculate the quantity of potassium chloride needed to prepare 1500 ml of the formula.<br><br>Original formula:<br>",
+            "tableHeaders": ["Ingredient", "Amount per 5 L"],
+            "tableRows": [
+                [
+                    [{"type": "text", "value": "Polyethylene Glycol"}],
+                    [{"type": "text", "value": "70 mL"}]
+                ],
+                [
+                    [{"type": "text", "value": "Sodium Chloride"}],
+                    [{"type": "text", "value": "1.36 g"}]
+                ],
+                [
+                    [{"type": "text", "value": "Potassium Chloride"}],
+                    [{"type": "text", "value": "0.824 g"}]
+                ],
+                [
+                    [{"type": "text", "value": "Sodium Bicarbonate"}],
+                    [{"type": "text", "value": "0.98 g"}]
+                ],
+                [
+                    [{"type": "text", "value": "Sodium Sulfate"}],
+                    [{"type": "text", "value": "3.74 g"}]
+                ],
+                [
+                    [{"type": "text", "value": "Water qs ad"}],
+                    [{"type": "text", "value": "5 L"}]
+                ]
+            ],
+            "answerValue": [0.2472],
+            "answerUnit": ["g of Potassium Chloride"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Convert liters to milliliters:",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "Volume (mL)" },
+                        { "type": "text", "value": "Volume (L)" },
+                        { "type": "input", "answer": 5, "unit": "L" },
+                        { "type": "text", "value": "× 1000" },
+                        { "type": "input", "answer": 5000, "unit": "mL" }
+                    ],
+                    "operators1": ["=", "=", "×", "="],
+                    "hint": "1 L = 1000 mL, so 5 L × 1000 = 5000 mL."
+                },
+                {
+                    "text": "Determine the conversion factor",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "Conversion factor" },
+                        { "type": "fraction", "numerator": "Desired quantity", "denominator": "Original quantity" },
+                        { "type": "fraction", "numerator": { "type": "input", "answer": 1500, "unit": "mL" }, "denominator": { "type": "input", "answer": 5000, "unit": "mL" } },
+                        { "type": "input", "answer": 0.3, "unit": "" }
+                    ],
+                    "operators1": ["=", "=", "=", "="],
+                    "hint": "The conversion factor is the total desired volume divided by the original formula volume. The original formula is for 5000 mL, so the conversion factor is 1500 ÷ 5000 = 0.3."
+                },
+                {
+                    "text": "Multiply each ingredient by the conversion factor",
+                    "type": "TABLE",
+                    "tableHeaders": ["Ingredient", "Original Amount", "Calculation", "New Amount"],
+                    "tableRows": [
+                        [
+                            [{"type": "text", "value": "Potassium Chloride"}],
+                            [{"type": "input", "answer": 0.824, "unit": "g"}],
+                            [{"type": "input", "answer": 0.824, "unit": "g"}, {"type": "text", "value": " × "}, {"type": "input", "answer": 0.3, "unit": ""}],
+                            [{"type": "input", "answer": 0.2472, "unit": "g"}]
+                        ]
+                    ],
+                    "hint": "Multiply potassium chloride by the conversion factor of 0.3 to get the new amount needed for 1500 mL."
+                }
+            ]
+        },
+        {
+            "number": 26,
+            "tag": "enlarging",
+            "question": "You have a prescription for 200 naproxen tablets. Using the following formula which yields 30 tablets, calculate the amount of naproxen and lactose monohydrate needed to fill this prescription.<br><br>Original formula:<br>",
+            "tableHeaders": ["Ingredient", "Amount per 30 tablets"],
+            "tableRows": [
+                [
+                    [{"type": "text", "value": "Naproxen"}],
+                    [{"type": "text", "value": "7.5 g"}]
+                ],
+                [
+                    [{"type": "text", "value": "Lactose Monohydrate"}],
+                    [{"type": "text", "value": "10 g"}]
+                ],
+                [
+                    [{"type": "text", "value": "Polyvidone"}],
+                    [{"type": "text", "value": "12 g"}]
+                ],
+                [
+                    [{"type": "text", "value": "Magnesium Stearate"}],
+                    [{"type": "text", "value": "13 g"}]
+                ]
+            ],
+            "answerValue": [50, 66.67],
+            "answerUnit": ["g of Naproxen", "g of Lactose Monohydrate"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Determine the conversion factor",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "Conversion factor" },
+                        { "type": "fraction", "numerator": "Desired quantity", "denominator": "Original quantity" },
+                        { "type": "fraction", "numerator": { "type": "input", "answer": 200, "unit": "tablets" }, "denominator": { "type": "input", "answer": 30, "unit": "tablets" } },
+                        { "type": "input", "answer": 6.67, "unit": "" }
+                    ],
+                    "operators1": ["=", "=", "=", "="],
+                    "hint": "The conversion factor is the number of tablets desired divided by the original formula quantity. The original formula yields 30 tablets, so the conversion factor is 200 ÷ 30 = 6.67."
+                },
+                {
+                    "text": "Multiply each ingredient by the conversion factor",
+                    "type": "TABLE",
+                    "tableHeaders": ["Ingredient", "Original Amount", "Calculation", "New Amount"],
+                    "tableRows": [
+                        [
+                            [{"type": "text", "value": "Naproxen"}],
+                            [{"type": "input", "answer": 7.5, "unit": "g"}],
+                            [{"type": "input", "answer": 7.5, "unit": "g"}, {"type": "text", "value": " × "}, {"type": "input", "answer": 6.67, "unit": ""}],
+                            [{"type": "input", "answer": 50, "unit": "g"}]
+                        ],
+                        [
+                            [{"type": "text", "value": "Lactose Monohydrate"}],
+                            [{"type": "input", "answer": 10, "unit": "g"}],
+                            [{"type": "input", "answer": 10, "unit": "g"}, {"type": "text", "value": " × "}, {"type": "input", "answer": 6.67, "unit": ""}],
+                            [{"type": "input", "answer": 66.7, "unit": "g"}]
+                        ]
+                    ],
+                    "hint": "Multiply naproxen and lactose monohydrate by the conversion factor of 6.67 to get the new amounts needed for 200 tablets."
+                }
+            ]
+        },
+        {
+            "number": 27,
+            "tag": "enlarging",
+            "question": "The following is the formula for 120 Fentanyl Buccal tablets. Calculate the quantity of the first two ingredients needed to make 5 tablets. Round final answers to the nearest hundreth if needed.<br><br>Original formula:<br>",
+            "tableHeaders": ["Ingredient", "Amount per 120 tablets"],
+            "tableRows": [
+                [
+                    [{"type": "text", "value": "Fentanyl"}],
+                    [{"type": "text", "value": "96 mg"}]
+                ],
+                [
+                    [{"type": "text", "value": "Mannitol"}],
+                    [{"type": "text", "value": "122 mg"}]
+                ],
+                [
+                    [{"type": "text", "value": "Sodium starch glycolate"}],
+                    [{"type": "text", "value": "1500 mg"}]
+                ],
+                [
+                    [{"type": "text", "value": "Citric acid anhydrous"}],
+                    [{"type": "text", "value": "1000 mg"}]
+                ],
+                [
+                    [{"type": "text", "value": "Magnesium stearate"}],
+                    [{"type": "text", "value": "194 mg"}]
+                ]
+            ],
+            "answerValue": [4, 5.08],
+            "answerUnit": ["mg of Fentanyl", "mg of Mannitol"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Determine the conversion factor",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "Conversion factor" },
+                        { "type": "fraction", "numerator": "Desired quantity", "denominator": "Original quantity" },
+                        { "type": "fraction", "numerator": { "type": "input", "answer": 5, "unit": "tablets" }, "denominator": { "type": "input", "answer": 120, "unit": "tablets" } },
+                        { "type": "input", "answer": 0.0417, "unit": "" }
+                    ],
+                    "operators1": ["=", "=", "=", "="],
+                    "hint": "The conversion factor is the number of tablets desired divided by the original formula quantity. The original formula yields 120 tablets, so the conversion factor is 5 ÷ 120 = 0.0417."
+                },
+                {
+                    "text": "Multiply each ingredient by the conversion factor",
+                    "type": "TABLE",
+                    "tableHeaders": ["Ingredient", "Original Amount", "Calculation", "New Amount"],
+                    "tableRows": [
+                        [
+                            [{"type": "text", "value": "Fentanyl"}],
+                            [{"type": "input", "answer": 96, "unit": "mg"}],
+                            [{"type": "input", "answer": 96, "unit": "mg"}, {"type": "text", "value": " × "}, {"type": "input", "answer": 0.0417, "unit": ""}],
+                            [{"type": "input", "answer": 4, "unit": "mg"}]
+                        ],
+                        [
+                            [{"type": "text", "value": "Mannitol"}],
+                            [{"type": "input", "answer": 122, "unit": "mg"}],
+                            [{"type": "input", "answer": 122, "unit": "mg"}, {"type": "text", "value": " × "}, {"type": "input", "answer": 0.0417, "unit": ""}],
+                            [{"type": "input", "answer": 5.08, "unit": "mg"}]
+                        ]
+                    ],
+                    "hint": "Multiply the first two ingredients by the conversion factor of 0.0417 to get the new amounts needed for 5 tablets. Round to the nearest hundredth if needed."
+                }
+            ]
+        },
+        {
+            "number": 28,
+            "tag": "enlarging",
+            "question": "The following is the formula for 15 Irbesartan/hydrochlorothiazide tablets. Calculate the quantity of irbesartan and hydrochlorothiazide needed to make 125 tablets.<br><br>Original formula:<br>",
+            "tableHeaders": ["Ingredient", "Amount per 15 tablets"],
+            "tableRows": [
+                [
+                    [{"type": "text", "value": "Irbesartan"}],
+                    [{"type": "text", "value": "2250 mg"}]
+                ],
+                [
+                    [{"type": "text", "value": "Hydrochlorothiazide"}],
+                    [{"type": "text", "value": "187.5 mg"}]
+                ],
+                [
+                    [{"type": "text", "value": "Lactose Monohydrate"}],
+                    [{"type": "text", "value": "1978 mg"}]
+                ],
+                [
+                    [{"type": "text", "value": "Talc"}],
+                    [{"type": "text", "value": "2237 mg"}]
+                ],
+                [
+                    [{"type": "text", "value": "Sodium stearyl fumarate"}],
+                    [{"type": "text", "value": "1540 mg"}]
+                ]
+            ],
+            "answerValue": [18.75, 1.5625],
+            "answerUnit": ["g of Irbesartan", "g of Hydrochlorothiazide"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Determine the conversion factor",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "Conversion factor" },
+                        { "type": "fraction", "numerator": "Desired quantity", "denominator": "Original quantity" },
+                        { "type": "fraction", "numerator": { "type": "input", "answer": 125, "unit": "tablets" }, "denominator": { "type": "input", "answer": 15, "unit": "tablets" } },
+                        { "type": "input", "answer": 8.33, "unit": "" }
+                    ],
+                    "operators1": ["=", "=", "=", "="],
+                    "hint": "The conversion factor is the number of tablets desired divided by the original formula quantity. The original formula yields 15 tablets, so the conversion factor is 125 ÷ 15 = 8.33."
+                },
+                {
+                    "text": "Multiply each ingredient by the conversion factor",
+                    "type": "TABLE",
+                    "tableHeaders": ["Ingredient", "Original Amount", "Calculation", "New Amount (mg)"],
+                    "tableRows": [
+                        [
+                            [{"type": "text", "value": "Irbesartan"}],
+                            [{"type": "input", "answer": 2250, "unit": "mg"}],
+                            [{"type": "input", "answer": 2250, "unit": "mg"}, {"type": "text", "value": " × "}, {"type": "input", "answer": 8.33, "unit": ""}],
+                            [{"type": "input", "answer": 18750, "unit": "mg"}]
+                        ],
+                        [
+                            [{"type": "text", "value": "Hydrochlorothiazide"}],
+                            [{"type": "input", "answer": 187.5, "unit": "mg"}],
+                            [{"type": "input", "answer": 187.5, "unit": "mg"}, {"type": "text", "value": " × "}, {"type": "input", "answer": 8.33, "unit": ""}],
+                            [{"type": "input", "answer": 1562.5, "unit": "mg"}]
+                        ]
+                    ],
+                    "hint": "Multiply irbesartan and hydrochlorothiazide by the conversion factor of 8.33 to get the new amounts needed for 125 tablets."
+                },
+                {
+                    "text": "Convert milligrams to grams",
+                    "type": "TABLE",
+                    "tableHeaders": ["Ingredient", "Amount (mg)", "Calculation", "Amount (g)"],
+                    "tableRows": [
+                        [
+                            [{"type": "text", "value": "Irbesartan"}],
+                            [{"type": "input", "answer": 18750, "unit": "mg"}],
+                            [{"type": "input", "answer": 18750, "unit": "mg"}, {"type": "text", "value": " ÷ "}, {"type": "input", "answer": 1000, "unit": ""}],
+                            [{"type": "input", "answer": 18.75, "unit": "g"}]
+                        ],
+                        [
+                            [{"type": "text", "value": "Hydrochlorothiazide"}],
+                            [{"type": "input", "answer": 1562.5, "unit": "mg"}],
+                            [{"type": "input", "answer": 1562.5, "unit": "mg"}, {"type": "text", "value": " ÷ "}, {"type": "input", "answer": 1000, "unit": ""}],
+                            [{"type": "input", "answer": 1.5625, "unit": "g"}]
+                        ]
+                    ],
+                    "hint": "Convert milligrams to grams by dividing by 1000. 1 g = 1000 mg."
+                }
+            ]
+        },
+        {
+            "number": 29,
+            "tag": "enlarging",
+            "question": "The formula for a medicated muscle rub is as follows. The specific gravity of Methyl Salicylate is 1.18. How many grams of each ingredient would be needed to make a 35 g tube? Round final answers to the nearest hundredth if needed.<br><br>Original formula:<br>",
+            "tableHeaders": ["Ingredient", "Amount per 150 g"],
+            "tableRows": [
+                [
+                    [{"type": "text", "value": "Methyl Salicylate"}],
+                    [{"type": "text", "value": "12 mL"}]
+                ],
+                [
+                    [{"type": "text", "value": "Menthol"}],
+                    [{"type": "text", "value": "8 g"}]
+                ],
+                [
+                    [{"type": "text", "value": "Camphor"}],
+                    [{"type": "text", "value": "6 g"}]
+                ],
+                [
+                    [{"type": "text", "value": "Hydrophilic Ointment qs ad"}],
+                    [{"type": "text", "value": "150 g"}]
+                ]
+            ],
+            "answerValue": [3.36, 1.87, 1.4],
+            "answerUnit": ["g of Methyl Salicylate", "g of Menthol", "g of Camphor"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Convert Methyl Salicylate from mL to g using SG:",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "Weight (g)" },
+                        { "type": "text", "value": "Volume (mL)" },
+                        { "type": "text", "value": "SG" },
+                        { "type": "input", "answer": 12, "unit": "mL" },
+                        { "type": "input", "answer": 1.18, "unit": "" },
+                        { "type": "input", "answer": 14.16, "unit": "g" }
+                    ],
+                    "operators1": ["=", "×", "=", "×", "="],
+                    "hint": "The formula to convert volume to weight is: weight = volume × SG. So, 12 mL × 1.18 = 14.16 g."
+                },
+                {
+                    "text": "Determine the conversion factor",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "Conversion factor" },
+                        { "type": "fraction", "numerator": "Desired quantity", "denominator": "Original quantity" },
+                        { "type": "fraction", "numerator": { "type": "input", "answer": 35, "unit": "g" }, "denominator": { "type": "input", "answer": 150, "unit": "g" } },
+                        { "type": "input", "answer": 0.23, "unit": "" }
+                    ],
+                    "operators1": ["=", "=", "=", "="],
+                    "hint": "The conversion factor is the total desired weight divided by the original formula weight. The original formula is for 150 g, so the conversion factor is 35 ÷ 150 = 0.23."
+                },
+                {
+                    "text": "Multiply each ingredient by the conversion factor",
+                    "type": "TABLE",
+                    "tableHeaders": ["Ingredient", "Original Amount", "Calculation", "New Amount"],
+                    "tableRows": [
+                        [
+                            [{"type": "text", "value": "Methyl Salicylate"}],
+                            [{"type": "input", "answer": 14.16, "unit": "g"}],
+                            [{"type": "input", "answer": 14.16, "unit": "g"}, {"type": "text", "value": " × "}, {"type": "input", "answer": 0.23, "unit": ""}],
+                            [{"type": "input", "answer": 3.30, "unit": "g"}]
+                        ],
+                        [
+                            [{"type": "text", "value": "Menthol"}],
+                            [{"type": "input", "answer": 8, "unit": "g"}],
+                            [{"type": "input", "answer": 8, "unit": "g"}, {"type": "text", "value": " × "}, {"type": "input", "answer": 0.23, "unit": ""}],
+                            [{"type": "input", "answer": 1.87, "unit": "g"}]
+                        ],
+                        [
+                            [{"type": "text", "value": "Camphor"}],
+                            [{"type": "input", "answer": 6, "unit": "g"}],
+                            [{"type": "input", "answer": 6, "unit": "g"}, {"type": "text", "value": " × "}, {"type": "input", "answer": 0.23, "unit": ""}],
+                            [{"type": "input", "answer": 1.40, "unit": "g"}]
+                        ]
+                    ],
+                    "hint": "Multiply each ingredient by the conversion factor of 0.23 to get the new amounts needed for 35 g."
+                }
+            ]
+        },
+        {
+            "number": 30,
+            "tag": "enlarging",
+            "question": "The formula for a medicated muscle rub is as follows. The specific gravity of Methyl Salicylate is 1.18. How many grams of methyl salicylate would be needed to make a dozen 15 g tubes? Round final answer to the nearest hundredth.<br><br>Original formula:<br>",
+            "tableHeaders": ["Ingredient", "Amount per 80 g"],
+            "tableRows": [
+                [
+                    [{"type": "text", "value": "Methyl Salicylate"}],
+                    [{"type": "text", "value": "25 mL"}]
+                ],
+                [
+                    [{"type": "text", "value": "Menthol"}],
+                    [{"type": "text", "value": "17 g"}]
+                ],
+                [
+                    [{"type": "text", "value": "Camphor"}],
+                    [{"type": "text", "value": "14 g"}]
+                ],
+                [
+                    [{"type": "text", "value": "Hydrophilic Ointment qs ad"}],
+                    [{"type": "text", "value": "80 g"}]
+                ]
+            ],
+            "answerValue": [66.38],
+            "answerUnit": ["g of Methyl Salicylate"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Convert Methyl Salicylate from mL to g using SG:",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "Weight (g)" },
+                        { "type": "text", "value": "Volume (mL)" },
+                        { "type": "text", "value": "SG" },
+                        { "type": "input", "answer": 25, "unit": "mL" },
+                        { "type": "input", "answer": 1.18, "unit": "" },
+                        { "type": "input", "answer": 29.5, "unit": "g" }
+                    ],
+                    "operators1": ["=", "×", "=", "×", "="],
+                    "hint": "The formula to convert volume to weight is: weight = volume × SG. So, 25 mL × 1.18 = 29.5 g."
+                },
+                {
+                    "text": "Determine the conversion factor",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "Total desired weight" },
+                        { "type": "input", "answer": 12, "unit": "tubes" },
+                        { "type": "input", "answer": 15, "unit": "g per tube" },
+                        { "type": "input", "answer": 180, "unit": "g" }
+                    ],
+                    "operators1": ["=", "×", "=", "="],
+                    "hint": "First calculate the total weight needed: 12 tubes × 15 g each = 180 g total."
+                },
+                {
+                    "text": "Calculate the conversion factor",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "Conversion factor" },
+                        { "type": "fraction", "numerator": "Desired quantity", "denominator": "Original quantity" },
+                        { "type": "fraction", "numerator": { "type": "input", "answer": 180, "unit": "g" }, "denominator": { "type": "input", "answer": 80, "unit": "g" } },
+                        { "type": "input", "answer": 2.25, "unit": "" }
+                    ],
+                    "operators1": ["=", "=", "=", "="],
+                    "hint": "The conversion factor is the total desired weight divided by the original formula weight. The original formula is for 80 g, so the conversion factor is 180 ÷ 80 = 2.25."
+                },
+                {
+                    "text": "Multiply Methyl Salicylate by the conversion factor",
+                    "type": "TABLE",
+                    "tableHeaders": ["Ingredient", "Original Amount", "Calculation", "New Amount"],
+                    "tableRows": [
+                        [
+                            [{"type": "text", "value": "Methyl Salicylate"}],
+                            [{"type": "input", "answer": 29.5, "unit": "g"}],
+                            [{"type": "input", "answer": 29.5, "unit": "g"}, {"type": "text", "value": " × "}, {"type": "input", "answer": 2.25, "unit": ""}],
+                            [{"type": "input", "answer": 66.38, "unit": "g"}]
+                        ]
+                    ],
+                    "hint": "Multiply the methyl salicylate by the conversion factor of 2.25 to get the amount needed for 180 g total (12 tubes × 15 g each)."
+                }
+            ]
+        },
+        {
+            "number": 31,
+            "tag": "gravity",
+            "question": "If a veterinary liniment contains 45% v/v of dimethyl sulfoxide, how many mL of the liniment can be prepared from 15 oz of dimethyl sulfoxide (specific gravity 1.5)? Round the final answer to the nearest whole number.",
+            "answerValue": [667],
+            "answerUnit": ["mL"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Convert ounces to grams:",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "Weight (g)" },                      { "type": "input", "answer": 15, "unit": "oz" },
+                        { "type": "text", "value": "30" },
+                        { "type": "input", "answer": 450, "unit": "g" }
+                    ],
+                    "operators1": ["=", "×", "="],
+                    "hint": "1 oz = 30 g, so 15 oz × 30 = 450 g."
+                },
+                {
+                    "text": "Convert weight to volume using specific gravity:",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "Volume (mL)" },
+                        { "type": "fraction", "numerator": { "type": "text", "value": "Weight (g)" }, "denominator": { "type": "text", "value": "SG" } },
+                        { "type": "fraction", "numerator": { "type": "input", "answer": 450, "unit": "g" }, "denominator": { "type": "input", "answer": 1.5, "unit": "" } },
+                        { "type": "input", "answer": 300, "unit": "mL" }
+                    ],
+                    "operators1": ["=", "=", "="],
+                    "hint": "The formula to convert weight to volume is: volume = weight ÷ SG. So, 450 g ÷ 1.5 = 300 mL of dimethyl sulfoxide."
+                },
+                {
+                    "text": "Use ratio and proportion to find total liniment volume:",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "Total liniment (mL)" },
+                        { "type": "fraction", "numerator": { "type": "input", "answer": 300, "unit": "mL" }, "denominator": { "type": "input", "answer": 45, "unit": "%" } },
+                        { "type": "input", "answer": 100, "unit": "%" },
+                        { "type": "input", "answer": 667, "unit": "mL" }
+                    ],
+                    "operators1": ["=", "×", "="],
+                    "hint": "If 300 mL represents 45% of the total liniment, then the total volume is (300 mL ÷ 45%) × 100% = 667 mL (rounded to the nearest whole number)."
+                }
+            ]
+        },
+        {
+            "number": 32,
+            "tag": "gravity",
+            "question": "How many grams of a drug substance are required to make 240 mL of a 30% (w/w) solution having a specific gravity of 1.10?",
+            "answerValue": [79.2],
+            "answerUnit": ["g"],
+            "rounding": false,
+            "steps": [
+                {
+                    "text": "Convert volume to weight using specific gravity:",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "Weight (g)" },
+                        { "type": "text", "value": "Volume (mL)" },
+                        { "type": "text", "value": "SG" },
+                        { "type": "input", "answer": 240, "unit": "mL" },
+                        { "type": "input", "answer": 1.10, "unit": "" },
+                        { "type": "input", "answer": 264, "unit": "g" }
+                    ],
+                    "operators1": ["=", "×", "=", "×", "="],
+                    "hint": "The formula to convert volume to weight is: weight = volume × SG. The specific gravity is 1.10, and volume is 240 mL, so the weight of the solution is 240 mL × 1.10 = 264 g."
+                },
+                {
+                    "text": "Calculate the amount of drug using percentage strength:",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "Drug amount (g)" },
+                        { "type": "text", "value": "Solution weight (g)" },
+                        { "type": "text", "value": "Percentage (%)" },
+                        { "type": "input", "answer": 264, "unit": "g" },
+                        { "type": "input", "answer": 30, "unit": "%" },
+                        { "type": "input", "answer": 79.2, "unit": "g" }
+                    ],
+                    "operators1": ["=", "×", "=", "×", "="],
+                    "hint": "For a 30% (w/w) solution, the drug amount = solution weight × percentage. So, 264 g × 30% = 264 g × 0.30 = 79.2 g of drug substance."
+                }
+            ]
+        }
+      
+    ]
+}

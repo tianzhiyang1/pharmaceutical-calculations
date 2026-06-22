@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milliequivalence</title>
+    <link rel="stylesheet" href="../../master.css">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="index-container">
+        <header>
+            <h1>Pharmacy Calculations:<br>Milliequivalent</h1>
+        </header>
+
+        <div class="card overview-card">
+            <h2>Overview</h2>
+            <p>In this module, you will:</p>
+            <ul>
+                <li>Review concepts of electrolyte solutions and milliequivalence</li>
+                <li>Solve electrolyte solution problems using mEq</li>
+            </ul>
+            
+            <div class="method-list">
+                <div class="method-item">
+                    <h3 id="milliequivalentTitle" class="method-title">Milliequivalent Tutorial</h3>
+                    <p class="tutorial-notice">Click the title to view the tutorial</p>
+                </div>
+            </div>
+
+            <div class="button-container">
+                <a href="./practice.html" class="practice-btn">Start Practicing</a>
+            </div>
+        </div>
+
+        <!-- Milliequivalent Tutorial -->
+        <div class="card tutorial-card" id="milliequivalentTutorial" style="display: none;">
+            <h2>Tutorial - Milliequivalent</h2>
+            <div class="tutorial-content">
+                <div class="tutorial-section">
+                    <div class="tutorial-topic-header" id="conceptReviewHeader">
+                        <h3>I. Concept review:</h3>
+                        <span class="expand-icon">+</span>
+                    </div>
+                    <div class="tutorial-topic-content" id="conceptReviewContent">
+                        <div class="example-calculation">
+                            <p><strong>Non-electrolytes:</strong> These compounds dissolve in solution as whole molecules. The osmotic pressure of their solutions depends solely on the solute concentration.</p>
+                        
+                            <p><strong>Electrolytes:</strong> Electrolytes dissociate into ions in solution. Their osmotic pressure depends on both the solute concentration and the degree of dissociation. Because ionized particles exert a greater number of osmotic particles, electrolytes generally contribute more to osmotic pressure than non-electrolytes.</p>
+                            
+                            <p><strong>Importance in the Body:</strong></p>
+                            <p>Electrolytes help maintain:</p>
+                            <ul>
+                                <li>Acid–base balance</li>
+                                <li>Water distribution and volume</li>
+                                <li>Neuromuscular function</li>
+                                <li>Metabolic processes</li>
+                            </ul>
+                            
+                            <p>Electrolyte concentrations are commonly expressed in equivalents (Eq) or milliequivalents (mEq) per liter.</p>
+                            
+                            <p><strong>Milliequivalent (mEq):</strong></p>
+                            <ul>
+                                <li>Represents 1/1000 of a gram equivalent weight of a substance.</li>
+                                <li>Reflects the chemical activity of electrolytes, taking into account both mass and valence.</li>
+                                <li>mEq of a compound = mEq of the cation = mEq of the anion, although the mass of ions will differ.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-divider"></div>
+
+                <div class="tutorial-section">
+                    <h3>II. Key formula for mEq calculation</h3>
+                    <div class="example-calculation important">
+                        <div class="important-header-row">
+                            <div class="important-text">mEq FORMULA</div>
+                        </div>
+                        <div class="formula-box-content">
+                            <div class="formula-box">
+                                <div class="horizontal-operation" style="font-weight: bold; justify-content: center;">
+                                    <span>1 mEq = </span>
+                                    <div class="fraction">
+                                        <div class="fraction-numerator">MW (in mg)</div>
+                                        <div class="fraction-denominator">Valence</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p><strong>Where:</strong></p>
+                        <ul style="margin-top: 15px;">
+                            <li><strong>Molecular Weight (MW)</strong> refers to the formula weight of the compound, expressed in milligrams (mg).</li>
+                            <li><strong>Valence</strong> is the number of positive or negative charges carried by the ion (e.g., Na⁺ = 1, Ca²⁺ = 2, SO₄²⁻ = 2).</li>
+                        </ul>
+                    </div>
+                    
+                    <p>You may also encounter the following alternative, but equivalent, formula formats:</p>
+                    <div class="example-calculation">
+                        <div class="horizontal-operation" style="justify-content: center;">
+                            <span>mEq = </span>
+                            <div class="fraction">
+                                <div class="fraction-numerator">mg × valence</div>
+                                <div class="fraction-denominator">MW</div>
+                            </div>
+                            <span> OR mEq = mmols × valence</span>
+                        </div>
+                        <p>Where:</p>
+                        <ul>
+                            <li>mg = mass of the substance in milligrams</li>
+                            <li>MW = molecular weight in mg/mmol</li>
+                            <li>mmol = millimoles (mg ÷ MW)</li>
+                        </ul>
+                        <p>These equations allow you to interconvert between mass, millimoles, and milliequivalents based on the ion's valence.</p>
+                    </div>
+                </div>
+
+                <div class="section-divider"></div>
+
+                <div class="tutorial-section">
+                    <h3>III. How to determine valence</h3>
+                    <p>Valence = number of electrical charges on either cation or anion.</p>
+                    
+                    <div class="example-calculation">
+                        <p><strong>Example 1:</strong> NaCl</p>
+                        <p>Na⁺ = +1, Cl⁻ = -1 → Valence = 1</p>
+                        
+                        <p><strong>Example 2:</strong> CaCl₂</p>
+                        <p>Ca²⁺ = +2, 2Cl⁻ = -2 → Valence = 2</p>
+                    </div>
+                </div>
+
+                <div class="section-divider"></div>
+
+                <div class="tutorial-section" id="valenceSection">
+                        <div class="important-header-row">
+                            <div class="important-text">IV. Common Valences of Ions and Compounds</div>
+                            <div id="valenceMatchingGameButtonContainer">
+                                <button id="valenceMatchingGameBtn" class="btn">Drag and Drop</button>
+                            </div>
+                        </div>
+                        
+                        <div class="valence-content-before-game">
+                            <table class="wide-metric-table">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 30%;">Cations</th>
+                                        <th style="width: 30%;">Anions</th>
+                                        <th style="width: 40%;">Common Compounds</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Na⁺ = 1</td>
+                                        <td>Cl⁻ = 1</td>
+                                        <td>NaCl = 1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>K⁺ = 1</td>
+                                        <td>HCO₃⁻ = 1</td>
+                                        <td>KCl = 1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ca²⁺ = 2</td>
+                                        <td>Gluconate (C₆H₁₁O₇⁻) = 1</td>
+                                        <td>NH₄Cl = 1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mg²⁺ = 2</td>
+                                        <td>CO₃²⁻ = 2</td>
+                                        <td>NaHCO₃ = 1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>NH₄⁺ = 1</td>
+                                        <td>SO₄²⁻ = 2</td>
+                                        <td>KC₆H₁₁O₇ (potassium gluconate) = 1</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td>CaCl₂ = 2</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td>CaCO₃ = 2</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td>MgSO₄ = 2</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td>FeSO₄ = 2</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            
+                            <p><strong>Non-electrolytes:</strong> (e.g., dextrose, mannitol) → Valence = 1 (due to no dissociation)</p>
+                        </div>
+                        
+                        <!-- Valence Categorization Game container -->
+                        <div id="valence-matching-game-container" style="display: none;">
+                            <div class="status-panel">
+                                <div class="instruction-text">Drag each substance to its correct valence category!</div>
+                                <div class="card-counter">Correct: <span id="valence-match-counter">0</span>/<span id="valence-total-matches">12</span></div>
+                            </div>
+                            
+                            <div class="valence-game-layout">
+                                <div class="valence-game-main">
+                                    <div class="drag-items-container">
+                                        <div class="drag-items-area" id="drag-items-area">
+                                            <!-- Draggable items will be generated here -->
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="drop-zones-container">
+                                        <div class="drop-zone valence-1" data-valence="1">
+                                            <div class="drop-zone-title">Valence = 1</div>
+                                            <div class="dropped-items" id="dropped-valence-1">
+                                                <!-- Dropped items will appear here -->
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="drop-zone valence-2" data-valence="2">
+                                            <div class="drop-zone-title">Valence = 2</div>
+                                            <div class="dropped-items" id="dropped-valence-2">
+                                                <!-- Dropped items will appear here -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="valence-hint-container">
+                                    <div id="hint-container" class="hint-container" style="display: none;">
+                                        <!-- Hints will appear here -->
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="controls">
+                                <button class="btn" id="reset-valence-matching-game">Reset Game</button>
+                                <button class="btn back-btn" id="back-from-valence-matching">Back to Tutorial</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-divider"></div>
+
+                <div class="tutorial-section">
+                    <h3>V. Steps to convert between mEq and mg</h3>
+                    <div class="example-calculation">
+                        <p><strong>Step 1. Identify the valence and calculate how many mg = 1 mEq</strong></p>
+                        <div class="horizontal-operation">
+                            <span>1 mEq = </span>
+                            <div class="fraction">
+                                <div class="fraction-numerator">MW (in mg)</div>
+                                <div class="fraction-denominator">Valence</div>
+                            </div>
+                        </div>
+                        <p>This gives the number of milligrams (mg) equivalent to 1 mEq of the compound.</p>
+                        
+                        <p><strong>Step 2. Use ratio and proportion to convert between mEq and mg</strong></p>
+                        <p><strong>To convert mEq → mg:</strong></p>
+                        <div class="horizontal-operation">
+                            <div class="fraction">
+                                <div class="fraction-numerator">1 mEq</div>
+                                <div class="fraction-denominator">mg from Step 1</div>
+                            </div>
+                            <span> = </span>
+                            <div class="fraction">
+                                <div class="fraction-numerator">Given mEq</div>
+                                <div class="fraction-denominator">x mg</div>
+                            </div>
+                        </div>
+                        <p>x = Given mEq × mg from Step 1</p>
+                        
+                        <p><strong>To convert mg → mEq:</strong></p>
+                        <div class="horizontal-operation">
+                            <div class="fraction">
+                                <div class="fraction-numerator">1 mEq</div>
+                                <div class="fraction-denominator">mg from Step 1</div>
+                            </div>
+                            <span> = </span>
+                            <div class="fraction">
+                                <div class="fraction-numerator">x mEq</div>
+                                <div class="fraction-denominator">Given mg</div>
+                            </div>
+                        </div>
+                        <div class="horizontal-operation">
+                            <span>x = </span>
+                            <div class="fraction">
+                                <div class="fraction-numerator">Given mg</div>
+                                <div class="fraction-denominator">mg from Step 1</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-divider"></div>
+                
+                <div class="tutorial-section">
+                    <h3>Example 1:</h3>
+                    <p><strong>What is the concentration, in mg per mL, of a solution containing 2 mEq of sodium chloride (NaCl) per mL? (NaCl MW = 58.5)</strong></p>
+                    <div class="tutorial-steps" id="milliequivalentExample1Steps">
+                        <!-- Step 1 Content -->
+                        <div class="step-content active" id="mestep1">
+                            <div class="step-instructions">
+                                <div class="step-title">Step 1: Identify the valence and calculate how many mg = 1 mEq</div>
+                            </div>
+                            
+                            <div class="example-calculation">
+                                <p>Valence of NaCl = 1</p>
+                                <div class="horizontal-operation">
+                                    <span>1 mEq = </span>
+                                    <div class="fraction">
+                                        <div class="fraction-numerator">MW (in mg)</div>
+                                        <div class="fraction-denominator">Valence</div>
+                                    </div>
+                                    <span> = </span>
+                                    <div class="fraction">
+                                        <div class="fraction-numerator">58.5 mg</div>
+                                        <div class="fraction-denominator">1</div>
+                                    </div>
+                                    <span> = 58.5 mg</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 2 Content -->
+                        <div class="step-content" id="mestep2">
+                            <div class="step-instructions">
+                                <div class="step-title">Step 2: Use ratio and proportion to convert mEq → mg</div>
+                            </div>
+                            
+                            <div class="example-calculation">
+                                <div class="horizontal-operation">
+                                    <div class="fraction">
+                                        <div class="fraction-numerator">1 mEq</div>
+                                        <div class="fraction-denominator">58.5 mg</div>
+                                    </div>
+                                    <span> = </span>
+                                    <div class="fraction">
+                                        <div class="fraction-numerator">2 mEq</div>
+                                        <div class="fraction-denominator">X mg</div>
+                                    </div>
+                                </div>
+                                <p><strong>x = 117 mg</strong></p>
+                            </div>
+                        </div>
+
+                        <!-- Next Button -->
+                        <div class="step-navigation">
+                            <button class="tutorial-next-btn">Next Step ↓</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-divider"></div>
+                
+                <div class="tutorial-section">
+                    <h3>Example 2:</h3>
+                    <p><strong>A solution contains 100 mg of calcium chloride dihydrate per ml. Express this concentration in terms of mEq/mL (CaCl₂ · 2H₂O MW = 147). Round the final answer to the nearest tenth.</strong></p>
+                    <div class="example-calculation">
+                        <p><strong>Step 1: Identify the valence and calculate how many mg = 1 mEq</strong></p>
+                        <p>Valence of CaCl₂ = 2 (no need to consider dihydrate for valence)</p>
+                        <div class="horizontal-operation">
+                            <span>1 mEq = </span>
+                            <div class="fraction">
+                                <div class="fraction-numerator">MW (in mg)</div>
+                                <div class="fraction-denominator">Valence</div>
+                            </div>
+                            <span> = </span>
+                            <div class="fraction">
+                                <div class="fraction-numerator">147 mg</div>
+                                <div class="fraction-denominator">2</div>
+                            </div>
+                            <span> = 73.5 mg</span>
+                        </div>
+                        
+                        <p><strong>Step 2: Convert 100 mg to mEq</strong></p>
+                        <div class="horizontal-operation">
+                            <div class="fraction">
+                                <div class="fraction-numerator">1 mEq</div>
+                                <div class="fraction-denominator">73.5 mg</div>
+                            </div>
+                            <span> = </span>
+                            <div class="fraction">
+                                <div class="fraction-numerator">x mEq</div>
+                                <div class="fraction-denominator">100 mg</div>
+                            </div>
+                        </div>
+                        <p><strong>x = 1.4 mEq → answer = 1.4 mEq/mL</strong></p>
+                    </div>
+                </div>
+
+                <div class="section-divider"></div>
+                
+                <div class="tutorial-section">
+                    <h3>Example 3:</h3>
+                    <p><strong>A patient is to receive 36 mg of ammonium chloride (NH₄Cl) per kg of body weight. The patient weighs 154 pounds. A sterile NH₄Cl solution contains 0.4 mEq/mL. How many mL of the solution should be administered? (MW of NH₄Cl = 53.5). Round the final answer to the nearest whole number.</strong></p>
+                    <div class="example-calculation">
+                        <p><strong>Step 1: Understand the scenario</strong></p>
+                        <p>We are given:</p>
+                        <ul>
+                            <li>Dose: 36 mg/kg</li>
+                            <li>Weight: 154 lb</li>
+                            <li>Solution concentration: 0.4 mEq/mL</li>
+                            <li>MW of NH₄Cl = 53.5</li>
+                        </ul>
+                        <p>We need to:</p>
+                        <ul>
+                            <li>Convert lb to kg and calculate the total mg dose</li>
+                            <li>Convert 0.4 mEq/mL to mg/mL</li>
+                            <li>Determine how many mL of solution are needed to supply the dose</li>
+                        </ul>
+                        
+                        <p><strong>Step 2: Convert weight to kg and calculate the dose</strong></p>
+                        <div class="horizontal-operation">
+                            <span>Weight in kg = </span>
+                            <div class="fraction">
+                                <div class="fraction-numerator">154 lb</div>
+                                <div class="fraction-denominator">2.2</div>
+                            </div>
+                            <span> = 70 kg</span>
+                        </div>
+                        <p>Dose = 36 mg/kg × 70 kg = 2520 mg</p>
+                        
+                        <p><strong>Step 3: Convert 0.4 mEq/mL to mg/mL</strong></p>
+                        <div class="horizontal-operation">
+                            <span>1 mEq = </span>
+                            <div class="fraction">
+                                <div class="fraction-numerator">MW (in mg)</div>
+                                <div class="fraction-denominator">Valence</div>
+                            </div>
+                            <span> = </span>
+                            <div class="fraction">
+                                <div class="fraction-numerator">53.5 mg</div>
+                                <div class="fraction-denominator">1</div>
+                            </div>
+                            <span> = 53.5 mg</span>
+                        </div>
+                        <p>Then use ratio and proportion:</p>
+                        <div class="horizontal-operation">
+                            <div class="fraction">
+                                <div class="fraction-numerator">1 mEq</div>
+                                <div class="fraction-denominator">53.5 mg</div>
+                            </div>
+                            <span> = </span>
+                            <div class="fraction">
+                                <div class="fraction-numerator">0.4 mEq</div>
+                                <div class="fraction-denominator">x mg</div>
+                            </div>
+                        </div>
+                        <p>x = 21.4 mg → the concentration is 21.4 mg/mL</p>
+                        
+                        <p><strong>Step 4: Calculate the required volume (of 21.4 mg/mL of NH₄Cl) to supply the dose of 2520 mg</strong></p>
+                        <div class="horizontal-operation">
+                            <div class="fraction">
+                                <div class="fraction-numerator">21.4 mg</div>
+                                <div class="fraction-denominator">1 mL</div>
+                            </div>
+                            <span> = </span>
+                            <div class="fraction">
+                                <div class="fraction-numerator">2520 mg</div>
+                                <div class="fraction-denominator">x mL</div>
+                            </div>
+                        </div>
+                        <p><strong>x = 118 mL</strong></p>
+                    </div>
+                </div>
+
+                <div class="section-divider"></div>
+                
+                <div class="tutorial-section">
+                    <h3>Example 4:</h3>
+                    <p><strong>A sterile solution of KCl contains 2 mEq per mL. If a 20 mL ampule of this solution is diluted to a liter with sterile distilled water, what is the percentage strength (w/v) of the final solution (KCl MW = 74.5)?</strong></p>
+                    <div class="example-calculation">
+                        <p><strong>Step 1: Understand the Scenario</strong></p>
+                        <p>We are given:</p>
+                        <ul>
+                            <li>Initial concentration: 2 mEq/mL</li>
+                            <li>Volume diluted from 20 mL → 1000 mL</li>
+                            <li>MW of KCl = 74.5</li>
+                        </ul>
+                        <p>We need to:</p>
+                        <ul>
+                            <li>Convert 2 mEq/mL to mg/mL</li>
+                            <li>Use the dilution formula to calculate final concentration in mg/mL</li>
+                            <li>Convert mg/mL to % strength (w/v)</li>
+                        </ul>
+                        
+                        <p><strong>Step 2: Convert 2 mEq/ml to mg/mL</strong></p>
+                        <div class="horizontal-operation">
+                            <span>1 mEq = </span>
+                            <div class="fraction">
+                                <div class="fraction-numerator">MW (in mg)</div>
+                                <div class="fraction-denominator">Valence</div>
+                            </div>
+                            <span> = </span>
+                            <div class="fraction">
+                                <div class="fraction-numerator">74.5 mg</div>
+                                <div class="fraction-denominator">1</div>
+                            </div>
+                            <span> = 74.5 mg</span>
+                        </div>
+                        <p>Then use ratio and proportion:</p>
+                        <div class="horizontal-operation">
+                            <div class="fraction">
+                                <div class="fraction-numerator">1 mEq</div>
+                                <div class="fraction-denominator">74.5 mg</div>
+                            </div>
+                            <span> = </span>
+                            <div class="fraction">
+                                <div class="fraction-numerator">2 mEq</div>
+                                <div class="fraction-denominator">x mg</div>
+                            </div>
+                        </div>
+                        <p>x = 149 mg → initial concentration is 149 mg/mL</p>
+                        
+                        <p><strong>Step 3: Use the dilution formula to calculate the final concentration in mg/mL</strong></p>
+                        <p>Q₁ × C₁ = Q₂ × C₂</p>
+                        <p>20 mL × 149 mg/mL = 1000 mL × C₂ (in mg/mL)</p>
+                        <p>x = 2.98 mg/mL</p>
+                        <p>The final concentration = 2.98 mg/mL</p>
+                        
+                        <p><strong>Step 4: Convert mg/mL to % strength (w/v)</strong></p>
+                        <p>2.98 mg/mL = 0.00298 g/mL</p>
+                        <div class="horizontal-operation">
+                            <div class="fraction">
+                                <div class="fraction-numerator">0.00298 g</div>
+                                <div class="fraction-denominator">1 mL</div>
+                            </div>
+                            <span> = </span>
+                            <div class="fraction">
+                                <div class="fraction-numerator">x g</div>
+                                <div class="fraction-denominator">100 mL</div>
+                            </div>
+                        </div>
+                        <p><strong>x = 0.298 g → percentage strength is 0.298% (w/v)</strong></p>
+                    </div>
+                </div>
+                
+                <div class="back-to-top">
+                    <button id="backToOverviewBtn" class="back-btn">← Back to Overview</button>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                // Tutorial Navigation & General Page Logic
+                const milliequivalentTitle = document.getElementById('milliequivalentTitle');
+                const milliequivalentTutorial = document.getElementById('milliequivalentTutorial');
+                const backToOverviewBtn = document.getElementById('backToOverviewBtn');
+                
+                if (milliequivalentTitle) {
+                    milliequivalentTitle.addEventListener('click', () => {
+                        milliequivalentTutorial.style.display = 'block';
+                        milliequivalentTitle.classList.add('active');
+                        milliequivalentTutorial.scrollIntoView({ behavior: 'smooth' });
+                    });
+                }
+                
+                if (backToOverviewBtn) {
+                    backToOverviewBtn.addEventListener('click', () => {
+                        milliequivalentTutorial.style.display = 'none';
+                        milliequivalentTitle.classList.remove('active');
+                        document.querySelector('.overview-card').scrollIntoView({ behavior: 'smooth' });
+                    });
+                }
+                
+                // Initialize step-by-step tutorials
+                setupTutorialSteps('milliequivalentExample1Steps');
+
+                // Initialize collapsible sections
+                setupCollapsibleSection('conceptReviewHeader', 'conceptReviewContent');
+
+                // Initialize valence matching game
+                setupValenceMatchingGame();
+
+                function setupCollapsibleSection(headerId, contentId) {
+                    const header = document.getElementById(headerId);
+                    const content = document.getElementById(contentId);
+                    
+                    if (header && content) {
+                        header.addEventListener('click', () => {
+                            const isExpanded = content.classList.contains('expanded');
+                            
+                            if (isExpanded) {
+                                content.classList.remove('expanded');
+                                header.classList.remove('active');
+                            } else {
+                                content.classList.add('expanded');
+                                header.classList.add('active');
+                            }
+                        });
+                    }
+                }
+
+                function setupTutorialSteps(containerId) {
+                    const stepsContainer = document.getElementById(containerId);
+                    if (!stepsContainer) return;
+
+                    const steps = stepsContainer.querySelectorAll('.step-content');
+                    const nextBtn = stepsContainer.querySelector('.tutorial-next-btn');
+                    if (!nextBtn) return; // Ensure button exists
+                    let currentStep = 1;
+                    const totalSteps = steps.length;
+
+                    function updateDisplay() {
+                        steps.forEach((step, index) => {
+                            step.classList.toggle('active', index < currentStep);
+                        });
+                        nextBtn.style.display = currentStep === totalSteps ? 'none' : 'block';
+                    }
+
+                    nextBtn.addEventListener('click', () => {
+                        if (currentStep < totalSteps) {
+                            currentStep++;
+                            updateDisplay();
+                        }
+                    });
+                    updateDisplay(); // Initial display
+                }
+
+                // Valence Categorization Drag-and-Drop Game Logic
+                function setupValenceMatchingGame() {
+                    const gameBtn = document.getElementById('valenceMatchingGameBtn');
+                    const gameContainer = document.getElementById('valence-matching-game-container');
+                    const contentBeforeGame = document.querySelector('.valence-content-before-game');
+                    const gameButtonContainer = document.getElementById('valenceMatchingGameButtonContainer');
+                    const backBtn = document.getElementById('back-from-valence-matching');
+                    const resetBtn = document.getElementById('reset-valence-matching-game');
+
+                    let correctCount = 0;
+                    let currentItemIndex = 0;
+                    const totalItems = 12;
+
+                    // Substances with their correct valence values and educational info
+                    const substances = [
+                        { 
+                            name: 'Na⁺', 
+                            valence: 1, 
+                            type: 'cation',
+                            correctHint: 'Correct! Na⁺ has a valence of 1 because it is a cation with a +1 charge.',
+                            incorrectHint: 'Try again! Na⁺ is a cation with a +1 charge, giving it a valence of 1.'
+                        },
+                        { 
+                            name: 'K⁺', 
+                            valence: 1, 
+                            type: 'cation',
+                            correctHint: 'Correct! K⁺ has a valence of 1 because it is a cation with a +1 charge.',
+                            incorrectHint: 'Try again! K⁺ is a cation with a +1 charge, giving it a valence of 1.'
+                        },
+                        { 
+                            name: 'NH₄⁺', 
+                            valence: 1, 
+                            type: 'cation',
+                            correctHint: 'Correct! NH₄⁺ has a valence of 1 because it is a cation with a +1 charge.',
+                            incorrectHint: 'Try again! NH₄⁺ is a cation with a +1 charge, giving it a valence of 1.'
+                        },
+                        { 
+                            name: 'Ca²⁺', 
+                            valence: 2, 
+                            type: 'cation',
+                            correctHint: 'Correct! Ca²⁺ has a valence of 2 because it is a cation with a +2 charge.',
+                            incorrectHint: 'Try again! Ca²⁺ is a cation with a +2 charge, giving it a valence of 2.'
+                        },
+                        { 
+                            name: 'Mg²⁺', 
+                            valence: 2, 
+                            type: 'cation',
+                            correctHint: 'Correct! Mg²⁺ has a valence of 2 because it is a cation with a +2 charge.',
+                            incorrectHint: 'Try again! Mg²⁺ is a cation with a +2 charge, giving it a valence of 2.'
+                        },
+                        { 
+                            name: 'Cl⁻', 
+                            valence: 1, 
+                            type: 'anion',
+                            correctHint: 'Correct! Cl⁻ has a valence of 1 because it is an anion with a -1 charge.',
+                            incorrectHint: 'Try again! Cl⁻ is an anion with a -1 charge, giving it a valence of 1.'
+                        },
+                        { 
+                            name: 'HCO₃⁻', 
+                            valence: 1, 
+                            type: 'anion',
+                            correctHint: 'Correct! HCO₃⁻ has a valence of 1 because it is an anion with a -1 charge.',
+                            incorrectHint: 'Try again! HCO₃⁻ is an anion with a -1 charge, giving it a valence of 1.'
+                        },
+                        { 
+                            name: 'SO₄²⁻', 
+                            valence: 2, 
+                            type: 'anion',
+                            correctHint: 'Correct! SO₄²⁻ has a valence of 2 because it is an anion with a -2 charge.',
+                            incorrectHint: 'Try again! SO₄²⁻ is an anion with a -2 charge, giving it a valence of 2.'
+                        },
+                        { 
+                            name: 'NaCl', 
+                            valence: 1, 
+                            type: 'compound',
+                            correctHint: 'Correct! NaCl has a valence of 1 because it contains Na⁺ (+1) and Cl⁻ (-1) ions.',
+                            incorrectHint: 'Try again! NaCl contains Na⁺ (+1) and Cl⁻ (-1) ions, giving it a valence of 1.'
+                        },
+                        { 
+                            name: 'CaCl₂', 
+                            valence: 2, 
+                            type: 'compound',
+                            correctHint: 'Correct! CaCl₂ has a valence of 2 because it contains Ca²⁺ (+2) and two Cl⁻ (-1) ions.',
+                            incorrectHint: 'Try again! CaCl₂ contains Ca²⁺ (+2) and two Cl⁻ (-1) ions, giving it a valence of 2.'
+                        },
+                        { 
+                            name: 'dextrose', 
+                            valence: 1, 
+                            type: 'non-electrolyte',
+                            correctHint: 'Correct! Dextrose has a valence of 1 because it is a non-electrolyte with no dissociation.',
+                            incorrectHint: 'Try again! Dextrose is a non-electrolyte that does not dissociate, giving it a valence of 1.'
+                        },
+                        { 
+                            name: 'mannitol', 
+                            valence: 1, 
+                            type: 'non-electrolyte',
+                            correctHint: 'Correct! Mannitol has a valence of 1 because it is a non-electrolyte with no dissociation.',
+                            incorrectHint: 'Try again! Mannitol is a non-electrolyte that does not dissociate, giving it a valence of 1.'
+                        }
+                    ];
+
+                    function shuffleArray(array) {
+                        const newArray = [...array];
+                        for (let i = newArray.length - 1; i > 0; i--) {
+                            const j = Math.floor(Math.random() * (i + 1));
+                            [newArray[i], newArray[j]] = [newArray[j], newArray[i]];
+                        }
+                        return newArray;
+                    }
+
+                    let shuffledSubstances = [];
+                    let availableItems = []; // Items currently visible in waiting area
+                    const maxVisibleItems = 7; // Maximum items to show at once
+
+                    function initGame() {
+                        correctCount = 0;
+                        currentItemIndex = 0;
+                        updateGameStatus();
+
+                        // Clear all areas
+                        const dragItemsArea = document.getElementById('drag-items-area');
+                        const droppedValence1 = document.getElementById('dropped-valence-1');
+                        const droppedValence2 = document.getElementById('dropped-valence-2');
+                        const hintContainer = document.getElementById('hint-container');
+                        
+                        if (!dragItemsArea) return;
+                        
+                        dragItemsArea.innerHTML = '';
+                        droppedValence1.innerHTML = '';
+                        droppedValence2.innerHTML = '';
+                        hintContainer.style.display = 'none';
+
+                        // Create shuffled substances order
+                        shuffledSubstances = shuffleArray([...substances]);
+                        availableItems = [];
+
+                        // Show initial items
+                        refillWaitingArea();
+
+                        // Set up drop zones
+                        setupDropZones();
+                    }
+
+                    function refillWaitingArea() {
+                        const dragItemsArea = document.getElementById('drag-items-area');
+                        
+                        // Add new items up to the maximum visible limit
+                        while (availableItems.length < maxVisibleItems && currentItemIndex < shuffledSubstances.length) {
+                            const substance = shuffledSubstances[currentItemIndex];
+                            availableItems.push(substance);
+                            currentItemIndex++;
+                        }
+                        
+                        // Clear and rebuild the waiting area
+                        dragItemsArea.innerHTML = '';
+                        
+                        availableItems.forEach(substance => {
+                            const dragItem = document.createElement('div');
+                            dragItem.classList.add('drag-item');
+                            dragItem.textContent = substance.name;
+                            dragItem.dataset.valence = substance.valence;
+                            dragItem.dataset.name = substance.name;
+                            dragItem.dataset.type = substance.type;
+                            dragItem.dataset.correctHint = substance.correctHint;
+                            dragItem.dataset.incorrectHint = substance.incorrectHint;
+                            dragItem.draggable = true;
+                            
+                            // Add drag event listeners
+                            dragItem.addEventListener('dragstart', handleDragStart);
+                            dragItem.addEventListener('dragend', handleDragEnd);
+                            
+                            dragItemsArea.appendChild(dragItem);
+                        });
+                    }
+
+                    function removeItemFromWaiting(itemName) {
+                        // Remove item from available items
+                        availableItems = availableItems.filter(item => item.name !== itemName);
+                        
+                        // Refill the waiting area
+                        refillWaitingArea();
+                    }
+
+                    function showCurrentItem() {
+                        // This function is no longer needed as we use refillWaitingArea
+                        // Keeping it for compatibility but it does nothing
+                    }
+
+                    function setupDropZones() {
+                        const dropZones = document.querySelectorAll('.drop-zone');
+                        dropZones.forEach(zone => {
+                            zone.addEventListener('dragover', handleDragOver);
+                            zone.addEventListener('dragenter', handleDragEnter);
+                            zone.addEventListener('dragleave', handleDragLeave);
+                            zone.addEventListener('drop', handleDrop);
+                        });
+                    }
+
+                    function handleDragStart(e) {
+                        e.dataTransfer.setData('text/plain', JSON.stringify({
+                            name: this.dataset.name,
+                            valence: this.dataset.valence,
+                            type: this.dataset.type,
+                            correctHint: this.dataset.correctHint,
+                            incorrectHint: this.dataset.incorrectHint,
+                            source: 'drag-area'
+                        }));
+                        this.classList.add('dragging');
+                    }
+
+                    function handleDroppedItemDragStart(e) {
+                        e.dataTransfer.setData('text/plain', JSON.stringify({
+                            name: this.dataset.name,
+                            valence: this.dataset.valence,
+                            type: this.dataset.type,
+                            correctHint: this.dataset.correctHint,
+                            incorrectHint: this.dataset.incorrectHint,
+                            source: 'drop-zone'
+                        }));
+                        this.classList.add('dragging');
+                    }
+
+                    function handleDragEnd(e) {
+                        this.classList.remove('dragging');
+                    }
+
+                    function handleDragOver(e) {
+                        e.preventDefault();
+                    }
+
+                    function handleDragEnter(e) {
+                        e.preventDefault();
+                        this.classList.add('drag-over');
+                    }
+
+                    function handleDragLeave(e) {
+                        if (!this.contains(e.relatedTarget)) {
+                            this.classList.remove('drag-over');
+                        }
+                    }
+
+                    function handleDrop(e) {
+                        e.preventDefault();
+                        this.classList.remove('drag-over');
+                        
+                        const data = JSON.parse(e.dataTransfer.getData('text/plain'));
+                        const dropZoneValence = parseInt(this.dataset.valence);
+                        const itemValence = parseInt(data.valence);
+                        
+                        if (data.source === 'drag-area') {
+                            // Item coming from the drag area
+                            const draggedItem = document.querySelector(`[data-name="${data.name}"]`);
+                            if (draggedItem && draggedItem.parentNode.id === 'drag-items-area') {
+                                draggedItem.remove();
+                                removeItemFromWaiting(data.name);
+                                createDroppedItem(data, dropZoneValence, itemValence);
+                            }
+                        } else if (data.source === 'drop-zone') {
+                            // Item being moved between drop zones
+                            const draggedItem = document.querySelector(`.dropped-item[data-name="${data.name}"]`);
+                            if (draggedItem) {
+                                const wasCorrect = draggedItem.classList.contains('correct');
+                                if (wasCorrect) {
+                                    correctCount--;
+                                }
+                                draggedItem.remove();
+                                createDroppedItem(data, dropZoneValence, itemValence);
+                            }
+                        }
+                    }
+
+                    function createDroppedItem(data, dropZoneValence, itemValence) {
+                        // Create dropped item
+                        const droppedItem = document.createElement('div');
+                        droppedItem.classList.add('dropped-item');
+                        droppedItem.textContent = data.name;
+                        droppedItem.dataset.name = data.name;
+                        droppedItem.dataset.valence = data.valence;
+                        droppedItem.dataset.type = data.type;
+                        droppedItem.dataset.correctHint = data.correctHint;
+                        droppedItem.dataset.incorrectHint = data.incorrectHint;
+                        droppedItem.draggable = true;
+                        
+                        // Check if correct
+                        const isCorrect = dropZoneValence === itemValence;
+                        droppedItem.classList.add(isCorrect ? 'correct' : 'incorrect');
+                        
+                        // Show hint
+                        showHint(isCorrect, data.correctHint, data.incorrectHint);
+                        
+                        if (isCorrect) {
+                            correctCount++;
+                        }
+                        
+                        // Add drag event listeners to dropped items
+                        droppedItem.addEventListener('dragstart', handleDroppedItemDragStart);
+                        droppedItem.addEventListener('dragend', handleDragEnd);
+                        
+                        // Add to appropriate drop zone
+                        const targetZone = dropZoneValence === 1 ? 
+                            document.getElementById('dropped-valence-1') : 
+                            document.getElementById('dropped-valence-2');
+                        targetZone.appendChild(droppedItem);
+                        
+                        // Add click to remove functionality
+                        droppedItem.addEventListener('click', function() {
+                            returnItemToStart(this);
+                        });
+                        
+                        updateGameStatus();
+                    }
+
+                    function showHint(isCorrect, correctHint, incorrectHint) {
+                        const hintContainer = document.getElementById('hint-container');
+                        
+                        // Clear any existing timeout for incorrect hints
+                        if (hintContainer.hideTimeout) {
+                            clearTimeout(hintContainer.hideTimeout);
+                            hintContainer.hideTimeout = null;
+                        }
+                        
+                        // Update hint content and styling
+                        hintContainer.innerHTML = '';
+                        hintContainer.className = 'hint-container';
+                        
+                        if (isCorrect) {
+                            hintContainer.classList.add('hint-correct');
+                        } else {
+                            hintContainer.classList.add('hint-error');
+                        }
+                        
+                        hintContainer.textContent = isCorrect ? correctHint : incorrectHint;
+                        hintContainer.style.display = 'block';
+                        
+                        // Only set timeout to hide if incorrect
+                        // Correct hints persist until replaced by another hint
+                        if (!isCorrect) {
+                            hintContainer.hideTimeout = setTimeout(() => {
+                                hintContainer.style.display = 'none';
+                                hintContainer.hideTimeout = null;
+                            }, 4000);
+                        }
+                    }
+
+                    function returnItemToStart(droppedItem) {
+                        const wasCorrect = droppedItem.classList.contains('correct');
+                        if (wasCorrect) {
+                            correctCount--;
+                        }
+                        
+                        // Create substance object from dropped item data
+                        const substance = {
+                            name: droppedItem.dataset.name,
+                            valence: parseInt(droppedItem.dataset.valence),
+                            type: droppedItem.dataset.type,
+                            correctHint: droppedItem.dataset.correctHint,
+                            incorrectHint: droppedItem.dataset.incorrectHint
+                        };
+                        
+                        // Add back to available items at the beginning
+                        availableItems.unshift(substance);
+                        
+                        // Remove from drop zone
+                        droppedItem.remove();
+                        
+                        // Hide hint
+                        const hintContainer = document.getElementById('hint-container');
+                        hintContainer.style.display = 'none';
+                        
+                        // Refresh the waiting area
+                        refillWaitingArea();
+                        
+                        updateGameStatus();
+                    }
+
+                    function updateGameStatus() {
+                        const counterDisplay = document.querySelector('#valence-matching-game-container .card-counter');
+                        if (counterDisplay) {
+                            if (correctCount === totalItems) {
+                                counterDisplay.innerHTML = '<span class="congratulations-message">🎉 Congratulations! All Correct! 🎉</span>';
+                            } else {
+                                counterDisplay.innerHTML = `Correct: <span id="valence-match-counter">${correctCount}</span>/<span id="valence-total-matches">${totalItems}</span>`;
+                            }
+                        }
+                    }
+
+                    // Event listeners
+                    if (gameBtn && gameContainer && contentBeforeGame) {
+                        gameBtn.addEventListener('click', () => {
+                            contentBeforeGame.style.display = 'none';
+                            gameContainer.style.display = 'block';
+                            gameButtonContainer.style.display = 'none';
+                            initGame();
+                        });
+                    }
+
+                    if (backBtn && gameContainer && contentBeforeGame) {
+                        backBtn.addEventListener('click', () => {
+                            gameContainer.style.display = 'none';
+                            contentBeforeGame.style.display = '';
+                            gameButtonContainer.style.display = '';
+                        });
+                    }
+
+                    if (resetBtn) {
+                        resetBtn.addEventListener('click', initGame);
+                    }
+                }
+            });
+        </script>
+    </div>
+</body>
+</html>

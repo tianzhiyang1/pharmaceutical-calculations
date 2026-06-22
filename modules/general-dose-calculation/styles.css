@@ -1,0 +1,957 @@
+/* ================== */
+/* CLASSES USED IN INDEX.HTML */
+/* ================== */
+
+/* Tutorial Cards */
+.tutorial-card {
+    animation: fadeIn 0.5s ease;
+}
+
+.tutorial-section {
+    margin-bottom: var(--spacing-xl);
+}
+
+.section-divider {
+    height: 1px;
+    background-color: var(--border-color);
+    margin: var(--spacing-xl) 0;
+}
+
+/* Example Calculations */
+.example-calculation {
+    border-radius: var(--border-radius);
+    border: 2px solid var(--hint-border, var(--border-color));
+    padding: var(--spacing-md);
+    margin: var(--spacing-md) 0;
+    position: relative; 
+}
+
+.example-calculation p {
+    margin: var(--spacing-xs) 0;
+}
+
+.example-calculation ul {
+    padding-left: 20px;
+    margin: var(--spacing-sm) 0;
+}
+
+/* Equations and Fractions */
+.fraction {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    margin: 0 5px;
+}
+
+.fraction-numerator,
+.fraction-denominator {
+    display: block;
+    padding: 3px;
+}
+
+.fraction-numerator {
+    border-bottom: 1px solid var(--text-color, #000);
+}
+
+.horizontal-operation {
+    margin: var(--spacing-sm) 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--spacing-xs);
+}
+
+/* Step Navigation Styles */
+.step-content {
+    margin-bottom: var(--spacing-lg);
+    display: none;
+}
+
+/* Show step content when active OR when it's inside steps-container (for quiz steps) */
+.step-content.active,
+.steps-container .step-content {
+    display: block;
+    animation: fadeIn 0.3s ease-in-out;
+}
+  
+.step-title {
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-md);
+}
+  
+.step-instructions {
+    border-left: 3px solid var(--primary-color);
+    padding: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+}
+  
+.step-instructions ol {
+    margin: 0;
+    padding-left: 20px;
+}
+  
+.step-instructions li {
+    margin-bottom: var(--spacing-xs);
+}
+  
+.tutorial-steps {
+    position: relative;
+    min-height: 250px;
+    padding: 0 var(--spacing-lg);
+}
+  
+.step-navigation {
+    margin-top: var(--spacing-lg);
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Important example containers */
+.important {
+    border: 3px solid var(--primary-color);
+    border-radius: var(--card-radius);
+    padding: var(--spacing-md);
+    margin: var(--spacing-lg) 0;
+    background-color: var(--important-bg);
+}
+
+/* Layout for the section containing the percent table and matching button */
+#importantToRememberSection.important {
+    display: flex;
+    flex-direction: column; 
+}
+
+.important-header-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: var(--spacing-xxl); 
+}
+
+.important-header-row .important-text {
+    color: var(--primary-color);
+    text-align: center;
+    margin-top: 0;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/* Tables */
+.wide-metric-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: var(--spacing-md) 0;
+}
+
+.wide-metric-table th {
+    background-color: var(--primary-color);
+    color: white;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    text-align: left;
+}
+
+.wide-metric-table td {
+    border: 1px solid var(--border-color);
+    padding: var(--spacing-xs) var(--spacing-sm);
+}
+
+.prefix-cell {
+    font-weight: 500;
+}
+
+.value-cell {
+    font-family: monospace;
+}
+
+.equation {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--spacing-xs);
+    margin: var(--spacing-md) 0;
+}
+
+.eq-operator {
+    margin: 0 var(--spacing-xs);
+    font-weight: bold;
+}
+
+.proportion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: var(--spacing-md) 0;
+}
+
+/* Collapsible Section Styles */
+.reference-header {
+    background-color: transparent;
+    color: var(--primary-color);
+    padding: var(--spacing-xs, 8px) 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: color 0.2s;
+}
+
+.reference-header:hover {
+    background-color: transparent;
+    color: var(--primary-dark, #1565c0);
+}
+
+.reference-header h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.expand-icon {
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: transform 0.3s;
+}
+
+.reference-header.active .expand-icon {
+    transform: rotate(45deg);
+}
+
+.reference-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    padding: 0;
+    font-size: 0.9rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.reference-content.expanded {
+    max-height: 9999px; 
+    padding: var(--spacing-sm) 0;
+    overflow: visible;
+    position: relative;
+}
+
+/* Collapsible Tutorial Topic Styles */
+.tutorial-topic-header {
+    background-color: transparent;
+    color: var(--primary-color);
+    padding: var(--spacing-xs, 8px) 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: color 0.2s;
+}
+
+.tutorial-topic-header:hover {
+    background-color: transparent;
+    color: var(--primary-dark, #1565c0);
+}
+
+.tutorial-topic-header h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.tutorial-topic-header.active .expand-icon {
+    transform: rotate(45deg);
+}
+
+.tutorial-topic-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
+    padding: 0;
+}
+
+.tutorial-topic-content.expanded {
+    max-height: 9999px; 
+    padding: var(--spacing-sm, 10px) 0;
+    overflow: visible;
+    position: relative;
+}
+
+.dose-number {
+    color: #4477AA;
+    font-weight: bold;
+}
+
+.dose-total {
+    color: #228833;
+    font-weight: bold;
+}
+
+.dose-size {
+    color: #CC6677;
+    font-weight: bold;
+}
+
+/* ================== */
+/* STYLES FOR PRACTICE.HTML */
+/* ================== */
+
+.question-content-wrapper {
+    text-indent: -2.5em;
+    padding-left: 2.5em;
+    margin-top: var(--spacing-sm);
+}
+
+/* Question Tags */
+.question-tag {
+    display: inline-block;
+    padding: 2px var(--spacing-xs);
+    margin-bottom: var(--spacing-sm);
+    border: 1px solid var(--primary-color);
+    border-radius: var(--button-radius);
+    color: var(--primary-color);
+    font-size: 0.9rem;
+    font-weight: 500;
+    align-self: flex-start;
+}
+
+.question-tag.general {
+    border-color: var(--filter-color-one);
+    color: var(--filter-color-one);
+}
+
+.question-tag.weight {
+    border-color: var(--filter-color-two);
+    color: var(--filter-color-two);
+}
+
+.question-tag.splitting {
+    border-color: var(--filter-color-three);
+    color: var(--filter-color-three);
+}
+
+.question, .solution-question {
+  display: flex;
+  flex-direction: column;
+}
+
+.answer-container {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-md);
+}
+
+.answer-container input {
+    flex: 0 0 auto;
+    width: 120px;
+}
+
+.answer-container .unit {
+    flex: 0 0 auto;
+}
+
+/* Step Container Styles */
+.steps-container {
+    margin-top: var(--spacing-lg);
+    border-left: 3px solid var(--accent-color);
+    padding-left: var(--spacing-md);
+    display: none;
+}
+
+.solution-steps {
+    display: block;
+    margin-top: var(--spacing-md);
+    border-left: 3px solid var(--accent-color);
+    padding-left: var(--spacing-md);
+}
+
+.step {
+    margin-bottom: var(--spacing-lg);
+    padding-bottom: var(--spacing-lg);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.step:last-child {
+    border-bottom: none;
+}
+
+.step-label {
+    font-weight: 600;
+    margin-bottom: var(--spacing-md);
+    color: var(--primary-color);
+    font-size: 1.1rem;
+}
+
+.steps-container .equation-container,
+.steps-container .operation-container,
+.solution-steps .equation-container,
+.solution-steps .operation-container {
+    margin: var(--spacing-md) 0;
+}
+
+/* Step Button Containers */
+.check-btn-container {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+    gap: var(--spacing-sm);
+    margin-top: var(--spacing-md); 
+}
+
+.step-next-btn-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: var(--spacing-md);
+}
+
+/* Hybrid Operand Styling */
+.operand-hybrid {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.operand-hybrid input {
+    margin: 0;
+}
+
+/* Results Card */
+#results {
+    text-align: center;
+}
+
+.results-title {
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-md);
+    color: var(--primary-color);
+}
+
+.results-message {
+    font-size: 1.2rem;
+    margin-bottom: var(--spacing-xl);
+}
+
+.clear-progress-container {
+    margin-top: var(--spacing-lg);
+    text-align: center;
+}
+
+/* Reference Card Styles */
+/* Base reference card styles are now in master.css */
+
+/* Overrides for general-dose-calculation's special layout */
+.reference-container {
+    flex-direction: column; /* Stack cards vertically */
+}
+
+.reference-card {
+    width: 100%; /* Full width cards */
+}
+
+/* Remove the hardcoded max-height that was preventing collapse */
+.reference-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Only expanded content gets the large max-height */
+.reference-content.expanded {
+    max-height: 9999px; /* Larger max-height for complex content */
+}
+
+/* Nested reference sections within the main card - UNIQUE TO GENERAL DOSE CALCULATION */
+.reference-card .reference-card {
+    width: 43%;
+    margin-bottom: var(--spacing-sm);
+    padding-bottom: var(--spacing-xs);
+    flex: 0 0 43%;
+}
+
+.reference-card .reference-card:last-child {
+    margin-bottom: 0;
+}
+
+.reference-card .reference-card .reference-header {
+    border-bottom: none;
+    padding: 4px 0;
+}
+
+.reference-card .reference-card .reference-header h3 {
+    font-size: 1.0rem;
+    line-height: 1.2;
+}
+
+.reference-card .reference-card .reference-content.expanded {
+    max-height: 800px;
+    padding: 6px 0;
+}
+
+/* Reduce line spacing within nested reference cards */
+.reference-card .reference-card p {
+    margin: 6px 0;
+    line-height: 1.3;
+}
+
+.reference-card .reference-card ol {
+    margin: var(--spacing-xs) 0;
+    line-height: 1.4;
+}
+
+.reference-card .reference-card ol li {
+    margin-bottom: 3px;
+}
+
+.reference-card .reference-card ul {
+    margin: var(--spacing-xs) 0;
+    line-height: 1.4;
+}
+
+.reference-card .reference-card ul li {
+    margin-bottom: 2px;
+}
+
+/* ================== */
+/* History Panel Styles */
+/* ================== */
+
+/* Base history panel styles are now in master.css */
+
+/* Module-specific history section title colors */
+.history-section-title.general-title {
+    color: var(--filter-color-one);
+    border-bottom-color: var(--filter-color-one);
+}
+
+.history-section-title.weight-title {
+    color: var(--filter-color-two);
+    border-bottom-color: var(--filter-color-two);
+}
+
+.history-section-title.splitting-title {
+    color: var(--filter-color-three);
+    border-bottom-color: var(--filter-color-three);
+}
+
+/* ================== */
+/* Filter Styles */
+/* ================== */
+
+.filter-container {
+  margin: calc(var(--spacing-xl) * 1.5) 0 var(--spacing-md) 0;
+  padding-left: var(--spacing-sm);
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.filter-title {
+  margin-right: var(--spacing-md);
+  color: var(--text-color);
+}
+
+.filter-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-md);
+}
+
+.filter-option {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  border-radius: var(--button-radius);
+  padding: 2px var(--spacing-xs);
+  border: 1px solid var(--filter-color-one);
+  margin-right: 5px;
+  transition: all 0.2s ease;
+}
+
+.filter-option input[type="checkbox"] {
+  margin-right: 5px;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+}
+
+.filter-label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--filter-color-one);
+}
+
+.filter-option:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.filter-option input[type="checkbox"]:checked + .filter-label {
+  font-weight: 600;
+}
+
+/* Filter Option Colors */
+.filter-option:nth-child(1) {
+    border-color: var(--filter-color-one);
+}
+
+.filter-option:nth-child(1) .filter-label {
+    color: var(--filter-color-one);
+}
+
+.filter-option:nth-child(2) {
+    border-color: var(--filter-color-two);
+}
+
+.filter-option:nth-child(2) .filter-label {
+    color: var(--filter-color-two);
+}
+
+.filter-option:nth-child(3) {
+    border-color: var(--filter-color-three);
+}
+
+.filter-option:nth-child(3) .filter-label {
+    color: var(--filter-color-three);
+}
+
+/* Animation removed - using fadeIn from master.css */
+
+/* ================== */
+/* RESPONSIVE DESIGN */
+/* ================== */
+
+@media (max-width: 600px) {
+    .question-button-grid {
+        grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+        gap: var(--spacing-xs);
+    }
+    
+    .question-button {
+        width: 50px;
+        height: 50px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .reference-card .reference-card {
+        width: 100%;
+        flex: 0 0 100%;
+    }
+}
+
+/* ================== */
+/* HOTSPOT Styles */
+/* ================== */
+
+.hotspot-image-container {
+  position: relative;
+  margin: 40px 0 var(--spacing-lg) 0;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.hotspot-image {
+  max-width: 100%;
+  max-height: 450px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hotspot-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.hotspot-area {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  pointer-events: auto;
+}
+
+.hotspot-area:hover {
+  box-shadow: 0 0 10px 2px rgba(0, 123, 255, 0.5);
+  transform: scale(1.02);
+}
+
+.hotspot-area.correct {
+  background-color: rgba(40, 167, 69, 0.4);
+  border: 2px solid var(--correct-color);
+  pointer-events: none;
+}
+
+.hotspot-sequence-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-lg);
+  margin: var(--spacing-md) 0;
+  justify-content: center;
+  padding-bottom: 5px;
+}
+
+.hotspot-sequence-btn {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  color: #6c757d;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+  transition: color 0.2s ease;
+  cursor: default;
+  position: relative;
+}
+
+.hotspot-sequence-btn.disabled {
+  opacity: 0.7;
+  color: #adb5bd;
+}
+
+.hotspot-sequence-btn.active {
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 1.1rem;
+  opacity: 1;
+}
+
+.hotspot-sequence-btn.active::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: var(--primary-color);
+  border-radius: 1px;
+}
+
+.hotspot-sequence-btn.completed {
+  color: var(--correct-color);
+  font-weight: 600;
+  opacity: 1;
+}
+
+/* Container for step action buttons */
+.step-inputs-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-md);
+}
+
+/* Hint Button */
+.step-hint-btn {
+  background-color: var(--accent-color);
+}
+
+.step-hint-btn:hover {
+  background-color: var(--accent-dark);
+}
+
+/* Message shown when a step is completed */
+.step-complete-message {
+  font-weight: 500;
+  color: var(--correct-color);
+}
+
+/* ================== */
+/* INTERPRETATION Styles */
+/* ================== */
+
+.interpretation-step {
+  margin: var(--spacing-lg) 0;
+}
+
+.interpretation-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+}
+
+.interpretation-item {
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--border-radius);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.short-answer-input {
+  display: inline-block;
+  width: 200px;
+  padding: var(--spacing-sm) var(--spacing-sm);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+  background-color: var(--card-background);
+  color: var(--text-color);
+  vertical-align: middle;
+}
+
+.short-answer-input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.2);
+}
+
+.fill-blanks-text {
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+.fill-blank-input {
+  width: 80px;
+  padding: 6px var(--spacing-sm);
+  margin: 0 4px;
+  text-align: center;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+  background-color: var(--card-background);
+  color: var(--text-color);
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
+
+.fill-blank-input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.2);
+}
+
+.short-answer-input.correct,
+.fill-blank-input.correct {
+  background-color: var(--correct-bg);
+  color: var(--text-color);
+}
+
+.short-answer-input.incorrect,
+.fill-blank-input.incorrect {
+  background-color: var(--incorrect-bg);
+  color: var(--text-color);
+}
+
+.step-feedback {
+    padding: var(--spacing-sm) var(--spacing-sm);
+    border-radius: var(--border-radius);
+    margin-top: var(--spacing-md);
+    font-size: 0.9rem;
+    line-height: 1.4;
+    border: 1px solid transparent;
+    min-height: 1.5em;
+    font-weight: 500;
+}
+
+.step-feedback.correct {
+    background-color: var(--correct-bg);
+    border-color: var(--correct-border);
+    color: var(--correct-color);
+}
+
+.step-feedback.incorrect {
+    background-color: var(--incorrect-bg);
+    border-color: var(--incorrect-border);
+    color: var(--incorrect-color);
+}
+
+.step-feedback.hint-active {
+  background-color: var(--hint-bg);
+  border-color: var(--hint-border);
+  color: var(--hint-color);
+}
+
+/* Per-item feedback + animations produced by the shared interpretation/hotspot
+   step plugins (step-types/interpretation.js, step-types/hotspot-step.js). */
+.item-feedback {
+  text-align: left;
+  padding: 8px 10px;
+  margin-top: 5px;
+  width: 100%;
+  border-radius: var(--border-radius);
+  font-size: 0.85rem;
+  border: 1px solid transparent;
+  font-weight: 500;
+}
+
+.item-feedback.correct { background-color: #d4edda; border-color: #c3e6cb; color: var(--correct-color); }
+.item-feedback.incorrect { background-color: #f8d7da; border-color: #f5c6cb; color: var(--incorrect-color); }
+.item-feedback.hint-active { background-color: #fff8dc; border-color: #f4e9c4; color: #8b7300; }
+
+.item-feedback.fade-in, .fade-in { animation: fadeIn 0.3s ease-out forwards; }
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.hotspot-hint-content { font-weight: 500; }
+
+.hint-item {
+  margin-bottom: var(--spacing-xs);
+}
+
+.hint-item:last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .hotspot-sequence-row {
+    gap: var(--spacing-md);
+    margin: var(--spacing-sm) 0;
+  }
+  
+  .short-answer-input {
+    width: 150px;
+  }
+  
+  .fill-blank-input {
+    width: 60px;
+  }
+}
+
+/* ================== */
+/* Question Image Styles */
+/* ================== */
+
+.question-image-container {
+  position: relative;
+  margin: var(--spacing-lg) 0;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.question-image {
+  max-width: 100%;
+  max-height: 400px;
+  border: 1px solid #ddd;
+  border-radius: var(--card-radius);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Question button colors by tag */
+.history-question-button.general.completed {
+    background-color: var(--filter-color-one);
+}
+
+.history-question-button.weight.completed {
+    background-color: var(--filter-color-two);
+}
+
+.history-question-button.splitting.completed {
+    background-color: var(--filter-color-three);
+}

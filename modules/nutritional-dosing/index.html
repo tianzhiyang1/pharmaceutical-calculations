@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutritional Dosing</title>
+    <link rel="stylesheet" href="../../master.css">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="index-container">
+        <header>
+            <h1>Pharmacy Calculations:<br>Nutritional Dosing</h1>
+        </header>
+
+        <div class="card overview-card">
+            <h2>Overview</h2>
+            <p>In this module, you will:</p>
+            <ul>
+                <li>Recognize advantages of enteral nutrition over parenteral nutrition</li>
+                <li>Use Harris-Benedict equation to determine basal energy expenditure (BEE) requirements</li>
+                <li>Calculate basic nutritional resources for caloric requirements </li>
+            </ul>
+            
+            <div class="method-list">
+                <div class="method-item">
+                    <h3 id="nutritionalDosingTitle" class="method-title">Nutritional Dosing Tutorial</h3>
+                    <p class="tutorial-notice">Click the title to view the tutorial</p>
+                </div>
+            </div>
+
+            <div class="button-container">
+                <a href="./practice.html" class="practice-btn">Start Practicing</a>
+            </div>
+        </div>
+
+        <!-- Nutritional Dosing Tutorial -->
+        <div class="card tutorial-card" id="nutritionalDosingTutorial" style="display: none;">
+        <h2>Tutorial - Nutritional Dosing</h2>
+        <div class="tutorial-content">
+            <div class="tutorial-section">
+                <h3>I. Nutritional Requirements</h3>
+                    <div class="example-calculation">
+                        <ul>
+                        <li>Macronutrients: Proteins, lipids (fats), and carbohydrates</li>
+                        <li>Micronutrients: Vitamins, minerals, and electrolytes</li>
+                        <li>These nutrients are essential for maintaining or achieving the desired nutritional status.</li>
+                        <li>Requirements vary based on age, gender, physical parameters, disease state, and current nutritional status</li>
+                        </ul>
+                </div>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <div class="tutorial-section">
+                <h3>II. Routes of Nutrient Delivery</h3>
+                <div class="example-calculation">
+                    <p><strong>Enteral Nutrition</strong></p>
+                    <ul>
+                        <li>Nutrients delivered through the gastrointestinal (GI) tract</li>
+                        <li>Includes oral intake or tube feeding with liquid formulations</li>
+                        <li>Preferred when the GI tract is functional</li>
+                        <li>Advantages: Lower cost, fewer complications</li>
+                    </ul>
+                    
+                    <p><strong>Parenteral Nutrition</strong></p>
+                    <ul>
+                        <li>Total Parenteral Nutrition (TPN): Nutrients delivered intravenously</li>
+                        <li>Indicated when GI absorption is not possible</li>
+                        <li>General rule: "If the gut works, use it"</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <div class="tutorial-section">
+                <h3>III. Caloric Requirements</h3>
+                <div class="example-calculation">
+                    <ul>
+                        <li>Energy needs vary with physical condition and illness severity</li>
+                        <li>Kilocalorie (kcal): Heat required to raise the temperature of 1 kg of water by 1°C</li>
+                        <li>Basal Energy Expenditure (BEE) is the energy required at rest to maintain basic physiological functions
+                            <ul>
+                                <li>Also called Resting Metabolic Energy (RME) or Resting Energy Expenditure (REE)</li>
+                                <li>Estimated at 15–25 kcal/kg/day</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <div class="tutorial-section">
+                <h3>IV. Harris-Benedict Equation (to Estimate BEE)</h3>
+                <div class="example-calculation important">
+                    <div class="formula-box-content">
+                        <div class="formula-box">
+                            <p style="text-align: center; color: blue;"><strong>Male: BEE = 66 + (13.7 × W) + (5 × H) – (6.8 × A)</strong></p>
+                            <p style="text-align: center; color: blue;"><strong>Female: BEE = 655 + (9.6 × W) + (1.8 × H) – (4.7 × A)</strong></p>
+                            <p><strong>Where:</strong></p>
+                            <ul>
+                                <li>W = weight (kg)</li>
+                                <li>H = height (cm)</li>
+                                <li>A = age (years)</li>
+                            </ul>
+                        </div>
+                    </div>
+                                </div>
+                            </div>
+                            
+            <div class="section-divider"></div>
+
+            <div class="tutorial-section">
+                <h3>V. Total Daily Energy Expenditure (TDE)</h3>
+                <div class="example-calculation important">
+                    <div class="formula-box-content">
+                        <div class="formula-box">
+                            <p style="text-align: center; color: blue;"><strong>Total daily energy expenditure (TDE) = BEE × activity factors × stress factors</strong></p>
+                                </div>
+                            </div>
+                            
+                    <div class="factors-grid">
+                        <div class="activity-factors">
+                            <p><strong>Activity Factors:</strong></p>
+                            <ul>
+                                <li>Confined to bed: 1.2</li>
+                                <li>Ambulatory: 1.3</li>
+                            </ul>
+                            </div>
+                        
+                        <div class="stress-factors">
+                            <p><strong>Stress Factors:</strong></p>
+                            <ul>
+                                <li>Non-stressed: 1.0</li>
+                                <li>Surgery: 1.2</li>
+                                <li>Infection: 1.4–1.6</li>
+                                <li>Trauma: 1.3–1.5</li>
+                                <li>Burns: 1.5–2.1</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <div class="tutorial-section">
+                <h3>Steps for BEE and TDE Calculations</h3>
+                <div class="example-calculation">
+                    <p><strong>Step 1: Gather patient information and convert units if necessary</strong></p>
+                    <ul>
+                        <li>Age (in years)</li>
+                        <li>Weight (in kg)</li>
+                        <li>Height (in cm)</li>
+                        <li>Sex (male or female)</li>
+                    </ul>
+                    
+                    <p><strong>Step 2: Calculate BEE using the Harris-Benedict equation</strong></p>
+                    <ul>
+                        <li>Male: BEE = 66+(13.7 × W)+(5 × H)–(6.8 × A)</li>
+                        <li>Female: BEE = 655+(9.6 × W)+(1.8 × H)–(4.7 × A)</li>
+                    </ul>
+                    <p>Note: BEE is expressed in kcal/day</p>
+                    
+                    <p><strong>Step 3: Apply activity and stress factors to find TDE (patient's total energy needs per day).</strong></p>
+                    <p>Total daily energy expenditure (TDE) = BEE x activity factors x stress factors</p>
+                </div>
+            </div>
+            
+            <div class="tutorial-section">
+                <h3>Example 1</h3>
+                <p><strong>Using the Harris-Benedict equation and assuming no stress factor, calculate the BEE (basal energy expenditure) for a 58-year-old female who is 5'3" tall and weighs 140 lb.</strong></p>
+                <div class="tutorial-steps" id="beeExample1Steps">
+                    <!-- Step 1 Content -->
+                    <div class="step-content active" id="bee1step1">
+                        <div class="step-instructions">
+                            <div class="step-title">Step 1: Gather patient information and convert units if necessary</div>
+                        </div>
+                        
+                        <div class="example-calculation">
+                            <ul>
+                                <li>A = 58 yr</li>
+                                <li>H = 5'3" = 63 in x 2.54 cm/1 in = 160 cm</li>
+                                <li>W = 140 lb x 1 kg/2.2 lb = 63 kg</li>
+                                <li>Female</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 2 Content -->
+                    <div class="step-content" id="bee1step2">
+                        <div class="step-instructions">
+                            <div class="step-title">Step 2: Calculate BEE using the Harris-Benedict equation</div>
+                        </div>
+                        
+                        <div class="example-calculation">
+                            <p>Female: BEE = 655+(9.6 × W)+(1.8 × H)–(4.7 × A)</p>
+                            <p>BEE = 655 + (9.6 × 63) + (1.8 × 160) – (4.7 × 58)</p>
+                            <p><strong style="color: green; margin-left: 35px;">= 1275.2 kcal/day</strong></p>
+                        </div>
+                    </div>
+
+                    <!-- Next Button -->
+                    <div class="step-navigation">
+                        <button class="tutorial-next-btn">Next Step ↓</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tutorial-section">
+                <h3>Example 2</h3>
+                <p><strong>A 25 year old female major trauma patient survives surgery and is recovering in the surgical intensive care unit. The medical team wants to start TPN. She is 122 pounds, 5'7'' with some mild renal impairment. Calculate her BEE using the Harris Benedict equations and her TDE non-protein caloric requirements (stress factor = 1.7 and activity factor = 1.2)</strong></p>
+                        <div class="example-calculation">
+                    <p><strong>Step 1: Gather patient information and convert units if necessary</strong></p>
+                    <ul>
+                        <li>A = 25 yr</li>
+                        <li>H = 5'7" = 67 in x 2.54 cm/1 in = 170 cm</li>
+                        <li>W = 122 lb x 1 kg/2.2 lb = 55.5 kg</li>
+                        <li>Female</li>
+                    </ul>
+                    
+                    <p><strong>Step 2: Calculate BEE using the Harris-Benedict equation</strong></p>
+                    <p>Female: BEE = 655+(9.6 × W)+(1.8 × H)–(4.7 × A)</p>
+                    <p>BEE = 655 + (9.6 × 55.5) + (1.8 × 170) – (4.68 × 25)</p>
+                    <p><strong style="color: green; margin-left: 35px;">= 1377 kcal/day</strong></p>
+                    
+                    <p><strong>Step 3: Apply activity and stress factors to find TDE</strong></p>
+                    <p>Total daily energy expenditure (TDE) = BEE × activity factors × stress factors</p>
+                    <p>TDE = BEE × activity factor × stress factor</p>
+                    <p style="margin-left: 35px;">= 1377 × 1.2 × 1.7</p>
+                    <p><strong style="color: green; margin-left: 35px;">= 2809 kcal/day</strong></p>
+                </div>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <div class="tutorial-section">
+                <h3>VI. Caloric Sources and Conversions</h3>
+                <table class="nutritional-table">
+                    <thead>
+                        <tr>
+                            <th class="header-usual">Usual Diet</th>
+                            <th class="header-enteral">Enteral Formula Examples</th>
+                            <th class="header-enteral-cal">Enteral Nutrition Calories/Gram Units</th>
+                            <th class="header-separator"></th>
+                            <th class="header-parenteral">Parenteral Formula Examples</th>
+                            <th class="header-parenteral-cal">Parenteral Nutrition Calories/Gram Units</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="carbs-usual" rowspan="2">Carbs</td>
+                            <td class="carbs-enteral" rowspan="2">Corn syrup solids, cornstarch, sucrose...</td>
+                            <td class="carbs-enteral-cal" rowspan="2">4 kcal/g</td>
+                            <td class="separator" rowspan="6"></td>
+                            <td class="carbs-parenteral">Dextrose Monohydrate</td>
+                            <td class="carbs-parenteral-cal">3.4 kcal/g</td>
+                        </tr>
+                        <tr>
+                            <td class="carbs-parenteral">Glycerol/Glycerin</td>
+                            <td class="carbs-parenteral-cal">4.3 kcal/g</td>
+                        </tr>
+                        <tr>
+                            <td class="lipids-usual" rowspan="3">Lipids</td>
+                            <td class="lipids-enteral" rowspan="3">Borage oil, canola oil, corn oil...</td>
+                            <td class="lipids-enteral-cal" rowspan="3">9 kcal/g</td>
+                            <td class="lipids-parenteral">IV Fat Emulsion (IVFE) 10%</td>
+                            <td class="lipids-parenteral-cal">1.1 kcal/mL</td>
+                        </tr>
+                        <tr>
+                            <td class="lipids-parenteral">IVFE 20%</td>
+                            <td class="lipids-parenteral-cal">2 kcal/mL</td>
+                        </tr>
+                        <tr>
+                            <td class="lipids-parenteral">IVFE 30%</td>
+                            <td class="lipids-parenteral-cal">3 kcal/mL</td>
+                        </tr>
+                        <tr>
+                            <td class="proteins-usual">Proteins</td>
+                            <td class="proteins-enteral">Casein, soy, whey...</td>
+                            <td class="proteins-enteral-cal">4 kcal/g</td>
+                            <td class="proteins-parenteral">Amino acid solutions (Aminosyn, Freamine...)</td>
+                            <td class="proteins-parenteral-cal">4 kcal/g</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p><strong>Summary of Roles:</strong></p>
+                <ul>
+                    <li>Carbohydrates – Primary energy source</li>
+                    <li>Fats – Secondary energy source; vital for hormones, cell membranes, and fat-soluble vitamins</li>
+                    <li>Proteins – Used for muscle building/repair or energy if carbs/fats are insufficient</li>
+                </ul>
+                        </div>
+                        
+            <div class="section-divider"></div>
+
+            <div class="tutorial-section">
+                <h3>Steps for Caloric Conversion Questions</h3>
+                        <div class="example-calculation">
+                    <p>These questions typically ask two types of questions:</p>
+                    <ul>
+                        <li>how many kcal are provided by a given volume or weight of a macronutrient</li>
+                        <li>how much of a nutrient is needed to meet a target kcal amount</li>
+                    </ul>
+                    
+                    <p><strong>Step 1: Know the caloric conversion values</strong></p>
+                    <table class="wide-metric-table">
+                        <thead>
+                            <tr>
+                                <th>Macronutrient</th>
+                                <th>Enteral kcal/g</th>
+                                <th>Parenteral kcal/g or mL</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Carbohydrate</td>
+                                <td>4 kcal/g</td>
+                                <td>3.4 kcal/g</td>
+                            </tr>
+                            <tr>
+                                <td>Protein</td>
+                                <td>4 kcal/g</td>
+                                <td>4 kcal/g</td>
+                            </tr>
+                            <tr>
+                                <td>Fat (lipid)</td>
+                                <td>9 kcal/g</td>
+                                <td>10%: 1.1 kcal/mL<br>20%: 2 kcal/mL<br>30%: 3 kcal/mL</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <p><strong>Step 2: Use ratio and proportion (or dimensional analysis) for caloric conversions</strong></p>
+                    <ul>
+                        <li>To calculate kcal from g or mL:<br>
+                        Set up the proportion: <span style="font-style: italic;">kcal per g or mL / 1 g or mL = x kcal / given grams or mL</span><br>
+                        Then solve for x (the number of kcal)</li>
+                        <li>To calculate grams or mL needed to provide specific kcal:<br>
+                        <span style="font-style: italic;">kcal per g or mL / 1 g or mL = target kcal / x g or mL</span><br>
+                        Then solve for x (the amount of nutrient needed)</li>
+                    </ul>
+                    
+                    <p><strong>Step 3 (if needed): Apply to each macronutrient separately</strong></p>
+                    <p>When multiple components are present (e.g., dextrose, amino acids, and lipids in TPN), calculate kcal for each, then add kcal from each macronutrient to determine the total energy provided.</p>
+                    <p><strong>Total kcal = kcal<sub>carbs</sub> + kcal<sub>protein</sub> + kcal<sub>fat</sub></strong></p>
+                </div>
+            </div>
+
+            <div class="tutorial-section">
+                <h3>Example 1</h3>
+                <p><strong>A patient is receiving 20% lipid emulsion. How many mL of lipid emulsion will provide 1200 kilocalories for the patient?</strong></p>
+                <div class="tutorial-steps" id="caloricExample1Steps">
+                    <!-- Step 1 Content -->
+                    <div class="step-content active" id="cal1step1">
+                        <div class="step-instructions">
+                            <div class="step-title">Step 1: Know the caloric conversion value</div>
+                        </div>
+                        
+                        <div class="example-calculation">
+                            <p>20% lipid emulsion provides 2 kcal/mL</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 2 Content -->
+                    <div class="step-content" id="cal1step2">
+                        <div class="step-instructions">
+                            <div class="step-title">Step 2: Use ratio and proportion to calculate volume (mL)</div>
+                        </div>
+                        
+                        <div class="example-calculation">
+                            <p>Set up the proportion and solve for x.</p>
+                            <div class="horizontal-operation">
+                                <div class="fraction">
+                                    <div class="fraction-numerator">2 kcal</div>
+                                    <div class="fraction-denominator">1 mL</div>
+                                </div>
+                                <span> = </span>
+                                <div class="fraction">
+                                    <div class="fraction-numerator">1200 kcal</div>
+                                    <div class="fraction-denominator">x</div>
+                                </div>
+                            </div>
+                            <p><strong style="color: green;">x = 600 mL</strong></p>
+                        </div>
+                    </div>
+
+                    <!-- Next Button -->
+                    <div class="step-navigation">
+                        <button class="tutorial-next-btn">Next Step ↓</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tutorial-section">
+                <h3>Example 2</h3>
+                <p><strong>A patient who is NPO receives a daily TPN regimen consisting of 504 g of dextrose, 126 g of amino acids, and 240 mL of 20% IV fat emulsion. What is the total daily caloric intake?</strong></p>
+                <div class="example-calculation">
+                    <p><strong>Step 1: Know the caloric conversion values</strong></p>
+                    <p>Dextrose (parenteral): 3.4 kcal/g</p>
+                    <p>Amino acids: 4 kcal/g</p>
+                    <p>20% lipid emulsion: 2 kcal/mL</p>
+                    
+                    <p><strong>Step 2: Use ratio and proportion to calculate kcal for each</strong></p>
+                    <p><strong>For dextrose:</strong></p>
+                    <div class="horizontal-operation">
+                        <div class="fraction">
+                            <div class="fraction-numerator">3.4 kcal</div>
+                            <div class="fraction-denominator">1 g</div>
+                        </div>
+                        <span> = </span>
+                        <div class="fraction">
+                            <div class="fraction-numerator">x kcal</div>
+                            <div class="fraction-denominator">504 g</div>
+                        </div>
+                    </div>
+                    <p>x = 1714 kcal</p>
+                    
+                    <p><strong>For amino acids:</strong></p>
+                    <div class="horizontal-operation">
+                        <div class="fraction">
+                            <div class="fraction-numerator">4 kcal</div>
+                            <div class="fraction-denominator">1 g</div>
+                        </div>
+                        <span> = </span>
+                        <div class="fraction">
+                            <div class="fraction-numerator">x kcal</div>
+                            <div class="fraction-denominator">126 g</div>
+                        </div>
+                    </div>
+                    <p>x = 504 kcal</p>
+                    
+                    <p><strong>For lipids:</strong></p>
+                            <div class="horizontal-operation">
+                                <div class="fraction">
+                            <div class="fraction-numerator">2 kcal</div>
+                                    <div class="fraction-denominator">1 mL</div>
+                                </div>
+                                <span> = </span>
+                                <div class="fraction">
+                            <div class="fraction-numerator">x kcal</div>
+                            <div class="fraction-denominator">240 mL</div>
+                        </div>
+                    </div>
+                    <p>x = 480 kcal</p>
+                    
+                    <p><strong>Step 3: Add kcal from all macronutrients</strong></p>
+                    <p><strong>Total kcal/day = 1714 kcal + 504 kcal + 480 kcal</strong></p>
+                    <p><strong style="color: green; margin-left: 110px;">= 2698 kcal</strong></p>
+                    </div>
+                </div>
+
+                <div class="back-to-top">
+                    <button id="backToOverviewBtn" class="back-btn">← Back to Overview</button>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                // Tutorial Navigation & General Page Logic
+                const nutritionalDosingTitle = document.getElementById('nutritionalDosingTitle');
+                const nutritionalDosingTutorial = document.getElementById('nutritionalDosingTutorial');
+                const backToOverviewBtn = document.getElementById('backToOverviewBtn');
+
+                if (nutritionalDosingTitle) {
+                    nutritionalDosingTitle.addEventListener('click', () => {
+                        nutritionalDosingTutorial.style.display = 'block';
+                        nutritionalDosingTitle.classList.add('active');
+                        nutritionalDosingTutorial.scrollIntoView({ behavior: 'smooth' });
+                    });
+                }
+
+                if (backToOverviewBtn) {
+                    backToOverviewBtn.addEventListener('click', () => {
+                        nutritionalDosingTutorial.style.display = 'none';
+                        nutritionalDosingTitle.classList.remove('active');
+                        document.querySelector('.overview-card').scrollIntoView({ behavior: 'smooth' });
+                    });
+                }
+                
+                // Initialize step-by-step tutorials
+                setupTutorialSteps('beeExample1Steps');
+                setupTutorialSteps('tdeExample2Steps');
+                setupTutorialSteps('caloricExample1Steps');
+
+                function setupTutorialSteps(containerId) {
+                    const stepsContainer = document.getElementById(containerId);
+                    if (!stepsContainer) return;
+
+                    const steps = stepsContainer.querySelectorAll('.step-content');
+                    const nextBtn = stepsContainer.querySelector('.tutorial-next-btn');
+                    if (!nextBtn) return; // Ensure button exists
+                    let currentStep = 1;
+                    const totalSteps = steps.length;
+
+                    function updateDisplay() {
+                        steps.forEach((step, index) => {
+                            step.classList.toggle('active', index < currentStep);
+                        });
+                        nextBtn.style.display = currentStep === totalSteps ? 'none' : 'block';
+                    }
+
+                    nextBtn.addEventListener('click', () => {
+                        if (currentStep < totalSteps) {
+                            currentStep++;
+                            updateDisplay();
+                        }
+                    });
+                    updateDisplay(); // Initial display
+                }
+            });
+        </script>
+    </div>
+</body>
+</html>

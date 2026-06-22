@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mOsmolarity and mOsmole</title>
+    <link rel="stylesheet" href="../../master.css">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="index-container">
+        <header>
+            <h1>Pharmacy Calculations:<br>mOsmolarity and mOsmole</h1>
+        </header>
+
+        <div class="card overview-card">
+            <h2>Overview</h2>
+            <p>In this module, you will:</p>
+            <ul>
+                <li>Solve electrolyte solution problems using osmolarity (Osmol/L) or milliosmolarity (mOsm/L) </li>
+                <li>Differentiate mOsmolarity and mOsm</li>
+            </ul>
+            
+            <div class="method-list">
+                <div class="method-item">
+                    <h3 id="osmolarityTitle" class="method-title">Osmolarity and Osmole Tutorial</h3>
+                    <p class="tutorial-notice">Click the title to view the tutorial</p>
+                </div>
+            </div>
+
+            <div class="button-container">
+                <a href="./practice.html" class="practice-btn">Start Practicing</a>
+            </div>
+        </div>
+
+        <!-- Osmolarity and Osmole Tutorial -->
+        <div class="card tutorial-card" id="osmolarityTutorial" style="display: none;">
+            <h2>Tutorial - Osmolarity and Osmole</h2>
+            <div class="tutorial-content">
+                <div class="tutorial-section">
+                    <div class="tutorial-topic-header" id="conceptReviewHeader">
+                        <h3>I. Concept review:</h3>
+                        <span class="expand-icon">+</span>
+                    </div>
+                    <div class="tutorial-topic-content" id="conceptReviewContent">
+                        <div class="example-calculation">
+                            <p><strong style="color: red;">Osmole or milliosmole:</strong> A unit that used to measure the osmotic activity of a substance.</p>
+                        
+                            <p><strong>Based on:</strong> The total number of cations and total number of anions (total numbers of PARTICLES).</p>
+                            
+                            <p><strong style="color: red;">Osmolarity:</strong> An expression of osmotic concentration as osmoles per liter or milliosmoles per liter (mOsm/L).</p>
+                            
+                            <p><strong>Important:</strong> Osmolarity of a solution is the SUM of the osmolarities of the SOLUTE components of the solution.</p>
+                            
+                            <p><strong>Clinical Application:</strong> The labels of Pharmacopeial solutions that provide iv replenishment of fluid, nutrients, or electrolytes, and the osmotic diuretic mannitol are required to state the osmolar concentration.</p>
+                            
+                            <p><strong style="color: red;">Osmolarity vs. Osmolality</strong></p>
+                            <ul>
+                                <li><strong>Osmolarity</strong> – measure of osmoles of solute/L of solution</li>
+                                <li><strong>Osmolality</strong> – measure of osmoles of solute/kg of solution</li>
+                            </ul>
+                            <p>For very diluted aqueous solution, osmolarity and osmolality are almost identical.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-divider"></div>
+
+                <div class="tutorial-section">
+                    <h3>II. Osmolarity calculation</h3>
+                    <div class="example-calculation important">
+                        <div class="important-header-row">
+                            <div class="important-text">KEY FORMULA</div>
+                        </div>
+                        <div class="formula-box-content">
+                            <div class="formula-box">
+                                <div class="horizontal-operation" style="font-weight: bold; justify-content: center;">
+                                    <span>mOsm/L = </span>
+                                    <div class="fraction">
+                                        <div class="fraction-numerator">weight (g/L) × no. of species × 1000</div>
+                                        <div class="fraction-denominator">MW</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p><strong>Where:</strong></p>
+                        <ul style="margin-top: 15px;">
+                            <li><strong>Weight (g/L)</strong> refers to the concentration in grams per liter.</li>
+                            <li><strong>Number of species</strong> (also called dissociation particles):
+                                <ul>
+                                    <li>Osmotic pressure is proportional to the total number of particles in solution</li>
+                                    <li>A nonelectrolyte (e.g., Dextrose) → no dissociation → number of species = 1</li>
+                                    <li>An electrolyte (e.g., NaCl, KCl) → dissociation; e.g., NaCl – dissociate into one sodium ion and one chloride ion → number of species = 2</li>
+                                </ul> 
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <p><strong>Species of dissociating molecules:</strong></p>
+                <table class="wide-metric-table">
+                    <thead>
+                        <tr>
+                            <th style="width: 40%;">Compound</th>
+                            <th style="width: 40%;">Dissociation</th>
+                            <th style="width: 20%;">Species</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>NaCl</td>
+                            <td>Na⁺ + Cl⁻</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>KCl</td>
+                            <td>K⁺ + Cl⁻</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>NH₄Cl</td>
+                            <td>NH₄⁺ + Cl⁻</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>NaHCO₃</td>
+                            <td>Na⁺ + HCO₃⁻</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>KC₆H₁₁O₇</td>
+                            <td>K⁺ + C₆H₁₁O₇⁻</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>MgSO₄</td>
+                            <td>Mg²⁺ + SO₄²⁻</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>FeSO₄</td>
+                            <td>Fe²⁺ + SO₄²⁻</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>CaCl₂</td>
+                            <td>Ca²⁺ + 2Cl⁻</td>
+                            <td>3</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p><strong>Species of non-dissociating molecules:</strong> e.g., dextrose, mannitol; species = 1</p>
+
+                <div class="section-divider"></div>
+
+                <div class="tutorial-section">
+                    <h3>III. Need to differentiate Osmolarity vs. Osmole</h3>
+                    <div class="example-calculation">
+                        <p><strong>Osmolarity/Milliosmolarity:</strong> Is concentration; expressed Osmoles/L or Milliosmoles/L; will always need to be normalized to a volume of 1 liter</p>
+                        
+                        <p><strong>Osmole/Milliosmole:</strong> Is quantity; Osmole/Milliosmole calculations do not need to be normalized to 1 liter</p>
+                    </div>
+                </div>
+
+                <div class="section-divider"></div>
+
+                <div class="tutorial-section">
+                    <h3>Steps for calculating mOsmolarity (mOsm/L)</h3>
+                    <div class="example-calculation">
+                        <p><strong>Step 1:</strong> Write the formula</p>
+                        <div class="horizontal-operation">
+                            <span>mOsm/L = </span>
+                            <div class="fraction">
+                                <div class="fraction-numerator">weight (g/L) × no. of species × 1000</div>
+                                <div class="fraction-denominator">MW</div>
+                            </div>
+                        </div>
+                        
+                        <p><strong>Step 2:</strong> Convert the weight to grams per liter (g/L)</p>
+                        
+                        <p><strong>Step 3:</strong> Determine the number of species (particles):</p>
+                        <ul>
+                            <li>Nonelectrolytes (e.g., dextrose, mannitol) do not dissociate → use 1</li>
+                            <li>Electrolytes dissociate → count total ions</li>
+                        </ul>
+                        
+                        <p><strong>Step 4:</strong> Plug values into the formula and calculate mOsm/L</p>
+                    </div>
+                </div>
+                
+                <div class="tutorial-section">
+                    <h3>Example 1:</h3>
+                    <p><strong>A solution contains 5% of anhydrous dextrose in water for injection. How many milliosmoles per liter are represented by this concentration? (dextrose MW = 180). Round the final answer to the nearest whole number.</strong></p>
+                    <div class="tutorial-steps" id="osmolarityExample1Steps">
+                        <!-- Step 1 Content -->
+                        <div class="step-content active" id="osstep1">
+                            <div class="step-instructions">
+                                <div class="step-title">Step 1: Write the formula</div>
+                            </div>
+                            
+                            <div class="example-calculation">
+                                <div class="horizontal-operation">
+                                    <span>mOsm/L = </span>
+                                    <div class="fraction">
+                                        <div class="fraction-numerator">weight (g/L) × no. of species × 1000</div>
+                                        <div class="fraction-denominator">MW</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 2 Content -->
+                        <div class="step-content" id="osstep2">
+                            <div class="step-instructions">
+                                <div class="step-title">Step 2: Convert the weight to grams per liter (g/L)</div>
+                            </div>
+                            
+                            <div class="example-calculation">
+                                <p>5% → 5 g/100 mL = 50 g / 1000 mL = 50 g/L</p>
+                            </div>
+                        </div>
+
+                        <!-- Step 3 Content -->
+                        <div class="step-content" id="osstep3">
+                            <div class="step-instructions">
+                                <div class="step-title">Step 3: Determine the number of species (particles)</div>
+                            </div>
+                            
+                            <div class="example-calculation">
+                                <p>Dextrose (nonelectrolyte) → no. of species = 1</p>
+                            </div>
+                        </div>
+
+                        <!-- Step 4 Content -->
+                        <div class="step-content" id="osstep4">
+                            <div class="step-instructions">
+                                <div class="step-title">Step 4: Plug values into the formula and calculate mOsm/L</div>
+                            </div>
+                            
+                            <div class="example-calculation">
+                                <div class="horizontal-operation">
+                                    <span>mOsm/L = </span>
+                                    <div class="fraction">
+                                        <div class="fraction-numerator">50 × 1 × 1000</div>
+                                        <div class="fraction-denominator">180</div>
+                                    </div>
+                                    <span style="color: green; font-weight: bold;"> = 278 mOsm/L</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Next Button -->
+                        <div class="step-navigation">
+                            <button class="tutorial-next-btn">Next Step ↓</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-divider"></div>
+
+                <div class="tutorial-section">
+                    <h3>Steps for calculating milliosmoles (mOsm) in a specific volume</h3>
+                    <div class="example-calculation">
+                        <p><strong>Step 1:</strong> Calculate the Osmolarity (in mOsm/L) by using the formula</p>
+                        <div class="horizontal-operation">
+                            <span>mOsm/L = </span>
+                            <div class="fraction">
+                                <div class="fraction-numerator">weight (g/L) × no. of species × 1000</div>
+                                <div class="fraction-denominator">MW</div>
+                            </div>
+                        </div>
+                        
+                        <p><strong>Step 2:</strong> Use the following proportion to calculate mOsm in the specific volume:</p>
+                        <div class="horizontal-operation">
+                            <div class="fraction">
+                                <div class="fraction-numerator">mOsm obtained from step 1</div>
+                                <div class="fraction-denominator">1000 mL</div>
+                            </div>
+                            <span> = </span>
+                            <div class="fraction">
+                                <div class="fraction-numerator">x mOsm</div>
+                                <div class="fraction-denominator">specific volume (mL)</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tutorial-section">
+                    <h3>Example 2:</h3>
+                    <p><strong>How many milliosmoles are represented by 500 mL of a 3% hypertonic NaCl solution? (Molecular weight of NaCl is 58.5). Round the final answer to the nearest whole number.</strong></p>
+                    <div class="tutorial-steps" id="osmolarityExample2Steps">
+                        <!-- Step 1 Content -->
+                        <div class="step-content active" id="os2step1">
+                            <div class="step-instructions">
+                                <div class="step-title">Step 1: Calculate the Osmolarity (in mOsm/L)</div>
+                            </div>
+                            
+                            <div class="example-calculation">
+                                <p>3% solution → 3 g / 100 mL = 30 g / 1000 mL</p>
+                                <p>Number of species of NaCl = 2</p>
+                                <div class="horizontal-operation">
+                                    <span>mOsm/L = </span>
+                                    <div class="fraction">
+                                        <div class="fraction-numerator">weight (g/L) × no. of species × 1000</div>
+                                        <div class="fraction-denominator">MW</div>
+                                    </div>
+                                </div>
+                                <div class="horizontal-operation">
+                                    <span>= </span>
+                                    <div class="fraction">
+                                        <div class="fraction-numerator">30 × 2 × 1000</div>
+                                        <div class="fraction-denominator">58.5</div>
+                                    </div>
+                                    <span> = 1025.64 mOsmol/L</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 2 Content -->
+                        <div class="step-content" id="os2step2">
+                            <div class="step-instructions">
+                                <div class="step-title">Step 2: Use the following proportion to calculate mOsm in the specific volume</div>
+                            </div>
+                            
+                            <div class="example-calculation">
+                                <div class="horizontal-operation">
+                                    <div class="fraction">
+                                        <div class="fraction-numerator">mOsm obtained from step 1</div>
+                                        <div class="fraction-denominator">1000 mL</div>
+                                    </div>
+                                    <span> = </span>
+                                    <div class="fraction">
+                                        <div class="fraction-numerator">x mOsm</div>
+                                        <div class="fraction-denominator">specific volume (mL)</div>
+                                    </div>
+                                </div>
+                                <div class="horizontal-operation">
+                                    <div class="fraction">
+                                        <div class="fraction-numerator">1025.64 mOsmol</div>
+                                        <div class="fraction-denominator">1000 mL</div>
+                                    </div>
+                                    <span> = </span>
+                                    <div class="fraction">
+                                        <div class="fraction-numerator">x mOsmol</div>
+                                        <div class="fraction-denominator">500 mL</div>
+                                    </div>
+                                </div>
+                                <p><strong style="color: green;">x = 513 mOsmol</strong></p>
+                            </div>
+                        </div>
+
+                        <!-- Next Button -->
+                        <div class="step-navigation">
+                            <button class="tutorial-next-btn">Next Step ↓</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="back-to-top">
+                    <button id="backToOverviewBtn" class="back-btn">← Back to Overview</button>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                // Tutorial Navigation & General Page Logic
+                const osmolarityTitle = document.getElementById('osmolarityTitle');
+                const osmolarityTutorial = document.getElementById('osmolarityTutorial');
+                const backToOverviewBtn = document.getElementById('backToOverviewBtn');
+                
+                if (osmolarityTitle) {
+                    osmolarityTitle.addEventListener('click', () => {
+                        osmolarityTutorial.style.display = 'block';
+                        osmolarityTitle.classList.add('active');
+                        osmolarityTutorial.scrollIntoView({ behavior: 'smooth' });
+                    });
+                }
+                
+                if (backToOverviewBtn) {
+                    backToOverviewBtn.addEventListener('click', () => {
+                        osmolarityTutorial.style.display = 'none';
+                        osmolarityTitle.classList.remove('active');
+                        document.querySelector('.overview-card').scrollIntoView({ behavior: 'smooth' });
+                    });
+                }
+                
+                // Initialize step-by-step tutorials
+                setupTutorialSteps('osmolarityExample1Steps');
+                setupTutorialSteps('osmolarityExample2Steps');
+
+                // Initialize collapsible sections
+                setupCollapsibleSection('conceptReviewHeader', 'conceptReviewContent');
+
+                function setupCollapsibleSection(headerId, contentId) {
+                    const header = document.getElementById(headerId);
+                    const content = document.getElementById(contentId);
+                    
+                    if (header && content) {
+                        header.addEventListener('click', () => {
+                            const isExpanded = content.classList.contains('expanded');
+                            
+                            if (isExpanded) {
+                                content.classList.remove('expanded');
+                                header.classList.remove('active');
+                            } else {
+                                content.classList.add('expanded');
+                                header.classList.add('active');
+                            }
+                        });
+                    }
+                }
+
+                function setupTutorialSteps(containerId) {
+                    const stepsContainer = document.getElementById(containerId);
+                    if (!stepsContainer) return;
+
+                    const steps = stepsContainer.querySelectorAll('.step-content');
+                    const nextBtn = stepsContainer.querySelector('.tutorial-next-btn');
+                    if (!nextBtn) return; // Ensure button exists
+                    let currentStep = 1;
+                    const totalSteps = steps.length;
+
+                    function updateDisplay() {
+                        steps.forEach((step, index) => {
+                            step.classList.toggle('active', index < currentStep);
+                        });
+                        nextBtn.style.display = currentStep === totalSteps ? 'none' : 'block';
+                    }
+
+                    nextBtn.addEventListener('click', () => {
+                        if (currentStep < totalSteps) {
+                            currentStep++;
+                            updateDisplay();
+                        }
+                    });
+                    updateDisplay(); // Initial display
+                }
+            });
+        </script>
+    </div>
+</body>
+</html>

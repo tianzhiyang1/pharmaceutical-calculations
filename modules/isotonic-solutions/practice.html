@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isotonic Solutions Practice</title>
+    <link rel="stylesheet" href="../../master.css">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Isotonic Solutions Practice</h1>
+        </header>
+
+        <div id="questionNavigator" style="text-align: right; margin-bottom: 10px;"></div>
+
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+
+        <div class="stats">
+            <div class="stat-item">
+                <div class="stat-value" id="questionsCompleted">0</div>
+                <div class="stat-label">Completed</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value" id="questionsRemaining">0</div>
+                <div class="stat-label">Remaining</div>
+            </div>
+        </div>
+
+        <!-- Filter Options -->
+        <div class="filter-container">
+            <div class="filter-title">Choose what you want to practice:</div>
+            <div class="filter-options">
+                <label class="filter-option">
+                    <input type="checkbox" id="evalueFilter" checked>
+                    <span class="filter-label">E-Value Calculations</span>
+                </label>
+                <label class="filter-option">
+                    <input type="checkbox" id="naclFilter" checked>
+                    <span class="filter-label">NaCl Equivalent Method</span>
+                </label>
+            </div>
+        </div>
+
+        <!-- Question Card -->
+        <div class="card" id="questionCard">
+            <div class="question-container">
+                <div class="question" id="questionText"></div>
+                <div id="answerContainer" class="answer-container">
+                    <!-- Answer inputs will be dynamically created here -->
+                </div>
+                <div class="feedback" id="answerFeedback"></div>
+            </div>
+
+            <div class="button-row">
+                <button id="checkAnswer">Check Answer</button>
+                <button id="showStepsBtn" class="button-accent">Step-by-Step Guide</button>
+                <button id="prevQuestion" class="button-secondary">Previous Question</button>
+                <button id="nextQuestion" class="button-secondary">Next Question</button>
+            </div>
+
+            <div class="steps-container" id="stepsContainer">
+                <h3>Step-by-Step Solution</h3>
+                <div id="steps"></div>
+            </div>
+        </div>
+
+        <!-- Results Card (hidden by default) -->
+        <div class="card" id="results" style="display: none;">
+            <div class="results-title">Practice Completed!</div>
+            <div class="results-message">You've successfully completed all practice questions.</div>
+            <div class="button-row">
+                <button id="restartBtn">Practice Again</button>
+            </div>
+        </div>
+
+        <!-- Reference section with collapsible card -->
+        <div class="reference-container">
+            <!-- E Value Formula Reference Card -->
+            <div class="reference-card">
+                <div class="reference-header" id="eValueHeader">
+                    <h3>E-Value Formula</h3>
+                    <span class="expand-icon">+</span>
+                </div>
+                <div class="reference-content" id="eValueContent">
+                    <div class="formula-box">
+                        <div class="equation">
+                            <div>E</div>
+                            <div>=</div>
+                            <div class="fraction">
+                                <div class="fraction-numerator">58.5 × i</div>
+                                <div class="fraction-bar"></div>
+                                <div class="fraction-denominator">MW × 1.8</div>
+                            </div>
+                        </div>
+                        <div style="margin-top: 15px;">
+                            <p><strong>Where:</strong></p>
+                            <ul>
+                                <li><strong>E</strong> = sodium chloride equivalent (E value)</li>
+                                <li><strong>58.5</strong> = molecular weight of NaCl</li>
+                                <li><strong>i</strong> = dissociation factor of the drug</li>
+                                <li><strong>MW</strong> = molecular weight of the drug</li>
+                                <li><strong>1.8</strong> = dissociation factor of NaCl</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sodium Chloride Equivalent Method Reference Card -->
+            <div class="reference-card">
+                <div class="reference-header" id="naclMethodHeader">
+                    <h3>Sodium Chloride Equivalent Method</h3>
+                    <span class="expand-icon">+</span>
+                </div>
+                <div class="reference-content" id="naclMethodContent">
+                    <p><strong>Steps for the Sodium Chloride Equivalent Method:</strong></p>
+                    <ol>
+                        <li><strong>Calculate the amount of NaCl required to make the entire solution isotonic:</strong>
+                            <ul>
+                                <li>Use proportion: 0.9 g NaCl / 100 mL = x g NaCl / Total volume (mL)</li>
+                            </ul>
+                        </li>
+                        <li><strong>Calculate the amount of NaCl represented by the drug:</strong>
+                            <ul>
+                                <li>NaCl equivalent = Drug amount (g) × E value of the drug</li>
+                            </ul>
+                        </li>
+                        <li><strong>Subtract Step 2 from Step 1:</strong>
+                            <ul>
+                                <li>NaCl to add = Step 1 NaCl − Step 2 NaCl</li>
+                            </ul>
+                        </li>
+                        <li><strong>For isotonic adjustment with other agents (e.g., boric acid):</strong>
+                            <ul>
+                                <li>Convert NaCl amount from step 3 to the amount of the other agent</li>
+                                <li>Amount of agent = Step 3 NaCl to add ÷ E value of the other agent</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="clear-progress-container">
+            <p>Want to see your question history? 
+                <a href="#" id="viewHistoryBtn" class="clear-data-link">View history</a>
+            </p>
+            <p>Want to clear your saved progress data?
+                <a href="#" id="clearProgressBtn" class="clear-data-link">Clear saved data</a>
+            </p>
+            <p>Want to see the tutorial again?
+                <a href="index.html" class="clear-data-link">Go back to tutorial</a>
+            </p>
+        </div>
+    </div>
+
+    <!-- History Modal -->
+    <div id="historyModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Question History</h2>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <p class="history-description">
+                    Click on any green button to view the solution to a completed question. Gray buttons represent questions that have not been completed yet.
+                </p>
+                <div class="history-list" id="historyList">
+                    <!-- Question buttons will be dynamically inserted here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Solution Modal -->
+    <div id="solutionModal" class="modal">
+        <div class="modal-content solution-modal-content">
+            <div class="modal-header">
+                <h2>Solution</h2>
+                <span class="close-solution-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div id="solutionQuestion" class="solution-question"></div>
+                <div class="steps-container solution-steps" id="solutionSteps">
+                    <!-- Steps will be inserted here -->
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script type="module" src="main.js"></script>
+</body>
+</html>

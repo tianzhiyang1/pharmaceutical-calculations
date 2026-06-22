@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weights and Measurements</title>
+    <link rel="stylesheet" href="../../master.css">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="index-container">
+        <header>
+            <h1>Pharmacy Calculations:<br>Weights and Measurements</h1>
+        </header>
+
+        <div class="card overview-card">
+            <h2>Overview</h2>
+            
+            <div class="method-list">
+                <div class="method-item">
+                    <h3 id="systemsTitle" class="method-title">Systems of Weights and Measures</h3>
+                    <p class="tutorial-notice">Click the title to view the tutorial</p>
+                    <ul>
+                        <li>Describe the differences between SI & common systems</li>
+                        <li>Know prefixes of assigned SI units</li>
+                        <li>Name the equivalents in the various systems</li>
+                        <li>Convert from one system to another</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="button-container">
+                <a href="./practice.html" class="practice-btn">Start Practicing Weights and Measures</a>
+            </div>
+        </div>
+
+        <!-- Systems of Weights and Measures Tutorial -->
+        <div class="card tutorial-card" id="systemsTutorial" style="display: none;">
+            <h2>Tutorial - Systems of Weights and Measures</h2>
+            <div class="tutorial-content">
+                <div class="tutorial-section">
+                    <h3>International System of Units (SI)</h3>
+                    <p>A decimal system of weights and measures also called metric system - internationally recognized</p>
+                    <p>Primary units of the metric system are:</p>
+                    <ul>
+                        <li>Length - meter</li>
+                        <li>Volume - liter</li>
+                        <li>Weight - gram</li>
+                    </ul>
+                    
+                    <div class="example-calculation">
+                        <h4>Prefixes and Their Values</h4>
+                        <table class="wide-metric-table">
+                            <tr>
+                                <th>Prefix</th>
+                                <th>Value</th>
+                                <th>Prefix</th>
+                                <th>Value</th>
+                                <th>Prefix</th>
+                                <th>Value</th>
+                            </tr>
+                            <tr>
+                                <td class="prefix-cell">mega</td>
+                                <td class="value-cell">10<sup>6</sup></td>
+                                <td class="prefix-cell">kilo</td>
+                                <td class="value-cell">10<sup>3</sup></td>
+                                <td class="prefix-cell">hecto</td>
+                                <td class="value-cell">10<sup>2</sup></td>
+                            </tr>
+                            <tr>
+                                <td class="prefix-cell">deka</td>
+                                <td class="value-cell">10<sup>1</sup></td>
+                                <td class="prefix-cell">deci</td>
+                                <td class="value-cell">10<sup>-1</sup></td>
+                                <td class="prefix-cell">centi</td>
+                                <td class="value-cell">10<sup>-2</sup></td>
+                            </tr>
+                            <tr>
+                                <td class="prefix-cell">milli</td>
+                                <td class="value-cell">10<sup>-3</sup></td>
+                                <td class="prefix-cell">micro</td>
+                                <td class="value-cell">10<sup>-6</sup></td>
+                                <td class="prefix-cell">nano</td>
+                                <td class="value-cell">10<sup>-9</sup></td>
+                            </tr>
+                            <tr>
+                                <td class="prefix-cell">pico</td>
+                                <td class="value-cell">10<sup>-12</sup></td>
+                                <td class="prefix-cell">femto</td>
+                                <td class="value-cell">10<sup>-15</sup></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                    <h4>Common Denominations</h4>
+                    <div class="example-calculation">
+                        <p><strong>Length:</strong></p>
+                        <table class="wide-metric-table">
+                            <tr>
+                                <th>Relationship</th>
+                                <th>Equivalent</th>
+                            </tr>
+                            <tr>
+                                <td class="prefix-cell">1 meter (m)</td>
+                                <td class="value-cell">100 centimeters (cm)</td>
+                            </tr>
+                            <tr>
+                                <td class="prefix-cell">1 meter (m)</td>
+                                <td class="value-cell">1000 millimeters (mm)</td>
+                            </tr>
+                        </table>
+                        
+                        <p><strong>Volume:</strong></p>
+                        <table class="wide-metric-table">
+                            <tr>
+                                <th>Relationship</th>
+                                <th>Equivalent</th>
+                            </tr>
+                            <tr>
+                                <td class="prefix-cell">1 liter (L)</td>
+                                <td class="value-cell">1000 milliliter (mL)</td>
+                            </tr>
+                            <tr>
+                                <td class="prefix-cell">1 deciliter (dL)</td>
+                                <td class="value-cell">100 milliliter (mL)</td>
+                            </tr>
+                        </table>
+                        
+                        <p><strong>Weight:</strong></p>
+                        <table class="wide-metric-table">
+                            <tr>
+                                <th>Relationship</th>
+                                <th>Equivalent</th>
+                            </tr>
+                            <tr>
+                                <td class="prefix-cell">1 kilogram (kg)</td>
+                                <td class="value-cell">1000 gram (g)</td>
+                            </tr>
+                            <tr>
+                                <td class="prefix-cell">1 gram (g)</td>
+                                <td class="value-cell">1000 milligram (mg)</td>
+                            </tr>
+                            <tr>
+                                <td class="prefix-cell">1 milligram (mg)</td>
+                                <td class="value-cell">1000 microgram (mcg)</td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                    <h4>Denomination Reduction</h4>
+                    <p>Restatement of a given quantity in terms of a higher OR lower denomination - by moving decimal point.</p>
+                    <div class="example-calculation">
+                        <p><strong>Examples:</strong></p>
+                        <ul>
+                            <li>Converting grams to milligrams: Move decimal point 3 places to the right</li>
+                        </ul>
+                        <div class="decimal-movement">
+                            <div class="number-display">
+                                <span class="number">0</span><span class="decimal-point">.</span><span class="number">025</span>
+                                <span class="unit">g</span>
+                            </div>
+                            <div class="arrow-container">
+                                <div class="arrow" style="left: 36px;"></div>
+                                <div class="arrow-label" style="left: 42px;">Decimal moves 3 places right</div>
+                            </div>
+                            <div class="number-display">
+                                <span class="number">25</span><span class="fade-decimal decimal-point">.</span><span class="fade-decimal">0</span>
+                                <span class="unit">mg</span>
+                            </div>
+                        </div>
+                        
+                        <ul>
+                            <li>Converting liters to milliliters: Move decimal point 3 places to the right</li>
+                        </ul>
+                        <div class="decimal-movement">
+                            <div class="number-display">
+                                <span class="number">3</span><span class="decimal-point">.</span><span class="number">8</span>
+                                <span class="unit">L</span>
+                            </div>
+                            <div class="arrow-container">
+                                <div class="arrow" style="left: 30px;"></div>
+                                <div class="arrow-label" style="left: 36px;">Decimal moves 3 places right</div>
+                            </div>
+                            <div class="number-display">
+                                <span class="number">3800</span><span class="fade-decimal decimal-point">.</span><span class="fade-decimal">0</span>
+                                <span class="unit">mL</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="pharmacy-common-units">
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <h4>MOST COMMON USED IN PHARMACY</h4>
+                            <button id="flashcardBtn" class="flashcard-btn">Flashcards</button>
+                        </div>
+                        <div id="pharmacy-content">
+                            <div class="example-calculation">
+                                <p><strong>Weight:</strong></p>
+                                <table class="wide-metric-table">
+                                    <tr>
+                                        <th>Unit</th>
+                                        <th>Equivalent</th>
+                                        <th>Unit</th>
+                                        <th>Equivalent</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="prefix-cell">1 kg</td>
+                                        <td class="value-cell">1000 g</td>
+                                        <td class="prefix-cell">1 g</td>
+                                        <td class="value-cell">1 gram</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="prefix-cell">1 mg</td>
+                                        <td class="value-cell">0.001 g (10<sup>-3</sup> g)</td>
+                                        <td class="prefix-cell">1 mcg</td>
+                                        <td class="value-cell">10<sup>-6</sup> g</td>
+                                    </tr>
+
+                                </table>
+                                
+                                <p><strong>Length:</strong></p>
+                                <table class="wide-metric-table">
+                                    <tr>
+                                        <th>Unit</th>
+                                        <th>Equivalent</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="prefix-cell">1 m</td>
+                                        <td class="value-cell">1000 mm</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="prefix-cell">1 m</td>
+                                        <td class="value-cell">100 cm</td>
+                                    </tr>
+                                </table>
+                                
+                                <p><strong>Volume:</strong></p>
+                                <table class="wide-metric-table">
+                                    <tr>
+                                        <th>Unit</th>
+                                        <th>Equivalent</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="prefix-cell">1 L</td>
+                                        <td class="value-cell">1 liter</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="prefix-cell">1 dL</td>
+                                        <td class="value-cell">0.1 L</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="prefix-cell">1 mL</td>
+                                        <td class="value-cell">0.001 L (10<sup>-3</sup> L)</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        
+                        <!-- Flashcard container that will be shown when the button is clicked -->
+                        <div id="flashcard-container" class="flashcard-container">
+                            
+                            <div class="status-panel">
+                                <div class="card-counter">Card: <span id="current-card" class="current-card-display">1</span>/<span id="total-cards" class="total-cards-display">0</span></div>
+                            </div>
+                            
+                            <div class="progress-bar">
+                                <div class="progress" id="progress"></div>
+                            </div>
+                            
+                            <div class="categories">
+                                <button class="category-btn active" data-category="all">All</button>
+                                <button class="category-btn" data-category="weight">Weight</button>
+                                <button class="category-btn" data-category="length">Length</button>
+                                <button class="category-btn" data-category="volume">Volume</button>
+                            </div>
+                            
+                            <div class="flip-instructions">Click card to flip</div>
+                            
+                            <div class="flip-card" id="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <div class="card-question" id="question"></div>
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <div class="card-answer" id="answer"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="controls">
+                                <button class="btn prev-btn" id="prev-btn" disabled>Previous</button>
+                                <button class="btn flip-btn" id="flip-btn">Flip Card</button>
+                                <button class="btn next-btn" id="next-btn">Next</button>
+                                <button class="btn back-btn" id="back-to-units-btn">Back to Units</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End of Metric System section -->
+
+                <div class="section-divider"></div>
+                
+                <div class="tutorial-section">
+                    <h3>Common Systems</h3>
+                    
+                    <h4>Apothecaries' System</h4>
+                    <p>Traditional system of pharmacy although it has been largely replaced.</p>
+                    
+                    <div class="example-calculation">
+                        <div style="display: flex; flex-wrap: wrap; gap: 20px; margin-bottom: 20px;">
+                            <div style="flex: 1; min-width: 300px;">
+                                <p><strong>Apothecaries' Fluid Measure:</strong></p>
+                                <table class="wide-metric-table">
+                                    <tr>
+                                        <th>From</th>
+                                        <th>To</th>
+                                        <th>Symbol</th>
+                                    </tr>
+                                    <tr>
+                                        <td>60 minims</td>
+                                        <td>1 fluidram</td>
+                                        <td>m → fƷ or Ʒ</td>
+                                    </tr>
+                                    <tr>
+                                        <td>8 fluidrams<br><span style="font-size: 0.8em; color: #666;">(480 minims)</span></td>
+                                        <td>1 fluidounce</td>
+                                        <td>fƷ → fl oz</td>
+                                    </tr>
+                                    <tr>
+                                        <td>16 fluidounces</td>
+                                        <td>1 pint</td>
+                                        <td>fl oz → pt</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2 pints<br><span style="font-size: 0.8em; color: #666;">(32 fluidounces)</span></td>
+                                        <td>1 quart</td>
+                                        <td>pt → qt</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4 quarts<br><span style="font-size: 0.8em; color: #666;">(8 pints)</span></td>
+                                        <td>1 gallon</td>
+                                        <td>qt → gal</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            
+                            <div style="flex: 1; min-width: 300px;">
+                                <p><strong>Apothecaries' Weight Measure:</strong></p>
+                                <p><em style="font-size: 0.9em;">Derived from 1 grain = weight of one grain of wheat</em></p>
+                                <table class="wide-metric-table">
+                                    <tr>
+                                        <th>From</th>
+                                        <th>To</th>
+                                        <th>Symbol</th>
+                                    </tr>
+                                    <tr>
+                                        <td>20 grains</td>
+                                        <td>1 scruple</td>
+                                        <td>gr → Э</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3 scruples<br><span style="font-size: 0.8em; color: #666;">(60 grains)</span></td>
+                                        <td>1 dram</td>
+                                        <td>Э → dr or ʒ</td>
+                                    </tr>
+                                    <tr>
+                                        <td>8 drams<br><span style="font-size: 0.8em; color: #666;">(480 grains)</span></td>
+                                        <td>1 ounce</td>
+                                        <td>dr → oz</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12 ounces<br><span style="font-size: 0.8em; color: #666;">(5760 grains)</span></td>
+                                        <td>1 pound</td>
+                                        <td>oz → lb</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h4>Avoirdupois System</h4>
+                    <p>Common system of commerce, used in the US.</p>
+                    
+                    <div class="example-calculation">
+                        <div style="margin: 15px 0; padding: 15px; border-radius: 6px;">
+                            <p><strong>Avoirdupois Weight Measure:</strong></p>
+                            <table class="wide-metric-table">
+                                <tr>
+                                    <th>From</th>
+                                    <th>To</th>
+                                    <th>Symbol</th>
+                                </tr>
+                                <tr>
+                                    <td>437.5 grains</td>
+                                    <td>1 ounce</td>
+                                    <td>gr → oz</td>
+                                </tr>
+                                <tr>
+                                    <td>16 ounces<br><span style="font-size: 0.8em; color: #666;">(7000 grains)</span></td>
+                                    <td>1 pound</td>
+                                    <td>oz → lb</td>
+                                </tr>
+                            </table>
+                            <p style="margin-top: 10px; font-size: 0.9em; color: #555;"><em>Note: The Avoirdupois ounce (437.5 grains) differs from the Apothecaries' ounce (480 grains)</em></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-divider"></div>
+                
+                <div class="pharmacy-common-units">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <h4>COMMON CONVERSIONS USED IN PHARMACY</h4>
+                        <button id="commonFlashcardBtn" class="flashcard-btn">Flashcards</button>
+                    </div>
+                    <div id="common-pharmacy-content">
+                        <div class="example-calculation">
+                            <p><strong>Length Conversions:</strong></p>
+                            <table class="wide-metric-table">
+                                <tr>
+                                    <th>Common Measure</th>
+                                    <th>Metric Equivalent</th>
+                                </tr>
+                                <tr>
+                                    <td class="prefix-cell">1 foot</td>
+                                    <td class="value-cell">12 inches</td>
+                                </tr>
+                                <tr>
+                                    <td class="prefix-cell">1 inch</td>
+                                    <td class="value-cell">2.54 cm</td>
+                                </tr>
+                            </table>
+                            
+                            <p><strong>Weight Conversions:</strong></p>
+                            <table class="wide-metric-table">
+                                <tr>
+                                    <th>Common Measure</th>
+                                    <th>Metric Equivalent</th>
+                                </tr>
+                                <tr>
+                                    <td class="prefix-cell">1 grain</td>
+                                    <td class="value-cell">65 mg</td>
+                                </tr>
+                                <tr>
+                                    <td class="prefix-cell">1 ounce</td>
+                                    <td class="value-cell">28.35 g (approx. 30 g)</td>
+                                </tr>
+                                <tr>
+                                    <td class="prefix-cell">1 pound = 16 ounces</td>
+                                    <td class="value-cell">454 g</td>
+                                </tr>
+                                <tr>
+                                    <td class="prefix-cell">2.2 pounds</td>
+                                    <td class="value-cell">1 kilogram</td>
+                                </tr>
+                            </table>
+                            
+                            <p><strong>Volume Conversions:</strong></p>
+                            <table class="wide-metric-table">
+                                <tr>
+                                    <th>Common Measure</th>
+                                    <th>Metric Equivalent</th>
+                                </tr>
+                                <tr>
+                                    <td class="prefix-cell">1 teaspoonful = 1 dram</td>
+                                    <td class="value-cell">5 mL</td>
+                                </tr>
+                                <tr>
+                                    <td class="prefix-cell">1 tablespoonful</td>
+                                    <td class="value-cell">15 mL</td>
+                                </tr>
+                                <tr>
+                                    <td class="prefix-cell">1 fluidounce</td>
+                                    <td class="value-cell">29.57 mL (approx. 30 mL)</td>
+                                </tr>
+                                <tr>
+                                    <td class="prefix-cell">1 pint = 16 ounces</td>
+                                    <td class="value-cell">473 mL</td>
+                                </tr>
+                                <tr>
+                                    <td class="prefix-cell">1 quart = 2 pints</td>
+                                    <td class="value-cell">946 mL</td>
+                                </tr>
+                                <tr>
+                                    <td class="prefix-cell">1 gallon = 4 quarts</td>
+                                    <td class="value-cell">3785 mL</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    
+                    <!-- Common System Flashcard container -->
+                    <div id="common-flashcard-container" class="flashcard-container">
+                        <div class="status-panel">
+                            <div class="card-counter">Card: <span id="common-current-card" class="current-card-display">1</span>/<span id="common-total-cards" class="total-cards-display">0</span></div>
+                        </div>
+                        
+                        <div class="progress-bar">
+                            <div class="progress" id="common-progress"></div>
+                        </div>
+                        
+                        <div class="categories">
+                            <button class="category-btn active" data-category="all">All</button>
+                            <button class="category-btn" data-category="length">Length</button>
+                            <button class="category-btn" data-category="weight">Weight</button>
+                            <button class="category-btn" data-category="volume">Volume</button>
+                        </div>
+                        
+                        <div class="flip-instructions">Click card to flip</div>
+                        
+                        <div class="flip-card" id="common-flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <div class="card-question" id="common-question"></div>
+                                </div>
+                                <div class="flip-card-back">
+                                    <div class="card-answer" id="common-answer"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="controls">
+                            <button class="btn prev-btn" id="common-prev-btn" disabled>Previous</button>
+                            <button class="btn flip-btn" id="common-flip-btn">Flip Card</button>
+                            <button class="btn next-btn" id="common-next-btn">Next</button>
+                            <button class="btn back-btn" id="back-to-common-units-btn">Back to Units</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="back-to-top">
+                    <button id="backToOverviewBtn" class="back-btn">← Back to Overview</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Get elements for tutorials
+            const systemsTitle = document.getElementById('systemsTitle');
+            const systemsTutorial = document.getElementById('systemsTutorial');
+            const backToOverviewBtn = document.getElementById('backToOverviewBtn');
+
+            // --- Reusable Flashcard Logic --- 
+            function shuffleArray(array) {
+                const newArray = [...array];
+                for (let i = newArray.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [newArray[i], newArray[j]] = [newArray[j], newArray[i]];
+                }
+                return newArray;
+            }
+
+            function initializeFlashcardSet(options) {
+                const triggerButton = document.getElementById(options.triggerButtonId);
+                const contentArea = document.getElementById(options.contentAreaId);
+                const flashcardContainer = document.getElementById(options.flashcardContainerId);
+                const backButton = flashcardContainer.querySelector('.back-btn'); // Use common class
+                const flashcardData = options.flashcardData;
+
+                // Select internal elements using classes relative to flashcardContainer
+                const questionElement = flashcardContainer.querySelector('.card-question');
+                const answerElement = flashcardContainer.querySelector('.card-answer');
+                const flipCardElement = flashcardContainer.querySelector('.flip-card');
+                const flipButton = flashcardContainer.querySelector('.flip-btn'); 
+                const nextButton = flashcardContainer.querySelector('.next-btn'); 
+                const prevButton = flashcardContainer.querySelector('.prev-btn'); 
+                const currentCardElement = flashcardContainer.querySelector('.current-card-display'); 
+                const totalCardsElement = flashcardContainer.querySelector('.total-cards-display');   
+                const progressElement = flashcardContainer.querySelector('.progress');
+                const categoryButtons = flashcardContainer.querySelectorAll('.category-btn');
+
+                let originalCards = [...flashcardData]; // Store original unfiltered cards
+                let currentCards = [];
+                let currentCardIndex = 0;
+                let isFlipped = false;
+
+                // Toggle between Content and Flashcards
+                triggerButton.addEventListener('click', () => {
+                    contentArea.style.display = 'none';
+                    flashcardContainer.style.display = 'block';
+                    triggerButton.style.display = 'none';
+                    filterByCategory('all'); // Initialize with all cards
+                });
+
+                backButton.addEventListener('click', () => {
+                    contentArea.style.display = 'block';
+                    flashcardContainer.style.display = 'none';
+                    triggerButton.style.display = 'inline-block';
+                });
+
+                // Initialize flashcard game
+                function initGame() {
+                    currentCards = shuffleArray(currentCards); // Shuffle the filtered set
+                    totalCardsElement.textContent = currentCards.length;
+                    currentCardIndex = 0;
+                    if (currentCards.length > 0) {
+                        updateCard();
+                    } else {
+                         // Handle case with no cards in category
+                        questionElement.textContent = 'No cards in this category.';
+                        answerElement.innerHTML = '';
+                        currentCardElement.textContent = 0;
+                        prevButton.disabled = true;
+                        nextButton.disabled = true;
+                        flipButton.disabled = true; 
+                    }
+                    updateProgress(); 
+                    // Reset active state for category buttons (important when initializing)
+                    categoryButtons.forEach(btn => btn.classList.remove('active'));
+                    // Find and activate the correct button based on the current filter (or 'all' if just initialized)
+                    const currentCategory = flashcardContainer.querySelector('.category-btn.active')?.dataset.category || 'all'; 
+                    const activeButton = flashcardContainer.querySelector(`.category-btn[data-category="${currentCategory}"]`);
+                    if(activeButton) activeButton.classList.add('active');
+
+                }
+
+                // Update card content
+                function updateCard() {
+                    if (currentCards.length === 0 || currentCardIndex < 0 || currentCardIndex >= currentCards.length) return; // Safety check
+
+                    const card = currentCards[currentCardIndex];
+                    questionElement.textContent = card.question;
+                    answerElement.innerHTML = card.answer;
+                    currentCardElement.textContent = currentCardIndex + 1;
+                    
+                    // Reset card flip
+                    isFlipped = false;
+                    flipCardElement.classList.remove('flipped');
+                    flipButton.textContent = 'Flip Card';
+                    flipButton.disabled = false; // Re-enable flip button
+                    
+                    // Update navigation buttons
+                    prevButton.disabled = currentCardIndex === 0;
+                    nextButton.disabled = currentCardIndex === currentCards.length - 1;
+                    
+                    updateProgress();
+                }
+
+                // Toggle card flip
+                function toggleCardFlip() {
+                     if (currentCards.length === 0) return; // Don't flip if no card
+                    isFlipped = !isFlipped;
+                    if (isFlipped) {
+                        flipCardElement.classList.add('flipped');
+                        flipButton.textContent = 'Show Question';
+                    } else {
+                        flipCardElement.classList.remove('flipped');
+                        flipButton.textContent = 'Flip Card';
+                    }
+                }
+
+                // Update progress bar
+                function updateProgress() {
+                    const progress = currentCards.length > 0 ? ((currentCardIndex + 1) / currentCards.length) * 100 : 0;
+                    progressElement.style.width = `${progress}%`;
+                }
+
+                // Filter cards by category
+                function filterByCategory(category) {
+                    if (category === 'all') {
+                        currentCards = [...originalCards];
+                    } else {
+                        currentCards = originalCards.filter(card => card.category === category);
+                    }
+                    // Set the active button visually
+                     categoryButtons.forEach(btn => btn.classList.remove('active'));
+                     const activeButton = flashcardContainer.querySelector(`.category-btn[data-category="${category}"]`);
+                     if(activeButton) activeButton.classList.add('active');
+
+                    initGame(); // Re-initialize the game with the filtered set
+                }
+
+                // Event Listeners
+                flipButton.addEventListener('click', toggleCardFlip);
+                flipCardElement.addEventListener('click', toggleCardFlip);
+
+                nextButton.addEventListener('click', () => {
+                    if (currentCardIndex < currentCards.length - 1) {
+                        currentCardIndex++;
+                        updateCard();
+                    }
+                });
+
+                prevButton.addEventListener('click', () => {
+                    if (currentCardIndex > 0) {
+                        currentCardIndex--;
+                        updateCard();
+                    }
+                });
+
+                categoryButtons.forEach(button => {
+                    button.addEventListener('click', () => {
+                         // No need to manually set active class here, filterByCategory handles it.
+                        filterByCategory(button.dataset.category);
+                    });
+                });
+
+                // Keyboard navigation specific to this flashcard set
+                document.addEventListener('keydown', (event) => {
+                    // Only handle keyboard events when this specific flashcard container is visible
+                    if (flashcardContainer.style.display === 'block') {
+                        if (event.code === 'Space' && !flipButton.disabled) {
+                            toggleCardFlip();
+                            event.preventDefault(); // Prevent page scrolling
+                        } else if (event.code === 'ArrowRight' && !nextButton.disabled) {
+                            nextButton.click();
+                        } else if (event.code === 'ArrowLeft' && !prevButton.disabled) {
+                            prevButton.click();
+                        }
+                    }
+                });
+            } // --- End of initializeFlashcardSet --- 
+
+            // --- Data Definitions --- 
+            // Metric System Flashcard data
+            const metricFlashcards = [
+                { question: "1 kg = _____ g", answer: "1000", category: "weight" },
+                { question: "1 g = _____ gram", answer: "1", category: "weight" },
+                { question: "1 mg = _____ g", answer: "0.001 or 10<sup>-3</sup>", category: "weight" },
+                { question: "1 g = _____ mg", answer: "1000", category: "weight" },
+                { question: "1 mcg = _____ g", answer: "10<sup>-6</sup>", category: "weight" },
+                { question: "1 g = _____ mcg", answer: "10<sup>6</sup>", category: "weight" },
+
+                { question: "1 m = _____ mm", answer: "1000", category: "length" },
+                { question: "1 m = _____ cm", answer: "100", category: "length" },
+                { question: "1 L = _____ mL", answer: "1000", category: "volume" },
+                { question: "1 L = _____ dL", answer: "10", category: "volume" },
+                { question: "1 dL = _____ L", answer: "0.1", category: "volume" },
+                { question: "1 mL = _____ L", answer: "0.001 or 10<sup>-3</sup>", category: "volume" }
+            ];
+
+            // Common System flashcard data
+            const commonFlashcards = [
+                { question: "1 foot = _____ inches", answer: "12", category: "length" },
+                { question: "1 inch = _____ cm", answer: "2.54", category: "length" },
+                { question: "1 grain = _____ mg", answer: "65", category: "weight" },
+                { question: "1 ounce = _____ g", answer: "28.35 (approx. 30)", category: "weight" },
+                { question: "1 kilogram = _____ pounds", answer: "2.2", category: "weight" },
+                { question: "1 pound = _____ ounces", answer: "16", category: "weight" },
+                { question: "1 pound = _____ g", answer: "454", category: "weight" },
+                { question: "1 teaspoonful = _____ mL", answer: "5", category: "volume" },
+                { question: "1 teaspoonful = _____ dram", answer: "1", category: "volume" },
+                { question: "1 tablespoonful = _____ mL", answer: "15", category: "volume" },
+                { question: "1 fluidounce = _____ mL", answer: "29.57 (approx. 30)", category: "volume" },
+                { question: "1 pint = _____ ounces", answer: "16", category: "volume" },
+                { question: "1 pint = _____ mL", answer: "473", category: "volume" },
+                { question: "1 quart = _____ pints", answer: "2", category: "volume" },
+                { question: "1 quart = _____ mL", answer: "946", category: "volume" },
+                { question: "1 gallon = _____ quarts", answer: "4", category: "volume" },
+                { question: "1 gallon = _____ mL", answer: "3785", category: "volume" }
+            ];
+
+            // --- Initialization --- 
+            // Initialize Metric Flashcards
+            initializeFlashcardSet({
+                triggerButtonId: 'flashcardBtn',
+                contentAreaId: 'pharmacy-content',
+                flashcardContainerId: 'flashcard-container',
+                flashcardData: metricFlashcards
+            });
+
+            // Initialize Common System Flashcards
+            initializeFlashcardSet({
+                triggerButtonId: 'commonFlashcardBtn',
+                contentAreaId: 'common-pharmacy-content',
+                flashcardContainerId: 'common-flashcard-container',
+                flashcardData: commonFlashcards
+            });
+
+
+            // --- Tutorial Toggling Logic --- 
+            systemsTitle.addEventListener('click', () => {
+                systemsTutorial.style.display = 'block';
+                systemsTitle.classList.add('active');
+                systemsTutorial.scrollIntoView({ behavior: 'smooth' });
+            });
+            
+            backToOverviewBtn.addEventListener('click', () => {
+                systemsTutorial.style.display = 'none';
+                systemsTitle.classList.remove('active');
+                document.querySelector('.overview-card').scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>

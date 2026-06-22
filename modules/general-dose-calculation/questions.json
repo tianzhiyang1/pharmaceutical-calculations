@@ -1,0 +1,3033 @@
+{
+    "questions": [
+        {
+            "number": 1,
+            "tag": "general",
+            "question": "A pediatrician prescribes diphenhydramine elixir (12.5 mg per 5 mL) to a child with seasonal allergies and dispenses a total of 390 mL to cover 26 doses. To help the parent administer the correct amount, you are asked to calculate how many tablespoonfuls should be given per dose.",
+            "answerValue": [1],
+            "answerUnit": ["tablespoonful"],
+            "rounding": false,
+            "steps": [
+                {
+                    "text": "Understand the question",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Number of doses"
+                        },
+                        {
+                            "type": "input",
+                            "answer":26,
+                            "unit": ""
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "Total quantity"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 390,
+                            "unit": ""
+                        }
+                    ],
+                    "operators2": ["="],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "Size of dose"
+                        },
+                        {
+                            "type": "text",
+                            "value": "? (what we are solving for)"
+                        }
+                    ],
+                    "operators3": ["="],
+                    "hint": "The question mentions a total quantity of 390 mL to cover 26 doses, thus both the total quantity and the number of doses are given. The size of dose is unknown, so we need to solve for it."
+                },
+                {
+                    "text": "Use the formula to calculate the total quantity",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Size of dose"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": "Total quantity",
+                            "denominator": "Number of doses"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "Size of dose"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 390,
+                                "unit": "mL"
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": 26,
+                                "unit": ""
+                            }
+                        },
+                        {
+                            "type": "input",
+                            "answer": 15,
+                            "unit": "mL / dose"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1,
+                            "unit": "tablespoonful"
+                        }
+                    ],
+                    "operators2": ["=", "=", "="],
+                    "hint": "390 mL / 26 doses = 15 mL/dose. 15 mL = 1 tablespoonful, so the size of dose is 1 tablespoonful."
+                }
+            ]
+        },
+        {
+            "number": 2,
+            "tag": "weight",
+            "question": "The dose of a drug is 120 mcg/kg/day of body weight. What is the daily dose for a patient weighing 90 lb.? Round final answer to the nearest whole number",
+            "answerValue": [4909],
+            "answerUnit": ["mcg"],
+            "rounding": false,
+            "steps": [
+                {
+                    "text": "Convert weight from lb to kg. (kg = lb / 2.2)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Weight in kg (round to the nearest hundredth)"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 90,
+                                "unit": "lb"
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": 2.2,
+                                "unit": ""
+                            }
+                        },
+                        {
+                            "type": "input",
+                            "answer": 40.91,
+                            "unit": "kg"
+                        }
+                    ],
+                    "operators1": ["=", "="],
+                    "hint": "90 lb / 2.2 = 40.91 kg (rounded to the nearest hundredth)"
+                },
+                {
+                    "text": "Calculate the total daily dose by using the formula",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Dose"
+                        },
+                        {
+                            "type": "text",
+                            "value": "Dose per weight"
+                        },
+                        {
+                            "type": "text",
+                            "value": "Weight (kg)"
+                        }
+                    ],
+                    "operators1": ["=", "×"],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "Dose"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 120,
+                            "unit": "mcg/kg/day"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 40.91,
+                            "unit": "kg"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 4909,
+                            "unit": "mcg/day (to the nearest whole number)"
+                        }
+                    ],
+                    "operators2": ["=", "×", "="],
+                    "hint": "120 mcg/kg/day × 40.91 kg = 4909 mcg/day"
+                }
+            ]
+        },
+        {
+            "number": 3,
+            "tag": "splitting",
+            "question": "You receive the following prescription. How many tablets should you dispense?",
+            "path": "splitting/q1.png",
+            "answerValue": [30],
+            "answerUnit": ["tablets"],
+            "rounding": false,
+            "steps": [
+                {
+                    "text": "Click on the prescription image to identify the following:",
+                    "type": "INFORMATION",
+                    "format": "hotspot",
+                    "content": [
+                        {
+                            "text": "Medication",
+                            "position": {
+                                "x1": 270,
+                                "y1": 135,
+                                "x2": 440,
+                                "y2": 160
+                            },
+                            "hint": "Look for the name of the medication. Don't be confused with instructions or patient info."
+                        },
+                        {
+                            "text": "Sig (Directions to the patient)",
+                            "position": {
+                                "x1": 100,
+                                "y1": 165,
+                                "x2": 620,
+                                "y2": 190
+                            },
+                            "hint": "Try looking for the section that tells the patient how to take the medication - like how many pills and how often."
+                        },
+                        {
+                            "text": "Dispense quantity (Disp #)",
+                            "position": {
+                                "x1": 250,
+                                "y1": 195,
+                                "x2": 440,
+                                "y2": 220
+                            },
+                            "hint": "Find the quantity the pharmacy is giving the patient."
+                        },
+                        {
+                            "position": {
+                                "x1": 60,
+                                "y1": 70,
+                                "x2": 200,
+                                "y2": 110
+                            }
+                        },
+                        {
+                            "position": {
+                                "x1": 205,
+                                "y1": 18,
+                                "x2": 520,
+                                "y2": 90
+                            }
+                        },
+                        {
+                            "position": {
+                                "x1": 60,
+                                "y1": 240,
+                                "x2": 140,
+                                "y2": 265
+                            }
+                        },
+                        {
+                            "position": {
+                                "x1": 60,
+                                "y1": 270,
+                                "x2": 140,
+                                "y2": 295
+                            }
+                        },
+                        {
+                            "position": {
+                                "x1": 480,
+                                "y1": 240,
+                                "x2": 600,
+                                "y2": 295
+                            }
+                        }
+                    ]
+                },
+                {
+                    "text": "Interpret the abbreviations in the Sig:",
+                    "type": "INTERPRETATION",
+                    "content": [
+                        {
+                            "text": "PO QD = *blank1*",
+                            "type": "short-answer",
+                            "blank1": [
+                                "by mouth daily",
+                                "by mouth each day",
+                                "by mouth a day",
+                                "by mouth each day",
+                                "by mouth everyday",
+                                "by mouth every day",
+                                "by mouth per day",
+                                "orally daily",
+                                "orally each day",
+                                "orally a day",
+                                "orally each day",
+                                "orally everyday",
+                                "orally every day",
+                                "orally per day"
+                            ],
+                            "hint": "PO QD = by mouth everyday"
+                        },
+                        {
+                            "text": "The dosing increases every *blank1* days over a *blank2*-day period",
+                            "type": "fill-blanks",
+                            "blanks": {
+                                "blank1": {"answer": 10},
+                                "blank2": {"answer": 30}
+                            },
+                            "hint": "The dosing increases every 10 days over a 30-day period."
+                        }
+                    ]
+                },
+                {
+                    "text": "Now calculate how many 10-mg tablets are needed to fulfill the entire regimen",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "<strong>Step 1:</strong> 5 mg once daily for 10 days"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 5,
+                            "unit": "mg"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 10,
+                            "unit": "days"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 50,
+                            "unit": "mg total"
+                        }
+                    ],
+                    "operators1": ["=", "×", "="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "Since only 10-mg tablets are available,"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 50,
+                            "unit": "mg total"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 10,
+                            "unit": "mg/tablet"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 5,
+                            "unit": "tablets"
+                        }
+                    ],
+                    "operators2": ["", "÷", "="],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "<strong>Step 2:</strong> 10 mg once daily for 10 days"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 10,
+                            "unit": "mg"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 10,
+                            "unit": "days"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 100,
+                            "unit": "mg total"
+                        }
+                    ],
+                    "operators3": ["=", "×", "="],
+                    "operands4": [
+                        {
+                            "type": "input",
+                            "answer": 100,
+                            "unit": "mg total"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 10,
+                            "unit": "mg/tablet"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 10,
+                            "unit": "tablets"
+                        }
+                    ],
+                    "operators4": ["÷", "="],
+                    "operands5": [
+                        {
+                            "type": "text",
+                            "value": "<strong>Step 3:</strong> 15 mg once daily for 10 days"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 15,
+                            "unit": "mg"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 10,
+                            "unit": "days"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 150,
+                            "unit": "mg total"
+                        }
+                    ],
+                    "operators5": ["=", "×", "="],
+                    "operands6": [
+                        {
+                            "type": "input",
+                            "answer": 150,
+                            "unit": "mg total"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 10,
+                            "unit": "mg/tablet"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 15,
+                            "unit": "tablets"
+                        }
+                    ],
+                    "operators6": ["÷", "="],
+                    "operands7": [
+                        {
+                            "type": "text",
+                            "value": "<strong>Step 4:</strong> Total tablets to dispense"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 5,
+                            "unit": "tablets"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 10,
+                            "unit": "tablets"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 15,
+                            "unit": "tablets"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 30,
+                            "unit": "tablets"
+                        }
+                    ],
+                    "operators7": ["=", "+", "+", "="],
+                    "hint": "5 mg once daily for 10 days = 5 mg × 10 = 50 mg total <br> Since only 10-mg tablets are available, 50 mg ÷ 10 mg/tablet = 5 tablets <br> 10 mg once daily for 10 days = 10 mg × 10 = 100 mg total <br> Since only 10-mg tablets are available, 100 mg ÷ 10 mg/tablet = 10 tablets <br> 15 mg once daily for 10 days = 15 mg × 10 = 150 mg total <br> Since only 10-mg tablets are available, 150 mg ÷ 10 mg/tablet = 15 tablets <br> 5 tablets + 10 tablets + 15 tablets = 30 tablets"
+                }
+            ]    
+        },
+        {
+            "number": 4,
+            "tag": "splitting",
+            "question": "You receive the following prescription. How many tablets should you dispense?",
+            "path": "splitting/q2.png",
+            "answerValue": [56],
+            "answerUnit": ["tablets"],
+            "rounding": false,
+            "steps": [
+                {
+                    "text": "Click on the prescription image to identify the following:",
+                    "type": "INFORMATION",
+                    "format": "hotspot",
+                    "content": [
+                        {
+                            "text": "Medication",
+                            "position": {
+                                "x1": 285,
+                                "y1": 130,
+                                "x2": 445,
+                                "y2": 160
+                            },
+                            "hint": "Look for the name of the medication. Don't confused with instructions or patient info."
+                        },
+                        {
+                            "text": "Sig (Directions to the patient)",
+                            "position": {
+                                "x1": 200,
+                                "y1": 165,
+                                "x2": 540,
+                                "y2": 190
+                            },
+                            "hint": "Try looking for the section that tells the patient how to take the medication - like how many pills and how often."
+                        },
+                        {
+                            "text": "Dispense quantity (Disp #)",
+                            "position": {
+                                "x1": 260,
+                                "y1": 195,
+                                "x2": 400,
+                                "y2": 220
+                            },
+                            "hint": "Find the quantity the pharmacy is giving the patient."
+                        },
+                        {
+                            "position": {
+                                "x1": 60,
+                                "y1": 70,
+                                "x2": 200,
+                                "y2": 110
+                            }
+                        },
+                        {
+                            "position": {
+                                "x1": 205,
+                                "y1": 18,
+                                "x2": 520,
+                                "y2": 90
+                            }
+                        },
+                        {
+                            "position": {
+                                "x1": 60,
+                                "y1": 240,
+                                "x2": 140,
+                                "y2": 265
+                            }
+                        },
+                        {
+                            "position": {
+                                "x1": 60,
+                                "y1": 270,
+                                "x2": 140,
+                                "y2": 295
+                            }
+                        },
+                        {
+                            "position": {
+                                "x1": 480,
+                                "y1": 240,
+                                "x2": 600,
+                                "y2": 295
+                            }
+                        }
+                    ]
+                },
+                {
+                    "text": "Interpret the abbreviations in the Sig:",
+                    "type": "INTERPRETATION",
+                    "content": [
+                        {
+                            "text": "PO QD = *blank1*",
+                            "type": "short-answer",
+                            "blank1": [
+                                "by mouth daily",
+                                "by mouth each day",
+                                "by mouth a day",
+                                "by mouth each day",
+                                "by mouth everyday",
+                                "by mouth every day",
+                                "by mouth per day",
+                                "orally daily",
+                                "orally each day",
+                                "orally a day",
+                                "orally each day",
+                                "orally everyday",
+                                "orally every day",
+                                "orally per day"
+                            ],
+                            "hint": "PO QD = by mouth every day"
+                        },
+                        {
+                            "text": "The dosing of *blank1* mg after *blank2* days, and tapers at *blank3* mg for *blank4* days.",
+                            "type": "fill-blanks",
+                            "blanks": {
+                                "blank1": {"answer": 300},
+                                "blank2": {"answer": 14},
+                                "blank3": {"answer": 200},
+                                "blank4": {"answer": 7}
+                            },
+                            "hint": "The dosing of 300 mg after 14 days, and tapers at 200 mg for 7 days."
+                        }
+                    ]
+                },
+                {
+                    "text": "Now calculate how many 100-mg tablets are needed to fulfill the entire regimen",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "<strong>Step 1:</strong> 300 mg after 14 days"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 300,
+                            "unit": "mg"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 14,
+                            "unit": "days"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 4200,
+                            "unit": "mg total"
+                        }
+                    ],
+                    "operators1": ["=", "×", "="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "Since only 100-mg tablets are available,"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 4200,
+                            "unit": "mg total"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 100,
+                            "unit": "mg/tablet"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 42,
+                            "unit": "tablets"
+                        }
+                    ],
+                    "operators2": ["", "÷", "="],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "<strong>Step 2:</strong> 200 mg once daily for 7 days"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 200,
+                            "unit": "mg"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 7,
+                            "unit": "days"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1400,
+                            "unit": "mg total"
+                        }
+                    ],
+                    "operators3": ["=", "×", "="],
+                    "operands4": [
+                        {
+                            "type": "input",
+                            "answer": 1400,
+                            "unit": "mg total"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 100,
+                            "unit": "mg/tablet"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 14,
+                            "unit": "tablets"
+                        }
+                    ],
+                    "operators4": ["÷", "="],
+                    "operands5": [
+                        {
+                            "type": "text",
+                            "value": "<strong>Step 4:</strong> Total tablets to dispense"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 42,
+                            "unit": "tablets"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 14,
+                            "unit": "tablets"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 56,
+                            "unit": "tablets"
+                        }
+                    ],
+                    "operators5": ["=", "+", "="],
+                    "hint": "300 mg after 14 days = 300 mg × 14 = 4200 mg total <br> Since only 100-mg tablets are available, 4200 mg ÷ 100 mg/tablet = 42 tablets <br> 200 mg once daily for 7 days = 200 mg × 7 = 1400 mg total <br> Since only 100-mg tablets are available, 1400 mg ÷ 100 mg/tablet = 14 tablets <br> 42 tablets + 14 tablets = 56 tablets"
+                }
+            ]    
+        },
+        {
+            "number": 5,
+            "tag": "general",
+            "question": "How many drops would be prescribed in each dose of a suspension if 30 ml contained 125 doses? The dropper provided with the suspension calibrates 20 drops/ml. Round the final answer to the nearest whole number.",
+            "answerValue": [5],
+            "answerUnit": ["drops"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Understand the question",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Total volume"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 30,
+                            "unit": "mL"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "Number of doses"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 125,
+                            "unit": ""
+                        }
+                    ],
+                    "operators2": ["="],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "Dropper calibration"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 20,
+                            "unit": "drops/mL"
+                        }
+                    ],
+                    "operators3": ["="],
+                    "hint": "The question provides the total volume (30 mL), number of doses (125), and dropper calibration (20 drops/mL). We need to find the number of drops per dose."
+                },
+                {
+                    "text": "Calculate the volume per dose, then convert to drops",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Volume per dose"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": "Total volume",
+                            "denominator": "Number of doses"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "Volume per dose"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 30,
+                                "unit": "mL"
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": 125,
+                                "unit": ""
+                            }
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.24,
+                            "unit": "mL/dose"
+                        }
+                    ],
+                    "operators2": ["=", "="],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "Drops per dose"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.24,
+                            "unit": "mL/dose"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 20,
+                            "unit": "drops/mL"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 4.8,
+                            "unit": "drops"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 5,
+                            "unit": "drops"
+                        }
+                    ],
+                    "operators3": ["=", "×", "=", "≈"],
+                    "hint": "First calculate volume per dose: 30 mL ÷ 125 doses = 0.24 mL/dose. Then multiply by dropper calibration: 0.24 mL/dose × 20 drops/mL = 4.8 drops, which rounds to 5 drops."
+                }
+            ]
+        },
+        {
+            "number": 6,
+            "tag": "general",
+            "question": "How many milliliters of an elixir would provide a patient with 2 tablespoonfuls three times a day for 10 days?",
+            "answerValue": [900],
+            "answerUnit": ["mL"],
+            "rounding": false,
+            "steps": [
+                {
+                    "text": "Understand the question",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Dose size"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 2,
+                            "unit": "tablespoonfuls"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "Frequency"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 3,
+                            "unit": "times/day"
+                        }
+                    ],
+                    "operators2": ["="],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "Duration"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 10,
+                            "unit": "days"
+                        }
+                    ],
+                    "operators3": ["="],
+                    "hint": "The question provides the dose size (2 tablespoonfuls), frequency (3 times per day), and duration (10 days). We need to convert tablespoonfuls to milliliters and calculate the total volume."
+                },
+                {
+                    "text": "Convert tablespoonfuls to milliliters and calculate total volume",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Convert 1 tablespoonful to mL"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1,
+                            "unit": "tablespoonful"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 15,
+                            "unit": "mL"
+                        }
+                    ],
+                    "operators1": ["=", "="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "Volume per dose"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 2,
+                            "unit": "tablespoonfuls"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 15,
+                            "unit": "mL/tablespoonful"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 30,
+                            "unit": "mL"
+                        }
+                    ],
+                    "operators2": ["=", "×", "="],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "Daily volume"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 30,
+                            "unit": "mL/dose"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 3,
+                            "unit": "doses/day"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 90,
+                            "unit": "mL/day"
+                        }
+                    ],
+                    "operators3": ["=", "×", "="],
+                    "operands4": [
+                        {
+                            "type": "text",
+                            "value": "Total volume needed"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 90,
+                            "unit": "mL/day"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 10,
+                            "unit": "days"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 900,
+                            "unit": "mL"
+                        }
+                    ],
+                    "operators4": ["=", "×", "="],
+                    "hint": "First convert tablespoonfuls to milliliters: 2 tablespoonfuls × 15 mL/tablespoonful = 30 mL per dose. Then calculate daily volume: 30 mL × 3 times/day = 90 mL/day. Finally, calculate total volume: 90 mL/day × 10 days = 900 mL."
+                }
+            ]
+        },
+        {
+            "number": 7,
+            "tag": "general",
+            "question": "How many milliliters of a solution would provide a patient with 2 teaspoonfuls twice daily for 28 days?",
+            "answerValue": [560],
+            "answerUnit": ["mL"],
+            "rounding": false,
+            "steps": [
+                {
+                    "text": "Understand the question",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Dose size"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 2,
+                            "unit": "teaspoonfuls"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "Frequency"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 2,
+                            "unit": "times/day"
+                        }
+                    ],
+                    "operators2": ["="],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "Duration"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 28,
+                            "unit": "days"
+                        }
+                    ],
+                    "operators3": ["="],
+                    "hint": "The question provides the dose size (2 teaspoonfuls), frequency (twice daily), and duration (28 days). We need to convert teaspoonfuls to milliliters and calculate the total volume."
+                },
+                {
+                    "text": "Convert teaspoonfuls to milliliters and calculate total volume",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Convert 1 teaspoonful to mL"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1,
+                            "unit": "teaspoonful"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 5,
+                            "unit": "mL"
+                        }
+                    ],
+                    "operators1": ["=", "="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "Volume per dose"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 2,
+                            "unit": "teaspoonfuls"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 5,
+                            "unit": "mL/teaspoonful"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 10,
+                            "unit": "mL"
+                        }
+                    ],
+                    "operators2": ["=", "×", "="],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "Convert half a pint to mL (1 pint = 473 mL)"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.5,
+                            "unit": "pint"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 473,
+                            "unit": "mL/pint"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 236.5,
+                            "unit": "mL"
+                        }
+                    ],
+                    "operators3": ["=", "×", "="],
+                    "operands4": [
+                        {
+                            "type": "text",
+                            "value": "Number of doses"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": "Total volume",
+                            "denominator": "Volume per dose"
+                        }
+                    ],
+                    "operators4": ["="],
+                    "operands5": [
+                        {
+                            "type": "text",
+                            "value": "Number of doses"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 236.5,
+                                "unit": "mL"
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": 10,
+                                "unit": "mL/dose"
+                            }
+                        },
+                        {
+                            "type": "input",
+                            "answer": 23.65,
+                            "unit": ""
+                        },
+                        {
+                            "type": "input",
+                            "answer": 24,
+                            "unit": "doses"
+                        }
+                    ],
+                    "operators5": ["=", "=", "≈"],
+                    "hint": "First convert the dose to mL: 2 teaspoonfuls × 5 mL/teaspoonful = 10 mL. Then convert half a pint to mL: 0.5 pint × 473 mL/pint = 236.5 mL. Finally, calculate the number of doses: 236.5 mL ÷ 10 mL/dose = 23.65, which rounds to 24 doses."
+                }
+            ]
+        },
+        {
+            "number": 8,
+            "tag": "weight",
+            "question": "You have a prescription for gentamicin for a newborn patient. The dose is 2.5 mg/kg every 12 hours. What would be the daily dose for a newborn weighing 6.8 lb.? Round the final answer to the nearest hundredth.",
+            "answerValue": [15.50],
+            "answerUnit": ["mg"],
+            "rounding": false,
+            "steps": [
+                {
+                    "text": "Convert weight from lb to kg. (kg = lb / 2.2)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Weight in kg (round to the nearest tenth)"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 6.8,
+                                "unit": "lb"
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": 2.2,
+                                "unit": ""
+                            }
+                        },
+                        {
+                            "type": "input",
+                            "answer": 3.09,
+                            "unit": "kg"
+                        }
+                    ],
+                    "operators1": ["=", "="],
+                    "hint": "6.8 lb / 2.2 = 3.09 kg (rounded to the nearest tenth)"
+                },
+                {
+                    "text": "Calculate the dose per administration",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Single dose"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 2.5,
+                            "unit": "mg/kg"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 3.09,
+                            "unit": "kg"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 7.725,
+                            "unit": "mg"
+                        }
+                    ],
+                    "operators1": ["=", "×", "="],
+                    "hint": "Single dose = 2.5 mg/kg × 3.09 kg = 7.725 mg"
+                },
+                {
+                    "text": "Calculate the total daily dose (given every 12 hours means twice daily)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Daily dose"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 7.725,
+                            "unit": "mg"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 2,
+                            "unit": "times/day"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 15.45,
+                            "unit": "mg/day"
+                        }
+                    ],
+                    "operators1": ["=", "×", "="],
+                    "hint": "Daily dose = 7.725 mg × 2 times/day = 15.45 mg/day (rounded to the nearest hundredth)"
+                }
+            ]
+        },
+        {
+            "number": 9,
+            "tag": "weight",
+            "question": "The pediatric dose of epinephrine is 0.01 mg/kg. If a patient was given 0.15 mg, what was the weight of the patient in pounds? Round final answer to nearest whole number",
+            "answerValue": [33],
+            "answerUnit": ["lb"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Calculate the patient's weight in kg using the dose given",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Weight in kg"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": "Dose given",
+                            "denominator": "Dose per kg"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "Weight in kg"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 0.15,
+                                "unit": "mg"
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": 0.01,
+                                "unit": "mg/kg"
+                            }
+                        },
+                        {
+                            "type": "input",
+                            "answer": 15,
+                            "unit": "kg"
+                        }
+                    ],
+                    "operators2": ["=", "="],
+                    "hint": "Weight in kg = Dose given ÷ Dose per kg = 0.15 mg ÷ 0.01 mg/kg = 15 kg"
+                },
+                {
+                    "text": "Convert weight from kg to lb (lb = kg × 2.2)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Weight in pounds"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 15,
+                            "unit": "kg"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 2.2,
+                            "unit": "lb/kg"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 33,
+                            "unit": "lb"
+                        }
+                    ],
+                    "operators1": ["=", "×", "="],
+                    "hint": "Weight in pounds = 15 kg × 2.2 = 33 lb (rounded to nearest whole number)"
+                }
+            ]
+        },
+        {
+            "number": 10,
+            "tag": "general",
+            "question": "A capsule contains a 2000 mcg dose of a drug. How many doses can be made from 150 mg of the drug?",
+            "answerValue": [75],
+            "answerUnit": ["doses"],
+            "rounding": false,
+            "steps": [
+                {
+                    "text": "Understand the question",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Dose size"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 2000,
+                            "unit": "mcg"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "Total drug quantity"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 150,
+                            "unit": "mg"
+                        }
+                    ],
+                    "operators2": ["="],
+                    "hint": "The question provides the dose size (2000 mcg) and the total drug quantity (150 mg). We need to find how many doses can be made from the total quantity."
+                },
+                {
+                    "text": "Convert units so they are the same and calculate number of doses",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Convert 150 mg to mcg (1 mg = 1000 mcg)"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 150,
+                            "unit": "mg"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1000,
+                            "unit": "mcg/mg"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 150000,
+                            "unit": "mcg"
+                        }
+                    ],
+                    "operators1": ["=", "×", "="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "Number of doses"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": "Total drug quantity",
+                            "denominator": "Dose size"
+                        }
+                    ],
+                    "operators2": ["="],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "Number of doses"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 150000,
+                                "unit": "mcg"
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": 2000,
+                                "unit": "mcg/dose"
+                            }
+                        },
+                        {
+                            "type": "input",
+                            "answer": 75,
+                            "unit": "doses"
+                        }
+                    ],
+                    "operators3": ["=", "="],
+                    "hint": "First convert mg to mcg: 150 mg × 1000 = 150,000 mcg. Then calculate number of doses: 150,000 mcg ÷ 2000 mcg/dose = 75 doses."
+                }
+            ]
+        },
+        {
+            "number": 11,
+            "tag": "general",
+            "question": "If 2 teaspoonfuls are prescribed as a dose, how many doses will be in half a pint of the medicine? Round your answer to the nearest whole number.",
+            "answerValue": [24],
+            "answerUnit": ["doses"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Understand the question",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Dose size"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 2,
+                            "unit": "teaspoonfuls"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "Total volume"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.5,
+                            "unit": "pint"
+                        }
+                    ],
+                    "operators2": ["="],
+                    "hint": "The question provides the dose size (2 teaspoonfuls) and the total volume (half a pint). We need to find how many doses can be made from the total volume."
+                },
+                {
+                    "text": "Convert units so they are the same and calculate number of doses",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Convert 1 teaspoonful to mL"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1,
+                            "unit": "teaspoonful"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 5,
+                            "unit": "mL"
+                        }
+                    ],
+                    "operators1": ["=", "="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "Convert 2 teaspoonfuls to mL"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 2,
+                            "unit": "teaspoonfuls"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 5,
+                            "unit": "mL/teaspoonful"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 10,
+                            "unit": "mL"
+                        }
+                    ],
+                    "operators2": ["=", "×", "="],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "Convert half a pint to mL (1 pint = 473 mL)"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.5,
+                            "unit": "pint"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 473,
+                            "unit": "mL/pint"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 236.5,
+                            "unit": "mL"
+                        }
+                    ],
+                    "operators3": ["=", "×", "="],
+                    "operands4": [
+                        {
+                            "type": "text",
+                            "value": "Number of doses"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": "Total volume",
+                            "denominator": "Volume per dose"
+                        }
+                    ],
+                    "operators4": ["="],
+                    "operands5": [
+                        {
+                            "type": "text",
+                            "value": "Number of doses"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 236.5,
+                                "unit": "mL"
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": 10,
+                                "unit": "mL/dose"
+                            }
+                        },
+                        {
+                            "type": "input",
+                            "answer": 23.65,
+                            "unit": ""
+                        },
+                        {
+                            "type": "input",
+                            "answer": 24,
+                            "unit": "doses (rounded to the nearest whole number)"
+                        }
+                    ],
+                    "operators5": ["=", "=", "≈"],
+                    "hint": "First convert the dose to mL: 2 teaspoonfuls × 5 mL/teaspoonful = 10 mL. Then convert half a pint to mL: 0.5 pint × 473 mL/pint = 236.5 mL. Finally, calculate the number of doses: 236.5 mL ÷ 10 mL/dose = 23.65, which rounds to 24 doses."
+                }
+            ]
+        },
+        {
+            "number": 12,
+            "tag": "general",
+            "question": "If an ophthalmic dose is 2 drops per eye and each drop is 0.5 mL, how many doses for both eyes are in 10 mL of solution?",
+            "answerValue": [5],
+            "answerUnit": ["doses"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Understand the question",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Drops per eye"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 2,
+                            "unit": "drops"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "Volume per drop"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.5,
+                            "unit": "mL"
+                        }
+                    ],
+                    "operators2": ["="],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "Total volume"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 10,
+                            "unit": "mL"
+                        }
+                    ],
+                    "operators3": ["="],
+                    "hint": "The question provides the number of drops per eye (2), volume per drop (0.5 mL), and total volume (10 mL). We need to find how many complete doses for both eyes can be made from the total volume."
+                },
+                {
+                    "text": "Calculate volume per dose for both eyes",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Volume per eye"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 2,
+                            "unit": "drops"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.5,
+                            "unit": "mL/drop"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1,
+                            "unit": "mL"
+                        }
+                    ],
+                    "operators1": ["=", "×", "="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "Volume per dose (both eyes)"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1,
+                            "unit": "mL/eye"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 2,
+                            "unit": "eyes"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 2,
+                            "unit": "mL/dose"
+                        }
+                    ],
+                    "operators2": ["=", "×", "="],
+                    "hint": "First calculate volume per eye: 2 drops × 0.5 mL/drop = 1 mL. Then calculate volume per dose for both eyes: 1 mL/eye × 2 eyes = 2 mL/dose."
+                },
+                {
+                    "text": "Calculate number of complete doses",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Number of doses"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": "Total volume",
+                            "denominator": "Volume per dose"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "Number of doses"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 10,
+                                "unit": "mL"
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": 2,
+                                "unit": "mL/dose"
+                            }
+                        },
+                        {
+                            "type": "input",
+                            "answer": 5,
+                            "unit": "doses"
+                        }
+                    ],
+                    "operators2": ["=", "="],
+                    "hint": "Calculate number of doses: 10 mL ÷ 2 mL/dose = 5 doses"
+                }
+            ]
+        },
+        {
+            "number": 13,
+            "tag": "weight",
+            "question": "A capsule contains 300 mg of clarithromycin. How many capsules are needed to provide 10 mg/kg/day for 14 days for a patient weighing 212 lb.? Round your answer to the nearest whole number.",
+            "answerValue": [45],
+            "answerUnit": ["capsules"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Understand the question",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Capsule strength"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 300,
+                            "unit": "mg"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "Dose per kg"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 10,
+                            "unit": "mg/kg/day"
+                        }
+                    ],
+                    "operators2": ["="],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "Duration"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 14,
+                            "unit": "days"
+                        }
+                    ],
+                    "operators3": ["="],
+                    "hint": "The question provides the capsule strength (300 mg), dose per kg (10 mg/kg/day), duration (14 days), and patient weight (212 lb). We need to find the total number of capsules needed."
+                },
+                {
+                    "text": "Convert weight from lb to kg",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Weight in kg"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 212,
+                                "unit": "lb"
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": 2.2,
+                                "unit": ""
+                            }
+                        },
+                        {
+                            "type": "input",
+                            "answer": 96.4,
+                            "unit": "kg"
+                        }
+                    ],
+                    "operators1": ["=", "="],
+                    "hint": "Convert weight from lb to kg: 212 lb ÷ 2.2 = 96.4 kg (rounded to nearest tenth)"
+                },
+                {
+                    "text": "Calculate daily dose",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Daily dose"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 10,
+                            "unit": "mg/kg/day"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 96.4,
+                            "unit": "kg"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 964,
+                            "unit": "mg/day"
+                        }
+                    ],
+                    "operators1": ["=", "×", "="],
+                    "hint": "Calculate daily dose: 10 mg/kg/day × 96.4 kg = 964 mg/day"
+                },
+                {
+                    "text": "Calculate total dose for 14 days",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Total dose"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 964,
+                            "unit": "mg/day"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 14,
+                            "unit": "days"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 13496,
+                            "unit": "mg"
+                        }
+                    ],
+                    "operators1": ["=", "×", "="],
+                    "hint": "Calculate total dose: 964 mg/day × 14 days = 13,496 mg"
+                },
+                {
+                    "text": "Calculate number of capsules needed",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Number of capsules"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": "Total dose",
+                            "denominator": "Capsule strength"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "Number of capsules"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 13496,
+                                "unit": "mg"
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": 300,
+                                "unit": "mg/capsule"
+                            }
+                        },
+                        {
+                            "type": "input",
+                            "answer": 45,
+                            "unit": "capsules (rounded to the nearest whole number)"
+                        }
+                    ],
+                    "operators2": ["=", "="],
+                    "hint": "Calculate number of capsules: 13,496 mg ÷ 300 mg/capsule = 44.99, which rounds up to 45 capsules (since we need to provide the full dose)"
+                }
+            ]
+        },
+        {
+            "number": 14,
+            "tag": "weight",
+            "question": "The pediatric dose of a drug is 1.5 ml/kg/day. If a child was given a dose of 2 tablespoons per day, what is the weight of the child in pounds?",
+            "answerValue": [44],
+            "answerUnit": ["lb"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Understand the question",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Dose per kg"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1.5,
+                            "unit": "mL/kg/day"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "Actual dose given"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 2,
+                            "unit": "tablespoons"
+                        }
+                    ],
+                    "operators2": ["="],
+                    "hint": "The question provides the dose per kg (1.5 mL/kg/day) and the actual dose given (2 tablespoons). We need to find the child's weight in pounds."
+                },
+                {
+                    "text": "Convert tablespoons to milliliters",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Convert 1 tablespoon to mL"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1,
+                            "unit": "tablespoon"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 15,
+                            "unit": "mL"
+                        }
+                    ],
+                    "operators1": ["=", "="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "Convert 2 tablespoons to mL"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 2,
+                            "unit": "tablespoons"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 15,
+                            "unit": "mL/tablespoon"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 30,
+                            "unit": "mL"
+                        }
+                    ],
+                    "operators2": ["=", "×", "="],
+                    "hint": "First convert tablespoons to milliliters: 2 tablespoons × 15 mL/tablespoon = 30 mL"
+                },
+                {
+                    "text": "Calculate weight in kg",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Weight in kg"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": "Total dose",
+                            "denominator": "Dose per kg"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "Weight in kg"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 30,
+                                "unit": "mL"
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": 1.5,
+                                "unit": "mL/kg"
+                            }
+                        },
+                        {
+                            "type": "input",
+                            "answer": 20,
+                            "unit": "kg"
+                        }
+                    ],
+                    "operators2": ["=", "="],
+                    "hint": "Calculate weight in kg: 30 mL ÷ 1.5 mL/kg = 20 kg"
+                },
+                {
+                    "text": "Convert weight from kg to lb",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Weight in pounds"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 20,
+                            "unit": "kg"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 2.2,
+                            "unit": "lb/kg"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 44,
+                            "unit": "lb"
+                        }
+                    ],
+                    "operators1": ["=", "×", "="],
+                    "hint": "Convert weight from kg to lb: 20 kg × 2.2 = 44 lb"
+                }
+            ]
+        },
+        {
+            "number": 15,
+            "tag": "weight",
+            "question": "Lisinopril tabs 20 mg. <br>   Dispense Lisinopril tablets. <br>Sig: tab ii stat, then 0.25 mg/kg q.d. x 30 d thereafter. <br>Calculate the number of tablets to dispense to a patient who weighs 176 lb.",
+            "answerValue": [32],
+            "answerUnit": ["tablets"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Understand the question",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {"type": "text", "value": "Initial dose"},
+                        {"type": "input", "answer": 2, "unit": "tablets"},
+                        {"type": "input", "answer": 20, "unit": "mg/tablet"},
+                        {"type": "input", "answer": 40, "unit": "mg"}
+                    ],
+                    "operators1": ["=", "×", "="],
+                    "operands2": [
+                        {"type": "text", "value": "Maintenance dose"},
+                        {"type": "input", "answer": 0.25, "unit": "mg/kg/day"},
+                        {"type": "input", "answer": 30, "unit": "days"}
+                    ],
+                    "operators2": ["=", ":"],
+                    "operands3": [
+                        {"type": "text", "value": "Patient weight"},
+                        {"type": "input", "answer": 176, "unit": "lb"}
+                    ],
+                    "operators3": ["="],
+                    "hint": "Initial dose is 2 tablets (20 mg each). Maintenance dose is 0.25 mg/kg/day for 30 days. Patient weighs 176 lb."
+                },
+                {
+                    "text": "Convert weight from lb to kg.",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {"type": "text", "value": "Weight in kg"},
+                        {"type": "fraction", "numerator": {"type": "input", "answer": 176, "unit": "lb"}, "denominator": {"type": "input", "answer": 2.2, "unit": ""}},
+                        {"type": "input", "answer": 80, "unit": "kg"}
+                    ],
+                    "operators1": ["=", "="],
+                    "hint": "176 lb ÷ 2.2 = 80 kg"
+                },
+                {
+                    "text": "Calculate maintenance daily dose.",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {"type": "text", "value": "Daily dose"},
+                        {"type": "input", "answer": 0.25, "unit": "mg/kg/day"},
+                        {"type": "input", "answer": 80, "unit": "kg"},
+                        {"type": "input", "answer": 20, "unit": "mg/day"}
+                    ],
+                    "operators1": ["=", "×", "="],
+                    "hint": "0.25 mg/kg × 80 kg = 20 mg/day"
+                },
+                {
+                    "text": "Calculate total maintenance dose for 30 days.",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {"type": "text", "value": "Total maintenance dose"},
+                        {"type": "input", "answer": 20, "unit": "mg/day"},
+                        {"type": "input", "answer": 30, "unit": "days"},
+                        {"type": "input", "answer": 600, "unit": "mg"}
+                    ],
+                    "operators1": ["=", "×", "="],
+                    "hint": "20 mg/day × 30 days = 600 mg"
+                },
+                {
+                    "text": "Calculate number of tablets for maintenance.",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {"type": "text", "value": "Maintenance tablets"},
+                        {"type": "input", "answer": 600, "unit": "mg"},
+                        {"type": "input", "answer": 20, "unit": "mg/tablet"},
+                        {"type": "input", "answer": 30, "unit": "tablets"}
+                    ],
+                    "operators1": ["=", "÷", "="],
+                    "hint": "600 mg ÷ 20 mg/tablet = 30 tablets"
+                },
+                {
+                    "text": "Add initial dose tablets.",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {"type": "text", "value": "Total tablets"},
+                        {"type": "input", "answer": 2, "unit": "tablets (initial)"},
+                        {"type": "input", "answer": 30, "unit": "tablets (maintenance)"},
+                        {"type": "input", "answer": 32, "unit": "tablets"}
+                    ],
+                    "operators1": ["=", "+", "="],
+                    "hint": "2 tablets (initial) + 30 tablets (maintenance) = 32 tablets"
+                }
+            ]
+        },
+        {
+            "number": 16,
+            "tag": "general",
+            "question": "A patient is prescribed an inhaled medication in which each puff delivers 0.8 mg of the active drug. The prescribed dose is two puffs per administration. If the total drug available in the inhaler is 26 mg, how many full doses (i.e., two-puff doses) can the patient receive from this inhaler? Round your answer to the nearest whole number.",
+            "answerValue": [16],
+            "answerUnit": ["doses"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Understand the question",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Drug per puff"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.8,
+                            "unit": "mg/puff"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "Puffs per dose"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 2,
+                            "unit": "puffs"
+                        }
+                    ],
+                    "operators2": ["="],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "Total drug available"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 26,
+                            "unit": "mg"
+                        }
+                    ],
+                    "operators3": ["="],
+                    "hint": "The question provides the drug amount per puff (0.8 mg), number of puffs per dose (2), and total drug available (26 mg). We need to find how many complete two-puff doses can be made."
+                },
+                {
+                    "text": "Calculate drug amount per dose",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Drug per dose"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.8,
+                            "unit": "mg/puff"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 2,
+                            "unit": "puffs/dose"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1.6,
+                            "unit": "mg/dose"
+                        }
+                    ],
+                    "operators1": ["=", "×", "="],
+                    "hint": "Calculate drug amount per dose: 0.8 mg/puff × 2 puffs/dose = 1.6 mg/dose"
+                },
+                {
+                    "text": "Calculate number of complete doses",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Number of doses"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": "Total drug available",
+                            "denominator": "Drug per dose"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "Number of doses"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 26,
+                                "unit": "mg"
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": 1.6,
+                                "unit": "mg/dose"
+                            }
+                        },
+                        {
+                            "type": "input",
+                            "answer": 16.25,
+                            "unit": ""
+                        },
+                        {
+                            "type": "input",
+                            "answer": 16,
+                            "unit": "doses (rounded to the nearest whole number)"
+                        }
+                    ],
+                    "operators2": ["=", "=", "≈"],
+                    "hint": "Calculate number of complete doses: 26 mg ÷ 1.6 mg/dose = 16.25, which rounds down to 16 complete doses (since we can't give a partial dose)"
+                }
+            ]
+        },
+        {
+            "number": 17,
+            "tag": "general",
+            "question": "A bottle of fluticasone nasal spray contains 120 sprays (doses) and 16 mL of total solution. How many milliliters are delivered in each spray? Round the answer to the nearest tenth.",
+            "answerValue": [0.1],
+            "answerUnit": ["mL"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Understand the question",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Total number of sprays"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 120,
+                            "unit": "sprays"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "Total volume"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 16,
+                            "unit": "mL"
+                        }
+                    ],
+                    "operators2": ["="],
+                    "hint": "The question provides the total number of sprays (120) and total volume (16 mL). We need to find the volume per spray."
+                },
+                {
+                    "text": "Calculate volume per spray",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Volume per spray"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": "Total volume",
+                            "denominator": "Number of sprays"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "Volume per spray"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 16,
+                                "unit": "mL"
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": 120,
+                                "unit": "sprays"
+                            }
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.133,
+                            "unit": "mL"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.1,
+                            "unit": "mL"
+                        }
+                    ],
+                    "operators2": ["=", "=", "≈"],
+                    "hint": "Calculate volume per spray: 16 mL ÷ 120 sprays = 0.133 mL, which rounds to 0.1 mL to the nearest tenth"
+                }
+            ]
+        },
+        {
+            "number": 18,
+            "tag": "general",
+            "question": "You have a prescription to dispense dextromethorphan HBr. If this cough syrup contains 0.16 g of drug in 240 ml, how many milligrams of the drug are in each teaspoonful dose? Round final answer to the nearest hundreth",
+            "answerValue": [3.33],
+            "answerUnit": ["mg"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Understand the question",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Total drug amount"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.16,
+                            "unit": "g"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "Total volume"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 240,
+                            "unit": "mL"
+                        }
+                    ],
+                    "operators2": ["="],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "Dose volume"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1,
+                            "unit": "teaspoonful"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 5,
+                            "unit": "mL"
+                        }
+                    ],
+                    "operators3": [":", "="],
+                    "hint": "The question provides the total drug amount (0.16 g), total volume (240 mL), and we know 1 teaspoonful = 5 mL. We need to find the drug amount in mg per teaspoonful."
+                },
+                {
+                    "text": "Convert total drug amount from grams to milligrams",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Total drug in mg"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.16,
+                            "unit": "g"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1000,
+                            "unit": "mg/g"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 160,
+                            "unit": "mg"
+                        }
+                    ],
+                    "operators1": ["=", "×", "="],
+                    "hint": "Convert grams to milligrams: 0.16 g × 1000 mg/g = 160 mg"
+                },
+                {
+                    "text": "Calculate drug concentration per mL",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Drug per mL"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": "Total drug",
+                            "denominator": "Total volume"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "Drug per mL"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 160,
+                                "unit": "mg"
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": 240,
+                                "unit": "mL"
+                            }
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.667,
+                            "unit": "mg/mL (rounded to three decimal places)"
+                        }
+                    ],
+                    "operators2": ["=", "="],
+                    "hint": "Calculate drug concentration: 160 mg ÷ 240 mL = 0.667 mg/mL"
+                },
+                {
+                    "text": "Calculate drug amount per teaspoonful",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Drug per teaspoonful"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.667,
+                            "unit": "mg/mL (rounded to three decimal places)"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 5,
+                            "unit": "mL/teaspoonful"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 3.33,
+                            "unit": "mg"
+                        }
+                    ],
+                    "operators1": ["=", "×", "="],
+                    "hint": "Calculate drug per teaspoonful: 0.666 mg/mL × 5 mL/teaspoonful = 3.33 mg (rounded to nearest hundredth)"
+                }
+            ]
+        },
+        {
+            "number": 19,
+            "tag": "general",
+            "question": "Acetaminophen Oral Drops <br> Disp. 30 ml <br> Sig. 0.5 ml b.i.d <br> If the dropper is calibrated to deliver 20 drops/ml, how many drops should be administered per dose?",
+            "answerValue": [10],
+            "answerUnit": ["drops"],
+            "rounding": false,
+            "steps": [
+                {
+                    "text": "Understand the question",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Dose volume"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.5,
+                            "unit": "mL"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "Dropper calibration"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 20,
+                            "unit": "drops/mL"
+                        }
+                    ],
+                    "operators2": ["="],
+                    "hint": "The question provides the dose volume (0.5 mL) and dropper calibration (20 drops/mL). We need to find how many drops make up one dose."
+                },
+                {
+                    "text": "Calculate number of drops per dose",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Drops per dose"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.5,
+                            "unit": "mL/dose"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 20,
+                            "unit": "drops/mL"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 10,
+                            "unit": "drops"
+                        }
+                    ],
+                    "operators1": ["=", "×", "="],
+                    "hint": "Calculate drops per dose: 0.5 mL/dose × 20 drops/mL = 10 drops per dose"
+                }
+            ]
+        },
+        {
+            "number": 20,
+            "tag": "general",
+            "question": "If a liquid medicine is ordered to be taken four times a day, and if 280 ml are to be taken in 7 days, how many teaspoonfuls should be prescribed for each dose?",
+            "answerValue": [2],
+            "answerUnit": ["teaspoonfuls"],
+            "rounding": false,
+            "steps": [
+                {
+                    "text": "Understand the question",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Frequency"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 4,
+                            "unit": "times/day"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "Total volume"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 280,
+                            "unit": "mL"
+                        }
+                    ],
+                    "operators2": ["="],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "Duration"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 7,
+                            "unit": "days"
+                        }
+                    ],
+                    "operators3": ["="],
+                    "hint": "The question provides the frequency (4 times/day), total volume (280 mL), and duration (7 days). We need to find how many teaspoonfuls make up one dose."
+                },
+                {
+                    "text": "Calculate total number of doses",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Total doses"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 4,
+                            "unit": "times/day"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 7,
+                            "unit": "days"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 28,
+                            "unit": "doses"
+                        }
+                    ],
+                    "operators1": ["=", "×", "="],
+                    "hint": "Calculate total number of doses: 4 times/day × 7 days = 28 doses"
+                },
+                {
+                    "text": "Calculate volume per dose",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Volume per dose"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": "Total volume",
+                            "denominator": "Number of doses"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "Volume per dose"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 280,
+                                "unit": "mL"
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": 28,
+                                "unit": "doses"
+                            }
+                        },
+                        {
+                            "type": "input",
+                            "answer": 10,
+                            "unit": "mL/dose"
+                        }
+                    ],
+                    "operators2": ["=", "="],
+                    "hint": "Calculate volume per dose: 280 mL ÷ 28 doses = 10 mL/dose"
+                },
+                {
+                    "text": "Convert milliliters to teaspoonfuls",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Teaspoonfuls per dose"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 10,
+                            "unit": "mL/dose"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 5,
+                            "unit": "mL/teaspoonful"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 2,
+                            "unit": "teaspoonfuls"
+                        }
+                    ],
+                    "operators1": ["=", "÷", "="],
+                    "hint": "Convert to teaspoonfuls: 10 mL/dose ÷ 5 mL/teaspoonful = 2 teaspoonfuls per dose"
+                }
+            ]
+        },
+        {
+            "number": 21,
+            "tag": "general",
+            "question": "A dose of digoxin is a total of 1 mg, divided in two doses. How many milliliters of digoxin elixir containing 20 mcg/ml would provide the 1 mg dose?",
+            "answerValue": [50],
+            "answerUnit": ["mL"],
+            "rounding": false,
+            "steps": [
+                {
+                    "text": "Understand the question",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {"type": "text", "value": "Total dose"},
+                        {"type": "input", "answer": 1, "unit": "mg"}
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {"type": "text", "value": "Concentration"},
+                        {"type": "input", "answer": 20, "unit": "mcg/mL"}
+                    ],
+                    "operators2": ["="],
+                    "hint": "The question provides the total dose (1 mg) and the concentration (20 mcg/mL). We need to find the volume that provides 1 mg."
+                },
+                {
+                    "text": "Convert total dose from mg to mcg.",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {"type": "text", "value": "Total dose in mcg"},
+                        {"type": "input", "answer": 1, "unit": "mg"},
+                        {"type": "input", "answer": 1000, "unit": "mcg/mg"},
+                        {"type": "input", "answer": 1000, "unit": "mcg"}
+                    ],
+                    "operators1": ["=", "×", "="],
+                    "hint": "Convert mg to mcg: 1 mg × 1000 mcg/mg = 1000 mcg"
+                },
+                {
+                    "text": "Calculate volume needed for 1 mg (1000 mcg) at 20 mcg/mL.",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {"type": "text", "value": "Volume needed"},
+                        {"type": "fraction", "numerator": "Total dose in mcg", "denominator": "Concentration"}
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {"type": "text", "value": "Volume needed"},
+                        {"type": "fraction", "numerator": {"type": "input", "answer": 1000, "unit": "mcg"}, "denominator": {"type": "input", "answer": 20, "unit": "mcg/mL"}},
+                        {"type": "input", "answer": 50, "unit": "mL"}
+                    ],
+                    "operators2": ["=", "="],
+                    "hint": "Calculate volume: 1000 mcg ÷ 20 mcg/mL = 50 mL"
+                }
+            ]
+        },
+        {
+            "number": 22,
+            "tag": "general",
+            "question": "Furosemide 20 mg tabs<br>Disp. tabs<br>Sig. tab ii q.d. x 30 days<br>What is the total amount of drug, in milligrams, dispensed for this prescription?",
+            "answerValue": [1200],
+            "answerUnit": ["mg"],
+            "rounding": false,
+            "steps": [
+                {
+                    "text": "Understand the question",
+                    "type": "INTERPRETATION",
+                    "content": [
+                        {
+                            "text": "tab ii = *blank1*",
+                            "type": "short-answer",
+                            "blank1": [
+                                "2 tablets",
+                                "two tablets",
+                                "2 tabs",
+                                "two tabs"
+                            ],
+                            "hint": "tab ii means 2 tablets"
+                        },
+                        {
+                            "text": "q.d. = *blank1*",
+                            "type": "short-answer",
+                            "blank1": [
+                                "daily",
+                                "each day",
+                                "every day",
+                                "once daily",
+                                "once a day"
+                            ],
+                            "hint": "q.d. means daily"
+                        },
+                        {
+                            "text": "x 30 days = *blank1*",
+                            "type": "short-answer",
+                            "blank1": [
+                                "for 30 days",
+                                "for thirty days",
+                                "for a 30-day period"
+                            ],
+                            "hint": "x 30 days means for 30 days"
+                        }
+                    ]
+                },
+                {
+                    "text": "Calculate the total amount of drug dispensed",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Total amount"
+                        },
+                        {
+                            "type": "text",
+                            "value": "Number of tablets per day"
+                        },
+                        {
+                            "type": "text",
+                            "value": "Number of days"
+                        },
+                        {
+                            "type": "text",
+                            "value": "Strength per tablet"
+                        }
+                    ],
+                    "operators1": ["=", "×", "×"],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "Total amount"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 2,
+                            "unit": "tablets/day"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 30,
+                            "unit": "days"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 20,
+                            "unit": "mg/tablet"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1200,
+                            "unit": "mg"
+                        }
+                    ],
+                    "operators2": ["=", "×", "×", "="],
+                    "hint": "2 tablets/day × 30 days × 20 mg/tablet = 1200 mg"
+                }
+            ]
+        },
+        {
+            "number": 23,
+            "tag": "general",
+            "question": "A fentanyl transdermal patch contains 15 mg of drug and has a release rate of 120 mcg per hour. If the patch is worn for 84 hours, how many milligrams of drug, in total, are delivered? Round answer to the nearest hundreth.",
+            "answerValue": [10.08],
+            "answerUnit": ["mg"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Understand the question",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Release rate"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 120,
+                            "unit": "mcg/hour"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "Duration"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 84,
+                            "unit": "hours"
+                        }
+                    ],
+                    "operators2": ["="],
+                    "hint": "We know the patch releases 120 mcg per hour and is worn for 84 hours"
+                },
+                {
+                    "text": "Calculate total amount in micrograms",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Total amount (mcg)"
+                        },
+                        {
+                            "type": "text",
+                            "value": "Release rate"
+                        },
+                        {
+                            "type": "text",
+                            "value": "Duration"
+                        }
+                    ],
+                    "operators1": ["=", "×"],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "Total amount (mcg)"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 120,
+                            "unit": "mcg/hour"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 84,
+                            "unit": "hours"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 10080,
+                            "unit": "mcg"
+                        }
+                    ],
+                    "operators2": ["=", "×", "="],
+                    "hint": "120 mcg/hour × 84 hours = 10080 mcg"
+                },
+                {
+                    "text": "Convert micrograms to milligrams",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Total amount (mg)"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 10080,
+                                "unit": "mcg"
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": 1000,
+                                "unit": "mcg/mg"
+                            }
+                        },
+                        {
+                            "type": "input",
+                            "answer": 10.08,
+                            "unit": "mg"
+                        }
+                    ],
+                    "operators1": ["=", "="],
+                    "hint": "10080 mcg ÷ 1000 mcg/mg = 10.08 mg (rounded to nearest hundredth)"
+                }
+            ]
+        },
+        {
+            "number": 24,
+            "tag": "general",
+            "question": "A patient with moderate persistent asthma is prescribed a combination inhaler containing fluticasone propionate 250 mcg and salmeterol 50 mcg per inhalation. The prescribed dose is two inhalations, three times a day. Calculate the total quantity, in milligrams, of each drug the patient receives per day.",
+            "answerValue": [1.5, 0.3],
+            "answerUnit": ["mg of fluticasone", "mg of salmeterol"],
+            "rounding": false,
+            "steps": [
+                {
+                    "text": "Calculate the total daily dose of fluticasone propionate",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {"type": "text", "value": "Fluticasone per inhalation"},
+                        {"type": "input", "answer": 250, "unit": "mcg"}
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {"type": "text", "value": "Inhalations per dose"},
+                        {"type": "input", "answer": 2, "unit": "inhalations"}
+                    ],
+                    "operators2": ["="],
+                    "operands3": [
+                        {"type": "text", "value": "Doses per day"},
+                        {"type": "input", "answer": 3, "unit": "doses"}
+                    ],
+                    "operators3": ["="],
+                    "operands4": [
+                        {"type": "text", "value": "Total fluticasone per day (mcg)"},
+                        {"type": "input", "answer": 250, "unit": "mcg"},
+                        {"type": "input", "answer": 2, "unit": "inhalations"},
+                        {"type": "input", "answer": 3, "unit": "doses"},
+                        {"type": "input", "answer": 1500, "unit": "mcg"}
+                    ],
+                    "operators4": ["=", "x", "x", "="],
+                    "hint": "250 mcg/inhalation × 2 inhalations/dose × 3 doses/day = 1500 mcg/day"
+
+                },
+                {
+                    "text": "Convert fluticasone to milligrams",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {"type": "text", "value": "Total fluticasone per day (mg)"},
+                        {"type": "fraction", "numerator": {"type": "input", "answer": 1500, "unit": "mcg"}, "denominator": {"type": "input", "answer": 1000, "unit": "mcg/mg"}},
+                        {"type": "input", "answer": 1.5, "unit": "mg"}
+                    ],
+                    "operators1": ["=", "="],
+                    "hint": "1500 mcg/day ÷ 1000 mcg/mg = 1.5 mg/day"
+                },
+                {
+                    "text": "Calculate the total daily dose of salmeterol",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {"type": "text", "value": "Salmeterol per inhalation"},
+                        {"type": "input", "answer": 50, "unit": "mcg"}
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {"type": "text", "value": "Inhalations per dose"},
+                        {"type": "input", "answer": 2, "unit": "inhalations"}
+                    ],
+                    "operators2": ["="],
+                    "operands3": [
+                        {"type": "text", "value": "Doses per day"},
+                        {"type": "input", "answer": 3, "unit": "doses"}
+                    ],
+                    "operators3": ["="],
+                    "operands4": [
+                        {"type": "text", "value": "Total salmeterol per day (mcg)"},
+                        {"type": "input", "answer": 50, "unit": "mcg"},
+                        {"type": "input", "answer": 2, "unit": "inhalations"},
+                        {"type": "input", "answer": 3, "unit": "doses"},
+                        {"type": "input", "answer": 300, "unit": "mcg"}
+                    ],
+                    "operators4": ["=", "x", "x", "="],
+                    "hint": "50 mcg/inhalation × 2 inhalations/dose × 3 doses/day = 300 mcg/day"
+                },
+                {
+                    "text": "Convert salmeterol to milligrams",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {"type": "text", "value": "Total salmeterol per day (mg)"},
+                        {"type": "fraction", "numerator": {"type": "input", "answer": 300, "unit": "mcg"}, "denominator": {"type": "input", "answer": 1000, "unit": "mcg/mg"}},
+                        {"type": "input", "answer": 0.3, "unit": "mg"}
+                    ],
+                    "operators1": ["=", "="],
+                    "hint": "300 mcg/day ÷ 1000 mcg/mg = 0.3 mg/day"
+                }
+            ]
+        }
+    ]
+}

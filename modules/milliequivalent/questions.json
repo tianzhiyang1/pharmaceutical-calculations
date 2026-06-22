@@ -1,0 +1,3679 @@
+{
+    "questions": [
+        {
+            "number": 1,
+            "question": "What is the concentration, in mg per mL of a solution containing 4 mEq of potassium chloride (KCl) per mL? (KCl molecular weight = 74.5)",
+            "answerValue": [298],
+            "answerUnit": ["mg/mL"],
+            "rounding": false,
+            "steps": [
+                {
+                    "text": "Identify the valence and calculate how many mg = 1 mEq",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "1 mEq"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": "MW (in mg)",
+                            "denominator": "Valence"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "1 mEq"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": "74.5",
+                                "unit": "mg"
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": "1",
+                                "unit": "(valence of KCl)"
+                            }
+                        },
+                        {
+                            "type": "input",
+                            "answer": "74.5",
+                            "unit": "mg"
+                        }
+                    ],
+                    "operators2": ["=", "="],
+                    "hint": "The valence of KCl is 1 because it has 1 positive charge and 1 negative charge. From the question, we know that the MW of KCl is 74.5 mg, so 1 mEq = 74.5 mg / 1 = 74.5 mg"
+                },
+                {
+                    "text": "Use ratio and proportion to convert between mEq and mg",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "fraction",
+                            "numerator": "1 mEq",
+                            "denominator": {
+                                "type": "input",
+                                "answer": "74.5",
+                                "unit": "mg"
+                            }
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": "4",
+                                "unit": "mEq"
+                            },
+                            "denominator": "X mg"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "X mg"
+                        },
+                        {
+                            "type": "input",
+                            "answer": "298",
+                            "unit": "mg/mL"
+                        }
+                    ],
+                    "operators2": ["="],
+                    "hint": "1 mEq = 74.5 mg, so 4 mEq = 4 * 74.5 mg = 298 mg"
+                }
+            ]
+        },
+        {
+            "number": 2,
+            "question": "What is the concentration, in mg per mL of a solution containing 2 mEq of ammonium chloride (NH<sub>4</sub>Cl) per mL? (NH<sub>4</sub>Cl  molecular weight is 53.5).",
+            "answerValue": [107],
+            "answerUnit": ["mg/mL"],
+            "rounding": false,
+            "steps": [
+                {
+                    "text": "Identify the valence and calculate how many mg = 1 mEq",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "1 mEq"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": "MW (in mg)",
+                            "denominator": "Valence"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "1 mEq"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": "53.5",
+                                "unit": "mg"
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": "1",
+                                "unit": "(valence of NH<sub>4</sub>Cl)"
+                            }
+                        },
+                        {
+                            "type": "input",
+                            "answer": "53.5",
+                            "unit": "mg"
+                        }
+                    ],
+                    "operators2": ["=", "="],
+                    "hint": "The valence of NH<sub>4</sub>Cl is 1 because it has 1 positive charge and 1 negative charge. From the question, we know that the MW of NH<sub>4</sub>Cl is 53.5 mg, so 1 mEq = 53.5 mg / 1 = 53.5 mg"
+                },
+                {
+                    "text": "Use ratio and proportion to convert between mEq and mg",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "fraction",
+                            "numerator": "1 mEq",
+                            "denominator": {
+                                "type": "input",
+                                "answer": "53.5",
+                                "unit": "mg"
+                            }
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": "2",
+                                "unit": "mEq"
+                            },
+                            "denominator": "X mg"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "X mg"
+                        },
+                        {
+                            "type": "input",
+                            "answer": "107",
+                            "unit": "mg/mL"
+                        }
+                    ],
+                    "operators2": ["="],
+                    "hint": "1 mEq = 53.5 mg, so 2 mEq = 2 * 53.5 mg = 107 mg"
+                }
+            ]
+        },
+        {
+            "number": 3,
+            "question": "What is the concentration, in mg per mL of a solution containing 3 mEq of calcium chloride (CaCl<sub>2</sub> ∙ 2 H<sub>2</sub>O) per mL? (CaCl<sub>2</sub> ∙ 2 H<sub>2</sub>O molecular weight = 147)",
+            "answerValue": [220.5],
+            "answerUnit": ["mg/mL"],
+            "rounding": false,
+            "steps": [
+                {
+                    "text": "Identify the valence and calculate how many mg = 1 mEq",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "1 mEq"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": "MW (in mg)",
+                            "denominator": "Valence"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "1 mEq"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": "147",
+                                "unit": "mg"
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": "2",
+                                "unit": "(valence of CaCl<sub>2</sub> ∙ 2 H<sub>2</sub>O)"
+                            }
+                        },
+                        {
+                            "type": "input",
+                            "answer": "73.5",
+                            "unit": "mg"
+                        }
+                    ],
+                    "operators2": ["=", "="],
+                    "hint": "The valence of CaCl<sub>2</sub> ∙ 2 H<sub>2</sub>O is 2 because calcium has a +2 charge. From the question, we know that the MW of CaCl<sub>2</sub> ∙ 2 H<sub>2</sub>O is 147 mg, so 1 mEq = 147 mg / 2 = 73.5 mg"
+                },
+                {
+                    "text": "Use ratio and proportion to convert between mEq and mg",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "fraction",
+                            "numerator": "1 mEq",
+                            "denominator": {
+                                "type": "input",
+                                "answer": "73.5",
+                                "unit": "mg"
+                            }
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": "3",
+                                "unit": "mEq"
+                            },
+                            "denominator": "X mg"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "X mg"
+                        },
+                        {
+                            "type": "input",
+                            "answer": "220.5",
+                            "unit": "mg/mL"
+                        }
+                    ],
+                    "operators2": ["="],
+                    "hint": "1 mEq = 73.5 mg, so 3 mEq = 3 * 73.5 mg = 220.5 mg"
+                }
+            ]
+        },
+        {
+            "number": 4,
+            "question": "What is the concentration, in grams per milliliter, of a solution containing 7 mEq of calcium chloride (CaCl<sub>2</sub> ∙2H<sub>2</sub>O) per milliliter? (CaCl<sub>2</sub> ∙2H<sub>2</sub>O molecular weight is 147). Round the final answer to the nearest hundredth.",
+            "answerValue": [0.51],
+            "answerUnit": ["g/mL"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Identify the valence and calculate how many mg = 1 mEq",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "1 mEq"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": "MW (in mg)",
+                            "denominator": "Valence"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "1 mEq"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": "147",
+                                "unit": "mg"
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": "2",
+                                "unit": "(valence of CaCl<sub>2</sub> ∙2H<sub>2</sub>O)"
+                            }
+                        },
+                        {
+                            "type": "input",
+                            "answer": "73.5",
+                            "unit": "mg"
+                        }
+                    ],
+                    "operators2": ["=", "="],
+                    "hint": "The valence of CaCl<sub>2</sub> ∙2H<sub>2</sub>O is 2 because calcium has a +2 charge. From the question, we know that the MW of CaCl<sub>2</sub> ∙2H<sub>2</sub>O is 147 mg, so 1 mEq = 147 mg / 2 = 73.5 mg"
+                },
+                {
+                    "text": "Use ratio and proportion to convert between mEq and mg",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "fraction",
+                            "numerator": "1 mEq",
+                            "denominator": {
+                                "type": "input",
+                                "answer": "73.5",
+                                "unit": "mg"
+                            }
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": "7",
+                                "unit": "mEq"
+                            },
+                            "denominator": "X mg"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "X mg"
+                        },
+                        {
+                            "type": "input",
+                            "answer": "514.5",
+                            "unit": "mg/mL"
+                        }
+                    ],
+                    "operators2": ["="],
+                    "hint": "1 mEq = 73.5 mg, so 7 mEq = 7 * 73.5 mg = 514.5 mg"
+                },
+                {
+                    "text": "Convert mg/mL to g/mL",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Concentration in g/mL"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": "514.5",
+                                "unit": "mg"
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": "1000",
+                                "unit": "mg/g"
+                            }
+                        },
+                        {
+                            "type": "input",
+                            "answer": "0.5145",
+                            "unit": "g/mL"
+                        },
+                        {
+                            "type": "input",
+                            "answer": "0.51",
+                            "unit": "g/mL"
+                        }
+                    ],
+                    "operators1": ["=", "=", "≈"],
+                    "hint": "Convert mg to g: 514.5 mg ÷ 1000 mg/g = 0.5145 g/mL, which rounds to 0.51 g/mL to the nearest hundredth"
+                }
+            ]
+        },
+        {
+            "number": 5,
+            "question": "A solution contains 447 mg of KCl per mL. Express this concentration in terms of mEq/mL of KCl (KCl molecular weight is 74.5).",
+            "answerValue": [6],
+            "answerUnit": ["mEq/mL"],
+            "rounding": false,
+            "steps": [
+                {
+                    "text": "Identify the valence and calculate how many mg = 1 mEq",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "1 mEq"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": "MW (in mg)",
+                            "denominator": "Valence"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "1 mEq"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": "74.5",
+                                "unit": "mg"
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": "1",
+                                "unit": "(valence of KCl)"
+                            }
+                        },
+                        {
+                            "type": "input",
+                            "answer": "74.5",
+                            "unit": "mg"
+                        }
+                    ],
+                    "operators2": ["=", "="],
+                    "hint": "The valence of KCl is 1 because it has 1 positive charge and 1 negative charge. From the question, we know that the MW of KCl is 74.5 mg, so 1 mEq = 74.5 mg / 1 = 74.5 mg"
+                },
+                {
+                    "text": "Use ratio and proportion to convert between mg and mEq",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "fraction",
+                            "numerator": "1 mEq",
+                            "denominator": {
+                                "type": "input",
+                                "answer": "74.5",
+                                "unit": "mg"
+                            }
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": "X mEq",
+                            "denominator": {
+                                "type": "input",
+                                "answer": "447",
+                                "unit": "mg"
+                            }
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "X mEq"
+                        },
+                        {
+                            "type": "input",
+                            "answer": "6",
+                            "unit": "mEq/mL"
+                        }
+                    ],
+                    "operators2": ["="],
+                    "hint": "1 mEq/74.5 mg = X mEq/447 mg. X = 447 mg ÷ 74.5 mg/mEq = 6 mEq/mL"
+                }
+            ]
+        },
+        {
+            "number": 6,
+            "question": "A solution contains 304 mg of FeSO<sub>4</sub> per ml. Express this concentration in terms of mEq/mL of FeSO<sub>4</sub> (FeSO<sub>4</sub> molecular weight is 152).",
+            "answerValue": [4],
+            "answerUnit": ["mEq/mL"],
+            "rounding": false,
+            "steps": [
+                {
+                    "text": "Identify the valence and calculate how many mg = 1 mEq",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "1 mEq"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": "MW (in mg)",
+                            "denominator": "Valence"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "1 mEq"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": "152",
+                                "unit": "mg"
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": "2",
+                                "unit": "(valence of FeSO<sub>4</sub>)"
+                            }
+                        },
+                        {
+                            "type": "input",
+                            "answer": "76",
+                            "unit": "mg"
+                        }
+                    ],
+                    "operators2": ["=", "="],
+                    "hint": "The valence of FeSO<sub>4</sub> is 2 because iron has a +2 charge. From the question, we know that the MW of FeSO<sub>4</sub> is 152 mg, so 1 mEq = 152 mg / 2 = 76 mg"
+                },
+                {
+                    "text": "Use ratio and proportion to convert between mg and mEq",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "fraction",
+                            "numerator": "1 mEq",
+                            "denominator": {
+                                "type": "input",
+                                "answer": "76",
+                                "unit": "mg"
+                            }
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": "X mEq",
+                            "denominator": {
+                                "type": "input",
+                                "answer": "304",
+                                "unit": "mg"
+                            }
+                        }
+                    ],
+					"operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "X mEq"
+                        },
+                        {
+                            "type": "input",
+                            "answer": "4",
+                            "unit": "mEq/mL"
+                        }
+                    ],
+                    "operators2": ["="],
+                    "hint": "1 mEq/76 mg = X mEq/304 mg. X = 304 mg ÷ 76 mg/mEq = 4 mEq/mL"
+                }
+            ]
+        },
+    {
+        "number": 7,
+        "question": "A 20-mL ampule of potassium chloride contains 5.96 g of KCl. What is the concentration of the solution in terms of milliequivalents per milliliter? (KCl molecular weight is 74.5)",
+        "answerValue": [4],
+        "answerUnit": ["mEq/mL"],
+        "rounding": false,
+        "steps": [
+            {
+                "text": "Identify the valence and calculate how many mg = 1 mEq",
+                "type": "OPERATION",
+                "operands1": [
+                    {
+                        "type": "text",
+                        "value": "1 mEq"
+                    },
+                    {
+                        "type": "fraction",
+                        "numerator": "MW (in mg)",
+                        "denominator": "Valence"
+                    }
+                ],
+                "operators1": ["="],
+                "operands2": [
+                    {
+                        "type": "text",
+                        "value": "1 mEq"
+                    },
+                    {
+                        "type": "fraction",
+                        "numerator": {
+                            "type": "input",
+                            "answer": "74.5",
+                            "unit": "mg"
+                        },
+                        "denominator": {
+                            "type": "input",
+                            "answer": "1",
+                            "unit": "(valence of KCl)"
+                        }
+                    },
+                    {
+                        "type": "input",
+                        "answer": "74.5",
+                        "unit": "mg"
+                    }
+                ],
+                "operators2": ["=", "="],
+                "hint": "The valence of KCl is 1 because it has 1 positive charge and 1 negative charge. From the question, we know that the MW of KCl is 74.5 mg, so 1 mEq = 74.5 mg / 1 = 74.5 mg."
+            },
+            {
+                "text": "Use ratio and proportion to convert between g/mL and mEq/mL",
+                "type": "OPERATION",
+                "operands1": [
+                    {
+                        "type": "fraction",
+                        "numerator": "1 mEq",
+                        "denominator": {
+                            "type": "input",
+                            "answer": "74.5",
+                            "unit": "mg"
+                        }
+                    },
+                    {
+                        "type": "fraction",
+                        "numerator": {
+                            "type": "input",
+                            "answer": "1000",
+                            "unit": "mg"
+                        },
+                        "denominator": {
+                            "type": "input",
+                            "answer": "1",
+                            "unit": "g"
+                        }
+                    },
+                    {
+                        "type": "fraction",
+                        "numerator": {
+                            "type": "input",
+                            "answer": "5.96",
+                            "unit": "g"
+                        },
+                        "denominator": {
+                            "type": "input",
+                            "answer": "20",
+                            "unit": "mL"
+                        }
+                    }
+                ],
+                "operators1": ["×", "×"],
+                "operands2": [
+                    {
+                        "type": "text",
+                        "value": "? mEq/mL"
+                    },
+                    {
+                        "type": "input",
+                        "answer": "4",
+                        "unit": "mEq/mL"
+                    }
+                ],
+                "operators2": ["="],
+                "hint": "First convert 5.96 g/20 mL to g/mL: 5.96 g ÷ 20 mL = 0.298 g/mL. Then convert to mg/mL: 0.298 g/mL × 1000 mg/g = 298 mg/mL. Finally convert to mEq/mL: 298 mg/mL ÷ 74.5 mg/mEq = 4 mEq/mL."
+            }
+        ]
+        },
+        {
+            "number": 8,
+            "question": "A person is to receive 26 mg of ammonium chloride per kg of body weight. If the person weighs 165 pounds, how many milliliters of a sterile solution of ammonium chloride containing 0.7 mEq/mL should be administered? (NH<sub>4</sub>Cl molecular weight is 53.5).",
+            "answerValue": [52.1],
+            "answerUnit": ["mL"],
+            "rounding": false,
+            "steps": [
+                {
+                    "text": "Convert pounds to kilograms and calculate total mg needed",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "input",
+                            "answer": "165",
+                            "unit": "lb"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": "165",
+                                "unit": "lb"
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": "2.2",
+                                "unit": "lb/kg"
+                            }
+                        },
+                        {
+                            "type": "input",
+                            "answer": "75",
+                            "unit": "kg"
+                        },
+                        {
+                            "type": "input",
+                            "answer": "26",
+                            "unit": "mg/kg"
+                        },
+                        {
+                            "type": "input",
+                            "answer": "1950",
+                            "unit": "mg needed"
+                        }
+                    ],
+                    "operators1": ["=", "=", "×", "="],
+                    "hint": "Convert the patient's weight from pounds to kilograms, then multiply by the dose per kg to get the total mg needed. 165 lb / 2.2 = 75 kg. 26 mg/kg × 75 kg = 1950 mg."
+                },
+                {
+                    "text": "Convert 0.7 mEq/mL to mg/mL",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "fraction",
+                            "numerator": "MW (in mg)",
+                            "denominator": "Valence"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": "53.5",
+                                "unit": "mg"
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": "1",
+                                "unit": "(valence of NH<sub>4</sub>Cl)"
+                            }
+                        },
+                        {
+                            "type": "input",
+                            "answer": "53.5",
+                            "unit": "mg"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": "1 mEq",
+                            "denominator": {
+                                "type": "input",
+                                "answer": "53.5",
+                                "unit": "mg"
+                            }
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": "0.7",
+                                "unit": "mEq"
+                            },
+                            "denominator": {
+                                "type": "text",
+                                "value": "x mg"
+                            }
+                        },
+                        {
+                            "type": "input",
+                            "answer": "37.45",
+                            "unit": "mg/mL"
+                        }
+                    ],
+                    "operators1": ["/", "=", "=", "=", "=", "="],
+                    "hint": "1 mEq = 53.5 mg (valence of NH4Cl = 1). 1 mEq / 53.5 mg = 0.7 mEq / x mg. x = 0.7 × 53.5 = 37.45 mg/mL."
+                },
+                {
+                    "text": "Calculate the required volume in mL",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": "37.45",
+                                "unit": "mg"
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": "1",
+                                "unit": "mL"
+                            }
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": "1950",
+                                "unit": "mg"
+                            },
+                            "denominator": {
+                                "type": "text",
+                                "value": "x mL"
+                            }
+                        }
+                    ],
+                    "operators1": ["=", "="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "x mL"
+                        },
+                        {
+                            "type": "input",
+                            "answer": "52.1",
+                            "unit": "mL"
+                        }
+                    ],
+                    "operators2": ["="],
+                    "hint": "37.45 mg / 1 mL = 1950 mg / x mL. x = 1950 mg / 37.45 mg/mL = 52.1 mL."
+                }
+            ]
+        },
+        {
+            "number": 9,
+            "question": "A person is to receive 42 mg of calcium chloride per kg of body weight. If the person weighs 154 pounds, how many mL of a sterile solution of calcium chloride containing 1.5 mEq/mL should be administered? (CaCl<sub>2</sub> molecular weight is 111). Round final answer to the nearest tenth.",
+            "answerValue": [35.3],
+            "answerUnit": ["mL"],
+            "rounding": false,
+            "steps": [
+                {
+                    "text": "Convert pounds to kilograms and calculate total mg needed",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "input",
+                            "answer": "154",
+                            "unit": "lb"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": "154",
+                                "unit": "lb"
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": "2.2",
+                                "unit": "lb/kg"
+                            }
+                        },
+                        {
+                            "type": "input",
+                            "answer": "70",
+                            "unit": "kg"
+                        },
+                        {
+                            "type": "input",
+                            "answer": "42",
+                            "unit": "mg/kg"
+                        },
+                        {
+                            "type": "input",
+                            "answer": "2940",
+                            "unit": "mg needed"
+                        }
+                    ],
+                    "operators1": ["=", "=", "×", "="],
+                    "hint": "Convert the patient's weight from pounds to kilograms, then multiply by the dose per kg to get the total mg needed. 154 lb / 2.2 = 70 kg. 42 mg/kg × 70 kg = 2940 mg."
+                },
+                {
+                    "text": "Convert 1.5 mEq/mL to mg/mL",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "fraction",
+                            "numerator": "MW (in mg)",
+                            "denominator": "Valence"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": "111",
+                                "unit": "mg"
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": "2",
+                                "unit": "(valence of CaCl<sub>2</sub>)"
+                            }
+                        },
+                        {
+                            "type": "input",
+                            "answer": "55.5",
+                            "unit": "mg"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": "1 mEq",
+                            "denominator": {
+                                "type": "input",
+                                "answer": "55.5",
+                                "unit": "mg"
+                            }
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": "1.5",
+                                "unit": "mEq"
+                            },
+                            "denominator": {
+                                "type": "text",
+                                "value": "x mg"
+                            }
+                        },
+                        {
+                            "type": "input",
+                            "answer": "83.25",
+                            "unit": "mg/mL"
+                        }
+                    ],
+                    "operators1": ["/", "=", "=", "=", "=", "="],
+                    "hint": "1 mEq = 111 mg / 2 = 55.5 mg (valence of CaCl2 = 2). 1 mEq / 55.5 mg = 1.5 mEq / x mg. x = 1.5 × 55.5 = 83.25 mg/mL."
+                },
+                {
+                    "text": "Calculate the required volume in mL",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": "83.25",
+                                "unit": "mg"
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": "1",
+                                "unit": "mL"
+                            }
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": "2940",
+                                "unit": "mg"
+                            },
+                            "denominator": {
+                                "type": "text",
+                                "value": "x mL"
+                            }
+                        }
+                    ],
+                    "operators1": ["=", "="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "x mL"
+                        },
+                        {
+                            "type": "input",
+                            "answer": "35.3",
+                            "unit": "mL"
+                        }
+                    ],
+                    "operators2": ["="],
+                    "hint": "83.25 mg / 1 mL = 2940 mg / x mL. x = 2940 mg / 83.25 mg/mL = 35.3 mL."
+                }
+            ]
+        },
+    {
+        "number": 10,
+        "question": "Patient AB receives 26 mg of ammonium chloride per kilogram of her body weight. If patient AB weighs 132 lb, how many milliliters of a sterile solution of ammonium chloride containing 0.5 mEq/mL should be administered? (NH<sub>4</sub>Cl molecular weight is 53.5). Round the final answer to the nearest tenth.",
+        "answerValue": [58.3],
+        "answerUnit": ["mL"],
+        "rounding": false,
+        "steps": [
+            {
+                "text": "Convert pounds to kilograms and calculate total mg needed",
+                "type": "OPERATION",
+                "operands1": [
+                    {
+                        "type": "input",
+                        "answer": "132",
+                        "unit": "lb"
+                    },
+                    {
+                        "type": "fraction",
+                        "numerator": {
+                            "type": "input",
+                            "answer": "132",
+                            "unit": "lb"
+                        },
+                        "denominator": {
+                            "type": "input",
+                            "answer": "2.2",
+                            "unit": "lb/kg"
+                        }
+                    },
+                    {
+                        "type": "input",
+                        "answer": "60",
+                        "unit": "kg"
+                    },
+                    {
+                        "type": "input",
+                        "answer": "26",
+                        "unit": "mg/kg"
+                    },
+                    {
+                        "type": "input",
+                        "answer": "1560",
+                        "unit": "mg needed"
+                    }
+                ],
+                "operators1": ["=", "=", "×", "="],
+                "hint": "Convert the patient's weight from pounds to kilograms, then multiply by the dose per kg to get the total mg needed. 132 lb / 2.2 = 60 kg. 26 mg/kg × 60 kg = 1560 mg."
+            },
+            {
+                "text": "Convert 0.5 mEq/mL to mg/mL",
+                "type": "OPERATION",
+                "operands1": [
+                    {
+                        "type": "fraction",
+                        "numerator": "MW (in mg)",
+                        "denominator": "Valence"
+                    },
+                    {
+                        "type": "fraction",
+                        "numerator": {
+                            "type": "input",
+                            "answer": "53.5",
+                            "unit": "mg"
+                        },
+                        "denominator": {
+                            "type": "input",
+                            "answer": "1",
+                            "unit": "(valence of NH<sub>4</sub>Cl)"
+                        }
+                    },
+                    {
+                        "type": "input",
+                        "answer": "53.5",
+                        "unit": "mg"
+                    },
+                    {
+                        "type": "fraction",
+                        "numerator": "1 mEq",
+                        "denominator": {
+                            "type": "input",
+                            "answer": "53.5",
+                            "unit": "mg"
+                        }
+                    },
+                    {
+                        "type": "fraction",
+                        "numerator": {
+                            "type": "input",
+                            "answer": "0.5",
+                            "unit": "mEq"
+                        },
+                        "denominator": {
+                            "type": "text",
+                            "value": "x mg"
+                        }
+                    },
+                    {
+                        "type": "input",
+                        "answer": "26.75",
+                        "unit": "mg/mL"
+                    }
+                ],
+                "operators1": ["/", "=", "=", "=", "=", "="],
+                "hint": "1 mEq = 53.5 mg (valence of NH4Cl = 1). 1 mEq / 53.5 mg = 0.5 mEq / x mg. x = 0.5 × 53.5 = 26.75 mg/mL."
+            },
+            {
+                "text": "Calculate the required volume in mL",
+                "type": "OPERATION",
+                "operands1": [
+                    {
+                        "type": "fraction",
+                        "numerator": {
+                            "type": "input",
+                            "answer": "26.75",
+                            "unit": "mg"
+                        },
+                        "denominator": {
+                            "type": "input",
+                            "answer": "1",
+                            "unit": "mL"
+                        }
+                    },
+                    {
+                        "type": "fraction",
+                        "numerator": {
+                            "type": "input",
+                            "answer": "1560",
+                            "unit": "mg"
+                        },
+                        "denominator": {
+                            "type": "text",
+                            "value": "x mL"
+                        }
+                    }
+                ],
+                "operators1": ["=", "="],
+                "operands2": [
+                    {
+                        "type": "text",
+                        "value": "x mL"
+                    },
+                    {
+                        "type": "input",
+                        "answer": "58.3",
+                        "unit": "mL"
+                    }
+                ],
+                "operators2": ["="],
+                "hint": "26.75 mg / 1 mL = 1560 mg / x mL. x = 1560 mg / 26.75 mg/mL = 58.3 mL."
+            }
+        ]
+    },
+    {
+        "number": 11,
+        "question": "How many milliliters of a 20% (w/v) KCl solution should be used to make 1 L of solution containing 40 mEq/L KCl? (KCl m.w.= 74.5). Round the final answer to the nearest tenth.",
+        "answerValue": [14.9],
+        "answerUnit": ["mL"],
+        "rounding": false,
+        "steps": [
+            {
+                "text": "Identify the valence and calculate how many mg = 1 mEq",
+                "type": "OPERATION",
+                "operands1": [
+                    {
+                        "type": "text",
+                        "value": "1 mEq"
+                    },
+                    {
+                        "type": "fraction",
+                        "numerator": "MW (in mg)",
+                        "denominator": "Valence"
+                    },
+                    {
+                        "type": "input",
+                        "answer": "74.5",
+                        "unit": "mg"
+                    }
+                ],
+                "operators1": ["=", "=", "="],
+                "hint": "The valence of KCl is 1 because it has 1 positive charge and 1 negative charge. From the question, we know that the MW of KCl is 74.5 mg, so 1 mEq = 74.5 mg / 1 = 74.5 mg."
+            },
+            {
+                "text": "Use ratio and proportion to find the total mg (or g) needed for 1 L",
+                "type": "OPERATION",
+                "operands1": [
+                    {
+                        "type": "fraction",
+                        "numerator": "1 mEq",
+                        "denominator": {
+                            "type": "input",
+                            "answer": "74.5",
+                            "unit": "mg"
+                        }
+                    },
+                    {
+                        "type": "fraction",
+                        "numerator": {
+                            "type": "input",
+                            "answer": "40",
+                            "unit": "mEq"
+                        },
+                        "denominator": {
+                            "type": "text",
+                            "value": "x mg"
+                        }
+                    },
+                    {
+                        "type": "input",
+                        "answer": "2980",
+                        "unit": "mg"
+                    },
+                    {
+                        "type": "input",
+                        "answer": "2.98",
+                        "unit": "g"
+                    }
+                ],
+                "operators1": ["=", "=", "=", "="],
+                "hint": "1 mEq = 74.5 mg, so 40 mEq = 40 × 74.5 mg = 2980 mg = 2.98 g."
+            },
+            {
+                "text": "Use the concentration of the stock solution to find the required volume",
+                "type": "OPERATION",
+                "operands1": [
+                    {
+                        "type": "fraction",
+                        "numerator": {
+                            "type": "input",
+                            "answer": "20",
+                            "unit": "g"
+                        },
+                        "denominator": {
+                            "type": "input",
+                            "answer": "100",
+                            "unit": "mL"
+                        }
+                    },
+                    {
+                        "type": "fraction",
+                        "numerator": {
+                            "type": "input",
+                            "answer": "2.98",
+                            "unit": "g"
+                        },
+                        "denominator": {
+                            "type": "text",
+                            "value": "x mL"
+                        }
+                    },
+                    {
+                        "type": "input",
+                        "answer": "14.9",
+                        "unit": "mL"
+                    }
+                ],
+                "operators1": ["=", "=", "="],
+                "hint": "20% = 20 g / 100 mL. 20 g / 100 mL = 2.98 g / x mL. x = (2.98 g × 100 mL) / 20 g = 14.9 mL."
+            }
+        ]
+    },
+    {
+        "number": 12,
+        "question": "How many milliliters of a solution containing 3 mEq of potassium chloride per milliliter should be used to obtain 3.98 g of potassium chloride? (Potassium chloride molecular weight is 74.5). Round the final answer to the nearest tenth.",
+        "answerValue": [17.8],
+        "answerUnit": ["mL"],
+        "rounding": false,
+        "steps": [
+            {
+                "text": "Identify the valence and calculate how many mg = 1 mEq",
+                "type": "OPERATION",
+                "operands1": [
+                    {
+                        "type": "text",
+                        "value": "1 mEq"
+                    },
+                    {
+                        "type": "fraction",
+                        "numerator": "MW (in mg)",
+                        "denominator": "Valence"
+                    }
+                ],
+                "operators1": ["="],
+                "operands2": [
+                    {
+                        "type": "text",
+                        "value": "1 mEq"
+                    },
+                    {
+                        "type": "fraction",
+                        "numerator": {
+                            "type": "input",
+                            "answer": "74.5",
+                            "unit": "mg"
+                        },
+                        "denominator": {
+                            "type": "input",
+                            "answer": "1",
+                            "unit": "(valence of KCl)"
+                        }
+                    },
+                    {
+                        "type": "input",
+                        "answer": "74.5",
+                        "unit": "mg"
+                    }
+                ],
+                "operators2": ["=", "="],
+                "hint": "The valence of KCl is 1 because it has 1 positive charge and 1 negative charge. From the question, we know that the MW of KCl is 74.5 mg, so 1 mEq = 74.5 mg / 1 = 74.5 mg."
+            },
+            {
+                "text": "Convert grams to mg and calculate mEq needed",
+                "type": "OPERATION",
+                "operands1": [
+                    {
+                        "type": "input",
+                        "answer": "3.98",
+                        "unit": "g"
+                    },
+                    {
+                        "type": "fraction",
+                        "numerator": {
+                            "type": "input",
+                            "answer": "1000",
+                            "unit": "mg"
+                        },
+                        "denominator": {
+                            "type": "input",
+                            "answer": "1",
+                            "unit": "g"
+                        }
+                    },
+                    {
+                        "type": "input",
+                        "answer": "3980",
+                        "unit": "mg"
+                    },
+                    {
+                        "type": "fraction",
+                        "numerator": {
+                            "type": "input",
+                            "answer": "3980",
+                            "unit": "mg"
+                        },
+                        "denominator": {
+                            "type": "input",
+                            "answer": "74.5",
+                            "unit": "mg/mEq"
+                        }
+                    },
+                    {
+                        "type": "input",
+                        "answer": "53.4",
+                        "unit": "mEq"
+                    }
+                ],
+                "operators1": ["×", "=", "÷", "="],
+                "hint": "Convert 3.98 g to mg: 3.98 g × 1000 = 3980 mg. Then convert to mEq: 3980 mg ÷ 74.5 mg/mEq = 53.4 mEq."
+            },
+            {
+                "text": "Calculate the required volume in mL",
+                "type": "OPERATION",
+                "operands1": [
+                    {
+                        "type": "fraction",
+                        "numerator": {
+                            "type": "input",
+                            "answer": "3",
+                            "unit": "mEq"
+                        },
+                        "denominator": {
+                            "type": "input",
+                            "answer": "1",
+                            "unit": "mL"
+                        }
+                    },
+                    {
+                        "type": "fraction",
+                        "numerator": {
+                            "type": "input",
+                            "answer": "53.4",
+                            "unit": "mEq"
+                        },
+                        "denominator": {
+                            "type": "text",
+                            "value": "x mL"
+                        }
+                    }
+                ],
+                "operators1": ["="],
+                "operands2": [
+                    {
+                        "type": "text",
+                        "value": "x mL"
+                    },
+                    {
+                        "type": "input",
+                        "answer": "17.8",
+                        "unit": "mL"
+                    }
+                ],
+                "operators2": ["="],
+                "hint": "3 mEq / 1 mL = 53.4 mEq / x mL. x = 53.4 mEq / 3 mEq/mL = 17.8 mL."
+            }
+        ]
+    },
+    {
+        "number": 13,
+        "question": "A certain electrolyte solution contains, as one of the ingredients, the equivalent of 6.4 mEq of calcium per liter. How many grams of calcium chloride should be used in preparing 25 liters of the solution? (CaCl<sub>2</sub>∙H<sub>2</sub>O molecular weight is 147). Round the final answer to the nearest hundredth.",
+        "answerValue": [11.76],
+        "answerUnit": ["g"],
+        "rounding": false,
+        "steps": [
+            {
+                "text": "Identify the valence and calculate how many mg = 1 mEq",
+                "type": "OPERATION",
+                "operands1": [
+                    {
+                        "type": "text",
+                        "value": "1 mEq"
+                    },
+                    {
+                        "type": "fraction",
+                        "numerator": "MW (in mg)",
+                        "denominator": "Valence"
+                    }
+                ],
+                "operators1": ["="],
+                "operands2": [
+                    {
+                        "type": "text",
+                        "value": "1 mEq"
+                    },
+                    {
+                        "type": "fraction",
+                        "numerator": {
+                            "type": "input",
+                            "answer": "147",
+                            "unit": "mg"
+                        },
+                        "denominator": {
+                            "type": "input",
+                            "answer": "2",
+                            "unit": "(valence of CaCl<sub>2</sub>∙H<sub>2</sub>O)"
+                        }
+                    },
+                    {
+                        "type": "input",
+                        "answer": "73.5",
+                        "unit": "mg"
+                    }
+                ],
+                "operators2": ["=", "="],
+                "hint": "The valence of CaCl<sub>2</sub>∙H<sub>2</sub>O is 2 because calcium has a +2 charge. From the question, we know that the MW of CaCl<sub>2</sub>∙H<sub>2</sub>O is 147 mg, so 1 mEq = 147 mg / 2 = 73.5 mg."
+            },
+            {
+                "text": "Use dimensional analysis to calculate total grams needed",
+                "type": "OPERATION",
+                "operands1": [
+                    {
+                        "type": "fraction",
+                        "numerator": {
+                            "type": "input",
+                            "answer": "1",
+                            "unit": "g"
+                        },
+                        "denominator": {
+                            "type": "input",
+                            "answer": "1000",
+                            "unit": "mg"
+                        }
+                    },
+                    {
+                        "type": "fraction",
+                        "numerator": {
+                            "type": "input",
+                            "answer": "73.5",
+                            "unit": "mg"
+                        },
+                        "denominator": {
+                            "type": "input",
+                            "answer": "1",
+                            "unit": "mEq"
+                        }
+                    },
+                    {
+                        "type": "fraction",
+                        "numerator": {
+                            "type": "input",
+                            "answer": "6.4",
+                            "unit": "mEq"
+                        },
+                        "denominator": {
+                            "type": "input",
+                            "answer": "1",
+                            "unit": "L"
+                        }
+                    },
+                    {
+                        "type": "input",
+                        "answer": "25",
+                        "unit": "L"
+                    },
+                    {
+                        "type": "input",
+                        "answer": "11.76",
+                        "unit": "g"
+                    }
+                ],
+                "operators1": ["×", "×", "×", "="],
+                "hint": "Use dimensional analysis: 1 g/1000 mg × 73.5 mg/1 mEq × 6.4 mEq/1L × 25 L = 11.76 g."
+            }
+        ]
+    },
+    {
+        "number": 14,
+        "question": "How many grams of sodium chloride should be used in preparing 3 liters of a solution containing 150 mEq/L? (NaCl molecular weight is 58.5). Round the final answer to the nearest tenth.",
+        "answerValue": [26.3],
+        "answerUnit": ["g"],
+        "rounding": false,
+        "steps": [
+            {
+                "text": "Identify the valence and calculate how many mg = 1 mEq",
+                "type": "OPERATION",
+                "operands1": [
+                    {
+                        "type": "text",
+                        "value": "1 mEq"
+                    },
+                    {
+                        "type": "fraction",
+                        "numerator": "MW (in mg)",
+                        "denominator": "Valence"
+                    }
+                ],
+                "operators1": ["="],
+                "operands2": [
+                    {
+                        "type": "text",
+                        "value": "1 mEq"
+                    },
+                    {
+                        "type": "fraction",
+                        "numerator": {
+                            "type": "input",
+                            "answer": "58.5",
+                            "unit": "mg"
+                        },
+                        "denominator": {
+                            "type": "input",
+                            "answer": "1",
+                            "unit": "(valence of NaCl)"
+                        }
+                    },
+                    {
+                        "type": "input",
+                        "answer": "58.5",
+                        "unit": "mg"
+                    }
+                ],
+                "operators2": ["=", "="],
+                "hint": "The valence of NaCl is 1 because it has 1 positive charge and 1 negative charge. From the question, we know that the MW of NaCl is 58.5 mg, so 1 mEq = 58.5 mg / 1 = 58.5 mg."
+            },
+            {
+                "text": "Use ratio and proportion to calculate total grams needed",
+                "type": "OPERATION",
+                "operands1": [
+                    {
+                        "type": "fraction",
+                        "numerator": {
+                            "type": "input",
+                            "answer": "1",
+                            "unit": "g"
+                        },
+                        "denominator": {
+                            "type": "input",
+                            "answer": "1000",
+                            "unit": "mg"
+                        }
+                    },
+                    {
+                        "type": "fraction",
+                        "numerator": {
+                            "type": "input",
+                            "answer": "58.5",
+                            "unit": "mg"
+                        },
+                        "denominator": {
+                            "type": "input",
+                            "answer": "1",
+                            "unit": "mEq"
+                        }
+                    },
+                    {
+                        "type": "fraction",
+                        "numerator": {
+                            "type": "input",
+                            "answer": "150",
+                            "unit": "mEq"
+                        },
+                        "denominator": {
+                            "type": "input",
+                            "answer": "1",
+                            "unit": "L"
+                        }
+                    },
+                    {
+                        "type": "input",
+                        "answer": "3",
+                        "unit": "L"
+                    },
+                    {
+                        "type": "input",
+                        "answer": "26.3",
+                        "unit": "g"
+                    }
+                ],
+                "operators1": ["×", "×", "×", "="],
+                "hint": "Use dimensional analysis: 1 g/1000 mg × 58.5 mg/1 mEq × 150 mEq/1L × 3 L = 26.3 g."
+            }
+        ]
+    },
+    {
+        "number": 15,
+        "question": "How many grams of sodium bicarbonate should be used in preparing a liter of a solution to contain 89.2 mEq per 100 mL? (NaHCO<sub>3</sub> molecular weight is 84). Round the final answer to the nearest tenth.",
+        "answerValue": [74.9],
+        "answerUnit": ["g"],
+        "rounding": false,
+        "steps": [
+            {
+                "text": "Identify the valence and calculate how many mg = 1 mEq",
+                "type": "OPERATION",
+                "operands1": [
+                    {
+                        "type": "text",
+                        "value": "1 mEq"
+                    },
+                    {
+                        "type": "fraction",
+                        "numerator": "MW (in mg)",
+                        "denominator": "Valence"
+                    }
+                ],
+                "operators1": ["="],
+                "operands2": [
+                    {
+                        "type": "text",
+                        "value": "1 mEq"
+                    },
+                    {
+                        "type": "fraction",
+                        "numerator": {
+                            "type": "input",
+                            "answer": "84",
+                            "unit": "mg"
+                        },
+                        "denominator": {
+                            "type": "input",
+                            "answer": "1",
+                            "unit": "(valence of NaHCO<sub>3</sub>)"
+                        }
+                    },
+                    {
+                        "type": "input",
+                        "answer": "84",
+                        "unit": "mg"
+                    }
+                ],
+                "operators2": ["=", "="],
+                "hint": "The valence of NaHCO<sub>3</sub> is 1 because it has 1 positive charge and 1 negative charge. From the question, we know that the MW of NaHCO<sub>3</sub> is 84 mg, so 1 mEq = 84 mg / 1 = 84 mg."
+            },
+            {
+                "text": "Use ratio and proportion to calculate total grams needed",
+                "type": "OPERATION",
+                "operands1": [
+                    {
+                        "type": "fraction",
+                        "numerator": {
+                            "type": "input",
+                            "answer": "1",
+                            "unit": "g"
+                        },
+                        "denominator": {
+                            "type": "input",
+                            "answer": "1000",
+                            "unit": "mg"
+                        }
+                    },
+                    {
+                        "type": "fraction",
+                        "numerator": {
+                            "type": "input",
+                            "answer": "84",
+                            "unit": "mg"
+                        },
+                        "denominator": {
+                            "type": "input",
+                            "answer": "1",
+                            "unit": "mEq"
+                        }
+                    },
+                    {
+                        "type": "fraction",
+                        "numerator": {
+                            "type": "input",
+                            "answer": "89.2",
+                            "unit": "mEq"
+                        },
+                        "denominator": {
+                            "type": "input",
+                            "answer": "100",
+                            "unit": "mL"
+                        }
+                    },
+                    {
+                        "type": "fraction",
+                        "numerator": {
+                            "type": "input",
+                            "answer": "1000",
+                            "unit": "mL"
+                        },
+                        "denominator": {
+                            "type": "input",
+                            "answer": "1",
+                            "unit": "L"
+                        }
+                    },
+                    {
+                        "type": "input",
+                        "answer": "74.9",
+                        "unit": "g"
+                    }
+                ],
+                "operators1": ["×", "×", "×", "="],
+                "hint": "Use dimensional analysis: 1 g/1000 mg × 84 mg/1 mEq × 89.2 mEq/100 mL × 1000 mL/1L = 74.9 g."
+            }
+        ]
+    },
+    {
+        "number": 16,
+        "question": "How many grams of calcium chloride should be used in preparing a liter of a solution to contain 36 mEq per 50 mL? (CaCl<sub>2</sub> ∙ 2H<sub>2</sub>O molecular weight is 147). Round the final answer to the nearest tenth.",
+        "answerValue": [52.9],
+        "answerUnit": ["g"],
+        "rounding": false,
+        "steps": [
+            {
+                "text": "Identify the valence and calculate how many mg = 1 mEq",
+                "type": "OPERATION",
+                "operands1": [
+                    {
+                        "type": "text",
+                        "value": "1 mEq"
+                    },
+                    {
+                        "type": "fraction",
+                        "numerator": "MW (in mg)",
+                        "denominator": "Valence"
+                    }
+                ],
+                "operators1": ["="],
+                "operands2": [
+                    {
+                        "type": "text",
+                        "value": "1 mEq"
+                    },
+                    {
+                        "type": "fraction",
+                        "numerator": {
+                            "type": "input",
+                            "answer": "147",
+                            "unit": "mg"
+                        },
+                        "denominator": {
+                            "type": "input",
+                            "answer": "2",
+                            "unit": "(valence of CaCl<sub>2</sub> ∙ 2H<sub>2</sub>O)"
+                        }
+                    },
+                    {
+                        "type": "input",
+                        "answer": "73.5",
+                        "unit": "mg"
+                    }
+                ],
+                "operators2": ["=", "="],
+                "hint": "The valence of CaCl<sub>2</sub> ∙ 2H<sub>2</sub>O is 2 because calcium has a +2 charge. From the question, we know that the MW of CaCl<sub>2</sub> ∙ 2H<sub>2</sub>O is 147 mg, so 1 mEq = 147 mg / 2 = 73.5 mg."
+            },
+            {
+                "text": "Use ratio and proportion to calculate total grams needed",
+                "type": "OPERATION",
+                "operands1": [
+                    {
+                        "type": "fraction",
+                        "numerator": {
+                            "type": "input",
+                            "answer": "1",
+                            "unit": "g"
+                        },
+                        "denominator": {
+                            "type": "input",
+                            "answer": "1000",
+                            "unit": "mg"
+                        }
+                    },
+                    {
+                        "type": "fraction",
+                        "numerator": {
+                            "type": "input",
+                            "answer": "73.5",
+                            "unit": "mg"
+                        },
+                        "denominator": {
+                            "type": "input",
+                            "answer": "1",
+                            "unit": "mEq"
+                        }
+                    },
+                    {
+                        "type": "fraction",
+                        "numerator": {
+                            "type": "input",
+                            "answer": "36",
+                            "unit": "mEq"
+                        },
+                        "denominator": {
+                            "type": "input",
+                            "answer": "50",
+                            "unit": "mL"
+                        }
+                    },
+                    {
+                        "type": "fraction",
+                        "numerator": {
+                            "type": "input",
+                            "answer": "1000",
+                            "unit": "mL"
+                        },
+                        "denominator": {
+                            "type": "input",
+                            "answer": "1",
+                            "unit": "L"
+                        }
+                    },
+                    {
+                        "type": "input",
+                        "answer": "52.9",
+                        "unit": "g"
+                    }
+                ],
+                "operators1": ["×", "×", "×", "="],
+                "hint": "Use dimensional analysis: 1 g/1000 mg × 73.5 mg/1 mEq × 36 mEq/50 mL × 1000 mL/1L = 52.9 g."
+            }
+        ]
+    },
+    {
+        "number": 17,
+        "question": "Sterile solutions of ammonium chloride containing 22.47 mg/mL are available commercially in 500- and 1000-mL intravenous infusion containers. Calculate the amount, in terms of milliequivalents, of ammonium chloride in the 500-mL container. (NH<sub>4</sub>Cl molecular weight is 53.5).",
+        "answerValue": [210],
+        "answerUnit": ["mEq"],
+        "rounding": false,
+        "steps": [
+            {
+                "text": "Identify the valence and calculate how many mg = 1 mEq",
+                "type": "OPERATION",
+                "operands1": [
+                    {
+                        "type": "text",
+                        "value": "1 mEq"
+                    },
+                    {
+                        "type": "fraction",
+                        "numerator": "MW (in mg)",
+                        "denominator": "Valence"
+                    }
+                ],
+                "operators1": ["="],
+                "operands2": [
+                    {
+                        "type": "text",
+                        "value": "1 mEq"
+                    },
+                    {
+                        "type": "fraction",
+                        "numerator": {
+                            "type": "input",
+                            "answer": "53.5",
+                            "unit": "mg"
+                        },
+                        "denominator": {
+                            "type": "input",
+                            "answer": "1",
+                            "unit": "(valence of NH<sub>4</sub>Cl)"
+                        }
+                    },
+                    {
+                        "type": "input",
+                        "answer": "53.5",
+                        "unit": "mg"
+                    }
+                ],
+                "operators2": ["=", "="],
+                "hint": "The valence of NH<sub>4</sub>Cl is 1 because it has 1 positive charge and 1 negative charge. From the question, we know that the MW of NH<sub>4</sub>Cl is 53.5 mg, so 1 mEq = 53.5 mg / 1 = 53.5 mg."
+            },
+            {
+                "text": "Use ratio and proportion to calculate total mEq in container",
+                "type": "OPERATION",
+                "operands1": [
+                    {
+                        "type": "fraction",
+                        "numerator": {
+                            "type": "input",
+                            "answer": "1",
+                            "unit": "mEq"
+                        },
+                        "denominator": {
+                            "type": "input",
+                            "answer": "53.5",
+                            "unit": "mg"
+                        }
+                    },
+                    {
+                        "type": "fraction",
+                        "numerator": {
+                            "type": "input",
+                            "answer": "22.47",
+                            "unit": "mg"
+                        },
+                        "denominator": {
+                            "type": "input",
+                            "answer": "1",
+                            "unit": "mL"
+                        }
+                    },
+                    {
+                        "type": "input",
+                        "answer": "500",
+                        "unit": "mL"
+                    },
+                    {
+                        "type": "input",
+                        "answer": "210",
+                        "unit": "mEq"
+                    }
+                ],
+                "operators1": ["×", "×", "="],
+                "hint": "Use dimensional analysis: 1 mEq/53.5 mg × 22.47 mg/1 mL × 500 mL = 210 mEq."
+            }
+        ]
+    },
+    {
+        "number": 18,
+        "question": "Rx Potassium Chloride 10% Cherry Syrup qs ad 520 mL Sig. 1 Tablespoonful b.i.d. How many milliequivalents of potassium chloride are represented in each prescribed dose? (KCl molecular weight is 74.5). Round the final answer to the nearest tenth.",
+        "answerValue": [20.1],
+        "answerUnit": ["mEq"],
+        "rounding": false,
+        "steps": [
+            {
+                "text": "Calculate the dose for one prescribed dose",
+                "type": "OPERATION",
+                "operands1": [
+                    {
+                        "type": "text",
+                        "value": "Convert tablespoon to mL"
+                    },
+                    {
+                        "type": "input",
+                        "answer": "1",
+                        "unit": "TBSP"
+                    },
+                    {
+                        "type": "input",
+                        "answer": "15",
+                        "unit": "mL"
+                    }
+                ],
+                "operators1": ["=", "="],
+                "operands2": [
+                    {
+                        "type": "text",
+                        "value": "10% KCl concentration"
+                    },
+                    {
+                        "type": "fraction",
+                        "numerator": {
+                            "type": "input",
+                            "answer": "10",
+                            "unit": "g"
+                        },
+                        "denominator": {
+                            "type": "input",
+                            "answer": "100",
+                            "unit": "mL"
+                        }
+                    }
+                ],
+                "operators2": ["="],
+                "operands3": [
+                    {
+                        "type": "text",
+                        "value": "Solve for x using ratio and proportion"
+                    },
+                    {
+                        "type": "fraction",
+                        "numerator": {
+                            "type": "input",
+                            "answer": "10",
+                            "unit": "g"
+                        },
+                        "denominator": {
+                            "type": "input",
+                            "answer": "100",
+                            "unit": "mL"
+                        }
+                    },
+                    {
+                        "type": "fraction",
+                        "numerator": {
+                            "type": "text",
+                            "value": "x g"
+                        },
+                        "denominator": {
+                            "type": "input",
+                            "answer": "15",
+                            "unit": "mL"
+                        }
+                    },
+                    {
+                        "type": "text",
+                        "value": "x g"
+                    },
+                    {
+                        "type": "input",
+                        "answer": "1.5",
+                        "unit": "g"
+                    },
+                    {
+                        "type": "input",
+                            "answer": "1500",
+                            "unit": "mg"
+                        }
+                    ],
+                    "operators3": ["=", ":", "=", "="],
+                "hint": "1 TBSP = 15 mL. 10% KCl = 10 g/100 mL. 10 g/100 mL = x g/15 mL. x = 1.5 g = 1500 mg."
+            },
+            {
+                "text": "Identify the valence and calculate how many mg = 1 mEq",
+                "type": "OPERATION",
+                "operands1": [
+                    {
+                        "type": "text",
+                        "value": "1 mEq"
+                    },
+                    {
+                        "type": "fraction",
+                        "numerator": "MW (in mg)",
+                        "denominator": "Valence"
+                    }
+                ],
+                "operators1": ["="],
+                "operands2": [
+                    {
+                        "type": "text",
+                        "value": "1 mEq"
+                    },
+                    {
+                        "type": "fraction",
+                        "numerator": {
+                            "type": "input",
+                            "answer": "74.5",
+                            "unit": "mg"
+                        },
+                        "denominator": {
+                            "type": "input",
+                            "answer": "1",
+                            "unit": "(valence of KCl)"
+                        }
+                    },
+                    {
+                        "type": "input",
+                        "answer": "74.5",
+                        "unit": "mg"
+                    }
+                ],
+                "operators2": ["=", "="],
+                "hint": "The valence of KCl is 1 because it has 1 positive charge and 1 negative charge. From the question, we know that the MW of KCl is 74.5 mg, so 1 mEq = 74.5 mg."
+            },
+            {
+                "text": "Convert the dose of 1.5 g to mEq",
+                "type": "OPERATION",
+                "operands1": [
+                    {
+                        "type": "fraction",
+                        "numerator": {
+                            "type": "input",
+                            "answer": "1",
+                            "unit": "mEq"
+                        },
+                        "denominator": {
+                            "type": "input",
+                            "answer": "74.5",
+                            "unit": "mg"
+                        }
+                    },
+                    {
+                        "type": "fraction",
+                        "numerator": {
+                            "type": "text",
+                            "value": "x mEq"
+                        },
+                        "denominator": {
+                            "type": "input",
+                            "answer": "1500",
+                            "unit": "mg"
+                        }
+                    },
+                    {
+                        "type": "input",
+                        "answer": "20.1",
+                        "unit": "mEq"
+                    }
+                ],
+                "operators1": ["=", "="],
+                "operands2": [
+                    {
+                        "type": "text",
+                        "value": "x mEq"
+                    },
+                    {
+                        "type": "input",
+                        "answer": "20.1",
+                        "unit": "mEq"
+                    }
+                ],
+                "operators2": ["="],
+                "hint": "1 mEq/74.5 mg = x mEq/1500 mg. x = 1500 mg / 74.5 mg/mEq = 20.1 mEq."
+            }
+        ]
+    },
+    {
+        "number": 19,
+        "question": "Rx Potassium Chloride 15% <br> Cherry Syrup qs ad 520 mL <br> Sig. Teaspoonful b.i.d. <br> How many milliequivalents of potassium chloride are represented in each prescribed dose? (KCl molecular weight is 74.5). Round the final answer to the nearest hundredth.",
+        "answerValue": [10.07],
+        "answerUnit": ["mEq"],
+        "rounding": false,
+        "steps": [
+            {
+                "text": "Calculate the dose for one prescribed dose",
+                "type": "OPERATION",
+                "operands1": [
+                    {
+                        "type": "input",
+                        "answer": "1",
+                        "unit": "tsp"
+                    },
+                    {
+                        "type": "input",
+                        "answer": "5",
+                        "unit": "mL"
+                    }
+                ],
+                "operators1": ["="],
+                "operands2": [
+                    {
+                        "type": "text",
+                        "value": "15% KCl"
+                    },
+                    {
+                        "type": "fraction",
+                        "numerator": {
+                            "type": "input",
+                            "answer": "15",
+                            "unit": "g"
+                        },
+                        "denominator": {
+                            "type": "input",
+                            "answer": "100",
+                            "unit": "mL"
+                        }
+                    }
+                ],
+                "operators2": ["="],
+                "operands3": [
+                    {
+                        "type": "fraction",
+                        "numerator": {
+                            "type": "input",
+                            "answer": "15",
+                            "unit": "g"
+                        },
+                        "denominator": {
+                            "type": "input",
+                            "answer": "100",
+                            "unit": "mL"
+                        }
+                    },
+                    {
+                        "type": "fraction",
+                        "numerator": {
+                            "type": "text",
+                            "value": "x g"
+                        },
+                        "denominator": {
+                            "type": "input",
+                            "answer": "5",
+                            "unit": "mL"
+                        }
+                    },
+                    {
+                        "type": "text",
+                        "value": "x g"
+                    },
+                    {
+                        "type": "input",
+                        "answer": "0.75",
+                        "unit": "g"
+                    },
+                    {
+                        "type": "input",
+                        "answer": "750",
+                        "unit": "mg"
+                    }
+                ],
+                "operators3": ["=", ":", "=", "="],
+                "hint": "1 tsp = 5 mL. 15% KCl = 15 g/100 mL. 15 g/100 mL = x g/5 mL. x = 0.75 g = 750 mg."
+            },
+            {
+                "text": "Identify the valence and calculate how many mg = 1 mEq",
+                "type": "OPERATION",
+                "operands1": [
+                    {
+                        "type": "text",
+                        "value": "1 mEq"
+                    },
+                    {
+                        "type": "fraction",
+                        "numerator": "MW (in mg)",
+                        "denominator": "Valence"
+                    }
+                ],
+                "operators1": ["="],
+                "operands2": [
+                    {
+                        "type": "text",
+                        "value": "1 mEq"
+                    },
+                    {
+                        "type": "fraction",
+                        "numerator": {
+                            "type": "input",
+                            "answer": "74.5",
+                            "unit": "mg"
+                        },
+                        "denominator": {
+                            "type": "input",
+                            "answer": "1",
+                            "unit": "(valence of KCl)"
+                        }
+                    },
+                    {
+                        "type": "input",
+                        "answer": "74.5",
+                        "unit": "mg"
+                    }
+                ],
+                "operators2": ["=", "="],
+                "hint": "The valence of KCl is 1 because it has 1 positive charge and 1 negative charge. From the question, we know that the MW of KCl is 74.5 mg, so 1 mEq = 74.5 mg."
+            },
+            {
+                "text": "Convert the dose of 0.75 g to mEq",
+                "type": "OPERATION",
+                "operands1": [
+                    {
+                        "type": "fraction",
+                        "numerator": {
+                            "type": "input",
+                            "answer": "1",
+                            "unit": "mEq"
+                        },
+                        "denominator": {
+                            "type": "input",
+                            "answer": "74.5",
+                            "unit": "mg"
+                        }
+                    },
+                    {
+                        "type": "fraction",
+                        "numerator": {
+                            "type": "text",
+                            "value": "X mEq"
+                        },
+                        "denominator": {
+                            "type": "input",
+                            "answer": "750",
+                            "unit": "mg"
+                        }
+                    }
+                ],
+                "operators1": ["="],
+                "operands2": [
+                    {
+                        "type": "text",
+                        "value": "X mEq"
+                    },
+                    {
+                        "type": "input",
+                        "answer": "10.07",
+                        "unit": "mEq"
+                    }
+                ],
+                "operators2": ["="],
+                "hint": "1 mEq/74.5 mg = X mEq/750 mg. X = 750 mg / 74.5 mg/mEq = 10.07 mEq."
+            }
+        ]
+    },
+    {
+        "number": 20,
+        "question": "A sterile solution of KCl contains 2 mEq per mL. If a 50 mL ampule of the solution is diluted to a liter with sterile distilled water, what is the percentage strength of the resulting solution (KCl molecular weight is 74.5)?",
+        "answerValue": [0.745],
+        "answerUnit": ["% (w/v)"],
+        "rounding": false,
+        "steps": [
+            {
+                "text": "Change 2 mEq/mL to mg/mL",
+                "type": "OPERATION",
+                "operands1": [
+                    {
+                        "type": "fraction",
+                        "numerator": {
+                            "type": "input",
+                            "answer": "1",
+                            "unit": "mEq"
+                        },
+                        "denominator": {
+                            "type": "input",
+                            "answer": "74.5",
+                            "unit": "mg"
+                        }
+                    },
+                    {
+                        "type": "fraction",
+                        "numerator": {
+                            "type": "input",
+                            "answer": "2",
+                            "unit": "mEq"
+                        },
+                        "denominator": {
+                            "type": "text",
+                            "value": "x mg"
+                        }
+                    },
+                    {
+                        "type": "input",
+                        "answer": "149",
+                        "unit": "mg/mL"
+                    }
+                ],
+                "operators1": ["=", "="],
+                "hint": "1 mEq/74.5 mg = 2 mEq/x mg. x = 2 × 74.5 = 149 mg/mL."
+            },
+            {
+                "text": "Use Q1 × C1 = Q2 × C2",
+                "type": "OPERATION",
+                "operands1": [
+                    {
+                        "type": "input",
+                        "answer": "50",
+                        "unit": "mL"
+                    },
+                    {
+                        "type": "input",
+                        "answer": "149",
+                        "unit": "mg/mL"
+                    },
+                    {
+                        "type": "input",
+                        "answer": "1000",
+                        "unit": "mL"
+                    },
+                    {
+                        "type": "text",
+                        "value": "C2 (in mg/mL)"
+                    },
+                    {
+                        "type": "input",
+                        "answer": "7.45",
+                        "unit": "mg/mL"
+                    }
+                ],
+                "operators1": ["×", "=", "×", "="],
+                "hint": "50 mL × 149 mg/mL = 1000 mL × C2. C2 = (50 × 149) / 1000 = 7.45 mg/mL."
+            },
+            {
+                "text": "Convert from mg/mL to % (w/v)",
+                "type": "OPERATION",
+                "operands1": [
+                    {
+                        "type": "input",
+                        "answer": "7.45",
+                        "unit": "mg/mL"
+                    },
+                    {
+                        "type": "fraction",
+                        "numerator": {
+                            "type": "input",
+                            "answer": "1",
+                            "unit": "g"
+                        },
+                        "denominator": {
+                            "type": "input",
+                            "answer": "1000",
+                            "unit": "mg"
+                        }
+                    },
+                    {
+                        "type": "input",
+                        "answer": "0.00745",
+                        "unit": "g/mL"
+                    },
+                    {
+                        "type": "fraction",
+                        "numerator": {
+                            "type": "input",
+                            "answer": "0.00745",
+                            "unit": "g"
+                        },
+                        "denominator": {
+                            "type": "input",
+                            "answer": "1",
+                            "unit": "mL"
+                        }
+                    },
+                    {
+                        "type": "fraction",
+                        "numerator": {
+                            "type": "text",
+                            "value": "x g"
+                        },
+                        "denominator": {
+                            "type": "input",
+                            "answer": "100",
+                            "unit": "mL"
+                        }
+                    },
+                    {
+                        "type": "input",
+                        "answer": "0.745",
+                        "unit": "% (w/v)"
+                    }
+                ],
+                "operators1": ["×", "=", "=", "=", "="],
+                "hint": "7.45 mg/mL = 0.00745 g/mL. 0.00745 g/1 mL = x g/100 mL. x = 0.745 g → 0.745% (w/v)."
+            }
+        ]
+    },
+    {
+        "number": 21,
+        "question": "A patient is given 135 mg of phenytoin sodium three times a day. How many milliequivalents of sodium are represented in the daily dose of phenytoin sodium? (C<sub>15</sub>H<sub>11</sub>N<sub>2</sub>NaO<sub>2</sub> molecular weight is 274).",
+        "answerValue": [1.48],
+        "answerUnit": ["mEq"],
+        "rounding": false,
+        "steps": [
+            {
+                "text": "Calculate the total daily dose",
+                "type": "OPERATION",
+                "operands1": [
+                    {
+                        "type": "input",
+                        "answer": "135",
+                        "unit": "mg"
+                    },
+                    {
+                        "type": "input",
+                        "answer": "3",
+                        "unit": "times per day"
+                    },
+                    {
+                        "type": "input",
+                        "answer": "405",
+                        "unit": "mg per day"
+                    }
+                ],
+                "operators1": ["×", "="],
+                "hint": "Multiply the single dose by the number of doses per day: 135 mg × 3 = 405 mg per day."
+            },
+            {
+                "text": "Identify the valence and calculate how many mg = 1 mEq",
+                "type": "OPERATION",
+                "operands1": [
+                    {
+                        "type": "text",
+                        "value": "1 mEq"
+                    },
+                    {
+                        "type": "fraction",
+                        "numerator": "MW (in mg)",
+                        "denominator": "Valence"
+                    }
+                ],
+                "operators1": ["="],
+                "operands2": [
+                    {
+                        "type": "text",
+                        "value": "1 mEq"
+                    },
+                    {
+                        "type": "fraction",
+                        "numerator": {
+                            "type": "input",
+                            "answer": "274",
+                            "unit": "mg"
+                        },
+                        "denominator": {
+                            "type": "input",
+                            "answer": "1",
+                            "unit": "(valence of Na)"
+                        }
+                    },
+                    {
+                        "type": "input",
+                        "answer": "274",
+                        "unit": "mg"
+                    }
+                ],
+                "operators2": ["=", "="],
+                "hint": "The valence of sodium is 1. From the question, the MW of phenytoin sodium is 274 mg, so 1 mEq = 274 mg / 1 = 274 mg."
+            },
+            {
+                "text": "Convert the daily dose to mEq",
+                "type": "OPERATION",
+                "operands1": [
+                    {
+                        "type": "fraction",
+                        "numerator": {
+                            "type": "input",
+                            "answer": "1",
+                            "unit": "mEq"
+                        },
+                        "denominator": {
+                            "type": "input",
+                            "answer": "274",
+                            "unit": "mg"
+                        }
+                    },
+                    {
+                        "type": "fraction",
+                        "numerator": {
+                            "type": "text",
+                            "value": "X mEq"
+                        },
+                        "denominator": {
+                            "type": "input",
+                            "answer": "405",
+                            "unit": "mg"
+                        }
+                    },
+                    {
+                        "type": "input",
+                        "answer": "1.48",
+                        "unit": "mEq"
+                    }
+                ],
+                "operators1": ["=", "="],
+                "operands2": [
+                    {
+                        "type": "text",
+                        "value": "X mEq"
+                    },
+                    {
+                        "type": "input",
+                        "answer": "1.48",
+                        "unit": "mEq"
+                    }
+                ],
+                "operators2": ["="],
+                "hint": "1 mEq/274 mg = X mEq/405 mg. X = 405 mg / 274 mg/mEq = 1.48 mEq."
+            }
+        ]
+    },
+    {
+        "number": 22,
+        "question": "Patient TP is given 105 mg of phenytoin sodium four times a day. How many milliequivalents of sodium are represented in the daily dose of phenytoin sodium? (C<sub>15</sub>H<sub>11</sub>N<sub>2</sub>NaO<sub>2</sub> molecular weight is 274).",
+        "answerValue": [1.53],
+        "answerUnit": ["mEq"],
+        "rounding": false,
+        "steps": [
+            {
+                "text": "Calculate the total daily dose",
+                "type": "OPERATION",
+                "operands1": [
+                    {
+                        "type": "input",
+                        "answer": "105",
+                        "unit": "mg"
+                    },
+                    {
+                        "type": "input",
+                        "answer": "4",
+                        "unit": "times per day"
+                    },
+                    {
+                        "type": "input",
+                        "answer": "420",
+                        "unit": "mg per day"
+                    }
+                ],
+                "operators1": ["×", "="],
+                "hint": "Multiply the single dose by the number of doses per day: 105 mg × 4 = 420 mg per day."
+            },
+            {
+                "text": "Identify the valence and calculate how many mg = 1 mEq",
+                "type": "OPERATION",
+                "operands1": [
+                    {
+                        "type": "text",
+                        "value": "1 mEq"
+                    },
+                    {
+                        "type": "fraction",
+                        "numerator": "MW (in mg)",
+                        "denominator": "Valence"
+                    }
+                ],
+                "operators1": ["="],
+                "operands2": [
+                    {
+                        "type": "text",
+                        "value": "1 mEq"
+                    },
+                    {
+                        "type": "fraction",
+                        "numerator": {
+                            "type": "input",
+                            "answer": "274",
+                            "unit": "mg"
+                        },
+                        "denominator": {
+                            "type": "input",
+                            "answer": "1",
+                            "unit": "(valence of Na)"
+                        }
+                    },
+                    {
+                        "type": "input",
+                        "answer": "274",
+                        "unit": "mg"
+                    }
+                ],
+                "operators2": ["=", "="],
+                "hint": "The valence of sodium is 1. From the question, the MW of phenytoin sodium is 274 mg, so 1 mEq = 274 mg / 1 = 274 mg."
+            },
+            {
+                "text": "Convert the daily dose to mEq",
+                "type": "OPERATION",
+                "operands1": [
+                    {
+                        "type": "fraction",
+                        "numerator": {
+                            "type": "input",
+                            "answer": "1",
+                            "unit": "mEq"
+                        },
+                        "denominator": {
+                            "type": "input",
+                            "answer": "274",
+                            "unit": "mg"
+                        }
+                    },
+                    {
+                        "type": "fraction",
+                        "numerator": {
+                            "type": "text",
+                            "value": "X mEq"
+                        },
+                        "denominator": {
+                            "type": "input",
+                            "answer": "420",
+                            "unit": "mg"
+                        }
+                    },
+                    {
+                        "type": "input",
+                        "answer": "1.53",
+                        "unit": "mEq"
+                    }
+                ],
+                "operators1": ["=", "="],
+                "operands2": [
+                    {
+                        "type": "text",
+                        "value": "X mEq"
+                    },
+                    {
+                        "type": "input",
+                        "answer": "1.53",
+                        "unit": "mEq"
+                    }
+                ],
+                "operators2": ["="],
+                "hint": "1 mEq/274 mg = X mEq/420 mg. X = 420 mg / 274 mg/mEq = 1.53 mEq."
+            }
+        ]
+    },
+    {
+        "number": 23,
+        "question": "A solution contains 30 mg% (30 mg/100 mL) of citrate ions (C<sub>6</sub>H<sub>5</sub>O<sub>7</sub><sup>3-</sup>). Express this concentration in terms of milliequivalents per liter. (Citrate ion molecular weight is 189).",
+        "answerValue": [4.76],
+        "answerUnit": ["mEq/L"],
+        "rounding": false,
+        "steps": [
+            {
+                "text": "Identify the valence and calculate how many mg = 1 mEq",
+                "type": "OPERATION",
+                "operands1": [
+                    {
+                        "type": "text",
+                        "value": "1 mEq"
+                    },
+                    {
+                        "type": "fraction",
+                        "numerator": "MW (in mg)",
+                        "denominator": "Valence"
+                    }
+                ],
+                "operators1": ["="],
+                "operands2": [
+                    {
+                        "type": "text",
+                        "value": "1 mEq"
+                    },
+                    {
+                        "type": "fraction",
+                        "numerator": {
+                            "type": "input",
+                            "answer": "189",
+                            "unit": "mg"
+                        },
+                        "denominator": {
+                            "type": "input",
+                            "answer": "3",
+                            "unit": "(valence of citrate)"
+                        }
+                    },
+                    {
+                        "type": "input",
+                        "answer": "63",
+                        "unit": "mg"
+                    }
+                ],
+                "operators2": ["=", "="],
+                "hint": "The valence of citrate ion is 3 (indicated by 3- in the formula). From the question, we know that the MW of citrate ion is 189 mg, so 1 mEq = 189 mg / 3 = 63 mg."
+            },
+            {
+                "text": "Convert concentration from mg% to mg/L",
+                "type": "OPERATION",
+                "operands1": [
+                    {
+                        "type": "fraction",
+                        "numerator": {
+                            "type": "input",
+                            "answer": "30",
+                            "unit": "mg"
+                        },
+                        "denominator": {
+                            "type": "input",
+                            "answer": "100",
+                            "unit": "mL"
+                        }
+                    },
+                    {
+                        "type": "fraction",
+                        "numerator": {
+                            "type": "text",
+                            "value": "x mg"
+                        },
+                        "denominator": {
+                            "type": "input",
+                            "answer": "1000",
+                            "unit": "mL"
+                        }
+                    },
+                    {
+                        "type": "input",
+                        "answer": "300",
+                        "unit": "mg/L"
+                    }
+                ],
+                "operators1": ["=", "="],
+                "hint": "30 mg/100 mL = x mg/1000 mL. x = (30 × 1000) / 100 = 300 mg/L."
+            },
+            {
+                "text": "Convert mg/L to mEq/L using ratio and proportion",
+                "type": "OPERATION",
+                "operands1": [
+                    {
+                        "type": "fraction",
+                        "numerator": {
+                            "type": "input",
+                            "answer": "1",
+                            "unit": "mEq"
+                        },
+                        "denominator": {
+                            "type": "input",
+                            "answer": "63",
+                            "unit": "mg"
+                        }
+                    },
+                    {
+                        "type": "fraction",
+                        "numerator": {
+                            "type": "text",
+                            "value": "X mEq"
+                        },
+                        "denominator": {
+                            "type": "input",
+                            "answer": "300",
+                            "unit": "mg"
+                        }
+                    }
+                ],
+                "operators1": ["="],
+                "operands2": [
+                    {
+                        "type": "text",
+                        "value": "X mEq/L"
+                    },
+                    {
+                        "type": "input",
+                        "answer": "4.76",
+                        "unit": "mEq/L"
+                    }
+                ],
+                "operators2": ["="],
+                "hint": "1 mEq/63 mg = X mEq/300 mg. X = 300 mg × (1 mEq/63 mg) = 4.76 mEq/L."
+            }
+        ]
+    },
+    {
+        "number": 24,
+        "question": "A solution contains 40 mg% (40 mg/100 mL) of calcium ions (Ca<sup>2+</sup>). Express this concentration in terms of milliequivalents per liter. (Ca atomic weight is 40).",
+        "answerValue": [20],
+        "answerUnit": ["mEq/L"],
+        "rounding": false,
+        "steps": [
+            {
+                "text": "Identify the valence and calculate how many mg = 1 mEq",
+                "type": "OPERATION",
+                "operands1": [
+                    {
+                        "type": "text",
+                        "value": "1 mEq"
+                    },
+                    {
+                        "type": "fraction",
+                        "numerator": "MW (in mg)",
+                        "denominator": "Valence"
+                    }
+                ],
+                "operators1": ["="],
+                "operands2": [
+                    {
+                        "type": "text",
+                        "value": "1 mEq"
+                    },
+                    {
+                        "type": "fraction",
+                        "numerator": {
+                            "type": "input",
+                            "answer": "40",
+                            "unit": "mg"
+                        },
+                        "denominator": {
+                            "type": "input",
+                            "answer": "2",
+                            "unit": "(valence of Ca<sup>2+</sup>)"
+                        }
+                    },
+                    {
+                        "type": "input",
+                        "answer": "20",
+                        "unit": "mg"
+                    }
+                ],
+                "operators2": ["=", "="],
+                "hint": "The valence of calcium ion is 2 (indicated by Ca<sup>2+</sup>). From the question, we know that the atomic weight of Ca is 40 mg, so 1 mEq = 40 mg / 2 = 20 mg."
+            },
+            {
+                "text": "Convert concentration from mg% to mg/L",
+                "type": "OPERATION",
+                "operands1": [
+                    {
+                        "type": "fraction",
+                        "numerator": {
+                            "type": "input",
+                            "answer": "40",
+                            "unit": "mg"
+                        },
+                        "denominator": {
+                            "type": "input",
+                            "answer": "100",
+                            "unit": "mL"
+                        }
+                    },
+                    {
+                        "type": "fraction",
+                        "numerator": {
+                            "type": "text",
+                            "value": "x mg"
+                        },
+                        "denominator": {
+                            "type": "input",
+                            "answer": "1000",
+                            "unit": "mL"
+                        }
+                    },
+                    {
+                        "type": "input",
+                        "answer": "400",
+                        "unit": "mg/L"
+                    }
+                ],
+                "operators1": ["=", "="],
+                "hint": "40 mg/100 mL = x mg/1000 mL. x = (40 × 1000) / 100 = 400 mg/L."
+            },
+            {
+                "text": "Convert mg/L to mEq/L using ratio and proportion",
+                "type": "OPERATION",
+                "operands1": [
+                    {
+                        "type": "fraction",
+                        "numerator": {
+                            "type": "input",
+                            "answer": "1",
+                            "unit": "mEq"
+                        },
+                        "denominator": {
+                            "type": "input",
+                            "answer": "20",
+                            "unit": "mg"
+                        }
+                    },
+                    {
+                        "type": "fraction",
+                        "numerator": {
+                            "type": "text",
+                            "value": "X mEq"
+                        },
+                        "denominator": {
+                            "type": "input",
+                            "answer": "400",
+                            "unit": "mg"
+                        }
+                    }
+                ],
+                "operators1": ["="],
+                "operands2": [
+                    {
+                        "type": "text",
+                        "value": "X mEq/L"
+                    },
+                    {
+                        "type": "input",
+                        "answer": "20",
+                        "unit": "mEq/L"
+                    }
+                ],
+                "operators2": ["="],
+                "hint": "1 mEq/20 mg = X mEq/400 mg. X = 400 mg × (1 mEq/20 mg) = 20 mEq/L."
+            }
+        ]
+    },
+    {
+        "number": 25,
+        "question": "A sterile solution of CaCO<sub>3</sub> contains 5 mEq per mL. If a 150 mL ampule of the solution is diluted to a liter with sterile distilled water, what is the percentage strength of the resulting solution (CaCO<sub>3</sub> molecular weight is 100)?",
+        "answerValue": [3.75],
+        "answerUnit": ["% (w/v)"],
+        "rounding": false,
+        "steps": [
+            {
+                "text": "Change 5 mEq/mL to mg/mL",
+                "type": "OPERATION",
+                "operands1": [
+                    {
+                        "type": "fraction",
+                        "numerator": {
+                            "type": "input",
+                            "answer": "1",
+                            "unit": "mEq"
+                        },
+                        "denominator": {
+                            "type": "input",
+                            "answer": "50",
+                            "unit": "mg"
+                        }
+                    },
+                    {
+                        "type": "fraction",
+                        "numerator": {
+                            "type": "input",
+                            "answer": "5",
+                            "unit": "mEq"
+                        },
+                        "denominator": {
+                            "type": "text",
+                            "value": "x mg"
+                        }
+                    },
+                    {
+                        "type": "input",
+                        "answer": "250",
+                        "unit": "mg/mL"
+                    }
+                ],
+                "operators1": ["=", "="],
+                "hint": "For CaCO<sub>3</sub>, MW = 100 and valence = 2, so 1 mEq = 100/2 = 50 mg. Therefore, 1 mEq/50 mg = 5 mEq/x mg. x = 5 × 50 = 250 mg/mL."
+            },
+            {
+                "text": "Use Q1 × C1 = Q2 × C2",
+                "type": "OPERATION",
+                "operands1": [
+                    {
+                        "type": "input",
+                        "answer": "150",
+                        "unit": "mL"
+                    },
+                    {
+                        "type": "input",
+                        "answer": "250",
+                        "unit": "mg/mL"
+                    },
+                    {
+                        "type": "input",
+                        "answer": "1000",
+                        "unit": "mL"
+                    },
+                    {
+                        "type": "text",
+                        "value": "C2 (in mg/mL)"
+                    }
+                ],
+                "operators1": ["×", "=", "×", "="],
+                "operands2": [
+                    {
+                        "type": "text",
+                        "value": "C2"
+                    },
+                    {
+                        "type": "input",
+                        "answer": "37.5",
+                        "unit": "mg/mL"
+                    }
+                ],
+                "operators2": ["="],
+                "hint": "150 mL × 250 mg/mL = 1000 mL × C2. C2 = (150 × 250) / 1000 = 37.5 mg/mL."
+            },
+            {
+                "text": "Convert from mg/mL to % (w/v)",
+                "type": "OPERATION",
+                "operands1": [
+                    {
+                        "type": "input",
+                        "answer": "37.5",
+                        "unit": "mg/mL"
+                    },
+                    {
+                        "type": "fraction",
+                        "numerator": {
+                            "type": "input",
+                            "answer": "1",
+                            "unit": "g"
+                        },
+                        "denominator": {
+                            "type": "input",
+                            "answer": "1000",
+                            "unit": "mg"
+                        }
+                    },
+                    {
+                        "type": "input",
+                        "answer": "0.0375",
+                        "unit": "g/mL"
+                    },
+                    {
+                        "type": "fraction",
+                        "numerator": {
+                            "type": "input",
+                            "answer": "0.0375",
+                            "unit": "g"
+                        },
+                        "denominator": {
+                            "type": "input",
+                            "answer": "1",
+                            "unit": "mL"
+                        }
+                    },
+                    {
+                        "type": "fraction",
+                        "numerator": {
+                            "type": "text",
+                            "value": "x g"
+                        },
+                        "denominator": {
+                            "type": "input",
+                            "answer": "100",
+                            "unit": "mL"
+                        }
+                    },
+                    {
+                        "type": "input",
+                        "answer": "3.75",
+                        "unit": "% (w/v)"
+                    }
+                ],
+                "operators1": ["×", "=", "=", "=", "="],
+                "hint": "37.5 mg/mL = 0.0375 g/mL. 0.0375 g/1 mL = x g/100 mL. x = 3.75 g → 3.75% (w/v)."
+            }
+        ]
+    },
+    {
+        "number": 26,
+        "question": "A magnesium (Mg<sup>2+</sup>) level in blood plasma is determined to be 2.75 mEq/L. Express this concentration in terms of milligrams per liter. (Magnesium atomic weight is 24).",
+        "answerValue": [33],
+        "answerUnit": ["mg/L"],
+        "rounding": false,
+        "steps": [
+            {
+                "text": "Identify the valence and calculate how many mg = 1 mEq",
+                "type": "OPERATION",
+                "operands1": [
+                    {
+                        "type": "text",
+                        "value": "1 mEq"
+                    },
+                    {
+                        "type": "fraction",
+                        "numerator": "MW (in mg)",
+                        "denominator": "Valence"
+                    }
+                ],
+                "operators1": ["="],
+                "operands2": [
+                    {
+                        "type": "text",
+                        "value": "1 mEq"
+                    },
+                    {
+                        "type": "fraction",
+                        "numerator": {
+                            "type": "input",
+                            "answer": "24",
+                            "unit": "mg"
+                        },
+                        "denominator": {
+                            "type": "input",
+                            "answer": "2",
+                            "unit": "(valence of Mg<sup>2+</sup>)"
+                        }
+                    },
+                    {
+                        "type": "input",
+                        "answer": "12",
+                        "unit": "mg"
+                    }
+                ],
+                "operators2": ["=", "="],
+                "hint": "The valence of magnesium ion is 2 (indicated by Mg<sup>2+</sup>). From the question, we know that the atomic weight of Mg is 24 mg, so 1 mEq = 24 mg / 2 = 12 mg."
+            },
+            {
+                "text": "Use ratio and proportion to convert from mEq/L to mg/L",
+                "type": "OPERATION",
+                "operands1": [
+                    {
+                        "type": "fraction",
+                        "numerator": {
+                            "type": "input",
+                            "answer": "1",
+                            "unit": "mEq"
+                        },
+                        "denominator": {
+                            "type": "input",
+                            "answer": "12",
+                            "unit": "mg"
+                        }
+                    },
+                    {
+                        "type": "fraction",
+                        "numerator": {
+                            "type": "input",
+                            "answer": "2.75",
+                            "unit": "mEq"
+                        },
+                        "denominator": {
+                            "type": "text",
+                            "value": "x mg"
+                        }
+                    }
+                ],
+                "operators1": ["="],
+                "operands2": [
+                    {
+                        "type": "text",
+                        "value": "x mg"
+                    },
+                    {
+                        "type": "input",
+                        "answer": "33",
+                        "unit": "mg/L"
+                    }
+                ],
+                "operators2": ["="],
+                "hint": "1 mEq/12 mg = 2.75 mEq/x mg. x = 2.75 mEq × 12 mg/mEq = 33 mg/L."
+            }
+        ]
+    },
+    {
+        "number": 27,
+        "question": "What is the concentration, in g per mL, of a solution containing 6 mEq of magnesium sulfate (MgSO<sub>4</sub> · 2H<sub>2</sub>O) per mL? (MgSO<sub>4</sub> · 2H<sub>2</sub>O molecular weight is 156.4).",
+        "answerValue": [0.469],
+        "answerUnit": ["g/mL"],
+        "rounding": false,
+        "steps": [
+            {
+                "text": "Identify the valence and calculate how many mg = 1 mEq",
+                "type": "OPERATION",
+                "operands1": [
+                    {
+                        "type": "text",
+                        "value": "1 mEq"
+                    },
+                    {
+                        "type": "fraction",
+                        "numerator": "MW (in mg)",
+                        "denominator": "Valence"
+                    }
+                ],
+                "operators1": ["="],
+                "operands2": [
+                    {
+                        "type": "text",
+                        "value": "1 mEq"
+                    },
+                    {
+                        "type": "fraction",
+                        "numerator": {
+                            "type": "input",
+                            "answer": "156.4",
+                            "unit": "mg"
+                        },
+                        "denominator": {
+                            "type": "input",
+                            "answer": "2",
+                            "unit": "(valence of MgSO<sub>4</sub> · 2H<sub>2</sub>O)"
+                        }
+                    },
+                    {
+                        "type": "input",
+                        "answer": "78.2",
+                        "unit": "mg"
+                    }
+                ],
+                "operators2": ["=", "="],
+                "hint": "The valence of MgSO<sub>4</sub> · 2H<sub>2</sub>O is 2 because of the Mg<sup>2+</sup> ion. From the question, we know that the MW is 156.4 mg, so 1 mEq = 156.4 mg / 2 = 78.2 mg."
+            },
+            {
+                "text": "Convert 6 mEq/mL to mg/mL",
+                "type": "OPERATION",
+                "operands1": [
+                    {
+                        "type": "fraction",
+                        "numerator": {
+                            "type": "input",
+                            "answer": "1",
+                            "unit": "mEq"
+                        },
+                        "denominator": {
+                            "type": "input",
+                            "answer": "78.2",
+                            "unit": "mg"
+                        }
+                    },
+                    {
+                        "type": "fraction",
+                        "numerator": {
+                            "type": "input",
+                            "answer": "6",
+                            "unit": "mEq"
+                        },
+                        "denominator": {
+                            "type": "text",
+                            "value": "x mg"
+                        }
+                    }
+                ],
+                "operators1": ["="],
+                "operands2": [
+                    {
+                        "type": "text",
+                        "value": "x mg"
+                    },
+                    {
+                        "type": "input",
+                        "answer": "469.2",
+                        "unit": "mg/mL"
+                    }
+                ],
+                "operators2": ["="],
+                "hint": "1 mEq/78.2 mg = 6 mEq/x mg. x = 6 × 78.2 = 469.2 mg/mL."
+            },
+            {
+                "text": "Convert from mg/mL to g/mL",
+                "type": "OPERATION",
+                "operands1": [
+                    {
+                        "type": "input",
+                        "answer": "469.2",
+                        "unit": "mg/mL"
+                    },
+                    {
+                        "type": "fraction",
+                        "numerator": {
+                            "type": "input",
+                            "answer": "1",
+                            "unit": "g"
+                        },
+                        "denominator": {
+                            "type": "input",
+                            "answer": "1000",
+                            "unit": "mg"
+                        }
+                    },
+                    {
+                        "type": "input",
+                        "answer": "0.469",
+                        "unit": "g/mL"
+                    }
+                ],
+                "operators1": ["×", "="],
+                "hint": "469.2 mg/mL × (1 g/1000 mg) = 0.469 g/mL."
+            }
+        ]
+    },
+    {
+        "number": 28,
+        "question": "A nutritional solution contains 25 mg/100 mL of Ca<sup>2+</sup> ions. Express this concentration in terms of milliequivalents per liter. (Calcium atomic weight is 40).",
+        "answerValue": [12.5],
+        "answerUnit": ["mEq/L"],
+        "rounding": false,
+        "steps": [
+            {
+                "text": "Identify the valence and calculate how many mg = 1 mEq",
+                "type": "OPERATION",
+                "operands1": [
+                    {
+                        "type": "text",
+                        "value": "1 mEq"
+                    },
+                    {
+                        "type": "fraction",
+                        "numerator": "MW (in mg)",
+                        "denominator": "Valence"
+                    }
+                ],
+                "operators1": ["="],
+                "operands2": [
+                    {
+                        "type": "text",
+                        "value": "1 mEq"
+                    },
+                    {
+                        "type": "fraction",
+                        "numerator": {
+                            "type": "input",
+                            "answer": "40",
+                            "unit": "mg"
+                        },
+                        "denominator": {
+                            "type": "input",
+                            "answer": "2",
+                            "unit": "(valence of Ca<sup>2+</sup>)"
+                        }
+                    },
+                    {
+                        "type": "input",
+                        "answer": "20",
+                        "unit": "mg"
+                    }
+                ],
+                "operators2": ["=", "="],
+                "hint": "The valence of calcium ion is 2 (indicated by Ca<sup>2+</sup>). From the question, we know that the atomic weight of Ca is 40 mg, so 1 mEq = 40 mg / 2 = 20 mg."
+            },
+            {
+                "text": "Convert concentration from mg/100 mL to mg/L",
+                "type": "OPERATION",
+                "operands1": [
+                    {
+                        "type": "fraction",
+                        "numerator": {
+                            "type": "input",
+                            "answer": "25",
+                            "unit": "mg"
+                        },
+                        "denominator": {
+                            "type": "input",
+                            "answer": "100",
+                            "unit": "mL"
+                        }
+                    },
+                    {
+                        "type": "fraction",
+                        "numerator": {
+                            "type": "text",
+                            "value": "x mg"
+                        },
+                        "denominator": {
+                            "type": "input",
+                            "answer": "1000",
+                            "unit": "mL"
+                        }
+                    },
+                    {
+                        "type": "input",
+                        "answer": "250",
+                        "unit": "mg/L"
+                    }
+                ],
+                "operators1": ["=", "="],
+                "hint": "25 mg/100 mL = x mg/1000 mL. x = (25 × 1000) / 100 = 250 mg/L."
+            },
+            {
+                "text": "Convert mg/L to mEq/L using ratio and proportion",
+                "type": "OPERATION",
+                "operands1": [
+                    {
+                        "type": "fraction",
+                        "numerator": {
+                            "type": "input",
+                            "answer": "1",
+                            "unit": "mEq"
+                        },
+                        "denominator": {
+                            "type": "input",
+                            "answer": "20",
+                            "unit": "mg"
+                        }
+                    },
+                    {
+                        "type": "fraction",
+                        "numerator": {
+                            "type": "text",
+                            "value": "X mEq"
+                        },
+                        "denominator": {
+                            "type": "input",
+                            "answer": "250",
+                            "unit": "mg"
+                        }
+                    }
+                ],
+                "operators1": ["="],
+                "operands2": [
+                    {
+                        "type": "text",
+                        "value": "X mEq/L"
+                    },
+                    {
+                        "type": "input",
+                        "answer": "12.5",
+                        "unit": "mEq/L"
+                    }
+                ],
+                "operators2": ["="],
+                "hint": "1 mEq/20 mg = X mEq/250 mg. X = 250 mg × (1 mEq/20 mg) = 12.5 mEq/L."
+            }
+        ]
+    },
+        {
+            "number": 29,
+            "question": "An intravenous infusion is to contain 40 mEq of potassium ion and 55 mEq of sodium ion in 500 mL of 5% dextrose injection. Using potassium chloride injection (6 g/30 mL) and 23.4% sodium chloride injection, how many milliliters of each should be used to supply the required ions in the IV infusion? (NaCl molecular weight is 58.5; KCl molecular weight is 74.5).",
+            "answerValue": [14.9, 13.75],
+            "answerUnit": ["mL KCl", "mL NaCl"],
+            "rounding": false,
+            "steps": [
+                {
+                    "text": "Calculate the concentration of KCl injection in mEq/mL",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "6 g/30 mL KCl"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": "6",
+                                "unit": "g"
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": "30",
+                                "unit": "mL"
+                            }
+                        },
+                        {
+                            "type": "input",
+                            "answer": "0.2",
+                            "unit": "g/mL"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": "1",
+                                "unit": "mEq"
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": "74.5",
+                                "unit": "mg"
+                            }
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": "1000",
+                                "unit": "mg"
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": "1",
+                                "unit": "g"
+                            }
+                        },
+                        {
+                            "type": "input",
+                            "answer": "2.68",
+                            "unit": "mEq/mL KCl"
+                        }
+                    ],
+                    "operators1": ["=", "=", "×", "×", "="],
+                    "hint": "6 g/30 mL = 0.2 g/mL. For KCl, 1 mEq = 74.5 mg. 0.2 g/mL × (1000 mg/1 g) × (1 mEq/74.5 mg) = 2.68 mEq/mL"
+                },
+                {
+                    "text": "Calculate the volume of KCl injection needed",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": "2.68",
+                                "unit": "mEq"
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": "1",
+                                "unit": "mL"
+                            }
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": "40",
+                                "unit": "mEq"
+                            },
+                            "denominator": {
+                                "type": "text",
+                                "value": "x mL"
+                            }
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "x mL"
+                        },
+                        {
+                            "type": "input",
+                            "answer": "14.9",
+                            "unit": "mL KCl"
+                        }
+                    ],
+                    "operators2": ["="],
+                    "hint": "2.68 mEq/1 mL = 40 mEq/x mL. x = 40 mEq / 2.68 mEq/mL = 14.9 mL"
+                },
+                {
+                    "text": "Calculate the concentration of NaCl injection in mEq/mL",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "23.4% NaCl"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": "23.4",
+                                "unit": "g"
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": "100",
+                                "unit": "mL"
+                            }
+                        },
+                        {
+                            "type": "input",
+                            "answer": "0.234",
+                            "unit": "g/mL"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": "1",
+                                "unit": "mEq"
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": "58.5",
+                                "unit": "mg"
+                            }
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": "1000",
+                                "unit": "mg"
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": "1",
+                                "unit": "g"
+                            }
+                        },
+                        {
+                            "type": "input",
+                            "answer": "4.0",
+                            "unit": "mEq/mL NaCl"
+                        }
+                    ],
+                    "operators1": ["=", "=", "×", "×", "="],
+                    "hint": "23.4% = 23.4 g/100 mL = 0.234 g/mL. For NaCl, 1 mEq = 58.5 mg. 0.234 g/mL × (1000 mg/1 g) × (1 mEq/58.5 mg) = 4.0 mEq/mL"
+                },
+                {
+                    "text": "Calculate the volume of NaCl injection needed",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": "4.0",
+                                "unit": "mEq"
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": "1",
+                                "unit": "mL"
+                            }
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": "55",
+                                "unit": "mEq"
+                            },
+                            "denominator": {
+                                "type": "text",
+                                "value": "x mL"
+                            }
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "x mL"
+                        },
+                        {
+                            "type": "input",
+                            "answer": "13.75",
+                            "unit": "mL NaCl"
+                        }
+                    ],
+                    "operators2": ["="],
+                    "hint": "4.0 mEq/1 mL = 55 mEq/x mL. x = 55 mEq / 4.0 mEq/mL = 13.75 mL"
+                }
+            ]
+        }
+    ]
+}
+
+

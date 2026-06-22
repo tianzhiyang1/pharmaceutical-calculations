@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prescription Interpretation Practice</title>
+  <!-- master.css is shared across all modules; path back to repo root.
+       interpretation.css is module-specific styling that you'll copy over. -->
+  <link rel="stylesheet" href="../../../master.css">
+  <link rel="stylesheet" href="interpretation.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Prescription Interpretation Practice</h1>
+    </header>
+
+    <!-- Question navigator. core/navigator.js looks for this id. -->
+    <div id="questionNavigator" style="text-align: right; margin-bottom: 10px;"></div>
+
+    <!-- Progress bar + stats. Shared shell reads these by id. -->
+    <div class="progress-container">
+      <div class="progress-bar" id="progressBar"></div>
+    </div>
+    <div class="stats">
+      <div class="stat-item">
+        <div class="stat-value" id="questionsCompleted">0</div>
+        <div class="stat-label">Completed</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value" id="questionsRemaining">0</div>
+        <div class="stat-label">Remaining</div>
+      </div>
+    </div>
+
+    <!-- Question card.
+         IMPORTANT: the answer area is `id="answerContainer"`, not the old
+         `answer-area`. core/shell-ui.js looks up answerContainer at init time
+         and the drag/applied plugins render their UI into it. The
+         #options-area and #dragFeedback / #appliedFeedback siblings are
+         created at runtime by the plugins — don't add them here. -->
+    <div class="card" id="questionCard">
+      <div class="question-container">
+        <div class="question" id="questionText"></div>
+        <div id="answerContainer" class="answer-area"></div>
+        <div class="feedback" id="answerFeedback"></div>
+      </div>
+
+      <!-- Per-question button row.
+           - checkAnswer / nextQuestion / prevQuestion are required by the shell.
+           - showStepsBtn is only used by applied questions (28+); drag
+             questions ignore it but the button must exist for applied to work.
+           - restartBtn lives on the results card, not here. -->
+      <div class="button-row">
+        <button id="checkAnswer">Check Answer</button>
+        <button id="showStepsBtn" class="button-accent">Step-by-Step Guide</button>
+        <button id="prevQuestion" class="button-secondary">Previous Question</button>
+        <button id="nextQuestion" class="button-secondary">Next Question</button>
+      </div>
+
+      <!-- Step-by-step guide container. Empty until showStepsBtn is clicked
+           on an applied question. The shell handles show/hide. -->
+      <div class="steps-container" id="stepsContainer" style="display: none;">
+        <h3>Step-by-Step Solution</h3>
+        <div id="steps"></div>
+      </div>
+    </div>
+
+    <!-- Results card (hidden until the student finishes every question). -->
+    <div class="card" id="results" style="display: none;">
+      <div class="results-title">Practice Completed!</div>
+      <div class="results-message">You've successfully completed all practice questions.</div>
+      <div class="button-row text-center">
+        <button id="restartBtn">Practice Again</button>
+      </div>
+    </div>
+
+    <!-- Footer links: history modal trigger + clear progress + back to tutorial. -->
+    <div class="clear-progress-container">
+      <p>Want to see your question history?
+        <a href="#" id="viewHistoryBtn" class="clear-data-link">View history</a>
+      </p>
+      <p>Want to clear your saved progress data?
+        <a href="#" id="clearProgressBtn" class="clear-data-link">Clear saved data</a>
+      </p>
+      <p>Want to see the tutorial again?
+        <a href="index.html" class="clear-data-link">Go back to tutorial</a>
+      </p>
+    </div>
+  </div>
+
+  <!-- History modal. core/history.js looks up #historyModal, #historyList,
+       and the .close-modal element. -->
+  <div id="historyModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>Question History</h2>
+        <span class="close-modal">&times;</span>
+      </div>
+      <div class="modal-body">
+        <p class="history-instructions">
+          Click any completed question to view its solution.
+        </p>
+        <div class="history-list" id="historyList"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Solution modal. core/history.js opens this when the student clicks a
+       completed question button in the history list. -->
+  <div id="solutionModal" class="modal">
+    <div class="modal-content solution-modal-content">
+      <div class="modal-header">
+        <h2>Solution</h2>
+        <span class="close-solution-modal">&times;</span>
+      </div>
+      <div class="modal-body">
+        <div id="solutionQuestion" class="solution-question"></div>
+        <div class="steps-container solution-steps" id="solutionSteps"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- main.js is an ES module: it imports the engine, the config, and the
+       JSON, then calls createQuiz. The browser must load this from an http://
+       URL, not file:// — open it via a local dev server. -->
+  <script type="module" src="main.js"></script>
+</body>
+</html>

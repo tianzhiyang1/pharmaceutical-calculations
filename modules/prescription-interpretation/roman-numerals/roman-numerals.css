@@ -1,0 +1,125 @@
+/* Roman Numerals Game Styles */
+
+/* Game Container */
+#game-card {
+    position: relative;
+    min-height: 500px;
+    overflow: hidden;
+    background-color: var(--secondary-color);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Heads-Up Display (Moves) */
+#moves-container {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    background-color: transparent;
+    padding: 0;
+    border-radius: 0;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    box-shadow: none;
+    z-index: 5;
+    text-align: left;
+}
+
+.game-stat-value {
+    font-weight: bold; /* Ensures value is bold even if label isn't */
+}
+
+/* Game Canvas */
+#gameCanvas {
+    border-radius: var(--card-radius);
+    display: block;
+    margin: 20px auto 0;
+    max-width: 100%;
+    /* Width and height are set dynamically in JS */
+}
+
+/* Overlay Screens (Start/Game Over) */
+.game-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 25px 35px;
+    text-align: center;
+    z-index: 100;
+    border-radius: var(--card-radius);
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 75%;
+    max-width: 480px;
+    min-height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.game-overlay h1 {
+    color: var(--primary-color);
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.game-description {
+  font-size: 16px;
+  color: black;
+  line-height: 1.4;
+  margin: 10px 0;
+  font-weight: 400;
+  max-width: 100%;
+  text-align: left;
+}
+
+.game-description ol {
+    padding-left: 25px;
+    margin-top: 10px;
+}
+
+.game-description li {
+    margin-bottom: 8px;
+}
+
+.game-overlay .button-container {
+    margin-top: 20px;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    #game-card {
+        min-height: 400px;
+        padding: 10px;
+    }
+    #moves-container {
+        font-size: 16px;
+        padding: 0;
+        top: 10px;
+        left: 10px;
+    }
+    #gameCanvas {
+        margin-top: 40px;
+    }
+    .game-overlay {
+        padding: 20px;
+        max-width: 90%;
+    }
+    .game-description {
+        font-size: 14px;
+    }
+    .game-description ol {
+        padding-left: 20px;
+    }
+    .game-description li {
+        margin-bottom: 6px;
+    }
+}
+
+/* @media screen and (max-width: 480px) { ... } /* Add if further adjustments needed */ 

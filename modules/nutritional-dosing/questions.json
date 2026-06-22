@@ -1,0 +1,4357 @@
+{
+    "questions": [
+        {
+            "number": 1,
+            "tag": "bee",
+            "question": "Using the Harris-Benedict equation and assuming no stress factor, calculate the BEE (basal energy expenditure) for a 67-year-old female who is 5'5\" tall and weighs 158 lb. Round the final answer to the nearest whole number.",
+            "answerValue": [1327],
+            "answerUnit": ["kcal/day"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Gather patient information and convert units if necessary",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Age (in years)"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 67,
+                            "unit": "years"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "Weight"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 158,
+                            "unit": "pounds"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 71.8,
+                            "unit": "kg (round to the nearest tenth)"
+                        }
+                    ],
+                    "operators2": ["=", "="],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "Height"
+                        },
+                        {
+                            "type": "input",
+                            "answer": "5'5\"",
+                            "unit": "feet and inches"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 65,
+                            "unit": "inches"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 165.1,
+                            "unit": "cm (round to the nearest tenth)"
+                        }
+                    ],
+                    "operators3": ["=", "=", "="],
+                    "operands4": [
+                        {
+                            "type": "text",
+                            "value": "Sex (Male or Female)"
+                        },
+                        {
+                            "type": "input",
+                            "answer": "Female",
+                            "unit": ""
+                        }
+                    ],
+                    "operators4": ["="],
+                    "hint": "Age: 67 years <br>Weight: 158 lb / 2.2 = 71.8 kg <br>Height: 5'5\" = 5 x 12 + 5 = 65 inches <br>Sex: Female"
+                },
+                {
+                    "text": "Calculate BEE using the Harris-Benedict equation",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Female: BEE"
+                        },
+                        {
+                            "type": "text",
+                            "value": "655 + (9.6 x W) + (1.8 x H) - (4.7 x A)"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "Female: BEE"
+                        },
+                        {
+                            "type": "text",
+                            "value": "655"
+                        },
+                        {
+                            "type": "text",
+                            "value": "9.6"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 71.8,
+                            "unit": "kg"
+                        },
+                        {
+                            "type": "text",
+                            "value": "1.8"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 165.1,
+                            "unit": "cm"
+                        },
+                        {
+                            "type": "text",
+                            "value": "4.7"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 67,
+                            "unit": "years"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1327,
+                            "unit": "kcal/day"
+                        }
+                    ],
+                    "operators2": ["=", "+ (", "×", ") + (", "×", ") - (", "×", ") ="],
+                    "hint": "BEE = 655 + (9.6 x 71.8) + (1.8 x 165.1) - (4.7 x 67) = 1327 kcal/day"
+                }
+            ]
+        },
+        {
+            "number": 2,
+            "tag": "caloric",
+            "question": "A patient is receiving 30% lipid emulsion. How many mL of lipid emulsion will provide 2200 kilocalories for the patient? Round the final answer to the nearest whole number.",
+            "answerValue": [733],
+            "answerUnit": ["mL"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Know the caloric conversion value",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "30% lipid emulsion provides"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 3,
+                            "unit": "kcal/mL"
+                        }
+                    ],
+                    "operators1": [":"],
+                    "hint": "Refer to the table in the tutorial. 30% lipid emulsion provides 3 kcal/mL."
+                },
+                {
+                    "text": "Use ratio and proportion to calculate volume (mL)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 3,
+                                "unit": "kcal"
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": 1,
+                                "unit": "mL"
+                            }
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 2200,
+                                "unit": "kcal"
+                            },
+                            "denominator": "x mL"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "x"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 733,
+                            "unit": "mL"
+                        }
+                    ],
+                    "operators2": ["="],
+                    "hint": "Using the caloric conversion value, we can set up the ratio and proportion to solve for x. 3 kcal / 1 mL = 2200 kcal / x mL, and x = 2200 kcal / 3 kcal/mL = 733 mL (rounded to the nearest whole number)"
+                }
+            ]
+        },
+        {
+            "number": 3,
+            "tag": "bee",
+            "question": "Using the Harris-Benedict equation and assuming no stress factor, calculate the BEE (basal energy expenditure) for a 35-year-old male who is 5'10\" tall and weighs 200 lb. Round the final answer to the nearest whole number.",
+            "answerValue": [1962],
+            "answerUnit": ["kcal/day"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Gather patient information and convert units if necessary",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Age (in years)"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 35,
+                            "unit": "years"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "Weight"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 200,
+                            "unit": "pounds"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 90.9,
+                            "unit": "kg (round to the nearest tenth)"
+                        }
+                    ],
+                    "operators2": ["=", "="],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "Height"
+                        },
+                        {
+                            "type": "input",
+                            "answer": "5'10\"",
+                            "unit": "feet and inches"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 66,
+                            "unit": "inches"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 167.6,
+                            "unit": "cm (round to the nearest tenth)"
+                        }
+                    ],
+                    "operators3": ["=", "=", "="],
+                    "operands4": [
+                        {
+                            "type": "text",
+                            "value": "Sex (Male or Female)"
+                        },
+                        {
+                            "type": "input",
+                            "answer": "Male",
+                            "unit": ""
+                        }
+                    ],
+                    "operators4": ["="],
+                    "hint": "Age: 35 years <br>Weight: 200 lb / 2.2 = 90.9 kg <br>Height: 5'10\" = 5 x 12 + 10 = 70 inches <br>Sex: Male"
+                },
+                {
+                    "text": "Calculate BEE using the Harris-Benedict equation",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Male: BEE"
+                        },
+                        {
+                            "type": "text",
+                            "value": "66 + (13.7 x W) + (5 x H) - (6.8 x A)"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "Male: BEE"
+                        },
+                        {
+                            "type": "text",
+                            "value": "66"
+                        },
+                        {
+                            "type": "text",
+                            "value": "13.7"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 90.9,
+                            "unit": "kg"
+                        },
+                        {
+                            "type": "text",
+                            "value": "5"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 177.8,
+                            "unit": "cm"
+                        },
+                        {
+                            "type": "text",
+                            "value": "6.8"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 35,
+                            "unit": "years"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1962,
+                            "unit": "kcal/day"
+                        }
+                    ],
+                    "operators2": ["=", "+ (", "×", ") + (", "×", ") - (", "×", ") ="],
+                    "hint": "BEE = 66 + (13.7 x 90.9) + (5 x 177.8) - (6.8 x 35) = 1962 kcal/day"
+                }
+            ]
+        },
+        {
+            "number": 4,
+            "tag": "bee",
+            "question": "A 45-year-old female major trauma patient survives surgery and is recovering in the surgical intensive care unit. The medical team wants to start TPN. She is 139 pounds, 5'6\" with some mild renal impairment. What is her TDE? (stress factor = 1.5 and activity factor = 1.2). Round the final answer to the nearest whole number.",
+            "answerValue": [2434],
+            "answerUnit": ["kcal/day"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Gather patient information and convert units if necessary",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Age (in years)"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 45,
+                            "unit": "years"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "Weight"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 139,
+                            "unit": "pounds"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 63.2,
+                            "unit": "kg (round to the nearest tenth)"
+                        }
+                    ],
+                    "operators2": ["=", "="],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "Height"
+                        },
+                        {
+                            "type": "input",
+                            "answer": "5'6\"",
+                            "unit": "feet and inches"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 66,
+                            "unit": "inches"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 167.6,
+                            "unit": "cm (round to the nearest tenth)"
+                        }
+                    ],
+                    "operators3": ["=", "=", "="],
+                    "operands4": [
+                        {
+                            "type": "text",
+                            "value": "Sex (Male or Female)"
+                        },
+                        {
+                            "type": "input",
+                            "answer": "Female",
+                            "unit": ""
+                        }
+                    ],
+                    "operators4": ["="],
+                    "hint": "Age: 45 years <br>Weight: 139 lb / 2.2 = 63.2 kg <br>Height: 5'6\" = 5 x 12 + 6 = 66 inches <br>Sex: Female"
+                },
+                {
+                    "text": "Calculate BEE using the Harris-Benedict equation",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Female: BEE"
+                        },
+                        {
+                            "type": "text",
+                            "value": "655 + (9.6 x W) + (1.8 x H) - (4.7 x A)"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "Female: BEE"
+                        },
+                        {
+                            "type": "text",
+                            "value": "655"
+                        },
+                        {
+                            "type": "text",
+                            "value": "9.6"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 63.2,
+                            "unit": "kg"
+                        },
+                        {
+                            "type": "text",
+                            "value": "1.8"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 167.6,
+                            "unit": "cm"
+                        },
+                        {
+                            "type": "text",
+                            "value": "4.7"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 45,
+                            "unit": "years"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1352,
+                            "unit": "kcal/day"
+                        }
+                    ],
+                    "operators2": ["=", "+ (", "×", ") + (", "×", ") - (", "×", ") ="],
+                    "hint": "BEE = 655 + (9.6 x 63.2) + (1.8 x 167.6) - (4.7 x 45) = 1352 kcal/day"
+                },
+                {
+                    "text": "Calculate TDE by applying stress and activity factors",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "TDE"
+                        },
+                        {
+                            "type": "text",
+                            "value": "BEE x Stress Factor x Activity Factor"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "TDE"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1352,
+                            "unit": "kcal/day"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1.5,
+                            "unit": "stress factor"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1.2,
+                            "unit": "activity factor"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 2434,
+                            "unit": "kcal/day"
+                        }
+                    ],
+                    "operators2": ["=", "×", "×", "="],
+                    "hint": "TDE = 1352 kcal/day × 1.5 × 1.2 = 2434 kcal/day"
+                }
+            ]
+        },
+        {
+            "number": 5,
+            "tag": "bee",
+            "question": "A 27-year-old male patient undergoes surgery and is recovering in the surgical intensive care unit. The medical team wants to start TPN. He is 162 pounds and 6'1\". What is his TDE? (stress factor = 1.4 and activity factor = 1.3). Round the final answer to the nearest whole number.",
+            "answerValue": [3309],
+            "answerUnit": ["kcal/day"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Gather patient information and convert units if necessary",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Age (in years)"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 27,
+                            "unit": "years"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "Weight"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 162,
+                            "unit": "pounds"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 73.6,
+                            "unit": "kg (round to the nearest tenth)"
+                        }
+                    ],
+                    "operators2": ["=", "="],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "Height"
+                        },
+                        {
+                            "type": "input",
+                            "answer": "6'1\"",
+                            "unit": "feet and inches"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 73,
+                            "unit": "inches"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 185.4,
+                            "unit": "cm (round to the nearest tenth)"
+                        }
+                    ],
+                    "operators3": ["=", "=", "="],
+                    "operands4": [
+                        {
+                            "type": "text",
+                            "value": "Sex (Male or Female)"
+                        },
+                        {
+                            "type": "input",
+                            "answer": "Male",
+                            "unit": ""
+                        }
+                    ],
+                    "operators4": ["="],
+                    "hint": "Age: 27 years <br>Weight: 162 lb / 2.2 = 73.6 kg <br>Height: 6'1\" = 6 x 12 + 1 = 73 inches <br>Sex: Male"
+                },
+                {
+                    "text": "Calculate BEE using the Harris-Benedict equation",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Male: BEE"
+                        },
+                        {
+                            "type": "text",
+                            "value": "66 + (13.7 x W) + (5 x H) - (6.8 x A)"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "Male: BEE"
+                        },
+                        {
+                            "type": "text",
+                            "value": "66"
+                        },
+                        {
+                            "type": "text",
+                            "value": "13.7"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 73.6,
+                            "unit": "kg"
+                        },
+                        {
+                            "type": "text",
+                            "value": "5"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 185.4,
+                            "unit": "cm"
+                        },
+                        {
+                            "type": "text",
+                            "value": "6.8"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 27,
+                            "unit": "years"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1818,
+                            "unit": "kcal/day"
+                        }
+                    ],
+                    "operators2": ["=", "+ (", "×", ") + (", "×", ") - (", "×", ") ="],
+                    "hint": "BEE = 66 + (13.7 x 73.6) + (5 x 185.4) - (6.8 x 27) = 1818 kcal/day"
+                },
+                {
+                    "text": "Calculate TDE by applying stress and activity factors",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "TDE"
+                        },
+                        {
+                            "type": "text",
+                            "value": "BEE x Stress Factor x Activity Factor"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "TDE"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1818,
+                            "unit": "kcal/day"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1.4,
+                            "unit": "stress factor"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1.3,
+                            "unit": "activity factor"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 3309,
+                            "unit": "kcal/day"
+                        }
+                    ],
+                    "operators2": ["=", "×", "×", "="],
+                    "hint": "TDE = 1818 kcal/day × 1.4 × 1.3 = 3309 kcal/day"
+                }
+            ]
+        },
+        {
+            "number": 6,
+            "tag": "bee",
+            "question": "RJ is a 55-year-old female patient who is 5 feet 4 inches tall and weighs 112 pounds. She is bedridden (activity factor = 1.2) and has a fractured pelvis due to an automobile accident (stress factor = 1.4). Calculate the total daily energy expenditure (TDE) for this patient using the Harris-Benedict equation. Round the answer to the nearest whole number.",
+            "answerValue": [1979],
+            "answerUnit": ["kcal/day"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Gather patient information and convert units if necessary",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Age (in years)"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 55,
+                            "unit": "years"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "Weight"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 112,
+                            "unit": "pounds"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 50.9,
+                            "unit": "kg (round to the nearest tenth)"
+                        }
+                    ],
+                    "operators2": ["=", "="],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "Height"
+                        },
+                        {
+                            "type": "input",
+                            "answer": "5'4\"",
+                            "unit": "feet and inches"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 64,
+                            "unit": "inches"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 162.6,
+                            "unit": "cm (round to the nearest tenth)"
+                        }
+                    ],
+                    "operators3": ["=", "=", "="],
+                    "operands4": [
+                        {
+                            "type": "text",
+                            "value": "Sex (Male or Female)"
+                        },
+                        {
+                            "type": "input",
+                            "answer": "Female",
+                            "unit": ""
+                        }
+                    ],
+                    "operators4": ["="],
+                    "hint": "Age: 55 years <br>Weight: 112 lb / 2.2 = 50.9 kg <br>Height: 5'4\" = 5 x 12 + 4 = 64 inches <br>Sex: Female"
+                },
+                {
+                    "text": "Calculate BEE using the Harris-Benedict equation",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Female: BEE"
+                        },
+                        {
+                            "type": "text",
+                            "value": "655 + (9.6 x W) + (1.8 x H) - (4.7 x A)"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "Female: BEE"
+                        },
+                        {
+                            "type": "text",
+                            "value": "655"
+                        },
+                        {
+                            "type": "text",
+                            "value": "9.6"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 50.9,
+                            "unit": "kg"
+                        },
+                        {
+                            "type": "text",
+                            "value": "1.8"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 162.6,
+                            "unit": "cm"
+                        },
+                        {
+                            "type": "text",
+                            "value": "4.7"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 55,
+                            "unit": "years"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1178,
+                            "unit": "kcal/day"
+                        }
+                    ],
+                    "operators2": ["=", "+ (", "×", ") + (", "×", ") - (", "×", ") ="],
+                    "hint": "BEE = 655 + (9.6 x 50.9) + (1.8 x 162.6) - (4.7 x 55) = 1178 kcal/day"
+                },
+                {
+                    "text": "Calculate TDE by applying stress and activity factors",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "TDE"
+                        },
+                        {
+                            "type": "text",
+                            "value": "BEE x Stress Factor x Activity Factor"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "TDE"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1178,
+                            "unit": "kcal/day"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1.4,
+                            "unit": "stress factor"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1.2,
+                            "unit": "activity factor"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1979,
+                            "unit": "kcal/day"
+                        }
+                    ],
+                    "operators2": ["=", "×", "×", "="],
+                    "hint": "TDE = 1178 kcal/day × 1.4 × 1.2 = 1979 kcal/day"
+                }
+            ]
+        },
+        {
+            "number": 7,
+            "tag": "caloric",
+            "question": "A patient is receiving 10% lipid emulsion. How many mL of lipid emulsion will provide 800 kilocalories for the patient? Round the final answer to the nearest whole number.",
+            "answerValue": [727],
+            "answerUnit": ["mL"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Know the caloric conversion value",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "10% lipid emulsion provides"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1.1,
+                            "unit": "kcal/mL"
+                        }
+                    ],
+                    "operators1": [":"],
+                    "hint": "Refer to the table in the tutorial. 10% lipid emulsion provides 1.1 kcal/mL."
+                },
+                {
+                    "text": "Use ratio and proportion to calculate volume (mL)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 1.1,
+                                "unit": "kcal"
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": 1,
+                                "unit": "mL"
+                            }
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 800,
+                                "unit": "kcal"
+                            },
+                            "denominator": "x mL"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "x"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 727,
+                            "unit": "mL"
+                        }
+                    ],
+                    "operators2": ["="],
+                    "hint": "Using the caloric conversion value, we can set up the ratio and proportion to solve for x. 1.1 kcal / 1 mL = 800 kcal / x mL, and x = 800 kcal / 1.1 kcal/mL = 727 mL (rounded to the nearest whole number)"
+                }
+            ]
+        },
+        {
+            "number": 8,
+            "tag": "caloric",
+            "question": "The following was ordered for an NPO (nothing by mouth) patient. What is the total daily caloric intake? D20W and amino acids 5% at 90 ml/hr and IV fat emulsion 30% at 20 ml/hr. Round the final answer to the nearest whole number.",
+            "answerValue": [3341],
+            "answerUnit": ["kcal/day"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Calculate daily volume for each component",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "D20W and amino acids 5%"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 90,
+                            "unit": "mL/hr"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 24,
+                            "unit": "hours/day"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 2160,
+                            "unit": "mL/day"
+                        }
+                    ],
+                    "operators1": [":", "×", "="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "IV fat emulsion 30%"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 20,
+                            "unit": "mL/hr"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 24,
+                            "unit": "hours/day"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 480,
+                            "unit": "mL/day"
+                        }
+                    ],
+                    "operators2": [":", "×", "="],
+                    "hint": "D20W and amino acids: 90 mL/hr × 24 hr/day = 2160 mL/day <br>IV fat emulsion: 20 mL/hr × 24 hr/day = 480 mL/day"
+                },
+                {
+                    "text": "Calculate calories from each component",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "D20W calories"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 2160,
+                            "unit": "mL/day"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 3.4,
+                            "unit": "kcal/g"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 20,
+                            "unit": "%"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1469,
+                            "unit": "kcal/day"
+                        }
+                    ],
+                    "operators1": [":", "×", "×", "="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "Amino acids 5% calories"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 2160,
+                            "unit": "mL/day"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 4,
+                            "unit": "kcal/g"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 5,
+                            "unit": "%"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 432,
+                            "unit": "kcal/day"
+                        }
+                    ],
+                    "operators2": [":", "×", "×", "="],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "IV fat emulsion 30% calories"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 480,
+                            "unit": "mL/day"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 3,
+                            "unit": "kcal/mL"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1440,
+                            "unit": "kcal/day"
+                        }
+                    ],
+                    "operators3": [":", "×", "="],
+                    "hint": "D20W: 2160 mL/day × 0.68 kcal/mL = 1469 kcal/day <br>Amino acids 5%: 2160 mL/day × 0.2 kcal/mL = 432 kcal/day <br>IV fat emulsion 30%: 480 mL/day × 3 kcal/mL = 1440 kcal/day"
+                },
+                {
+                    "text": "Calculate total daily caloric intake",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Total calories"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1469,
+                            "unit": "kcal/day"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 432,
+                            "unit": "kcal/day"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1440,
+                            "unit": "kcal/day"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 3341,
+                            "unit": "kcal/day"
+                        }
+                    ],
+                    "operators1": ["=", "+", "+", "="],
+                    "hint": "Total daily caloric intake = 1469 + 432 + 1440 = 3341 kcal/day"
+                }
+            ]
+        },
+        {
+            "number": 9,
+            "tag": "caloric",
+            "question": "The following was ordered for an NPO (nothing by mouth) patient. What is the total daily caloric intake? D45W and amino acids 10% at 75 ml/hr and IV fat emulsion 10% at 10 ml/hr. Round the final answer to the nearest whole number.",
+            "answerValue": [3738],
+            "answerUnit": ["kcal/day"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Calculate daily volume for each component",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "D45W and amino acids 10%"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 75,
+                            "unit": "mL/hr"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 24,
+                            "unit": "hours/day"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1800,
+                            "unit": "mL/day"
+                        }
+                    ],
+                    "operators1": [":", "×", "="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "IV fat emulsion 10%"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 10,
+                            "unit": "mL/hr"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 24,
+                            "unit": "hours/day"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 240,
+                            "unit": "mL/day"
+                        }
+                    ],
+                    "operators2": [":", "×", "="],
+                    "hint": "D45W and amino acids: 75 mL/hr × 24 hr/day = 1800 mL/day <br>IV fat emulsion: 10 mL/hr × 24 hr/day = 240 mL/day"
+                },
+                {
+                    "text": "Calculate calories from each component",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "D45W calories"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1800,
+                            "unit": "mL/day"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 3.4,
+                            "unit": "kcal/g"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 45,
+                            "unit": "%"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 2754,
+                            "unit": "kcal/day"
+                        }
+                    ],
+                    "operators1": [":", "×", "×", "="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "Amino acids 10% calories"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1800,
+                            "unit": "mL/day"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 4,
+                            "unit": "kcal/g"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 10,
+                            "unit": "%"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 720,
+                            "unit": "kcal/day"
+                        }
+                    ],
+                    "operators2": [":", "×", "×", "="],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "IV fat emulsion 10% calories"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 240,
+                            "unit": "mL/day"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1.1,
+                            "unit": "kcal/mL"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 264,
+                            "unit": "kcal/day"
+                        }
+                    ],
+                    "operators3": [":", "×", "="],
+                    "hint": "D45W: 1800 mL/day × 1.53 kcal/mL = 2754 kcal/day <br>Amino acids 10%: 1800 mL/day × 0.4 kcal/mL = 720 kcal/day <br>IV fat emulsion 10%: 240 mL/day × 1.1 kcal/mL = 264 kcal/day"
+                },
+                {
+                    "text": "Calculate total daily caloric intake",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Total calories"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 2754,
+                            "unit": "kcal/day"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 720,
+                            "unit": "kcal/day"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 264,
+                            "unit": "kcal/day"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 3738,
+                            "unit": "kcal/day"
+                        }
+                    ],
+                    "operators1": ["=", "+", "+", "="],
+                    "hint": "Total daily caloric intake = 2754 + 720 + 264 = 3738 kcal/day"
+                }
+            ]
+        },
+        {
+            "number": 10,
+            "tag": "caloric",
+            "question": "A patient requires 1500 kcal/day, which includes 50 g of protein. How many kilocalories are provided by the protein?",
+            "answerValue": [200],
+            "answerUnit": ["kcal"],
+            "rounding": false,
+            "steps": [
+                {
+                    "text": "Know the caloric value of protein",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Protein provides"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 4,
+                            "unit": "kcal/g"
+                        }
+                    ],
+                    "operators1": [":"],
+                    "hint": "Protein provides 4 kcal per gram."
+                },
+                {
+                    "text": "Calculate calories from protein",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Protein calories"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 50,
+                            "unit": "g"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 4,
+                            "unit": "kcal/g"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 200,
+                            "unit": "kcal"
+                        }
+                    ],
+                    "operators1": ["=", "×", "="],
+                    "hint": "Protein calories = 50 g × 4 kcal/g = 200 kcal"
+                }
+            ]
+        },
+        {
+            "number": 11,
+            "tag": "caloric",
+            "question": "A patient requiring TPN gets 2200 kcal/day, including 36 g of dextrose. How many kilocalories are provided by the dextrose?",
+            "answerValue": [122.4],
+            "answerUnit": ["kcal"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Know the caloric value of dextrose",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Dextrose provides"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 3.4,
+                            "unit": "kcal/g"
+                        }
+                    ],
+                    "operators1": [":"],
+                    "hint": "Dextrose provides 3.4 kcal per gram."
+                },
+                {
+                    "text": "Calculate calories from dextrose",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Dextrose calories"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 36,
+                            "unit": "g"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 3.4,
+                            "unit": "kcal/g"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 122.4,
+                            "unit": "kcal"
+                        }
+                    ],
+                    "operators1": ["=", "×", "="],
+                    "hint": "Dextrose calories = 36 g × 3.4 kcal/g = 122.4 kcal"
+                }
+            ]
+        },
+        {
+            "number": 12,
+            "tag": "caloric",
+            "question": "How many grams of dextrose are needed to supply 1500 kcal of parenteral nutrition? Round the final answer to the nearest whole number.",
+            "answerValue": [441],
+            "answerUnit": ["g"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Know the caloric value of dextrose",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Dextrose provides"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 3.4,
+                            "unit": "kcal/g"
+                        }
+                    ],
+                    "operators1": [":"],
+                    "hint": "Dextrose provides 3.4 kcal per gram."
+                },
+                {
+                    "text": "Use ratio and proportion to calculate grams of dextrose",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 3.4,
+                                "unit": "kcal"
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": 1,
+                                "unit": "g"
+                            }
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 1500,
+                                "unit": "kcal"
+                            },
+                            "denominator": "x g"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "x"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 441,
+                            "unit": "g"
+                        }
+                    ],
+                    "operators2": ["="],
+                    "hint": "Using the caloric conversion value, we can set up the ratio and proportion to solve for x. 3.4 kcal / 1 g = 1500 kcal / x g, and x = 1500 kcal / 3.4 kcal/g = 441 g (rounded to the nearest whole number)"
+                }
+            ]
+        },
+        {
+            "number": 13,
+            "tag": "caloric",
+            "question": "How many grams of protein are needed to supply 900 kcal of enteral nutrition?",
+            "answerValue": [225],
+            "answerUnit": ["g"],
+            "rounding": false,
+            "steps": [
+                {
+                    "text": "Know the caloric value of protein",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Protein provides"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 4,
+                            "unit": "kcal/g"
+                        }
+                    ],
+                    "operators1": [":"],
+                    "hint": "Protein provides 4 kcal per gram."
+                },
+                {
+                    "text": "Use ratio and proportion to calculate grams of protein",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 4,
+                                "unit": "kcal"
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": 1,
+                                "unit": "g"
+                            }
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 900,
+                                "unit": "kcal"
+                            },
+                            "denominator": "x g"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "x"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 225,
+                            "unit": "g"
+                        }
+                    ],
+                    "operators2": ["="],
+                    "hint": "Using the caloric conversion value, we can set up the ratio and proportion to solve for x. 4 kcal / 1 g = 900 kcal / x g, and x = 900 kcal / 4 kcal/g = 225 g"
+                }
+            ]
+        },
+        {
+            "number": 14,
+            "tag": "caloric",
+            "question": "How many milliliters of a 20% lipid emulsion are needed to provide 750 kcal of fat? Round the final answer to the nearest whole number.",
+            "answerValue": [375],
+            "answerUnit": ["mL"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Know the caloric conversion value",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "20% lipid emulsion provides"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 2,
+                            "unit": "kcal/mL"
+                        }
+                    ],
+                    "operators1": [":"],
+                    "hint": "Refer to the table in the tutorial. 20% lipid emulsion provides 2 kcal/mL."
+                },
+                {
+                    "text": "Use ratio and proportion to calculate volume (mL)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 2,
+                                "unit": "kcal"
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": 1,
+                                "unit": "mL"
+                            }
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 750,
+                                "unit": "kcal"
+                            },
+                            "denominator": "x mL"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "x"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 375,
+                            "unit": "mL"
+                        }
+                    ],
+                    "operators2": ["="],
+                    "hint": "Using the caloric conversion value, we can set up the ratio and proportion to solve for x. 2 kcal / 1 mL = 750 kcal / x mL, and x = 750 kcal / 2 kcal/mL = 375 mL"
+                }
+            ]
+        },
+        {
+            "number": 15,
+            "tag": "caloric",
+            "question": "If a patient requires 210 kcal of dextrose parenterally, how many milliliters of a 50% dextrose injection would provide the required caloric value? Round the final answer to the nearest whole number.",
+            "answerValue": [124],
+            "answerUnit": ["mL"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Know the caloric conversion value",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "50% dextrose injection provides"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1.7,
+                            "unit": "kcal/mL"
+                        }
+                    ],
+                    "operators1": [":"],
+                    "hint": "Refer to the table in the tutorial. 50% dextrose injection provides 1.7 kcal/mL."
+                },
+                {
+                    "text": "Use ratio and proportion to calculate volume (mL)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 1.7,
+                                "unit": "kcal"
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": 1,
+                                "unit": "mL"
+                            }
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 210,
+                                "unit": "kcal"
+                            },
+                            "denominator": "x mL"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "x"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 124,
+                            "unit": "mL"
+                        }
+                    ],
+                    "operators2": ["="],
+                    "hint": "Using the caloric conversion value, we can set up the ratio and proportion to solve for x. 1.7 kcal / 1 mL = 210 kcal / x mL, and x = 210 kcal / 1.7 kcal/mL = 124 mL (rounded to the nearest whole number)"
+                }
+            ]
+        },
+        {
+            "number": 16,
+            "tag": "caloric",
+            "question": "If amino acids have a caloric value of 4 kcal/g and the daily protein requirement is 0.9 g/kg, calculate the kilocalories administered to a patient weighing 170 lb. Round the final answer to the nearest whole number.",
+            "answerValue": [278],
+            "answerUnit": ["kcal"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Convert patient weight from pounds to kilograms",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Patient weight"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 170,
+                            "unit": "lb"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 77.3,
+                            "unit": "kg (round to the nearest tenth)"
+                        }
+                    ],
+                    "operators1": ["=", "="],
+                    "hint": "Weight: 170 lb / 2.2 = 77.3 kg"
+                },
+                {
+                    "text": "Calculate daily protein requirement",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Daily protein requirement"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 77.3,
+                            "unit": "kg"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.9,
+                            "unit": "g/kg"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 69.6,
+                            "unit": "g"
+                        }
+                    ],
+                    "operators1": ["=", "×", "="],
+                    "hint": "Daily protein requirement = 77.3 kg × 0.9 g/kg = 69.6 g"
+                },
+                {
+                    "text": "Calculate kilocalories from amino acids",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Amino acid calories"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 69.6,
+                            "unit": "g"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 4,
+                            "unit": "kcal/g"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 278,
+                            "unit": "kcal"
+                        }
+                    ],
+                    "operators1": ["=", "×", "="],
+                    "hint": "Amino acid calories = 69.6 g × 4 kcal/g = 278 kcal"
+                }
+            ]
+        },
+        {
+            "number": 17,
+            "tag": "caloric",
+            "question": "If amino acids have a caloric value of 4 kcal/g and the daily protein requirement is 0.7 g/kg, calculate the kilocalories administered to a patient weighing 155 lb. Round the final answer to the nearest whole number.",
+            "answerValue": [197],
+            "answerUnit": ["kcal"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Convert patient weight from pounds to kilograms",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Patient weight"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 155,
+                            "unit": "lb"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 70.5,
+                            "unit": "kg (round to the nearest tenth)"
+                        }
+                    ],
+                    "operators1": ["=", "="],
+                    "hint": "Weight: 155 lb / 2.2 = 70.5 kg"
+                },
+                {
+                    "text": "Calculate daily protein requirement",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Daily protein requirement"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 70.5,
+                            "unit": "kg"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.7,
+                            "unit": "g/kg"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 49.4,
+                            "unit": "g"
+                        }
+                    ],
+                    "operators1": ["=", "×", "="],
+                    "hint": "Daily protein requirement = 70.5 kg × 0.7 g/kg = 49.4 g"
+                },
+                {
+                    "text": "Calculate kilocalories from amino acids",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Amino acid calories"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 49.4,
+                            "unit": "g"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 4,
+                            "unit": "kcal/g"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 197,
+                            "unit": "kcal"
+                        }
+                    ],
+                    "operators1": ["=", "×", "="],
+                    "hint": "Amino acid calories = 49.4 g × 4 kcal/g = 197 kcal"
+                }
+            ]
+        },
+        {
+            "number": 18,
+            "tag": "caloric",
+            "question": "The nutritional requirements for a 58-year-old female who is 5'3\" tall and weighs 140 lb are as follow: Amino acid: 51 g/day, Lipids: 45.5 g/day, Dextrose: 184.21 g/day. How much 7% amino acid solution should be used to administer the required nutrients? Round to the nearest tenth.",
+            "answerValue": [728.6],
+            "answerUnit": ["mL"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Know the concentration of the amino acid solution",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "7% amino acid solution contains"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 7,
+                            "unit": "g/100 mL"
+                        }
+                    ],
+                    "operators1": [":"],
+                    "hint": "7% amino acid solution contains 7 g of amino acids per 100 mL of solution."
+                },
+                {
+                    "text": "Use ratio and proportion to calculate volume (mL)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 7,
+                                "unit": "g"
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": 100,
+                                "unit": "mL"
+                            }
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 51,
+                                "unit": "g"
+                            },
+                            "denominator": "x mL"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "x"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 728.6,
+                            "unit": "mL"
+                        }
+                    ],
+                    "operators2": ["="],
+                    "hint": "Using the concentration, we can set up the ratio and proportion to solve for x. 7 g / 100 mL = 51 g / x mL, and x = (51 g × 100 mL) / 7 g = 728.6 mL (rounded to the nearest tenth)"
+                }
+            ]
+        },
+        {
+            "number": 19,
+            "tag": "caloric",
+            "question": "A pharmacy is preparing a TPN order for 350 g of dextrose. How many mL of dextrose are required if the concentration of dextrose is 25%?",
+            "answerValue": [1400],
+            "answerUnit": ["mL"],
+            "rounding": false,
+            "steps": [
+                {
+                    "text": "Know the concentration of the dextrose solution",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "25% dextrose solution contains"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 25,
+                            "unit": "g/100 mL"
+                        }
+                    ],
+                    "operators1": [":"],
+                    "hint": "25% dextrose solution contains 25 g of dextrose per 100 mL of solution."
+                },
+                {
+                    "text": "Use ratio and proportion to calculate volume (mL)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 25,
+                                "unit": "g"
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": 100,
+                                "unit": "mL"
+                            }
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 350,
+                                "unit": "g"
+                            },
+                            "denominator": "x mL"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "x"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1400,
+                            "unit": "mL"
+                        }
+                    ],
+                    "operators2": ["="],
+                    "hint": "Using the concentration, we can set up the ratio and proportion to solve for x. 25 g / 100 mL = 350 g / x mL, and x = (350 g × 100 mL) / 25 g = 1400 mL"
+                }
+            ]
+        },
+        {
+            "number": 20,
+            "tag": "caloric",
+            "question": "A 45 year-old male patient is receiving 1250 mL of D30W, 1000 mL of Aminosyn 8.5%, 250 mL of Intralipid 20% and 50 mL of electrolytes/ minerals in his TPN. How many calories from dextrose is the patient receiving from the TPN?",
+            "answerValue": [1275],
+            "answerUnit": ["kcal"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Calculate grams of dextrose from D30W",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "D30W contains"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 30,
+                            "unit": "g/100 mL"
+                        }
+                    ],
+                    "operators1": [":"],
+                    "hint": "D30W contains 30 g of dextrose per 100 mL of solution."
+                },
+                {
+                    "text": "Use ratio and proportion to calculate grams of dextrose",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 30,
+                                "unit": "g"
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": 100,
+                                "unit": "mL"
+                            }
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": "x g",
+                            "denominator": {
+                                "type": "input",
+                                "answer": 1250,
+                                "unit": "mL"
+                            }
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "x"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 375,
+                            "unit": "g"
+                        }
+                    ],
+                    "operators2": ["="],
+                    "hint": "Using the concentration, we can set up the ratio and proportion to solve for x. 30 g / 100 mL = x g / 1250 mL, and x = (30 g × 1250 mL) / 100 mL = 375 g"
+                },
+                {
+                    "text": "Calculate calories from dextrose",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Dextrose calories"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 375,
+                            "unit": "g"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 3.4,
+                            "unit": "kcal/g"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1275,
+                            "unit": "kcal"
+                        }
+                    ],
+                    "operators1": ["=", "×", "="],
+                    "hint": "Dextrose calories = 375 g × 3.4 kcal/g = 1275 kcal"
+                }
+            ]
+        },
+        {
+            "number": 21,
+            "tag": "caloric",
+            "question": "If the pharmacy stocks Aminosyn 8.5%, how many calories are provided by 208 grams of proteins?",
+            "answerValue": [832],
+            "answerUnit": ["kcal"],
+            "rounding": false,
+            "steps": [
+                {
+                    "text": "Know the caloric value of protein",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Protein provides"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 4,
+                            "unit": "kcal/g"
+                        }
+                    ],
+                    "operators1": [":"],
+                    "hint": "Protein provides 4 kcal per gram."
+                },
+                {
+                    "text": "Calculate calories from protein",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Protein calories"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 208,
+                            "unit": "g"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 4,
+                            "unit": "kcal/g"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 832,
+                            "unit": "kcal"
+                        }
+                    ],
+                    "operators1": ["=", "×", "="],
+                    "hint": "Protein calories = 208 g × 4 kcal/g = 832 kcal"
+                }
+            ]
+        },
+        {
+            "number": 22,
+            "tag": "caloric",
+            "question": "CB is requiring 1.6 g/kg/day of protein and the pharmacy stocks Aminosyn 8.5%. CB is a 25 year old male (wt. 170 pounds, ht. 6'0\") who is confined to bed (activity factor 1.2) due to his current infection (stress factor 1.5). Calculate the amount of Aminosyn, in milliliters, CB should receive. Round the final answer to the nearest whole number.",
+            "answerValue": [1455],
+            "answerUnit": ["mL"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Convert patient weight from pounds to kilograms",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Patient weight"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 170,
+                            "unit": "lb"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 77.3,
+                            "unit": "kg (round to the nearest tenth)"
+                        }
+                    ],
+                    "operators1": ["=", "="],
+                    "hint": "Weight: 170 lb / 2.2 = 77.3 kg"
+                },
+                {
+                    "text": "Calculate daily protein requirement",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Daily protein requirement"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 77.3,
+                            "unit": "kg"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1.6,
+                            "unit": "g/kg"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 123.7,
+                            "unit": "g"
+                        }
+                    ],
+                    "operators1": ["=", "×", "="],
+                    "hint": "Daily protein requirement = 77.3 kg × 1.6 g/kg = 123.7 g"
+                },
+                {
+                    "text": "Calculate volume of Aminosyn 8.5% needed",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Aminosyn 8.5% contains"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 8.5,
+                            "unit": "g/100 mL"
+                        }
+                    ],
+                    "operators1": [":"],
+                    "hint": "Aminosyn 8.5% contains 8.5 g of protein per 100 mL of solution."
+                },
+                {
+                    "text": "Use ratio and proportion to calculate volume (mL)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 8.5,
+                                "unit": "g"
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": 100,
+                                "unit": "mL"
+                            }
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 123.7,
+                                "unit": "g"
+                            },
+                            "denominator": "x mL"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "x"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1455,
+                            "unit": "mL"
+                        }
+                    ],
+                    "operators2": ["="],
+                    "hint": "Using the concentration, we can set up the ratio and proportion to solve for x. 8.5 g / 100 mL = 123.7 g / x mL, and x = (123.7 g × 100 mL) / 8.5 g = 1455 mL (rounded to the nearest whole number)"
+                }
+            ]
+        },
+        {
+            "number": 23,
+            "tag": "caloric",
+            "question": "YK is receiving 720 mL of D50W in her TPN per day. How many calories does this provide per day? Round the final answer to the nearest whole number.",
+            "answerValue": [1224],
+            "answerUnit": ["kcal"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Know the caloric conversion value",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "D50W provides"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1.7,
+                            "unit": "kcal/mL"
+                        }
+                    ],
+                    "operators1": [":"],
+                    "hint": "Refer to the table in the tutorial. D50W provides 1.7 kcal/mL."
+                },
+                {
+                    "text": "Calculate calories from D50W",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "D50W calories"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 720,
+                            "unit": "mL"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1.7,
+                            "unit": "kcal/mL"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1224,
+                            "unit": "kcal"
+                        }
+                    ],
+                    "operators1": ["=", "×", "="],
+                    "hint": "D50W calories = 720 mL × 1.7 kcal/mL = 1224 kcal"
+                }
+            ]
+        },
+        {
+            "number": 24,
+            "tag": "caloric",
+            "question": "KK is requiring 1.3 g/kg/day of protein and the pharmacy stocks Aminosyn 6.5%. KK is a 47 year old female (wt. 130 pounds, ht. 5'3\") who is confined to bed (activity factor 1.2) due to her current critical illness (stress factor 1.5). Calculate the amount of Aminosyn, in milliliters, KK should receive. Round the final answer to the nearest whole number.",
+            "answerValue": [1182],
+            "answerUnit": ["mL"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Convert patient weight from pounds to kilograms",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Patient weight"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 130,
+                            "unit": "lb"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 59.1,
+                            "unit": "kg (round to the nearest tenth)"
+                        }
+                    ],
+                    "operators1": ["=", "="],
+                    "hint": "Weight: 130 lb / 2.2 = 59.1 kg"
+                },
+                {
+                    "text": "Calculate daily protein requirement",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Daily protein requirement"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 59.1,
+                            "unit": "kg"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1.3,
+                            "unit": "g/kg"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 76.8,
+                            "unit": "g"
+                        }
+                    ],
+                    "operators1": ["=", "×", "="],
+                    "hint": "Daily protein requirement = 59.1 kg × 1.3 g/kg = 76.8 g"
+                },
+                {
+                    "text": "Calculate volume of Aminosyn 6.5% needed",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Aminosyn 6.5% contains"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 6.5,
+                            "unit": "g/100 mL"
+                        }
+                    ],
+                    "operators1": [":"],
+                    "hint": "Aminosyn 6.5% contains 6.5 g of protein per 100 mL of solution."
+                },
+                {
+                    "text": "Use ratio and proportion to calculate volume (mL)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 6.5,
+                                "unit": "g"
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": 100,
+                                "unit": "mL"
+                            }
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 76.8,
+                                "unit": "g"
+                            },
+                            "denominator": "x mL"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "x"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1182,
+                            "unit": "mL"
+                        }
+                    ],
+                    "operators2": ["="],
+                    "hint": "Using the concentration, we can set up the ratio and proportion to solve for x. 6.5 g / 100 mL = 76.8 g / x mL, and x = (76.8 g × 100 mL) / 6.5 g = 1182 mL (rounded to the nearest whole number)"
+                }
+            ]
+        },
+        {
+            "number": 25,
+            "tag": "additional",
+            "question": "If the pharmacy stocks Aminosyn 7.5%, how many mL will be needed to provide 127 grams of protein? Round the final answer to the nearest whole number.",
+            "answerValue": [1693],
+            "answerUnit": ["mL"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Know the concentration of the amino acid solution",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Aminosyn 7.5% contains"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 7.5,
+                            "unit": "g/100 mL"
+                        }
+                    ],
+                    "operators1": [":"],
+                    "hint": "Aminosyn 7.5% contains 7.5 g of protein per 100 mL of solution."
+                },
+                {
+                    "text": "Use ratio and proportion to calculate volume (mL)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 7.5,
+                                "unit": "g"
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": 100,
+                                "unit": "mL"
+                            }
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 127,
+                                "unit": "g"
+                            },
+                            "denominator": "x mL"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "x"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1693,
+                            "unit": "mL"
+                        }
+                    ],
+                    "operators2": ["="],
+                    "hint": "Using the concentration, we can set up the ratio and proportion to solve for x. 7.5 g / 100 mL = 127 g / x mL, and x = (127 g × 100 mL) / 7.5 g = 1693 mL (rounded to the nearest whole number)"
+                }
+            ]
+        },
+        {
+            "number": 26,
+            "tag": "additional",
+            "question": "A nutritional formula requires 750 g of dextrose. How many milliliters of a 45% w/v dextrose injection are needed to provide the required amount of dextrose? Round the final answer to the nearest whole number. Round the final answer to the nearest whole number.",
+            "answerValue": [1667],
+            "answerUnit": ["mL"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Know the concentration of the dextrose solution",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "45% w/v dextrose injection contains"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 45,
+                            "unit": "g/100 mL"
+                        }
+                    ],
+                    "operators1": [":"],
+                    "hint": "45% w/v dextrose injection contains 45 g of dextrose per 100 mL of solution."
+                },
+                {
+                    "text": "Use ratio and proportion to calculate volume (mL)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 45,
+                                "unit": "g"
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": 100,
+                                "unit": "mL"
+                            }
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 750,
+                                "unit": "g"
+                            },
+                            "denominator": "x mL"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "x"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1667,
+                            "unit": "mL"
+                        }
+                    ],
+                    "operators2": ["="],
+                    "hint": "Using the concentration, we can set up the ratio and proportion to solve for x. 45 g / 100 mL = 750 g / x mL, and x = (750 g × 100 mL) / 45 g = 1667 mL (rounded to the nearest whole number)"
+                }
+            ]
+        },
+        {
+            "number": 27,
+            "tag": "additional",
+            "question": "If a patient requires 60 g of protein, and the source of protein is a 5% amino acid solution, how many milliliters of the solution are needed to provide this patient's requirement? Round the final answer to the nearest whole number.",
+            "answerValue": [1200],
+            "answerUnit": ["mL"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Know the concentration of the amino acid solution",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "5% amino acid solution contains"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 5,
+                            "unit": "g/100 mL"
+                        }
+                    ],
+                    "operators1": [":"],
+                    "hint": "5% amino acid solution contains 5 g of protein per 100 mL of solution."
+                },
+                {
+                    "text": "Use ratio and proportion to calculate volume (mL)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 5,
+                                "unit": "g"
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": 100,
+                                "unit": "mL"
+                            }
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 60,
+                                "unit": "g"
+                            },
+                            "denominator": "x mL"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "x"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1200,
+                            "unit": "mL"
+                        }
+                    ],
+                    "operators2": ["="],
+                    "hint": "Using the concentration, we can set up the ratio and proportion to solve for x. 5 g / 100 mL = 60 g / x mL, and x = (60 g × 100 mL) / 5 g = 1200 mL (rounded to the nearest whole number)"
+                }
+            ]
+        },
+        {
+            "number": 28,
+            "tag": "additional",
+            "question": "What is the estimated daily protein requirement for a 156-lb burn patient? Round the final answer to the nearest whole number.",
+            "answerValue": [213],
+            "answerUnit": ["g"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Convert patient weight from pounds to kilograms",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Patient weight"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 156,
+                            "unit": "lb"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 70.9,
+                            "unit": "kg (round to the nearest tenth)"
+                        }
+                    ],
+                    "operators1": ["=", "="],
+                    "hint": "Weight: 156 lb / 2.2 = 70.9 kg"
+                },
+                {
+                    "text": "Calculate daily protein requirement for burn patient",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Daily protein requirement"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 70.9,
+                            "unit": "kg"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 3,
+                            "unit": "g/kg"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 213,
+                            "unit": "g"
+                        }
+                    ],
+                    "operators1": ["=", "×", "="],
+                    "hint": "Daily protein requirement = 70.9 kg × 3 g/kg = 213 g (rounded to the nearest whole number)"
+                }
+            ]
+        },
+        {
+            "number": 29,
+            "tag": "additional",
+            "question": "Calculate the daily fluid requirement for a 17-kg child. Round the final answer to the nearest whole number.",
+            "answerValue": [1350],
+            "answerUnit": ["mL/day"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Determine the appropriate fluid requirement formula based on weight",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Patient weight"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 17,
+                            "unit": "kg"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "hint": "The patient weighs 17 kg, which falls in the 10 to 20 kg category. Use the formula: 1000 ml + 50 ml/kg/day over 10 kg"
+                },
+                {
+                    "text": "Calculate fluid requirement using the appropriate formula",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Base fluid requirement"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1000,
+                            "unit": "mL"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "Additional fluid for weight over 10 kg"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 7,
+                            "unit": "kg (17 - 10)"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 50,
+                            "unit": "mL/kg"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 350,
+                            "unit": "mL"
+                        }
+                    ],
+                    "operators2": ["=", "x"],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "Total daily fluid requirement"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1000,
+                            "unit": "mL"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 350,
+                            "unit": "mL"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1350,
+                            "unit": "mL/day"
+                        }
+                    ],
+                    "operators3": ["=", "+", "="],
+                    "hint": "Base fluid: 1000 mL <br>Additional fluid: (17 kg - 10 kg) × 50 mL/kg = 7 kg × 50 mL/kg = 350 mL <br>Total: 1000 mL + 350 mL = 1350 mL/day (rounded to the nearest whole number)"
+                }
+            ]
+        },
+        {
+            "number": 30,
+            "tag": "additional",
+            "question": "What is the estimated daily protein requirement for a 210-lb dialysis patient? Round the final answer to the nearest whole number.",
+            "answerValue": [115],
+            "answerUnit": ["g"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Convert patient weight from pounds to kilograms",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Patient weight"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 210,
+                            "unit": "lb"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 95.5,
+                            "unit": "kg (round to the nearest tenth)"
+                        }
+                    ],
+                    "operators1": ["=", "="],
+                    "hint": "Weight: 210 lb / 2.2 = 95.5 kg"
+                },
+                {
+                    "text": "Calculate daily protein requirement for dialysis patient",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Daily protein requirement"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 95.5,
+                            "unit": "kg"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1.2,
+                            "unit": "g/kg"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 115,
+                            "unit": "g"
+                        }
+                    ],
+                    "operators1": ["=", "×", "="],
+                    "hint": "Daily protein requirement = 95.5 kg × 1.2 g/kg = 115 g (rounded to the nearest whole number)"
+                }
+            ]
+        },
+        {
+            "number": 31,
+            "tag": "additional",
+            "question": "The nutritional requirements for a 58-year-old female who is 5'3'' tall and weighs 140 lb are as follow: Amino acid: 51 g/day, Lipids: 45.5 g/day, Dextrose: 184.21 g/day. How much (a) 10% lipid emulsion and (b) 50% dextrose solution should be used to administer the required nutrients? Round to the nearest tenth. Write your answer in the form of 10% lipid emulsion:50% dextrose solution.",
+            "answerValue": [455, 368.4],
+            "answerUnit": ["mL of 10% lipid emulsion", "mL of 50% dextrose solution"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Calculate volume of 10% lipid emulsion needed",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "10% lipid emulsion contains"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 10,
+                            "unit": "g/100 mL"
+                        }
+                    ],
+                    "operators1": [":"],
+                    "hint": "10% lipid emulsion contains 10 g of lipids per 100 mL of solution."
+                },
+                {
+                    "text": "Use ratio and proportion to calculate volume of lipid emulsion (mL)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 10,
+                                "unit": "g"
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": 100,
+                                "unit": "mL"
+                            }
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 45.5,
+                                "unit": "g"
+                            },
+                            "denominator": "x mL"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "x"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 455,
+                            "unit": "mL"
+                        }
+                    ],
+                    "operators2": ["="],
+                    "hint": "Using the concentration, we can set up the ratio and proportion to solve for x. 10 g / 100 mL = 45.5 g / x mL, and x = (45.5 g × 100 mL) / 10 g = 455 mL (rounded to the nearest tenth)"
+                },
+                {
+                    "text": "Calculate volume of 50% dextrose solution needed",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "50% dextrose solution contains"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 50,
+                            "unit": "g/100 mL"
+                        }
+                    ],
+                    "operators1": [":"],
+                    "hint": "50% dextrose solution contains 50 g of dextrose per 100 mL of solution."
+                },
+                {
+                    "text": "Use ratio and proportion to calculate volume of dextrose solution (mL)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 50,
+                                "unit": "g"
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": 100,
+                                "unit": "mL"
+                            }
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 184.21,
+                                "unit": "g"
+                            },
+                            "denominator": "x mL"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "x"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 368.4,
+                            "unit": "mL"
+                        }
+                    ],
+                    "operators2": ["="],
+                    "hint": "Using the concentration, we can set up the ratio and proportion to solve for x. 50 g / 100 mL = 184.21 g / x mL, and x = (184.21 g × 100 mL) / 50 g = 368.4 mL (rounded to the nearest tenth)"
+                }
+            ]
+        },
+        {
+            "number": 32,
+            "tag": "additional",
+            "question": "Using the Harris-Benedict equation, calculate (a) the daily calories required, and (b) the daily protein required for a 45-year-old man who is 5'9\" tall and weighs 212 lb. Assume no stress factor. Write your answer in the form of daily calories:daily protein.",
+            "answerValue": [1957, 77],
+            "answerUnit": ["kcal/day", "g/day"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Gather patient information and convert units if necessary",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Age (in years)"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 45,
+                            "unit": "years"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "Weight"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 212,
+                            "unit": "pounds"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 96.4,
+                            "unit": "kg (round to the nearest tenth)"
+                        }
+                    ],
+                    "operators2": ["=", "="],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "Height"
+                        },
+                        {
+                            "type": "input",
+                            "answer": "5'9\"",
+                            "unit": "feet and inches"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 69,
+                            "unit": "inches"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 175.3,
+                            "unit": "cm (round to the nearest tenth)"
+                        }
+                    ],
+                    "operators3": ["=", "=", "="],
+                    "operands4": [
+                        {
+                            "type": "text",
+                            "value": "Sex (Male or Female)"
+                        },
+                        {
+                            "type": "input",
+                            "answer": "Male",
+                            "unit": ""
+                        }
+                    ],
+                    "operators4": ["="],
+                    "hint": "Age: 45 years <br>Weight: 212 lb / 2.2 = 96.4 kg <br>Height: 5'9\" = 5 x 12 + 9 = 69 inches <br>Sex: Male"
+                },
+                {
+                    "text": "Calculate BEE using the Harris-Benedict equation",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Male: BEE"
+                        },
+                        {
+                            "type": "text",
+                            "value": "66 + (13.7 x W) + (5 x H) - (6.8 x A)"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "Male: BEE"
+                        },
+                        {
+                            "type": "text",
+                            "value": "66"
+                        },
+                        {
+                            "type": "text",
+                            "value": "13.7"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 96.4,
+                            "unit": "kg"
+                        },
+                        {
+                            "type": "text",
+                            "value": "5"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 175.3,
+                            "unit": "cm"
+                        },
+                        {
+                            "type": "text",
+                            "value": "6.8"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 45,
+                            "unit": "years"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1957,
+                            "unit": "kcal/day"
+                        }
+                    ],
+                    "operators2": ["=", "+ (", "×", ") + (", "×", ") - (", "×", ") ="],
+                    "hint": "BEE = 66 + (13.7 x 96.4) + (5 x 175.3) - (6.8 x 45) = 1957 kcal/day"
+                },
+                {
+                    "text": "Calculate daily protein requirement",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Daily protein requirement"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 96.4,
+                            "unit": "kg"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.8,
+                            "unit": "g/kg"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 77,
+                            "unit": "g/day"
+                        }
+                    ],
+                    "operators1": ["=", "×", "="],
+                    "hint": "Daily protein requirement = 96.4 kg × 0.8 g/kg = 77 g/day (rounded to the nearest whole number)"
+                }
+            ]
+        },
+        {
+            "number": 33,
+            "tag": "additional",
+            "question": "Calculate the daily protein requirement, in g/day, for a 121-lb unstressed patient. Round the final answer to the nearest whole number.",
+            "answerValue": [44],
+            "answerUnit": ["g/day"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Convert patient weight from pounds to kilograms",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Patient weight"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 121,
+                            "unit": "lb"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 55,
+                            "unit": "kg (round to the nearest whole number)"
+                        }
+                    ],
+                    "operators1": ["=", "="],
+                    "hint": "Weight: 121 lb / 2.2 = 55 kg"
+                },
+                {
+                    "text": "Calculate daily protein requirement for unstressed patient",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Daily protein requirement"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 55,
+                            "unit": "kg"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.8,
+                            "unit": "g/kg"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 44,
+                            "unit": "g/day"
+                        }
+                    ],
+                    "operators1": ["=", "×", "="],
+                    "hint": "Daily protein requirement = 55 kg × 0.8 g/kg = 44 g/day (rounded to the nearest whole number)"
+                }
+            ]
+        },
+        {
+            "number": 34,
+            "tag": "additional",
+            "question": "Using the Harris-Benedict equation and assuming no stress factor, calculate the daily calories required for a 60-year-old woman who is 5 ft. 2 in. tall and weighs 138.6 lb. Round the final answer to the nearest whole number.",
+            "answerValue": [1256],
+            "answerUnit": ["kcal/day"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Gather patient information and convert units if necessary",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Age (in years)"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 60,
+                            "unit": "years"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "Weight"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 138.6,
+                            "unit": "pounds"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 63,
+                            "unit": "kg (round to the nearest whole number)"
+                        }
+                    ],
+                    "operators2": ["=", "="],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "Height"
+                        },
+                        {
+                            "type": "input",
+                            "answer": "5'2\"",
+                            "unit": "feet and inches"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 62,
+                            "unit": "inches"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 157.5,
+                            "unit": "cm (round to the nearest tenth)"
+                        }
+                    ],
+                    "operators3": ["=", "=", "="],
+                    "operands4": [
+                        {
+                            "type": "text",
+                            "value": "Sex (Male or Female)"
+                        },
+                        {
+                            "type": "input",
+                            "answer": "Female",
+                            "unit": ""
+                        }
+                    ],
+                    "operators4": ["="],
+                    "hint": "Age: 60 years <br>Weight: 138.6 lb / 2.2 = 63 kg <br>Height: 5'2\" = 5 x 12 + 2 = 62 inches <br>Sex: Female"
+                },
+                {
+                    "text": "Calculate BEE using the Harris-Benedict equation",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Female: BEE"
+                        },
+                        {
+                            "type": "text",
+                            "value": "655 + (9.6 x W) + (1.8 x H) - (4.7 x A)"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "Female: BEE"
+                        },
+                        {
+                            "type": "text",
+                            "value": "655"
+                        },
+                        {
+                            "type": "text",
+                            "value": "9.6"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 63,
+                            "unit": "kg"
+                        },
+                        {
+                            "type": "text",
+                            "value": "1.8"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 157.5,
+                            "unit": "cm"
+                        },
+                        {
+                            "type": "text",
+                            "value": "4.7"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 60,
+                            "unit": "years"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1256,
+                            "unit": "kcal/day"
+                        }
+                    ],
+                    "operators2": ["=", "+ (", "×", ") + (", "×", ") - (", "×", ") ="],
+                    "hint": "BEE = 655 + (9.6 x 63) + (1.8 x 157.5) - (4.7 x 60) = 1256 kcal/day"
+                }
+            ]
+        },
+        {
+            "number": 35,
+            "tag": "additional",
+            "question": "Using the Harris-Benedict equation and assuming no stress factor, calculate the daily calories needed for a 50-year-old man who is 5 ft. 7 in. tall and weighs 165 lb. Round the final answer to the nearest whole number.",
+            "answerValue": [1605],
+            "answerUnit": ["kcal/day"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Gather patient information and convert units if necessary",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Age (in years)"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 50,
+                            "unit": "years"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "Weight"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 165,
+                            "unit": "pounds"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 75,
+                            "unit": "kg (round to the nearest whole number)"
+                        }
+                    ],
+                    "operators2": ["=", "="],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "Height"
+                        },
+                        {
+                            "type": "input",
+                            "answer": "5'7\"",
+                            "unit": "feet and inches"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 67,
+                            "unit": "inches"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 170.2,
+                            "unit": "cm (round to the nearest tenth)"
+                        }
+                    ],
+                    "operators3": ["=", "=", "="],
+                    "operands4": [
+                        {
+                            "type": "text",
+                            "value": "Sex (Male or Female)"
+                        },
+                        {
+                            "type": "input",
+                            "answer": "Male",
+                            "unit": ""
+                        }
+                    ],
+                    "operators4": ["="],
+                    "hint": "Age: 50 years <br>Weight: 165 lb / 2.2 = 75 kg <br>Height: 5'7\" = 5 x 12 + 7 = 67 inches <br>Sex: Male"
+                },
+                {
+                    "text": "Calculate BEE using the Harris-Benedict equation",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Male: BEE"
+                        },
+                        {
+                            "type": "text",
+                            "value": "66 + (13.7 x W) + (5 x H) - (6.8 x A)"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "Male: BEE"
+                        },
+                        {
+                            "type": "text",
+                            "value": "66"
+                        },
+                        {
+                            "type": "text",
+                            "value": "13.7"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 75,
+                            "unit": "kg"
+                        },
+                        {
+                            "type": "text",
+                            "value": "5"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 170.2,
+                            "unit": "cm"
+                        },
+                        {
+                            "type": "text",
+                            "value": "6.8"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 50,
+                            "unit": "years"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1605,
+                            "unit": "kcal/day"
+                        }
+                    ],
+                    "operators2": ["=", "+ (", "×", ") + (", "×", ") - (", "×", ") ="],
+                    "hint": "BEE = 66 + (13.7 x 75) + (5 x 170.2) - (6.8 x 50) = 1605 kcal/day"
+                }
+            ]
+        },
+        {
+            "number": 36,
+            "tag": "additional",
+            "question": "Using the Harris-Benedict equation, calculate the TPN caloric requirement for a severely stressed (hint: stress factor 1.75) 160-lb. 55-year-old male patient measuring 5 ft. 9 in. in height. Round the final answer to the nearest whole number.",
+            "answerValue": [2737],
+            "answerUnit": ["kcal/day"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Gather patient information and convert units if necessary",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Age (in years)"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 55,
+                            "unit": "years"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "Weight"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 160,
+                            "unit": "pounds"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 72.7,
+                            "unit": "kg (round to the nearest tenth)"
+                        }
+                    ],
+                    "operators2": ["=", "="],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "Height"
+                        },
+                        {
+                            "type": "input",
+                            "answer": "5'9\"",
+                            "unit": "feet and inches"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 69,
+                            "unit": "inches"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 175.3,
+                            "unit": "cm (round to the nearest tenth)"
+                        }
+                    ],
+                    "operators3": ["=", "=", "="],
+                    "operands4": [
+                        {
+                            "type": "text",
+                            "value": "Sex (Male or Female)"
+                        },
+                        {
+                            "type": "input",
+                            "answer": "Male",
+                            "unit": ""
+                        }
+                    ],
+                    "operators4": ["="],
+                    "hint": "Age: 55 years <br>Weight: 160 lb / 2.2 = 72.7 kg <br>Height: 5'9\" = 5 x 12 + 9 = 69 inches <br>Sex: Male"
+                },
+                {
+                    "text": "Calculate BEE using the Harris-Benedict equation",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Male: BEE"
+                        },
+                        {
+                            "type": "text",
+                            "value": "66 + (13.7 x W) + (5 x H) - (6.8 x A)"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "Male: BEE"
+                        },
+                        {
+                            "type": "text",
+                            "value": "66"
+                        },
+                        {
+                            "type": "text",
+                            "value": "13.7"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 72.7,
+                            "unit": "kg"
+                        },
+                        {
+                            "type": "text",
+                            "value": "5"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 175.3,
+                            "unit": "cm"
+                        },
+                        {
+                            "type": "text",
+                            "value": "6.8"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 55,
+                            "unit": "years"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1564,
+                            "unit": "kcal/day"
+                        }
+                    ],
+                    "operators2": ["=", "+ (", "×", ") + (", "×", ") - (", "×", ") ="],
+                    "hint": "BEE = 66 + (13.7 x 72.7) + (5 x 175.3) - (6.8 x 55) = 1564 kcal/day"
+                },
+                {
+                    "text": "Calculate TPN caloric requirement by applying stress factor",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "TPN caloric requirement"
+                        },
+                        {
+                            "type": "text",
+                            "value": "BEE x Stress Factor"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "TPN caloric requirement"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1564,
+                            "unit": "kcal/day"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1.75,
+                            "unit": "stress factor"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 2737,
+                            "unit": "kcal/day"
+                        }
+                    ],
+                    "operators2": ["=", "×", "="],
+                    "hint": "TPN caloric requirement = 1564 kcal/day × 1.75 = 2737 kcal/day"
+                }
+            ]
+        },
+        {
+            "number": 37,
+            "tag": "additional",
+            "question": "Using the Harris-Benedict equation, calculate the TPN caloric requirement for a renal dialysis (hint: stress factor 1.2) 120-lb. 35-year-old female patient measuring 5 ft. 4 in. in height. Round the final answer to the nearest whole number.",
+            "answerValue": [1568],
+            "answerUnit": ["kcal/day"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Gather patient information and convert units if necessary",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Age (in years)"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 35,
+                            "unit": "years"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "Weight"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 120,
+                            "unit": "pounds"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 54.5,
+                            "unit": "kg (round to the nearest tenth)"
+                        }
+                    ],
+                    "operators2": ["=", "="],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "Height"
+                        },
+                        {
+                            "type": "input",
+                            "answer": "5'4\"",
+                            "unit": "feet and inches"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 64,
+                            "unit": "inches"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 162.6,
+                            "unit": "cm (round to the nearest tenth)"
+                        }
+                    ],
+                    "operators3": ["=", "=", "="],
+                    "operands4": [
+                        {
+                            "type": "text",
+                            "value": "Sex (Male or Female)"
+                        },
+                        {
+                            "type": "input",
+                            "answer": "Female",
+                            "unit": ""
+                        }
+                    ],
+                    "operators4": ["="],
+                    "hint": "Age: 35 years <br>Weight: 120 lb / 2.2 = 54.5 kg <br>Height: 5'4\" = 5 x 12 + 4 = 64 inches <br>Sex: Female"
+                },
+                {
+                    "text": "Calculate BEE using the Harris-Benedict equation",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Female: BEE"
+                        },
+                        {
+                            "type": "text",
+                            "value": "655 + (9.6 x W) + (1.8 x H) - (4.7 x A)"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "Female: BEE"
+                        },
+                        {
+                            "type": "text",
+                            "value": "655"
+                        },
+                        {
+                            "type": "text",
+                            "value": "9.6"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 54.5,
+                            "unit": "kg"
+                        },
+                        {
+                            "type": "text",
+                            "value": "1.8"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 162.6,
+                            "unit": "cm"
+                        },
+                        {
+                            "type": "text",
+                            "value": "4.7"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 35,
+                            "unit": "years"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1307,
+                            "unit": "kcal/day"
+                        }
+                    ],
+                    "operators2": ["=", "+ (", "×", ") + (", "×", ") - (", "×", ") ="],
+                    "hint": "BEE = 655 + (9.6 x 54.5) + (1.8 x 162.6) - (4.7 x 35) = 1307 kcal/day"
+                },
+                {
+                    "text": "Calculate TPN caloric requirement by applying stress factor",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "TPN caloric requirement"
+                        },
+                        {
+                            "type": "text",
+                            "value": "BEE x Stress Factor"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "TPN caloric requirement"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1307,
+                            "unit": "kcal/day"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1.2,
+                            "unit": "stress factor"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1568,
+                            "unit": "kcal/day"
+                        }
+                    ],
+                    "operators2": ["=", "×", "="],
+                    "hint": "TPN caloric requirement = 1307 kcal/day × 1.2 = 1568 kcal/day"
+                }
+            ]
+        },
+        {
+            "number": 38,
+            "tag": "additional",
+            "question": "Using the Harris-Benedict equation, calculate the resting non-protein caloric requirement for a severely burned patient (stress factor 3) who is a 36 year old male, weighing 184.8 pounds and measures 5'10'' in height. Round the final answer to the nearest whole number.",
+            "answerValue": [5583],
+            "answerUnit": ["kcal/day"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Gather patient information and convert units if necessary",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Age (in years)"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 36,
+                            "unit": "years"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "Weight"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 184.8,
+                            "unit": "pounds"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 84,
+                            "unit": "kg (round to the nearest whole number)"
+                        }
+                    ],
+                    "operators2": ["=", "="],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "Height"
+                        },
+                        {
+                            "type": "input",
+                            "answer": "5'10\"",
+                            "unit": "feet and inches"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 70,
+                            "unit": "inches"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 177.8,
+                            "unit": "cm (round to the nearest tenth)"
+                        }
+                    ],
+                    "operators3": ["=", "=", "="],
+                    "operands4": [
+                        {
+                            "type": "text",
+                            "value": "Sex (Male or Female)"
+                        },
+                        {
+                            "type": "input",
+                            "answer": "Male",
+                            "unit": ""
+                        }
+                    ],
+                    "operators4": ["="],
+                    "hint": "Age: 36 years <br>Weight: 184.8 lb / 2.2 = 84 kg <br>Height: 5'10\" = 5 x 12 + 10 = 70 inches <br>Sex: Male"
+                },
+                {
+                    "text": "Calculate BEE using the Harris-Benedict equation",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Male: BEE"
+                        },
+                        {
+                            "type": "text",
+                            "value": "66 + (13.7 x W) + (5 x H) - (6.8 x A)"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "Male: BEE"
+                        },
+                        {
+                            "type": "text",
+                            "value": "66"
+                        },
+                        {
+                            "type": "text",
+                            "value": "13.7"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 84,
+                            "unit": "kg"
+                        },
+                        {
+                            "type": "text",
+                            "value": "5"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 177.8,
+                            "unit": "cm"
+                        },
+                        {
+                            "type": "text",
+                            "value": "6.8"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 36,
+                            "unit": "years"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1861,
+                            "unit": "kcal/day"
+                        }
+                    ],
+                    "operators2": ["=", "+ (", "×", ") + (", "×", ") - (", "×", ") ="],
+                    "hint": "BEE = 66 + (13.7 x 84) + (5 x 177.8) - (6.8 x 36) = 1861 kcal/day"
+                },
+                {
+                    "text": "Calculate resting non-protein caloric requirement by applying stress factor",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Resting non-protein caloric requirement"
+                        },
+                        {
+                            "type": "text",
+                            "value": "BEE x Stress Factor"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "Resting non-protein caloric requirement"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1861,
+                            "unit": "kcal/day"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 3,
+                            "unit": "stress factor"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 5583,
+                            "unit": "kcal/day"
+                        }
+                    ],
+                    "operators2": ["=", "×", "="],
+                    "hint": "Resting non-protein caloric requirement = 1861 kcal/day × 3 = 5583 kcal/day"
+                }
+            ]
+        },
+        {
+            "number": 39,
+            "tag": "additional",
+            "question": "Using the Harris-Benedict equation, calculate the total daily energy expenditure (TDE) for JJ who is a major trauma patient (stress factor 1.5). JJ is a 73 year old male, weighing 165 pounds and measures 5'9'' in height. Activity factor is 1.2. Round the final answer to the nearest whole number.",
+            "answerValue": [2653],
+            "answerUnit": ["kcal/day"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Gather patient information and convert units if necessary",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Age (in years)"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 73,
+                            "unit": "years"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "Weight"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 165,
+                            "unit": "pounds"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 75,
+                            "unit": "kg (round to the nearest whole number)"
+                        }
+                    ],
+                    "operators2": ["=", "="],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "Height"
+                        },
+                        {
+                            "type": "input",
+                            "answer": "5'9\"",
+                            "unit": "feet and inches"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 69,
+                            "unit": "inches"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 175.3,
+                            "unit": "cm (round to the nearest tenth)"
+                        }
+                    ],
+                    "operators3": ["=", "=", "="],
+                    "operands4": [
+                        {
+                            "type": "text",
+                            "value": "Sex (Male or Female)"
+                        },
+                        {
+                            "type": "input",
+                            "answer": "Male",
+                            "unit": ""
+                        }
+                    ],
+                    "operators4": ["="],
+                    "hint": "Age: 73 years <br>Weight: 165 lb / 2.2 = 75 kg <br>Height: 5'9\" = 5 x 12 + 9 = 69 inches <br>Sex: Male"
+                },
+                {
+                    "text": "Calculate BEE using the Harris-Benedict equation",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Male: BEE"
+                        },
+                        {
+                            "type": "text",
+                            "value": "66 + (13.7 x W) + (5 x H) - (6.8 x A)"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "Male: BEE"
+                        },
+                        {
+                            "type": "text",
+                            "value": "66"
+                        },
+                        {
+                            "type": "text",
+                            "value": "13.7"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 75,
+                            "unit": "kg"
+                        },
+                        {
+                            "type": "text",
+                            "value": "5"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 175.3,
+                            "unit": "cm"
+                        },
+                        {
+                            "type": "text",
+                            "value": "6.8"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 73,
+                            "unit": "years"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1474,
+                            "unit": "kcal/day"
+                        }
+                    ],
+                    "operators2": ["=", "+ (", "×", ") + (", "×", ") - (", "×", ") ="],
+                    "hint": "BEE = 66 + (13.7 x 75) + (5 x 175.3) - (6.8 x 73) = 1474 kcal/day"
+                },
+                {
+                    "text": "Calculate TDE by applying stress and activity factors",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "TDE"
+                        },
+                        {
+                            "type": "text",
+                            "value": "BEE x Stress Factor x Activity Factor"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "TDE"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1474,
+                            "unit": "kcal/day"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1.5,
+                            "unit": "stress factor"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1.2,
+                            "unit": "activity factor"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 2653,
+                            "unit": "kcal/day"
+                        }
+                    ],
+                    "operators2": ["=", "×", "×", "="],
+                    "hint": "TDE = 1474 kcal/day × 1.5 × 1.2 = 2653 kcal/day"
+                }
+            ]
+        },
+        {
+            "number": 40,
+            "tag": "additional",
+            "question": "Using the Harris-Benedict equation, calculate the total daily energy expenditure (TDE) for AC who is a renal dialysis patient (stress factor 1.2). AC is a 58 year old female, weighing 110 pounds and measures 5'2'' in height. Activity factor is 1.2. Round the final answer to the nearest whole number.",
+            "answerValue": [1650],
+            "answerUnit": ["kcal/day"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Gather patient information and convert units if necessary",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Age (in years)"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 58,
+                            "unit": "years"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "Weight"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 110,
+                            "unit": "pounds"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 50,
+                            "unit": "kg (round to the nearest whole number)"
+                        }
+                    ],
+                    "operators2": ["=", "="],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "Height"
+                        },
+                        {
+                            "type": "input",
+                            "answer": "5'2\"",
+                            "unit": "feet and inches"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 62,
+                            "unit": "inches"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 157.5,
+                            "unit": "cm (round to the nearest tenth)"
+                        }
+                    ],
+                    "operators3": ["=", "=", "="],
+                    "operands4": [
+                        {
+                            "type": "text",
+                            "value": "Sex (Male or Female)"
+                        },
+                        {
+                            "type": "input",
+                            "answer": "Female",
+                            "unit": ""
+                        }
+                    ],
+                    "operators4": ["="],
+                    "hint": "Age: 58 years <br>Weight: 110 lb / 2.2 = 50 kg <br>Height: 5'2\" = 5 x 12 + 2 = 62 inches <br>Sex: Female"
+                },
+                {
+                    "text": "Calculate BEE using the Harris-Benedict equation",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Female: BEE"
+                        },
+                        {
+                            "type": "text",
+                            "value": "655 + (9.6 x W) + (1.8 x H) - (4.7 x A)"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "Female: BEE"
+                        },
+                        {
+                            "type": "text",
+                            "value": "655"
+                        },
+                        {
+                            "type": "text",
+                            "value": "9.6"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 50,
+                            "unit": "kg"
+                        },
+                        {
+                            "type": "text",
+                            "value": "1.8"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 157.5,
+                            "unit": "cm"
+                        },
+                        {
+                            "type": "text",
+                            "value": "4.7"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 58,
+                            "unit": "years"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1146,
+                            "unit": "kcal/day"
+                        }
+                    ],
+                    "operators2": ["=", "+ (", "×", ") + (", "×", ") - (", "×", ") ="],
+                    "hint": "BEE = 655 + (9.6 x 50) + (1.8 x 157.5) - (4.7 x 58) = 1146 kcal/day"
+                },
+                {
+                    "text": "Calculate TDE by applying stress and activity factors",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "TDE"
+                        },
+                        {
+                            "type": "text",
+                            "value": "BEE x Stress Factor x Activity Factor"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "TDE"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1146,
+                            "unit": "kcal/day"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1.2,
+                            "unit": "stress factor"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1.2,
+                            "unit": "activity factor"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1650,
+                            "unit": "kcal/day"
+                        }
+                    ],
+                    "operators2": ["=", "×", "×", "="],
+                    "hint": "TDE = 1146 kcal/day × 1.2 × 1.2 = 1650 kcal/day"
+                }
+            ]
+        }
+    ]
+}

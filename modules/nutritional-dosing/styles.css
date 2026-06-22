@@ -1,0 +1,608 @@
+/* ================== */
+/* CLASSES USED IN INDEX.HTML */
+/* ================== */
+
+/* Tutorial Cards */
+.tutorial-card {
+    animation: fadeIn 0.5s ease;
+}
+
+.tutorial-section {
+    margin-bottom: var(--spacing-xl);
+}
+
+.section-divider {
+    height: 1px;
+    background-color: var(--border-color);
+    margin: var(--spacing-xl) 0;
+}
+
+/* Factors Grid Layout */
+.factors-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-lg);
+    margin: var(--spacing-xl) auto var(--spacing-md) auto;
+}
+
+.activity-factors,
+.stress-factors {
+    padding: 0;
+}
+
+@media (max-width: 768px) {
+    .factors-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+}
+
+/* Example Calculations */
+.example-calculation {
+    border-radius: var(--border-radius);
+    border: 2px solid var(--border-color);
+    padding: var(--spacing-md);
+    margin: var(--spacing-md) 0;
+    position: relative; 
+}
+
+.example-calculation p {
+    margin: var(--spacing-xs) 0;
+}
+
+.example-calculation ul {
+    padding-left: 20px;
+    margin: var(--spacing-sm) 0;
+}
+
+/* Equations and Fractions */
+.fraction {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    margin: 0 5px;
+}
+
+.fraction-numerator,
+.fraction-denominator {
+    display: block;
+    padding: 3px;
+}
+
+.fraction-numerator {
+    border-bottom: 1px solid var(--text-color, #000);
+}
+
+.horizontal-operation {
+    margin: var(--spacing-sm) 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--spacing-xs);
+}
+
+/* Each OPERATION step can stack several equation lines (operands1, operands2,
+   ...); keep them on separate rows with a little breathing room. */
+.operation-line-container {
+    display: block;
+}
+
+.operation-line-container + .operation-line-container {
+    margin-top: var(--spacing-sm);
+}
+
+/* Step Navigation Styles */
+.step-content {
+    margin-bottom: var(--spacing-lg);
+    display: none;
+}
+  
+.step-content.active {
+    display: block;
+    animation: fadeIn 0.3s ease-in-out;
+}
+  
+.step-title {
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-md);
+}
+  
+.step-instructions {
+    border-left: 3px solid var(--primary-color);
+    padding: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+}
+  
+.step-instructions ol {
+    margin: 0;
+    padding-left: 20px;
+}
+  
+.step-instructions li {
+    margin-bottom: var(--spacing-xs);
+}
+  
+.tutorial-steps {
+    position: relative;
+    min-height: 250px;
+    padding: 0 var(--spacing-lg);
+}
+  
+.step-navigation {
+    margin-top: var(--spacing-lg);
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Important example containers */
+.important {
+    border: 3px solid var(--primary-color);
+    border-radius: var(--card-radius);
+    padding: var(--spacing-md);
+    margin: var(--spacing-lg) 0;
+    background-color: var(--important-bg);
+}
+
+/* Layout for the section containing the percent table and matching button */
+#importantToRememberSection.important {
+    display: flex;
+    flex-direction: column; 
+}
+
+.important-header-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: var(--spacing-xxl); 
+}
+
+.important-header-row .important-text {
+    color: var(--primary-color);
+    text-align: center;
+    margin-top: 0;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/* Tables */
+.wide-metric-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: var(--spacing-md) 0;
+}
+
+.wide-metric-table th {
+    background-color: var(--primary-color);
+    color: white;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    text-align: left;
+}
+
+.wide-metric-table td {
+    border: 1px solid var(--border-color);
+    padding: var(--spacing-xs) var(--spacing-sm);
+}
+
+/* Nutritional Table Styles */
+.nutritional-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: var(--spacing-md) 0;
+    border: 1px solid #000;
+}
+
+/* Regular header and data cell styles */
+.header-usual,
+.header-enteral,
+.header-parenteral,
+.header-enteral-cal,
+.header-parenteral-cal {
+    border: 1px solid #000;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+.carbs-usual, .carbs-enteral, .carbs-enteral-cal, .carbs-parenteral, .carbs-parenteral-cal,
+.lipids-usual, .lipids-enteral, .lipids-enteral-cal, .lipids-parenteral, .lipids-parenteral-cal,
+.proteins-usual, .proteins-enteral, .proteins-enteral-cal, .proteins-parenteral, .proteins-parenteral-cal {
+    border: 1px solid #000;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* Header color styles */
+.header-usual,
+.header-enteral,
+.header-parenteral {
+    color: var(--text-color);
+}
+
+.header-enteral-cal,
+.header-parenteral-cal {
+    color: var(--incorrect-color);
+}
+
+/* Separator column - no borders, no padding */
+.header-separator,
+.separator {
+    background-color: #cccccc;
+    width: 15px;
+    border: none;
+    padding: 0;
+}
+
+/* Carbs row (green) */
+.carbs-usual,
+.carbs-enteral,
+.carbs-enteral-cal,
+.carbs-parenteral,
+.carbs-parenteral-cal {
+    background-color: #c8e6c9;
+}
+
+/* Lipids row (yellow) */
+.lipids-usual,
+.lipids-enteral,
+.lipids-enteral-cal,
+.lipids-parenteral,
+.lipids-parenteral-cal {
+    background-color: #fff9c4;
+}
+
+/* Proteins row (purple) */
+.proteins-usual,
+.proteins-enteral,
+.proteins-enteral-cal,
+.proteins-parenteral,
+.proteins-parenteral-cal {
+    background-color: #e1bee7;
+}
+
+.carbs-usual,
+.lipids-usual,
+.proteins-usual {
+    font-weight: bold;
+    color: var(--incorrect-color);
+}
+
+/* Collapsible Tutorial Topic Styles */
+.tutorial-topic-header {
+    background-color: transparent;
+    color: var(--primary-color);
+    padding: var(--spacing-xs, 8px) 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: color 0.2s;
+}
+
+.tutorial-topic-header:hover {
+    background-color: transparent;
+    color: var(--primary-dark, #1565c0);
+}
+
+.tutorial-topic-header h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.expand-icon {
+    font-size: 1.2rem;
+    transition: transform 0.2s;
+}
+
+.tutorial-topic-header.active .expand-icon {
+    transform: rotate(45deg);
+}
+
+.tutorial-topic-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
+    padding: 0;
+}
+
+.tutorial-topic-content.expanded {
+    max-height: 9999px; 
+    padding: var(--spacing-sm, 10px) 0;
+    overflow: visible;
+    position: relative;
+}
+
+/* ================== */
+/* STYLES FOR PRACTICE.HTML */
+/* ================== */
+
+.question-content-wrapper {
+    text-indent: -2.5em;
+    padding-left: 2.5em;
+    margin-top: var(--spacing-sm);
+}
+
+/* Question Tags */
+.question-tag {
+    display: inline-block;
+    padding: 2px var(--spacing-xs);
+    margin-bottom: var(--spacing-sm);
+    border: 1px solid var(--primary-color);
+    border-radius: var(--button-radius);
+    color: var(--primary-color);
+    font-size: 0.9rem;
+    font-weight: 500;
+    align-self: flex-start;
+}
+
+.question-tag.bee {
+    border-color: var(--filter-color-one);
+    color: var(--filter-color-one);
+}
+
+.question-tag.caloric {
+    border-color: var(--filter-color-two);
+    color: var(--filter-color-two);
+}
+
+.question-tag.additional {
+    border-color: var(--filter-color-three);
+    color: var(--filter-color-three);
+}
+
+.question, .solution-question {
+  display: flex;
+  flex-direction: column;
+}
+
+.answer-container {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-md);
+}
+
+.answer-container input {
+    flex: 0 0 auto;
+    width: 120px;
+}
+
+.answer-container .unit {
+    flex: 0 0 auto;
+}
+
+/* Step Container Styles */
+.steps-container {
+    margin-top: var(--spacing-lg);
+    border-left: 3px solid var(--accent-color);
+    padding-left: var(--spacing-md);
+    display: none;
+}
+
+.solution-steps {
+    display: block;
+    margin-top: var(--spacing-md);
+    border-left: 3px solid var(--accent-color);
+    padding-left: var(--spacing-md);
+}
+
+.step {
+    margin-bottom: var(--spacing-lg);
+    padding-bottom: var(--spacing-lg);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.step:last-child {
+    border-bottom: none;
+}
+
+.step-label {
+    font-weight: 600;
+    margin-bottom: var(--spacing-md);
+    color: var(--primary-color);
+    font-size: 1.1rem;
+}
+
+.steps-container .equation-container,
+.steps-container .operation-container,
+.solution-steps .equation-container,
+.solution-steps .operation-container {
+    margin: var(--spacing-md) 0;
+}
+
+/* Step Button Containers */
+.check-btn-container {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+    gap: var(--spacing-sm);
+    margin-top: var(--spacing-md); 
+}
+
+/* Reset Button Styles */
+.step-reset-btn {
+    background-color: var(--accent-color);
+}
+
+.step-reset-btn:hover {
+    background-color: var(--accent-dark);
+}
+
+.step-next-btn-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: var(--spacing-md);
+}
+
+/* Hybrid Operand Styling */
+.operand-hybrid {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.operand-hybrid input {
+    margin: 0;
+}
+
+/* Results Card */
+#results {
+    text-align: center;
+}
+
+.results-title {
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-md);
+    color: var(--primary-color);
+}
+
+.results-message {
+    font-size: 1.2rem;
+    margin-bottom: var(--spacing-xl);
+}
+
+.clear-progress-container {
+    margin-top: var(--spacing-lg);
+    text-align: center;
+}
+
+/* Reference Card Styles */
+/* All reference card styles are now in master.css */
+/* This module uses the default side-by-side layout for two cards */
+
+/* History Panel Styles */
+
+/* Base history panel styles are now in master.css */
+
+/* Module-specific history section title colors */
+.history-section-title.bee-title {
+    color: var(--filter-color-one);
+    border-bottom-color: var(--filter-color-one);
+}
+
+.history-section-title.caloric-title {
+    color: var(--filter-color-two);
+    border-bottom-color: var(--filter-color-two);
+}
+
+.history-section-title.additional-title {
+    color: var(--filter-color-three);
+    border-bottom-color: var(--filter-color-three);
+}
+
+/* Completed question buttons, colored to match their category */
+.history-question-button.bee.completed {
+    background-color: var(--filter-color-one);
+}
+
+.history-question-button.caloric.completed {
+    background-color: var(--filter-color-two);
+}
+
+.history-question-button.additional.completed {
+    background-color: var(--filter-color-three);
+}
+
+/* Filter Container Styles */
+.filter-container {
+    margin: calc(var(--spacing-xl) * 1.5) 0 var(--spacing-md) 0;
+    padding-left: var(--spacing-sm);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .filter-title {
+    margin-right: var(--spacing-md);
+    color: var(--text-color);
+  }
+  
+  .filter-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+  }
+  
+  .filter-option {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    border-radius: var(--button-radius);
+    padding: 2px var(--spacing-xs);
+    border: 1px solid var(--filter-color-one);
+    margin-right: 5px;
+    transition: all 0.2s ease;
+  }
+  
+  .filter-option input[type="checkbox"] {
+    margin-right: 5px;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .filter-label {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--filter-color-one);
+  }
+  
+  .filter-option:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+  
+  .filter-option input[type="checkbox"]:checked + .filter-label {
+    font-weight: 600;
+  }
+  
+  /* Filter Option Colors */
+  .filter-option:nth-child(1) {
+      border-color: var(--filter-color-one);
+  }
+  
+  .filter-option:nth-child(1) .filter-label {
+      color: var(--filter-color-one);
+  }
+  
+  .filter-option:nth-child(2) {
+      border-color: var(--filter-color-two);
+  }
+  
+  .filter-option:nth-child(2) .filter-label {
+      color: var(--filter-color-two);
+  }
+  
+  .filter-option:nth-child(3) {
+      border-color: var(--filter-color-three);
+  }
+  
+  .filter-option:nth-child(3) .filter-label {
+      color: var(--filter-color-three);
+  }
+
+/* Animation removed - using fadeIn from master.css */
+
+/* ================== */
+/* RESPONSIVE DESIGN */
+/* ================== */
+
+@media (max-width: 768px) {
+    .reference-container {
+        flex-direction: column;
+    }
+    
+    .reference-card {
+       flex-basis: 100%;
+    }
+}
+
+.box-input,
+.answer-input {
+  width: 120px; /* Set a fixed width for all input boxes */
+  padding: 8px;
+  border: 1px solid var(--border-color);
+}

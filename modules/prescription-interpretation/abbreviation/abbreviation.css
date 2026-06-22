@@ -1,0 +1,425 @@
+/* Custom styles for the balloon game that extend/override master.css */
+
+/* Game card */
+#game-card {
+  position: relative;
+  min-height: 500px;
+  padding-top: 60px;
+  padding-bottom: 10px;
+  margin-bottom: 0;
+  overflow: hidden;
+  background-image: linear-gradient(to bottom, #b3e0ff, #e6f7ff);
+}
+
+/* Question container */
+.question-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #5e88c0;
+  color: white;
+  padding: 15px;
+  font-size: 24px;
+  text-align: center;
+  border-bottom: 4px solid #4a6f9c;
+  z-index: 10;
+  margin-bottom: 20px;
+}
+
+.question {
+  margin: 0;
+  font-size: 24px;
+}
+
+/* Game stats styling */
+#score-container, #level-indicator, #lives-container {
+  background-color: transparent;
+  box-shadow: none;
+  margin: 10px 0 0 0;
+  display: block;
+  width: 180px;
+  padding: 0;
+  font-weight: bold;
+  z-index: 5;
+  position: relative;
+}
+
+#score-container {
+  margin-top: 30px;
+}
+
+#level-indicator {
+  position: absolute; 
+  top: 80px;
+  left: 50%;
+  transform: translateX(-30%);
+}
+
+.game-stat {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 8px 15px;
+  border-radius: 8px;
+  margin-right: 10px;
+  margin-bottom: 3px;
+  font-size: 18px;
+  text-align: left;
+  font-weight: 500;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#score-container .game-stat-value, 
+#level-indicator .game-stat-value, 
+#lives-container .game-stat-value {
+  font-weight: bold;
+}
+
+/* Hearts display */
+#hearts-display {
+  color: #e74c3c;
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 1;
+}
+
+/* Progress container and bar */
+.progress-container {
+  background-color: #f0f0f0;
+  height: 10px;
+  border-radius: 5px;
+  margin: 20px 0;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: var(--primary-color);
+  width: 0%;
+  transition: width 0.3s ease;
+}
+
+/* Difficulty selector styles */
+.difficulty-selector {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 40px 0 10px 0;
+  padding: 0 10px;
+}
+
+.difficulty-selector label {
+  font-size: 16px;
+  color: #333;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.difficulty-dropdown {
+  padding: 6px 12px;
+  font-size: 16px;
+  border: 2px solid var(--primary-color);
+  border-radius: 4px;
+  background-color: white;
+  cursor: pointer;
+  min-width: 200px;
+}
+
+.difficulty-dropdown:focus {
+  outline: none;
+  border-color: var(--secondary-color);
+  box-shadow: 0 0 0 2px rgba(46, 204, 113, 0.2);
+}
+/* Popup screens (game over, start game, victory) - shared properties */
+#game-over, #start-game, #victory-screen {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--card-background);
+  padding: 20px 30px;
+  text-align: center;
+  z-index: 100;
+  border-radius: var(--card-radius);
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 60%;
+  max-width: 400px;
+  height: 45%;
+  min-height: 200px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#game-over h1, #start-game h1, #victory-screen h1 {
+  color: var(--primary-color);
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+/* Start game specific styles */
+#start-game {
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+#start-game h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.game-description {
+  font-size: 17px;
+  color: black;
+  line-height: 1.3;
+  margin: 10px 0;
+  font-weight: 500;
+  max-width: 100%;
+}
+
+/* Victory screen specific styles */
+#victory-screen {
+  background-color: rgba(232, 248, 255, 0.97);
+  border: 2px solid #63a4ff;
+  justify-content: space-around;
+}
+
+#victory-screen h1 {
+  color: #2980b9;
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+#victory-screen p {
+  margin: 5px 0;
+  line-height: 1.3;
+}
+
+#victory-score {
+  color: #2ecc71;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+#final-score {
+  color: var(--primary-color);
+  font-size: 1.4rem;
+}
+
+/* Game over specific styles */
+#game-over p:first-of-type {
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+#last-answer-container {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  padding: 10px 0;
+  margin: 5px 0;
+}
+
+#last-correct-answer {
+  color: var(--correct-color);
+}
+
+/* Button styling */
+.button-container {
+  margin-top: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#victory-screen .button-container {
+  margin-top: 10px;
+}
+
+#restart-button, #start-button, #victory-restart-button {
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#start-button {
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 4px;
+}
+
+#restart-button:hover, #start-button:hover, #victory-restart-button:hover {
+  background-color: var(--secondary-dark);
+}
+
+#start-button:hover {
+  transform: scale(1.05);
+}
+
+/* Balloon styling */
+.balloon-icon {
+  width: 60px;
+  height: 60px;
+  background-image: url('balloon-icon.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 5px 0;
+  animation: floatBalloon 2s ease-in-out infinite;
+}
+
+/* Victory balloons */
+.victory-balloons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+  margin: 5px 0;
+  position: relative;
+}
+
+.victory-balloons .balloon-icon {
+  width: 45px;
+  height: 45px;
+  margin: 0 8px;
+  position: relative;
+}
+
+.balloon-left {
+  animation: floatBalloon 2.5s ease-in-out infinite;
+  animation-delay: 0.2s;
+}
+
+.balloon-center {
+  width: 55px !important;
+  height: 55px !important;
+  animation: floatBalloon 3s ease-in-out infinite;
+}
+
+.balloon-right {
+  animation: floatBalloon 2.7s ease-in-out infinite;
+  animation-delay: 0.5s;
+}
+
+/* Game balloons */
+.balloon {
+  position: absolute;
+  cursor: pointer;
+  user-select: none;
+  text-align: center;
+  transition: transform 0.2s;
+  z-index: 2;
+}
+
+.balloon-string {
+  position: absolute;
+  top: 122px;
+  left: 50%;
+  width: 2px;
+  background-color: var(--accent-color);
+  transform: translateX(-50%);
+}
+
+.balloon-body {
+  width: 100px;
+  height: 120px;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 0 8px;
+  box-shadow: inset -8px -8px 16px rgba(0, 0, 0, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.balloon:hover {
+  transform: scale(1.05);
+}
+
+.feedback {
+  margin: 0;
+  width: 100%;
+}
+
+/* Animation classes */
+.correct-animation {
+  animation: correctPop 0.5s forwards;
+}
+
+.incorrect-animation {
+  animation: incorrectPop 0.5s forwards;
+}
+
+@keyframes correctPop {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.3); }
+  100% { transform: scale(0); opacity: 0; }
+}
+
+@keyframes incorrectPop {
+  0% { transform: scale(1); }
+  20% { transform: scale(1.2) rotate(10deg); }
+  40% { transform: scale(1.1) rotate(-10deg); }
+  60% { transform: scale(1) rotate(5deg); }
+  80% { transform: scale(0.9) rotate(-5deg); }
+  100% { transform: scale(0); opacity: 0; }
+}
+
+@keyframes floatBalloon {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Cloud decorations */
+.cloud {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  animation: floatCloud linear infinite;
+  z-index: 1;
+}
+
+/* Level up animation */
+.level-up {
+  animation: levelUpPulse 1s ease;
+}
+
+@keyframes levelUpPulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+  
+  #game-card {
+    min-height: 400px;
+    padding: 60px 10px 10px;
+  }
+  
+  .game-stat {
+    font-size: 16px;
+    padding: 5px 10px;
+  }
+  
+  .balloon-body {
+    width: 100px;
+    height: 120px;
+    font-size: 16px;
+  }
+}

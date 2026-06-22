@@ -1,0 +1,621 @@
+/* ================== */
+/* CLASSES USED IN INDEX.HTML */
+/* ================== */
+
+/* Tutorial Cards */
+.tutorial-card {
+    animation: fadeIn 0.5s ease;
+}
+
+.tutorial-section {
+    margin-bottom: var(--spacing-xl);
+}
+
+.section-divider {
+    height: 1px;
+    background-color: var(--border-color);
+    margin: var(--spacing-xl) 0;
+}
+
+/* Example Calculations */
+.example-calculation {
+    border-radius: var(--border-radius);
+    border: 2px solid var(--border-color);
+    padding: var(--spacing-md);
+    margin: var(--spacing-md) 0;
+    position: relative; 
+}
+
+.example-calculation p {
+    margin: var(--spacing-xs) 0;
+}
+
+.example-calculation ul {
+    padding-left: 20px;
+    margin: var(--spacing-sm) 0;
+}
+
+/* Equations and Fractions */
+.fraction {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    margin: 0 5px;
+}
+
+.fraction-numerator,
+.fraction-denominator {
+    display: block;
+    padding: 3px;
+}
+
+.fraction-numerator {
+    border-bottom: 1px solid var(--text-color, #000);
+}
+
+.horizontal-operation {
+    margin: var(--spacing-sm) 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--spacing-xs);
+}
+
+/* Each OPERATION/PROPORTION step can stack several equation lines (operands1,
+   operands2, ...); keep them on separate rows with a little breathing room. */
+.operation-line-container {
+    display: block;
+}
+
+.operation-line-container + .operation-line-container {
+    margin-top: var(--spacing-sm);
+}
+
+/* Step Navigation Styles */
+.step-content {
+    margin-bottom: var(--spacing-lg);
+    display: none;
+}
+  
+.step-content.active {
+    display: block;
+    animation: fadeIn 0.3s ease-in-out;
+}
+  
+.step-title {
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-md);
+}
+  
+.step-instructions {
+    border-left: 3px solid var(--primary-color);
+    padding: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+}
+  
+.step-instructions ol {
+    margin: 0;
+    padding-left: 20px;
+}
+  
+.step-instructions li {
+    margin-bottom: var(--spacing-xs);
+}
+  
+.tutorial-steps {
+    position: relative;
+    min-height: 250px;
+    padding: 0 var(--spacing-lg);
+}
+  
+.step-navigation {
+    margin-top: var(--spacing-lg);
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Important example containers */
+.important {
+    border: 3px solid var(--primary-color);
+    border-radius: var(--card-radius);
+    padding: var(--spacing-md);
+    margin: var(--spacing-lg) 0;
+    background-color: var(--important-bg);
+}
+
+/* Layout for the section containing the percent table and matching button */
+#importantToRememberSection.important {
+    display: flex;
+    flex-direction: column; 
+}
+
+.important-header-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: var(--spacing-xxl); 
+}
+
+.important-header-row .important-text {
+    color: var(--primary-color);
+    text-align: center;
+    margin-top: 0;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/* Tables */
+.wide-metric-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: var(--spacing-md) 0;
+}
+
+.wide-metric-table th {
+    background-color: var(--primary-color);
+    color: white;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    text-align: left;
+}
+
+.wide-metric-table td {
+    border: 1px solid var(--border-color);
+    padding: var(--spacing-xs) var(--spacing-sm);
+}
+
+.prefix-cell {
+    font-weight: 500;
+}
+
+.value-cell {
+    font-family: monospace;
+}
+
+.equation {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--spacing-xs);
+    margin: var(--spacing-md) 0;
+}
+
+.eq-operator {
+    margin: 0 var(--spacing-xs);
+    font-weight: bold;
+}
+
+.proportion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: var(--spacing-md) 0;
+}
+
+/* Collapsible Tutorial Topic Styles */
+.tutorial-topic-header {
+    background-color: transparent;
+    color: var(--primary-color);
+    padding: var(--spacing-xs, 8px) 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: color 0.2s;
+}
+
+.tutorial-topic-header:hover {
+    background-color: transparent;
+    color: var(--primary-dark, #1565c0);
+}
+
+.tutorial-topic-header h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.expand-icon {
+    font-size: 1.2rem;
+    transition: transform 0.2s;
+}
+
+.tutorial-topic-header.active .expand-icon {
+    transform: rotate(45deg);
+}
+
+.tutorial-topic-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
+    padding: 0;
+}
+
+.tutorial-topic-content.expanded {
+    max-height: 9999px; 
+    padding: var(--spacing-sm, 10px) 0;
+    overflow: visible;
+    position: relative;
+}
+
+/* ================== */
+/* STYLES FOR PRACTICE.HTML */
+/* ================== */
+
+.question-content-wrapper {
+    text-indent: -2.5em;
+    padding-left: 2.5em;
+    margin-top: var(--spacing-sm);
+}
+
+/* Question Tags */
+.question-tag {
+    display: inline-block;
+    padding: 2px var(--spacing-xs);
+    margin-bottom: var(--spacing-sm);
+    border: 1px solid var(--primary-color);
+    border-radius: var(--button-radius);
+    color: var(--primary-color);
+    font-size: 0.9rem;
+    font-weight: 500;
+    align-self: flex-start;
+}
+
+.question-tag.mosmolarity {
+    border-color: var(--filter-color-one);
+    color: var(--filter-color-one);
+}
+
+.question-tag.mosmole {
+    border-color: var(--filter-color-two);
+    color: var(--filter-color-two);
+}
+
+.question, .solution-question {
+  display: flex;
+  flex-direction: column;
+}
+
+.answer-container {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-md);
+}
+
+.answer-container input {
+    flex: 0 0 auto;
+    width: 120px;
+}
+
+.answer-container .unit {
+    flex: 0 0 auto;
+}
+
+/* Step Container Styles */
+.steps-container {
+    margin-top: var(--spacing-lg);
+    border-left: 3px solid var(--accent-color);
+    padding-left: var(--spacing-md);
+    display: none;
+}
+
+.solution-steps {
+    display: block;
+    margin-top: var(--spacing-md);
+    border-left: 3px solid var(--accent-color);
+    padding-left: var(--spacing-md);
+}
+
+.step {
+    margin-bottom: var(--spacing-lg);
+    padding-bottom: var(--spacing-lg);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.step:last-child {
+    border-bottom: none;
+}
+
+.step-label {
+    font-weight: 600;
+    margin-bottom: var(--spacing-md);
+    color: var(--primary-color);
+    font-size: 1.1rem;
+}
+
+.steps-container .equation-container,
+.steps-container .operation-container,
+.solution-steps .equation-container,
+.solution-steps .operation-container {
+    margin: var(--spacing-md) 0;
+}
+
+/* Step Button Containers */
+.check-btn-container {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+    gap: var(--spacing-sm);
+    margin-top: var(--spacing-md); 
+}
+
+/* Reset Button Styles */
+.step-reset-btn {
+    background-color: var(--accent-color);
+}
+
+.step-reset-btn:hover {
+    background-color: var(--accent-dark);
+}
+
+.step-next-btn-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: var(--spacing-md);
+}
+
+/* Hybrid Operand Styling */
+.operand-hybrid {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.operand-hybrid input {
+    margin: 0;
+}
+
+/* Results Card */
+#results {
+    text-align: center;
+}
+
+.results-title {
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-md);
+    color: var(--primary-color);
+}
+
+.results-message {
+    font-size: 1.2rem;
+    margin-bottom: var(--spacing-xl);
+}
+
+.clear-progress-container {
+    margin-top: var(--spacing-lg);
+    text-align: center;
+}
+
+/* Drag Drop Formula Styles */
+.drag-drop-container {
+    margin: var(--spacing-md) 0;
+}
+
+.drag-area {
+    margin-bottom: var(--spacing-lg);
+    padding: var(--spacing-md);
+    border: 2px dashed var(--border-color);
+    border-radius: var(--button-radius);
+    background-color: #fafafa;
+}
+
+.drag-area h4 {
+    margin-top: 0;
+    margin-bottom: var(--spacing-md);
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
+.draggable-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+}
+
+.draggable-item {
+    padding: var(--spacing-xs) var(--spacing-sm);
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: var(--button-radius);
+    cursor: grab;
+    user-select: none;
+    transition: all 0.2s ease;
+    border: 2px solid var(--primary-color);
+}
+
+.draggable-item:hover {
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.draggable-item.dragging {
+    opacity: 0.5;
+    cursor: grabbing;
+}
+
+/* Tap-to-place: a tile selected by click, awaiting a dropzone tap. */
+.draggable-item.selected {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 3px rgba(52, 90, 128, 0.35);
+    transform: translateY(-2px);
+}
+
+.drop-area {
+    margin-top: var(--spacing-md);
+}
+
+.drop-zone {
+    min-width: 96px;
+    min-height: 30px;
+    padding: var(--spacing-xs);
+    border: 2px dashed var(--border-color);
+    border-radius: var(--button-radius);
+    background-color: #fafafa;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    color: #999;
+}
+
+.drop-zone.drag-over {
+    border-color: var(--primary-color);
+    background-color: rgba(198, 146, 20, 0.12);
+}
+
+.drop-zone.filled {
+    border-color: var(--correct-color);
+    background-color: rgba(40, 167, 69, 0.12);
+    color: var(--text-color);
+}
+
+.drop-zone:hover {
+    border-color: var(--primary-color);
+}
+
+/* Fraction drop zones need special handling */
+.fraction-numerator .drop-zone,
+.fraction-denominator .drop-zone {
+    min-width: 72px;
+    min-height: 25px;
+    font-size: 1rem;
+}
+
+/* A numerator made of multiplied dropzones: lay the tiles + operators out in a
+   row (the fraction-numerator itself is a block, so the group needs flex). */
+.ddf-group {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+/* Reference Card Styles */
+/* All reference card styles are now in master.css */
+/* This module uses the default side-by-side layout for two cards */
+
+/* ================== */
+/* History Panel Styles */
+/* ================== */
+
+/* Base history panel styles are now in master.css */
+
+/* Module-specific history section title colors */
+.history-section-title.mosmolarity-title {
+    color: var(--filter-color-one);
+    border-bottom-color: var(--filter-color-one);
+}
+
+.history-section-title.mosmole-title {
+    color: var(--filter-color-two);
+    border-bottom-color: var(--filter-color-two);
+}
+
+/* Completed question buttons, colored to match their category */
+.history-question-button.mosmolarity.completed {
+    background-color: var(--filter-color-one);
+}
+
+.history-question-button.mosmole.completed {
+    background-color: var(--filter-color-two);
+}
+
+/* Filter Container Styles */
+.filter-container {
+    margin: calc(var(--spacing-xl) * 1.5) 0 var(--spacing-md) 0;
+    padding-left: var(--spacing-sm);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .filter-title {
+    margin-right: var(--spacing-md);
+    color: var(--text-color);
+  }
+  
+  .filter-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+  }
+  
+  .filter-option {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    border-radius: var(--button-radius);
+    padding: 2px var(--spacing-xs);
+    border: 1px solid var(--filter-color-one);
+    margin-right: 5px;
+    transition: all 0.2s ease;
+  }
+  
+  .filter-option input[type="checkbox"] {
+    margin-right: 5px;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .filter-label {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--filter-color-one);
+  }
+  
+  .filter-option:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+  
+  .filter-option input[type="checkbox"]:checked + .filter-label {
+    font-weight: 600;
+  }
+  
+  /* Filter Option Colors */
+  .filter-option:nth-child(1) {
+      border-color: var(--filter-color-one);
+  }
+  
+  .filter-option:nth-child(1) .filter-label {
+      color: var(--filter-color-one);
+  }
+  
+  .filter-option:nth-child(2) {
+      border-color: var(--filter-color-two);
+  }
+  
+  .filter-option:nth-child(2) .filter-label {
+      color: var(--filter-color-two);
+  }
+  
+  .filter-option:nth-child(3) {
+      border-color: var(--filter-color-three);
+  }
+  
+  .filter-option:nth-child(3) .filter-label {
+      color: var(--filter-color-three);
+  }
+
+/* Animation removed - using fadeIn from master.css */
+
+/* ================== */
+/* RESPONSIVE DESIGN */
+/* ================== */
+
+@media (max-width: 768px) {
+    .reference-container {
+        flex-direction: column;
+    }
+    
+    .reference-card {
+       flex-basis: 100%;
+    }
+}

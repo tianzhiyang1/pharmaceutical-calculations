@@ -1,0 +1,324 @@
+[
+  {
+    "id": 1,
+    "type": "drag",
+    "question": "2.89 kilograms =",
+    "options": [
+      { "id": 1, "value": "289" },
+      { "id": 2, "value": "2890" },
+      { "id": 3, "value": "28.9" },
+      { "id": 4, "value": "0.289" }
+    ],
+    "correctAnswer": "2890",
+    "unit": "grams",
+    "hint": "1 kilogram (kg) = 1000 grams (g)"
+  },
+  {
+    "id": 2,
+    "type": "drag",
+    "question": "7236 milligrams =",
+    "options": [
+      { "id": 1, "value": "723.6" },
+      { "id": 2, "value": "7.236" },
+      { "id": 3, "value": "72.36" },
+      { "id": 4, "value": "0.7236" }
+    ],
+    "correctAnswer": "7.236",
+    "unit": "grams",
+    "hint": "1 milligram (mg) = 0.001 gram (g)"
+  },
+  {
+    "id": 3,
+    "type": "drag",
+    "question": "3.325 liters =",
+    "options": [
+      { "id": 1, "value": "332.5" },
+      { "id": 2, "value": "3325" },
+      { "id": 3, "value": "33.25" },
+      { "id": 4, "value": "332.05" }
+    ],
+    "correctAnswer": "3325",
+    "unit": "milliliters",
+    "hint": "1 L = 1000 mL"
+  },
+  {
+    "id": 4,
+    "type": "drag",
+    "question": "9.999 liters =",
+    "options": [
+      { "id": 1, "value": "999,900" },
+      { "id": 2, "value": "9,999,000" },
+      { "id": 3, "value": "99,990" },
+      { "id": 4, "value": "999,000" }
+    ],
+    "correctAnswer": "9,999,000",
+    "unit": "microliters",
+    "hint": "1 L = 1,000,000 microliters"
+  },
+  {
+    "id": 5,
+    "type": "drag",
+    "question": "45 deciliters =",
+    "options": [
+      { "id": 1, "value": "0.45" },
+      { "id": 2, "value": "4.5" },
+      { "id": 3, "value": "45" },
+      { "id": 4, "value": "0.045" }
+    ],
+    "correctAnswer": "4.5",
+    "unit": "liters",
+    "hint": "1 dL = 0.1 L"
+  },
+  {
+    "id": 6,
+    "type": "drag",
+    "question": "29,500 mcg =",
+    "options": [
+      { "id": 1, "value": "0.295" },
+      { "id": 2, "value": "0.0295" },
+      { "id": 3, "value": "2.95" },
+      { "id": 4, "value": "0.00295" }
+    ],
+    "correctAnswer": "0.0295",
+    "unit": "g",
+    "hint": "1 g = 1,000,000 mcg"
+  },
+  {
+    "id": 7,
+    "type": "drag",
+    "question": "Add 1kg, 324 mg, and 4.7 g. Total in grams? \n",
+    "options": [
+      { "id": 1, "value": "1005.024" },
+      { "id": 2, "value": "1000.324" },
+      { "id": 3, "value": "1004.7" },
+      { "id": 4, "value": "1005.324" }
+    ],
+    "correctAnswer": "1005.024",
+    "unit": "grams",
+    "hint": "1 kg = 1000 g, 324 mg = 0.324 g"
+  },
+  {
+    "id": 8,
+    "type": "drag",
+    "question": "Add 3 L, 436 mL, and 1 pint. Total in milliliters? \n",
+    "options": [
+      { "id": 1, "value": "3736" },
+      { "id": 2, "value": "3909" },
+      { "id": 3, "value": "3873" },
+      { "id": 4, "value": "3800" }
+    ],
+    "correctAnswer": "3909",
+    "unit": "milliliters",
+    "hint": "1 L = 1000 mL, 1 pint = 473 mL"
+  },
+  {
+    "id": 9,
+    "type": "drag",
+    "question": "154 pounds = ",
+    "options": [
+      { "id": 1, "value": "60" },
+      { "id": 2, "value": "70" },
+      { "id": 3, "value": "80" },
+      { "id": 4, "value": "50" }
+    ],
+    "correctAnswer": "70",
+    "unit": "kilograms",
+    "hint": "1 kg = 2.2 lb"
+  },
+  {
+    "id": 10,
+    "type": "drag",
+    "question": "25 lb = ",
+    "options": [
+      { "id": 1, "value": "11000" },
+      { "id": 2, "value": "11350" },
+      { "id": 3, "value": "11500" },
+      { "id": 4, "value": "10850" }
+    ],
+    "correctAnswer": "11350",
+    "unit": "grams",
+    "hint": "1 lb = 454 g"
+  },
+  {
+    "id": 11,
+    "type": "drag",
+    "question": "Subtract 3.4 mg from 5.67 g. Result in grams? \n",
+    "options": [
+      { "id": 1, "value": "5.6666" },
+      { "id": 2, "value": "5.6700" },
+      { "id": 3, "value": "5.6634" },
+      { "id": 4, "value": "5.6730" }
+    ],
+    "correctAnswer": "5.6666",
+    "unit": "grams",
+    "hint": "3.4 mg = 0.0034 g, 5.67 g - 0.0034 g = 5.6666 g"
+  },
+  {
+    "id": 12,
+    "type": "drag",
+    "question": "Subtract 4.2 mL from 7.15 L. Result in liters? \n",
+    "options": [
+      { "id": 1, "value": "7.1458" },
+      { "id": 2, "value": "7.1500" },
+      { "id": 3, "value": "7.1542" },
+      { "id": 4, "value": "7.1400" }
+    ],
+    "correctAnswer": "7.1458",
+    "unit": "liters",
+    "hint": "4.2 mL = 0.0042 L, 7.15 L - 0.0042 L = 7.1458 L"
+  },
+  {
+    "id": 13,
+    "type": "drag",
+    "question": "Add 1 km, 32 m, and 652 cm. Total in meters? \n",
+    "options": [
+      { "id": 1, "value": "1038.52" },
+      { "id": 2, "value": "1038.00" },
+      { "id": 3, "value": "1039.52" },
+      { "id": 4, "value": "1037.52" }
+    ],
+    "correctAnswer": "1038.52",
+    "unit": "meters",
+    "hint": "1 km = 1000 m, 652 cm = 6.52 m, 1000 m + 32 m + 6.52 m = 1038.52 m"
+  },
+  {
+    "id": 14,
+    "type": "drag",
+    "question": "Multiply 234 mL by 12.5. Result in liters? \n",
+    "options": [
+      { "id": 1, "value": "2.925" },
+      { "id": 2, "value": "2.850" },
+      { "id": 3, "value": "3.000" },
+      { "id": 4, "value": "2.750" }
+    ],
+    "correctAnswer": "2.925",
+    "unit": "liters",
+    "hint": "234 mL x 12.5 = 2925 mL = 2.925 L"
+  },
+  {
+    "id": 15,
+    "type": "drag",
+    "question": "Multiply 350 mg by 22.5. Result in grams? \n",
+    "options": [
+      { "id": 1, "value": "7.875" },
+      { "id": 2, "value": "7.750" },
+      { "id": 3, "value": "8.000" },
+      { "id": 4, "value": "7.650" }
+    ],
+    "correctAnswer": "7.875",
+    "unit": "grams",
+    "hint": "350 x 22.5 = 7875 mg = 7.875 g"
+  },
+  {
+    "id": 16,
+    "type": "drag",
+    "question": "Divide 1.080 g by 24. Result in milligrams? \n",
+    "options": [
+      { "id": 1, "value": "40" },
+      { "id": 2, "value": "45" },
+      { "id": 3, "value": "50" },
+      { "id": 4, "value": "55" }
+    ],
+    "correctAnswer": "45",
+    "unit": "milligrams",
+    "hint": "1080 g ÷ 24 = 0.045 g = 45 mg"
+  },
+  {
+    "id": 17,
+    "type": "drag",
+    "question": "Divide 5.34 L by 15. Result in milliliters? \n",
+    "options": [
+      { "id": 1, "value": "356" },
+      { "id": 2, "value": "350" },
+      { "id": 3, "value": "360" },
+      { "id": 4, "value": "346" }
+    ],
+    "correctAnswer": "356",
+    "unit": "milliliters",
+    "hint": "5.34 L ÷ 15 = 0.356 L = 356 mL"
+  },
+  {
+    "id": 18,
+    "type": "drag",
+    "question": "A low-strength children's/adult chewable aspirin tablet contains 81 mg of aspirin per tablet. How many tablets may be prepared from 2 kg of aspirin?\n",
+    "options": [
+      { "id": 1, "value": "2470" },
+      { "id": 2, "value": "24700" },
+      { "id": 3, "value": "27160" },
+      { "id": 4, "value": "24691" }
+    ],
+    "correctAnswer": "24691",
+    "unit": "tablets",
+    "hint": "2 kg of aspirin = 2000000 mg \n 2000000 mg ÷ 81 mg = 24691 tablets"
+   },
+   {
+    "id": 19,
+    "type": "drag",
+    "question": "An oral contraceptive tablet contains 0.75 mg of ingredient A and 75 mcg of ingredient B. How many grams of each ingredient would be used in making 15,000 tablets?\n",
+    "options": [
+      { "id": 1, "value": "10.75 g of A and 1.000 g of B" },
+      { "id": 2, "value": "15.00 g of A and 1.500 g of B" },
+      { "id": 3, "value": "11.25 g of A and 1.125 g of B" },
+      { "id": 4, "value": "12.50 g of A and 1.250 g of B" }
+    ],
+    "correctAnswer": "11.25 g of A and 1.125 g of B",
+    "unit": "",
+	"hint": "Ingredient A: 0.75 mg/tablet = 7.5 x 10-4 g/tablet , 15,000 tablet x  7.5 x 10-4 mg/tablet = 11.25 g \n Ingredient B: 75 mcg/tablet = 7.5 x 10-5 g/tablet, 15, 000 tablet x  7.5 x 10-5 g/tablet = 1.125 g"
+   },
+   {
+    "id": 20,
+    "type": "drag",
+    "question": "TP is instructed to take four 25-mcg tablets of drug Z daily. How many milligrams of the drug Z would TP receive weekly?\n",
+    "options": [
+      { "id": 1, "value": "1.75" },
+      { "id": 2, "value": "7" },
+      { "id": 3, "value": "0.7" },
+      { "id": 4, "value": "0.07" }
+    ],
+    "correctAnswer": "0.7",
+    "unit": "mg",
+	"hint": "25 x 4 = 100 mcg / day \n 100 mcg x 7 days = 700 mcg / week = 0.7 mg / week"
+   },
+   {
+    "id": 21,
+    "type": "drag",
+    "question": "A recombinant human monoclonal antibody is available in a prefilled syringe containing 60 mg/1.2 mL of injection. Calculate the concentration of drug on a mg/mL basis.\n",
+    "options": [
+      { "id": 1, "value": "0.5" },
+      { "id": 2, "value": "5" },
+      { "id": 3, "value": "72" },
+      { "id": 4, "value": "50" }
+    ],
+    "correctAnswer": "50",
+    "unit": "mg/mL",
+	"hint": "60 mg/1.2 mL = 50 mg/ml"
+   },
+   {
+    "id": 22,
+    "type": "drag",
+    "question": "The prophylactic dose of riboflavin is 2 mg. How many mcg of riboflavin are in a multiple vitamin capsule containing 2/5 of the prophylactic dose?\n",
+    "options": [
+      { "id": 1, "value": "800" },
+      { "id": 2, "value": "400" },
+      { "id": 3, "value": "500" },
+      { "id": 4, "value": "1200" }
+    ],
+    "correctAnswer": "800",
+    "unit": "mcg",
+	"hint": "2/5 x 2 mg = 0.8 mg = 800 mcg"
+   },
+   {
+    "id": 23,
+    "type": "drag",
+    "question": "A commercial package contains forty-eight 150-mg tablets of ibuprofen. How many kilograms of ibuprofen were used in the manufacture of 2000 packages of the product? \n",
+    "options": [
+      { "id": 1, "value": "1.44" },
+      { "id": 2, "value": "14.4" },
+      { "id": 3, "value": "144" },
+      { "id": 4, "value": "0.144" }
+    ],
+    "correctAnswer": "14.4",
+    "unit": "kg",
+	  "hint": "48 tablets×150 mg=7200 mg per package \n 7200 mg/package × 2000 packages=14400000 mg = 14400 g = 14.4 kg"
+   }
+] 

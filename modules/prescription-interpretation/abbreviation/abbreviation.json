@@ -1,0 +1,237 @@
+[
+    {
+      "text": "What does the abbreviation 'ss' mean in a prescription?",
+      "options": ["One-fourth", "One-half", "Double dose", "Once a day"],
+      "correctAnswer": "One-half"
+    },
+    {
+      "text": "What does the abbreviation 'ac' mean in a prescription?",
+      "options": ["After meals", "At bedtime", "Before meals", "Before exercise"],
+      "correctAnswer": "Before meals"
+    },
+    {
+      "text": "What does the abbreviation 'pc' mean in a prescription?",
+      "options": ["After meals", "Before meals", "With meals", "At bedtime"],
+      "correctAnswer": "After meals"
+    },
+    {
+      "text": "What does the abbreviation 'gtt, gtts' mean in a prescription?",
+      "options": ["Tablet", "Injection", "Drop, drops", "Ointment"],
+      "correctAnswer": "Drop, drops"
+    },
+    {
+      "text": "What does the abbreviation 'au' mean in a prescription?",
+      "options": ["Each eye", "Each ear", "Right ear", "Left eye"],
+      "correctAnswer": "Each ear"
+    },
+    {
+      "text": "What does the abbreviation 'as' mean in a prescription?",
+      "options": ["Right ear", "Left ear", "Each ear", "Both eyes"],
+      "correctAnswer": "Left ear"
+    },
+    {
+      "text": "What does the abbreviation 'ad' mean in a prescription?",
+      "options": ["Each ear", "Left ear", "Right ear", "Each eye"],
+      "correctAnswer": "Right ear"
+    },
+    {
+      "text": "What does the abbreviation 'ATC' mean in a prescription?",
+      "options": ["At bedtime", "Around the clock", "After meals", "With food"],
+      "correctAnswer": "Around the clock"
+    },
+    {
+      "text": "What does the abbreviation 'hs' mean in a prescription?",
+      "options": ["At bedtime", "In the morning", "With food", "After meals"],
+      "correctAnswer": "At bedtime"
+    },
+    {
+      "text": "What does the abbreviation 'bid' mean in a prescription?",
+      "options": ["Twice a day", "Three times a day", "Four times a day", "Once a day"],
+      "correctAnswer": "Twice a day"
+    },
+    {
+      "text": "What does the abbreviation 'tid' mean in a prescription?",
+      "options": ["Twice a day", "Three times a day", "Four times a day", "Once a day"],
+      "correctAnswer": "Three times a day"
+    },
+    {
+      "text": "What does the abbreviation 'qid' mean in a prescription?",
+      "options": ["Twice a day", "Three times a day", "Four times a day", "Once a day"],
+      "correctAnswer": "Four times a day"
+    },
+    {
+      "text": "What does the abbreviation 'biw' mean in a prescription?",
+      "options": ["Two times a week", "Three times a week", "Four times a week", "Once a day"],
+      "correctAnswer": "Two times a week"
+    },
+    {
+      "text": "What does the abbreviation 'tiw' mean in a prescription?",
+      "options": ["Two times a week", "Three times a week", "Four times a week", "Once a day"],
+      "correctAnswer": "Three times a week"
+    },
+    {
+      "text": "What does the abbreviation 'ou' mean in a prescription?",
+      "options": ["Each ear", "Each eye", "Left eye", "Right eye"],
+      "correctAnswer": "Each eye"
+    },
+    {
+      "text": "What does the abbreviation 'os' mean in a prescription?",
+      "options": ["Each eye", "Right eye", "Left eye", "Each ear"],
+      "correctAnswer": "Left eye"
+    },
+    {
+      "text": "What does the abbreviation 'od' mean in a prescription?",
+      "options": ["Each eye", "Right eye", "Left eye", "Each ear"],
+      "correctAnswer": "Right eye"
+    },
+    {
+      "text": "What does the abbreviation 'qs' mean in a prescription?",
+      "options": ["No refills", "Sufficient quantity", "With food", "At bedtime"],
+      "correctAnswer": "Sufficient quantity"
+    },
+    {
+      "text": "What does the abbreviation 'qs ad' mean in a prescription?",
+      "options": ["A sufficient quantity to make", "No refills", "With food", "At bedtime"],
+      "correctAnswer": "A sufficient quantity to make"
+    },
+    {
+      "text": "What does the abbreviation 'NR' mean in a prescription?",
+      "options": ["No refills", "New refill", "Next refill", "No response"],
+      "correctAnswer": "No refills"
+    },
+    {
+      "text": "What does the abbreviation 'c or w/' mean in a prescription?",
+      "options": ["Without", "With", "Injection", "Times"],
+      "correctAnswer": "With"
+    },
+    {
+      "text": "What does the abbreviation 's or w/o' mean in a prescription?",
+      "options": ["Without", "With", "Injection", "Times"],
+      "correctAnswer": "Without"
+    },
+    {
+      "text": "What does the abbreviation 'inj' mean in a prescription?",
+      "options": ["Injection", "Ingestion", "Intubation", "Inhalation"],
+      "correctAnswer": "Injection"
+    },
+    {
+      "text": "What does the abbreviation 'X' mean in a prescription?",
+      "options": ["Times", "No refills", "Each eye", "Sufficient quantity"],
+      "correctAnswer": "Times"
+    },
+    {
+      "text": "What is the meaning of the abbreviation 'mL'?",
+      "options": ["Metered-dose inhaler", "Milliliter", "Microgram", "Millimeter"],
+      "correctAnswer": "Milliliter"
+    },
+    {
+      "text": "What is the meaning of the abbreviation 'NTE'?",
+      "options": ["Not to exceed", "Nothing to eat", "No time estimate", "Nutritional therapy evaluation"],
+      "correctAnswer": "Not to exceed"
+    },
+    {
+      "text": "What is the meaning of the abbreviation 'MDI'?",
+      "options": ["Multiple drug intake", "Metered-dose inhaler", "Milligram dosage intake", "Medical drug infusion"],
+      "correctAnswer": "Metered-dose inhaler"
+    },
+    {
+      "text": "What is the meaning of the abbreviation 'q'?",
+      "options": ["Every", "Quantity", "Quarterly", "Quickly"],
+      "correctAnswer": "Every"
+    },
+    {
+      "text": "What is the meaning of the abbreviation 'qd'?",
+      "options": ["Every week", "Every hour", "Every day", "Every month"],
+      "correctAnswer": "Every day"
+    },
+    {
+      "text": "What is the meaning of the abbreviation 'qod'?",
+      "options": ["Every other day", "Four times a day", "Every week", "Every two weeks"],
+      "correctAnswer": "Every other day"
+    },
+    {
+      "text": "What is the meaning of the abbreviation 'PO'?",
+      "options": ["Intravenous", "By mouth or orally", "Postoperative", "Prescription only"],
+      "correctAnswer": "By mouth or orally"
+    },
+    {
+      "text": "What is the meaning of the abbreviation 'NPO'?",
+      "options": ["No patient orders", "Not per oral", "Nothing by mouth", "No prescription ordered"],
+      "correctAnswer": "Nothing by mouth"
+    },
+    {
+      "text": "What is the meaning of the abbreviation 'IV'?",
+      "options": ["Inhaled vapor", "Intravenous", "Intraocular vision", "Intravascular"],
+      "correctAnswer": "Intravenous"
+    },
+    {
+      "text": "What is the meaning of the abbreviation 'IVP'?",
+      "options": ["Intravenous push", "Immediate volume pump", "Interstitial vein pressure", "Internal vascular procedure"],
+      "correctAnswer": "Intravenous push"
+    },
+    {
+      "text": "What is the meaning of the abbreviation 'IVPB'?",
+      "options": ["Intravenous piggyback", "Internal vein pressure balance", "Intravascular blood plasma", "Immediate vein pressure booster"],
+      "correctAnswer": "Intravenous piggyback"
+    },
+    {
+      "text": "What is the meaning of the abbreviation 'ID'?",
+      "options": ["Immediate dosage", "Intradermal", "Internal drug", "Indwelling device"],
+      "correctAnswer": "Intradermal"
+    },
+    {
+      "text": "What is the meaning of the abbreviation 'SC, SQ, subc'?",
+      "options": ["Sublingual", "Subcutaneous", "Superficial circulation", "Semi-critical"],
+      "correctAnswer": "Subcutaneous"
+    },
+    {
+      "text": "What is the meaning of the abbreviation 'ung'?",
+      "options": ["Ointment", "Uncoated tablet", "Undergo", "Ultra-narrow gauge"],
+      "correctAnswer": "Ointment"
+    },
+    {
+      "text": "What is the meaning of the abbreviation 'top'?",
+      "options": ["Topically", "Time of prescription", "Total oral process", "Tablet or pill"],
+      "correctAnswer": "Topically"
+    },
+    {
+      "text": "What is the meaning of the abbreviation 'WA'?",
+      "options": ["While awake", "Water absorption", "Weekly administration", "Within area"],
+      "correctAnswer": "While awake"
+    },
+    {
+      "text": "What is the meaning of the abbreviation 'prn'?",
+      "options": ["As needed", "Per regimen number", "Per required necessity", "Prescription renewal"],
+      "correctAnswer": "As needed"
+    },
+    {
+      "text": "What is the meaning of the abbreviation 'stat'?",
+      "options": ["Immediately", "Statistically significant", "Short-term adjustment", "Start treatment"],
+      "correctAnswer": "Immediately"
+    },
+    {
+      "text": "What is the meaning of the abbreviation 'SL'?",
+      "options": ["Sublingual", "Superficial lesion", "Slow-release", "Short-lasting"],
+      "correctAnswer": "Sublingual"
+    },
+    {
+      "text": "What is the meaning of the abbreviation 'sup or supp'?",
+      "options": ["Suppositories", "Supplementary", "Superior", "Superficial application"],
+      "correctAnswer": "Suppositories"
+    },
+    {
+      "text": "What is the meaning of the abbreviation 'PR'?",
+      "options": ["Per rectum", "Prescription required", "Post regimen", "Pro re nata"],
+      "correctAnswer": "Per rectum"
+    },
+    {
+      "text": "What is the meaning of the abbreviation 'BM'?",
+      "options": ["Blood marker", "Bowel movement", "Bone marrow", "Body mass"],
+      "correctAnswer": "Bowel movement"
+    },
+    {
+      "text": "What is the meaning of the abbreviation 'N/V or N&V'?",
+      "options": ["Nausea and vomiting", "Nutritional value", "Neurological variation", "Nasal ventilation"],
+      "correctAnswer": "Nausea and vomiting"
+    }
+  ]

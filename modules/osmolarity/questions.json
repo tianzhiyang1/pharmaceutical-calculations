@@ -1,0 +1,3234 @@
+{
+    "questions": [
+        {
+            "number": 1,
+            "tag": "mosmolarity",
+            "question": "A solution contains 15% of anhydrous dextrose in water for injection. How many milliosmoles per liter are represented by this concentration? (Dextrose molecular weight is 180) Round the final answer to the nearest whole number.",
+            "answerValue": [833],
+            "answerUnit": ["mOsm/L"],
+            "rounding": false,
+            "steps": [
+                {
+                    "text": "Write the formula",
+                    "type": "DRAG_DROP_FORMULA",
+                    "hint": "The formula for mOsm/L is: (weight in g/L × number of species × 1000) / molecular weight. Remember that weight is the concentration, number of species depends on whether the compound dissociates, 1000 is the conversion factor, and MW is the molecular weight.",
+                    "draggableElements": [
+                        {
+                            "id": "weight",
+                            "value": "weight (g/L)"
+                        },
+                        {
+                            "id": "species",
+                            "value": "no. of species"
+                        },
+                        {
+                            "id": "thousand",
+                            "value": "1000"
+                        },
+                        {
+                            "id": "mw",
+                            "value": "MW"
+                        }
+                    ],
+                    "skeleton": [
+                        {
+                            "type": "text",
+                            "value": "mOsm/L"
+                        },
+                        {
+                            "type": "operator",
+                            "value": "="
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "operands": [
+                                    {
+                                        "type": "dropzone",
+                                        "expectedId": "weight"
+                                    },
+                                    {
+                                        "type": "dropzone",
+                                        "expectedId": "species"
+                                    },
+                                    {
+                                        "type": "dropzone",
+                                        "expectedId": "thousand"
+                                    }
+                                ],
+                                "operators": ["×", "×"]
+                            },
+                            "denominator": {
+                                "type": "dropzone",
+                                "expectedId": "mw"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "text": "Convert the weight to grams per liter (g/L)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "15% dextrose"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 15,
+                                "unit": "g"
+                            },
+                            "denominator": "100 mL"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 150,
+                                "unit": "g"
+                            },
+                            "denominator": "1000 mL"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 150,
+                            "unit": "g/L"
+                        }
+                    ],
+                    "operators1": ["→", "=", "="],
+                    "hint": "From the question, we know that the solution contains 15% of anhydrous dextrose in water for injection. This means that there are 15 grams of dextrose in 100 mL of solution. Converting this to grams per liter, we get 150 g/L."
+                },
+                {
+                    "text": "Determine the number of species (particles)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Dextrose (nonelectrolyte)"
+                        },
+                        {
+                            "type": "text",
+                            "value": "no. of species"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1,
+                            "unit": ""
+                        }
+                    ],
+                    "operators1": ["→", "="],
+                    "hint": "Dextrose is a nonelectrolyte, so it does not dissociate in water. Therefore, the number of species is 1."
+                },
+                {
+                    "text": "Plug values into the formula and calculate mOsm/L",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "mOsm/L"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "operands": [
+                                    {"type": "input", "answer": 150, "unit": "g/L"},
+                                    {"type": "input", "answer": 1, "unit": ""},
+                                    {"type": "input", "answer": 1000, "unit": ""}
+                                ],
+                                "operators": ["×", "×"]
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": 180,
+                                "unit": ""
+                            }
+                        },
+                        {
+                            "type": "input",
+                            "answer": 833,
+                            "unit": "mOsm/L"
+                        }
+                    ],
+                    "operators1": ["=", "≈"],
+                    "hint": "Plugging in the values into the formula: mOsm/L = 150 g/L × 1 × (1000/180) = 833 mOsm/L"
+                }
+            ]
+        },
+        {
+            "number": 2,
+            "tag": "mosmole",
+            "question": "How many milliosmoles are represented in 0.5 liters of a 0.9% of Sodium Chloride solution? (NaCl molecular weight is 58.5). Round the final answer to the nearest whole number.",
+            "answerValue": [154],
+            "answerUnit": ["mOsm"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Calculate the Osmolarity (in mOsm/L)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "0.9% NaCl"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 0.9,
+                                "unit": "g"
+                            },
+                            "denominator": "100 mL"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 9,
+                                "unit": "g"
+                            },
+                            "denominator": "1000 mL"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 9,
+                            "unit": "g/L"
+                        }
+                    ],
+                    "operators1": ["→", "=", "="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "NaCl"
+                        },
+                        {
+                            "type": "text",
+                            "value": "no. of species"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 2,
+                            "unit": ""
+                        }
+                    ],
+                    "operators2": ["→", "="],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "mOsm/L"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "operands": [
+                                    {"type": "input", "answer": 9, "unit": "g/L"},
+                                    {"type": "input", "answer": 2, "unit": "(no. of species)"},
+                                    {"type": "input", "answer": 1000, "unit": ""}
+                                ],
+                                "operators": ["×", "×"]
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": 58.5,
+                                "unit": "(MW)"
+                            }
+                        },
+                        {
+                            "type": "input",
+                            "answer": 307.69,
+                            "unit": "mOsm/L"
+                        }
+                    ],
+                    "operators3": ["=", "="],
+                    "hint": "0.9% NaCl means that there are 0.9 grams of NaCl in 100 mL of solution. Converting this to grams per liter, we get 9 g/L. The number of species is 2 because NaCl dissociates into 2 particles (Na+ and Cl-). Plugging in the values into the formula: mOsm/L = 9 g/L × 2 × (1000/58.5) = 307.69 mOsm/L"
+                },
+                {
+                    "text": "Use the following proportion to calculate mOsm in the specific volume (round the final answer to the nearest whole number)",
+                    "type": "PROPORTION",
+                    "operands1": [
+                        {
+                            "type": "fraction",
+                            "numerator": "mOsm obtained from step 1",
+                            "denominator": "1000 mL"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": "x mOsm",
+                            "denominator": "specific volume (mL)"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 307.69,
+                                "unit": "mOsm"
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": 1000,
+                                "unit": "mL"
+                            }
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": "x mOsm",
+                            "denominator": {
+                                "type": "input",
+                                "answer": 500, 
+                                "unit": "mL"
+                            }
+                        }
+                    ],
+                    "operators2": ["="],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "x"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 154,
+                            "unit": "mOsm"
+                        }
+                    ],
+                    "operators3": ["≈"],
+                    "hint": "Plugging in the values into the proportion: 307.69 mOsm/L × 1000 mL = x mOsm / 500 mL, we can solve for x: x = 307.69 mOsm/L × 1000 mL / 500 mL = 154 mOsm"
+                }
+            ]
+        },
+        {
+            "number": 3,
+            "tag": "mosmolarity",
+            "question": "A solution contains 40% of anhydrous dextrose in water for injection. How many milliosmoles per liter are represented by this concentration? (Dextrose molecular weight is 180). Round the final answer to the nearest whole number.",
+            "answerValue": [2222],
+            "answerUnit": ["mOsm/L"],
+            "rounding": false,
+            "steps": [
+                {
+                    "text": "Write the formula",
+                    "type": "DRAG_DROP_FORMULA",
+                    "hint": "The formula for mOsm/L is: (weight in g/L × number of species × 1000) / molecular weight. Remember that weight is the concentration, number of species depends on whether the compound dissociates, 1000 is the conversion factor, and MW is the molecular weight.",
+                    "draggableElements": [
+                        {
+                            "id": "weight",
+                            "value": "weight (g/L)"
+                        },
+                        {
+                            "id": "species",
+                            "value": "no. of species"
+                        },
+                        {
+                            "id": "thousand",
+                            "value": "1000"
+                        },
+                        {
+                            "id": "mw",
+                            "value": "MW"
+                        }
+                    ],
+                    "skeleton": [
+                        {
+                            "type": "text",
+                            "value": "mOsm/L"
+                        },
+                        {
+                            "type": "operator",
+                            "value": "="
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "operands": [
+                                    {
+                                        "type": "dropzone",
+                                        "expectedId": "weight"
+                                    },
+                                    {
+                                        "type": "dropzone",
+                                        "expectedId": "species"
+                                    },
+                                    {
+                                        "type": "dropzone",
+                                        "expectedId": "thousand"
+                                    }
+                                ],
+                                "operators": ["×", "×"]
+                            },
+                            "denominator": {
+                                "type": "dropzone",
+                                "expectedId": "mw"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "text": "Convert the weight to grams per liter (g/L)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "40% dextrose"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 40,
+                                "unit": "g"
+                            },
+                            "denominator": "100 mL"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 400,
+                                "unit": "g"
+                            },
+                            "denominator": "1000 mL"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 400,
+                            "unit": "g/L"
+                        }
+                    ],
+                    "operators1": ["→", "=", "="],
+                    "hint": "From the question, we know that the solution contains 40% of anhydrous dextrose in water for injection. This means that there are 40 grams of dextrose in 100 mL of solution. Converting this to grams per liter, we get 400 g/L."
+                },
+                {
+                    "text": "Determine the number of species (particles)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Dextrose (nonelectrolyte)"
+                        },
+                        {
+                            "type": "text",
+                            "value": "no. of species"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1,
+                            "unit": ""
+                        }
+                    ],
+                    "operators1": ["→", "="],
+                    "hint": "Dextrose is a nonelectrolyte, so it does not dissociate in water. Therefore, the number of species is 1."
+                },
+                {
+                    "text": "Plug values into the formula and calculate mOsm/L",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "mOsm/L"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "operands": [
+                                    {"type": "input", "answer": 400, "unit": "g/L"},
+                                    {"type": "input", "answer": 1, "unit": ""},
+                                    {"type": "input", "answer": 1000, "unit": ""}
+                                ],
+                                "operators": ["×", "×"]
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": 180,
+                                "unit": ""
+                            }
+                        },
+                        {
+                            "type": "input",
+                            "answer": 2222,
+                            "unit": "mOsm/L"
+                        }
+                    ],
+                    "operators1": ["=", "≈"],
+                    "hint": "Plugging in the values into the formula: mOsm/L = 400 g/L × 1 × (1000/180) = 2222 mOsm/L"
+                }
+            ]
+        },
+        {
+            "number": 4,
+            "tag": "mosmolarity",
+            "question": "How many milliosmoles are represented in a liter of half-normal saline solution? (NaCl molecular weight is 58.5). Round the final answer to the nearest whole number.",
+            "answerValue": [154],
+            "answerUnit": ["mOsm"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Write the formula",
+                    "type": "DRAG_DROP_FORMULA",
+                    "hint": "The formula for mOsm/L is: (weight in g/L × number of species × 1000) / molecular weight. Remember that weight is the concentration, number of species depends on whether the compound dissociates, 1000 is the conversion factor, and MW is the molecular weight.",
+                    "draggableElements": [
+                        {
+                            "id": "weight",
+                            "value": "weight (g/L)"
+                        },
+                        {
+                            "id": "species",
+                            "value": "no. of species"
+                        },
+                        {
+                            "id": "thousand",
+                            "value": "1000"
+                        },
+                        {
+                            "id": "mw",
+                            "value": "MW"
+                        }
+                    ],
+                    "skeleton": [
+                        {
+                            "type": "text",
+                            "value": "mOsm/L"
+                        },
+                        {
+                            "type": "operator",
+                            "value": "="
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "operands": [
+                                    {
+                                        "type": "dropzone",
+                                        "expectedId": "weight"
+                                    },
+                                    {
+                                        "type": "dropzone",
+                                        "expectedId": "species"
+                                    },
+                                    {
+                                        "type": "dropzone",
+                                        "expectedId": "thousand"
+                                    }
+                                ],
+                                "operators": ["×", "×"]
+                            },
+                            "denominator": {
+                                "type": "dropzone",
+                                "expectedId": "mw"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "text": "Convert the weight to grams per liter (g/L)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "0.45% NaCl (half-normal saline)"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 0.45,
+                                "unit": "g"
+                            },
+                            "denominator": "100 mL"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 4.5,
+                                "unit": "g"
+                            },
+                            "denominator": "1000 mL"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 4.5,
+                            "unit": "g/L"
+                        }
+                    ],
+                    "operators1": ["→", "=", "="],
+                    "hint": "Half-normal saline is 0.45% NaCl, which means that there are 0.45 grams of NaCl in 100 mL of solution. Converting this to grams per liter, we get 4.5 g/L."
+                },
+                {
+                    "text": "Determine the number of species (particles)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "NaCl (electrolyte)"
+                        },
+                        {
+                            "type": "text",
+                            "value": "no. of species"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 2,
+                            "unit": ""
+                        }
+                    ],
+                    "operators1": ["→", "="],
+                    "hint": "Sodium chloride (NaCl) is an electrolyte, so it dissociates in water into two particles (Na+ and Cl-). Therefore, the number of species is 2."
+                },
+                {
+                    "text": "Plug values into the formula and calculate mOsm/L",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "mOsm/L"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "operands": [
+                                    {
+                                        "type": "input",
+                                        "answer": 4.5,
+                                        "unit": "g/L"
+                                    },
+                                    {
+                                        "type": "input",
+                                        "answer": 2,
+                                        "unit": ""
+                                    },
+                                    {
+                                        "type": "input",
+                                        "answer": 1000,
+                                        "unit": ""
+                                    }
+                                ],
+                                "operators": ["×", "×"]
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": 58.5,
+                                "unit": ""
+                            }
+                        },
+                        {
+                            "type": "input",
+                            "answer": 154,
+                            "unit": "mOsm/L"
+                        }
+                    ],
+                    "operators1": ["=", "="],
+                    "hint": "Plugging in the values into the formula: mOsm/L = 4.5 g/L × 2 × (1000/58.5) = 154 mOsm/L (rounded to the nearest whole number)."
+                },
+                {
+                    "text": "Convert mOsm/L to mOsm for 1 liter",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "mOsm/L"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 154,
+                            "unit": "mOsm/L"
+                        },
+                        {
+                            "type": "text",
+                            "value": "× 1 L"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 154,
+                            "unit": "mOsm"
+                        }
+                    ],
+                    "operators1": ["=", "×", "≈"],
+                    "hint": "Since we want the milliosmoles in 1 liter, we multiply the osmolarity by 1: 154 mOsm/L × 1 L = 154 mOsm"
+                }
+            ]
+        },
+        {
+            "number": 5,
+            "tag": "mosmole",
+            "question": "Calculate the milliosmoles of sodium chloride in 50 ml of a 15% hypertonic solution of sodium chloride injection? (NaCl molecular weight is 58.5). Round the final answer to the nearest whole number.",
+            "answerValue": [256],
+            "answerUnit": ["mOsm"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Calculate the Osmolarity (in mOsm/L)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "15% NaCl"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 15,
+                                "unit": "g"
+                            },
+                            "denominator": "100 mL"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 150,
+                                "unit": "g"
+                            },
+                            "denominator": "1000 mL"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 150,
+                            "unit": "g/L"
+                        }
+                    ],
+                    "operators1": [
+                        "→",
+                        "=",
+                        "="
+                    ],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "NaCl"
+                        },
+                        {
+                            "type": "text",
+                            "value": "no. of species"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 2,
+                            "unit": ""
+                        }
+                    ],
+                    "operators2": [
+                        "→",
+                        "="
+                    ],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "mOsm/L"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "operands": [
+                                    {"type": "input", "answer": 150, "unit": "g/L"},
+                                    {"type": "input", "answer": 2, "unit": "(no. of species)"},
+                                    {"type": "input", "answer": 1000, "unit": ""}
+                                ],
+                                "operators": [
+                                    "×",
+                                    "×"
+                                ]
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": 58.5,
+                                "unit": "(MW)"
+                            }
+                        },
+                        {
+                            "type": "input",
+                            "answer": 5128.21,
+                            "unit": "mOsm/L"
+                        }
+                    ],
+                    "operators3": [
+                        "=",
+                        "="
+                    ],
+                    "hint": "15% NaCl means that there are 15 grams of NaCl in 100 mL of solution. Converting this to grams per liter, we get 150 g/L. The number of species is 2 because NaCl dissociates into 2 particles (Na+ and Cl-). Plugging in the values into the formula: mOsm/L = 150 g/L × 2 × (1000/58.5) = 5128.21 mOsm/L"
+                },
+                {
+                    "text": "Use the following proportion to calculate mOsm in the specific volume (round the final answer to the nearest whole number)",
+                    "type": "PROPORTION",
+                    "operands1": [
+                        {
+                            "type": "fraction",
+                            "numerator": "mOsm obtained from step 1",
+                            "denominator": "1000 mL"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": "x mOsm",
+                            "denominator": "specific volume (mL)"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 5128.21,
+                                "unit": "mOsm"
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": 1000,
+                                "unit": "mL"
+                            }
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": "x mOsm",
+                            "denominator": {
+                                "type": "input",
+                                "answer": 50,
+                                "unit": "mL"
+                            }
+                        }
+                    ],
+                    "operators2": ["="],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "x"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 256,
+                            "unit": "mOsm"
+                        }
+                    ],
+                    "operators3": ["≈"],
+                    "hint": "Plugging in the values into the proportion: 5128.21 mOsm / 1000 mL = x mOsm / 50 mL, we can solve for x: x = (5128.21 mOsm × 50 mL) / 1000 mL = 256 mOsm"
+                }
+            ]
+        },
+        {
+            "number": 6,
+            "tag": "mosmolarity",
+            "question": "A solution contains 290 mg of Mg2+ ions per 150 ml. How many milliosmoles are represented in a liter of the solution? (Magnesium atomic Weight is 24). Round the final answer to the nearest whole number.",
+            "answerValue": [81],
+            "answerUnit": ["mOsm"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Write the formula",
+                    "type": "DRAG_DROP_FORMULA",
+                    "hint": "The formula for mOsm/L is: (weight in g/L × number of species × 1000) / molecular weight. Remember that weight is the concentration, number of species depends on whether the compound dissociates, 1000 is the conversion factor, and MW is the molecular weight.",
+                    "draggableElements": [
+                        {
+                            "id": "weight",
+                            "value": "weight (g/L)"
+                        },
+                        {
+                            "id": "species",
+                            "value": "no. of species"
+                        },
+                        {
+                            "id": "thousand",
+                            "value": "1000"
+                        },
+                        {
+                            "id": "mw",
+                            "value": "MW"
+                        }
+                    ],
+                    "skeleton": [
+                        {
+                            "type": "text",
+                            "value": "mOsm/L"
+                        },
+                        {
+                            "type": "operator",
+                            "value": "="
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "operands": [
+                                    {
+                                        "type": "dropzone",
+                                        "expectedId": "weight"
+                                    },
+                                    {
+                                        "type": "dropzone",
+                                        "expectedId": "species"
+                                    },
+                                    {
+                                        "type": "dropzone",
+                                        "expectedId": "thousand"
+                                    }
+                                ],
+                                "operators": ["×", "×"]
+                            },
+                            "denominator": {
+                                "type": "dropzone",
+                                "expectedId": "mw"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "text": "Convert the weight to grams per liter (g/L)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "290 mg Mg2+ per 150 mL"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 290,
+                                "unit": "mg"
+                            },
+                            "denominator": "150 mL"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 1933.33,
+                                "unit": "mg"
+                            },
+                            "denominator": "1000 mL"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 1.933,
+                                "unit": "g"
+                            },
+                            "denominator": "1000 mL"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1.933,
+                            "unit": "g/L"
+                        }
+                    ],
+                    "operators1": ["→", "=", "→", "="],
+                    "hint": "From the question, we know that there are 290 mg of Mg2+ ions in 150 mL of solution. Converting this to grams per liter: 290 mg/150 mL = 1933.33 mg/1000 mL = 1.933 g/L."
+                },
+                {
+                    "text": "Determine the number of species (particles)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Mg2+ (ion)"
+                        },
+                        {
+                            "type": "text",
+                            "value": "no. of species"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1,
+                            "unit": ""
+                        }
+                    ],
+                    "operators1": ["→", "="],
+                    "hint": "Mg2+ is already an ion in solution, so it does not dissociate further. Therefore, the number of species is 1."
+                },
+                {
+                    "text": "Plug values into the formula and calculate mOsm/L",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "mOsm/L"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "operands": [
+                                    {"type": "input", "answer": 1.933, "unit": "g/L"},
+                                    {"type": "input", "answer": 1, "unit": ""},
+                                    {"type": "input", "answer": 1000, "unit": ""}
+                                ],
+                                "operators": ["×", "×"]
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": 24,
+                                "unit": ""
+                            }
+                        },
+                        {
+                            "type": "input",
+                            "answer": 80.54,
+                            "unit": "mOsm/L"
+                        }
+                    ],
+                    "operators1": ["=", "="],
+                    "hint": "Plugging in the values into the formula: mOsm/L = 1.933 g/L × 1 × (1000/24) = 80.54 mOsm/L"
+                },
+                {
+                    "text": "Convert mOsm/L to mOsm for 1 liter",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "mOsm/L"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 80.54,
+                            "unit": "mOsm/L"
+                        },
+                        {
+                            "type": "text",
+                            "value": "× 1 L"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 81,
+                            "unit": "mOsm"
+                        }
+                    ],
+                    "operators1": ["=", "×", "≈"],
+                    "hint": "Since we want the milliosmoles in 1 liter, we multiply the osmolarity by 1: 80.54 mOsm/L × 1 L = 81 mOsm (rounded to the nearest whole number)"
+                }
+            ]
+        },
+        {
+            "number": 7,
+            "tag": "mosmolarity",
+            "question": "A solution contains 500 mg of Cl- ions per 75 ml. How many milliosmoles are represented in a liter of the solution? (Chloride atomic Weight is 35). Round the final answer to the nearest whole number.",
+            "answerValue": "190",
+            "answerUnit": "mOsm",
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Write the formula",
+                    "type": "DRAG_DROP_FORMULA",
+                    "hint": "The formula for mOsm/L is: (weight in g/L × number of species × 1000) / molecular weight. Remember that weight is the concentration, number of species depends on whether the compound dissociates, 1000 is the conversion factor, and MW is the molecular weight.",
+                    "draggableElements": [
+                        {
+                            "id": "weight",
+                            "value": "weight (g/L)"
+                        },
+                        {
+                            "id": "species",
+                            "value": "no. of species"
+                        },
+                        {
+                            "id": "thousand",
+                            "value": "1000"
+                        },
+                        {
+                            "id": "mw",
+                            "value": "MW"
+                        }
+                    ],
+                    "skeleton": [
+                        {
+                            "type": "text",
+                            "value": "mOsm/L"
+                        },
+                        {
+                            "type": "operator",
+                            "value": "="
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "operands": [
+                                    {
+                                        "type": "dropzone",
+                                        "expectedId": "weight"
+                                    },
+                                    {
+                                        "type": "dropzone",
+                                        "expectedId": "species"
+                                    },
+                                    {
+                                        "type": "dropzone",
+                                        "expectedId": "thousand"
+                                    }
+                                ],
+                                "operators": ["×", "×"]
+                            },
+                            "denominator": {
+                                "type": "dropzone",
+                                "expectedId": "mw"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "text": "Convert the weight to grams per liter (g/L)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "500 mg Cl- per 75 mL"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 500,
+                                "unit": "mg"
+                            },
+                            "denominator": "75 mL"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 6666.67,
+                                "unit": "mg"
+                            },
+                            "denominator": "1000 mL"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 6.667,
+                                "unit": "g"
+                            },
+                            "denominator": "1000 mL"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 6.667,
+                            "unit": "g/L"
+                        }
+                    ],
+                    "operators1": ["→", "=", "→", "="],
+                    "hint": "From the question, we know that there are 500 mg of Cl- ions in 75 mL of solution. Converting this to grams per liter: 500 mg/75 mL = 6666.67 mg/1000 mL = 6.667 g/L."
+                },
+                {
+                    "text": "Determine the number of species (particles)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Cl- (ion)"
+                        },
+                        {
+                            "type": "text",
+                            "value": "no. of species"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1,
+                            "unit": ""
+                        }
+                    ],
+                    "operators1": ["→", "="],
+                    "hint": "Cl- is already an ion in solution, so it does not dissociate further. Therefore, the number of species is 1."
+                },
+                {
+                    "text": "Plug values into the formula and calculate mOsm/L",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "mOsm/L"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "operands": [
+                                    {"type": "input", "answer": 6.667, "unit": "g/L"},
+                                    {"type": "input", "answer": 1, "unit": ""},
+                                    {"type": "input", "answer": 1000, "unit": ""}
+                                ],
+                                "operators": ["×", "×"]
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": 35,
+                                "unit": ""
+                            }
+                        },
+                        {
+                            "type": "input",
+                            "answer": 190.49,
+                            "unit": "mOsm/L"
+                        }
+                    ],
+                    "operators1": ["=", "="],
+                    "hint": "Plugging in the values into the formula: mOsm/L = 6.667 g/L × 1 × (1000/35) = 190.49 mOsm/L"
+                },
+                {
+                    "text": "Convert mOsm/L to mOsm for 1 liter",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "mOsm/L"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 190.49,
+                            "unit": "mOsm/L"
+                        },
+                        {
+                            "type": "text",
+                            "value": "× 1 L"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 190,
+                            "unit": "mOsm"
+                        }
+                    ],
+                    "operators1": ["=", "×", "≈"],
+                    "hint": "Since we want the milliosmoles in 1 liter, we multiply the osmolarity by 1: 190.49 mOsm/L × 1 L = 190 mOsm (rounded to the nearest whole number)"
+                }
+            ]
+        },
+        {
+            "number": 8,
+            "tag": "mosmole",
+            "question": "Calculate the milliosmoles of sodium chloride in 300 ml of a 7% hypertonic solution of sodium chloride injection? (NaCl molecular weight is 58.5). Round the final answer to the nearest whole number.",
+            "answerValue": "718",
+            "answerUnit": "mOsm",
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Calculate the Osmolarity (in mOsm/L)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "7% NaCl"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 7,
+                                "unit": "g"
+                            },
+                            "denominator": "100 mL"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 70,
+                                "unit": "g"
+                            },
+                            "denominator": "1000 mL"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 70,
+                            "unit": "g/L"
+                        }
+                    ],
+                    "operators1": ["→", "=", "="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "NaCl"
+                        },
+                        {
+                            "type": "text",
+                            "value": "no. of species"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 2,
+                            "unit": ""
+                        }
+                    ],
+                    "operators2": ["→", "="],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "mOsm/L"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "operands": [
+                                    {"type": "input", "answer": 70, "unit": "g/L"},
+                                    {"type": "input", "answer": 2, "unit": "(no. of species)"},
+                                    {"type": "input", "answer": 1000, "unit": ""}
+                                ],
+                                "operators": ["×", "×"]
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": 58.5,
+                                "unit": "(MW)"
+                            }
+                        },
+                        {
+                            "type": "input",
+                            "answer": 2393.16,
+                            "unit": "mOsm/L"
+                        }
+                    ],
+                    "operators3": ["=", "="],
+                    "hint": "7% NaCl means that there are 7 grams of NaCl in 100 mL of solution. Converting this to grams per liter, we get 70 g/L. The number of species is 2 because NaCl dissociates into 2 particles (Na+ and Cl-). Plugging in the values into the formula: mOsm/L = 70 g/L × 2 × (1000/58.5) = 2393.16 mOsm/L"
+                },
+                {
+                    "text": "Use the following proportion to calculate mOsm in the specific volume (round the final answer to the nearest whole number)",
+                    "type": "PROPORTION",
+                    "operands1": [
+                        {
+                            "type": "fraction",
+                            "numerator": "mOsm obtained from step 1",
+                            "denominator": "1000 mL"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": "x mOsm",
+                            "denominator": "specific volume (mL)"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 2393.16,
+                                "unit": "mOsm"
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": 1000,
+                                "unit": "mL"
+                            }
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": "x mOsm",
+                            "denominator": {
+                                "type": "input",
+                                "answer": 300,
+                                "unit": "mL"
+                            }
+                        }
+                    ],
+                    "operators2": ["="],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "x"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 718,
+                            "unit": "mOsm"
+                        }
+                    ],
+                    "operators3": ["≈"],
+                    "hint": "Plugging in the values into the proportion: 2393.16 mOsm / 1000 mL = x mOsm / 300 mL, we can solve for x: x = (2393.16 mOsm × 300 mL) / 1000 mL = 718 mOsm"
+                }
+            ]
+        },
+        {
+            "number": 9,
+            "tag": "mosmole",
+            "question": "Calcium chloride dihydrate injection is a 22% of CaCl2 ∙ 2H2O. How many milliosmoles are present in a 5-ml vial? (CaCl2 ∙ 2H2O molecular weight is 147). Round the final answer to the nearest whole number.",
+            "answerValue": "22",
+            "answerUnit": "mOsm",
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Calculate the Osmolarity (in mOsm/L)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "22% CaCl2 ∙ 2H2O"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 22,
+                                "unit": "g"
+                            },
+                            "denominator": "100 mL"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 220,
+                                "unit": "g"
+                            },
+                            "denominator": "1000 mL"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 220,
+                            "unit": "g/L"
+                        }
+                    ],
+                    "operators1": ["→", "=", "="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "CaCl2 ∙ 2H2O"
+                        },
+                        {
+                            "type": "text",
+                            "value": "no. of species"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 3,
+                            "unit": ""
+                        }
+                    ],
+                    "operators2": ["→", "="],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "mOsm/L"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "operands": [
+                                    {"type": "input", "answer": 220, "unit": "g/L"},
+                                    {"type": "input", "answer": 3, "unit": "(no. of species)"},
+                                    {"type": "input", "answer": 1000, "unit": ""}
+                                ],
+                                "operators": ["×", "×"]
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": 147,
+                                "unit": "(MW)"
+                            }
+                        },
+                        {
+                            "type": "input",
+                            "answer": 4489.8,
+                            "unit": "mOsm/L"
+                        }
+                    ],
+                    "operators3": ["=", "="],
+                    "hint": "22% CaCl2 ∙ 2H2O means that there are 22 grams of CaCl2 ∙ 2H2O in 100 mL of solution. Converting this to grams per liter, we get 220 g/L. The number of species is 3 because CaCl2 ∙ 2H2O dissociates into 3 particles (Ca2+ and 2Cl-). Plugging in the values into the formula: mOsm/L = 220 g/L × 3 × (1000/147) = 4489.8 mOsm/L"
+                },
+                {
+                    "text": "Use the following proportion to calculate mOsm in the specific volume (round the final answer to the nearest whole number)",
+                    "type": "PROPORTION",
+                    "operands1": [
+                        {
+                            "type": "fraction",
+                            "numerator": "mOsm obtained from step 1",
+                            "denominator": "1000 mL"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": "x mOsm",
+                            "denominator": "specific volume (mL)"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 4489.8,
+                                "unit": "mOsm"
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": 1000,
+                                "unit": "mL"
+                            }
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": "x mOsm",
+                            "denominator": {
+                                "type": "input",
+                                "answer": 5,
+                                "unit": "mL"
+                            }
+                        }
+                    ],
+                    "operators2": ["="],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "x"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 22,
+                            "unit": "mOsm"
+                        }
+                    ],
+                    "operators3": ["≈"],
+                    "hint": "Plugging in the values into the proportion: 4489.8 mOsm / 1000 mL = x mOsm / 5 mL, we can solve for x: x = (4489.8 mOsm × 5 mL) / 1000 mL = 22 mOsm"
+                }
+            ]
+        },
+        {
+            "number": 10,
+            "tag": "mosmole",
+            "question": "Calcium chloride dihydrate injection is a 7% of CaCl2 ∙ 2H2O. How many milliosomoles are present in a 10-ml vial? (Molecular weight of CaCl2 ∙ 2H2O is 147). Round the final answer to the nearest whole number.",
+            "answerValue": [14],
+            "answerUnit": ["mOsm"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Calculate the Osmolarity (in mOsm/L)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "7% CaCl2 ∙ 2H2O"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 7,
+                                "unit": "g"
+                            },
+                            "denominator": "100 mL"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 70,
+                                "unit": "g"
+                            },
+                            "denominator": "1000 mL"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 70,
+                            "unit": "g/L"
+                        }
+                    ],
+                    "operators1": ["→", "=", "="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "CaCl2 ∙ 2H2O"
+                        },
+                        {
+                            "type": "text",
+                            "value": "no. of species"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 3,
+                            "unit": ""
+                        }
+                    ],
+                    "operators2": ["→", "="],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "mOsm/L"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "operands": [
+                                    {"type": "input", "answer": 70, "unit": "g/L"},
+                                    {"type": "input", "answer": 3, "unit": "(no. of species)"},
+                                    {"type": "input", "answer": 1000, "unit": ""}
+                                ],
+                                "operators": ["×", "×"]
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": 147,
+                                "unit": "(MW)"
+                            }
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1428.57,
+                            "unit": "mOsm/L"
+                        }
+                    ],
+                    "operators3": ["=", "="],
+                    "hint": "7% CaCl2 ∙ 2H2O means that there are 7 grams of CaCl2 ∙ 2H2O in 100 mL of solution. Converting this to grams per liter, we get 70 g/L. The number of species is 3 because CaCl2 ∙ 2H2O dissociates into 3 particles (Ca2+ and 2Cl-). Plugging in the values into the formula: mOsm/L = 70 g/L × 3 × (1000/147) = 1428.57 mOsm/L"
+                },
+                {
+                    "text": "Use the following proportion to calculate mOsm in the specific volume (round the final answer to the nearest whole number)",
+                    "type": "PROPORTION",
+                    "operands1": [
+                        {
+                            "type": "fraction",
+                            "numerator": "mOsm obtained from step 1",
+                            "denominator": "1000 mL"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": "x mOsm",
+                            "denominator": "specific volume (mL)"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 1428.57,
+                                "unit": "mOsm"
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": 1000,
+                                "unit": "mL"
+                            }
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": "x mOsm",
+                            "denominator": {
+                                "type": "input",
+                                "answer": 10,
+                                "unit": "mL"
+                            }
+                        }
+                    ],
+                    "operators2": ["="],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "x"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 14,
+                            "unit": "mOsm"
+                        }
+                    ],
+                    "operators3": ["≈"],
+                    "hint": "Plugging in the values into the proportion: 1428.57 mOsm / 1000 mL = x mOsm / 10 mL, we can solve for x: x = (1428.57 mOsm × 10 mL) / 1000 mL = 14 mOsm"
+                }
+            ]
+        },
+        {
+            "number": 11,
+            "tag": "mosmolarity",
+            "question": "How many milliosmoles of sodium are represented in 1 liter of 10% hypertonic sodium chloride solution? (Molecular weight of NaCl is 58.5). Round the final answer to the nearest whole number.",
+            "answerValue": [1709],
+            "answerUnit": ["mOsm"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Write the formula",
+                    "type": "DRAG_DROP_FORMULA",
+                    "hint": "The formula for mOsm/L is: (weight in g/L × number of species × 1000) / molecular weight. Remember that weight is the concentration, number of species depends on whether the compound dissociates, 1000 is the conversion factor, and MW is the molecular weight.",
+                    "draggableElements": [
+                        {
+                            "id": "weight",
+                            "value": "weight (g/L)"
+                        },
+                        {
+                            "id": "species",
+                            "value": "no. of species"
+                        },
+                        {
+                            "id": "thousand",
+                            "value": "1000"
+                        },
+                        {
+                            "id": "mw",
+                            "value": "MW"
+                        }
+                    ],
+                    "skeleton": [
+                        {
+                            "type": "text",
+                            "value": "mOsm/L"
+                        },
+                        {
+                            "type": "operator",
+                            "value": "="
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "operands": [
+                                    {
+                                        "type": "dropzone",
+                                        "expectedId": "weight"
+                                    },
+                                    {
+                                        "type": "dropzone",
+                                        "expectedId": "species"
+                                    },
+                                    {
+                                        "type": "dropzone",
+                                        "expectedId": "thousand"
+                                    }
+                                ],
+                                "operators": ["×", "×"]
+                            },
+                            "denominator": {
+                                "type": "dropzone",
+                                "expectedId": "mw"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "text": "Convert the weight to grams per liter (g/L)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "10% NaCl"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 10,
+                                "unit": "g"
+                            },
+                            "denominator": "100 mL"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 100,
+                                "unit": "g"
+                            },
+                            "denominator": "1000 mL"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 100,
+                            "unit": "g/L"
+                        }
+                    ],
+                    "operators1": ["→", "=", "="],
+                    "hint": "From the question, we know that the solution contains 10% NaCl. This means that there are 10 grams of NaCl in 100 mL of solution. Converting this to grams per liter, we get 100 g/L."
+                },
+                {
+                    "text": "Determine the number of species (particles)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Na+ (sodium ion only)"
+                        },
+                        {
+                            "type": "text",
+                            "value": "no. of species"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1,
+                            "unit": ""
+                        }
+                    ],
+                    "operators1": ["→", "="],
+                    "hint": "Since we are only interested in sodium ions (Na+), and NaCl dissociates into Na+ and Cl-, we count only the Na+ ions. Therefore, the number of species is 1."
+                },
+                {
+                    "text": "Plug values into the formula and calculate mOsm/L",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "mOsm/L"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "operands": [
+                                    {"type": "input", "answer": 100, "unit": "g/L"},
+                                    {"type": "input", "answer": 1, "unit": ""},
+                                    {"type": "input", "answer": 1000, "unit": ""}
+                                ],
+                                "operators": ["×", "×"]
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": 58.5,
+                                "unit": ""
+                            }
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1709.4,
+                            "unit": "mOsm/L"
+                        }
+                    ],
+                    "operators1": ["=", "="],
+                    "hint": "Plugging in the values into the formula: mOsm/L = 100 g/L × 1 × (1000/58.5) = 1709.4 mOsm/L"
+                },
+                {
+                    "text": "Convert mOsm/L to mOsm for 1 liter",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "mOsm/L"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1709.4,
+                            "unit": "mOsm/L"
+                        },
+                        {
+                            "type": "text",
+                            "value": "× 1 L"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1709,
+                            "unit": "mOsm"
+                        }
+                    ],
+                    "operators1": ["=", "×", "≈"],
+                    "hint": "Since we want the milliosmoles in 1 liter, we multiply the osmolarity by 1: 1709.4 mOsm/L × 1 L = 1709 mOsm (rounded to the nearest whole number)"
+                }
+            ]
+        },
+        {
+            "number": 12,
+            "tag": "mosmolarity",
+            "question": "How many milliosmoles of anhydrous dextrose are represented by 1 liter of a 30% w/v solution of anhydrous dextrose in water. (Molecular weight of anhydrous dextrose is 180). Round the final answer to the nearest whole number.",
+            "answerValue": [1667],
+            "answerUnit": ["mOsm"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Write the formula",
+                    "type": "DRAG_DROP_FORMULA",
+                    "hint": "The formula for mOsm/L is: (weight in g/L × number of species × 1000) / molecular weight. Remember that weight is the concentration, number of species depends on whether the compound dissociates, 1000 is the conversion factor, and MW is the molecular weight.",
+                    "draggableElements": [
+                        {
+                            "id": "weight",
+                            "value": "weight (g/L)"
+                        },
+                        {
+                            "id": "species",
+                            "value": "no. of species"
+                        },
+                        {
+                            "id": "thousand",
+                            "value": "1000"
+                        },
+                        {
+                            "id": "mw",
+                            "value": "MW"
+                        }
+                    ],
+                    "skeleton": [
+                        {
+                            "type": "text",
+                            "value": "mOsm/L"
+                        },
+                        {
+                            "type": "operator",
+                            "value": "="
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "operands": [
+                                    {
+                                        "type": "dropzone",
+                                        "expectedId": "weight"
+                                    },
+                                    {
+                                        "type": "dropzone",
+                                        "expectedId": "species"
+                                    },
+                                    {
+                                        "type": "dropzone",
+                                        "expectedId": "thousand"
+                                    }
+                                ],
+                                "operators": ["×", "×"]
+                            },
+                            "denominator": {
+                                "type": "dropzone",
+                                "expectedId": "mw"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "text": "Convert the weight to grams per liter (g/L)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "30% w/v anhydrous dextrose"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 30,
+                                "unit": "g"
+                            },
+                            "denominator": "100 mL"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 300,
+                                "unit": "g"
+                            },
+                            "denominator": "1000 mL"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 300,
+                            "unit": "g/L"
+                        }
+                    ],
+                    "operators1": ["→", "=", "="],
+                    "hint": "From the question, we know that the solution contains 30% w/v anhydrous dextrose. This means that there are 30 grams of anhydrous dextrose in 100 mL of solution. Converting this to grams per liter, we get 300 g/L."
+                },
+                {
+                    "text": "Determine the number of species (particles)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Anhydrous dextrose (nonelectrolyte)"
+                        },
+                        {
+                            "type": "text",
+                            "value": "no. of species"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1,
+                            "unit": ""
+                        }
+                    ],
+                    "operators1": ["→", "="],
+                    "hint": "Anhydrous dextrose is a nonelectrolyte, so it does not dissociate in water. Therefore, the number of species is 1."
+                },
+                {
+                    "text": "Plug values into the formula and calculate mOsm/L",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "mOsm/L"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "operands": [
+                                    {"type": "input", "answer": 300, "unit": "g/L"},
+                                    {"type": "input", "answer": 1, "unit": ""},
+                                    {"type": "input", "answer": 1000, "unit": ""}
+                                ],
+                                "operators": ["×", "×"]
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": 180,
+                                "unit": ""
+                            }
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1666.67,
+                            "unit": "mOsm/L"
+                        }
+                    ],
+                    "operators1": ["=", "≈"],
+                    "hint": "Plugging in the values into the formula: mOsm/L = 300 g/L × 1 × (1000/180) = 1666.67 mOsm/L"
+                },
+                {
+                    "text": "Convert mOsm/L to mOsm for 1 liter",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "mOsm/L"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1666.67,
+                            "unit": "mOsm/L"
+                        },
+                        {
+                            "type": "text",
+                            "value": "× 1 L"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1667,
+                            "unit": "mOsm"
+                        }
+                    ],
+                    "operators1": ["=", "×", "≈"],
+                    "hint": "Since we want the milliosmoles in 1 liter, we multiply the osmolarity by 1: 1666.67 mOsm/L × 1 L = 1667 mOsm (rounded to the nearest whole number)"
+                }
+            ]
+        },
+        {
+            "number": 13,
+            "tag": "mosmole",
+            "question": "Calculate how many milliosmoles represented by 150 mL of a 21% w/v solution of anhydrous dextrose in water. (Molecular weight of anhydrous dextrose is 180). Round the final answer to the nearest whole number.",
+            "answerValue": [175],
+            "answerUnit": ["mOsm"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Calculate the Osmolarity (in mOsm/L)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "21% w/v anhydrous dextrose"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 21,
+                                "unit": "g"
+                            },
+                            "denominator": "100 mL"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 210,
+                                "unit": "g"
+                            },
+                            "denominator": "1000 mL"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 210,
+                            "unit": "g/L"
+                        }
+                    ],
+                    "operators1": ["→", "=", "="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "Anhydrous dextrose"
+                        },
+                        {
+                            "type": "text",
+                            "value": "no. of species"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1,
+                            "unit": ""
+                        }
+                    ],
+                    "operators2": ["→", "="],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "mOsm/L"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "operands": [
+                                    {"type": "input", "answer": 210, "unit": "g/L"},
+                                    {"type": "input", "answer": 1, "unit": "(no. of species)"},
+                                    {"type": "input", "answer": 1000, "unit": ""}
+                                ],
+                                "operators": ["×", "×"]
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": 180,
+                                "unit": "(MW)"
+                            }
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1166.67,
+                            "unit": "mOsm/L"
+                        }
+                    ],
+                    "operators3": ["=", "≈"],
+                    "hint": "21% w/v anhydrous dextrose means that there are 21 grams of anhydrous dextrose in 100 mL of solution. Converting this to grams per liter, we get 210 g/L. The number of species is 1 because anhydrous dextrose is a nonelectrolyte and does not dissociate. Plugging in the values into the formula: mOsm/L = 210 g/L × 1 × (1000/180) = 1166.67 mOsm/L"
+                },
+                {
+                    "text": "Use the following proportion to calculate mOsm in the specific volume (round the final answer to the nearest whole number)",
+                    "type": "PROPORTION",
+                    "operands1": [
+                        {
+                            "type": "fraction",
+                            "numerator": "mOsm obtained from step 1",
+                            "denominator": "1000 mL"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": "x mOsm",
+                            "denominator": "specific volume (mL)"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 1166.67,
+                                "unit": "mOsm"
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": 1000,
+                                "unit": "mL"
+                            }
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": "x mOsm",
+                            "denominator": {
+                                "type": "input",
+                                "answer": 150,
+                                "unit": "mL"
+                            }
+                        }
+                    ],
+                    "operators2": ["="],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "x"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 175,
+                            "unit": "mOsm"
+                        }
+                    ],
+                    "operators3": ["≈"],
+                    "hint": "Plugging in the values into the proportion: 1166.67 mOsm / 1000 mL = x mOsm / 150 mL, we can solve for x: x = (1166.67 mOsm × 150 mL) / 1000 mL = 175 mOsm"
+                }
+            ]
+        },
+        {
+            "number": 14,
+            "tag": "mosmolarity",
+            "question": "Calculate the milliosmolarity of a 9.5% w/v solution of potassium acetate. (Molecular weight of KC2H3O2 is 98). Round the final answer to the nearest whole number.",
+            "answerValue": [1939],
+            "answerUnit": ["mOsm/L"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Write the formula",
+                    "type": "DRAG_DROP_FORMULA",
+                    "hint": "The formula for mOsm/L is: (weight in g/L × number of species × 1000) / molecular weight. Remember that weight is the concentration, number of species depends on whether the compound dissociates, 1000 is the conversion factor, and MW is the molecular weight.",
+                    "draggableElements": [
+                        {
+                            "id": "weight",
+                            "value": "weight (g/L)"
+                        },
+                        {
+                            "id": "species",
+                            "value": "no. of species"
+                        },
+                        {
+                            "id": "thousand",
+                            "value": "1000"
+                        },
+                        {
+                            "id": "mw",
+                            "value": "MW"
+                        }
+                    ],
+                    "skeleton": [
+                        {
+                            "type": "text",
+                            "value": "mOsm/L"
+                        },
+                        {
+                            "type": "operator",
+                            "value": "="
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "operands": [
+                                    {
+                                        "type": "dropzone",
+                                        "expectedId": "weight"
+                                    },
+                                    {
+                                        "type": "dropzone",
+                                        "expectedId": "species"
+                                    },
+                                    {
+                                        "type": "dropzone",
+                                        "expectedId": "thousand"
+                                    }
+                                ],
+                                "operators": ["×", "×"]
+                            },
+                            "denominator": {
+                                "type": "dropzone",
+                                "expectedId": "mw"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "text": "Convert the weight to grams per liter (g/L)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "9.5% w/v potassium acetate"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 9.5,
+                                "unit": "g"
+                            },
+                            "denominator": "100 mL"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 95,
+                                "unit": "g"
+                            },
+                            "denominator": "1000 mL"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 95,
+                            "unit": "g/L"
+                        }
+                    ],
+                    "operators1": ["→", "=", "="],
+                    "hint": "From the question, we know that the solution contains 9.5% w/v potassium acetate. This means that there are 9.5 grams of potassium acetate in 100 mL of solution. Converting this to grams per liter, we get 95 g/L."
+                },
+                {
+                    "text": "Determine the number of species (particles)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Potassium acetate (electrolyte)"
+                        },
+                        {
+                            "type": "text",
+                            "value": "no. of species"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 2,
+                            "unit": ""
+                        }
+                    ],
+                    "operators1": ["→", "="],
+                    "hint": "Potassium acetate (KC2H3O2) is an electrolyte, so it dissociates in water into two particles (K+ and C2H3O2-). Therefore, the number of species is 2."
+                },
+                {
+                    "text": "Plug values into the formula and calculate mOsm/L",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "mOsm/L"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "operands": [
+                                    {"type": "input", "answer": 95, "unit": "g/L"},
+                                    {"type": "input", "answer": 2, "unit": ""},
+                                    {"type": "input", "answer": 1000, "unit": ""}
+                                ],
+                                "operators": ["×", "×"]
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": 98,
+                                "unit": ""
+                            }
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1939,
+                            "unit": "mOsm/L"
+                        }
+                    ],
+                    "operators1": ["=", "≈"],
+                    "hint": "Plugging in the values into the formula: mOsm/L = 95 g/L × 2 × (1000/98) = 1938.78 mOsm/L ≈ 1939 mOsm/L (rounded to the nearest whole number)"
+                }
+            ]
+        },
+        {
+            "number": 15,
+            "tag": "mosmolarity",
+            "question": "What is the osmolarity of a 2.4% (w/v) solution of sodium bicarbonate? (NaHCO3 molecular weight is 84). Round the final answer to the nearest whole number.",
+            "answerValue": [571],
+            "answerUnit": ["mOsm/L"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Write the formula",
+                    "type": "DRAG_DROP_FORMULA",
+                    "hint": "The formula for mOsm/L is: (weight in g/L × number of species × 1000) / molecular weight. Remember that weight is the concentration, number of species depends on whether the compound dissociates, 1000 is the conversion factor, and MW is the molecular weight.",
+                    "draggableElements": [
+                        {
+                            "id": "weight",
+                            "value": "weight (g/L)"
+                        },
+                        {
+                            "id": "species",
+                            "value": "no. of species"
+                        },
+                        {
+                            "id": "thousand",
+                            "value": "1000"
+                        },
+                        {
+                            "id": "mw",
+                            "value": "MW"
+                        }
+                    ],
+                    "skeleton": [
+                        {
+                            "type": "text",
+                            "value": "mOsm/L"
+                        },
+                        {
+                            "type": "operator",
+                            "value": "="
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "operands": [
+                                    {
+                                        "type": "dropzone",
+                                        "expectedId": "weight"
+                                    },
+                                    {
+                                        "type": "dropzone",
+                                        "expectedId": "species"
+                                    },
+                                    {
+                                        "type": "dropzone",
+                                        "expectedId": "thousand"
+                                    }
+                                ],
+                                "operators": ["×", "×"]
+                            },
+                            "denominator": {
+                                "type": "dropzone",
+                                "expectedId": "mw"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "text": "Convert the weight to grams per liter (g/L)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "2.4% w/v sodium bicarbonate"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 2.4,
+                                "unit": "g"
+                            },
+                            "denominator": "100 mL"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 24,
+                                "unit": "g"
+                            },
+                            "denominator": "1000 mL"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 24,
+                            "unit": "g/L"
+                        }
+                    ],
+                    "operators1": ["→", "=", "="],
+                    "hint": "From the question, we know that the solution contains 2.4% w/v sodium bicarbonate. This means that there are 2.4 grams of sodium bicarbonate in 100 mL of solution. Converting this to grams per liter, we get 24 g/L."
+                },
+                {
+                    "text": "Determine the number of species (particles)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Sodium bicarbonate (electrolyte)"
+                        },
+                        {
+                            "type": "text",
+                            "value": "no. of species"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 2,
+                            "unit": ""
+                        }
+                    ],
+                    "operators1": ["→", "="],
+                    "hint": "Sodium bicarbonate (NaHCO3) is an electrolyte, so it dissociates in water into two particles (Na+ and HCO3-). Therefore, the number of species is 2."
+                },
+                {
+                    "text": "Plug values into the formula and calculate mOsm/L",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "mOsm/L"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "operands": [
+                                    {"type": "input", "answer": 24, "unit": "g/L"},
+                                    {"type": "input", "answer": 2, "unit": ""},
+                                    {"type": "input", "answer": 1000, "unit": ""}
+                                ],
+                                "operators": ["×", "×"]
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": 84,
+                                "unit": ""
+                            }
+                        },
+                        {
+                            "type": "input",
+                            "answer": 571,
+                            "unit": "mOsm/L"
+                        }
+                    ],
+                    "operators1": ["=", "≈"],
+                    "hint": "Plugging in the values into the formula: mOsm/L = 24 g/L × 2 × (1000/84) = 571.43 mOsm/L ≈ 571 mOsm/L (rounded to the nearest whole number)"
+                }
+            ]
+        },
+        {
+            "number": 16,
+            "tag": "mosmole",
+            "question": "Calculate the milliosmoles represented by a 250-mL parenteral fluid containing 2% (w/v) of potassium acetate (KC2H3O2 molecular weight is 98). Round the final answer to the nearest whole number.",
+            "answerValue": [102],
+            "answerUnit": ["mOsm"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Calculate the Osmolarity (in mOsm/L)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "2% w/v potassium acetate"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 2,
+                                "unit": "g"
+                            },
+                            "denominator": "100 mL"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 20,
+                                "unit": "g"
+                            },
+                            "denominator": "1000 mL"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 20,
+                            "unit": "g/L"
+                        }
+                    ],
+                    "operators1": ["→", "=", "="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "Potassium acetate"
+                        },
+                        {
+                            "type": "text",
+                            "value": "no. of species"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 2,
+                            "unit": ""
+                        }
+                    ],
+                    "operators2": ["→", "="],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "mOsm/L"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "operands": [
+                                    {"type": "input", "answer": 20, "unit": "g/L"},
+                                    {"type": "input", "answer": 2, "unit": "(no. of species)"},
+                                    {"type": "input", "answer": 1000, "unit": ""}
+                                ],
+                                "operators": ["×", "×"]
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": 98,
+                                "unit": "(MW)"
+                            }
+                        },
+                        {
+                            "type": "input",
+                            "answer": 408.16,
+                            "unit": "mOsm/L"
+                        }
+                    ],
+                    "operators3": ["=", "≈"],
+                    "hint": "2% w/v potassium acetate means that there are 2 grams of potassium acetate in 100 mL of solution. Converting this to grams per liter, we get 20 g/L. The number of species is 2 because potassium acetate dissociates into 2 particles (K+ and C2H3O2-). Plugging in the values into the formula: mOsm/L = 20 g/L × 2 × (1000/98) = 408.16 mOsm/L"
+                },
+                {
+                    "text": "Use the following proportion to calculate mOsm in the specific volume (round the final answer to the nearest whole number)",
+                    "type": "PROPORTION",
+                    "operands1": [
+                        {
+                            "type": "fraction",
+                            "numerator": "mOsm obtained from step 1",
+                            "denominator": "1000 mL"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": "x mOsm",
+                            "denominator": "specific volume (mL)"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 408.16,
+                                "unit": "mOsm"
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": 1000,
+                                "unit": "mL"
+                            }
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": "x mOsm",
+                            "denominator": {
+                                "type": "input",
+                                "answer": 250,
+                                "unit": "mL"
+                            }
+                        }
+                    ],
+                    "operators2": ["="],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "x"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 102,
+                            "unit": "mOsm"
+                        }
+                    ],
+                    "operators3": ["≈"],
+                    "hint": "Plugging in the values into the proportion: 408.16 mOsm / 1000 mL = x mOsm / 250 mL, we can solve for x: x = (408.16 mOsm × 250 mL) / 1000 mL = 102 mOsm"
+                }
+            ]
+        },
+        {
+            "number": 17,
+            "tag": "mosmole",
+            "question": "Calculate the mOsmoles contained in a 100 mL parenteral fluid containing 20% (w/v) sodium bicarbonate (NaHCO3 molecular weight is 84). Round the final answer to the nearest whole number.",
+            "answerValue": [476],
+            "answerUnit": ["mOsm"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Calculate the Osmolarity (in mOsm/L)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "20% w/v sodium bicarbonate"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 20,
+                                "unit": "g"
+                            },
+                            "denominator": "100 mL"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 200,
+                                "unit": "g"
+                            },
+                            "denominator": "1000 mL"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 200,
+                            "unit": "g/L"
+                        }
+                    ],
+                    "operators1": ["→", "=", "="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "Sodium bicarbonate"
+                        },
+                        {
+                            "type": "text",
+                            "value": "no. of species"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 2,
+                            "unit": ""
+                        }
+                    ],
+                    "operators2": ["→", "="],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "mOsm/L"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "operands": [
+                                    {"type": "input", "answer": 200, "unit": "g/L"},
+                                    {"type": "input", "answer": 2, "unit": "(no. of species)"},
+                                    {"type": "input", "answer": 1000, "unit": ""}
+                                ],
+                                "operators": ["×", "×"]
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": 84,
+                                "unit": "(MW)"
+                            }
+                        },
+                        {
+                            "type": "input",
+                            "answer": 4761.9,
+                            "unit": "mOsm/L"
+                        }
+                    ],
+                    "operators3": ["=", "≈"],
+                    "hint": "20% w/v sodium bicarbonate means that there are 20 grams of sodium bicarbonate in 100 mL of solution. Converting this to grams per liter, we get 200 g/L. The number of species is 2 because sodium bicarbonate dissociates into 2 particles (Na+ and HCO3-). Plugging in the values into the formula: mOsm/L = 200 g/L × 2 × (1000/84) = 4761.9 mOsm/L"
+                },
+                {
+                    "text": "Use the following proportion to calculate mOsm in the specific volume (round the final answer to the nearest whole number)",
+                    "type": "PROPORTION",
+                    "operands1": [
+                        {
+                            "type": "fraction",
+                            "numerator": "mOsm obtained from step 1",
+                            "denominator": "1000 mL"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": "x mOsm",
+                            "denominator": "specific volume (mL)"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 4761.9,
+                                "unit": "mOsm"
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": 1000,
+                                "unit": "mL"
+                            }
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": "x mOsm",
+                            "denominator": {
+                                "type": "input",
+                                "answer": 100,
+                                "unit": "mL"
+                            }
+                        }
+                    ],
+                    "operators2": ["="],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "x"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 476,
+                            "unit": "mOsm"
+                        }
+                    ],
+                    "operators3": ["≈"],
+                    "hint": "Plugging in the values into the proportion: 4761.9 mOsm / 1000 mL = x mOsm / 100 mL, we can solve for x: x = (4761.9 mOsm × 100 mL) / 1000 mL = 476 mOsm"
+                }
+            ]
+        },
+        {
+            "number": 18,
+            "tag": "mosmolarity",
+            "question": "Calculate the percentage strength of NaCl (w/v) required in a solution to have the osmolarity of 280 mOsmol/L. (NaCl MW = 58.5). Round the final answer to the nearest hundredth.",
+            "answerValue": [0.82],
+            "answerUnit": ["% w/v"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Write the formula",
+                    "type": "DRAG_DROP_FORMULA",
+                    "hint": "The formula for mOsm/L is: (weight in g/L × number of species × 1000) / molecular weight. Remember that weight is the concentration, number of species depends on whether the compound dissociates, 1000 is the conversion factor, and MW is the molecular weight.",
+                    "draggableElements": [
+                        {
+                            "id": "weight",
+                            "value": "weight (g/L)"
+                        },
+                        {
+                            "id": "species",
+                            "value": "no. of species"
+                        },
+                        {
+                            "id": "thousand",
+                            "value": "1000"
+                        },
+                        {
+                            "id": "mw",
+                            "value": "MW"
+                        }
+                    ],
+                    "skeleton": [
+                        {
+                            "type": "text",
+                            "value": "mOsm/L"
+                        },
+                        {
+                            "type": "operator",
+                            "value": "="
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "operands": [
+                                    {
+                                        "type": "dropzone",
+                                        "expectedId": "weight"
+                                    },
+                                    {
+                                        "type": "dropzone",
+                                        "expectedId": "species"
+                                    },
+                                    {
+                                        "type": "dropzone",
+                                        "expectedId": "thousand"
+                                    }
+                                ],
+                                "operators": ["×", "×"]
+                            },
+                            "denominator": {
+                                "type": "dropzone",
+                                "expectedId": "mw"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "text": "Determine the number of species (particles)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "NaCl (electrolyte)"
+                        },
+                        {
+                            "type": "text",
+                            "value": "no. of species"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 2,
+                            "unit": ""
+                        }
+                    ],
+                    "operators1": ["→", "="],
+                    "hint": "Sodium chloride (NaCl) is an electrolyte, so it dissociates in water into two particles (Na+ and Cl-). Therefore, the number of species is 2."
+                },
+                {
+                    "text": "Rearrange the formula to solve for weight (g/L)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "280 mOsm/L"
+                        },
+                        {
+                            "type": "text",
+                            "value": "="
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "operands": [
+                                    {"type": "text", "value": "Wt (g/L)"},
+                                    {"type": "input", "answer": 2, "unit": "(no. of species)"},
+                                    {"type": "input", "answer": 1000, "unit": ""}
+                                ],
+                                "operators": ["×", "×"]
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": 58.5,
+                                "unit": "(MW)"
+                            }
+                        }
+                    ],
+                    "operators1": ["=", "="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "Wt (g/L)"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 8.19,
+                            "unit": "g/L"
+                        }
+                    ],
+                    "operators2": ["="],
+                    "hint": "Rearranging the formula to solve for Wt (g/L): Wt (g/L) = (mOsm/L × MW) / (no. species × 1000) = (280 × 58.5) / (2 × 1000) = 8.19 g/L"
+                },
+                {
+                    "text": "Convert grams per liter to percentage strength (w/v)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "8.19 g/L"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 8.19,
+                                "unit": "g"
+                            },
+                            "denominator": "1000 mL"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 0.819,
+                                "unit": "g"
+                            },
+                            "denominator": "100 mL"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.82,
+                            "unit": "% w/v"
+                        }
+                    ],
+                    "operators1": ["→", "=", "≈"],
+                    "hint": "Converting 8.19 g/L to percentage strength: 8.19 g/1000 mL = 0.819 g/100 mL = 0.82% w/v (rounded to the nearest hundredth)"
+                }
+            ]
+        },
+        {
+            "number": 19,
+            "tag": "mosmolarity",
+            "question": "Calculate the percentage strength of NaCl (w/v) required in a solution to have the osmolarity of 154 mOsmol/L. (NaCl MW = 58.5). Round the final answer to the nearest hundredth.",
+            "answerValue": [0.45],
+            "answerUnit": ["% w/v"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Write the formula",
+                    "type": "DRAG_DROP_FORMULA",
+                    "hint": "The formula for mOsm/L is: (weight in g/L × number of species × 1000) / molecular weight. Remember that weight is the concentration, number of species depends on whether the compound dissociates, 1000 is the conversion factor, and MW is the molecular weight.",
+                    "draggableElements": [
+                        {
+                            "id": "weight",
+                            "value": "weight (g/L)"
+                        },
+                        {
+                            "id": "species",
+                            "value": "no. of species"
+                        },
+                        {
+                            "id": "thousand",
+                            "value": "1000"
+                        },
+                        {
+                            "id": "mw",
+                            "value": "MW"
+                        }
+                    ],
+                    "skeleton": [
+                        {
+                            "type": "text",
+                            "value": "mOsm/L"
+                        },
+                        {
+                            "type": "operator",
+                            "value": "="
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "operands": [
+                                    {
+                                        "type": "dropzone",
+                                        "expectedId": "weight"
+                                    },
+                                    {
+                                        "type": "dropzone",
+                                        "expectedId": "species"
+                                    },
+                                    {
+                                        "type": "dropzone",
+                                        "expectedId": "thousand"
+                                    }
+                                ],
+                                "operators": ["×", "×"]
+                            },
+                            "denominator": {
+                                "type": "dropzone",
+                                "expectedId": "mw"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "text": "Determine the number of species (particles)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "NaCl (electrolyte)"
+                        },
+                        {
+                            "type": "text",
+                            "value": "no. of species"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 2,
+                            "unit": ""
+                        }
+                    ],
+                    "operators1": ["→", "="],
+                    "hint": "Sodium chloride (NaCl) is an electrolyte, so it dissociates in water into two particles (Na+ and Cl-). Therefore, the number of species is 2."
+                },
+                {
+                    "text": "Rearrange the formula to solve for weight (g/L)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "154 mOsm/L"
+                        },
+                        {
+                            "type": "text",
+                            "value": "="
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "operands": [
+                                    {"type": "text", "value": "Wt (g/L)"},
+                                    {"type": "input", "answer": 2, "unit": "(no. of species)"},
+                                    {"type": "input", "answer": 1000, "unit": ""}
+                                ],
+                                "operators": ["×", "×"]
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": 58.5,
+                                "unit": "(MW)"
+                            }
+                        }
+                    ],
+                    "operators1": ["=", "="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "Wt (g/L)"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 4.5,
+                            "unit": "g/L"
+                        }
+                    ],
+                    "operators2": ["="],
+                    "hint": "Rearranging the formula to solve for Wt (g/L): Wt (g/L) = (mOsm/L × MW) / (no. species × 1000) = (154 × 58.5) / (2 × 1000) = 4.5 g/L"
+                },
+                {
+                    "text": "Convert grams per liter to percentage strength (w/v)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "4.5 g/L"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 4.5,
+                                "unit": "g"
+                            },
+                            "denominator": "1000 mL"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 0.45,
+                                "unit": "g"
+                            },
+                            "denominator": "100 mL"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.45,
+                            "unit": "% w/v"
+                        }
+                    ],
+                    "operators1": ["→", "=", "="],
+                    "hint": "Converting 4.5 g/L to percentage strength: 4.5 g/1000 mL = 0.45 g/100 mL = 0.45% w/v"
+                }
+            ]
+        },
+        {
+            "number": 20,
+            "tag": "mosmolarity",
+            "question": "Calculate the percentage strength of NaCl (w/v) required in a solution to have the osmolarity of 1027 mOsmol/L. (NaCl MW = 58.5). Round the final answer to the nearest whole number.",
+            "answerValue": [3],
+            "answerUnit": ["% w/v"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Write the formula",
+                    "type": "DRAG_DROP_FORMULA",
+                    "hint": "The formula for mOsm/L is: (weight in g/L × number of species × 1000) / molecular weight. Remember that weight is the concentration, number of species depends on whether the compound dissociates, 1000 is the conversion factor, and MW is the molecular weight.",
+                    "draggableElements": [
+                        {
+                            "id": "weight",
+                            "value": "weight (g/L)"
+                        },
+                        {
+                            "id": "species",
+                            "value": "no. of species"
+                        },
+                        {
+                            "id": "thousand",
+                            "value": "1000"
+                        },
+                        {
+                            "id": "mw",
+                            "value": "MW"
+                        }
+                    ],
+                    "skeleton": [
+                        {
+                            "type": "text",
+                            "value": "mOsm/L"
+                        },
+                        {
+                            "type": "operator",
+                            "value": "="
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "operands": [
+                                    {
+                                        "type": "dropzone",
+                                        "expectedId": "weight"
+                                    },
+                                    {
+                                        "type": "dropzone",
+                                        "expectedId": "species"
+                                    },
+                                    {
+                                        "type": "dropzone",
+                                        "expectedId": "thousand"
+                                    }
+                                ],
+                                "operators": ["×", "×"]
+                            },
+                            "denominator": {
+                                "type": "dropzone",
+                                "expectedId": "mw"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "text": "Determine the number of species (particles)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "NaCl (electrolyte)"
+                        },
+                        {
+                            "type": "text",
+                            "value": "no. of species"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 2,
+                            "unit": ""
+                        }
+                    ],
+                    "operators1": ["→", "="],
+                    "hint": "Sodium chloride (NaCl) is an electrolyte, so it dissociates in water into two particles (Na+ and Cl-). Therefore, the number of species is 2."
+                },
+                {
+                    "text": "Rearrange the formula to solve for weight (g/L)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "1027 mOsm/L"
+                        },
+                        {
+                            "type": "text",
+                            "value": "="
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "operands": [
+                                    {"type": "text", "value": "Wt (g/L)"},
+                                    {"type": "input", "answer": 2, "unit": "(no. of species)"},
+                                    {"type": "input", "answer": 1000, "unit": ""}
+                                ],
+                                "operators": ["×", "×"]
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": 58.5,
+                                "unit": "(MW)"
+                            }
+                        }
+                    ],
+                    "operators1": ["=", "="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "Wt (g/L)"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 30.04,
+                            "unit": "g/L"
+                        }
+                    ],
+                    "operators2": ["="],
+                    "hint": "Rearranging the formula to solve for Wt (g/L): Wt (g/L) = (mOsm/L × MW) / (no. species × 1000) = (1027 × 58.5) / (2 × 1000) = 30.04 g/L"
+                },
+                {
+                    "text": "Convert grams per liter to percentage strength (w/v)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "30.04 g/L"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 30.04,
+                                "unit": "g"
+                            },
+                            "denominator": "1000 mL"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 3.004,
+                                "unit": "g"
+                            },
+                            "denominator": "100 mL"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 3,
+                            "unit": "% w/v"
+                        }
+                    ],
+                    "operators1": ["→", "=", "≈"],
+                    "hint": "Converting 30.04 g/L to percentage strength: 30.04 g/1000 mL = 3.004 g/100 mL = 3% w/v (rounded to the nearest whole number)"
+                }
+            ]
+        }
+    ]
+}

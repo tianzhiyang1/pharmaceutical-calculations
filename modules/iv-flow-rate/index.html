@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IV Flow Rate and IV Admixture</title>
+    <link rel="stylesheet" href="../../master.css">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="index-container">
+        <header>
+            <h1>Pharmacy Calculations:<br>IV Flow Rate and IV Admixture</h1>
+        </header>
+
+        <div class="card overview-card">
+            <h2>Overview</h2>
+            <p>In this module, you will:</p>
+            <ul>
+                <li>Perform rate-of-flow calculations for IV infusions</li>
+                <li>Perform calculations for additives to intravenous infusions</li>
+            </ul>
+            
+            <div class="method-list">
+                <div class="method-item">
+                    <h3 id="ivFlowRateTitle" class="method-title">IV Flow Rate Tutorial</h3>
+                    <p class="tutorial-notice">Click the title to view the tutorial</p>
+                </div>
+            </div>
+
+            <div class="button-container">
+                <a href="./practice.html" class="practice-btn">Start Practicing</a>
+            </div>
+        </div>
+
+        <!-- IV Flow Rate Tutorial -->
+        <div class="card tutorial-card" id="ivFlowRateTutorial" style="display: none;">
+        <h2>Tutorial - IV Flow Rate and Admixture</h2>
+        <div class="tutorial-content">
+            <div class="tutorial-section">
+                <div class="tutorial-topic-header" id="parenteralOverviewHeader">
+                    <h3>I. Overview of Parenteral Administration</h3>
+                    <span class="expand-icon">+</span>
+                </div>
+                <div class="tutorial-topic-content" id="parenteralOverviewContent">
+                    <div class="example-calculation">
+                        <ul>
+                            <li>Parenteral dosage forms are administered outside the GI tract, typically by injection.</li>
+                            <li>Routes include:
+                                <ul>
+                                    <li>IV (Intravenous) – into the vein</li>
+                                    <li>IM (Intramuscular) – into the muscle</li>
+                                    <li>SC (Subcutaneous) – under the skin</li>
+                                    <li>Other specialized routes: intra-arterial, intraspinal, intra-articular, intracardiac</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <div class="tutorial-section">
+                <h3>II. Types of IV Infusions</h3>
+                <table class="wide-metric-table">
+                    <thead>
+                        <tr>
+                            <th style="width: 30%;">Type</th>
+                            <th style="width: 70%;">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Continuous</td>
+                            <td>Large-volume infusion over extended time (e.g., hydration, antibiotics)</td>
+                        </tr>
+                        <tr>
+                            <td>Intermittent</td>
+                            <td>Smaller volume infused at intervals (e.g., IV piggyback for antibiotics)</td>
+                        </tr>
+                        <tr>
+                            <td>IV Push</td>
+                            <td>Small volume injected over 1–5 minutes, often in emergencies</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <div class="tutorial-section">
+                <h3>III. IV Flow Rate Basics</h3>
+                <div class="example-calculation">
+                    <p><strong>Definition:</strong></p>
+                    <p>The flow rate is how fast the IV fluid or drug is delivered into the bloodstream. It can be expressed in units such as mL/hour, mL/min, drops/min (gtt/min), mg/hour (for medication).</p>
+                </div>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <div class="tutorial-section">
+                <h3>IV. Key Formulas</h3>
+                <div class="example-calculation important">
+                    <div class="formula-box-content">
+                        <div class="formula-box">
+                            <p><strong>1. Flow Rate:</strong></p>
+                            <div class="horizontal-operation" style="font-weight: bold; justify-content: center;">
+                                <span>Flow rate = </span>
+                                <div class="fraction">
+                                    <div class="fraction-numerator">Volume</div>
+                                    <div class="fraction-denominator">Time</div>
+                                </div>
+                            </div>
+                            
+                            <p><strong>2. Infusion time:</strong></p>
+                            <div class="horizontal-operation" style="font-weight: bold; justify-content: center;">
+                                <span>Time = </span>
+                                <div class="fraction">
+                                    <div class="fraction-numerator">Volume</div>
+                                    <div class="fraction-denominator">Flow rate</div>
+                                </div>
+                            </div>
+                            
+                            <p><strong>3. Volume:</strong></p>
+                            <div class="horizontal-operation" style="font-weight: bold; justify-content: center;">
+                                <span>Volume = Flow rate × Time</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <div class="tutorial-section">
+                <h3>V. Steps for IV Flow Rate Problems</h3>
+                <div class="example-calculation">
+                    <p><strong>Step 1: Understand what is being asked</strong></p>
+                    <ul>
+                        <li>Flow rate</li>
+                        <li>Total volume</li>
+                        <li>Infusion time</li>
+                    </ul>
+                    
+                    <p><strong>Step 2: Gather known values</strong></p>
+                    <ul>
+                        <li>Patient weight (if needed)</li>
+                        <li>Volume of infusion</li>
+                        <li>Concentration of drug</li>
+                        <li>Drop factor (if drip rate is required)</li>
+                        <li>Time duration</li>
+                    </ul>
+                    
+                    <p><strong>Step 3: Choose and apply the correct formula</strong></p>
+                    <ul>
+                        <li>Use dimensional analysis or plug into formulas from Section IV.</li>
+                        <li>Always check units and convert when necessary (e.g., min → hr).</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="tutorial-section">
+                <h3>Example 1: Calculate flow rate</h3>
+                <p><strong>A patient is prescribed ciprofloxacin 400 mg in 100 mL of D5W, to be infused over 45 minutes. What is the required flow rate in mL/hr?</strong></p>
+                <div class="tutorial-steps" id="flowRateExample1Steps">
+                    <!-- Step 1 Content -->
+                    <div class="step-content active" id="fr1step1">
+                        <div class="step-instructions">
+                            <div class="step-title">Step 1: Identify what is being asked</div>
+                        </div>
+                        
+                        <div class="example-calculation">
+                            <p>Calculate the flow rate in mL/hr.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 2 Content -->
+                    <div class="step-content" id="fr1step2">
+                        <div class="step-instructions">
+                            <div class="step-title">Step 2: Gather known values</div>
+                        </div>
+                        
+                        <div class="example-calculation">
+                            <p>Volume = 100 mL</p>
+                            <p>Time = 45 minutes = 0.75 hours</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 Content -->
+                    <div class="step-content" id="fr1step3">
+                        <div class="step-instructions">
+                            <div class="step-title">Step 3: Apply the formula</div>
+                        </div>
+                        
+                        <div class="example-calculation">
+                            <div class="horizontal-operation">
+                                <span>Flow rate = </span>
+                                <div class="fraction">
+                                    <div class="fraction-numerator">Volume</div>
+                                    <div class="fraction-denominator">Time</div>
+                                </div>
+                                <span> = </span>
+                                <div class="fraction">
+                                    <div class="fraction-numerator">100 mL</div>
+                                    <div class="fraction-denominator">0.75 hr</div>
+                                </div>
+                                <span style="color: green; font-weight: bold;"> = 133.3 mL/hr</span>
+                            </div>
+                            
+                            <p><strong>Alternative way – use the dimensional analysis method</strong></p>
+                            <div class="horizontal-operation">
+                                <div class="fraction">
+                                    <div class="fraction-numerator">? mL</div>
+                                    <div class="fraction-denominator">hr</div>
+                                </div>
+                                <span> = </span>
+                                <div class="fraction">
+                                    <div class="fraction-numerator">100 mL</div>
+                                    <div class="fraction-denominator">45 min</div>
+                                </div>
+                                <span> × </span>
+                                <div class="fraction">
+                                    <div class="fraction-numerator">60 min</div>
+                                    <div class="fraction-denominator">1 hr</div>
+                                </div>
+                                <span style="color: green; font-weight: bold;"> = 133.3 mL/hr</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Next Button -->
+                    <div class="step-navigation">
+                        <button class="tutorial-next-btn">Next Step ↓</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tutorial-section">
+                <h3>Example 2: Calculate infusion time</h3>
+                <p><strong>A provider orders ondansetron 16 mg IV in 250 mL of normal saline to be administered at a rate of 80 mL/hr. How long will the infusion take?</strong></p>
+                <div class="tutorial-steps" id="flowRateExample2Steps">
+                    <!-- Step 1 Content -->
+                    <div class="step-content active" id="fr2step1">
+                        <div class="step-instructions">
+                            <div class="step-title">Step 1: Identify what is being asked</div>
+                        </div>
+                        
+                        <div class="example-calculation">
+                            <p>Calculate infusion time in hours.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 2 Content -->
+                    <div class="step-content" id="fr2step2">
+                        <div class="step-instructions">
+                            <div class="step-title">Step 2: Gather known values</div>
+                        </div>
+                        
+                        <div class="example-calculation">
+                            <p>Volume = 250 mL</p>
+                            <p>Flow rate = 80 mL/hr</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 Content -->
+                    <div class="step-content" id="fr2step3">
+                        <div class="step-instructions">
+                            <div class="step-title">Step 3: Apply the formula</div>
+                        </div>
+                        
+                        <div class="example-calculation">
+                            <div class="horizontal-operation">
+                                <span>Time = </span>
+                                <div class="fraction">
+                                    <div class="fraction-numerator">Volume</div>
+                                    <div class="fraction-denominator">Flow rate</div>
+                                </div>
+                                <span> = </span>
+                                <div class="fraction">
+                                    <div class="fraction-numerator">250 mL</div>
+                                    <div class="fraction-denominator">80 mL/hr</div>
+                                </div>
+                                <span style="color: green; font-weight: bold;"> = 3.125 hr (3 hours and 8 minutes)</span>
+                            </div>
+                            
+                            <p><strong>Alternative way – use the dimensional analysis method</strong></p>
+                            <div class="horizontal-operation">
+                                <span>? hr = </span>
+                                <div class="fraction">
+                                    <div class="fraction-numerator">1 hr</div>
+                                    <div class="fraction-denominator">80 mL</div>
+                                </div>
+                                <span> × 250 mL = </span>
+                                <span style="color: green; font-weight: bold;">3.125 hr</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Next Button -->
+                    <div class="step-navigation">
+                        <button class="tutorial-next-btn">Next Step ↓</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tutorial-section">
+                <h3>Example 3: Calculate volume</h3>
+                <p><strong>A patient is receiving furosemide (Lasix) IV at a rate of 75 mL/hr for 8.5 hours. How many milliliters of IV fluid will be administered in total?</strong></p>
+                <div class="tutorial-steps" id="flowRateExample3Steps">
+                    <!-- Step 1 Content -->
+                    <div class="step-content active" id="fr3step1">
+                        <div class="step-instructions">
+                            <div class="step-title">Step 1: Identify what is being asked</div>
+                        </div>
+                        
+                        <div class="example-calculation">
+                            <p>Calculate volume in mL.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 2 Content -->
+                    <div class="step-content" id="fr3step2">
+                        <div class="step-instructions">
+                            <div class="step-title">Step 2: Gather known values</div>
+                        </div>
+                        
+                        <div class="example-calculation">
+                            <p>Flow rate = 75 mL/hr</p>
+                            <p>Time = 8.5 hours</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 Content -->
+                    <div class="step-content" id="fr3step3">
+                        <div class="step-instructions">
+                            <div class="step-title">Step 3: Apply the formula</div>
+                        </div>
+                        
+                        <div class="example-calculation">
+                            <p>Volume = Flow rate × Time = 75 mL/hr × 8.5 hr = <strong style="color: green;">637.5 mL</strong></p>
+                            
+                            <p><strong>Alternative way – use the dimensional analysis method</strong></p>
+                            <div class="horizontal-operation">
+                                <span>? mL = </span>
+                                <div class="fraction">
+                                    <div class="fraction-numerator">75 mL</div>
+                                    <div class="fraction-denominator">1 hr</div>
+                                </div>
+                                <span> × 8.5 hr = </span>
+                                <span style="color: green; font-weight: bold;">637.5 mL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Next Button -->
+                    <div class="step-navigation">
+                        <button class="tutorial-next-btn">Next Step ↓</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tutorial-section">
+                <h3>Example 4: Weight-based infusion rate</h3>
+                <p><strong>A 110-lb patient is to receive nitroglycerin at a dose of 2 mcg/kg/min. The available IV solution contains 100 mg of nitroglycerin in 500 mL. What is the appropriate infusion rate in mL/hr to deliver the prescribed dose?</strong></p>
+                <div class="tutorial-steps" id="flowRateExample4Steps">
+                    <!-- Step 1 Content -->
+                    <div class="step-content active" id="fr4step1">
+                        <div class="step-instructions">
+                            <div class="step-title">Step 1: Identify what's asked</div>
+                        </div>
+                        
+                        <div class="example-calculation">
+                            <p>Calculate IV rate in mL/hr.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 2 Content -->
+                    <div class="step-content" id="fr4step2">
+                        <div class="step-instructions">
+                            <div class="step-title">Step 2: Gather known values</div>
+                        </div>
+                        
+                        <div class="example-calculation">
+                            <p>Weight = 110 lb → 110 ÷ 2.2 = 50 kg</p>
+                            <p>Dose = 2 mcg/kg/min × 50 kg = 100 mcg/min</p>
+                            <p>IV concentration = 100 mg in 500 mL</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 Content -->
+                    <div class="step-content" id="fr4step3">
+                        <div class="step-instructions">
+                            <div class="step-title">Step 3: Use dimensional analysis to calculate rate</div>
+                        </div>
+                        
+                        <div class="example-calculation">
+                            <div class="horizontal-operation">
+                                <div class="fraction">
+                                    <div class="fraction-numerator">? mL</div>
+                                    <div class="fraction-denominator">hr</div>
+                                </div>
+                                <span> = </span>
+                                <div class="fraction">
+                                    <div class="fraction-numerator">500 mL</div>
+                                    <div class="fraction-denominator">100 mg</div>
+                                </div>
+                                <span> × </span>
+                                <div class="fraction">
+                                    <div class="fraction-numerator">1 mg</div>
+                                    <div class="fraction-denominator">1000 mcg</div>
+                                </div>
+                                <span> × </span>
+                                <div class="fraction">
+                                    <div class="fraction-numerator">100 mcg</div>
+                                    <div class="fraction-denominator">1 min</div>
+                                </div>
+                                <span> × </span>
+                                <div class="fraction">
+                                    <div class="fraction-numerator">60 min</div>
+                                    <div class="fraction-denominator">1 hr</div>
+                                </div>
+                                <span style="color: green; font-weight: bold;"> = 30 mL/hr</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Next Button -->
+                    <div class="step-navigation">
+                        <button class="tutorial-next-btn">Next Step ↓</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <div class="tutorial-section">
+                <h3>VI. IV Admixture Calculations</h3>
+                <div class="example-calculation">
+                    <p><strong>What is an IV admixture?</strong></p>
+                    <p>An IV admixture involves adding a specific volume of a drug (usually in solution form) to an IV fluid (e.g., D5W or NS) to prepare a medication for intravenous administration.</p>
+                    
+                    <p><strong>When are IV admixture calculations needed?</strong></p>
+                    <p>You will need to calculate how many milliliters (mL) of a drug solution should be added when:</p>
+                    <ul>
+                        <li>A desired dose is prescribed (e.g., 1 gram lidocaine)</li>
+                        <li>The drug is available in a known concentration (e.g., 50 mg per 10 mL)</li>
+                        <li>You must determine the volume to add to the IV bag to supply that dose</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="tutorial-section">
+                <h3>Steps to calculate volume for IV admixtures</h3>
+                <div class="example-calculation">
+                    <p><strong>Step 1: Identify what are known</strong></p>
+                    <ul>
+                        <li>Ordered dose</li>
+                        <li>Available concentration</li>
+                    </ul>
+                    
+                    <p><strong>Step 2: Set up the ratio and proportion and solve for x</strong></p>
+                    <div class="horizontal-operation">
+                        <div class="fraction">
+                            <div class="fraction-numerator">Known concentration</div>
+                            <div class="fraction-denominator">Known volume</div>
+                        </div>
+                        <span> = </span>
+                        <div class="fraction">
+                            <div class="fraction-numerator">Ordered dose</div>
+                            <div class="fraction-denominator">x (volume)</div>
+                        </div>
+                    </div>
+                    <p>Solve for x. This gives the volume (e.g., in mL) of drug solution to add to the IV bag.</p>
+                </div>
+            </div>
+            
+            <div class="tutorial-section">
+                <h3>Example: IV Admixture Calculation</h3>
+                <p><strong>A hospital pharmacist receives the following order: Meperidine 320 mg in 100 mL of normal saline (NS). The available stock solution is meperidine 100 mg/mL. How many milliliters of the stock solution should be used to supply the ordered dose?</strong></p>
+                <div class="tutorial-steps" id="admixureExampleSteps">
+                    <!-- Step 1 Content -->
+                    <div class="step-content active" id="admstep1">
+                        <div class="step-instructions">
+                            <div class="step-title">Step 1: Identify what is being asked and what is known</div>
+                        </div>
+                        
+                        <div class="example-calculation">
+                            <p>Ordered dose = 320 mg</p>
+                            <p>Available concentration = 100 mg/mL</p>
+                            <p>(Note: no other conditions affect the volume calculation.)</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 2 Content -->
+                    <div class="step-content" id="admstep2">
+                        <div class="step-instructions">
+                            <div class="step-title">Step 2: Set up the ratio and proportion and solve for x</div>
+                        </div>
+                        
+                        <div class="example-calculation">
+                            <div class="horizontal-operation">
+                                <div class="fraction">
+                                    <div class="fraction-numerator">100 mg</div>
+                                    <div class="fraction-denominator">1 mL</div>
+                                </div>
+                                <span> = </span>
+                                <div class="fraction">
+                                    <div class="fraction-numerator">320 mg</div>
+                                    <div class="fraction-denominator">x mL</div>
+                                </div>
+                            </div>
+                            <p><strong style="color: green;">x = 3.2 mL</strong></p>
+                            <p>(Draw up 3.2 mL of the 100 mg/mL meperidine injection and add it to 100 mL of NS.)</p>
+                        </div>
+                    </div>
+
+                    <!-- Next Button -->
+                    <div class="step-navigation">
+                        <button class="tutorial-next-btn">Next Step ↓</button>
+                    </div>
+                </div>
+
+                <div class="back-to-top">
+                    <button id="backToOverviewBtn" class="back-btn">← Back to Overview</button>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                // Tutorial Navigation & General Page Logic
+                const ivFlowRateTitle = document.getElementById('ivFlowRateTitle');
+                const ivFlowRateTutorial = document.getElementById('ivFlowRateTutorial');
+                const backToOverviewBtn = document.getElementById('backToOverviewBtn');
+
+                if (ivFlowRateTitle) {
+                    ivFlowRateTitle.addEventListener('click', () => {
+                        ivFlowRateTutorial.style.display = 'block';
+                        ivFlowRateTitle.classList.add('active');
+                        ivFlowRateTutorial.scrollIntoView({ behavior: 'smooth' });
+                    });
+                }
+
+                if (backToOverviewBtn) {
+                    backToOverviewBtn.addEventListener('click', () => {
+                        ivFlowRateTutorial.style.display = 'none';
+                        ivFlowRateTitle.classList.remove('active');
+                        document.querySelector('.overview-card').scrollIntoView({ behavior: 'smooth' });
+                    });
+                }
+                
+                // Initialize step-by-step tutorials
+                setupTutorialSteps('flowRateExample1Steps');
+                setupTutorialSteps('flowRateExample2Steps');
+                setupTutorialSteps('flowRateExample3Steps');
+                setupTutorialSteps('flowRateExample4Steps');
+                setupTutorialSteps('admixureExampleSteps');
+
+                // Initialize collapsible sections
+                setupCollapsibleSection('parenteralOverviewHeader', 'parenteralOverviewContent');
+
+                function setupCollapsibleSection(headerId, contentId) {
+                    const header = document.getElementById(headerId);
+                    const content = document.getElementById(contentId);
+                    
+                    if (header && content) {
+                        header.addEventListener('click', () => {
+                            const isExpanded = content.classList.contains('expanded');
+                            
+                            if (isExpanded) {
+                                content.classList.remove('expanded');
+                                header.classList.remove('active');
+                            } else {
+                                content.classList.add('expanded');
+                                header.classList.add('active');
+                            }
+                        });
+                    }
+                }
+
+                function setupTutorialSteps(containerId) {
+                    const stepsContainer = document.getElementById(containerId);
+                    if (!stepsContainer) return;
+
+                    const steps = stepsContainer.querySelectorAll('.step-content');
+                    const nextBtn = stepsContainer.querySelector('.tutorial-next-btn');
+                    if (!nextBtn) return; // Ensure button exists
+                    let currentStep = 1;
+                    const totalSteps = steps.length;
+
+                    function updateDisplay() {
+                        steps.forEach((step, index) => {
+                            step.classList.toggle('active', index < currentStep);
+                        });
+                        nextBtn.style.display = currentStep === totalSteps ? 'none' : 'block';
+                    }
+
+                    nextBtn.addEventListener('click', () => {
+                        if (currentStep < totalSteps) {
+                            currentStep++;
+                            updateDisplay();
+                        }
+                    });
+                    updateDisplay(); // Initial display
+                }
+            });
+        </script>
+    </div>
+</body>
+</html>

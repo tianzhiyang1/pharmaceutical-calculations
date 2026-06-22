@@ -1,0 +1,611 @@
+/* modules/weights-and-measures/styles.css
+   Module-local styles for both pages:
+     - practice.html : answer area + drag UI + step-by-step guide styling
+     - index.html    : the tutorial (metric tables, decimal-movement diagram,
+                       flashcards)
+   The shared shell (cards, modals, history grid, buttons, progress bar, feedback,
+   hint containers) is styled by ../../master.css. Generic class names that the
+   tutorial reuses (.progress-bar, .btn, .unit, ...) are scoped to their
+   container so they can't clobber the practice page. */
+
+/* ============================================================= */
+/* Practice page — answer area                                   */
+/* ============================================================= */
+
+.index-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+}
+
+.answer-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: var(--spacing-md);
+}
+
+.answer-container input {
+  flex: 0 0 auto;
+  width: 120px;
+}
+
+.unit {
+  font-size: 1.1rem;
+  white-space: nowrap;
+}
+
+/* Category chips exist only to drive the grouped history sections; they are
+   not shown above the question or in the solution modal. */
+.question-tag {
+  display: none;
+}
+
+#results .button-row,
+.button-row.text-center {
+  justify-content: center;
+}
+
+.clear-progress-container {
+  margin-top: var(--spacing-lg);
+  text-align: center;
+}
+
+/* ============================================================= */
+/* Practice page — drag (unit-conversion) questions              */
+/* ============================================================= */
+
+.drag-slot-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.1rem;
+  margin-bottom: var(--spacing-sm);
+}
+
+.drop-zone {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 160px;
+  min-width: 160px;
+  height: 44px;
+  border: 2px dashed var(--border-color);
+  border-radius: var(--border-radius);
+  background-color: #f9fafb;
+  transition: all 0.15s ease-out;
+  box-sizing: border-box;
+}
+
+.drop-zone.dragging-over {
+  background-color: #ebf5ff;
+  border-color: #93c5fd;
+  border-style: solid;
+  box-shadow: 0 3px 12px rgba(59, 130, 246, 0.3);
+}
+
+.drop-zone.correct {
+  background-color: #ecfdf5;
+  border: 3px solid var(--correct-color);
+}
+
+.drop-zone.incorrect {
+  background-color: #fef2f2;
+  border: 3px solid var(--incorrect-color);
+}
+
+.drop-zone-answer {
+  font-weight: 600;
+  color: var(--primary-color);
+  padding: 4px 10px;
+}
+
+.drop-zone.correct .drop-zone-answer { color: var(--correct-color); }
+.drop-zone.incorrect .drop-zone-answer { color: var(--incorrect-color); }
+.drop-zone-answer.hidden { display: none; }
+
+.drop-zone-unit {
+  font-size: 1.1rem;
+  color: #555;
+  white-space: nowrap;
+}
+
+.options-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin: var(--spacing-md) 0;
+  width: 100%;
+  max-width: 420px;
+}
+
+.options-grid .option {
+  padding: 12px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  text-align: center;
+  cursor: grab;
+  background-color: white;
+  transition: all 0.2s ease;
+  user-select: none;
+  min-height: 24px;
+  line-height: 1.4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.options-grid .option:hover {
+  background-color: #f3f4f6;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.options-grid .option.dragging { opacity: 0.4; }
+
+.options-grid .option.selected {
+  border-color: var(--primary-color);
+  background-color: #f0f7ff;
+  font-weight: 600;
+}
+
+.options-grid .option.answered {
+  cursor: default;
+  opacity: 0.85;
+}
+
+/* Attempts counter */
+.attempts-container {
+  margin: var(--spacing-sm) 0;
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.attempts-label {
+  margin-right: 8px;
+  font-weight: 600;
+  color: #555;
+}
+
+.attempts-counter {
+  font-weight: bold;
+  font-size: 1.1rem;
+  min-width: 32px;
+  height: 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: white;
+}
+
+.first-attempt .attempts-counter { background-color: var(--correct-color); }
+.multiple-attempts .attempts-counter { background-color: #ffa000; }
+.many-attempts .attempts-counter { background-color: var(--incorrect-color); }
+
+/* Hint toggle (the button lives in the shared button row; this is the text) */
+.drag-hint {
+  margin-top: var(--spacing-sm);
+  padding: 10px 12px;
+  background-color: var(--hint-bg, #fdf6e3);
+  border: 1px solid var(--hint-border, #e6d9a8);
+  border-radius: var(--border-radius);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* ============================================================= */
+/* Practice page — step-by-step guide (calc questions)           */
+/* ============================================================= */
+
+.steps-container {
+  margin-top: var(--spacing-lg);
+  border-left: 3px solid var(--accent-color);
+  padding-left: var(--spacing-md);
+}
+
+.solution-steps {
+  display: block;
+  margin-top: 0;
+}
+
+.step {
+  margin-bottom: 2.5rem;
+  padding-bottom: var(--spacing-md);
+  border-bottom: 1px solid #eee;
+}
+
+.step:last-child { border-bottom: none; }
+
+.step-label {
+  font-weight: bold;
+  margin-bottom: var(--spacing-sm);
+  color: var(--primary-color);
+  font-size: 1.1rem;
+}
+
+.step-explanation {
+  margin-bottom: var(--spacing-md);
+  color: var(--text-color);
+}
+
+.info-list {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-bottom: var(--spacing-md);
+}
+
+.info-list li {
+  margin-bottom: var(--spacing-sm);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.check-btn-container,
+.step-next-btn-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: var(--spacing-md);
+}
+
+/* Mathematical elements */
+.equation-container,
+.operation-container {
+  margin: 15px 0;
+  font-size: 18px;
+}
+
+.operation-container { display: block; }
+
+.horizontal-operation {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  text-align: left;
+}
+
+.operator {
+  margin: 0 12px;
+  font-weight: bold;
+}
+
+.operand-text {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.fraction {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  margin: 0 10px;
+}
+
+.fraction-numerator,
+.fraction-denominator {
+  padding: 3px;
+  min-height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fraction-bar {
+  border-top: 2px solid black;
+  width: 100%;
+  margin: 3px 0;
+}
+
+.fraction.inline-fraction {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 8px;
+  min-width: 60px;
+}
+
+/* Multiple choice steps */
+.multiple-choice-container { margin: var(--spacing-md) 0; }
+
+.multiple-choice-options {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-md);
+}
+
+.multiple-choice-option {
+  padding: var(--spacing-sm);
+  border: 2px solid var(--accent-color);
+  border-radius: var(--border-radius);
+  background-color: var(--card-background);
+  color: var(--accent-color);
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.multiple-choice-option:hover { background-color: rgba(52, 90, 128, 0.1); }
+.multiple-choice-option.selected { background-color: var(--accent-color); color: white; }
+.multiple-choice-option:disabled { opacity: 0.6; cursor: not-allowed; }
+
+.multiple-choice-option.selected.correct {
+  background-color: var(--correct-color);
+  border-color: var(--correct-color);
+  color: white;
+}
+
+.multiple-choice-option.selected.incorrect {
+  background-color: var(--incorrect-color);
+  border-color: var(--incorrect-color);
+  color: white;
+}
+
+/* Solution modal answer line */
+.solution-question {
+  font-weight: bold;
+  margin-bottom: var(--spacing-lg);
+  padding-bottom: var(--spacing-sm);
+  border-bottom: 1px solid var(--border-color);
+}
+
+/* History section titles — color-coded with the shared filter palette.
+   This module has no practice filters, so these colors live only here. */
+.history-section-title.unit-conversions-title {
+  color: var(--filter-color-one);
+  border-bottom-color: var(--filter-color-one);
+}
+
+.history-section-title.calculations-title {
+  color: var(--filter-color-two);
+  border-bottom-color: var(--filter-color-two);
+}
+
+/* ============================================================= */
+/* Tutorial page — metric tables                                 */
+/* ============================================================= */
+
+.wide-metric-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: var(--spacing-lg) 0;
+}
+
+.wide-metric-table th,
+.wide-metric-table td {
+  padding: var(--spacing-xs) var(--spacing-sm);
+  text-align: center;
+  border: 1px solid var(--border-color);
+}
+
+.wide-metric-table th {
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: bold;
+}
+
+.prefix-cell { font-weight: bold; }
+.value-cell { color: var(--text-color); }
+
+.tutorial-section h3 {
+  color: var(--primary-color);
+  font-size: 1.2em;
+}
+
+.pharmacy-common-units {
+  border: 3px solid var(--primary-color);
+  border-radius: var(--card-radius);
+  padding: var(--spacing-md);
+  margin: var(--spacing-lg) 0;
+  background-color: var(--important-bg, #f3eddb);
+}
+
+.pharmacy-common-units h4 {
+  color: var(--primary-color);
+  text-align: center;
+  margin-top: 0;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+/* ============================================================= */
+/* Tutorial page — decimal-movement diagram                      */
+/* (scoped so .number / .unit / .arrow don't leak to the practice page) */
+/* ============================================================= */
+
+.decimal-movement {
+  position: relative;
+  padding: var(--spacing-md) 0;
+  padding-left: 60px;
+  letter-spacing: 2px;
+  font-family: monospace;
+  font-size: 1.3em;
+}
+
+.decimal-movement .number-display {
+  display: inline-block;
+  padding: var(--spacing-xs) 0;
+  position: relative;
+}
+
+.decimal-movement .number { font-weight: bold; }
+.decimal-movement .decimal-point { color: #ff5722; font-weight: bold; }
+.decimal-movement .unit { margin-left: var(--spacing-sm); color: #555; }
+.decimal-movement .fade-decimal { opacity: 0.3; }
+
+.decimal-movement .arrow-container {
+  position: relative;
+  height: 30px;
+  margin: 5px 0;
+}
+
+.decimal-movement .arrow {
+  position: absolute;
+  height: 20px;
+  border-left: 2px dashed #ff5722;
+  top: 0;
+}
+
+.decimal-movement .arrow::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: -4px;
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 5px solid #ff5722;
+}
+
+.decimal-movement .arrow-label {
+  position: absolute;
+  white-space: nowrap;
+  color: #ff5722;
+  font-size: 0.8em;
+  top: 20px;
+}
+
+/* ============================================================= */
+/* Tutorial page — flashcards                                    */
+/* (scoped under .flashcard-container / .flashcard-btn)          */
+/* ============================================================= */
+
+.flashcard-btn { transition: background-color 0.3s; }
+.flashcard-btn:hover { background-color: #4a7a69; }
+
+.flashcard-container {
+  display: none;
+  padding-top: 10px;
+}
+
+.flashcard-container .status-panel {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.flashcard-container .card-counter {
+  font-size: 16px;
+  color: var(--accent-color);
+  font-weight: bold;
+}
+
+.flashcard-container .progress-bar {
+  height: 8px;
+  background-color: var(--disabled-bg, #e0e0e0);
+  border-radius: 5px;
+  margin: 0 auto 15px;
+  overflow: hidden;
+  width: 90%;
+}
+
+.flashcard-container .progress {
+  height: 100%;
+  background-color: var(--accent-color);
+  width: 0%;
+  transition: width 0.3s;
+}
+
+.flashcard-container .categories {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 15px 0;
+}
+
+.flashcard-container .category-btn {
+  margin: 0 5px 5px 0;
+  padding: 6px 10px;
+  background-color: var(--disabled-bg, #e0e0e0);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  color: black;
+}
+
+.flashcard-container .category-btn.active {
+  background-color: var(--accent-color);
+  color: white;
+}
+
+.flashcard-container .flip-instructions {
+  text-align: center;
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 60%;
+  height: 200px;
+  perspective: 1000px;
+  margin: 20px auto 30px;
+  cursor: pointer;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card.flipped .flip-card-inner { transform: rotateY(180deg); }
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--card-radius);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.flip-card-front { background-color: var(--secondary-color, var(--primary-color)); color: white; }
+.flip-card-back { background-color: var(--accent-color); color: white; transform: rotateY(180deg); }
+
+.card-question { font-size: 24px; font-weight: bold; padding: 20px; }
+.card-answer { font-size: 28px; font-weight: bold; padding: 20px; }
+
+.flashcard-container .controls {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 15px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flashcard-container .btn {
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.flashcard-container .btn:hover { background-color: var(--accent-dark); }
+
+.flashcard-container .btn:disabled {
+  background-color: var(--disabled-color, #ccc);
+  color: white;
+  cursor: not-allowed;
+}

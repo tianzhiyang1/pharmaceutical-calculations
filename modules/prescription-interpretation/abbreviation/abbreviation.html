@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prescription Abbreviation Game</title>
+  <link rel="stylesheet" href="../../../master.css">
+  <link rel="stylesheet" href="abbreviation.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Prescription Abbreviation Game</h1>
+    </header>
+    
+    <div class="progress-container">
+      <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <div class="stats">
+      <div class="stat-item">
+        <div class="stat-value" id="questionsCompleted">0</div>
+        <div class="stat-label">Completed</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value" id="questionsRemaining">0</div>
+        <div class="stat-label">Remaining</div>
+      </div>
+    </div>
+
+    <div class="difficulty-selector">
+      <label for="difficulty">Select Difficulty:</label>
+      <select id="difficulty" class="difficulty-dropdown">
+        <option value="47">Full List (47 Abbreviations)</option>
+        <option value="20">Quick Game (20 Abbreviations)</option>
+      </select>
+    </div>
+
+    <!-- Game Card -->
+    <div class="card" id="game-card">
+      <div id="score-container" class="game-stat">
+        Score: <span id="score" class="game-stat-value">0</span>
+      </div>
+      <div id="level-indicator" class="game-stat">
+        Level: <span id="level" class="game-stat-value">1</span>
+      </div>
+      <div id="lives-container" class="game-stat">
+        Lives: <span id="hearts-display"></span>
+      </div>
+      
+      <div id="question-container" class="question-container">
+        <div id="question-text" class="question">Loading question...</div>
+      </div>
+      
+      <!-- Start Game Container -->
+      <div id="start-game">
+        <h1>Prescription Abbreviation</h1>
+        <div class="balloon-icon"></div>
+        <p class="game-description">Match abbreviations to their meanings by popping the right balloon!</p>
+        <div class="button-container">
+          <button id="start-button" class="button-accent">Start Game</button>
+        </div>
+      </div>
+      
+      <!-- Game Over Container -->
+      <div id="game-over">
+        <h1>Game Over!</h1>
+        <p>Your final score: <span id="final-score" class="game-stat-value">0</span></p>
+        <div id="last-answer-container" class="feedback">
+          <p>The answer to the last question was: <span id="last-correct-answer">N/A</span></p>
+        </div>
+        <div class="button-container">
+          <button id="restart-button" class="button-accent">Play Again</button>
+        </div>
+      </div>
+      
+      <!-- Victory Screen -->
+      <div id="victory-screen">
+        <h1>Congratulations!</h1>
+        <div class="victory-balloons">
+          <div class="balloon-icon balloon-left"></div>
+          <div class="balloon-icon balloon-center"></div>
+          <div class="balloon-icon balloon-right"></div>
+        </div>
+        <p>You've completed all <span id="victory-questions-count">0</span> questions!</p>
+        <p>Your final score: <span id="victory-score" class="game-stat-value">0</span></p>
+        <div class="button-container">
+          <button id="victory-restart-button" class="button-accent">Play Again</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="clear-progress-container">
+    <p>Want to see the tutorial again?
+        <a href="../index.html" class="clear-data-link">Go back to tutorial</a>
+    </p>
+  </div>
+
+  <script src="abbreviation.js"></script>
+</body>
+</html>

@@ -1,0 +1,2351 @@
+{
+    "questions": [
+        {
+            "number": 1,
+            "tag": "evalue",
+            "question": "Calculate the sodium chloride equivalent (E value) of Tetracycline Hydrochloride. Molecular weight of tetracycline hydrochloride = 480, Dissociation factor (i) = 1.8. Round the final answer to the nearest hundredth.",
+            "answerValue": [0.12],
+            "answerUnit": [""],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Calculate the E value using the formula",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "E"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": "58.5 × i",
+                            "denominator": "MW × 1.8"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "E"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "hybrid",
+                                "text": "58.5 ×",
+                                "input": {
+                                    "answer": 1.8,
+                                    "unit": ""
+                                }
+                            },
+                            "denominator": {
+                                "type": "hybrid",
+                                "input": {
+                                    "answer": 480,
+                                    "unit": ""
+                                },
+                                "text": "× 1.8"
+                            }
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.12,
+                            "unit": "(rounded to nearest hundredth)"
+                        }
+                    ],
+                    "operators2": ["=", "="],
+                    "hint": "E = 58.5 × i / MW × 1.8, E = 0.12"
+                }
+            ]
+        },
+        {
+            "number": 2,
+            "tag": "nacl",
+            "question": "Rx:<br>Pilocarpine nitrate 0.3 g<br>Sodium chloride q.s.<br>Purified water ad 15 mL<br><br>How many miligrams of sodium chloride should be used in compounding the above Rx? Pilocarpine nitrate E value = 0.23. Round the final answer to the nearest whole number.",
+            "answerValue": [66],
+            "answerUnit": ["mg of NaCl"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Calculate the amount of NaCl required to make the entire solution isotonic",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 0.9,
+                                "unit": "g"
+                            },
+                            "denominator": "100 mL"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": "x g",
+                            "denominator": {
+                                "type": "input",
+                                "answer": 15,
+                                "unit": "mL"
+                            }
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "x"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.135,
+                            "unit": "g"
+                        }
+                    ],
+                    "operators2": ["="],
+                    "hint": "0.9 g / 100 mL = x g / 15 mL, x = 0.135 g"
+                },
+                {
+                    "text": "Calculate the amount of NaCl represented by the drug (Pilocarpine nitrate)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "input",
+                            "answer": 0.3,
+                            "unit": "g"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.23,
+                            "unit": ""
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.069,
+                            "unit": "g"
+                        }
+                    ],
+                    "operators1": ["×", "="],
+                    "hint": "0.3 g × 0.23 = 0.069 g"
+                },
+                {
+                    "text": "Subtract Step 2 from Step 1 to find the amount of NaCl needed",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "input",
+                            "answer": 0.135,
+                            "unit": "g"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.069,
+                            "unit": "g"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.066,
+                            "unit": "g"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 66,
+                            "unit": "mg of NaCl"
+                        }
+                    ],
+                    "operators1": ["-", "=", "="],
+                    "hint": "0.135 g - 0.069 g = 0.066 g. Since 1 g = 1000 mg, 0.066 g = 66 mg of NaCl"
+                }
+            ]
+        },
+        {
+            "number": 3,
+            "tag": "nacl",
+            "question": "Rx:<br>Zinc sulfate 0.06 g<br>Boric acid qs<br>Purified water ad 30 mL <br>Make isotonic solution <br>Sig. drop in eyes <br><br>How many milligrams of boric acid should be used in compounding the prescription? E value of zinc sulfate is 0.16; E value of boric acid is 0.52. Round your final answer to the nearest tenth.",
+            "answerValue": [500.8],
+            "answerUnit": ["mg of Boric acid"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Calculate the amount of NaCl required to make the entire solution isotonic",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { 
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 0.9,
+                                "unit": "g"
+                            },
+                            "denominator": "100 mL"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": "x g",
+                            "denominator": {
+                                "type": "input",
+                                "answer": 30,
+                                "unit": "mL"
+                            }
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "x"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.27,
+                            "unit": "g"
+                        }
+                    ],
+                    "operators2": ["="],
+                    "hint": "0.9 g / 100 mL = x g / 30 mL, x = 0.27 g"
+                },
+                {
+                    "text": "Calculate the amount of NaCl represented by the drug (Zinc sulfate)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "input",
+                            "answer": 0.06,
+                            "unit": "g"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.16,
+                            "unit": ""
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.0096,
+                            "unit": "g"
+                        }
+                    ],
+                    "operators1": ["×", "="],
+                    "hint": "0.06 g × 0.16 = 0.0096 g"
+                },
+                {
+                    "text": "Subtract Step 2 from Step 1 to find the amount of NaCl needed",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "input",
+                            "answer": 0.27,
+                            "unit": "g"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.0096,
+                            "unit": "g"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.2604,
+                            "unit": "g"
+                        }
+                    ],
+                    "operators1": ["-", "="],
+                    "hint": "0.27 g - 0.0096 g = 0.2604 g"
+                },
+                {
+                    "text": "Convert NaCl amount from step 3 to the amount of the other agent (boric acid)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Amount of boric acid"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 0.2604,
+                                "unit": "g NaCl"
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": 0.52,
+                                "unit": ""
+                            }
+                        },
+                        {
+                            "type": "input",
+                            "answer": 500.8,
+                            "unit": "mg of boric acid"
+                        }
+                    ],
+                    "operators1": ["=", "="],
+                    "hint": "Amount of boric acid = 0.2604 g NaCl × (1 g boric acid / 0.52 g NaCl) = 0.5008 g = 500.8 mg of boric acid"
+                }
+            ]
+        },
+        {
+            "number": 4,
+            "tag": "evalue",
+            "question": "A pharmacist is asked to prepare 40 mL of isotonic gentamicin sulfate injection.\nMW of gentamicin sulfate = 575\nDissociation factor (i) = 3.4\n\nCalculate the sodium chloride equivalent (E value) of Gentamicin sulfate. Round the final answer to the nearest hundredth.",
+            "answerValue": [0.19],
+            "answerUnit": [""],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Calculate the E value using the formula",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "E"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": "58.5 × i",
+                            "denominator": "MW × 1.8"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "E"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "hybrid",
+                                "text": "58.5 ×",
+                                "input": {
+                                    "answer": 3.4,
+                                    "unit": ""
+                                }
+                            },
+                            "denominator": {
+                                "type": "hybrid",
+                                "input": {
+                                    "answer": 575,
+                                    "unit": ""
+                                },
+                                "text": "× 1.8"
+                            }
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.19,
+                            "unit": "(rounded to nearest hundredth)"
+                        }
+                    ],
+                    "operators2": ["=", "="],
+                    "hint": "E = 58.5 × i / MW × 1.8, E = 0.19"
+                }
+            ]
+        },
+        {
+            "number": 5,
+            "tag": "evalue",
+            "question": "Calculate the sodium chloride equivalent (E-value) of the following new drug entity. Round the final answer to the nearest hundredth.\n\nNew Drug K\nMolecular weight: 614\nDissociation factor i = 2.8",
+            "answerValue": [0.15],
+            "answerUnit": [""],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Calculate the E value using the formula",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "E"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": "58.5 × i",
+                            "denominator": "MW × 1.8"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "E"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "hybrid",
+                                "text": "58.5 ×",
+                                "input": {
+                                    "answer": 2.8,
+                                    "unit": ""
+                                }
+                            },
+                            "denominator": {
+                                "type": "hybrid",
+                                "input": {
+                                    "answer": 614,
+                                    "unit": ""
+                                },
+                                "text": "× 1.8"
+                            }
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.15,
+                            "unit": "(rounded to nearest hundredth)"
+                        }
+                    ],
+                    "operators2": ["=", "="],
+                    "hint": "E = 58.5 × i / MW × 1.8, E = 0.15"
+                }
+            ]
+        },
+        {
+            "number": 6,
+            "tag": "nacl",
+            "question": "Rx:<br>Tetracaine hydrochloride 0.1%<br>Sodium chloride q.s.<br>Purified water ad 20 mL<br><br>How many milligrams of sodium chloride should be used to compound this prescription? E value of tetracaine HCl = 0.15. Round the final answer to the nearest whole number.",
+            "answerValue": [177],
+            "answerUnit": ["mg of NaCl"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Calculate the amount of NaCl required to make the entire solution isotonic",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 0.9,
+                                "unit": "g"
+                            },
+                            "denominator": "100 mL"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": "x g",
+                            "denominator": {
+                                "type": "input",
+                                "answer": 20,
+                                "unit": "mL"
+                            }
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "x"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.18,
+                            "unit": "g"
+                        }
+                    ],
+                    "operators2": ["="],
+                    "hint": "0.9 g / 100 mL = x g / 20 mL, x = 0.18 g"
+                },
+                {
+                    "text": "Convert percentage of tetracaine HCl to grams",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 0.1,
+                                "unit": "g"
+                            },
+                            "denominator": "100 mL"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": "x g",
+                            "denominator": {
+                                "type": "input",
+                                "answer": 20,
+                                "unit": "mL"
+                            }
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "x"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.02,
+                            "unit": "g"
+                        }
+                    ],
+                    "operators2": ["="],
+                    "hint": "0.1 g / 100 mL = x g / 20 mL, x = 0.02 g"
+                },
+                {
+                    "text": "Calculate the amount of NaCl represented by the drug (Tetracaine HCl)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "input",
+                            "answer": 0.02,
+                            "unit": "g"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.15,
+                            "unit": ""
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.003,
+                            "unit": "g"
+                        }
+                    ],
+                    "operators1": ["×", "="],
+                    "hint": "0.02 g × 0.15 = 0.003 g"
+                },
+                {
+                    "text": "Subtract Step 3 from Step 1 to find the amount of NaCl needed",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "input",
+                            "answer": 0.18,
+                            "unit": "g"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.003,
+                            "unit": "g"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.177,
+                            "unit": "g"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 177,
+                            "unit": "mg of NaCl"
+                        }
+                    ],
+                    "operators1": ["-", "=", "="],
+                    "hint": "0.18 g - 0.003 g = 0.177 g = 177 mg of NaCl"
+                }
+            ]
+        },
+        {
+            "number": 7,
+            "tag": "nacl",
+            "question": "Rx:<br>Atropine sulfate       0.9 g<br>Sodium chloride      qs<br>Purified water ad 30 ml<br><br>How many grams of sodium chloride should be used in compounding the above Rx? (Atropine E value = 0.12). Round the final answer to the nearest thousandth.",
+            "answerValue": [0.162],
+            "answerUnit": ["g of NaCl"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Calculate the amount of NaCl required to make the entire solution isotonic",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 0.9,
+                                "unit": "g"
+                            },
+                            "denominator": "100 mL"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": "x g",
+                            "denominator": {
+                                "type": "input",
+                                "answer": 30,
+                                "unit": "mL"
+                            }
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "x"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.27,
+                            "unit": "g"
+                        }
+                    ],
+                    "operators2": ["="],
+                    "hint": "0.9 g / 100 mL = x g / 30 mL, x = 0.27 g"
+                },
+                {
+                    "text": "Calculate the amount of NaCl represented by the drug (Atropine sulfate)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "input",
+                            "answer": 0.9,
+                            "unit": "g"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.12,
+                            "unit": ""
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.108,
+                            "unit": "g"
+                        }
+                    ],
+                    "operators1": ["×", "="],
+                    "hint": "0.9 g × 0.12 = 0.108 g"
+                },
+                {
+                    "text": "Subtract Step 2 from Step 1 to find the amount of NaCl needed",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "input",
+                            "answer": 0.27,
+                            "unit": "g"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.108,
+                            "unit": "g"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.162,
+                            "unit": "g of NaCl"
+                        }
+                    ],
+                    "operators1": ["-", "="],
+                    "hint": "0.27 g - 0.108 g = 0.162 g of NaCl"
+                }
+            ]
+        },
+        {
+            "number": 8,
+            "tag": "nacl",
+            "question": "Rx:<br>Atropine sulfate    1.2 g<br>Sodium chloride   qs<br>Make isotonic sol.<br>Purified water ad 100 ml<br><br>How many grams of sodium chloride should be used in compounding the above Rx? (Atropine E value = 0.12). Round the final answer to the nearest thousandth.",
+            "answerValue": [0.756],
+            "answerUnit": ["g of NaCl"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Calculate the amount of NaCl required to make the entire solution isotonic",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 0.9,
+                                "unit": "g"
+                            },
+                            "denominator": "100 mL"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": "x g",
+                            "denominator": {
+                                "type": "input",
+                                "answer": 100,
+                                "unit": "mL"
+                            }
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "x"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.9,
+                            "unit": "g"
+                        }
+                    ],
+                    "operators2": ["="],
+                    "hint": "0.9 g / 100 mL = x g / 100 mL, x = 0.9 g"
+                },
+                {
+                    "text": "Calculate the amount of NaCl represented by the drug (Atropine sulfate)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "input",
+                            "answer": 1.2,
+                            "unit": "g"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.12,
+                            "unit": ""
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.144,
+                            "unit": "g"
+                        }
+                    ],
+                    "operators1": ["×", "="],
+                    "hint": "1.2 g × 0.12 = 0.144 g"
+                },
+                {
+                    "text": "Subtract Step 2 from Step 1 to find the amount of NaCl needed",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "input",
+                            "answer": 0.9,
+                            "unit": "g"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.144,
+                            "unit": "g"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.756,
+                            "unit": "g of NaCl"
+                        }
+                    ],
+                    "operators1": ["-", "="],
+                    "hint": "0.9 g - 0.144 g = 0.756 g of NaCl"
+                }
+            ]
+        },
+        {
+            "number": 9,
+            "tag": "nacl",
+            "question": "Rx:<br>Ephedrine Sulfate         0.9 g<br>Sodium Chloride          q.s<br>Purified Water ad         45 ml<br>Make isotonic sol.<br>Sig. Use as directed<br><br>How many milligrams of sodium chloride should be used to compound this prescription? (Ephedrine E-value 0.20). Round the final answer to the nearest whole number.",
+            "answerValue": [225],
+            "answerUnit": ["mg of NaCl"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Calculate the amount of NaCl required to make the entire solution isotonic",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 0.9,
+                                "unit": "g"
+                            },
+                            "denominator": "100 mL"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": "x g",
+                            "denominator": {
+                                "type": "input",
+                                "answer": 45,
+                                "unit": "mL"
+                            }
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "x"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.405,
+                            "unit": "g"
+                        }
+                    ],
+                    "operators2": ["="],
+                    "hint": "0.9 g / 100 mL = x g / 45 mL, x = 0.405 g"
+                },
+                {
+                    "text": "Calculate the amount of NaCl represented by the drug (Ephedrine sulfate)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "input",
+                            "answer": 0.9,
+                            "unit": "g"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.20,
+                            "unit": ""
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.18,
+                            "unit": "g"
+                        }
+                    ],
+                    "operators1": ["×", "="],
+                    "hint": "0.9 g × 0.20 = 0.18 g"
+                },
+                {
+                    "text": "Subtract Step 2 from Step 1 to find the amount of NaCl needed",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "input",
+                            "answer": 0.405,
+                            "unit": "g"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.18,
+                            "unit": "g"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.225,
+                            "unit": "g"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 225,
+                            "unit": "mg of NaCl"
+                        }
+                    ],
+                    "operators1": ["-", "=", "="],
+                    "hint": "0.405 g - 0.18 g = 0.225 g = 225 mg of NaCl"
+                }
+            ]
+        },
+        {
+            "number": 10,
+            "tag": "nacl",
+            "question": "Rx:<br>Timolol Maleate           0.25 g<br>Sodium Chloride          q.s<br>Purified Water ad         30 ml<br>Make isotonic sol.<br>Sig. ii gtt o.u b.i.d<br><br>How many grams of sodium chloride should be used to compound this prescription? (Timolol E = 0.14). Round the final answer to the nearest thousandth.",
+            "answerValue": [0.235],
+            "answerUnit": ["g of NaCl"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Calculate the amount of NaCl required to make the entire solution isotonic",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 0.9,
+                                "unit": "g"
+                            },
+                            "denominator": "100 mL"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": "x g",
+                            "denominator": {
+                                "type": "input",
+                                "answer": 30,
+                                "unit": "mL"
+                            }
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "x"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.27,
+                            "unit": "g"
+                        }
+                    ],
+                    "operators2": ["="],
+                    "hint": "0.9 g / 100 mL = x g / 30 mL, x = 0.27 g"
+                },
+                {
+                    "text": "Calculate the amount of NaCl represented by the drug (Timolol maleate)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "input",
+                            "answer": 0.25,
+                            "unit": "g"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.14,
+                            "unit": ""
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.035,
+                            "unit": "g"
+                        }
+                    ],
+                    "operators1": ["×", "="],
+                    "hint": "0.25 g × 0.14 = 0.035 g"
+                },
+                {
+                    "text": "Subtract Step 2 from Step 1 to find the amount of NaCl needed",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "input",
+                            "answer": 0.27,
+                            "unit": "g"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.035,
+                            "unit": "g"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.235,
+                            "unit": "g of NaCl"
+                        }
+                    ],
+                    "operators1": ["-", "="],
+                    "hint": "0.27 g - 0.035 g = 0.235 g of NaCl"
+                }
+            ]
+        },
+        {
+            "number": 11,
+            "tag": "nacl",
+            "question": "Rx:<br>Silver Nitrate                 8 g<br>Sodium Chloride           q.s<br>Purified Water ad         1000 mL<br>Make isotonic sol.<br>Sig. ii gtt od bid<br><br>How many grams of sodium chloride should be used to compound this prescription? (Silver nitrate E-value 0.33)",
+            "answerValue": [6.36],
+            "answerUnit": ["g of NaCl"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Calculate the amount of NaCl required to make the entire solution isotonic",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 0.9,
+                                "unit": "g"
+                            },
+                            "denominator": "100 mL"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": "x g",
+                            "denominator": {
+                                "type": "input",
+                                "answer": 1000,
+                                "unit": "mL"
+                            }
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "x"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 9,
+                            "unit": "g"
+                        }
+                    ],
+                    "operators2": ["="],
+                    "hint": "0.9 g / 100 mL = x g / 1000 mL, x = 9 g"
+                },
+                {
+                    "text": "Calculate the amount of NaCl represented by the drug (Silver nitrate)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "input",
+                            "answer": 8,
+                            "unit": "g"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.33,
+                            "unit": ""
+                        },
+                        {
+                            "type": "input",
+                            "answer": 2.64,
+                            "unit": "g"
+                        }
+                    ],
+                    "operators1": ["×", "="],
+                    "hint": "8 g × 0.33 = 2.64 g"
+                },
+                {
+                    "text": "Subtract Step 2 from Step 1 to find the amount of NaCl needed",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "input",
+                            "answer": 9,
+                            "unit": "g"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 2.64,
+                            "unit": "g"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 6.36,
+                            "unit": "g of NaCl"
+                        }
+                    ],
+                    "operators1": ["-", "="],
+                    "hint": "9 g - 2.64 g = 6.36 g of NaCl"
+                }
+            ]
+        },
+        {
+            "number": 12,
+            "tag": "nacl",
+            "question": "Rx:<br>Neostigmine methylsulfate 0.2%<br>Sodium chloride q.s.<br>Purified water ad 25 mL<br><br>How many milligrams of sodium chloride should be used to compound this prescription? E value of neostigmine methylsulfate = 0.19. Round the final answer to the nearest whole number.",
+            "answerValue": [216],
+            "answerUnit": ["mg of NaCl"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Calculate the amount of NaCl required to make the entire solution isotonic",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 0.9,
+                                "unit": "g"
+                            },
+                            "denominator": "100 mL"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": "x g",
+                            "denominator": {
+                                "type": "input",
+                                "answer": 25,
+                                "unit": "mL"
+                            }
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "x"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.225,
+                            "unit": "g"
+                        }
+                    ],
+                    "operators2": ["="],
+                    "hint": "0.9 g / 100 mL = x g / 25 mL, x = 0.225 g"
+                },
+                {
+                    "text": "Convert percentage of neostigmine methylsulfate to grams",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 0.2,
+                                "unit": "g"
+                            },
+                            "denominator": "100 mL"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": "x g",
+                            "denominator": {
+                                "type": "input",
+                                "answer": 25,
+                                "unit": "mL"
+                            }
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "x"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.05,
+                            "unit": "g"
+                        }
+                    ],
+                    "operators2": ["="],
+                    "hint": "0.2 g / 100 mL = x g / 25 mL, x = 0.05 g"
+                },
+                {
+                    "text": "Calculate the amount of NaCl represented by the drug (Neostigmine methylsulfate)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "input",
+                            "answer": 0.05,
+                            "unit": "g"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.19,
+                            "unit": ""
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.0095,
+                            "unit": "g"
+                        }
+                    ],
+                    "operators1": ["×", "="],
+                    "hint": "0.05 g × 0.19 = 0.0095 g"
+                },
+                {
+                    "text": "Subtract Step 3 from Step 1 to find the amount of NaCl needed",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "input",
+                            "answer": 0.225,
+                            "unit": "g"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.0095,
+                            "unit": "g"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.2155,
+                            "unit": "g"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 216,
+                            "unit": "mg of NaCl"
+                        }
+                    ],
+                    "operators1": ["-", "=", "="],
+                    "hint": "0.225 g - 0.0095 g = 0.2155 g = 216 mg of NaCl"
+                }
+            ]
+        },
+        {
+            "number": 13,
+            "tag": "nacl",
+            "question": "Rx:<br>Epinephrine hydrochloride 0.05%<br>Sodium chloride q.s.<br>Purified water ad 10 mL<br><br>How many milligrams of sodium chloride should be used to compound this prescription? E value of epinephrine HCl = 0.22. Round the final answer to the nearest whole number.",
+            "answerValue": [89],
+            "answerUnit": ["mg of NaCl"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Calculate the amount of NaCl required to make the entire solution isotonic",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 0.9,
+                                "unit": "g"
+                            },
+                            "denominator": "100 mL"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": "x g",
+                            "denominator": {
+                                "type": "input",
+                                "answer": 10,
+                                "unit": "mL"
+                            }
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "x"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.09,
+                            "unit": "g"
+                        }
+                    ],
+                    "operators2": ["="],
+                    "hint": "0.9 g / 100 mL = x g / 10 mL, x = 0.09 g"
+                },
+                {
+                    "text": "Convert percentage of epinephrine HCl to grams",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 0.05,
+                                "unit": "g"
+                            },
+                            "denominator": "100 mL"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": "x g",
+                            "denominator": {
+                                "type": "input",
+                                "answer": 10,
+                                "unit": "mL"
+                            }
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "x"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.005,
+                            "unit": "g"
+                        }
+                    ],
+                    "operators2": ["="],
+                    "hint": "0.05 g / 100 mL = x g / 10 mL, x = 0.005 g"
+                },
+                {
+                    "text": "Calculate the amount of NaCl represented by the drug (Epinephrine HCl)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "input",
+                            "answer": 0.005,
+                            "unit": "g"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.22,
+                            "unit": ""
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.0011,
+                            "unit": "g"
+                        }
+                    ],
+                    "operators1": ["×", "="],
+                    "hint": "0.005 g × 0.22 = 0.0011 g"
+                },
+                {
+                    "text": "Subtract Step 3 from Step 1 to find the amount of NaCl needed",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "input",
+                            "answer": 0.09,
+                            "unit": "g"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.0011,
+                            "unit": "g"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.0889,
+                            "unit": "g"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 89,
+                            "unit": "mg of NaCl"
+                        }
+                    ],
+                    "operators1": ["-", "=", "="],
+                    "hint": "0.09 g - 0.0011 g = 0.0889 g = 89 mg of NaCl"
+                }
+            ]
+        },
+        {
+            "number": 14,
+            "tag": "nacl",
+            "question": "Rx:<br>Pilocarpine hydrochloride 1%<br>Sodium chloride q.s.<br>Purified water ad 20 mL<br><br>How many milligrams of sodium chloride should be used to compound this prescription? E value of Pilocarpine HCl = 0.23. Round the final answer to the nearest whole number.",
+            "answerValue": [134],
+            "answerUnit": ["mg of NaCl"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Calculate the amount of NaCl required to make the entire solution isotonic",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 0.9,
+                                "unit": "g"
+                            },
+                            "denominator": "100 mL"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": "x g",
+                            "denominator": {
+                                "type": "input",
+                                "answer": 20,
+                                "unit": "mL"
+                            }
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "x"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.18,
+                            "unit": "g"
+                        }
+                    ],
+                    "operators2": ["="],
+                    "hint": "0.9 g / 100 mL = x g / 20 mL, x = 0.18 g"
+                },
+                {
+                    "text": "Convert percentage of pilocarpine HCl to grams",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 1,
+                                "unit": "g"
+                            },
+                            "denominator": "100 mL"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": "x g",
+                            "denominator": {
+                                "type": "input",
+                                "answer": 20,
+                                "unit": "mL"
+                            }
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "x"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.2,
+                            "unit": "g"
+                        }
+                    ],
+                    "operators2": ["="],
+                    "hint": "1 g / 100 mL = x g / 20 mL, x = 0.2 g"
+                },
+                {
+                    "text": "Calculate the amount of NaCl represented by the drug (Pilocarpine HCl)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "input",
+                            "answer": 0.2,
+                            "unit": "g"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.23,
+                            "unit": ""
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.046,
+                            "unit": "g"
+                        }
+                    ],
+                    "operators1": ["×", "="],
+                    "hint": "0.2 g × 0.23 = 0.046 g"
+                },
+                {
+                    "text": "Subtract Step 3 from Step 1 to find the amount of NaCl needed",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "input",
+                            "answer": 0.18,
+                            "unit": "g"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.046,
+                            "unit": "g"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.134,
+                            "unit": "g"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 134,
+                            "unit": "mg of NaCl"
+                        }
+                    ],
+                    "operators1": ["-", "=", "="],
+                    "hint": "0.18 g - 0.046 g = 0.134 g = 134 mg of NaCl"
+                }
+            ]
+        },
+        {
+            "number": 15,
+            "tag": "nacl",
+            "question": "Rx:<br>Mannitol                     2%<br>Sodium Chloride          q.s<br>Purified Water ad         500 mL<br>Make isotonic sol.<br>Sig. Use as directed<br><br>How many grams of sodium chloride should be used to compound this prescription? (Mannitol E-value 0.18)",
+            "answerValue": [2.7],
+            "answerUnit": ["g of NaCl"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Calculate the amount of NaCl required to make the entire solution isotonic",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 0.9,
+                                "unit": "g"
+                            },
+                            "denominator": "100 mL"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": "x g",
+                            "denominator": {
+                                "type": "input",
+                                "answer": 500,
+                                "unit": "mL"
+                            }
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "x"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 4.5,
+                            "unit": "g"
+                        }
+                    ],
+                    "operators2": ["="],
+                    "hint": "0.9 g / 100 mL = x g / 500 mL, x = 4.5 g"
+                },
+                {
+                    "text": "Convert percentage of mannitol to grams",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 2,
+                                "unit": "g"
+                            },
+                            "denominator": "100 mL"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": "x g",
+                            "denominator": {
+                                "type": "input",
+                                "answer": 500,
+                                "unit": "mL"
+                            }
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "x"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 10,
+                            "unit": "g"
+                        }
+                    ],
+                    "operators2": ["="],
+                    "hint": "2 g / 100 mL = x g / 500 mL, x = 10 g"
+                },
+                {
+                    "text": "Calculate the amount of NaCl represented by the drug (Mannitol)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "input",
+                            "answer": 10,
+                            "unit": "g"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.18,
+                            "unit": ""
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1.8,
+                            "unit": "g"
+                        }
+                    ],
+                    "operators1": ["×", "="],
+                    "hint": "10 g × 0.18 = 1.8 g"
+                },
+                {
+                    "text": "Subtract Step 3 from Step 1 to find the amount of NaCl needed",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "input",
+                            "answer": 4.5,
+                            "unit": "g"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1.8,
+                            "unit": "g"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 2.7,
+                            "unit": "g of NaCl"
+                        }
+                    ],
+                    "operators1": ["-", "="],
+                    "hint": "4.5 g - 1.8 g = 2.7 g of NaCl"
+                }
+            ]
+        },
+        {
+            "number": 16,
+            "tag": "nacl",
+            "question": "A new drug, MigraineX, MW 192 and dissociation factor i = 4.2, is to be provided as 400 mg in 75 mL of solution made isotonic with sodium chloride. What is the required weight (in mg) of sodium chloride? Round the final answer to the nearest whole number.",
+            "answerValue": [391],
+            "answerUnit": ["mg of NaCl"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Calculate the E value of MigraineX using the formula",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "E"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": "58.5 × i",
+                            "denominator": "MW × 1.8"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "E"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "hybrid",
+                                "text": "58.5 ×",
+                                "input": {
+                                    "answer": 4.2,
+                                    "unit": ""
+                                }
+                            },
+                            "denominator": {
+                                "type": "hybrid",
+                                "input": {
+                                    "answer": 192,
+                                    "unit": ""
+                                },
+                                "text": "× 1.8"
+                            }
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.71,
+                            "unit": ""
+                        }
+                    ],
+                    "operators2": ["=", "="],
+                    "hint": "E = (58.5 × 4.2) / (192 × 1.8) = 0.71"
+                },
+                {
+                    "text": "Calculate the amount of NaCl required to make the entire solution isotonic",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 0.9,
+                                "unit": "g"
+                            },
+                            "denominator": "100 mL"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": "x g",
+                            "denominator": {
+                                "type": "input",
+                                "answer": 75,
+                                "unit": "mL"
+                            }
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "x"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.675,
+                            "unit": "g"
+                        }
+                    ],
+                    "operators2": ["="],
+                    "hint": "0.9 g / 100 mL = x g / 75 mL, x = 0.675 g"
+                },
+                {
+                    "text": "Convert drug amount from mg to g and calculate the amount of NaCl represented by the drug",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "input",
+                            "answer": 0.4,
+                            "unit": "g"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.71,
+                            "unit": ""
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.284,
+                            "unit": "g"
+                        }
+                    ],
+                    "operators1": ["×", "="],
+                    "hint": "400 mg = 0.4 g, 0.4 g × 0.71 = 0.284 g"
+                },
+                {
+                    "text": "Subtract Step 3 from Step 2 to find the amount of NaCl needed",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "input",
+                            "answer": 0.675,
+                            "unit": "g"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.284,
+                            "unit": "g"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.391,
+                            "unit": "g"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 391,
+                            "unit": "mg of NaCl"
+                        }
+                    ],
+                    "operators1": ["-", "=", "="],
+                    "hint": "0.675 g - 0.284 g = 0.391 g = 391 mg of NaCl"
+                }
+            ]
+        },
+        {
+            "number": 17,
+            "tag": "nacl",
+            "question": "A new drug, DiabCure, MW = 75 and dissociation factor i = 1.8, is to be provided as 0.75 g in 100 mL of solution made isotonic with sodium chloride. What is the required weight (in mg) of sodium chloride?",
+            "answerValue": [315],
+            "answerUnit": ["mg of NaCl"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Calculate the E value of DiabCure using the formula",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "E"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": "58.5 × i",
+                            "denominator": "MW × 1.8"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "E"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "hybrid",
+                                "text": "58.5 ×",
+                                "input": {
+                                    "answer": 1.8,
+                                    "unit": ""
+                                }
+                            },
+                            "denominator": {
+                                "type": "hybrid",
+                                "input": {
+                                    "answer": 75,
+                                    "unit": ""
+                                },
+                                "text": "× 1.8"
+                            }
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.78,
+                            "unit": ""
+                        }
+                    ],
+                    "operators2": ["=", "="],
+                    "hint": "E = (58.5 × 1.8) / (75 × 1.8) = 0.78"
+                },
+                {
+                    "text": "Calculate the amount of NaCl required to make the entire solution isotonic",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 0.9,
+                                "unit": "g"
+                            },
+                            "denominator": "100 mL"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": "x g",
+                            "denominator": {
+                                "type": "input",
+                                "answer": 100,
+                                "unit": "mL"
+                            }
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "x"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.9,
+                            "unit": "g"
+                        }
+                    ],
+                    "operators2": ["="],
+                    "hint": "0.9 g / 100 mL = x g / 100 mL, x = 0.9 g"
+                },
+                {
+                    "text": "Calculate the amount of NaCl represented by the drug",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "input",
+                            "answer": 0.75,
+                            "unit": "g"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.78,
+                            "unit": ""
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.585,
+                            "unit": "g"
+                        }
+                    ],
+                    "operators1": ["×", "="],
+                    "hint": "0.75 g × 0.78 = 0.585 g"
+                },
+                {
+                    "text": "Subtract Step 3 from Step 2 to find the amount of NaCl needed",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "input",
+                            "answer": 0.9,
+                            "unit": "g"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.585,
+                            "unit": "g"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.315,
+                            "unit": "g"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 315,
+                            "unit": "mg of NaCl"
+                        }
+                    ],
+                    "operators1": ["-", "=", "="],
+                    "hint": "0.9 g - 0.585 g = 0.315 g = 315 mg of NaCl"
+                }
+            ]
+        },
+        {
+            "number": 18,
+            "tag": "nacl",
+            "question": "Rx:<br>Zinc sulfate      0.06 g<br>Boric acid      qs<br>Purified water   ad    30 mL<br>Make isotonic solution<br>Sig. drop in eyes<br><br>How many milligrams of boric acid should be used in compounding the prescription? E value of zinc sulfate is 0.16; E value of boric acid is 0.52. Round your final answer to the nearest tenth.",
+            "answerValue": [500.8],
+            "answerUnit": ["mg of Boric acid"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Calculate the amount of NaCl required to make the entire solution isotonic",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 0.9,
+                                "unit": "g"
+                            },
+                            "denominator": "100 mL"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": "x g",
+                            "denominator": {
+                                "type": "input",
+                                "answer": 30,
+                                "unit": "mL"
+                            }
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "x"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.27,
+                            "unit": "g"
+                        }
+                    ],
+                    "operators2": ["="],
+                    "hint": "0.9 g / 100 mL = x g / 30 mL, x = 0.27 g"
+                },
+                {
+                    "text": "Calculate the amount of NaCl represented by the drug (Zinc sulfate)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "input",
+                            "answer": 0.06,
+                            "unit": "g"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.16,
+                            "unit": ""
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.0096,
+                            "unit": "g"
+                        }
+                    ],
+                    "operators1": ["×", "="],
+                    "hint": "0.06 g × 0.16 = 0.0096 g"
+                },
+                {
+                    "text": "Subtract Step 2 from Step 1 to find the amount of NaCl needed",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "input",
+                            "answer": 0.27,
+                            "unit": "g"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.0096,
+                            "unit": "g"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.2604,
+                            "unit": "g"
+                        }
+                    ],
+                    "operators1": ["-", "="],
+                    "hint": "0.27 g - 0.0096 g = 0.2604 g"
+                },
+                {
+                    "text": "Convert NaCl amount from step 3 to the amount of the other agent (boric acid)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Amount of boric acid"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 0.2604,
+                                "unit": "g NaCl"
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": 0.52,
+                                "unit": ""
+                            }
+                        },
+                        {
+                            "type": "input",
+                            "answer": 500.8,
+                            "unit": "mg of boric acid"
+                        }
+                    ],
+                    "operators1": ["=", "="],
+                    "hint": "Amount of boric acid = 0.2604 g NaCl × (1 g boric acid / 0.52 g NaCl) = 0.5008 g = 500.8 mg of boric acid"
+                }
+            ]
+        },
+        {
+            "number": 19,
+            "tag": "nacl",
+            "question": "Rx:<br>Procaine hydrochloride 0.5 g<br>Boric acid q.s.<br>Purified Water ad 50 mL<br><br>The E value of procaine hydrochloride is 0.21, and boric acid's E value is 0.52.<br>Calculate how many grams of boric acid should be used to make this prescription isotonic. Round the final answer to the nearest hundredth.",
+            "answerValue": [0.66],
+            "answerUnit": ["g of Boric acid"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Calculate the amount of NaCl required to make the entire solution isotonic",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 0.9,
+                                "unit": "g"
+                            },
+                            "denominator": "100 mL"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": "x g",
+                            "denominator": {
+                                "type": "input",
+                                "answer": 50,
+                                "unit": "mL"
+                            }
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "x"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.45,
+                            "unit": "g"
+                        }
+                    ],
+                    "operators2": ["="],
+                    "hint": "0.9 g / 100 mL = x g / 50 mL, x = 0.45 g"
+                },
+                {
+                    "text": "Calculate the amount of NaCl represented by the drug (Procaine HCl)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "input",
+                            "answer": 0.5,
+                            "unit": "g"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.21,
+                            "unit": ""
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.105,
+                            "unit": "g"
+                        }
+                    ],
+                    "operators1": ["×", "="],
+                    "hint": "0.5 g × 0.21 = 0.105 g"
+                },
+                {
+                    "text": "Subtract Step 2 from Step 1 to find the amount of NaCl needed",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "input",
+                            "answer": 0.45,
+                            "unit": "g"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.105,
+                            "unit": "g"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.345,
+                            "unit": "g"
+                        }
+                    ],
+                    "operators1": ["-", "="],
+                    "hint": "0.45 g - 0.105 g = 0.345 g"
+                },
+                {
+                    "text": "Convert NaCl amount from step 3 to the amount of the other agent (boric acid)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Amount of boric acid"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 0.345,
+                                "unit": "g NaCl"
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": 0.52,
+                                "unit": ""
+                            }
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.66,
+                            "unit": "g of boric acid"
+                        }
+                    ],
+                    "operators1": ["=", "="],
+                    "hint": "Amount of boric acid = 0.345 g NaCl × (1 g boric acid / 0.52 g NaCl) = 0.66 g of boric acid"
+                }
+            ]
+        },
+        {
+            "number": 20,
+            "tag": "nacl",
+            "question": "Rx:<br>Tobramycin                0.75 g<br>Boric Acid                     q.s<br>Purified Water ad         45 ml<br>Make isotonic sol.<br>Sig. Use as directed<br><br>How many grams of a boric acid should be used to compound this prescription? (Tobramycin E = 0.07; Boric acid E = 0.52). Round the final answer to the nearest hundredth.",
+            "answerValue": [0.68],
+            "answerUnit": ["g of Boric acid"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Calculate the amount of NaCl required to make the entire solution isotonic",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 0.9,
+                                "unit": "g"
+                            },
+                            "denominator": "100 mL"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": "x g",
+                            "denominator": {
+                                "type": "input",
+                                "answer": 45,
+                                "unit": "mL"
+                            }
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "x"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.405,
+                            "unit": "g"
+                        }
+                    ],
+                    "operators2": ["="],
+                    "hint": "0.9 g / 100 mL = x g / 45 mL, x = 0.405 g"
+                },
+                {
+                    "text": "Calculate the amount of NaCl represented by the drug (Tobramycin)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "input",
+                            "answer": 0.75,
+                            "unit": "g"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.07,
+                            "unit": ""
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.0525,
+                            "unit": "g"
+                        }
+                    ],
+                    "operators1": ["×", "="],
+                    "hint": "0.75 g × 0.07 = 0.0525 g"
+                },
+                {
+                    "text": "Subtract Step 2 from Step 1 to find the amount of NaCl needed",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "input",
+                            "answer": 0.405,
+                            "unit": "g"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.0525,
+                            "unit": "g"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.3525,
+                            "unit": "g"
+                        }
+                    ],
+                    "operators1": ["-", "="],
+                    "hint": "0.405 g - 0.0525 g = 0.3525 g"
+                },
+                {
+                    "text": "Convert NaCl amount from step 3 to the amount of the other agent (boric acid)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Amount of boric acid"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 0.3525,
+                                "unit": "g NaCl"
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": 0.52,
+                                "unit": ""
+                            }
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.68,
+                            "unit": "g of boric acid"
+                        }
+                    ],
+                    "operators1": ["=", "="],
+                    "hint": "Amount of boric acid = 0.3525 g NaCl × (1 g boric acid / 0.52 g NaCl) = 0.68 g of boric acid"
+                }
+            ]
+        },
+        {
+            "number": 21,
+            "tag": "nacl",
+            "question": "Rx:<br>Potassium Penicillin G            0.45 g<br>Dextrose, monohydrate           q.s<br>Purified Water ad                    25 ml<br>Make isotonic sol.<br>Sig. Use as directed<br><br>How many milligrams of dextrose monohydrate should be used to compound this prescription? (E value of Potassium penicillin G = 0.18; E value of Dextrose monohydrate = 0.16). Round the final answer to the nearest whole number.",
+            "answerValue": [900],
+            "answerUnit": ["mg of Dextrose monohydrate"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Calculate the amount of NaCl required to make the entire solution isotonic",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 0.9,
+                                "unit": "g"
+                            },
+                            "denominator": "100 mL"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": "x g",
+                            "denominator": {
+                                "type": "input",
+                                "answer": 25,
+                                "unit": "mL"
+                            }
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "x"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.225,
+                            "unit": "g"
+                        }
+                    ],
+                    "operators2": ["="],
+                    "hint": "0.9 g / 100 mL = x g / 25 mL, x = 0.225 g"
+                },
+                {
+                    "text": "Calculate the amount of NaCl represented by the drug (Potassium Penicillin G)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "input",
+                            "answer": 0.45,
+                            "unit": "g"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.18,
+                            "unit": ""
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.081,
+                            "unit": "g"
+                        }
+                    ],
+                    "operators1": ["×", "="],
+                    "hint": "0.45 g × 0.18 = 0.081 g"
+                },
+                {
+                    "text": "Subtract Step 2 from Step 1 to find the amount of NaCl needed",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "input",
+                            "answer": 0.225,
+                            "unit": "g"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.081,
+                            "unit": "g"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.144,
+                            "unit": "g"
+                        }
+                    ],
+                    "operators1": ["-", "="],
+                    "hint": "0.225 g - 0.081 g = 0.144 g"
+                },
+                {
+                    "text": "Convert NaCl amount from step 3 to the amount of the other agent (dextrose monohydrate)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Amount of dextrose monohydrate"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 0.144,
+                                "unit": "g NaCl"
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": 0.16,
+                                "unit": ""
+                            }
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.9,
+                            "unit": "g"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 900,
+                            "unit": "mg of Dextrose monohydrate"
+                        }
+                    ],
+                    "operators1": ["=", "=", "="],
+                    "hint": "Amount of dextrose monohydrate = 0.144 g NaCl × (1 g dextrose monohydrate / 0.16 g NaCl) = 0.9 g = 900 mg of dextrose monohydrate"
+                }
+            ]
+        }
+    ]
+}
