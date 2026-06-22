@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Methods</title>
+    <link rel="stylesheet" href="../../master.css">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="index-container">
+        <header>
+            <h1>Pharmacy Calculations:<br>Basic Methods</h1>
+        </header>
+
+        <div class="card overview-card">
+            <h2>Overview</h2>
+            <p>Two basic methods generally used throughout all pharmacy calculations:</p>
+            
+            <div class="method-list">
+                <div class="method-item">
+                    <h3 id="ratioProportionTitle" class="method-title">1. Ratio and Proportion</h3>
+                    <p class="tutorial-notice">Click the title to view the tutorial</p>
+                    <ul>
+                        <li>Solve problems using ratio and proportion method</li>
+                    </ul>
+                </div>
+                
+                <div class="method-item">
+                    <h3 id="dimAnalysisTitle" class="method-title">2. Dimensional Analysis</h3>
+                    <p class="tutorial-notice">Click the title to view the tutorial</p>
+                    <ul>
+                        <li>Solve problems using dimensional analysis method</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="button-container">
+                <a href="./practice.html" class="practice-btn">Start Practicing</a>
+            </div>
+        </div>
+
+        <!-- Dimensional Analysis Tutorial -->
+    <div class="card tutorial-card" id="dimAnalysisTutorial" style="display: none;">
+        <h2>Tutorial - Dimensional Analysis Method</h2>
+        <div class="tutorial-content">
+            <div class="tutorial-section">
+                <h3>Basic Principles</h3>
+                <p>Problem-solving method that applies needed equivalents and unit-conversion factors to ensure that the terms of an equation have the same dimension.</p>
+                
+                <div class="example-calculation">
+                    <span>Given quantities and units</span><span class="operator">×</span>
+                    <span>Equivalents and Unit Conversion Factors</span>
+                    <p><span class="eq-operator">=</span>&nbsp;Answer in Desired Units</p>
+                </div>
+            </div>
+            
+            <div class="tutorial-section">
+                <h3>Dimensional Analysis Scheme</h3>
+                <div class="example-calculation">
+                    <span>? Wanted Unit&nbsp;</span><span class="eq-operator">=</span>
+                    <span>Given Quantity</span><span class="operator">×</span>
+                    <span>Conversion Factor as Needed</span><span class="operator">×</span>
+                    <span>Conversion Factor as Needed</span>
+                    <p><span class="eq-operator">=</span>&nbsp;Conversion Computation</p>
+                    <p><span class="eq-operator">=</span>&nbsp;Wanted Quantity and Unit</p>
+                </div>
+            </div>
+
+            <div class="section-divider"></div>
+            
+            <div class="tutorial-section">
+                <h3>Example 1:</h3>
+                <p><strong>How many seconds are there in one year?</strong></p>
+                <div class="tutorial-steps" id="example1Steps">
+                    <!-- Step 1 Content -->
+                    <div class="step-content active" id="step1">
+                        <div class="step-instructions">
+                            <div class="step-title">Step 1: Identify the unit of the answer needed</div>
+                            <ol>
+                                <li>Identify the unit of the answer needed and follow it with an equal sign</li>
+                            </ol>
+                        </div>
+                        
+                        <div class="example-calculation">
+                            <div class="horizontal-operation">
+                                <span>? seconds&nbsp;</span>
+                                <span class="eq-operator">=</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 2 Content -->
+                    <div class="step-content" id="step2">
+                        <div class="step-instructions">
+                            <div class="step-title">Step 2: Set up the conversion factors</div>
+                            <ol>
+                                <li>Set up a fraction such that the unit of the desired answer is in the numerator</li>
+                                <li>Set up the next fraction in the equation so the unit of its numerator is the same as the unit of the denominator of the first fraction (so they will cancel when the fractions are multiplied)</li>
+                                <li>Continue this pattern when dealing with multistep conversions</li>
+                                <li>Cancel units to ensure proper setup of the fractions</li>
+                            </ol>
+                        </div>
+                        
+                        <div class="example-calculation">
+                            <div class="horizontal-operation">
+                                <span>? seconds&nbsp;</span>
+                                <span class="eq-operator">=</span>
+                                <div class="fraction">
+                                    <div class="fraction-numerator">60 sec</div>
+                                    <div class="fraction-bar"></div>
+                                    <div class="fraction-denominator">1 <span class="cancelled-unit">min</span></div>
+                                </div>
+                                <span class="operator">×</span>
+                                <div class="fraction">
+                                    <div class="fraction-numerator">60 <span class="cancelled-unit">min</span></div>
+                                    <div class="fraction-bar"></div>
+                                    <div class="fraction-denominator">1 <span class="cancelled-unit">hr</span></div>
+                                </div>
+                                <span class="operator">×</span>
+                                <div class="fraction">
+                                    <div class="fraction-numerator">24 <span class="cancelled-unit">hrs</span></div>
+                                    <div class="fraction-bar"></div>
+                                    <div class="fraction-denominator">1 <span class="cancelled-unit">day</span></div>
+                                </div>
+                                <span class="operator">×</span>
+                                <div>365 <span class="cancelled-unit">days</span></div>
+                            </div>
+                            <p>Note how each unit cancels out, leaving only "seconds" in the final expression.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 3 Content -->
+                    <div class="step-content" id="step3">
+                        <div class="step-instructions">
+                            <div class="step-title">Step 3: Calculate the result</div>
+                            <ol>
+                                <li>Multiply the numerators and denominators</li>
+                                <li>Complete the problem by reducing if necessary</li>
+                            </ol>
+                        </div>
+                        
+                        <div class="example-calculation">
+                            <div class="horizontal-operation">
+                                <span>? seconds&nbsp;</span>
+                                <span class="eq-operator">=</span>
+                                <span>&nbsp;60 × 60 × 24 × 365&nbsp;</span>
+                                <span class="eq-operator">=</span>
+                                <span>&nbsp;31,536,000 seconds</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Next Button -->
+                    <div class="step-navigation">
+                        <button class="tutorial-next-btn">Next Step ↓</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-divider"></div>
+            
+            <div class="tutorial-section">
+                <h3>Example 2:</h3>
+                <p><strong>How many fluid ounces are contained in 2.5 Liters?</strong></p>
+                <p>Unit conversion factors: 1 L = 1000 mL, 1 fluid oz = 30 mL</p>
+                <div class="example-calculation">
+                    <div class="horizontal-operation">
+                        <span>? ounce&nbsp;</span>
+                        <span class="eq-operator">=</span>
+                        <div class="fraction">
+                            <div class="fraction-numerator">1 ounce</div>
+                            <div class="fraction-bar"></div>
+                            <div class="fraction-denominator">30 ml</div>
+                        </div>
+                        <span class="operator">×</span>
+                        <div class="fraction">
+                            <div class="fraction-numerator">1000 ml</div>
+                            <div class="fraction-bar"></div>
+                            <div class="fraction-denominator">1L</div>
+                        </div>
+                        <span class="operator">×</span>
+                        <span>2.5 L</span>
+                    </div>
+                    <span>? ounces&nbsp;</span><span class="eq-operator">=</span><span>&nbsp;83.3 ounces</span>
+                </div>
+            </div>
+
+            <div class="section-divider"></div>
+            
+            <div class="tutorial-section">
+                <h3>Benefits of Dimensional Analysis</h3>
+                <ul>
+                    <li>Units guide the setup and calculation</li>
+                    <li>Organized approach that reduces errors</li>
+                    <li>Works for simple and complex conversions</li>
+                    <li>Especially useful for multi-step medication calculations</li>
+                </ul>
+            </div>
+            
+            <div class="back-to-top">
+                <button id="backToOverviewBtn" class="back-btn">← Back to Overview</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ratio and Proportion Tutorial -->
+    <div class="card tutorial-card" id="ratioProportionTutorial" style="display: none;">
+        <h2>Tutorial - Ratio and Proportion Method</h2>
+        <div class="tutorial-content">
+            <div class="tutorial-section">
+                <h3>Basic Principles</h3>
+                <p><strong class="highlight-term">Ratio:</strong> A relation of two numbers expressed as a fraction. e.g. 1/3 or 1:3</p>
+                <p><strong class="highlight-term">Proportion:</strong> The equality of two ratios</p>
+                
+                <div class="example-calculation">
+                    <p>If</p>
+                    <div class="equation">
+                        <div class="fraction">
+                            <div class="fraction-numerator">a</div>
+                            <div class="fraction-bar"></div>
+                            <div class="fraction-denominator">b</div>
+                        </div>
+                        <span class="eq-operator">=</span>
+                        <div class="fraction">
+                            <div class="fraction-numerator">c</div>
+                            <div class="fraction-bar"></div>
+                            <div class="fraction-denominator">d</div>
+                        </div>
+                    </div>
+                    
+                    <p>Then</p>
+                    <div class="equation">
+                        <span>a</span><span class="eq-operator">=</span>
+                        <div class="fraction">
+                            <div class="fraction-numerator">bc</div>
+                            <div class="fraction-bar"></div>
+                            <div class="fraction-denominator">d</div>
+                        </div>
+                        <span class="math-or">or</span>
+                        <span>b</span><span class="eq-operator">=</span>
+                        <div class="fraction">
+                            <div class="fraction-numerator">ad</div>
+                            <div class="fraction-bar"></div>
+                            <div class="fraction-denominator">c</div>
+                        </div>
+                    </div>
+                    
+                    <div class="equation">
+                        <span>c</span><span class="eq-operator">=</span>
+                        <div class="fraction">
+                            <div class="fraction-numerator">ad</div>
+                            <div class="fraction-bar"></div>
+                            <div class="fraction-denominator">b</div>
+                        </div>
+                        <span class="math-or">or</span>
+                        <span>d</span><span class="eq-operator">=</span>
+                        <div class="fraction">
+                            <div class="fraction-numerator">bc</div>
+                            <div class="fraction-bar"></div>
+                            <div class="fraction-denominator">a</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-divider"></div>
+            
+            <div class="tutorial-section">
+                <h3>Example 1:</h3>
+                <p><strong>If two capsules contains 600 mg of Benadryl, how many milligrams of Benadryl would be contained in 10 capsules?</strong></p>
+                <div class="tutorial-steps" id="example1Steps">
+                    <!-- Step 1 Content -->
+                    <div class="step-content active" id="step1">
+                        <div class="step-instructions">
+                            <div class="step-title">Step 1: Identify what you know and what you need to find</div>
+                            <ol>
+                                <li>Identify the unknown unit of measurement.</li>
+                                <li>Find the known equivalent.</li>
+                            </ol>
+                        </div>
+                        
+                        <div class="example-calculation">
+                            <p><strong>Unknown:</strong> X mg of Benadryl in 10 capsules</p>
+                            <p><strong>Known equivalent:</strong> 600 mg of Benadryl in 2 capsules</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 2 Content -->
+                    <div class="step-content" id="step2">
+                        <div class="step-instructions">
+                            <div class="step-title">Step 2: Set up the proportion</div>
+                            <ol>
+                                <li>Write the known equivalent in a fraction on the left side of the equation.</li>
+                                <li>Write the unknown desired equivalent in a fraction on the right side of the equation, using X for the unknown value.</li>
+                                <li>Label the units so that the like unit is placed the same position within each ratio. This sets ratios that are equivalent to each other.</li>
+                            </ol>
+                        </div>
+                        
+                        <div class="example-calculation">
+                            <div class="proportion">
+                                <div class="fraction">
+                                    <div class="fraction-numerator">2 capsules</div>
+                                    <div class="fraction-bar"></div>
+                                    <div class="fraction-denominator">600 mg</div>
+                                </div>
+                                <span class="eq-operator">=</span>
+                                <div class="fraction">
+                                    <div class="fraction-numerator">10 capsules</div>
+                                    <div class="fraction-bar"></div>
+                                    <div class="fraction-denominator">X mg</div>
+                                </div>
+                            </div>
+                            <p>Notice how "capsules" are placed in the numerator of both fractions, and "mg" are placed in the denominator of both fractions.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 3 Content -->
+                    <div class="step-content" id="step3">
+                        <div class="step-instructions">
+                            <div class="step-title">Step 3: Solve for X</div>
+                            <ol>
+                                <li>Cross-multiply the numerators and denominators.</li>
+                                <li>Divide to solve for the value of X. (The unit that is repeated in the original equation cancels when dividing).</li>
+                            </ol>
+                        </div>
+                        
+                        <div class="example-calculation">
+                            <div class="horizontal-operation">
+                                <span>X</span>
+                                <span class="eq-operator">=</span>
+                                <div class="fraction">
+                                    <div class="fraction-numerator">10 × 600</div>
+                                    <div class="fraction-bar"></div>
+                                    <div class="fraction-denominator">2</div>
+                                </div>
+                                <span class="eq-operator">=</span>
+                                <div class="fraction">
+                                    <div class="fraction-numerator">6000</div>
+                                    <div class="fraction-bar"></div>
+                                    <div class="fraction-denominator">2</div>
+                                </div>
+                                <span class="eq-operator">=</span>
+                                <span>3000 mg</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Next Button -->
+                    <div class="step-navigation">
+                        <button class="tutorial-next-btn">Next Step ↓</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-divider"></div>
+            
+            <div class="tutorial-section">
+                <h3>Example 2:</h3>
+                <p><strong>If a solution of NaCl contains 1.8 g in 50 ml of solution, how many grams of NaCl in 100 ml of solution?</strong></p>
+                <div class="example-calculation">
+                    <div class="proportion">
+                        <div class="fraction">
+                            <div class="fraction-numerator">1.8 g</div>
+                            <div class="fraction-bar"></div>
+                            <div class="fraction-denominator">50 ml</div>
+                        </div>
+                        <span class="eq-operator">=</span>
+                        <div class="fraction">
+                            <div class="fraction-numerator">X g</div>
+                            <div class="fraction-bar"></div>
+                            <div class="fraction-denominator">100 ml</div>
+                        </div>
+                    </div>
+                    
+                    <div class="horizontal-operation">
+                        <span>X</span><span class="eq-operator">=</span>
+                        <div class="fraction">
+                            <div class="fraction-numerator">1.8 × 100</div>
+                            <div class="fraction-bar"></div>
+                            <div class="fraction-denominator">50</div>
+                        </div>
+                        <span class="eq-operator">=</span>
+                        <div class="fraction">
+                            <div class="fraction-numerator">180</div>
+                            <div class="fraction-bar"></div>
+                            <div class="fraction-denominator">50</div>
+                        </div>
+                        <span class="eq-operator">=</span><span>3.6 g</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-divider"></div>
+            
+            <div class="tutorial-section">
+                <h3>When to Use Ratio and Proportion</h3>
+                <ul>
+                    <li>Dosage calculations</li>
+                    <li>Concentration problems</li>
+                    <li>Any situation where two ratios are equal</li>
+                </ul>
+            </div>
+            
+            <div class="back-to-top">
+                <button id="backToOverviewBtn2" class="back-btn">← Back to Overview</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Get elements
+            const dimAnalysisTitle = document.getElementById('dimAnalysisTitle');
+            const ratioProportionTitle = document.getElementById('ratioProportionTitle');
+            const dimAnalysisTutorial = document.getElementById('dimAnalysisTutorial');
+            const ratioProportionTutorial = document.getElementById('ratioProportionTutorial');
+            const backToOverviewBtn = document.getElementById('backToOverviewBtn');
+            const backToOverviewBtn2 = document.getElementById('backToOverviewBtn2');
+            
+            // Show the dimensional analysis tutorial when its title is clicked
+            dimAnalysisTitle.addEventListener('click', () => {
+                dimAnalysisTutorial.style.display = 'block';
+                ratioProportionTutorial.style.display = 'none';
+                dimAnalysisTitle.classList.add('active');
+                ratioProportionTitle.classList.remove('active');
+                
+                // Smooth scroll to the tutorial
+                dimAnalysisTutorial.scrollIntoView({ behavior: 'smooth' });
+            });
+            
+            // Show the ratio and proportion tutorial when its title is clicked
+            ratioProportionTitle.addEventListener('click', () => {
+                ratioProportionTutorial.style.display = 'block';
+                dimAnalysisTutorial.style.display = 'none';
+                ratioProportionTitle.classList.add('active');
+                dimAnalysisTitle.classList.remove('active');
+                
+                // Smooth scroll to the tutorial
+                ratioProportionTutorial.scrollIntoView({ behavior: 'smooth' });
+            });
+            
+            // Back to overview buttons
+            backToOverviewBtn.addEventListener('click', () => {
+                dimAnalysisTutorial.style.display = 'none';
+                dimAnalysisTitle.classList.remove('active');
+                
+                // Smooth scroll back to the overview
+                document.querySelector('.overview-card').scrollIntoView({ behavior: 'smooth' });
+            });
+            
+            backToOverviewBtn2.addEventListener('click', () => {
+                ratioProportionTutorial.style.display = 'none';
+                ratioProportionTitle.classList.remove('active');
+                
+                // Smooth scroll back to the overview
+                document.querySelector('.overview-card').scrollIntoView({ behavior: 'smooth' });
+            });
+
+            initAllTutorials();
+        });
+
+        // Function to initialize all tutorial navigations
+        function initAllTutorials() {
+            // Initialize dimensional analysis tutorial
+            initDimensionalAnalysisTutorial();
+            
+            // Initialize ratio proportion tutorial steps
+            initRatioProportionTutorial();
+        }
+
+        // Function to initialize the dimensional analysis tutorial
+        function initDimensionalAnalysisTutorial() {
+            const stepsContainer = document.querySelector('#dimAnalysisTutorial #example1Steps');
+            if (!stepsContainer) return;
+
+            const steps = stepsContainer.querySelectorAll('.step-content');
+            const nextBtn = stepsContainer.querySelector('.tutorial-next-btn');
+            let currentStep = 1;
+            const totalSteps = steps.length;
+
+            // Function to update the displayed steps
+            function updateSteps() {
+                // Show all steps up to and including current step
+                steps.forEach((step, index) => {
+                    if (index + 1 <= currentStep) {
+                        step.classList.add('active');
+                    } else {
+                        step.classList.remove('active');
+                    }
+                });
+
+                // Update button visibility
+                nextBtn.style.display = currentStep === totalSteps ? 'none' : 'block';
+            }
+
+            // Navigate to next step
+            nextBtn.addEventListener('click', () => {
+                if (currentStep < totalSteps) {
+                    currentStep++;
+                    updateSteps();
+                }
+            });
+
+            // Initialize first step
+            updateSteps();
+        }
+
+        // Function to initialize the ratio proportion tutorial
+        function initRatioProportionTutorial() {
+            const stepsContainer = document.querySelector('#ratioProportionTutorial #example1Steps');
+            if (!stepsContainer) return;
+
+            const steps = stepsContainer.querySelectorAll('.step-content');
+            const nextBtn = stepsContainer.querySelector('.tutorial-next-btn');
+            let currentStep = 1;
+            const totalSteps = steps.length;
+
+            // Function to update the displayed steps
+            function updateSteps() {
+                // Show all steps up to and including current step
+                steps.forEach((step, index) => {
+                    if (index + 1 <= currentStep) {
+                        step.classList.add('active');
+                    } else {
+                        step.classList.remove('active');
+                    }
+                });
+
+                // Update button visibility
+                nextBtn.style.display = currentStep === totalSteps ? 'none' : 'block';
+            }
+
+            // Navigate to next step
+            nextBtn.addEventListener('click', () => {
+                if (currentStep < totalSteps) {
+                    currentStep++;
+                    updateSteps();
+                }
+            });
+
+            // Initialize first step
+            updateSteps();
+        }
+    </script>
+</body>
+</html>

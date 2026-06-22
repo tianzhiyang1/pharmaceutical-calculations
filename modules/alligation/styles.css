@@ -1,0 +1,526 @@
+/* ================== */
+/* CLASSES USED IN INDEX.HTML */
+/* ================== */
+
+/* Tutorial Cards */
+.tutorial-card {
+    animation: fadeIn 0.5s ease;
+}
+
+.tutorial-section {
+    margin-bottom: 2rem;
+}
+
+.section-divider {
+    height: 1px;
+    background-color: var(--border-color);
+    margin: 2rem 0;
+}
+
+/* Example Calculations */
+.example-calculation {
+    border-radius: 6px;
+    border: 2px solid var(--hint-border, var(--border-color));
+    padding: 15px;
+    margin: 15px 0;
+    position: relative; 
+}
+
+.example-calculation p {
+    margin: 8px 0;
+}
+
+.example-calculation ul {
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+/* Equations and Fractions */
+.fraction {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  margin: 0 5px;
+}
+
+.fraction-numerator,
+.fraction-denominator {
+  display: block;
+  padding: 3px;
+}
+
+.fraction-numerator {
+  border-bottom: 1px solid var(--text-color, #000);
+}
+
+.horizontal-operation {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+/* Each OPERATION step can stack several equation lines (operands1, operands2,
+   ...); keep them on separate rows with a little breathing room. */
+.operation-line-container {
+    display: block;
+}
+
+.operation-line-container + .operation-line-container {
+    margin-top: var(--spacing-sm);
+}
+
+/* Step Navigation Styles */
+.step-content {
+    display: none; /* Initially hidden */
+    margin-bottom: 20px;
+  }
+  
+  .step-content.active {
+    display: block;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  .step-title {
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+  }
+  
+  .step-instructions {
+    border-left: 3px solid var(--primary-color);
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .step-instructions ol {
+    margin: 0;
+    padding-left: 20px;
+  }
+  
+  .step-instructions li {
+    margin-bottom: 8px;
+  }
+  
+  .tutorial-steps {
+    position: relative;
+    min-height: 320px;
+    padding: 0 20px;
+  }
+  
+  .step-navigation {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+/* Tic-Tac-Toe Alligation Grid Styles */
+.alligation-grid-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.alligation-grid {
+  display: inline-block;
+  border-collapse: collapse;
+  font-family: monospace;
+  font-size: 16px;
+  line-height: 1.3;
+}
+
+.grid-cell {
+  padding: 15px;
+  width: 80px;
+  text-align: center;
+  border-right: 2px solid #333;
+  border-bottom: 2px solid #333;
+}
+
+.grid-cell.wide {
+  width: 120px;
+}
+
+.grid-cell.no-right-border {
+  border-right: none;
+}
+
+.grid-cell.no-bottom-border {
+  border-bottom: none;
+}
+
+.grid-cell.higher-concentration {
+  color: #1976d2;
+}
+
+.grid-cell.lower-concentration {
+  color: #7b1fa2;
+}
+
+.grid-cell.desired-concentration {
+  color: #388e3c;
+  font-weight: bold;
+}
+
+.grid-cell.higher-parts {
+  color: #1976d2;
+}
+
+.grid-cell.lower-parts {
+  color: #7b1fa2;
+}
+
+.grid-total {
+  padding: 10px 15px;
+  width: 120px;
+  text-align: center;
+}
+
+.grid-total-divider {
+  border-top: 2px solid #333;
+  width: 120px;
+  margin: 10px auto 5px auto;
+  padding-top: 8px;
+}
+
+.grid-total-text {
+  color: #388e3c;
+  font-weight: bold;
+}
+/* Important example containers */
+.important {
+    border: 3px solid var(--primary-color);
+    border-radius: 8px;
+    padding: 15px;
+    margin: 20px 0;
+    background-color: #fffcf8;
+}
+
+/* Layout for the section containing the percent table and matching button */
+#importantToRememberSection.important {
+    display: flex;
+    flex-direction: column; 
+}
+
+.important-header-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 30px; 
+}
+
+.important-header-row .important-text {
+    color: var(--primary-color);
+    text-align: center;
+    margin-top: 0;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/* Tables */
+.wide-metric-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+}
+
+.wide-metric-table th {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 8px 10px;
+    text-align: left;
+}
+
+.wide-metric-table td {
+    border: 1px solid var(--border-color);
+    padding: 8px 10px;
+}
+
+.prefix-cell {
+    font-weight: 500;
+}
+
+.value-cell {
+    font-family: monospace;
+}
+
+.equation {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 15px 0;
+}
+
+.eq-operator {
+    margin: 0 8px;
+    font-weight: bold;
+}
+
+.proportion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+/* ================== */
+/* CLASSES USED IN PRACTICE.HTML */
+/* ================== */
+
+
+/* Question Tags */
+.question-tag {
+  display: inline-block;
+  font-size: 0.9rem;
+  padding: 2px 8px;
+  margin-bottom: 10px;
+  border: 1px solid var(--primary-color);
+  border-radius: 12px;
+  color: var(--primary-color);
+  font-weight: 500;
+  align-self: flex-start;
+}
+
+.question-tag.medial {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+.question-tag.alternate {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+}
+
+.question, .solution-question { /* Ensure tags are positioned above question text */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Filter Option Styling */
+.filter-option:last-child { /* Styles for the last filter option (Alternate Calculations) */
+  margin-bottom: 0;
+}
+
+.filter-option:last-child .filter-label {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+/* Filter Styles */
+.filter-container {
+  margin: calc(var(--spacing-xl) * 1.5) 0 var(--spacing-md) 0;
+  padding-left: var(--spacing-sm);
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.filter-title {
+  margin-right: var(--spacing-md);
+  color: var(--text-dark);
+}
+
+.filter-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-md);
+}
+
+.filter-option {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  border-radius: 12px;
+  padding: 2px 8px;
+  border: 1px solid var(--primary-color);
+  margin-right: 5px;
+  transition: all 0.2s ease;
+}
+
+.filter-option input[type="checkbox"] {
+  margin-right: 5px;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+}
+
+.filter-label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+
+.filter-option:hover { /* Hover state for filters */
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.filter-option input[type="checkbox"]:checked + .filter-label { /* Checked state for filters */
+  font-weight: 600;
+}
+
+/* Reference Card Styles */
+/* All reference card styles are now in master.css */
+/* This module uses the default side-by-side layout for two cards */
+
+/* Step Container Styles */
+.steps-container {
+  margin-top: var(--spacing-lg);
+  border-left: 3px solid var(--accent-color);
+  padding-left: var(--spacing-md);
+  display: none;
+}
+
+.solution-steps {
+  display: block;
+  margin-top: var(--spacing-md);
+  border-left: 3px solid var(--accent-color);
+  padding-left: var(--spacing-md);
+}
+
+.step {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.step:last-child {
+  border-bottom: none;
+}
+
+.step-label {
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: var(--primary-color);
+  font-size: 1.1rem;
+}
+
+.steps-container .equation-container,
+.steps-container .operation-container,
+.solution-steps .equation-container,
+.solution-steps .operation-container {
+  margin: 15px 0;
+}
+
+/* Answer Area Styles */
+.answer-container {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-md);
+}
+
+.answer-container input {
+  flex: 0 0 auto;
+  width: 120px;
+}
+
+.answer-container .unit {
+  flex: 0 0 auto;
+}
+
+/* Results Card */
+#results {
+  text-align: center;
+  /* display: none; is controlled by JS */
+}
+
+.results-title {
+  font-size: 1.5rem;
+  margin-bottom: var(--spacing-md);
+  color: var(--primary-color);
+}
+
+.results-message {
+  font-size: 1.2rem;
+  margin-bottom: var(--spacing-xl);
+}
+
+.clear-progress-container {
+  margin-top: var(--spacing-lg);
+  text-align: center;
+}
+
+/* Step Button Containers */
+.check-btn-container { /* Container for step check buttons */
+  display: flex;
+  justify-content: flex-end; 
+  align-items: center;
+  gap: 10px;
+  margin-top: var(--spacing-md); 
+}
+
+.question-content-wrapper {
+  padding-left: 20px;
+  text-indent: -20px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.step-next-btn-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: var(--spacing-md);
+}
+
+/* History Panel Styles */
+/* Base history panel styles are now in master.css */
+
+/* Module-specific history section title colors */
+.history-section-title.medial-title {
+  color: var(--primary-color);
+  border-bottom-color: var(--primary-color);
+}
+
+.history-section-title.alternate-title {
+  color: var(--accent-color);
+  border-bottom-color: var(--accent-color);
+}
+
+/* Completed question buttons, colored to match their category */
+.history-question-button.medial.completed {
+  background-color: var(--primary-color);
+}
+
+.history-question-button.alternate.completed {
+  background-color: var(--accent-color);
+}
+
+/* Mobile responsiveness for the grid */
+@media (max-width: 600px) {
+  .question-button-grid {
+    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+    gap: 8px;
+  }
+  
+  .question-button {
+    width: 50px;
+    height: 50px;
+    font-size: 14px;
+  }
+}
+
+/* Input styling for interactive tic-tac-toe */
+.grid-cell input.grid-input {
+  width: 80px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 4px;
+  font-family: inherit;
+  font-size: inherit;
+  background-color: white;
+}
+
+.grid-cell input.grid-input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(25, 118, 210, 0.2);
+}
+
+.grid-cell input.grid-input::placeholder {
+  font-size: 0.8rem;
+  color: #999;
+  text-align: center;
+}

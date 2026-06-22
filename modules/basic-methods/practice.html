@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Methods Practice</title>
+    <link rel="stylesheet" href="../../master.css">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Basic Methods Practice</h1>
+        </header>
+
+        <div id="questionNavigator" style="text-align: right; margin-bottom: 10px;"></div>
+
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+
+        <div class="stats">
+            <div class="stat-item">
+                <div class="stat-value" id="questionsCompleted">0</div>
+                <div class="stat-label">Completed</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value" id="questionsRemaining">0</div>
+                <div class="stat-label">Remaining</div>
+            </div>
+        </div>
+
+        <!-- Filter Options -->
+        <div class="filter-container">
+            <div class="filter-title">Choose what you want to practice:</div>
+            <div class="filter-options">
+                <label class="filter-option">
+                    <input type="checkbox" id="dimensionalAnalysisFilter" checked>
+                    <span class="filter-label">Dimensional Analysis</span>
+                </label>
+                <label class="filter-option">
+                    <input type="checkbox" id="ratioAndProportionFilter" checked>
+                    <span class="filter-label">Ratio and Proportion</span>
+                </label>
+            </div>
+        </div>
+
+        <!-- Question Card -->
+        <div class="card" id="questionCard">
+            <div class="question-container">
+                <div class="question" id="questionText"></div>
+                <div id="answerContainer" class="answer-container">
+                    <label for="answerInput">Answer:</label>
+                    <input type="number" id="answerInput" step="any">
+                    <span id="answerUnit" class="unit"></span>
+                </div>
+                <div class="feedback" id="answerFeedback"></div>
+            </div>
+
+            <div class="button-row">
+                <button id="checkAnswer">Check Answer</button>
+                <button id="showStepsBtn" class="button-accent">Step-by-Step Guide</button>
+                <button id="prevQuestion" class="button-secondary">Previous Question</button>
+                <button id="nextQuestion" class="button-secondary">Next Question</button>
+            </div>
+
+            <div class="steps-container" id="stepsContainer">
+                <h3>Step-by-Step Solution</h3>
+                <div id="steps"></div>
+            </div>
+        </div>
+
+        <!-- Results Card (hidden by default) -->
+        <div class="card" id="results" style="display: none;">
+            <div class="results-title">Practice Completed!</div>
+            <div class="results-message">You've successfully completed all practice questions.</div>
+            <div class="button-row">
+                <button id="restartBtn">Practice Again</button>
+            </div>
+        </div>
+
+        <!-- Reference section with collapsible cards -->
+        <div class="reference-container">
+            <!-- Ratio and Proportion Reference Card -->
+            <div class="reference-card">
+                <div class="reference-header" id="ratioProportionHeader">
+                    <h3>Ratio and Proportion</h3>
+                    <span class="expand-icon">+</span>
+                </div>
+                <div class="reference-content" id="ratioProportionContent">
+                    <p><strong>Basic Principle:</strong></p>
+                    <div class="equation">
+                        <span>If</span>
+                        <div class="fraction">
+                            <div class="fraction-numerator">a</div>
+                            <div class="fraction-bar"></div>
+                            <div class="fraction-denominator">b</div>
+                        </div>
+                        <span>=</span>
+                        <div class="fraction">
+                            <div class="fraction-numerator">c</div>
+                            <div class="fraction-bar"></div>
+                            <div class="fraction-denominator">d</div>
+                        </div>
+                        <span>, then a =</span>
+                        <div class="fraction">
+                            <div class="fraction-numerator">bc</div>
+                            <div class="fraction-bar"></div>
+                            <div class="fraction-denominator">d</div>
+                        </div>
+                    </div>
+                    
+                    <div class="example-mini">
+                        <p><strong>Example:</strong> If 2 capsules contain 600 mg, how many mg in 10 capsules?</p>
+                        <div class="proportion">
+                            <div class="fraction">
+                                <div class="fraction-numerator">2 caps</div>
+                                <div class="fraction-bar"></div>
+                                <div class="fraction-denominator">600 mg</div>
+                            </div>
+                            <span>=</span>
+                            <div class="fraction">
+                                <div class="fraction-numerator">10 caps</div>
+                                <div class="fraction-bar"></div>
+                                <div class="fraction-denominator">X mg</div>
+                            </div>
+                        </div>
+                        <div class="horizontal-operation">
+                            <span>X mg =</span>
+                            <div class="fraction">
+                                <div class="fraction-numerator">10 × 600</div>
+                                <div class="fraction-bar"></div>
+                                <div class="fraction-denominator">2</div>
+                            </div>
+                            <span>= 3000 mg</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dimensional Analysis Reference Card -->
+            <div class="reference-card">
+                <div class="reference-header" id="dimAnalysisHeader">
+                    <h3>Dimensional Analysis</h3>
+                    <span class="expand-icon">+</span>
+                </div>
+                <div class="reference-content" id="dimAnalysisContent">
+                    <p><strong>Scheme:</strong></p>
+                    <div>
+                        <span>? Wanted Unit =</span>
+                        <span>Given Quantity ×</span>
+                        <span>Conversion Factor</span>
+                    </div>
+                    
+                    <div class="example-mini">
+                        <p><strong>Example:</strong> How many seconds in one year?</p>
+                        <div class="horizontal-operation">
+                            <span>? seconds =</span>
+                            <span>1 year ×</span>
+                            <div class="fraction">
+                                <div class="fraction-numerator">365 days</div>
+                                <div class="fraction-bar"></div>
+                                <div class="fraction-denominator">1 year</div>
+                            </div>
+                            <span>×</span>
+                            <div class="fraction">
+                                <div class="fraction-numerator">24 hrs</div>
+                                <div class="fraction-bar"></div>
+                                <div class="fraction-denominator">1 day</div>
+                            </div>
+                            <span>×</span>
+                            <div class="fraction">
+                                <div class="fraction-numerator">60 min</div>
+                                <div class="fraction-bar"></div>
+                                <div class="fraction-denominator">1 hr</div>
+                            </div>
+                            <span>×</span>
+                            <div class="fraction">
+                                <div class="fraction-numerator">60 sec</div>
+                                <div class="fraction-bar"></div>
+                                <div class="fraction-denominator">1 min</div>
+                            </div>
+                        </div>
+                        <p>= 31,536,000 seconds</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="clear-progress-container">
+            <p>Want to see your question history? 
+                <a href="#" id="viewHistoryBtn" class="clear-data-link">View history</a>
+            </p>
+            <p>Want to clear your saved progress data?
+                <a href="#" id="clearProgressBtn" class="clear-data-link">Clear saved data</a>
+            </p>
+            <p>Want to see the tutorial again?
+                <a href="./index.html" class="clear-data-link">Go back to tutorial</a>
+            </p>
+        </div>
+    </div>
+
+    <!-- History Modal -->
+    <div id="historyModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Question History</h2>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <p class="history-description">
+                    Click on any green button to view the solution to a completed question. Gray buttons represent questions that have not been completed yet.
+                </p>
+                <div class="history-list" id="historyList">
+                    <!-- Question buttons will be dynamically inserted here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Solution Modal -->
+    <div id="solutionModal" class="modal">
+        <div class="modal-content solution-modal-content">
+            <div class="modal-header">
+                <h2>Solution</h2>
+                <span class="close-solution-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div id="solutionQuestion" class="solution-question"></div>
+                <div class="steps-container solution-steps" id="solutionSteps">
+                    <!-- Steps will be inserted here -->
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script type="module" src="main.js"></script>
+</body>
+</html>

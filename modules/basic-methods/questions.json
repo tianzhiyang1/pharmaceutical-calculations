@@ -1,0 +1,1778 @@
+{
+  "questions": [
+    {
+      "number": 1,
+      "tag": "ratio-and-proportion",
+      "question": "MM just started taking insulin for her diabetes. An insulin injection contains 100 units of insulin in each milliliter. How many milliliters does she need to inject to receive 13 units of insulin?",
+      "answerValue": [0.13],
+      "optionUnits": ["milliliters", "units", "mg"],
+      "answerUnit": ["milliliters"],
+      "rounding": false,
+      "steps": [
+        {
+          "text": "Identify the ratio and proportion information",
+          "type": "INFORMATION",
+          "hasInputs": true,
+          "content": [
+            {
+              "text": "The insulin contains ",
+              "input": {
+                "answer": 100,
+                "unit": "units per milliliter",
+                "hint": "Look at the question for the concentration of insulin."
+              }
+            },
+            {
+              "text": "The required dose is ",
+              "input": {
+                "answer": 13,
+                "unit": "units",
+                "hint": "Look at the question for the required dose."
+              }
+            }
+          ]
+        },
+        {
+          "text": "Set up the proportion",
+          "type": "OPERATION",
+          "content": "Construct the proportion comparing the known equivalent with the unknown equivalent:",
+          "operands": [
+            {
+              "type": "fraction",
+              "numerator": {
+                "type": "input",
+                "answer": 100,
+                "unit": "units"
+              },
+              "denominator": {
+                "type": "input",
+                "answer": 1,
+                "unit": "mL"
+              }
+            },
+            {
+              "type": "fraction",
+              "numerator": {
+                "type": "input",
+                "answer": 13,
+                "unit": "units"
+              },
+              "denominator": "X mL"
+            }
+          ],
+          "operators": ["="],
+          "hint": "Match up the same types of units: units in both numerators, milliliters in both denominators."
+        },
+        {
+          "text": "Solve for the final answer",
+          "type": "OPERATION",
+          "content": "Calculate the unknown value by isolating X:",
+          "operands": [
+            {
+              "type": "text",
+              "value": "X mL"
+            },
+            {
+              "type": "input",
+              "answer": 0.13,
+              "unit": "mL"
+            }
+          ],
+          "operators": ["="],
+          "hint": "Divide 13 units by 100 units/mL to find the volume in mL."
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "tag": "ratio-and-proportion",
+      "question": "BB is prescribed Digoxin (Lanoxin) pediatric elixir for heart failure. Digoxin elixir contains 0.07 mg of digoxin in each milliliter of elixir. How many milligrams of digoxin would be administered with a dose of 0.4 mL?",
+      "answerValue": [0.028],
+      "optionUnits": ["mg", "mL", "mcg"],
+      "answerUnit": ["mg"],
+      "rounding": false,
+      "steps": [
+        {
+          "text": "Identify the ratio and proportion information",
+          "type": "INFORMATION",
+          "hasInputs": true,
+          "content": [
+            {
+              "text": "Digoxin elixir contains ",
+              "input": {
+                "answer": 0.07,
+                "unit": "mg of digoxin per milliliter",
+                "hint": "Look at the question for the concentration of digoxin in the elixir."
+              }
+            },
+            {
+              "text": "The dose to be administered is ",
+              "input": {
+                "answer": 0.4,
+                "unit": "mL",
+                "hint": "Look at the question for the volume to be administered."
+              }
+            }
+          ]
+        },
+        {
+          "text": "Set up the proportion",
+          "type": "OPERATION",
+          "content": "Construct the proportion comparing the known equivalent with the unknown equivalent:",
+          "operands": [
+            {
+              "type": "fraction",
+              "numerator": {
+                "type": "input",
+                "answer": 0.07,
+                "unit": "mg"
+              },
+              "denominator": {
+                "type": "input",
+                "answer": 1,
+                "unit": "mL"
+              }
+            },
+            {
+              "type": "fraction",
+              "numerator": "X mg",
+              "denominator": {
+                "type": "input",
+                "answer": 0.4,
+                "unit": "mL"
+              }
+            }
+          ],
+          "operators": ["="],
+          "hint": "Match up the same types of units: mg in both numerators, mL in both denominators."
+        },
+        {
+          "text": "Solve for the final answer",
+          "type": "OPERATION",
+          "content": "Calculate the unknown value by isolating X:",
+          "operands": [
+            {
+              "type": "text",
+              "value": "X mg"
+            },
+            {
+              "type": "input",
+              "answer": 0.028,
+              "unit": "mg"
+            }
+          ],
+          "operators": ["="],
+          "hint": "Multiply 0.07 mg/mL by 0.4 mL to find the amount in mg."
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "tag": "dimensional-analysis",
+      "question": "If penicillin V potassium contains 200,000 units of activity in each 125 mg tablet, how many total units of activity would a patient receive from taking two tablets a day for 10 days?",
+      "answerValue": [4000000],
+      "optionUnits": ["units", "mg", "tablets"],
+      "answerUnit": ["units"],
+      "rounding": false,
+      "steps": [
+        {
+          "text": "Identify the unit of the answer wanted",
+          "type": "MULTIPLE_CHOICE",
+          "options": ["? units =", "? mg =", "? tablet ="],
+          "answer": "? units =",
+          "hint": "Look at what the question is asking for - the total units of activity the patient will receive."
+        },
+        {
+          "text": "Set up the equation with unit cancellation",
+          "type": "OPERATION",
+          "requireUnitCancellation": true,
+          "content": "Construct the equation to calculate total units by multiplying and canceling appropriate units. Click on matching units that should cancel out in the equation:",
+          "operands": [
+            {
+              "type": "text",
+              "value": "? units"
+            },
+            {
+              "type": "fraction",
+              "numerator": {
+                "type": "input",
+                "answer": 200000,
+                "unit": "units",
+                "cancellable": false
+              },
+              "denominator": {
+                "type": "input",
+                "answer": 125,
+                "unit": "mg",
+                "cancellable": true
+              },
+              "hint": "Look for what we know about a single tablet... There are 200000 units in each 125mg tablet."
+            },
+            {
+              "type": "fraction",
+              "numerator": {
+                "type": "input",
+                "answer": 125,
+                "unit": "mg",
+                "cancellable": true
+              },
+              "denominator": {
+                "type": "input",
+                "answer": 1,
+                "unit": "tablet",
+                "cancellable": true
+              },
+              "hint": "Remember that our goal is to create a chain where each denominator cancels out with the next numerator... What should we do to cancel out the 'mg'? There are 125 mg in one tablet."
+            },
+            {
+              "type": "fraction",
+              "numerator": {
+                "type": "input",
+                "answer": 2,
+                "unit": "tablets",
+                "cancellable": true
+              },
+              "denominator": {
+                "type": "input",
+                "answer": 1,
+                "unit": "day",
+                "cancellable": true
+              },
+              "hint": "To cancel out the 'tablet', look at the problem again and identify how the tablets are being administered... 2 tablets are taken daily."
+            },
+            {
+              "type": "input",
+              "answer": 10,
+              "unit": "days",
+              "cancellable": true,
+              "hint": "To cancel out the 'day', how long will the patient be taking the medication?"
+            }
+          ],
+          "operators": ["=", "×", "×", "×", "×"],
+          "hint": "Chain all the conversion factors together, making sure units cancel appropriately."
+        },
+        {
+          "text": "Calculate the final answer (Final calculation)",
+          "type": "OPERATION",
+          "content": "After canceling units, calculate the total units of activity the patient receives:",
+          "operands": [
+            {
+              "type": "text",
+              "value": "? units"
+            },
+            {
+              "type": "input",
+              "answer": 4000000,
+              "unit": "units"
+            }
+          ],
+          "operators": ["="],
+          "hint": "Multiply all the numbers in the equation after canceling units."
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "tag": "dimensional-analysis",
+      "question": "A solution of ferrous sulfate contains 150 mg of ferrous sulfate in each 5 ml. If each milligram of ferrous sulfate has 0.5 mg of elemental iron, how many milligrams of elemental iron is in 1 ml of the solution?",
+      "answerValue": [15],
+      "optionUnits": ["mg elemental iron", "mg ferrous sulfate", "mL"],
+      "answerUnit": ["mg elemental iron"],
+      "rounding": false,
+      "steps": [
+        {
+          "text": "Identify the unit of the answer wanted",
+          "type": "MULTIPLE_CHOICE",
+          "options": ["? mg elemental iron =", "? mL =", "? mg ferrous sulfate ="],
+          "answer": "? mg elemental iron =",
+          "hint": "Look at what the question is asking for - the amount of elemental iron in 1 mL of solution."
+        },
+        {
+          "text": "Set up the equation with unit cancellation",
+          "type": "OPERATION",
+          "requireUnitCancellation": true,
+          "content": "Construct the equation to calculate the elemental iron content by multiplying and canceling appropriate units. Click on the units that should cancel out:",
+          "operands": [
+            {
+              "type": "text",
+              "value": "? mg elemental iron"
+            },
+            {
+              "type": "fraction",
+              "numerator": {
+                "type": "input",
+                "answer": 0.5,
+                "unit": "mg elemental iron",
+                "cancellable": false
+              },
+              "denominator": {
+                "type": "input",
+                "answer": 1,
+                "unit": "mg ferrous sulfate",
+                "cancellable": true
+              },
+              "hint": "Look for what we know about the elemental iron content... Each mg of ferrous sulfate contains 0.5 mg of elemental iron."
+            },
+            {
+              "type": "fraction",
+              "numerator": {
+                "type": "input",
+                "answer": 150,
+                "unit": "mg ferrous sulfate",
+                "cancellable": true
+              },
+              "denominator": {
+                "type": "input",
+                "answer": 5,
+                "unit": "mL",
+                "cancellable": true
+              },
+              "hint": "Remember that our goal is to create a chain where each denominator cancels out with the next numerator... What should we do to cancel out the 'mg ferrous sulfate'? There are 150 mg of ferrous sulfate in 5 mL of solution."
+            },
+            {
+              "type": "input",
+              "answer": 1,
+              "unit": "mL",
+              "cancellable": true,
+              "hint": "To cancel out the 'mL', look at the problem again and identify what volume we're trying to find... We want to know the amount in 1 mL of solution."
+            }
+          ],
+          "operators": ["=", "×", "×"],
+          "hint": "Chain all the conversion factors together, making sure units cancel appropriately."
+        },
+        {
+          "text": "Calculate the final answer (Final calculation)",
+          "type": "OPERATION",
+          "content": "After canceling units, calculate the elemental iron content in 1 mL of solution:",
+          "operands": [
+            {
+              "type": "text",
+              "value": "? mg elemental iron"
+            },
+            {
+              "type": "input",
+              "answer": 15,
+              "unit": "mg"
+            }
+          ],
+          "operators": ["="],
+          "hint": "Calculate (150 mg ferrous sulfate ÷ 5 mL) × 1 mL × 0.5 mg elemental iron/mg ferrous sulfate."
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "tag": "ratio-and-proportion",
+      "question": "If 13 tablets contain 4,225 milligrams of aspirin, how many tablets should contain 1,950 milligrams?",
+      "answerValue": [6],
+      "optionUnits": ["tablets", "mg", "capsules"],
+      "answerUnit": ["tablets"],
+      "rounding": false,
+      "steps": [
+        {
+          "text": "Identify the ratio and proportion information",
+          "type": "INFORMATION",
+          "hasInputs": true,
+          "content": [
+            {
+              "text": "Number of tablets in the known case: ",
+              "input": {
+                "answer": 13,
+                "unit": "tablets",
+                "hint": "Look at the question for the number of tablets in the known case."
+              }
+            },
+            {
+              "text": "Amount of aspirin in the known case: ",
+              "input": {
+                "answer": 4225,
+                "unit": "milligrams",
+                "hint": "Look at the question for the amount of aspirin in the known case."
+              }
+            },
+            {
+              "text": "Amount of aspirin in the unknown case: ",
+              "input": {
+                "answer": 1950,
+                "unit": "milligrams",
+                "hint": "Look at the question for the amount of aspirin in the unknown case."
+              }
+            }
+          ]
+        },
+        {
+          "text": "Set up the proportion",
+          "type": "OPERATION",
+          "content": "Construct the proportion comparing the known equivalent with the unknown equivalent:",
+          "operands": [
+            {
+              "type": "fraction",
+              "numerator": {
+                "type": "input",
+                "answer": 13,
+                "unit": "tablets"
+              },
+              "denominator": {
+                "type": "input",
+                "answer": 4225,
+                "unit": "mg"
+              }
+            },
+            {
+              "type": "fraction",
+              "numerator": "X tablets",
+              "denominator": {
+                "type": "input",
+                "answer": 1950,
+                "unit": "mg"
+              }
+            }
+          ],
+          "operators": ["="],
+          "hint": "Match up the same types of units: tablets in both numerators, mg in both denominators."
+        },
+        {
+          "text": "Solve for the final answer",
+          "type": "OPERATION",
+          "content": "Calculate the unknown value by isolating X:",
+          "operands": [
+            {
+              "type": "text",
+              "value": "X tablets"
+            },
+            {
+              "type": "input",
+              "answer": 6,
+              "unit": "tablets"
+            }
+          ],
+          "operators": ["="],
+          "hint": "Multiply 13 tablets by 1950 mg, then divide by 4225 mg to find the number of tablets."
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "tag": "ratio-and-proportion",
+      "question": "If Timoptic, an ophthalmic solution, contains 0.5 mg of timolol maleate in each milliliter of solution, how many milligrams of timolol maleate would be contained in 1 drop? The eyedropper used delivers 10 drops per milliliter.",
+      "answerValue": [0.05],
+      "optionUnits": ["mg", "drops", "mL"],
+      "answerUnit": ["mg"],
+      "rounding": false,
+      "steps": [
+        {
+          "text": "Identify the ratio and proportion information",
+          "type": "INFORMATION",
+          "hasInputs": true,
+          "content": [
+            {
+              "text": "Timoptic contains ",
+              "input": {
+                "answer": 0.5,
+                "unit": "mg of timolol maleate per milliliter",
+                "hint": "Look at the question for the concentration of timolol maleate."
+              }
+            },
+            {
+              "text": "The eyedropper delivers ",
+              "input": {
+                "answer": 10,
+                "unit": "drops per milliliter",
+                "hint": "Look at the question for the drops per milliliter specification."
+              }
+            }
+          ]
+        },
+        {
+          "text": "Set up the proportion",
+          "type": "OPERATION",
+          "content": "Construct the proportion comparing the known equivalent with the unknown equivalent:",
+          "operands": [
+            {
+              "type": "fraction",
+              "numerator": {
+                "type": "input",
+                "answer": 0.5,
+                "unit": "mg"
+              },
+              "denominator": {
+                "type": "input",
+                "answer": 10,
+                "unit": "drops"
+              }
+            },
+            {
+              "type": "fraction",
+              "numerator": "X mg",
+              "denominator": {
+                "type": "input",
+                "answer": 1,
+                "unit": "drop"
+              }
+            }
+          ],
+          "operators": ["="],
+          "hint": "If 0.5 mg is in 1 mL, and 1 mL equals 10 drops, then 0.5 mg is in 10 drops. Set up the proportion with mg in both numerators and drops in both denominators."
+        },
+        {
+          "text": "Solve for the final answer",
+          "type": "OPERATION",
+          "content": "Calculate the unknown value by isolating X:",
+          "operands": [
+            {
+              "type": "text",
+              "value": "X mg"
+            },
+            {
+              "type": "input",
+              "answer": 0.05,
+              "unit": "mg"
+            }
+          ],
+          "operators": ["="],
+          "hint": "Multiply 0.5 mg by 1 drop, then divide by 10 drops to find the amount in mg."
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "tag": "dimensional-analysis",
+      "question": "HH is 5 ft 6 in. The nurse would like to calculate her BMI but needs her height in cm. What is HH height in cm?",
+      "answerValue": [167.64],
+      "optionUnits": ["cm", "inches", "feet"],
+      "answerUnit": ["cm"],
+      "rounding": false,
+      "steps": [
+        {
+          "text": "Identify the unit of the answer wanted",
+          "type": "MULTIPLE_CHOICE",
+          "options": ["? cm =", "? ft =", "? in ="],
+          "answer": "? cm =",
+          "hint": "Look at what the question is asking for - the height in centimeters (cm)."
+        },
+        {
+          "text": "Set up the equation with unit cancellation",
+          "type": "OPERATION",
+          "requireUnitCancellation": true,
+          "content": "Construct the equation to convert height from feet and inches to cm by multiplying and canceling appropriate units. Click on the units that should cancel out:",
+          "operands": [
+            {
+              "type": "text",
+              "value": "? cm"
+            },
+            {
+              "type": "fraction",
+              "numerator": {
+                "type": "input",
+                "answer": 2.54,
+                "unit": "cm"
+              },
+              "denominator": {
+                "type": "input",
+                "answer": 1,
+                "unit": "inch",
+                "cancellable": true
+              },
+              "hint": "Look for the conversion factor between inches and centimeters... 1 inch = 2.54 cm."
+            },
+            {
+              "type": "fraction",
+              "numerator": {
+                "type": "input",
+                "answer": 12,
+                "unit": "inches",
+                "cancellable": true
+              },
+              "denominator": {
+                "type": "input",
+                "answer": 1,
+                "unit": "foot",
+                "cancellable": true
+              },
+              "hint": "Remember that our goal is to create a chain where each denominator cancels out with the next numerator... What should we do to convert feet to inches? There are 12 inches in 1 foot."
+            },
+            {
+              "type": "input",
+              "answer": 5,
+              "unit": "feet",
+              "cancellable": true,
+              "hint": "To cancel out the 'foot', look at the problem again and identify the height in feet... The person is 5 feet tall."
+            },
+            {
+              "type": "fraction",
+              "numerator": {
+                "type": "input",
+                "answer": 2.54,
+                "unit": "cm"
+              },
+              "denominator": {
+                "type": "input",
+                "answer": 1,
+                "unit": "inch",
+                "cancellable": true
+              },
+              "hint": "We need to convert the remaining inches to centimeters... Use the same conversion factor of 2.54 cm per inch."
+            },
+            {
+              "type": "input",
+              "answer": 6,
+              "unit": "inches",
+              "cancellable": true,
+              "hint": "To cancel out the 'inch', look at the problem again and identify the remaining inches... The person is also 6 inches tall."
+            }
+          ],
+          "operators": ["=", "×", "×", "+", "×"],
+          "hint": "First convert feet to inches, then add the additional inches, then convert total inches to cm."
+        },
+        {
+          "text": "Calculate the final answer (Final calculation)",
+          "type": "OPERATION",
+          "content": "After canceling units, calculate the height in centimeters:",
+          "operands": [
+            {
+              "type": "text",
+              "value": "? cm"
+            },
+            {
+              "type": "input",
+              "answer": 167.64,
+              "unit": "cm"
+            }
+          ],
+          "operators": ["="],
+          "hint": "Calculate [(5 feet × 12 inches/foot) + 6 inches] × 2.54 cm/inch = (60 + 6) × 2.54 = 66 × 2.54 = 167.64 cm"
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "tag": "dimensional-analysis",
+      "question": "How many fluid ounces are in 3 liters? Round to two decimal places.",
+      "answerValue": [101.44],
+      "optionUnits": ["fl oz", "liters", "mL"],
+      "answerUnit": ["fl oz"],
+      "rounding": true,
+      "steps": [
+        {
+          "text": "Identify the unit of the answer wanted",
+          "type": "MULTIPLE_CHOICE",
+          "options": ["? fl oz =", "? liters =", "? mL ="],
+          "answer": "? fl oz =",
+          "hint": "Look at what the question is asking for - the volume in fluid ounces (fl oz)."
+        },
+        {
+          "text": "Set up the equation with unit cancellation",
+          "type": "OPERATION",
+          "requireUnitCancellation": true,
+          "content": "Construct the equation to convert liters to fluid ounces using the conversion factor. Click on the liter units that cancel out in this calculation:",
+          "operands": [
+            {
+              "type": "text",
+              "value": "? fl oz"
+            },
+            {
+              "type": "fraction",
+              "numerator": {
+                "type": "input",
+                "answer": 1,
+                "unit": "fl oz"
+              },
+              "denominator": {
+                "type": "input",
+                "answer": 29.5735,
+                "unit": "mL",
+                "cancellable": true
+              },
+              "hint": "Look for the conversion factor between liters and fluid ounces... 1 fl oz = 29.57 mL."
+            },
+            {
+              "type": "fraction",
+              "numerator": {
+                "type": "input",
+                "answer": 1000,
+                "unit": "mL",
+                "cancellable": true
+              },
+              "denominator": {
+                "type": "input",
+                "answer": 1,
+                "unit": "L",
+                "cancellable": true
+              },
+              "hint": "Remember that our goal is to create a chain where each denominator cancels out with the next numerator... We need to convert liters to milliliters. There are 1000 mL in 1 L. We then need to cancel out the 'mL' unit."
+            },
+            {
+              "type": "input",
+              "answer": 3,
+              "unit": "L",
+              "cancellable": true,
+              "hint": "To cancel out the 'L', look at the problem again and identify the volume in liters... We need to convert 3 L."
+            }
+          ],
+          "operators": ["=", "×"],
+          "hint": "Multiply the volume in liters by the conversion factor (fl oz per liter)."
+        },
+        {
+          "text": "Calculate the final answer (Final calculation)",
+          "type": "OPERATION",
+          "content": "After canceling units, calculate the volume in fluid ounces (round to two decimal places):",
+          "operands": [
+            {
+              "type": "text",
+              "value": "? fl oz"
+            },
+            {
+              "type": "input",
+              "answer": 101.44,
+              "unit": "fl oz"
+            }
+          ],
+          "operators": ["="],
+          "hint": "Multiply 3 L by 1000 mL/L, then divide by 29.5735 mL/fl oz to get 101.44 fl oz."
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "tag": "ratio-and-proportion",
+      "question": "If an insulin injection contains 300 units of insulin in 3 milliliters, how many milliliters should be injected to receive 80 units of insulin?",
+      "answerValue": [0.8],
+      "optionUnits": ["mL", "units", "mg"],
+      "answerUnit": ["mL"],
+      "rounding": false,
+      "steps": [
+        {
+          "text": "Identify the ratio and proportion information",
+          "type": "INFORMATION",
+          "hasInputs": true,
+          "content": [
+            {
+              "text": "The insulin contains ",
+              "input": {
+                "answer": 300,
+                "unit": "units in 3 milliliters",
+                "hint": "Look at the question for the total units in the insulin injection."
+              }
+            },
+            {
+              "text": "The required dose is ",
+              "input": {
+                "answer": 80,
+                "unit": "units",
+                "hint": "Look at the question for the required dose."
+              }
+            }
+          ]
+        },
+        {
+          "text": "Set up the proportion",
+          "type": "OPERATION",
+          "content": "Construct the proportion comparing the known equivalent with the unknown equivalent:",
+          "operands": [
+            {
+              "type": "fraction",
+              "numerator": {
+                "type": "input",
+                "answer": 300,
+                "unit": "units"
+              },
+              "denominator": {
+                "type": "input",
+                "answer": 3,
+                "unit": "mL"
+              }
+            },
+            {
+              "type": "fraction",
+              "numerator": {
+                "type": "input",
+                "answer": 80,
+                "unit": "units"
+              },
+              "denominator": "X mL"
+            }
+          ],
+          "operators": ["="],
+          "hint": "Match up the same types of units: units in both numerators, mL in both denominators."
+        },
+        {
+          "text": "Solve for the final answer",
+          "type": "OPERATION",
+          "content": "Calculate the unknown value by isolating X:",
+          "operands": [
+            {
+              "type": "text",
+              "value": "X mL"
+            },
+            {
+              "type": "input",
+              "answer": 0.8,
+              "unit": "mL"
+            }
+          ],
+          "operators": ["="],
+          "hint": "Multiply 3 mL by 80 units, then divide by 300 units to find the volume in mL."
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "tag": "ratio-and-proportion",
+      "question": "A formula for 3750 tablets contain 18.75 grams (g) of diazepam. How many grams of diazepam should be used in preparing 678 tablets?",
+      "answerValue": [3.39],
+      "optionUnits": ["g diazepam", "mg", "tablets"],
+      "answerUnit": ["g diazepam"],
+      "rounding": false,
+      "steps": [
+        {
+          "text": "Identify the ratio and proportion information",
+          "type": "INFORMATION",
+          "hasInputs": true,
+          "content": [
+            {
+              "text": "Number of tablets in the known case: ",
+              "input": {
+                "answer": 3750,
+                "unit": "tablets",
+                "hint": "Look at the question for the number of tablets in the known formula."
+              }
+            },
+            {
+              "text": "Amount of diazepam in the known case: ",
+              "input": {
+                "answer": 18.75,
+                "unit": "grams",
+                "hint": "Look at the question for the amount of diazepam in the known formula."
+              }
+            },
+            {
+              "text": "Number of tablets in the unknown case: ",
+              "input": {
+                "answer": 678,
+                "unit": "tablets",
+                "hint": "Look at the question for the number of tablets to be prepared."
+              }
+            }
+          ]
+        },
+        {
+          "text": "Set up the proportion",
+          "type": "OPERATION",
+          "content": "Construct the proportion comparing the known equivalent with the unknown equivalent:",
+          "operands": [
+            {
+              "type": "fraction",
+              "numerator": {
+                "type": "input",
+                "answer": 18.75,
+                "unit": "g"
+              },
+              "denominator": {
+                "type": "input",
+                "answer": 3750,
+                "unit": "tablets"
+              }
+            },
+            {
+              "type": "fraction",
+              "numerator": "X g",
+              "denominator": {
+                "type": "input",
+                "answer": 678,
+                "unit": "tablets"
+              }
+            }
+          ],
+          "operators": ["="],
+          "hint": "Match up the same types of units: grams in both numerators, tablets in both denominators."
+        },
+        {
+          "text": "Solve for the final answer",
+          "type": "OPERATION",
+          "content": "Calculate the unknown value by isolating X:",
+          "operands": [
+            {
+              "type": "text",
+              "value": "X g"
+            },
+            {
+              "type": "input",
+              "answer": 3.39,
+              "unit": "g"
+            }
+          ],
+          "operators": ["="],
+          "hint": "Multiply 18.75 g by 678 tablets, then divide by 3750 tablets to find the amount in grams."
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "tag": "dimensional-analysis",
+      "question": "LL weighs 159 lbs. He is prescribed vancomycin 15 mg/kg. What is his calculated dose? Round your answer to the nearest whole number.",
+      "answerValue": [1084],
+      "optionUnits": ["mg", "kg", "lbs"],
+      "answerUnit": ["mg"],
+      "rounding": true,
+      "steps": [
+        {
+          "text": "Identify the unit of the answer wanted",
+          "type": "MULTIPLE_CHOICE",
+          "options": ["? mg =", "? kg =", "? lbs ="],
+          "answer": "? mg =",
+          "hint": "Look at what the question is asking for - the dose in milligrams (mg)."
+        },
+        {
+          "text": "Set up the equation with unit cancellation",
+          "type": "OPERATION",
+          "requireUnitCancellation": true,
+          "content": "Construct the equation to calculate the dose by multiplying and canceling appropriate units. Click on matching units that should cancel out in the equation:",
+          "operands": [
+            {
+              "type": "text",
+              "value": "? mg"
+            },
+            {
+              "type": "fraction",
+              "numerator": {
+                "type": "input",
+                "answer": 15,
+                "unit": "mg"
+              },
+              "denominator": {
+                "type": "input",
+                "answer": 1,
+                "unit": "kg",
+                "cancellable": true
+              },
+              "hint": "Look for the dose prescribed... The patient is prescribed 15 mg per kg of body weight."
+            },
+            {
+              "type": "fraction",
+              "numerator": {
+                "type": "input",
+                "answer": 1,
+                "unit": "kg",
+                "cancellable": true
+              },
+              "denominator": {
+                "type": "input",
+                "answer": 2.2046,
+                "unit": "lbs",
+                "cancellable": true
+              },
+              "hint": "Remember that our goal is to create a chain where each denominator cancels out with the next numerator... We need to convert pounds to kilograms. There are 2.2046 pounds in 1 kilogram."
+            },
+            {
+              "type": "input",
+              "answer": 159,
+              "unit": "lbs",
+              "cancellable": true,
+              "hint": "To cancel out the 'lbs', look at the patient's weight... The patient weighs 159 pounds."
+            }
+          ],
+          "operators": ["=", "×", "×"],
+          "hint": "Chain all the conversion factors together, making sure units cancel appropriately."
+        },
+        {
+          "text": "Calculate the final answer (Final calculation)",
+          "type": "OPERATION",
+          "content": "After canceling units, calculate the dose in milligrams (round to the nearest whole number):",
+          "operands": [
+            {
+              "type": "text",
+              "value": "? mg"
+            },
+            {
+              "type": "input",
+              "answer": 1084,
+              "unit": "mg"
+            }
+          ],
+          "operators": ["="],
+          "hint": "Multiply all the numbers and divide as needed after canceling units. Round to the nearest whole number."
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "tag": "dimensional-analysis",
+      "question": "If an intravenous solution is adjusted to deliver 250 mg of medication over 12 hours, how many mg of medication is delivered in 1 min? Round your answer to two decimal places.",
+      "answerValue": [0.35],
+      "optionUnits": ["mg / min", "mg / hour", "minutes"],
+      "answerUnit": ["mg / min"],
+      "rounding": true,
+      "steps": [
+        {
+          "text": "Identify the unit of the answer wanted",
+          "type": "MULTIPLE_CHOICE",
+          "options": ["? mg/min =", "? mg/hour =", "? min ="],
+          "answer": "? mg/min =",
+          "hint": "Look at what the question is asking for - the delivery rate in mg per minute (mg/min)."
+        },
+        {
+          "text": "Set up the equation with unit cancellation",
+          "type": "OPERATION",
+          "requireUnitCancellation": true,
+          "content": "Construct the equation to calculate the delivery rate per minute by multiplying and canceling appropriate units. Click on the hour units that should cancel out in the equation:",
+          "operands": [
+            {
+              "type": "text",
+              "value": "? mg/min"
+            },
+            {
+              "type": "fraction",
+              "numerator": {
+                "type": "input",
+                "answer": 250,
+                "unit": "mg"
+              },
+              "denominator": {
+                "type": "input",
+                "answer": 12,
+                "unit": "hours",
+                "cancellable": true
+              },
+              "hint": "Look for the total amount of medication and time period... The solution delivers 250 mg over 12 hours."
+            },
+            {
+              "type": "fraction",
+              "numerator": {
+                "type": "input",
+                "answer": 1,
+                "unit": "hour",
+                "cancellable": true
+              },
+              "denominator": {
+                "type": "input",
+                "answer": 60,
+                "unit": "minutes"
+              },
+              "hint": "Remember that our goal is to convert to rate per minute... We need to use the fact that there are 60 minutes in 1 hour."
+            }
+          ],
+          "operators": ["=", "×"],
+          "hint": "Set up the delivery rate (mg/hours) and convert to mg/minute using the time conversion factor."
+        },
+        {
+          "text": "Calculate the final answer (Final calculation)",
+          "type": "OPERATION",
+          "content": "After canceling units, calculate the delivery rate per minute (round to two decimal places):",
+          "operands": [
+            {
+              "type": "text",
+              "value": "? mg/min"
+            },
+            {
+              "type": "input",
+              "answer": 0.35,
+              "unit": "mg/min"
+            }
+          ],
+          "operators": ["="],
+          "hint": "Divide 250 mg by 12 hours, then divide by 60 minutes/hour to find mg/minute. Round to two decimal places."
+        }
+      ]
+    },
+    {
+      "number": 13,
+      "tag": "ratio-and-proportion",
+      "question": "If 2 tablets contain 650 milligrams of aspirin, how many milligrams should be contained in 10 tablets?",
+      "answerValue": [3250],
+      "optionUnits": ["mg", "tablets", "g"],
+      "answerUnit": ["mg"],
+      "rounding": false,
+      "steps": [
+        {
+          "text": "Identify the ratio and proportion information",
+          "type": "INFORMATION",
+          "hasInputs": true,
+          "content": [
+            {
+              "text": "Number of tablets in the known case: ",
+              "input": {
+                "answer": 2,
+                "unit": "tablets",
+                "hint": "Look at the question for the number of tablets in the known case."
+              }
+            },
+            {
+              "text": "Amount of aspirin in the known case: ",
+              "input": {
+                "answer": 650,
+                "unit": "milligrams",
+                "hint": "Look at the question for the amount of aspirin in the known case."
+              }
+            },
+            {
+              "text": "Number of tablets in the unknown case: ",
+              "input": {
+                "answer": 10,
+                "unit": "tablets",
+                "hint": "Look at the question for the number of tablets in the unknown case."
+              }
+            }
+          ]
+        },
+        {
+          "text": "Set up the proportion",
+          "type": "OPERATION",
+          "content": "Construct the proportion comparing the known equivalent with the unknown equivalent:",
+          "operands": [
+            {
+              "type": "fraction",
+              "numerator": {
+                "type": "input",
+                "answer": 650,
+                "unit": "mg"
+              },
+              "denominator": {
+                "type": "input",
+                "answer": 2,
+                "unit": "tablets"
+              }
+            },
+            {
+              "type": "fraction",
+              "numerator": "X mg",
+              "denominator": {
+                "type": "input",
+                "answer": 10,
+                "unit": "tablets"
+              }
+            }
+          ],
+          "operators": ["="],
+          "hint": "Match up the same types of units: mg in both numerators, tablets in both denominators."
+        },
+        {
+          "text": "Solve for the final answer",
+          "type": "OPERATION",
+          "content": "Calculate the unknown value by isolating X:",
+          "operands": [
+            {
+              "type": "text",
+              "value": "X mg"
+            },
+            {
+              "type": "input",
+              "answer": 3250,
+              "unit": "mg"
+            }
+          ],
+          "operators": ["="],
+          "hint": "Multiply 650 mg by 10 tablets, then divide by 2 tablets to find the amount in mg."
+        }
+      ]
+    },
+    {
+      "number": 14,
+      "tag": "ratio-and-proportion",
+      "question": "If an intravenous fluid is adjusted to deliver 22.5 mg of medication to a patient per hour, how many milligrams of medication are delivered per minute?",
+      "answerValue": [0.375],
+      "optionUnits": ["mg / min", "mg / hour", "minutes"],
+      "answerUnit": ["mg / min"],
+      "rounding": false,
+      "steps": [
+        {
+          "text": "Identify the ratio and proportion information",
+          "type": "INFORMATION",
+          "hasInputs": true,
+          "content": [
+            {
+              "text": "The medication delivery rate is ",
+              "input": {
+                "answer": 22.5,
+                "unit": "mg per hour",
+                "hint": "Look at the question for the medication delivery rate per hour."
+              }
+            },
+            {
+              "text": "The conversion factor is ",
+              "input": {
+                "answer": 60,
+                "unit": "minutes per hour",
+                "hint": "There are 60 minutes in 1 hour."
+              }
+            }
+          ]
+        },
+        {
+          "text": "Set up the proportion",
+          "type": "OPERATION",
+          "content": "Construct the proportion comparing the known equivalent with the unknown equivalent:",
+          "operands": [
+            {
+              "type": "fraction",
+              "numerator": {
+                "type": "input",
+                "answer": 22.5,
+                "unit": "mg"
+              },
+              "denominator": {
+                "type": "input",
+                "answer": 60,
+                "unit": "minutes"
+              }
+            },
+            {
+              "type": "fraction",
+              "numerator": "X mg",
+              "denominator": {
+                "type": "input",
+                "answer": 1,
+                "unit": "minute"
+              }
+            }
+          ],
+          "operators": ["="],
+          "hint": "Convert hours to minutes (1 hour = 60 minutes), then set up the proportion with mg in both numerators and minutes in both denominators."
+        },
+        {
+          "text": "Solve for the final answer",
+          "type": "OPERATION",
+          "content": "Calculate the unknown value by isolating X:",
+          "operands": [
+            {
+              "type": "text",
+              "value": "X mg"
+            },
+            {
+              "type": "input",
+              "answer": 0.375,
+              "unit": "mg"
+            }
+          ],
+          "operators": ["="],
+          "hint": "Divide 22.5 mg by 60 minutes to find the delivery rate per minute."
+        }
+      ]
+    },
+    {
+      "number": 15,
+      "tag": "dimensional-analysis",
+      "question": "Dr. A writes a medication order that calls for 2000 ml of a NaCl intravenous infusion to be administered over 12 hours. If the IV smart pump is set to deliver 15 drops per milliliter, how many drops are delivered per minute? Round your answer to the nearest whole number.",
+      "answerValue": [42],
+      "optionUnits": ["drops", "L/min", "mL/min"],
+      "answerUnit": ["drops"],
+      "rounding": true,
+      "steps": [
+        {
+          "text": "Identify the unit of the answer wanted",
+          "type": "MULTIPLE_CHOICE",
+          "options": ["? drops/min =", "? mL/min =", "? drops/hour ="],
+          "answer": "? drops/min =",
+          "hint": "Look at what the question is asking for - the delivery rate in drops per minute (drops/min)."
+        },
+        {
+          "text": "Set up the equation with unit cancellation",
+          "type": "OPERATION",
+          "requireUnitCancellation": true,
+          "content": "Construct the equation to calculate drops per minute by multiplying and canceling appropriate units. Click on units that should cancel out:",
+          "operands": [
+            {
+              "type": "text",
+              "value": "? drops/min"
+            },
+            {
+              "type": "fraction",
+              "numerator": {
+                "type": "input",
+                "answer": 15,
+                "unit": "drops"
+              },
+              "denominator": {
+                "type": "input",
+                "answer": 1,
+                "unit": "mL",
+                "cancellable": true
+              },
+              "hint": "Look for the drop factor... The IV pump delivers 15 drops per milliliter."
+            },
+            {
+              "type": "fraction",
+              "numerator": {
+                "type": "input",
+                "answer": 2000,
+                "unit": "mL",
+                "cancellable": true
+              },
+              "denominator": {
+                "type": "input",
+                "answer": 12,
+                "unit": "hours",
+                "cancellable": true
+              },
+              "hint": "Remember that our goal is to create a chain where units cancel appropriately... The order is for 2000 mL to be administered over 12 hours."
+            },
+            {
+              "type": "fraction",
+              "numerator": {
+                "type": "input",
+                "answer": 1,
+                "unit": "hour",
+                "cancellable": true
+              },
+              "denominator": {
+                "type": "input",
+                "answer": 60,
+                "unit": "minutes"
+              },
+              "hint": "To convert from hours to minutes... We need to use the fact that there are 60 minutes in 1 hour."
+            }
+          ],
+          "operators": ["=", "×", "×", "×"],
+          "hint": "Chain all the conversion factors together, making sure units cancel appropriately."
+        },
+        {
+          "text": "Calculate the final answer (Final calculation)",
+          "type": "OPERATION",
+          "content": "After canceling units, calculate the drops per minute (round to the nearest whole number):",
+          "operands": [
+            {
+              "type": "text",
+              "value": "? drops/min"
+            },
+            {
+              "type": "input",
+              "answer": 42,
+              "unit": "drops/min"
+            }
+          ],
+          "operators": ["="],
+          "hint": "Calculate (2000 mL ÷ 12 hours) × (1 hour ÷ 60 minutes) × (15 drops ÷ 1 mL) and round to the nearest whole number."
+        }
+      ]
+    },
+    {
+      "number": 16,
+      "tag": "dimensional-analysis",
+      "question": "An intravenous smart pump is set to deliver 900 ml of solution over 24 hours at a rate of 50 gtts/ml. How many drops are delivered in 1 minute? Round your answer to the nearest whole number.",
+      "answerValue": [32],
+      "optionUnits": ["drops", "L/min", "mL/min"],
+      "answerUnit": ["drops"],
+      "rounding": true,
+      "steps": [
+        {
+          "text": "Identify the unit of the answer wanted",
+          "type": "MULTIPLE_CHOICE",
+          "options": ["? gtts/min =", "? mL/min =", "? gtts/hour ="],
+          "answer": "? gtts/min =",
+          "hint": "Look at what the question is asking for - the delivery rate in drops (gtts) per minute."
+        },
+        {
+          "text": "Set up the equation with unit cancellation",
+          "type": "OPERATION",
+          "requireUnitCancellation": true,
+          "content": "Construct the equation to calculate drops per minute by multiplying and canceling appropriate units. Click on units that should cancel out:",
+          "operands": [
+            {
+              "type": "text",
+              "value": "? gtts/min"
+            },
+            {
+              "type": "fraction",
+              "numerator": {
+                "type": "input",
+                "answer": 50,
+                "unit": "gtts"
+              },
+              "denominator": {
+                "type": "input",
+                "answer": 1,
+                "unit": "mL",
+                "cancellable": true
+              },
+              "hint": "Look for the drop factor... The IV pump is set to deliver 50 drops (gtts) per milliliter."
+            },
+            {
+              "type": "fraction",
+              "numerator": {
+                "type": "input",
+                "answer": 900,
+                "unit": "mL",
+                "cancellable": true
+              },
+              "denominator": {
+                "type": "input",
+                "answer": 24,
+                "unit": "hours",
+                "cancellable": true
+              },
+              "hint": "Remember to find the flow rate... The pump delivers 900 mL over a 24-hour period."
+            },
+            {
+              "type": "fraction",
+              "numerator": {
+                "type": "input",
+                "answer": 1,
+                "unit": "hour",
+                "cancellable": true
+              },
+              "denominator": {
+                "type": "input",
+                "answer": 60,
+                "unit": "minutes"
+              },
+              "hint": "To convert from hours to minutes... We need to use the fact that there are 60 minutes in 1 hour."
+            }
+          ],
+          "operators": ["=", "×", "×", "×"],
+          "hint": "Chain all the conversion factors together, making sure units cancel appropriately."
+        },
+        {
+          "text": "Calculate the final answer (Final calculation)",
+          "type": "OPERATION",
+          "content": "After canceling units, calculate the drops per minute (round to the nearest whole number):",
+          "operands": [
+            {
+              "type": "text",
+              "value": "? gtts/min"
+            },
+            {
+              "type": "input",
+              "answer": 32,
+              "unit": "gtts/min"
+            }
+          ],
+          "operators": ["="],
+          "hint": "Calculate (900 mL ÷ 24 hours) × (1 hour ÷ 60 minutes) × (50 gtts ÷ 1 mL) and round to the nearest whole number."
+        }
+      ]
+    },
+    {
+      "number": 17,
+      "tag": "ratio-and-proportion",
+      "question": "A prescription drug cost the pharmacist $27.00 for a bottle of 50 tablets. What would be the cost for 18 tablets?",
+      "answerValue": [9.72],
+      "optionUnits": ["dollars", "tablets", "euros"],
+      "answerUnit": ["dollars"],
+      "rounding": false,
+      "steps": [
+        {
+          "text": "Identify the ratio and proportion information",
+          "type": "INFORMATION",
+          "hasInputs": true,
+          "content": [
+            {
+              "text": "The cost of ",
+              "input": {
+                "answer": 50,
+                "unit": "tablets",
+                "hint": "Look at the question for the number of tablets in the bottle."
+              }
+            },
+            {
+              "text": "is ",
+              "input": {
+                "answer": 27,
+                "unit": "dollars",
+                "hint": "Look at the question for the cost of the whole bottle."
+              }
+            },
+            {
+              "text": "The number of tablets needed is ",
+              "input": {
+                "answer": 18,
+                "unit": "tablets",
+                "hint": "Look at the question for the number of tablets needed."
+              }
+            }
+          ]
+        },
+        {
+          "text": "Set up the proportion",
+          "type": "OPERATION",
+          "content": "Construct the proportion comparing the known equivalent with the unknown equivalent:",
+          "operands": [
+            {
+              "type": "fraction",
+              "numerator": {
+                "type": "input",
+                "answer": 27,
+                "unit": "dollars"
+              },
+              "denominator": {
+                "type": "input",
+                "answer": 50,
+                "unit": "tablets"
+              }
+            },
+            {
+              "type": "fraction",
+              "numerator": "X dollars",
+              "denominator": {
+                "type": "input",
+                "answer": 18,
+                "unit": "tablets"
+              }
+            }
+          ],
+          "operators": ["="],
+          "hint": "Match up the same types of units: dollars in both numerators, tablets in both denominators."
+        },
+        {
+          "text": "Solve for the final answer",
+          "type": "OPERATION",
+          "content": "Calculate the unknown value by isolating X:",
+          "operands": [
+            {
+              "type": "text",
+              "value": "X dollars"
+            },
+            {
+              "type": "input",
+              "answer": 9.72,
+              "unit": "dollars"
+            }
+          ],
+          "operators": ["="],
+          "hint": "Multiply $27 by 18 tablets, then divide by 50 tablets to find the cost."
+        }
+      ]
+    },
+    {
+      "number": 18,
+      "tag": "ratio-and-proportion",
+      "question": "The biotechnology drug filgrastim (NEUPOGEN) contains 600 micrograms (mcg) of filgrastim per 1.2 mL. How many micrograms of the drug would be administered by 0.5 mL injection?",
+      "answerValue": [250],
+      "optionUnits": ["mcg", "mg", "mL"],
+      "answerUnit": ["mcg"],
+      "rounding": false,
+      "steps": [
+        {
+          "text": "Identify the ratio and proportion information",
+          "type": "INFORMATION",
+          "hasInputs": true,
+          "content": [
+            {
+              "text": "Filgrastim concentration: ",
+              "input": {
+                "answer": 600,
+                "unit": "micrograms (mcg) per 1.2 mL",
+                "hint": "Look at the question for the concentration of filgrastim."
+              }
+            },
+            {
+              "text": "Volume of the injection: ",
+              "input": {
+                "answer": 0.5,
+                "unit": "mL",
+                "hint": "Look at the question for the volume of the injection."
+              }
+            }
+          ]
+        },
+        {
+          "text": "Set up the proportion",
+          "type": "OPERATION",
+          "content": "Construct the proportion comparing the known equivalent with the unknown equivalent:",
+          "operands": [
+            {
+              "type": "fraction",
+              "numerator": {
+                "type": "input",
+                "answer": 600,
+                "unit": "mcg"
+              },
+              "denominator": {
+                "type": "input",
+                "answer": 1.2,
+                "unit": "mL"
+              }
+            },
+            {
+              "type": "fraction",
+              "numerator": "X mcg",
+              "denominator": {
+                "type": "input",
+                "answer": 0.5,
+                "unit": "mL"
+              }
+            }
+          ],
+          "operators": ["="],
+          "hint": "Match up the same types of units: mcg in both numerators, mL in both denominators."
+        },
+        {
+          "text": "Solve for the final answer",
+          "type": "OPERATION",
+          "content": "Calculate the unknown value by isolating X:",
+          "operands": [
+            {
+              "type": "text",
+              "value": "X mcg"
+            },
+            {
+              "type": "input",
+              "answer": 250,
+              "unit": "mcg"
+            }
+          ],
+          "operators": ["="],
+          "hint": "Multiply 600 mcg by 0.5 mL, then divide by 1.2 mL to find the amount in mcg."
+        }
+      ]
+    },
+    {
+      "number": 19,
+      "tag": "dimensional-analysis",
+      "question": "Convert 120 milliliters to teaspoons.",
+      "answerValue": [24],
+      "optionUnits": ["tsp", "mL", "tbsp"],
+      "answerUnit": ["tsp"],
+      "rounding": false,
+      "steps": [
+        {
+          "text": "Identify the unit of the answer wanted",
+          "type": "MULTIPLE_CHOICE",
+          "options": ["? tsp =", "? mL =", "? tbsp ="],
+          "answer": "? tsp =",
+          "hint": "Look at what the question is asking for - the volume in teaspoons (tsp)."
+        },
+        {
+          "text": "Set up the equation with unit cancellation",
+          "type": "OPERATION",
+          "requireUnitCancellation": true,
+          "content": "Construct the equation to convert milliliters to teaspoons by multiplying and canceling appropriate units. Click on the mL units that cancel out in this calculation:",
+          "operands": [
+            {
+              "type": "text",
+              "value": "? tsp"
+            },
+            {
+              "type": "fraction",
+              "numerator": {
+                "type": "input",
+                "answer": 1,
+                "unit": "tsp"
+              },
+              "denominator": {
+                "type": "input",
+                "answer": 5,
+                "unit": "mL",
+                "cancellable": true
+              },
+              "hint": "Look for the conversion between teaspoons and milliliters... 1 teaspoon equals 5 milliliters."
+            },
+            {
+              "type": "input",
+              "answer": 120,
+              "unit": "mL",
+              "cancellable": true,
+              "hint": "To cancel out the 'mL', look at the volume we need to convert... We need to convert 120 milliliters to teaspoons."
+            }
+          ],
+          "operators": ["=", "×"],
+          "hint": "Multiply the volume in mL by the conversion factor (tsp per mL)."
+        },
+        {
+          "text": "Calculate the final answer (Final calculation)",
+          "type": "OPERATION",
+          "content": "After canceling units, calculate the volume in teaspoons:",
+          "operands": [
+            {
+              "type": "text",
+              "value": "? tsp"
+            },
+            {
+              "type": "input",
+              "answer": 24,
+              "unit": "tsp"
+            }
+          ],
+          "operators": ["="],
+          "hint": "Divide 120 mL by 5 mL/tsp to find the volume in teaspoons."
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "tag": "dimensional-analysis",
+      "question": "Acyclovir (ZOVIRAX) suspension contains 280 mg of acyclovir in each 7 mL. How many milligrams of acyclovir are contained in a pint of suspension?",
+      "answerValue": [18920],
+      "optionUnits": ["mg", "g", "mL"],
+      "answerUnit": ["mg"],
+      "rounding": false,
+      "steps": [
+        {
+          "text": "Identify the unit of the answer wanted",
+          "type": "MULTIPLE_CHOICE",
+          "options": ["? mg =", "? mL =", "? pint ="],
+          "answer": "? mg =",
+          "hint": "Look at what the question is asking for - the amount of acyclovir in milligrams (mg)."
+        },
+        {
+          "text": "Set up the equation with unit cancellation",
+          "type": "OPERATION",
+          "requireUnitCancellation": true,
+          "content": "Construct the equation to calculate the total acyclovir content by multiplying and canceling appropriate units. Click on the units that should cancel out:",
+          "operands": [
+            {
+              "type": "text",
+              "value": "? mg"
+            },
+            {
+              "type": "fraction",
+              "numerator": {
+                "type": "input",
+                "answer": 280,
+                "unit": "mg"
+              },
+              "denominator": {
+                "type": "input",
+                "answer": 7,
+                "unit": "mL",
+                "cancellable": true
+              },
+              "hint": "Look for the concentration of acyclovir... The suspension contains 280 mg of acyclovir in each 7 mL."
+            },
+            {
+              "type": "fraction",
+              "numerator": {
+                "type": "input",
+                "answer": 473,
+                "unit": "mL",
+                "cancellable": true
+              },
+              "denominator": {
+                "type": "input",
+                "answer": 1,
+                "unit": "pint",
+                "cancellable": true
+              },
+              "hint": "Remember that our goal is to create a chain where units cancel appropriately... We need to convert pints to milliliters. There are 473 mL in 1 pint."
+            },
+            {
+              "type": "input",
+              "answer": 1,
+              "unit": "pint",
+              "cancellable": true,
+              "hint": "To cancel out the 'pint', look at the total volume... We need to find the amount of acyclovir in 1 pint of suspension."
+            }
+          ],
+          "operators": ["=", "×", "×"],
+          "hint": "Chain all the conversion factors together, making sure units cancel appropriately."
+        },
+        {
+          "text": "Calculate the final answer (Final calculation)",
+          "type": "OPERATION",
+          "content": "After canceling units, calculate the total acyclovir content in the pint of suspension:",
+          "operands": [
+            {
+              "type": "text",
+              "value": "? mg"
+            },
+            {
+              "type": "input",
+              "answer": 18920,
+              "unit": "mg"
+            }
+          ],
+          "operators": ["="],
+          "hint": "Calculate 1 pint × (473 mL/1 pint) × (280 mg/7 mL) = 473 mL × (280/7) mg/mL = 18,920 mg"
+        }
+      ]
+    }
+  ]
+}

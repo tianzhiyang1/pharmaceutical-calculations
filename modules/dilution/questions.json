@@ -1,0 +1,3041 @@
+{
+    "questions": [
+        {
+            "number": 1,
+            "question": "If you dilute 750 ml of a 10% v/v solution to 1000 ml, what will be the percentage strength of the new volume?",
+            "answerValue": [7.5],
+            "answerUnit": ["%"],
+            "rounding": false,
+            "steps": [
+                {
+                    "text": "Recognize that the problem involves dilution.",
+                    "type": "INFORMATION",
+                    "content": "Look for key terms such as \"diluted,\" \"stock preparation,\" \"final concentration,\" or \"prepare from a stronger preparation.\" Dilution problems typically involve a higher concentration (stock) and a lower concentration (final product). For this question, you can tell this is a dilution problem by looking at the following key terms:",
+                    "questionHighlights": ["dilute", "percentage strength"]
+                },
+                {
+                    "text": "Understand the goal of the problem and determine what you are being asked to find. Identify the Q1, C1, Q2, and C2, and convert units as needed for the dilution formula Q1 × C1 = Q2 × C2",
+                    "type": "OPERATION",
+                    "operands1": [
+                    {
+                        "type": "text",
+                        "value": "Q1"
+                    },
+                    {
+                        "type": "input",
+                        "answer": 750,
+                        "unit": "mL"
+                    }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "C1"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 10,
+                            "unit": "%"
+                        }
+                    ],
+                    "operators2": ["="],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "Q2"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1000,
+                            "unit": "mL"
+                        }
+                    ],
+                    "operators3": ["="],
+                    "operands4": [
+                        {
+                            "type": "text",
+                            "value": "C2"
+                        },
+                        {
+                            "type": "text",
+                            "value": "?"
+                        }
+                    ],  
+                    "operators4": ["="],
+                    "hint": "Q1 = 750 ml, C1 = 10%, Q2 = 1000 ml, C2 is unknown. All units are in the correct format, so no conversion is needed."
+                },
+                {
+                    "text": "Use the dilution formula and solve for the unknown",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Q1"
+                        },
+                        {
+                            "type": "text",
+                            "value": "C1"
+                        },
+                        {
+                            "type": "text",
+                            "value": "Q2"
+                        },
+                        {
+                            "type": "text",
+                            "value": "C2"
+                        }
+                    ],
+                    "operators1": ["×", "=", "×"],
+                    "operands2": [
+                        {
+                            "type": "input",
+                            "answer": 750,
+                            "unit": "mL"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 10,
+                            "unit": "%"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1000,
+                            "unit": "mL"
+                        },
+                        {
+                            "type": "text",
+                            "value": "C2"
+                        }
+                    ],
+                    "operators2": ["×", "=", "×"],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "C2"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 7.5,
+                            "unit": "%"
+                        }
+                    ],
+                    "operators3": ["="],
+                    "hint": "750 ml × 10% = 1000 ml × C2, C2 = 7.5%"
+                }
+            ]   
+        },
+        {
+            "number": 2,
+            "question": "You diluted a 2500 ml sample to 7500 ml. The percentage strength of the diluted sample is 15%. What was the strength of the original sample?",
+            "answerValue": [45],
+            "answerUnit": ["%"],
+            "rounding": false,
+            "steps": [
+                {
+                    "text": "Recognize that the problem involves dilution.",
+                    "type": "INFORMATION",
+                    "content": "Look for key terms such as \"diluted,\" \"stock preparation,\" \"final concentration,\" or \"prepare from a stronger preparation.\" Dilution problems typically involve a higher concentration (stock) and a lower concentration (final product). For this question, you can tell this is a dilution problem by looking at the following key terms:",
+                    "questionHighlights": ["diluted", "percentage strength", "diluted sample", "original sample"]
+                },
+                {
+                    "text": "Understand the goal of the problem and determine what you are being asked to find. Identify the Q1, C1, Q2, and C2, and convert units as needed for the dilution formula Q1 × C1 = Q2 × C2",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Q1"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 2500,
+                            "unit": "mL"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "C1"
+                        },
+                        {
+                            "type": "text",
+                            "value": "?"
+                        }
+                    ],
+                    "operators2": ["="],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "Q2"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 7500,
+                            "unit": "mL"
+                        }
+                    ],
+                    "operators3": ["="],
+                    "operands4": [
+                        {
+                            "type": "text",
+                            "value": "C2"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 15,
+                            "unit": "%"
+                        }
+                    ],
+                    "operators4": ["="],
+                    "hint": "Q1 = 2500 ml, C1 is unknown, Q2 = 7500 ml, C2 = 15%"
+                },
+                {
+                    "text": "Use the dilution formula and solve for the unknown",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Q1"
+                        },
+                        {
+                            "type": "text",
+                            "value": "C1"
+                        },
+                        {
+                            "type": "text",
+                            "value": "Q2"
+                        },
+                        {
+                            "type": "text",
+                            "value": "C2"
+                        }
+                    ],
+                    "operators1": ["×", "=", "×"],
+                    "operands2": [
+                        {
+                            "type": "input",
+                            "answer": 2500,
+                            "unit": "mL"
+                        },
+                        {
+                            "type": "text",
+                            "value": "C1"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 7500,
+                            "unit": "mL"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 15,
+                            "unit": "%"
+                        }
+                    ],
+                    "operators2": ["×", "=", "×"],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "C1"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 45,
+                            "unit": "%"
+                        }
+                    ],
+                    "operators3": ["="],
+                    "hint": "2500 ml × C1 = 7500 ml × 15%, C1 = 45%"
+                }
+            ]
+        },
+        {
+            "number": 3,
+            "question": "If 100 ml of a 1:25 w/v solution is diluted to 1000 ml, what is the ratio strength of the new solution (w/v)?",
+            "answerValue": ["1:250"],
+            "answerUnit": [""],
+            "rounding": false,
+            "steps": [
+                {
+                    "text": "Recognize that the problem involves dilution.",
+                    "type": "INFORMATION",
+                    "content": "Look for key terms such as \"diluted,\" \"stock preparation,\" \"final concentration,\" or \"prepare from a stronger preparation.\" Dilution problems typically involve a higher concentration (stock) and a lower concentration (final product). For this question, you can tell this is a dilution problem by looking at the following key terms:",
+                    "questionHighlights": ["diluted", "ratio strength"]
+                },
+                {
+                    "text": "Understand the goal of the problem and determine what you are being asked to find. Identify the Q1, C1, Q2, and C2, and convert units as needed for the dilution formula Q1 × C1 = Q2 × C2",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Q1"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 100,
+                            "unit": "mL"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "C1"
+                        },
+                        {
+                            "type": "input",
+                            "answer": "1",
+                            "unit": ""
+                        },
+                        {
+                            "type": "input",
+                            "answer": "25",
+                            "unit": "w/v"
+                        }
+                    ],
+                    "operators2": ["=",":"],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "Q2"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1000,
+                            "unit": "mL"
+                        }
+                    ],
+                    "operators3": ["="],
+                    "operands4": [
+                        {
+                            "type": "text",
+                            "value": "C2"
+                        },
+                        {
+                            "type": "text",
+                            "value": "?"
+                        }
+                    ],
+                    "operators4": ["="],
+                    "hint": "Q1 = 100 mL, C1 = 1:25, Q2 = 1000 mL, C2 is unknown. All units are in the correct format, so no conversion is needed."
+                },
+                {
+                    "text": "Use the dilution formula and solve for the unknown",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Q1"
+                        },
+                        {
+                            "type": "text",
+                            "value": "C1"
+                        },
+                        {
+                            "type": "text",
+                            "value": "Q2"
+                        },
+                        {
+                            "type": "text",
+                            "value": "C2"
+                        }
+                    ],
+                    "operators1": ["×", "=", "×"],
+                    "operands2": [
+                        {
+                            "type": "input",
+                            "answer": 100,
+                            "unit": "mL"
+                        },
+                        {
+                            "type": "text",
+                            "value": "1/25"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1000,
+                            "unit": "mL"
+                        },
+                        {
+                            "type": "text",
+                            "value": "1/X"
+                        }
+                    ],
+                    "operators2": ["×", "=", "×"],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "X"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 250,
+                            "unit": ""
+                        },
+                        {
+                            "type": "text",
+                            "value": "The ratio strength is"
+                        },
+                        {
+                            "type": "input",
+                            "answer": "1",
+                            "unit": ""
+                        },
+                        {
+                            "type": "input",
+                            "answer": "250",
+                            "unit": "w/v"
+                        }
+                    ],
+                    "operators3": ["=", "", "", ":"],
+                    "hint": "100 mL × 1/25 = 1000 mL × 1/X, solving for X: X = (1000 × 25)/100 = 250, therefore the ratio strength is 1:250"
+                }
+            ]
+        },
+        {
+            "number": 4,
+            "question": "If 200 ml of a 1:20 w/v solution is diluted to 750 ml, what is the ratio strength of the new solution (w/v)?",
+            "answerValue": ["1:75"],
+            "answerUnit": [""],
+            "rounding": false,
+            "steps": [
+                {
+                    "text": "Recognize that the problem involves dilution.",
+                    "type": "INFORMATION",
+                    "content": "Look for key terms such as \"diluted,\" \"stock preparation,\" \"final concentration,\" or \"prepare from a stronger preparation.\" Dilution problems typically involve a higher concentration (stock) and a lower concentration (final product). For this question, you can tell this is a dilution problem by looking at the following key terms:",
+                    "questionHighlights": ["diluted", "ratio strength"]
+                },
+                {
+                    "text": "Understand the goal of the problem and determine what you are being asked to find. Identify the Q1, C1, Q2, and C2, and convert units as needed for the dilution formula Q1 × C1 = Q2 × C2",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Q1"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 200,
+                            "unit": "mL"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "C1"
+                        },
+                        {
+                            "type": "input",
+                            "answer": "1",
+                            "unit": ""
+                        },
+                        {
+                            "type": "input",
+                            "answer": "20",
+                            "unit": "w/v"
+                        }
+                    ],
+                    "operators2": ["=",":"],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "Q2"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 750,
+                            "unit": "mL"
+                        }
+                    ],
+                    "operators3": ["="],
+                    "operands4": [
+                        {
+                            "type": "text",
+                            "value": "C2"
+                        },
+                        {
+                            "type": "text",
+                            "value": "?"
+                        }
+                    ],
+                    "operators4": ["="],
+                    "hint": "Q1 = 200 mL, C1 = 1:20, Q2 = 750 mL, C2 is unknown. All units are in the correct format, so no conversion is needed."
+                },
+                {
+                    "text": "Use the dilution formula and solve for the unknown",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Q1"
+                        },
+                        {
+                            "type": "text",
+                            "value": "C1"
+                        },
+                        {
+                            "type": "text",
+                            "value": "Q2"
+                        },
+                        {
+                            "type": "text",
+                            "value": "C2"
+                        }
+                    ],
+                    "operators1": ["×", "=", "×"],
+                    "operands2": [
+                        {
+                            "type": "input",
+                            "answer": 200,
+                            "unit": "mL"
+                        },
+                        {
+                            "type": "text",
+                            "value": "1/20"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 750,
+                            "unit": "mL"
+                        },
+                        {
+                            "type": "text",
+                            "value": "1/X"
+                        }
+                    ],
+                    "operators2": ["×", "=", "×"],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "X"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 75,
+                            "unit": ""
+                        },
+                        {
+                            "type": "text",
+                            "value": "The ratio strength is"
+                        },
+                        {
+                            "type": "input",
+                            "answer": "1",
+                            "unit": ""
+                        },
+                        {
+                            "type": "input",
+                            "answer": "75",
+                            "unit": "w/v"
+                        }
+                    ],
+                    "operators3": ["=", "", "", ":"],
+                    "hint": "200 mL × 1/20 = 750 mL × 1/X, solving for X: X = (750 × 20)/200 = 75, therefore the ratio strength is 1:75"
+                }
+            ]
+        },
+        {
+            "number": 5,
+            "question": "If you dilute 55 ml of a 15% v/v solution to make 120 ml, what will be the percentage strength of the new volume?",
+            "answerValue": [6.875],
+            "answerUnit": ["%"],
+            "rounding": false,
+            "steps": [
+                {
+                    "text": "Recognize that the problem involves dilution.",
+                    "type": "INFORMATION",
+                    "content": "Look for key terms such as \"diluted,\" \"stock preparation,\" \"final concentration,\" or \"prepare from a stronger preparation.\" Dilution problems typically involve a higher concentration (stock) and a lower concentration (final product). For this question, you can tell this is a dilution problem by looking at the following key terms:",
+                    "questionHighlights": ["dilute", "percentage strength"]
+                },
+                {
+                    "text": "Understand the goal of the problem and determine what you are being asked to find. Identify the Q1, C1, Q2, and C2, and convert units as needed for the dilution formula Q1 × C1 = Q2 × C2",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Q1"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 55,
+                            "unit": "mL"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "C1"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 15,
+                            "unit": "%"
+                        }
+                    ],
+                    "operators2": ["="],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "Q2"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 120,
+                            "unit": "mL"
+                        }
+                    ],
+                    "operators3": ["="],
+                    "operands4": [
+                        {
+                            "type": "text",
+                            "value": "C2"
+                        },
+                        {
+                            "type": "text",
+                            "value": "?"
+                        }
+                    ],
+                    "operators4": ["="],
+                    "hint": "Q1 = 55 mL, C1 = 15%, Q2 = 120 mL, C2 is unknown. All units are in the correct format, so no conversion is needed."
+                },
+                {
+                    "text": "Use the dilution formula and solve for the unknown",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Q1"
+                        },
+                        {
+                            "type": "text",
+                            "value": "C1"
+                        },
+                        {
+                            "type": "text",
+                            "value": "Q2"
+                        },
+                        {
+                            "type": "text",
+                            "value": "C2"
+                        }
+                    ],
+                    "operators1": ["×", "=", "×"],
+                    "operands2": [
+                        {
+                            "type": "input",
+                            "answer": 55,
+                            "unit": "mL"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 15,
+                            "unit": "%"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 120,
+                            "unit": "mL"
+                        },
+                        {
+                            "type": "text",
+                            "value": "C2"
+                        }
+                    ],
+                    "operators2": ["×", "=", "×"],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "C2"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 6.875,
+                            "unit": "%"
+                        }
+                    ],
+                    "operators3": ["="],
+                    "hint": "55 mL × 15% = 120 mL × C2, C2 = (55 × 15)/120 = 6.875%"
+                }
+            ]
+        },
+        {
+            "number": 6,
+            "question": "You diluted a 89 ml sample to 150 ml. The percentage strength of the diluted sample is 20% v/v. What was the strength of the original sample? Round final answer to the nearest tenth.",
+            "answerValue": [33.7],
+            "answerUnit": ["%"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Recognize that the problem involves dilution.",
+                    "type": "INFORMATION",
+                    "content": "Look for key terms such as \"diluted,\" \"stock preparation,\" \"final concentration,\" or \"prepare from a stronger preparation.\" Dilution problems typically involve a higher concentration (stock) and a lower concentration (final product). For this question, you can tell this is a dilution problem by looking at the following key terms:",
+                    "questionHighlights": ["diluted", "percentage strength", "original sample"]
+                },
+                {
+                    "text": "Understand the goal of the problem and determine what you are being asked to find. Identify the Q1, C1, Q2, and C2, and convert units as needed for the dilution formula Q1 × C1 = Q2 × C2",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Q1"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 89,
+                            "unit": "mL"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "C1"
+                        },
+                        {
+                            "type": "text",
+                            "value": "?"
+                        }
+                    ],
+                    "operators2": ["="],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "Q2"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 150,
+                            "unit": "mL"
+                        }
+                    ],
+                    "operators3": ["="],
+                    "operands4": [
+                        {
+                            "type": "text",
+                            "value": "C2"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 20,
+                            "unit": "%"
+                        }
+                    ],
+                    "operators4": ["="],
+                    "hint": "Q1 = 89 mL, C1 is unknown, Q2 = 150 mL, C2 = 20%. All units are in the correct format, so no conversion is needed."
+                },
+                {
+                    "text": "Use the dilution formula and solve for the unknown",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Q1"
+                        },
+                        {
+                            "type": "text",
+                            "value": "C1"
+                        },
+                        {
+                            "type": "text",
+                            "value": "Q2"
+                        },
+                        {
+                            "type": "text",
+                            "value": "C2"
+                        }
+                    ],
+                    "operators1": ["×", "=", "×"],
+                    "operands2": [
+                        {
+                            "type": "input",
+                            "answer": 89,
+                            "unit": "mL"
+                        },
+                        {
+                            "type": "text",
+                            "value": "C1"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 150,
+                            "unit": "mL"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 20,
+                            "unit": "%"
+                        }
+                    ],
+                    "operators2": ["×", "=", "×"],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "C1"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 33.7,
+                            "unit": "%"
+                        }
+                    ],
+                    "operators3": ["="],
+                    "hint": "89 mL × C1 = 150 mL × 20%, C1 = (150 × 20)/89 = 33.7% (rounded to nearest tenth)"
+                }
+            ]
+        },
+        {
+            "number": 7,
+            "question": "You need to dilute 10ml of a 75% v/v ophthalmic solution to make a 15% solution. What will be the total volume of the new solution?",
+            "answerValue": [50],
+            "answerUnit": ["mL"],
+            "rounding": false,
+            "steps": [
+                {
+                    "text": "Recognize that the problem involves dilution.",
+                    "type": "INFORMATION",
+                    "content": "Look for key terms such as \"diluted,\" \"stock preparation,\" \"final concentration,\" or \"prepare from a stronger preparation.\" Dilution problems typically involve a higher concentration (stock) and a lower concentration (final product). For this question, you can tell this is a dilution problem by looking at the following key terms:",
+                    "questionHighlights": ["dilute", "solution", "total volume"]
+                },
+                {
+                    "text": "Understand the goal of the problem and determine what you are being asked to find. Identify the Q1, C1, Q2, and C2, and convert units as needed for the dilution formula Q1 × C1 = Q2 × C2",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Q1"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 10,
+                            "unit": "mL"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "C1"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 75,
+                            "unit": "%"
+                        }
+                    ],
+                    "operators2": ["="],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "Q2"
+                        },
+                        {
+                            "type": "text",
+                            "value": "?"
+                        }
+                    ],
+                    "operators3": ["="],
+                    "operands4": [
+                        {
+                            "type": "text",
+                            "value": "C2"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 15,
+                            "unit": "%"
+                        }
+                    ],
+                    "operators4": ["="],
+                    "hint": "Q1 = 10 mL, C1 = 75%, Q2 is unknown, C2 = 15%. All units are in the correct format, so no conversion is needed."
+                },
+                {
+                    "text": "Use the dilution formula and solve for the unknown",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Q1"
+                        },
+                        {
+                            "type": "text",
+                            "value": "C1"
+                        },
+                        {
+                            "type": "text",
+                            "value": "Q2"
+                        },
+                        {
+                            "type": "text",
+                            "value": "C2"
+                        }
+                    ],
+                    "operators1": ["×", "=", "×"],
+                    "operands2": [
+                        {
+                            "type": "input",
+                            "answer": 10,
+                            "unit": "mL"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 75,
+                            "unit": "%"
+                        },
+                        {
+                            "type": "text",
+                            "value": "Q2"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 15,
+                            "unit": "%"
+                        }
+                    ],
+                    "operators2": ["×", "=", "×"],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "Q2"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 50,
+                            "unit": "mL"
+                        }
+                    ],
+                    "operators3": ["="],
+                    "hint": "10 mL × 75% = Q2 × 15%, Q2 = (10 × 75)/15 = 50 mL"
+                }
+            ]
+        },
+        {
+            "number": 8,
+            "question": "You diluted a 75% v/v ophthalmic solution to make 75ml of a 5% solution. What volume did you start with?",
+            "answerValue": [5],
+            "answerUnit": ["mL"],
+            "rounding": false,
+            "steps": [
+                {
+                    "text": "Recognize that the problem involves dilution.",
+                    "type": "INFORMATION",
+                    "content": "Look for key terms such as \"diluted,\" \"stock preparation,\" \"final concentration,\" or \"prepare from a stronger preparation.\" Dilution problems typically involve a higher concentration (stock) and a lower concentration (final product). For this question, you can tell this is a dilution problem by looking at the following key terms:",
+                    "questionHighlights": ["diluted", "solution", "volume"]
+                },
+                {
+                    "text": "Understand the goal of the problem and determine what you are being asked to find. Identify the Q1, C1, Q2, and C2, and convert units as needed for the dilution formula Q1 × C1 = Q2 × C2",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Q1"
+                        },
+                        {
+                            "type": "text",
+                            "value": "?"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "C1"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 75,
+                            "unit": "%"
+                        }
+                    ],
+                    "operators2": ["="],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "Q2"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 75,
+                            "unit": "mL"
+                        }
+                    ],
+                    "operators3": ["="],
+                    "operands4": [
+                        {
+                            "type": "text",
+                            "value": "C2"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 5,
+                            "unit": "%"
+                        }
+                    ],
+                    "operators4": ["="],
+                    "hint": "Q1 is unknown, C1 = 75%, Q2 = 75 mL, C2 = 5%. All units are in the correct format, so no conversion is needed."
+                },
+                {
+                    "text": "Use the dilution formula and solve for the unknown",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Q1"
+                        },
+                        {
+                            "type": "text",
+                            "value": "C1"
+                        },
+                        {
+                            "type": "text",
+                            "value": "Q2"
+                        },
+                        {
+                            "type": "text",
+                            "value": "C2"
+                        }
+                    ],
+                    "operators1": ["×", "=", "×"],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "Q1"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 75,
+                            "unit": "%"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 75,
+                            "unit": "mL"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 5,
+                            "unit": "%"
+                        }
+                    ],
+                    "operators2": ["×", "=", "×"],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "Q1"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 5,
+                            "unit": "mL"
+                        }
+                    ],
+                    "operators3": ["="],
+                    "hint": "Q1 × 75% = 75 mL × 5%, Q1 = (75 × 5)/75 = 5 mL"
+                }
+            ]
+        },
+        {
+            "number": 9,
+            "question": "If you made 25 ml of a 1:200 w/v ratio strength solution from a 1:15 ratio strength solution, what volume of solution did you start with?",
+            "answerValue": [1.875],
+            "answerUnit": ["mL"],
+            "rounding": false,
+            "steps": [
+                {
+                    "text": "Recognize that the problem involves dilution.",
+                    "type": "INFORMATION",
+                    "content": "Look for key terms such as \"diluted,\" \"stock preparation,\" \"final concentration,\" or \"prepare from a stronger preparation.\" Dilution problems typically involve a higher concentration (stock) and a lower concentration (final product). For this question, you can tell this is a dilution problem by looking at the following key terms:",
+                    "questionHighlights": ["made", "ratio strength", "solution"]
+                },
+                {
+                    "text": "Understand the goal of the problem and determine what you are being asked to find. Identify the Q1, C1, Q2, and C2, and convert units as needed for the dilution formula Q1 × C1 = Q2 × C2",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Q1"
+                        },
+                        {
+                            "type": "text",
+                            "value": "?"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "C1"
+                        },
+                        {
+                            "type": "input",
+                            "answer": "1",
+                            "unit": ""
+                        },
+                        {
+                            "type": "input",
+                            "answer": "15",
+                            "unit": "w/v"
+                        }
+                    ],
+                    "operators2": ["=", ":"],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "Q2"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 25,
+                            "unit": "mL"
+                        }
+                    ],
+                    "operators3": ["="],
+                    "operands4": [
+                        {
+                            "type": "text",
+                            "value": "C2"
+                        },
+                        {
+                            "type": "input",
+                            "answer": "1",
+                            "unit": ""
+                        },
+                        {
+                            "type": "input",
+                            "answer": "200",
+                            "unit": "w/v"
+                        }
+                    ],
+                    "operators4": ["=", ":"],
+                    "hint": "Q1 is unknown, C1 = 1:15, Q2 = 25 mL, C2 = 1:200. Convert the ratio strengths to fractions: 1/15 and 1/200."
+                },
+                {
+                    "text": "Use the dilution formula and solve for the unknown",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Q1"
+                        },
+                        {
+                            "type": "text",
+                            "value": "C1"
+                        },
+                        {
+                            "type": "text",
+                            "value": "Q2"
+                        },
+                        {
+                            "type": "text",
+                            "value": "C2"
+                        }
+                    ],
+                    "operators1": ["×", "=", "×"],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "Q1"
+                        },
+                        {
+                            "type": "text",
+                            "value": "1/15"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 25,
+                            "unit": "mL"
+                        },
+                        {
+                            "type": "text",
+                            "value": "1/200"
+                        }
+                    ],
+                    "operators2": ["×", "=", "×"],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "Q1"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1.875,
+                            "unit": "mL"
+                        }
+                    ],
+                    "operators3": ["="],
+                    "hint": "Q1 × 1/15 = 25 mL × 1/200, Q1 = (25 × 1/15)/(1/200) = 25 × (200/15) = 1.875 mL"
+                }
+            ]
+        },
+        {
+            "number": 10,
+            "question": "How many milliliters of water do you need to add to 60 ml of 25% w/v aqueous solution to make a 2% w/v solution?",
+            "answerValue": [690],
+            "answerUnit": ["mL"],
+            "rounding": false,
+            "steps": [
+                {
+                    "text": "Recognize that the problem involves dilution.",
+                    "type": "INFORMATION",
+                    "content": "Look for key terms such as \"diluted,\" \"stock preparation,\" \"final concentration,\" or \"prepare from a stronger preparation.\" Dilution problems typically involve a higher concentration (stock) and a lower concentration (final product). For this question, you can tell this is a dilution problem by looking at the following key terms:",
+                    "questionHighlights": ["add", "solution", "make"]
+                },
+                {
+                    "text": "Understand the goal of the problem and determine what you are being asked to find. Identify the Q1, C1, Q2, and C2, and convert units as needed for the dilution formula Q1 × C1 = Q2 × C2",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Q1"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 60,
+                            "unit": "mL"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "C1"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 25,
+                            "unit": "%"
+                        }
+                    ],
+                    "operators2": ["="],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "Q2"
+                        },
+                        {
+                            "type": "text",
+                            "value": "Q1 + water"
+                        }
+                    ],
+                    "operators3": ["="],
+                    "operands4": [
+                        {
+                            "type": "text",
+                            "value": "C2"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 2,
+                            "unit": "%"
+                        }
+                    ],
+                    "operators4": ["="],
+                    "hint": "Q1 = 60 mL, C1 = 25%, C2 = 2%. Q2 will be Q1 plus the volume of water added."
+                },
+                {
+                    "text": "Use the dilution formula and solve for the unknown",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Q1"
+                        },
+                        {
+                            "type": "text",
+                            "value": "C1"
+                        },
+                        {
+                            "type": "text",
+                            "value": "Q2"
+                        },
+                        {
+                            "type": "text",
+                            "value": "C2"
+                        }
+                    ],
+                    "operators1": ["×", "=", "×"],
+                    "operands2": [
+                        {
+                            "type": "input",
+                            "answer": 60,
+                            "unit": "mL"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 25,
+                            "unit": "%"
+                        },
+                        {
+                            "type": "text",
+                            "value": "Q2"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 2,
+                            "unit": "%"
+                        }
+                    ],
+                    "operators2": ["×", "=", "×"],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "Q2"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 750,
+                            "unit": "mL"
+                        },
+                        {
+                            "type": "text",
+                            "value": "Water to add"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 690,
+                            "unit": "mL"
+                        }
+                    ],
+                    "operators3": ["=", "", "="],
+                    "hint": "60 mL × 25% = Q2 × 2%, Q2 = (60 × 25)/2 = 750 mL. Volume of water to add = Q2 - Q1 = 750 - 60 = 690 mL"
+                }
+            ]
+        },
+        {
+            "number": 11,
+            "question": "How many milliliters were added to a 150 ml, 15% w/v solution to make a 10% solution?",
+            "answerValue": [75],
+            "answerUnit": ["mL"],
+            "rounding": false,
+            "steps": [
+                {
+                    "text": "Recognize that the problem involves dilution.",
+                    "type": "INFORMATION",
+                    "content": "Look for key terms such as \"diluted,\" \"stock preparation,\" \"final concentration,\" or \"prepare from a stronger preparation.\" Dilution problems typically involve a higher concentration (stock) and a lower concentration (final product). For this question, you can tell this is a dilution problem by looking at the following key terms:",
+                    "questionHighlights": ["added", "solution", "make"]
+                },
+                {
+                    "text": "Understand the goal of the problem and determine what you are being asked to find. Identify the Q1, C1, Q2, and C2, and convert units as needed for the dilution formula Q1 × C1 = Q2 × C2",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Q1"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 150,
+                            "unit": "mL"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "C1"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 15,
+                            "unit": "%"
+                        }
+                    ],
+                    "operators2": ["="],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "Q2"
+                        },
+                        {
+                            "type": "text",
+                            "value": "Q1 + added volume"
+                        }
+                    ],
+                    "operators3": ["="],
+                    "operands4": [
+                        {
+                            "type": "text",
+                            "value": "C2"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 10,
+                            "unit": "%"
+                        }
+                    ],
+                    "operators4": ["="],
+                    "hint": "Q1 = 150 mL, C1 = 15%, C2 = 10%. Q2 will be Q1 plus the volume added."
+                },
+                {
+                    "text": "Use the dilution formula and solve for the unknown",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Q1"
+                        },
+                        {
+                            "type": "text",
+                            "value": "C1"
+                        },
+                        {
+                            "type": "text",
+                            "value": "Q2"
+                        },
+                        {
+                            "type": "text",
+                            "value": "C2"
+                        }
+                    ],
+                    "operators1": ["×", "=", "×"],
+                    "operands2": [
+                        {
+                            "type": "input",
+                            "answer": 150,
+                            "unit": "mL"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 15,
+                            "unit": "%"
+                        },
+                        {
+                            "type": "text",
+                            "value": "Q2"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 10,
+                            "unit": "%"
+                        }
+                    ],
+                    "operators2": ["×", "=", "×"],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "Q2"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 225,
+                            "unit": "mL"
+                        },
+                        {
+                            "type": "text",
+                            "value": "Volume added"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 75,
+                            "unit": "mL"
+                        }
+                    ],
+                    "operators3": ["=", "", "="],
+                    "hint": "150 mL × 15% = Q2 × 10%, Q2 = (150 × 15)/10 = 225 mL. Volume added = Q2 - Q1 = 225 - 150 = 75 mL"
+                }
+            ]
+        },
+        {
+            "number": 12,
+            "question": "One gallon of a 25% w/v solution was evaporated so that the solution will have a strength of 60%. What is the new volume in milliliters? Round final answer to the nearest whole number.",
+            "answerValue": [1577],
+            "answerUnit": ["mL"],
+            "rounding": false,
+            "steps": [
+                {
+                    "text": "Recognize that the problem involves concentration by evaporation.",
+                    "type": "INFORMATION",
+                    "content": "Look for key terms such as \"evaporated,\" \"concentrated,\" or \"boiled down.\" Concentration by evaporation problems typically involve a lower concentration (initial) and a higher concentration (final product). For this question, you can tell this is a concentration problem by looking at the following key terms:",
+                    "questionHighlights": ["evaporated", "strength", "new volume"]
+                },
+                {
+                    "text": "Convert all units to standard units (i.e., g and mL)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Initial volume"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1,
+                            "unit": "gallon"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "Converted volume"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 3785,
+                            "unit": "mL"
+                        }
+                    ],
+                    "operators2": ["="],
+                    "hint": "Convert 1 gallon to milliliters using the conversion factor: 1 gallon = 3785 mL"
+                },
+                {
+                    "text": "Understand the goal of the problem and determine what you are being asked to find. Identify the Q1, C1, Q2, and C2, and convert units as needed for the dilution formula Q1 × C1 = Q2 × C2",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Q1"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 3785,
+                            "unit": "mL"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "C1"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 25,
+                            "unit": "%"
+                        }
+                    ],
+                    "operators2": ["="],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "Q2"
+                        },
+                        {
+                            "type": "text",
+                            "value": "?"
+                        }
+                    ],
+                    "operators3": ["="],
+                    "operands4": [
+                        {
+                            "type": "text",
+                            "value": "C2"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 60,
+                            "unit": "%"
+                        }
+                    ],
+                    "operators4": ["="],
+                    "hint": "Q1 = 3785 mL, C1 = 25%, Q2 is unknown, C2 = 60%. All units are now in the correct format."
+                },
+                {
+                    "text": "Use the dilution formula and solve for the unknown",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Q1"
+                        },
+                        {
+                            "type": "text",
+                            "value": "C1"
+                        },
+                        {
+                            "type": "text",
+                            "value": "Q2"
+                        },
+                        {
+                            "type": "text",
+                            "value": "C2"
+                        }
+                    ],
+                    "operators1": ["×", "=", "×"],
+                    "operands2": [
+                        {
+                            "type": "input",
+                            "answer": 3785,
+                            "unit": "mL"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 25,
+                            "unit": "%"
+                        },
+                        {
+                            "type": "text",
+                            "value": "Q2"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 60,
+                            "unit": "%"
+                        }
+                    ],
+                    "operators2": ["×", "=", "×"],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "Q2"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1577,
+                            "unit": "mL"
+                        }
+                    ],
+                    "operators3": ["="],
+                    "hint": "3785 mL × 25% = Q2 × 60%, Q2 = (3785 × 25)/60 = 1577 mL"
+                }
+            ]
+        },
+        {
+            "number": 13,
+            "question": "You have a 0.9% stock solution of NaCl. You need to prepare 1 L of a 1:250 solution to dispense. How many milliliters of the stock solution are needed? Round final answer to the nearest whole number.",
+            "answerValue": [444],
+            "answerUnit": ["mL"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Recognize that the problem involves dilution.",
+                    "type": "INFORMATION",
+                    "content": "Look for key terms such as \"diluted,\" \"stock preparation,\" \"final concentration,\" or \"prepare from a stronger preparation.\" Dilution problems typically involve a higher concentration (stock) and a lower concentration (final product). For this question, you can tell this is a dilution problem by looking at the following key terms:",
+                    "questionHighlights": ["stock solution", "prepare", "dispense"]
+                },
+                {
+                    "text": "Convert all units to standard units (i.e., convert ratio to percentage and L to mL)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Initial concentration"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.9,
+                            "unit": "%"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "Final concentration"
+                        },
+                        {
+                            "type": "input",
+                            "answer": "1",
+                            "unit": ""
+                        },
+                        {
+                            "type": "input",
+                            "answer": "250",
+                            "unit": "w/v"
+                        }
+                    ],
+                    "operators2": ["=", ":"],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "Final concentration in %"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.4,
+                            "unit": "%"
+                        }
+                    ],
+                    "operators3": ["="],
+                    "operands4": [
+                        {
+                            "type": "text",
+                            "value": "Final volume"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1000,
+                            "unit": "mL"
+                        }
+                    ],
+                    "operators4": ["="],
+                    "hint": "Convert 1:250 to percentage by dividing 1 by 250 and multiplying by 100 = 0.4%. Convert 1 L to 1000 mL."
+                },
+                {
+                    "text": "Understand the goal of the problem and determine what you are being asked to find. Identify the Q1, C1, Q2, and C2, and convert units as needed for the dilution formula Q1 × C1 = Q2 × C2",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Q1"
+                        },
+                        {
+                            "type": "text",
+                            "value": "?"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "C1"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.9,
+                            "unit": "%"
+                        }
+                    ],
+                    "operators2": ["="],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "Q2"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1000,
+                            "unit": "mL"
+                        }
+                    ],
+                    "operators3": ["="],
+                    "operands4": [
+                        {
+                            "type": "text",
+                            "value": "C2"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.4,
+                            "unit": "%"
+                        }
+                    ],
+                    "operators4": ["="],
+                    "hint": "Q1 is unknown, C1 = 0.9%, Q2 = 1000 mL, C2 = 0.4%. All units are now in the correct format."
+                },
+                {
+                    "text": "Use the dilution formula and solve for the unknown",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Q1"
+                        },
+                        {
+                            "type": "text",
+                            "value": "C1"
+                        },
+                        {
+                            "type": "text",
+                            "value": "Q2"
+                        },
+                        {
+                            "type": "text",
+                            "value": "C2"
+                        }
+                    ],
+                    "operators1": ["×", "=", "×"],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "Q1"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.9,
+                            "unit": "%"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1000,
+                            "unit": "mL"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.4,
+                            "unit": "%"
+                        }
+                    ],
+                    "operators2": ["×", "=", "×"],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "Q1"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 444,
+                            "unit": "mL"
+                        }
+                    ],
+                    "operators3": ["="],
+                    "hint": "Q1 × 0.9% = 1000 mL × 0.4%, Q1 = (1000 × 0.4)/0.9 = 444.44 mL, rounded to 444 mL"
+                }
+            ]
+        },
+        {
+            "number": 14,
+            "question": "How many milliliters of water should be added to a quart of a 10% w/v aqueous solution to make a 4% w/v solution? Round final answer to the nearest whole number.",
+            "answerValue": [1419],
+            "answerUnit": ["mL"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Recognize that the problem involves dilution.",
+                    "type": "INFORMATION",
+                    "content": "Look for key terms such as \"diluted,\" \"stock preparation,\" \"final concentration,\" or \"prepare from a stronger preparation.\" Dilution problems typically involve a higher concentration (stock) and a lower concentration (final product). For this question, you can tell this is a dilution problem by looking at the following key terms:",
+                    "questionHighlights": ["added", "solution", "make"]
+                },
+                {
+                    "text": "Convert all units to standard units (i.e., convert quart to mL)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Initial volume"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1,
+                            "unit": "quart"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "Converted volume"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 946,
+                            "unit": "mL"
+                        }
+                    ],
+                    "operators2": ["="],
+                    "hint": "Convert 1 quart to milliliters using the conversion factor: 1 quart = 946 mL"
+                },
+                {
+                    "text": "Understand the goal of the problem and determine what you are being asked to find. Identify the Q1, C1, Q2, and C2, and convert units as needed for the dilution formula Q1 × C1 = Q2 × C2",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Q1"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 946,
+                            "unit": "mL"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "C1"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 10,
+                            "unit": "%"
+                        }
+                    ],
+                    "operators2": ["="],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "Q2"
+                        },
+                        {
+                            "type": "text",
+                            "value": "Q1 + water"
+                        }
+                    ],
+                    "operators3": ["="],
+                    "operands4": [
+                        {
+                            "type": "text",
+                            "value": "C2"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 4,
+                            "unit": "%"
+                        }
+                    ],
+                    "operators4": ["="],
+                    "hint": "Q1 = 946 mL, C1 = 10%, C2 = 4%. Q2 will be Q1 plus the volume of water added."
+                },
+                {
+                    "text": "Use the dilution formula and solve for the unknown",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Q1"
+                        },
+                        {
+                            "type": "text",
+                            "value": "C1"
+                        },
+                        {
+                            "type": "text",
+                            "value": "Q2"
+                        },
+                        {
+                            "type": "text",
+                            "value": "C2"
+                        }
+                    ],
+                    "operators1": ["×", "=", "×"],
+                    "operands2": [
+                        {
+                            "type": "input",
+                            "answer": 946,
+                            "unit": "mL"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 10,
+                            "unit": "%"
+                        },
+                        {
+                            "type": "text",
+                            "value": "Q2"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 4,
+                            "unit": "%"
+                        }
+                    ],
+                    "operators2": ["×", "=", "×"],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "Q2"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 2365,
+                            "unit": "mL"
+                        },
+                        {
+                            "type": "text",
+                            "value": "Water to add"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1419,
+                            "unit": "mL"
+                        }
+                    ],
+                    "operators3": ["=", "", "="],
+                    "hint": "946 mL × 10% = Q2 × 4%, Q2 = (946 × 10)/4 = 2365 mL. Water to add = Q2 - Q1 = 2365 - 946 = 1419 mL"
+                }
+            ]
+        },
+        {
+            "number": 15,
+            "question": "If a pharmacist uses 600ml of sodium chloride to prepare 1500 ml of a 15% w/v sodium chloride solution, what was the percentage strength (w/v) of the sodium chloride used? Round final answer to the nearest tenth.",
+            "answerValue": [37.5],
+            "answerUnit": ["%"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Recognize that the problem involves dilution.",
+                    "type": "INFORMATION",
+                    "content": "Look for key terms such as \"diluted,\" \"stock preparation,\" \"final concentration,\" or \"prepare from a stronger preparation.\" Dilution problems typically involve a higher concentration (stock) and a lower concentration (final product). For this question, you can tell this is a dilution problem by looking at the following key terms:",
+                    "questionHighlights": ["uses", "prepare", "solution", "percentage strength"]
+                },
+                {
+                    "text": "Understand the goal of the problem and determine what you are being asked to find. Identify the Q1, C1, Q2, and C2, and convert units as needed for the dilution formula Q1 × C1 = Q2 × C2",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Q1"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 600,
+                            "unit": "mL"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "C1"
+                        },
+                        {
+                            "type": "text",
+                            "value": "?"
+                        }
+                    ],
+                    "operators2": ["="],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "Q2"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1500,
+                            "unit": "mL"
+                        }
+                    ],
+                    "operators3": ["="],
+                    "operands4": [
+                        {
+                            "type": "text",
+                            "value": "C2"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 15,
+                            "unit": "%"
+                        }
+                    ],
+                    "operators4": ["="],
+                    "hint": "Q1 = 600 mL, C1 is unknown, Q2 = 1500 mL, C2 = 15%. All units are in the correct format, so no conversion is needed."
+                },
+                {
+                    "text": "Use the dilution formula and solve for the unknown",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Q1"
+                        },
+                        {
+                            "type": "text",
+                            "value": "C1"
+                        },
+                        {
+                            "type": "text",
+                            "value": "Q2"
+                        },
+                        {
+                            "type": "text",
+                            "value": "C2"
+                        }
+                    ],
+                    "operators1": ["×", "=", "×"],
+                    "operands2": [
+                        {
+                            "type": "input",
+                            "answer": 600,
+                            "unit": "mL"
+                        },
+                        {
+                            "type": "text",
+                            "value": "C1"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1500,
+                            "unit": "mL"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 15,
+                            "unit": "%"
+                        }
+                    ],
+                    "operators2": ["×", "=", "×"],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "C1"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 37.5,
+                            "unit": "%"
+                        }
+                    ],
+                    "operators3": ["="],
+                    "hint": "600 mL × C1 = 1500 mL × 15%, C1 = (1500 × 15)/600 = 37.5%"
+                }
+            ]
+        },
+        {
+            "number": 16,
+            "question": "How many microliters of a 1:40 w/v stock solution should be used to make 5 liters of a 1:200 w/v solution?",
+            "answerValue": [1000000],
+            "answerUnit": ["µL"],
+            "rounding": false,
+            "steps": [
+                {
+                    "text": "Recognize that the problem involves dilution.",
+                    "type": "INFORMATION",
+                    "content": "Look for key terms such as \"diluted,\" \"stock preparation,\" \"final concentration,\" or \"prepare from a stronger preparation.\" Dilution problems typically involve a higher concentration (stock) and a lower concentration (final product). For this question, you can tell this is a dilution problem by looking at the following key terms:",
+                    "questionHighlights": ["stock solution", "make", "solution"]
+                },
+                {
+                    "text": "Convert all units to standard units (i.e., convert ratio to percentage and L to mL)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Initial concentration"
+                        },
+                        {
+                            "type": "input",
+                            "answer": "1",
+                            "unit": ""
+                        },
+                        {
+                            "type": "input",
+                            "answer": "40",
+                            "unit": "w/v"
+                        }
+                    ],
+                    "operators1": ["=", ":"],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "Initial concentration in %"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 2.5,
+                            "unit": "%"
+                        }
+                    ],
+                    "operators2": ["="],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "Final concentration"
+                        },
+                        {
+                            "type": "input",
+                            "answer": "1",
+                            "unit": ""
+                        },
+                        {
+                            "type": "input",
+                            "answer": "200",
+                            "unit": "w/v"
+                        }
+                    ],
+                    "operators3": ["=", ":"],
+                    "operands4": [
+                        {
+                            "type": "text",
+                            "value": "Final concentration in %"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.5,
+                            "unit": "%"
+                        }
+                    ],
+                    "operators4": ["="],
+                        "operands5": [
+                            {
+                                "type": "text",
+                                "value": "Final volume"
+                            },
+                            {
+                                "type": "text",
+                                "value": "1 L"
+                            },
+                            {
+                                "type": "input",
+                                "answer": 5000,
+                                "unit": "mL"
+                            }
+                        ],
+                        "operators5": ["","="],
+                    "hint": "Convert 1:40 to percentage by dividing 1 by 40 and multiplying by 100 = 2.5%. Convert 1:200 to percentage by dividing 1 by 200 and multiplying by 100 = 0.5%. Convert 5 L to 5000 mL."
+                },
+                {
+                    "text": "Understand the goal of the problem and determine what you are being asked to find. Identify the Q1, C1, Q2, and C2, and convert units as needed for the dilution formula Q1 × C1 = Q2 × C2",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Q1"
+                        },
+                        {
+                            "type": "text",
+                            "value": "?"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "C1"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 2.5,
+                            "unit": "%"
+                        }
+                    ],
+                    "operators2": ["="],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "Q2"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 5000,
+                            "unit": "mL"
+                        }
+                    ],
+                    "operators3": ["="],
+                    "operands4": [
+                        {
+                            "type": "text",
+                            "value": "C2"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.5,
+                            "unit": "%"
+                        }
+                    ],
+                    "operators4": ["="],
+                    "hint": "Q1 is unknown, C1 = 2.5%, Q2 = 5000 mL, C2 = 0.5%. All units are now in the correct format."
+                },
+                {
+                    "text": "Use the dilution formula and solve for the unknown",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Q1"
+                        },
+                        {
+                            "type": "text",
+                            "value": "C1"
+                        },
+                        {
+                            "type": "text",
+                            "value": "Q2"
+                        },
+                        {
+                            "type": "text",
+                            "value": "C2"
+                        }
+                    ],
+                    "operators1": ["×", "=", "×"],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "Q1"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 2.5,
+                            "unit": "%"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 5000,
+                            "unit": "mL"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.5,
+                            "unit": "%"
+                        }
+                    ],
+                    "operators2": ["×", "=", "×"],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "Q1"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1000,
+                            "unit": "mL"
+                        },
+                        {
+                            "type": "text",
+                            "value": "Q1 in microliters"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1000000,
+                            "unit": "µL"
+                        }
+                    ],
+                    "operators3": ["=", "", "="],
+                    "hint": "Q1 × 2.5% = 5000 mL × 0.5%, Q1 = (5000 × 0.5)/2.5 = 1000 mL = 1000000 µL"
+                }
+            ]
+        },
+        {
+            "number": 17,
+            "question": "How many microliters of water needs to be added to 5 ml of a 30% w/v stock solution of sodium chloride to prepare 1:4 w/v sodium chloride solution?",
+            "answerValue": [1000],
+            "answerUnit": ["µL"],
+            "rounding": false,
+            "steps": [
+                {
+                    "text": "Recognize that the problem involves dilution.",
+                    "type": "INFORMATION",
+                    "content": "Look for key terms such as \"diluted,\" \"stock preparation,\" \"final concentration,\" or \"prepare from a stronger preparation.\" Dilution problems typically involve a higher concentration (stock) and a lower concentration (final product). For this question, you can tell this is a dilution problem by looking at the following key terms:",
+                    "questionHighlights": ["added", "stock solution", "prepare"]
+                },
+                {
+                    "text": "Convert all units to standard units (i.e., convert ratio to percentage)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Initial concentration"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 30,
+                            "unit": "%"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "Final concentration"
+                        },
+                        {
+                            "type": "input",
+                            "answer": "1",
+                            "unit": ""
+                        },
+                        {
+                            "type": "input",
+                            "answer": "4",
+                            "unit": "w/v"
+                        }
+                    ],
+                    "operators2": ["=", ":"],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "Final concentration in %"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 25,
+                            "unit": "%"
+                        }
+                    ],
+                    "operators3": ["="],
+                    "hint": "Initial concentration is already in percentage (30%). Convert 1:4 to percentage by dividing 1 by 4 and multiplying by 100 = 25%"
+                },
+                {
+                    "text": "Understand the goal of the problem and determine what you are being asked to find. Identify the Q1, C1, Q2, and C2, and convert units as needed for the dilution formula Q1 × C1 = Q2 × C2",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Q1"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 5,
+                            "unit": "mL"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "C1"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 30,
+                            "unit": "%"
+                        }
+                    ],
+                    "operators2": ["="],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "Q2"
+                        },
+                        {
+                            "type": "text",
+                            "value": "Q1 + water"
+                        }
+                    ],
+                    "operators3": ["="],
+                    "operands4": [
+                        {
+                            "type": "text",
+                            "value": "C2"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 25,
+                            "unit": "%"
+                        }
+                    ],
+                    "operators4": ["="],
+                    "hint": "Q1 = 5 mL, C1 = 30%, C2 = 25%. Q2 will be Q1 plus the volume of water added."
+                },
+                {
+                    "text": "Use the dilution formula and solve for the unknown",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Q1"
+                        },
+                        {
+                            "type": "text",
+                            "value": "C1"
+                        },
+                        {
+                            "type": "text",
+                            "value": "Q2"
+                        },
+                        {
+                            "type": "text",
+                            "value": "C2"
+                        }
+                    ],
+                    "operators1": ["×", "=", "×"],
+                    "operands2": [
+                        {
+                            "type": "input",
+                            "answer": 5,
+                            "unit": "mL"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 30,
+                            "unit": "%"
+                        },
+                        {
+                            "type": "text",
+                            "value": "Q2"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 25,
+                            "unit": "%"
+                        }
+                    ],
+                    "operators2": ["×", "=", "×"],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "Q2"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 6,
+                            "unit": "mL"
+                        },
+                        {
+                            "type": "text",
+                            "value": "Water to add"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1,
+                            "unit": "mL"
+                        }
+                    ],
+                    "operators3": ["=", "", "="],
+                    "operands4": [
+                        {
+                            "type": "text",
+                            "value": "Water to add in microliters"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1000,
+                            "unit": "µL"
+                        }
+                    ],
+                    "operators4": ["="],
+                    "hint": "5 mL × 30% = Q2 × 25%, Q2 = (5 × 30)/25 = 6 mL. Water to add = Q2 - Q1 = 6 - 5 = 1 mL = 1000 µL"
+                }
+            ]
+        },
+        {
+            "number": 18,
+            "question": "How many milliliters of water needs to be added to 200 ml of a 15% w/v stock solution of sodium chloride to prepare 0.9% w/v sodium chloride solution? Round final answer to the nearest tenth.",
+            "answerValue": [3133.3],
+            "answerUnit": ["mL"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Recognize that the problem involves dilution.",
+                    "type": "INFORMATION",
+                    "content": "Look for key terms such as \"diluted,\" \"stock preparation,\" \"final concentration,\" or \"prepare from a stronger preparation.\" Dilution problems typically involve a higher concentration (stock) and a lower concentration (final product). For this question, you can tell this is a dilution problem by looking at the following key terms:",
+                    "questionHighlights": ["added", "stock solution", "prepare"]
+                },
+                {
+                    "text": "Understand the goal of the problem and determine what you are being asked to find. Identify the Q1, C1, Q2, and C2, and convert units as needed for the dilution formula Q1 × C1 = Q2 × C2",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Q1"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 200,
+                            "unit": "mL"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "C1"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 15,
+                            "unit": "%"
+                        }
+                    ],
+                    "operators2": ["="],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "Q2"
+                        },
+                        {
+                            "type": "text",
+                            "value": "Q1 + water"
+                        }
+                    ],
+                    "operators3": ["="],
+                    "operands4": [
+                        {
+                            "type": "text",
+                            "value": "C2"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.9,
+                            "unit": "%"
+                        }
+                    ],
+                    "operators4": ["="],
+                    "hint": "Q1 = 200 mL, C1 = 15%, C2 = 0.9%. Q2 will be Q1 plus the volume of water added. All units are in the correct format, so no conversion is needed."
+                },
+                {
+                    "text": "Use the dilution formula and solve for the unknown",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Q1"
+                        },
+                        {
+                            "type": "text",
+                            "value": "C1"
+                        },
+                        {
+                            "type": "text",
+                            "value": "Q2"
+                        },
+                        {
+                            "type": "text",
+                            "value": "C2"
+                        }
+                    ],
+                    "operators1": ["×", "=", "×"],
+                    "operands2": [
+                        {
+                            "type": "input",
+                            "answer": 200,
+                            "unit": "mL"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 15,
+                            "unit": "%"
+                        },
+                        {
+                            "type": "text",
+                            "value": "Q2"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.9,
+                            "unit": "%"
+                        }
+                    ],
+                    "operators2": ["×", "=", "×"],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "Q2"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 3333.3,
+                            "unit": "mL"
+                        },
+                        {
+                            "type": "text",
+                            "value": "Water to add"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 3133.3,
+                            "unit": "mL"
+                        }
+                    ],
+                    "operators3": ["=", "", "="],
+                    "hint": "200 mL × 15% = Q2 × 0.9%, Q2 = (200 × 15)/0.9 = 3333.3 mL. Water to add = Q2 - Q1 = 3333.3 - 200 = 3133.3 mL"
+                }
+            ]
+        },
+        {
+            "number": 19,
+            "question": "How much atropine is required to make 240 mL in such a way that when 1 teaspoon of the solution is diluted to 1 pint, it gives a 1:500 solution? Round final answer to the nearest hundredth.",
+            "answerValue": [45.41],
+            "answerUnit": ["g"],
+            "rounding": false,
+            "steps": [
+                {
+                    "text": "Recognize that the problem involves a two-step dilution.",
+                    "type": "INFORMATION",
+                    "content": "Look for key terms that indicate multiple dilution steps. For this question, you can tell this is a two-step dilution problem by looking at the following key terms:",
+                    "questionHighlights": ["make", "diluted", "solution"]
+                },
+                {
+                    "text": "Convert all units to standard units (i.e., convert teaspoon to mL, pint to mL, and ratio to percentage)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "1 teaspoon"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 5,
+                            "unit": "mL"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "1 pint"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 473,
+                            "unit": "mL"
+                        }
+                    ],
+                    "operators2": ["="],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "Final ratio"
+                        },
+                        {
+                            "type": "input",
+                            "answer": "1",
+                            "unit": ""
+                        },
+                        {
+                            "type": "input",
+                            "answer": "500",
+                            "unit": "w/v"
+                        }
+                    ],
+                    "operators3": ["=", ":"],
+                    "operands4": [
+                        {
+                            "type": "text",
+                            "value": "Final concentration in %"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.2,
+                            "unit": "%"
+                        }
+                    ],
+                    "operators4": ["="],
+                    "hint": "Convert 1:500 to percentage by dividing 1 by 500 and multiplying by 100 = 0.2%"
+                },
+                {
+                    "text": "Understand the goal of the problem and determine what you are being asked to find. Identify the Q1, C1, Q2, and C2, and convert units as needed for the dilution formula Q1 × C1 = Q2 × C2",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Q1"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 5,
+                            "unit": "mL"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "C1"
+                        },
+                        {
+                            "type": "text",
+                            "value": "X%"
+                        }
+                    ],
+                    "operators2": ["="],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "Q2"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 473,
+                            "unit": "mL"
+                        }
+                    ],
+                    "operators3": ["="],
+                    "operands4": [
+                        {
+                            "type": "text",
+                            "value": "C2"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.2,
+                            "unit": "%"
+                        }
+                    ],
+                    "operators4": ["="],
+                    "hint": "Q1 = 5 mL (1 teaspoon), C1 is unknown, Q2 = 473 mL (1 pint), C2 = 0.2% (1:500). All units are in the correct format."
+                },
+                {
+                    "text": "Use the dilution formula and solve for the unknown",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Q1"
+                        },
+                        {
+                            "type": "text",
+                            "value": "C1"
+                        },
+                        {
+                            "type": "text",
+                            "value": "Q2"
+                        },
+                        {
+                            "type": "text",
+                            "value": "C2"
+                        }
+                    ],
+                    "operators1": ["×", "=", "×"],
+                    "operands2": [
+                        {
+                            "type": "input",
+                            "answer": 5,
+                            "unit": "mL"
+                        },
+                        {
+                            "type": "text",
+                            "value": "C1"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 473,
+                            "unit": "mL"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.2,
+                            "unit": "%"
+                        }
+                    ],
+                    "operators2": ["×", "=", "×"],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "C1"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 18.92,
+                            "unit": "%"
+                        }
+                    ],
+                    "operators3": ["="],
+                    "hint": "5 mL × C1 = 473 mL × 0.2%, C1 = (473 × 0.2)/5 = 18.92%"
+                },
+                {
+                    "text": "Set up the ratio and proportion",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                          "type": "fraction",
+                          "numerator": {
+                              "type": "input",
+                              "answer": 18.92,
+                              "unit": "g"
+                          },
+                          "denominator": {
+                              "type": "input",
+                              "answer": 100,
+                              "unit": "mL"
+                          }
+                        },
+                        {
+                          "type": "fraction",
+                          "numerator": "X g",
+                          "denominator": {
+                              "type": "input",
+                              "answer": 240,
+                              "unit": "mL"
+                          }
+                        }
+                    ],
+                    "operators1": ["="],
+                    "hint": "18.92 g/100 mL = X g/240 mL"
+                  },
+                  {
+                    "text": "Solve for X",
+                    "type": "OPERATION",
+                    "operands1": [
+                      {
+                        "type": "text",
+                        "value": "X g"
+                      },
+                      {
+                        "type": "input",
+                        "answer": 45.41,
+                        "unit": "g"
+                      }
+                    ],
+                    "operators1": ["="],
+                    "hint": "Divide 18.92 g/100 mL by 240 mL to find the answer in g. The answer is 45.41 g."
+                  }  
+            ]
+        },
+        {
+            "number": 20,
+            "question": "How much drug do you need to prepare 75 ml of a solution such that 5 ml diluted to 500 ml will yield a 1:500 solution?",
+            "answerValue": [15],
+            "answerUnit": ["g"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Recognize that the problem involves a two-step dilution.",
+                    "type": "INFORMATION",
+                    "content": "Look for key terms that indicate multiple dilution steps. For this question, you can tell this is a two-step dilution problem by looking at the following key terms:",
+                    "questionHighlights": ["prepare", "diluted", "solution"]
+                },
+                {
+                    "text": "Convert all units to standard units (i.e., convert ratio to percentage)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Final ratio"
+                        },
+                        {
+                            "type": "input",
+                            "answer": "1",
+                            "unit": ""
+                        },
+                        {
+                            "type": "input",
+                            "answer": "500",
+                            "unit": "w/v"
+                        }
+                    ],
+                    "operators1": ["=", ":"],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "Final concentration in %"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.2,
+                            "unit": "%"
+                        }
+                    ],
+                    "operators2": ["="],
+                    "hint": "Convert 1:500 to percentage by dividing 1 by 500 and multiplying by 100 = 0.2%"
+                },
+                {
+                    "text": "Understand the goal of the problem and determine what you are being asked to find. Identify the Q1, C1, Q2, and C2, and convert units as needed for the dilution formula Q1 × C1 = Q2 × C2",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Q1"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 5,
+                            "unit": "mL"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "C1"
+                        },
+                        {
+                            "type": "text",
+                            "value": "X%"
+                        }
+                    ],
+                    "operators2": ["="],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "Q2"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 500,
+                            "unit": "mL"
+                        }
+                    ],
+                    "operators3": ["="],
+                    "operands4": [
+                        {
+                            "type": "text",
+                            "value": "C2"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.2,
+                            "unit": "%"
+                        }
+                    ],
+                    "operators4": ["="],
+                    "hint": "Q1 = 5 mL, C1 is unknown, Q2 = 500 mL, C2 = 0.2%. Using Q1 × C1 = Q2 × C2 to find the concentration needed."
+                },
+                {
+                    "text": "Use the dilution formula and solve for the unknown",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Q1"
+                        },
+                        {
+                            "type": "text",
+                            "value": "C1"
+                        },
+                        {
+                            "type": "text",
+                            "value": "Q2"
+                        },
+                        {
+                            "type": "text",
+                            "value": "C2"
+                        }
+                    ],
+                    "operators1": ["×", "=", "×"],
+                    "operands2": [
+                        {
+                            "type": "input",
+                            "answer": 5,
+                            "unit": "mL"
+                        },
+                        {
+                            "type": "text",
+                            "value": "C1"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 500,
+                            "unit": "mL"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.2,
+                            "unit": "%"
+                        }
+                    ],
+                    "operators2": ["×", "=", "×"],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "C1"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 20,
+                            "unit": "%"
+                        }
+                    ],
+                    "operators3": ["="],
+                    "hint": "5 mL × C1 = 500 mL × 0.2%, C1 = (500 × 0.2)/5 = 20%"
+                },
+                {
+                    "text": "Set up the ratio and proportion",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 20,
+                                "unit": "g"
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": 100,
+                                "unit": "mL"
+                            }
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": "X g",
+                            "denominator": {
+                                "type": "input",
+                                "answer": 75,
+                                "unit": "mL"
+                            }
+                        }
+                    ],
+                    "operators1": ["="],
+                    "hint": "20 g/100 mL = X g/75 mL"
+                },
+                {
+                    "text": "Solve for X",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "X g"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 15,
+                            "unit": "g"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "hint": "Divide 20 g/100 mL by 75 mL to find the answer in g. The answer is 15.0 g."
+                }
+            ]
+        }
+    ]
+}

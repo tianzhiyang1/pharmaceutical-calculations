@@ -1,0 +1,736 @@
+/* Styles for Dilution module */
+
+/* General Tutorial Styles */
+.tutorial-card {
+    animation: fadeIn 0.5s ease;
+}
+
+.tutorial-section {
+    margin-bottom: 2rem;
+}
+
+.section-divider {
+    height: 1px;
+    background-color: var(--border-color);
+    margin: 2rem 0;
+}
+
+/* Example Display Styles */
+.example-calculation {
+    border-radius: 6px;
+    border: 2px solid var(--hint-border, var(--border-color));
+    padding: 15px;
+    margin: 15px 0;
+    position: relative;
+}
+
+.example-calculation p {
+    margin: 8px 0;
+}
+
+.example-calculation ul {
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+.important {
+    border: 3px solid var(--primary-color);
+    border-radius: var(--card-radius);
+    padding: var(--spacing-md);
+    margin: var(--spacing-lg) 0;
+    background-color: var(--important-bg);
+}
+
+.important-header-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: var(--spacing-xxl);
+}
+
+.important-header-row .important-text {
+    color: var(--primary-color);
+    text-align: center;
+    margin-top: 0;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/* Formula Display Styles */
+.example-calculation.important .formula-box {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.formula-explanation-grid {
+    display: inline-grid;
+    grid-template-columns: repeat(7, auto);
+    grid-template-rows: auto auto;
+    gap: 10px 8px;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.formula-cell {
+    position: relative;
+    text-align: center;
+}
+
+.formula-symbol {
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.formula-operator {
+    font-size: 1.8em;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.formula-description {
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #555;
+    padding-top: 27px;
+    min-width: 90px;
+    line-height: 1.2;
+}
+
+.formula-description::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1px;
+    height: 18px;
+    border-left: 2px solid #ff5722;
+}
+
+.formula-cell:not(.formula-description)::before {
+    display: none;
+}
+
+/* Equations and Fractions (General) */
+.equation {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 15px 0;
+}
+
+.fraction {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    margin: 0 5px;
+}
+
+.fraction-numerator,
+.fraction-denominator {
+    display: block;
+    padding: 3px;
+}
+
+.fraction-numerator {
+    border-bottom: 1px solid var(--text-color, #000);
+}
+
+.horizontal-operation {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+/* OPERATION steps stack several equation lines (operands1, operands2, ...). */
+.operation-line-container { display: block; }
+.operation-line-container + .operation-line-container { margin-top: 8px; }
+
+.eq-operator {
+    margin: 0 8px;
+    font-weight: bold;
+}
+
+.proportion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+/* Dilution Formula Practice Area Styles */
+.practice-question-container {
+    margin-bottom: 30px;
+    padding: 10px 20px 20px 20px;
+}
+
+.question-text {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.highlight {
+    background-color: #ffffcc;
+    padding: 0 3px;
+    border-radius: 3px;
+    cursor: pointer;
+    border: 1px dashed #ccc;
+    transition: all 0.2s;
+}
+
+.highlight.selected {
+    background-color: #f0ad4e;
+    border: 1px solid #eea236;
+    color: #fff;
+}
+
+.highlight.correct {
+    background-color: #b3e6cc;
+    border: 1px solid #28a745;
+    color: var(--correct-color, #28a745);
+}
+
+.formula-drop-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 30px 0;
+    background-color: var(--hint-bg, #F3EDDB);
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid var(--hint-border, #E9DCBE);
+}
+
+.instructions {
+    margin-bottom: 15px;
+}
+
+.instructions p {
+    font-weight: bold;
+    font-size: 1em;
+    color: var(--primary-color);
+}
+
+.formula-operator-display {
+    font-size: 1.8em;
+    font-weight: bold;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color, #383838);
+}
+
+.drop-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 5px;
+}
+
+.drop-container p {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: var(--primary-color, #C69214);
+}
+
+.drop-box {
+    width: 100px;
+    height: 50px;
+    border: 2px dashed var(--border-color, #E6D7B3);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--card-background, #FFFFFF);
+    transition: all 0.2s;
+    cursor: pointer;
+    font-size: 0.9em;
+    padding: 5px;
+    text-align: center;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+
+.formula-operator-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.drop-box.filled {
+    border-color: #f0ad4e;
+    background-color: #fff9f0;
+}
+
+.drop-box.correct {
+    border-color: var(--correct-color, #28A745);
+    background-color: rgba(40, 167, 69, 0.1);
+}
+
+.drop-box.incorrect {
+    border-color: var(--incorrect-color, #DC3545);
+    background-color: rgba(220, 53, 69, 0.1);
+}
+
+/* Button Styles */
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.check-btn {
+    background-color: var(--primary-color, #C69214);
+    color: white;
+}
+.check-btn:hover {
+    background-color: var(--primary-dark, #A77C11);
+}
+
+.reset-btn {
+    background-color: var(--disabled-color, #D4D4D4);
+    color: #666;
+    margin-left: 10px;
+}
+.reset-btn:hover {
+    background-color: #c0c0c0;
+}
+
+.next-btn {
+    background-color: var(--secondary-color, #D4AB51);
+    color: white;
+    display: none;
+}
+.next-btn:hover {
+    background-color: var(--secondary-dark, #C99B35);
+}
+
+/* Controls for Practice Area (Absolute Positioned Buttons) */
+.controls {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    margin-top: 0;
+    display: flex;
+    gap: 10px;
+}
+
+/* Utility Styles */
+.draggable {
+    cursor: grab;
+}
+
+.dragging {
+    opacity: 0.5;
+    cursor: grabbing;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Question Counter for Dilution Practice */
+#formulaQuestionCounter {
+    text-align: right;
+    font-size: 0.9em;
+    color: var(--text-color, #555);
+    font-weight: 500;
+}
+
+/* Completion Screen for Dilution Practice */
+#formulaPracticeCompletion h2 {
+    color: var(--primary-color, #C69214);
+    margin-bottom: 15px;
+}
+
+#formulaPracticeCompletion p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+
+/* Adjust controls for completion screen if needed, e.g., centering */
+#completionControls {
+    position: static; /* Override absolute if it was from general .controls */
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Step Navigation Styles */
+.step-content {
+    display: none;
+    margin-bottom: 20px;
+}
+
+.step-content.active {
+    display: block;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.step-title {
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.step-instructions {
+    border-left: 3px solid var(--primary-color);
+    padding: 15px 15px 5px 15px;
+}
+
+.step-instructions ol {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.step-instructions li {
+    margin-bottom: 8px;
+}
+
+.tutorial-steps {
+    position: relative;
+    min-height: 320px;
+    padding: 0 20px;
+}
+
+.step-navigation {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Step Container Styles */
+.steps-container {
+  margin-top: var(--spacing-lg);
+  border-left: 3px solid var(--accent-color);
+  padding-left: var(--spacing-md);
+  display: none;
+}
+
+.solution-steps {
+  display: block;
+  margin-top: var(--spacing-md);
+  border-left: 3px solid var(--accent-color);
+  padding-left: var(--spacing-md);
+}
+
+.step {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.step:last-child {
+  border-bottom: none;
+}
+
+.step-label {
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: var(--primary-color);
+  font-size: 1.1rem;
+  white-space: pre-line;
+}
+
+.steps-container .equation-container,
+.steps-container .operation-container,
+.solution-steps .equation-container,
+.solution-steps .operation-container {
+  margin: 15px 0;
+}
+
+/* Answer Area Styles */
+.answer-container {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-md);
+}
+
+.answer-container input {
+    flex: 0 0 auto;
+    width: 120px;
+}
+
+.answer-container .unit,
+.single-answer-container .unit {
+    flex: 0 0 auto;
+}
+
+/* Box input styles for steps */
+.step .box-input {
+    width: 80px;
+    height: 20px;
+    margin: 0 5px;
+    text-align: center;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+/* Multiple Choice Styles */
+.multiple-choice-container {
+  margin: 15px 0;
+}
+
+.multiple-choice-options {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+/* Specific 2x2 grid for Step 1 (data-step="0") multiple choice options */
+.step[data-step="0"] .multiple-choice-options {
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+}
+
+.step[data-step="0"] .multiple-choice-option {
+  max-width: 300px;
+  width: 100%;
+}
+
+.multiple-choice-option {
+  padding: 10px;
+  border: 2px solid var(--accent-color);
+  border-radius: var(--border-radius);
+  background-color: var(--card-background);
+  color: var(--accent-color);
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.multiple-choice-option:hover {
+  background-color: rgba(52, 90, 128, 0.1);
+}
+
+.multiple-choice-option.selected {
+  background-color: var(--accent-color);
+  color: white;
+}
+
+.multiple-choice-option:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.multiple-choice-option.selected.correct {
+  background-color: var(--correct-color);
+  border-color: var(--correct-color);
+  color: white;
+}
+
+.multiple-choice-option.selected.incorrect {
+  background-color: var(--incorrect-color);
+  border-color: var(--incorrect-color);
+  color: white;
+}
+
+/* Step Button Containers */
+.check-btn-container {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+    gap: var(--spacing-sm);
+    margin-top: var(--spacing-md); 
+}
+
+.step-next-btn-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: var(--spacing-md);
+}
+
+/* Reference Card Styles */
+/* All reference card styles are now in master.css */
+/* This module uses the single-column layout: add 'single-column' class to .reference-container */
+
+.question-content-wrapper {
+    padding-left: 20px;
+    text-indent: -20px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.question, .solution-question {
+    position: relative;
+}
+
+/* Results Card */
+#results {
+    text-align: center;
+}
+
+.results-title {
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-md);
+    color: var(--primary-color);
+}
+
+.results-message {
+    font-size: 1.2rem;
+    margin-bottom: var(--spacing-xl);
+}
+
+.clear-progress-container {
+    margin-top: var(--spacing-lg);
+    text-align: center;
+}
+
+/* History Modal Styles */
+.history-tag-section {
+  margin-bottom: 30px;
+}
+
+.history-section-title {
+  margin-bottom: 15px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--primary-color);
+  font-size: 1.2rem;
+  color: var(--primary-color);
+}
+
+.question-button-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.question-button {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Completed question buttons (green and clickable) */
+.question-button.completed {
+  background-color: var(--correct-color);
+  color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.question-button.completed:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.question-button.completed:active {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Incomplete question buttons (gray and disabled) */
+.question-button.incomplete {
+  background-color: #e0e0e0;
+  color: #888;
+  cursor: not-allowed;
+}
+
+.history-answer-display {
+  margin-top: 12px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.answer-display-label {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.answer-display-value {
+  color: var(--correct-color);
+  font-weight: 500;
+}
+
+/* Empty history message */
+.empty-history {
+  text-align: center;
+  padding: 30px;
+  color: #888;
+  font-style: italic;
+}
+
+/* Mobile responsiveness for the grid */
+@media (max-width: 600px) {
+  .question-button-grid {
+    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+    gap: 8px;
+  }
+  
+  .question-button {
+    width: 50px;
+    height: 50px;
+    font-size: 14px;
+  }
+}
+
+/* Question Analysis Styling */
+.question-analysis {
+    background-color: var(--background-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.question-analysis p:first-child {
+    margin-top: 0;
+    color: #495057;
+}
+
+.highlighted-question {
+    font-size: 1.05em;
+    line-height: 1.8;
+    margin-bottom: 0;
+}
+
+.dilution-highlight {
+    background-color: rgba(52, 90, 128, 0.3);
+    border: 1px solid rgba(52, 90, 128, 0.7);
+    border-radius: 3px;
+    padding: 2px 4px;
+    font-weight: 600;
+    color: #2c4a5c;
+}
+
+/* History Panel Styles */
+/* Base history panel styles are now in master.css */
+
+/* Module-specific history section title color */
+.history-section-title {
+    color: var(--primary-color);
+    border-bottom-color: var(--primary-color);
+}
+
+.question-analysis {
+    border-left: 3px solid var(--accent-color);
+    padding-left: var(--spacing-md);
+    margin-top: var(--spacing-lg);
+}
+
+

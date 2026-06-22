@@ -1,0 +1,2201 @@
+{
+  "questions": [
+    {
+      "number": 1,
+      "tag": "percentage",
+      "question": "What is the percentage strength (w/v) of a solution if 8 oz contain 12 g of a drug?",
+      "answerValue": [5],
+      "answerUnit": ["%"],
+      "rounding": false,
+      "steps": [
+        {
+          "text": "Identify the type of percentage strength",
+          "type": "MULTIPLE_CHOICE",
+          "options": ["w/v (weight-in-volume)", "v/v (volume-in-volume)", "w/w (weight-in-weight)"],
+          "answer": "w/v (weight-in-volume)",
+          "hint": "The question is asking for the percentage strength in weight-in-volume, which expresses the number of grams (g) of a substance in 100 mL of a solution or liquid prep (g/100 mL)."
+        },
+        {
+          "text": "Convert all units to standard units (i.e., g and mL)",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "8 fl oz"
+            },
+            {
+              "type": "input",
+              "answer": 30,
+              "unit": "mL/fl oz (round to whole number)"
+            },
+            {
+              "type": "input",
+              "answer": 240,
+              "unit": "mL"
+            }
+          ],
+          "operators1": ["×", "="],
+          "hint": "1 fl oz = 30 mL, so 8 fl oz = 8 × 30 mL = 240 mL"
+        },
+        {
+          "text": "Set up the ratio and proportion",
+          "type": "OPERATION",
+          "operands1": [
+              {
+                "type": "fraction",
+                "numerator": {
+                    "type": "input",
+                    "answer": 12,
+                    "unit": "g"
+                },
+                "denominator": {
+                    "type": "input",
+                    "answer": 240,
+                    "unit": "mL"
+                }
+              },
+              {
+                "type": "fraction",
+                "numerator": "X g",
+                "denominator": {
+                    "type": "input",
+                    "answer": 100,
+                    "unit": "mL"
+                }
+              }
+          ],
+          "operators1": ["="],
+          "hint": "12 g/240 mL = X g/100 mL"
+        },
+        {
+          "text": "Solve for X",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "X g"
+            },
+            {
+              "type": "input",
+              "answer": 5,
+              "unit": "g"
+            },
+            {
+              "type": "input",
+              "answer": 5,
+              "unit": "%"
+            }
+          ],
+          "operators1": ["=", "="],
+          "hint": "Divide 12 g by 240 mL to find the concentration in g/mL. The answer is 5 g/100 mL, which is 5%."
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "tag": "ratio",
+      "question": "If there are 100 mg of sodium chloride in 1 liter of solution, calculate the solution's ratio strength (w/v). Write your answer as a ratio (e.g., 1:10000).",
+      "answerValue": ["1:10000"],
+      "answerUnit": [""],
+      "rounding": false,
+      "steps": [
+        {
+          "text": "Identify the type of percentage strength",
+          "type": "MULTIPLE_CHOICE",
+          "options": ["w/v (weight-in-volume)", "v/v (volume-in-volume)", "w/w (weight-in-weight)"],
+          "answer": "w/v (weight-in-volume)",
+          "hint": "The question is asking for the ratio strength in weight-in-volume (w/v)."
+        },
+        {
+          "text": "Convert all units to standard units (i.e., g and mL)",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "100 mg"
+            },
+            {
+              "type": "input",
+              "answer": 0.1,
+              "unit": "g"
+            }
+          ],
+          "operators1": ["="],
+          "operands2": [
+            {
+              "type": "text",
+              "value": "1 L"
+            },
+            {
+              "type": "input",
+              "answer": 1000,
+              "unit": "mL"
+            }
+          ],
+          "operators2": ["="],
+          "hint": "We need to convert mg to g and L to mL. 100 mg = 0.1 g, 1 L = 1000 mL."
+        },
+        {
+          "text": "Set up the ratio and proportion",
+          "type": "OPERATION",
+          "operands1": [
+              {
+              "type": "fraction",
+              "numerator": {
+                  "type": "input",
+                  "answer": 0.1,
+                  "unit": "g"
+              },
+              "denominator": {
+                  "type": "input",
+                  "answer": 1000,
+                  "unit": "mL"
+              }
+              },
+              {
+              "type": "fraction",
+              "numerator": {
+                "type": "input",
+                "answer": 1,
+                "unit": "g"
+              },
+              "denominator": "X mL"
+              }
+          ],
+          "operators1": ["="],
+          "hint": "0.1/1000 = 1/X"
+        },
+        {
+          "text": "Solve for X and express as ratio strength",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "X"
+            },
+            {
+              "type": "input",
+              "answer": 10000,
+              "unit": ""
+            },
+            {
+              "type": "text",
+              "value": "And the ratio strength is"
+            },
+            {
+              "type": "input",
+              "answer": 1,
+              "unit": ""
+            },
+            {
+              "type": "input",
+              "answer": 10000,
+              "unit": ""
+            }
+          ],
+          "operators1": ["=", "", "",":"],
+          "hint": "X = 10000, therefore the ratio strength is 1:10000"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "tag": "percentage",
+      "question": "How many grams of drug are needed to make the following preparation? <br> Drug&nbsp;&nbsp;&nbsp;&nbsp;3% <br> Solution&nbsp;&nbsp;&nbsp;&nbsp;qs ad 5 quarts",
+      "answerValue": [141.9],
+      "answerUnit": ["g"],
+      "rounding": false,
+      "steps": [
+        {
+          "text": "Identify the type of percentage strength",
+          "type": "MULTIPLE_CHOICE",
+          "options": ["w/v (weight-in-volume)", "v/v (volume-in-volume)", "w/w (weight-in-weight)"],
+          "answer": "w/v (weight-in-volume)",
+          "hint": "The question is asking for the percentage strength in weight-in-volume, which expresses the number of grams (g) of a substance in 100 mL of a solution or liquid prep (g/100 mL)."
+        },
+        {
+          "text": "Convert all units to standard units (i.e., g and mL)",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "5 qt"
+            },
+            {
+              "type": "input",
+              "answer": 946,
+              "unit": "mL"
+            },
+            {
+              "type": "text",
+              "value": "5"
+            },
+            {
+              "type": "input",
+              "answer": 4730,
+              "unit": "mL"
+            }
+          ],
+          "operators1": ["=", "x", "="],
+          "hint": "1 qt = 946 mL, so 5 qt = 5 × 946 mL = 4730 mL"
+        },
+        {
+          "text": "Set up the ratio and proportion",
+          "type": "OPERATION",
+          "operands1": [
+              {
+                "type": "fraction",
+                "numerator": "X g",
+                "denominator": {
+                    "type": "input",
+                    "answer": 4730,
+                    "unit": "mL"
+                }
+              },
+              {
+                "type": "fraction",
+                "numerator": {
+                    "type": "input",
+                    "answer": 3,
+                    "unit": "g"
+                },
+                "denominator": {
+                    "type": "input",
+                    "answer": 100,
+                    "unit": "mL"
+                }
+              }
+          ],
+          "operators1": ["="],
+          "hint": "3% drug suggests 3 g of drug per 100 mL of solution, thus X g/4730 mL = 3 g/100 mL"
+        },
+        {
+          "text": "Solve for X",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "X g"
+            },
+            {
+              "type": "input",
+              "answer": 141.9,
+              "unit": "g"
+            }
+          ],
+          "operators1": ["="],
+          "hint": "Multiply 3 g by 4730 mL, and then divide by 100 mL to find the answer. The answer is 141.9 g."
+        }
+      ]
+    }, 
+    {
+      "number": 4,
+      "tag": "percentage",
+      "question": "A pharmacist needs to make 15% (w/w) zinc oxide ointment with 17 g of zinc oxide. How many grams of vaseline base (no active ingredient) are needed? Round your answer to the nearest whole number.",
+      "answerValue": [96],
+      "answerUnit": ["g"],
+      "rounding": false,
+      "steps": [
+        {
+          "text": "Identify the type of percentage strength",
+          "type": "MULTIPLE_CHOICE",
+          "options": ["w/v (weight-in-volume)", "v/v (volume-in-volume)", "w/w (weight-in-weight)"],
+          "answer": "w/w (weight-in-weight)",
+          "hint": "The question specifies w/w percentage, which expresses the number of grams of active ingredient per 100 grams of total preparation."
+        },
+        {
+          "text": "Set up the ratio and proportion",
+          "type": "OPERATION",
+          "operands1": [
+              {
+                "type": "fraction",
+                "numerator": {
+                    "type": "input",
+                    "answer": 17,
+                    "unit": "g"
+                },
+                "denominator": {
+                    "type": "text",
+                    "value": "X g"
+                }
+              },
+              {
+                "type": "fraction",
+                "numerator": {
+                    "type": "input",
+                    "answer": 15,
+                    "unit": "g"
+                },
+                "denominator": {
+                    "type": "input",
+                    "answer": 100,
+                    "unit": "g"
+                }
+              }
+          ],
+          "operators1": ["="],
+          "hint": "If 17 g is 15% of the total weight, then 17 g/total weight = 15 g/100 g"
+        },
+        {
+          "text": "Solve for X and Vaseline Base",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "X"
+            },
+            {
+              "type": "input",
+              "answer": 113,
+              "unit": "g (rounded to the nearest whole number)"
+            }
+          ],
+          "operators1": ["="],
+          "operands2": [
+            {
+              "type": "text",
+              "value": "Vaseline Base"
+            },
+            {
+              "type": "input",
+              "answer": 113,
+              "unit": "g"
+            },
+            {
+              "type": "input",
+              "answer": 17,
+              "unit": "g"
+            },
+            {
+              "type": "input",
+              "answer": 96,
+              "unit": "g"
+            }
+          ],
+          "operators2": [":","-", "="],
+          "hint": "First find total weight (17 × 100 ÷ 15 = 113 g), then subtract zinc oxide weight to get vaseline base needed: 113 g - 17 g = 96 g"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "tag": "percentage",
+      "question": "If 100 mL of a pharmaceutical preparation contains 40 mcL of a 75% w/v solution of benzalkonium chloride, what is the percentage strength of that agent in the solution?",
+      "answerValue": [0.03],
+      "answerUnit": ["%"],
+      "rounding": false,
+      "steps": [
+        {
+          "text": "Identify the type of percentage strength",
+          "type": "MULTIPLE_CHOICE",
+          "options": ["w/v (weight-in-volume)", "v/v (volume-in-volume)", "w/w (weight-in-weight)"],
+          "answer": "w/v (weight-in-volume)",
+          "hint": "Since we're dealing with the concentration of an agent in a solution measured by volume, we use w/v percentage."
+        },
+        {
+          "text": "Convert all units to standard units (i.e., g and mL)",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "40 mcL"
+            },
+            {
+              "type": "input",
+              "answer": 0.04,
+              "unit": "mL"
+            }
+          ],
+          "operators1": ["="],
+          "hint": "There are 1000 mcL in 1 mL of solution"
+        },
+        {
+          "text": "Set up the ratio and proportion",
+          "type": "OPERATION",
+          "operands1": [
+              {
+                "type": "fraction",
+                "numerator": {
+                    "type": "input",
+                    "answer": 75,
+                    "unit": "g"
+                },
+                "denominator": {
+                    "type": "input",
+                    "answer": 100,
+                    "unit": "mL"
+                }
+              },
+              {
+                "type": "fraction",
+                "numerator": "X g",
+                "denominator": {
+                    "type": "input",
+                    "answer": 0.04,
+                    "unit": "mL"
+                }
+              }
+          ],
+          "operators1": ["="],
+          "hint": "Since 75% w/v means 75 g per 100 mL, set up the proportion to find how many grams (X) are in 0.04 mL of the solution"
+        },
+        {
+          "text": "Solve for X and final percentage",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "X"
+            },
+            {
+              "type": "input",
+              "answer": 0.03,
+              "unit": "g"
+            }
+          ],
+          "operators1": ["="],
+          "operands2": [
+            {
+              "type": "text",
+              "value": "Percentage"
+            },
+            {
+              "type": "input",
+              "answer": 0.03,
+              "unit": "%"
+            }
+          ],
+          "operators2": ["="],
+          "hint": "X = (75 × 40)/100000 = 0.03 g, which in 100 mL equals 0.03% w/v"
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "tag": "ratio",
+      "question": "Express 0.005% as a ratio strength. Write your answer as a ratio (e.g., 1:10000).",
+      "answerValue": ["1:20000"],
+      "answerUnit": [""],
+      "rounding": false,
+      "steps": [
+        {
+          "text": "Set up the ratio and proportion",
+          "type": "OPERATION",
+          "operands1": [
+              {
+              "type": "fraction",
+              "numerator": {
+                  "type": "input",
+                  "answer": 0.005,
+                  "unit": ""
+              },
+              "denominator": "100"
+              },
+              {
+              "type": "fraction",
+              "numerator": {
+                "type": "input",
+                "answer": 1,
+                "unit": ""
+              },
+              "denominator": "X"
+              }
+          ],
+          "operators1": ["="],
+          "hint": "0.005/100 = 1/X"
+        },
+        {
+          "text": "Solve for X",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "X"
+            },
+            {
+              "type": "input",
+              "answer": 20000,
+              "unit": ""
+            }
+          ],
+          "operators1": ["="],
+          "operands2": [
+            {
+              "type": "text",
+              "value": "The ratio strength is"
+            },
+            {
+              "type": "input",
+              "answer": 1,
+              "unit": ""
+            },
+            {
+              "type": "input",
+              "answer": 20000,
+              "unit": ""
+            }
+          ],
+          "operators2": ["", ":"],
+          "hint": "The ratio strength is 1:20000."
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "tag": "ratio",
+      "question": "Express 1/2500 as a percent.",
+      "answerValue": [0.04],
+      "answerUnit": ["%"],
+      "rounding": false,
+      "steps": [
+        {
+          "text": "Set up the ratio and proportion",
+          "type": "OPERATION",
+          "operands1": [
+              {
+              "type": "fraction",
+              "numerator": {
+                  "type": "input",
+                  "answer": 1,
+                  "unit": ""
+              },
+              "denominator": {
+                  "type": "input",
+                  "answer": 2500,
+                  "unit": ""
+              }
+              },
+              {
+              "type": "fraction",
+              "numerator": {
+                "type": "text",
+                "value": "X"
+              },
+              "denominator": "100"
+              }
+          ],
+          "operators1": ["="],
+          "hint": "1/2500 = X/100"
+        },
+        {
+          "text": "Solve for X",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "X"
+            },
+            {
+              "type": "input",
+              "answer": 0.04,
+              "unit": ""
+            }
+          ],
+          "operators1": ["="],
+          "operands2": [
+            {
+              "type": "text",
+              "value": "The percentage is"
+            },
+            {
+              "type": "input",
+              "answer": 0.04,
+              "unit": "%"
+            }
+          ],
+          "operators2": [""],
+          "hint": "X = 100/2500 = 0.04, therefore the percentage is 0.04%."
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "tag": "percentage",
+      "question": "How many grams of aminobenzoic acid should be used in preparing 9 fluidounces of 5% (w/v) solution in 90% alcohol? Round your answer to two decimal places.",
+      "answerValue": [13.31],
+      "answerUnit": ["g"],
+      "rounding": true,
+      "steps": [
+        {
+          "text": "Identify the type of percentage strength",
+          "type": "MULTIPLE_CHOICE",
+          "options": ["w/v (weight-in-volume)", "v/v (volume-in-volume)", "w/w (weight-in-weight)"],
+          "answer": "w/v (weight-in-volume)",
+          "hint": "The question asks for a 5% w/v solution, which means we need to find grams of solute per 100 mL of solution."
+        },
+        {
+          "text": "Convert all units to standard units (i.e., g and mL)",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "9 fl oz"
+            },
+            {
+              "type": "input",
+              "answer": 29.57,
+              "unit": "mL/fl oz"
+            },
+            {
+              "type": "input",
+              "answer": 266.13,
+              "unit": "mL"
+            }
+          ],
+          "operators1": ["×", "="],
+          "hint": "1 fl oz = 29.57 mL, so 9 fl oz = 9 × 29.57 mL = 266.13 mL"
+        },
+        {
+          "text": "Set up the ratio and proportion",
+          "type": "OPERATION",
+          "operands1": [
+              {
+                "type": "fraction",
+                "numerator": "X g",
+                "denominator": {
+                    "type": "input",
+                    "answer": 266.13,
+                    "unit": "mL"
+                }
+              },
+              {
+                "type": "fraction",
+                "numerator": {
+                    "type": "input",
+                    "answer": 5,
+                    "unit": "g"
+                },
+                "denominator": {
+                    "type": "input",
+                    "answer": 100,
+                    "unit": "mL"
+                }
+              }
+          ],
+          "operators1": ["="],
+          "hint": "Set up the proportion where X g/266.13 mL = 5 g/100 mL to find the grams needed"
+        },
+        {
+          "text": "Solve for X",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "X"
+            },
+            {
+              "type": "input",
+              "answer": 13.31,
+              "unit": "g (rounded to two decimal places)"
+            }
+          ],
+          "operators1": ["="],
+          "hint": "Multiply 5 g × 266.13 mL ÷ 100 mL = 13.3065 g of aminobenzoic acid needed. Rounding to two decimal places gives 13.31 g."
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "tag": "ratio",
+      "question": "Express 1/5000 as a percent.",
+      "answerValue": [0.02],
+      "answerUnit": ["%"],
+      "rounding": false,
+      "steps": [
+        {
+          "text": "Set up the ratio and proportion",
+          "type": "OPERATION",
+          "operands1": [
+              {
+              "type": "fraction",
+              "numerator": {
+                  "type": "input",
+                  "answer": 1,
+                  "unit": ""
+              },
+              "denominator": {
+                  "type": "input",
+                  "answer": 5000,
+                  "unit": ""
+              }
+              },
+              {
+              "type": "fraction",
+              "numerator": {
+                "type": "text",
+                "value": "X"
+              },
+              "denominator": {
+                "type": "input",
+                "answer": 100,
+                "unit": ""
+              }
+              }
+          ],
+          "operators1": ["="],
+          "hint": "1/5000 = X/100"
+        },
+        {
+          "text": "Solve for X",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "X"
+            },
+            {
+              "type": "input",
+              "answer": 0.02,
+              "unit": ""
+            }
+          ],
+          "operators1": ["="],
+          "operands2": [
+            {
+              "type": "text",
+              "value": "The percentage is"
+            },
+            {
+              "type": "input",
+              "answer": 0.02,
+              "unit": "%"
+            }
+          ],
+          "operators2": [""],
+          "hint": "The percentage is 0.02%."
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "tag": "ratio",
+      "question": "How many grams of drug should be used preparing 500 mL of a 1:2500 solution? ",
+      "answerValue": [0.2],
+      "answerUnit": ["g"],
+      "rounding": false,
+      "steps": [
+        {
+          "text": "Set up the ratio and proportion",
+          "type": "OPERATION",
+          "operands1": [
+              {
+              "type": "fraction",
+              "numerator": {
+                  "type": "input",
+                  "answer": 1,
+                  "unit": "g"
+              },
+              "denominator": {
+                  "type": "input",
+                  "answer": 2500,
+                  "unit": "mL"
+              }
+              },
+              {
+              "type": "fraction",
+              "numerator": {
+                "type": "text",
+                "value": "X g"
+              },
+              "denominator": {
+                "type": "input",
+                "answer": 500,
+                "unit": "mL"
+              }
+              }
+          ],
+          "operators1": ["="],
+          "hint": "1/2500 = X/500"
+        },
+        {
+          "text": "Solve for X",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "X"
+            },
+            {
+              "type": "input",
+              "answer": 0.2,
+              "unit": "g"
+            }
+          ],
+          "operators1": ["="],
+          "hint": "1/2500 = 0.2/500"
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "tag": "percentage",
+      "question": "An injection of adalimumab (HUMIRA) contains 72 mg/ 0.9 mL. Calculate the percentage concentration of the injection. ", 
+      "answerValue": [8],
+      "answerUnit": ["%"],
+      "rounding": false,
+      "steps": [
+        {
+          "text": "Identify the type of percentage strength",
+          "type": "MULTIPLE_CHOICE",
+          "options": ["w/v (weight-in-volume)", "v/v (volume-in-volume)", "w/w (weight-in-weight)"],
+          "answer": "w/v (weight-in-volume)",
+          "hint": "Since we're dealing with the concentration of an agent in a solution measured by volume, we use w/v percentage."
+        },
+        {
+          "text": "Convert all units to standard units (i.e., g and mL)",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "72 mg"
+            },
+            {
+              "type": "input",
+              "answer": 0.072,
+              "unit": "g"
+            }
+          ],
+          "operators1": ["="],
+          "hint": "There are 1000 mg in 1 g"
+        },
+        {
+          "text": "Set up the ratio and proportion",
+          "type": "OPERATION",
+          "operands1": [
+              {
+                "type": "fraction",
+                "numerator": {
+                    "type": "input",
+                    "answer": 0.072,
+                    "unit": "g"
+                },
+                "denominator": {
+                    "type": "input",
+                    "answer": 0.9,
+                    "unit": "mL"
+                }
+              },
+              {
+                "type": "fraction",
+                "numerator": {
+                  "type": "text",
+                  "value": "X"
+                },
+                "denominator": {
+                  "type": "input",
+                  "answer": 100,
+                  "unit": "%"
+                }
+              }
+          ],
+          "operators1": ["="],
+          "hint": "0.072/0.9 = X/100"
+        },
+        {
+          "text": "Solve for X and final percentage",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "X"
+            },
+            {
+              "type": "input",
+              "answer": 8,
+              "unit": "%"
+            }
+          ],
+          "operators1": ["="],
+          "hint": "X = 0.072/0.9 × 100 = 8%"
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "tag": "percentage",
+      "question": "What is the percentage strength v/v of a solution of 900 g of a liquid with a specific gravity of 0.800 in enough water to make 4500 mL?",
+      "answerValue": [25],
+      "answerUnit": ["%"],
+      "rounding": false,
+      "steps": [
+        {
+          "text": "Identify the type of percentage strength",
+          "type": "MULTIPLE_CHOICE",
+          "options": ["w/v (weight-in-volume)", "v/v (volume-in-volume)", "w/w (weight-in-weight)"],
+          "answer": "v/v (volume-in-volume)",
+          "hint": "Since we need to find the volume ratio of the liquid in the total solution, we use v/v percentage."
+        },
+        {
+          "text": "Convert all units to standard units (i.e., g and mL)",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "Volume"
+            },
+            {
+              "type": "fraction",
+              "numerator": {
+                  "type": "input",
+                  "answer": 900,
+                  "unit": "g"
+              },
+              "denominator": {
+                  "type": "input",
+                  "answer": 0.8,
+                  "unit": "g/mL"
+              }
+            },
+            {
+              "type": "input",
+              "answer": 1125,
+              "unit": "mL"
+            }
+          ],
+          "operators1": ["=", "="],
+          "hint": "Volume = Mass ÷ Specific gravity = 900 g ÷ 0.8 g/mL = 1125 mL"
+        },
+        {
+          "text": "Set up the ratio and proportion",
+          "type": "OPERATION",
+          "operands1": [
+              {
+                "type": "fraction",
+                "numerator": {
+                    "type": "input",
+                    "answer": 1125,
+                    "unit": "mL"
+                },
+                "denominator": {
+                    "type": "input",
+                    "answer": 4500,
+                    "unit": "mL"
+                }
+              },
+              {
+                "type": "fraction",
+                "numerator": {
+                    "type": "text",
+                    "value": "X"
+                },
+                "denominator": {
+                    "type": "input",
+                    "answer": 100,
+                    "unit": "%"
+                }
+              }
+          ],
+          "operators1": ["="],
+          "hint": "Set up the proportion 1125 mL/4500 mL = X/100 to find the percentage"
+        },
+        {
+          "text": "Solve for X",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "X"
+            },
+            {
+              "type": "input",
+              "answer": 25,
+              "unit": "%"
+            }
+          ],
+          "operators1": ["="],
+          "hint": "X = (1125 × 100)/4500 = 25%, which means the solution is 25% v/v"
+        }
+      ]
+    },
+    {
+      "number": 13,
+      "tag": "percentage",
+      "question": "Peppermint spirit contains 20% v/v of peppermint oil. What volume of the spirit will contain 95 mL of peppermint oil?",
+      "answerValue": [475],
+      "answerUnit": ["mL"],
+      "rounding": false,
+      "steps": [
+        {
+          "text": "Identify the type of percentage strength",
+          "type": "MULTIPLE_CHOICE",
+          "options": ["w/v (weight-in-volume)", "v/v (volume-in-volume)", "w/w (weight-in-weight)"],
+          "answer": "v/v (volume-in-volume)",
+          "hint": "Since we're dealing with the volume ratio of peppermint oil in the spirit solution, we use v/v percentage."
+        },
+        {
+          "text": "Set up the ratio and proportion",
+          "type": "OPERATION",
+          "operands1": [
+              {
+                "type": "fraction",
+                "numerator": {
+                    "type": "input",
+                    "answer": 95,
+                    "unit": "mL"
+                },
+                "denominator": {
+                    "type": "text",
+                    "value": "X mL"
+                }
+              },
+              {
+                "type": "fraction",
+                "numerator": {
+                    "type": "input",
+                    "answer": 20,
+                    "unit": "mL"
+                },
+                "denominator": {
+                    "type": "input",
+                    "answer": 100,
+                    "unit": "mL"
+                }
+              }
+          ],
+          "operators1": ["="],
+          "hint": "Set up the proportion 95/X = 20/100 to find the total volume of spirit needed"
+        },
+        {
+          "text": "Solve for X",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "X"
+            },
+            {
+              "type": "input",
+              "answer": 475,
+              "unit": "mL"
+            }
+          ],
+          "operators1": ["="],
+          "hint": "X = (95 × 100)/20 = 475 mL of spirit needed"
+        }
+      ]
+    },
+    {
+      "number": 14,
+      "tag": "ratio",
+      "question": "Express 0.00025% as a ratio strength. Write your answer as a ratio (e.g., 1:10000).",
+      "answerValue": ["1:400000"],
+      "answerUnit": [""],
+      "rounding": false,
+      "steps": [
+        {
+          "text": "Set up the ratio and proportion",
+          "type": "OPERATION",
+          "operands1": [
+              {
+              "type": "fraction",
+              "numerator": {
+                  "type": "input",
+                  "answer": 0.00025,
+                  "unit": ""
+              },
+              "denominator": "100"
+              },
+              {
+              "type": "fraction",
+              "numerator": {
+                "type": "input",
+                "answer": 1,
+                "unit": ""
+              },
+              "denominator": "X"
+              }
+          ],
+          "operators1": ["="],
+          "hint": "0.005/100 = 1/X"
+        },
+        {
+          "text": "Solve for X",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "X"
+            },
+            {
+              "type": "input",
+              "answer": 400000,
+              "unit": ""
+            }
+          ],
+          "operators1": ["="],
+          "operands2": [
+            {
+              "type": "text",
+              "value": "The ratio strength is"
+            },
+            {
+              "type": "input",
+              "answer": 1,
+              "unit": ""
+            },
+            {
+              "type": "input",
+              "answer": 400000,
+              "unit": ""
+            }
+          ],
+          "operators2": ["", ":"],
+          "hint": "X = 100/0.00025 = 400000, therefore the ratio strength is 1:400000."
+        }
+      ]
+    },
+    {
+      "number": 15,
+      "tag": "ratio",
+      "question": "A certain drug preparation contains 4 mg of a drug per milliliter of solution. What is the ratio strength (w/v) of the solution? Write your answer as a ratio (e.g., 1:10000).",
+      "answerValue": ["1:250"],
+      "answerUnit": [""],
+      "rounding": false,
+      "steps": [
+        {
+          "text": "Identify the type of percentage strength",
+          "type": "MULTIPLE_CHOICE",
+          "options": ["w/v (weight-in-volume)", "v/v (volume-in-volume)", "w/w (weight-in-weight)"],
+          "answer": "w/v (weight-in-volume)",
+          "hint": "Since we're dealing with the concentration of an agent in a solution measured by volume, we use w/v percentage."
+        },
+        {
+          "text": "Convert all units to standard units (i.e., g and mL)",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "4 mg"
+            },
+            {
+              "type": "input",
+              "answer": 0.004,
+              "unit": "g"
+            }
+          ],
+          "operators1": ["="],
+          "hint": "Convert mg to g by dividing by 1000: 4 mg = 0.004 g"
+        },
+        {
+          "text": "Set up the ratio and proportion",
+          "type": "OPERATION",
+          "operands1": [
+              {
+              "type": "fraction",
+              "numerator": {
+                  "type": "input",
+                  "answer": 0.004,
+                  "unit": "g"
+              },
+              "denominator": {
+                  "type": "input",
+                  "answer": 1,
+                  "unit": "mL"
+              }
+              },
+              {
+              "type": "fraction",
+              "numerator": {
+                "type": "input",
+                "answer": 1,
+                "unit": ""
+              },
+              "denominator": "X"
+              }
+          ],
+          "operators1": ["="],
+          "hint": "0.004/1 = 1/X"
+        },
+        {
+          "text": "Solve for X",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "X"
+            },
+            {
+              "type": "input",
+              "answer": 250,
+              "unit": ""
+            }
+          ],
+          "operators1": ["="],
+          "operands2": [
+            {
+              "type": "text",
+              "value": "The ratio strength is"
+            },
+            {
+              "type": "input",
+              "answer": 1,
+              "unit": ""
+            },
+            {
+              "type": "input",
+              "answer": 250,
+              "unit": ""
+            }
+          ],
+          "operators2": ["", ":"],
+          "hint": "The ratio strength is 1:250"
+        }
+      ]
+    },
+    {
+      "number": 16,
+      "tag": "ratio",
+      "question": "What is the ratio strength (w/v) of a solution made by dissolving 10 tablets, each containing 2.25 g of sodium chloride, in enough water to make 3600 mL? Write your answer as a ratio (e.g., 1:10000).",
+      "answerValue": ["1:160"],
+      "answerUnit": [""],
+      "rounding": false,
+      "steps": [
+        {
+          "text": "Convert all units to standard units (i.e., g and mL) and calculate the total amount of sodium chloride",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "input",
+              "answer": 10,
+              "unit": "tablets"
+            },
+            {
+              "type": "input",
+              "answer": 2.25,
+              "unit": "g/tablet"
+            },
+            {
+              "type": "input",
+              "answer": 22.5,
+              "unit": "g"
+            }
+          ],
+          "operators1": ["×", "="],
+          "hint": "Multiply number of tablets by amount per tablet: 10 × 2.25 g = 22.5 g"
+        },
+        {
+          "text": "Set up the ratio and proportion",
+          "type": "OPERATION",
+          "operands1": [
+              {
+              "type": "fraction",
+              "numerator": {
+                  "type": "input",
+                  "answer": 22.5,
+                  "unit": "g"
+              },
+              "denominator": {
+                  "type": "input",
+                  "answer": 3600,
+                  "unit": "mL"
+              }
+              },
+              {
+              "type": "fraction",
+              "numerator": {
+                "type": "input",
+                "answer": 1,
+                "unit": ""
+              },
+              "denominator": "X"
+              }
+          ],
+          "operators1": ["="],
+          "hint": "22.5/3600 = 1/X"
+        },
+        {
+          "text": "Solve for X",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "X"
+            },
+            {
+              "type": "input",
+              "answer": 160,
+              "unit": ""
+            }
+          ],
+          "operators1": ["="],
+          "operands2": [
+            {
+              "type": "text",
+              "value": "The ratio strength is"
+            },
+            {
+              "type": "input",
+              "answer": 1,
+              "unit": ""
+            },
+            {
+              "type": "input",
+              "answer": 160,
+              "unit": ""
+            }
+          ],
+          "operators2": ["", ":"],
+          "hint": "The ratio strength is 1:160"
+        }
+      ]
+    },
+    {
+      "number": 17,
+      "tag": "percentage",
+      "question": "How many grams of dextrose are required to prepare 5000 mL of a 7.5% (w/v) solution?",
+      "answerValue": [375],
+      "answerUnit": ["g"],
+      "rounding": false,
+      "steps": [
+        {
+          "text": "Identify the type of percentage strength",
+          "type": "MULTIPLE_CHOICE",
+          "options": ["w/v (weight-in-volume)", "v/v (volume-in-volume)", "w/w (weight-in-weight)"],
+          "answer": "w/v (weight-in-volume)",
+          "hint": "Since we're dealing with the concentration of dextrose in a solution measured by volume, we use w/v percentage."
+        },
+        {
+          "text": "Set up the ratio and proportion",
+          "type": "OPERATION",
+          "operands1": [
+              {
+                "type": "fraction",
+                "numerator": "X g",
+                "denominator": {
+                    "type": "input",
+                    "answer": 5000,
+                    "unit": "mL"
+                }
+              },
+              {
+                "type": "fraction",
+                "numerator": {
+                    "type": "input",
+                    "answer": 7.5,
+                    "unit": "g"
+                },
+                "denominator": {
+                    "type": "input",
+                    "answer": 100,
+                    "unit": "mL"
+                }
+              }
+          ],
+          "operators1": ["="],
+          "hint": "Set up the proportion where X g/5000 mL = 7.5 g/100 mL to find the grams needed"
+        },
+        {
+          "text": "Solve for X",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "X"
+            },
+            {
+              "type": "input",
+              "answer": 375,
+              "unit": "g"
+            }
+          ],
+          "operators1": ["="],
+          "hint": "Multiply 7.5 g × 5000 mL ÷ 100 mL = 375 g of dextrose needed"
+        }
+      ]
+    },
+    {
+      "number": 18,
+      "tag": "ratio",
+      "question": "How many grams of potassium permanganate should be used in preparing 750 mL of a 1:3000 solution?",
+      "answerValue": [0.25],
+      "answerUnit": ["g"],
+      "rounding": false,
+      "steps": [
+        {
+          "text": "Identify the type of percentage strength",
+          "type": "MULTIPLE_CHOICE",
+          "options": ["w/v (weight-in-volume)", "v/v (volume-in-volume)", "w/w (weight-in-weight)"],
+          "answer": "w/v (weight-in-volume)",
+          "hint": "Since we're dealing with the concentration of dextrose in a solution measured by volume, we use w/v percentage."
+        },
+        {
+          "text": "Set up the ratio and proportion",
+          "type": "OPERATION",
+          "operands1": [
+              {
+              "type": "fraction",
+              "numerator": {
+                  "type": "input",
+                  "answer": 1,
+                  "unit": "g"
+              },
+              "denominator": {
+                  "type": "input",
+                  "answer": 3000,
+                  "unit": "mL"
+              }
+              },
+              {
+              "type": "fraction",
+              "numerator": {
+                "type": "text",
+                "value": "X g"
+              },
+              "denominator": {
+                "type": "input",
+                "answer": 750,
+                "unit": "mL"
+              }
+              }
+          ],
+          "operators1": ["="],
+          "hint": "Set up the proportion 1/3000 = X/750 to find the grams of potassium permanganate needed"
+        },
+        {
+          "text": "Solve for X",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "X"
+            },
+            {
+              "type": "input",
+              "answer": 0.25,
+              "unit": "g"
+            }
+          ],
+          "operators1": ["="],
+          "hint": "X = (1 × 750)/3000 = 0.25 g of potassium permanganate needed"
+        }
+      ]
+    },
+    {
+      "number": 19,
+      "tag": "ratio",
+      "question": "How many milligrams of hexachlorophene should be used in compounding the following prescription?<br> Hexachlorophene&nbsp;&nbsp;&nbsp;&nbsp;1:400<br> Hydrophilic Ointment ad&nbsp;&nbsp;&nbsp;&nbsp;20 g<br> Sig. Apply.",
+      "answerValue": [50],
+      "answerUnit": ["mg"],
+      "rounding": false,
+      "steps": [
+        {
+          "text": "Set up the ratio and proportion",
+          "type": "OPERATION",
+          "operands1": [
+              {
+              "type": "fraction",
+              "numerator": {
+                  "type": "input",
+                  "answer": 1,
+                  "unit": "g"
+              },
+              "denominator": {
+                  "type": "input",
+                  "answer": 400,
+                  "unit": "g"
+              }
+              },
+              {
+              "type": "fraction",
+              "numerator": {
+                "type": "text",
+                "value": "X g"
+              },
+              "denominator": {
+                "type": "input",
+                "answer": 20,
+                "unit": "g"
+              }
+              }
+          ],
+          "operators1": ["="],
+          "hint": "Set up the proportion 1/400 = X/20 to find the grams of hexachlorophene needed"
+        },
+        {
+          "text": "Solve for X",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "X"
+            },
+            {
+              "type": "input",
+              "answer": 0.05,
+              "unit": "g"
+            },
+            {
+              "type": "input",
+              "answer": 50,
+              "unit": "mg"
+            }
+          ],
+          "operators1": ["=", "="],
+          "hint": "X = (1 × 20)/400 = 0.05 g × 1000 mg/g = 50 mg of hexachlorophene needed"
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "tag": "ratio",
+      "question": "Convert 40% (w/v) to mg/mL ",
+      "answerValue": [400],
+      "answerUnit": ["mg/mL"],
+      "rounding": false,
+      "steps": [
+        {
+          "text": "Set up the ratio and proportion and convert to g/mL to mg/mL",
+          "type": "OPERATION",
+          "operands1": [
+              {
+              "type": "fraction",
+              "numerator": {
+                  "type": "input",
+                  "answer": 40,
+                  "unit": "g"
+              },
+              "denominator": {
+                  "type": "input",
+                  "answer": 100,
+                  "unit": "mL"
+              }
+              },
+              {
+              "type": "fraction",
+              "numerator": {
+                "type": "input",
+                "answer": 1000,
+                "unit": "mg"
+              },
+              "denominator": {
+                "type": "input",
+                "answer": 1,
+                "unit": "g"
+              }
+              }
+          ],
+          "operators1": ["×"],
+          "hint": "40 g/100 mL × 1000 mg/1 g to convert to mg/mL"
+        },
+        {
+          "text": "Solve for final concentration",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "fraction",
+              "numerator": {
+                  "type": "input",
+                  "answer": 40000,
+                  "unit": "mg"
+              },
+              "denominator": {
+                  "type": "input",
+                  "answer": 100,
+                  "unit": "mL"
+              }
+            },
+            {
+              "type": "input",
+              "answer": 400,
+              "unit": "mg/mL"
+            }
+          ],
+          "operators1": ["="],
+          "hint": "(40 × 1000 mg)/100 mL = 400 mg/mL"
+        }
+      ]
+    },
+    {
+      "number": 21,
+      "tag": "ratio",
+      "question": "Convert a product concentration of 1 g per 500 mL to mg/mL.",
+      "answerValue": [2],
+      "answerUnit": ["mg/mL"],
+      "rounding": false,
+      "steps": [
+        {
+          "text": "Set up the ratio and proportion and convert to g/mL to mg/mL",
+          "type": "OPERATION",
+          "operands1": [
+              {
+              "type": "fraction",
+              "numerator": {
+                  "type": "input",
+                  "answer": 1,
+                  "unit": "g"
+              },
+              "denominator": {
+                  "type": "input",
+                  "answer": 500,
+                  "unit": "mL"
+              }
+              },
+              {
+              "type": "fraction",
+              "numerator": {
+                "type": "input",
+                "answer": 1000,
+                "unit": "mg"
+              },
+              "denominator": {
+                "type": "input",
+                "answer": 1,
+                "unit": "g"
+              }
+              }
+          ],
+          "operators1": ["×"],
+          "hint": "1 g/500 mL × 1000 mg/1 g to convert to mg/mL"
+        },
+        {
+          "text": "Solve for final concentration",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "fraction",
+              "numerator": {
+                  "type": "input",
+                  "answer": 1000,
+                  "unit": "mg"
+              },
+              "denominator": {
+                  "type": "input",
+                  "answer": 500,
+                  "unit": "mL"
+              }
+            },
+            {
+              "type": "input",
+              "answer": 2,
+              "unit": "mg/mL"
+            }
+          ],
+          "operators1": ["="],
+          "hint": "(1 × 1000 mg)/500 mL = 2 mg/mL"
+        }
+      ]
+    },
+    {
+      "number": 22,
+      "tag": "ratio",
+      "question": "A vaginal cream contains 0.1% (w/v) of dienestrol. Express this concentration as a ratio strength. Write your answer as a ratio (e.g., 1:10000).",
+      "answerValue": ["1:1000"],
+      "answerUnit": [""],
+      "rounding": false,
+      "steps": [
+        {
+          "text": "Identify the type of percentage strength",
+          "type": "MULTIPLE_CHOICE",
+          "options": ["w/v (weight-in-volume)", "v/v (volume-in-volume)", "w/w (weight-in-weight)"],
+          "answer": "w/v (weight-in-volume)",
+          "hint": "Since we're dealing with weight of dienestrol in volume of cream, we use w/v percentage."
+        },
+        {
+          "text": "Set up the ratio and proportion",
+          "type": "OPERATION",
+          "operands1": [
+              {
+              "type": "fraction",
+              "numerator": {
+                  "type": "input",
+                  "answer": 0.1,
+                  "unit": "g"
+              },
+              "denominator": {
+                  "type": "input",
+                  "answer": 100,
+                  "unit": "mL"
+              }
+              },
+              {
+              "type": "fraction",
+              "numerator": {
+                "type": "input",
+                "answer": 1,
+                "unit": ""
+              },
+              "denominator": "X"
+              }
+          ],
+          "operators1": ["="],
+          "hint": "0.1 g/100 mL = 1 g/X mL"
+        },
+        {
+          "text": "Solve for X",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "X"
+            },
+            {
+              "type": "input",
+              "answer": 1000,
+              "unit": ""
+            },
+            {
+              "type": "text",
+              "value": "The ratio strength is"
+            },
+            {
+              "type": "input",
+              "answer": 1,
+              "unit": ""
+            },
+            {
+              "type": "input",
+              "answer": 1000,
+              "unit": ""
+            }
+          ],
+          "operators1": ["=", "", ":"],
+          "hint": "X = 1000, therefore the ratio strength is 1:1000"
+        }
+      ]
+    },
+    {
+      "number": 23,
+      "tag": "ratio",
+      "question": "If a liquid vitamin preparation contains 0.32 mcg of vitamin B12 per 10 mL, what is the ratio strength of the preparation? Write your answer as a ratio (e.g., 1:10000).",
+      "answerValue": ["1:31250000"],
+      "answerUnit": [""],
+      "rounding": false,
+      "steps": [
+        {
+          "text": "Identify the type of percentage strength",
+          "type": "MULTIPLE_CHOICE",
+          "options": ["w/v (weight-in-volume)", "v/v (volume-in-volume)", "w/w (weight-in-weight)"],
+          "answer": "w/v (weight-in-volume)",
+          "hint": "Since we're dealing with weight of vitamin B12 in volume of liquid preparation, we use w/v percentage."
+        },
+        {
+          "text": "Convert all units to standard units (i.e., g and mL)",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "0.32 mcg"
+            },
+            {
+              "type": "input",
+              "answer": 0.00000032,
+              "unit": "g"
+            }
+          ],
+          "operators1": ["="],
+          "hint": "0.32 mcg = 0.32 × 10^-6 g = 0.00000032 g"
+        },
+        {
+          "text": "Set up the ratio and proportion",
+          "type": "OPERATION",
+          "operands1": [
+              {
+              "type": "fraction",
+              "numerator": {
+                  "type": "input",
+                  "answer": 0.00000032,
+                  "unit": "g"
+              },
+              "denominator": {
+                  "type": "input",
+                  "answer": 10,
+                  "unit": "mL"
+              }
+              },
+              {
+              "type": "fraction",
+              "numerator": {
+                "type": "input",
+                "answer": 1,
+                "unit": ""
+              },
+              "denominator": "X"
+              }
+          ],
+          "operators1": ["="],
+          "hint": "0.00000032 g/10 mL = 1/X"
+        },
+        {
+          "text": "Solve for X",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "X"
+            },
+            {
+              "type": "input",
+              "answer": 31250000,
+              "unit": ""
+            },
+            {
+              "type": "text",
+              "value": "The ratio strength is"
+            },
+            {
+              "type": "input",
+              "answer": 1,
+              "unit": ""
+            },
+            {
+              "type": "input",
+              "answer": 31250000,
+              "unit": ""
+            }
+          ],
+          "operators1": ["=", "", ":"],
+          "hint": "X = (10 × 1)/0.00000032 = 31250000, therefore the ratio strength is 1:31250000"
+        }
+      ]
+    },
+    {
+      "number": 24,
+      "tag": "percentage",
+      "question": "How many grams of drug are needed to make the following preparation?<br> Drug&nbsp;&nbsp;&nbsp;&nbsp;1%<br> Solution qs ad&nbsp;&nbsp;&nbsp;&nbsp;2 quart<br> (qs ad = a sufficient quantity to make)",
+      "answerValue": [18.92],
+      "answerUnit": ["g"],
+      "rounding": false,
+      "steps": [
+        {
+          "text": "Identify the type of percentage strength",
+          "type": "MULTIPLE_CHOICE",
+          "options": ["w/v (weight-in-volume)", "v/v (volume-in-volume)", "w/w (weight-in-weight)"],
+          "answer": "w/v (weight-in-volume)",
+          "hint": "Since we're dealing with weight of drug in volume of solution, we use w/v percentage."
+        },
+        {
+          "text": "Convert all units to standard units (i.e., g and mL)",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "2 qt"
+            },
+            {
+              "type": "input",
+              "answer": 946,
+              "unit": "mL/qt"
+            },
+            {
+              "type": "input",
+              "answer": 1892,
+              "unit": "mL"
+            }
+          ],
+          "operators1": ["×", "="],
+          "hint": "Convert 2 quarts to mL: 2 × 946 mL = 1892 mL"
+        },
+        {
+          "text": "Set up the ratio and proportion",
+          "type": "OPERATION",
+          "operands1": [
+              {
+                "type": "fraction",
+                "numerator": "X g",
+                "denominator": {
+                    "type": "input",
+                    "answer": 1892,
+                    "unit": "mL"
+                }
+              },
+              {
+                "type": "fraction",
+                "numerator": {
+                    "type": "input",
+                    "answer": 1,
+                    "unit": "g"
+                },
+                "denominator": {
+                    "type": "input",
+                    "answer": 100,
+                    "unit": "mL"
+                }
+              }
+          ],
+          "operators1": ["="],
+          "hint": "Set up the proportion X g/1892 mL = 1 g/100 mL"
+        },
+        {
+          "text": "Solve for X",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "X"
+            },
+            {
+              "type": "input",
+              "answer": 18.92,
+              "unit": "g"
+            }
+          ],
+          "operators1": ["="],
+          "hint": "X = (1 × 1892)/100 = 18.92 g of drug needed"
+        }
+      ]
+    },
+    {
+      "number": 25,
+      "tag": "ratio",
+      "question": "A skin test for fire ant allergy involves the intradermal skin prick of 0.03 mL of a 1:1,000,000 (w/v) dilution of fire ant extract. How many micrograms of extract would be administered in this manner?",
+      "answerValue": [0.03],
+      "answerUnit": ["mcg"],
+      "rounding": false,
+      "steps": [
+        {
+          "text": "Set up the ratio and proportion and convert g/mL to mcg/mL",
+          "type": "OPERATION",
+          "operands1": [
+              {
+              "type": "fraction",
+              "numerator": {
+                  "type": "input",
+                  "answer": 1,
+                  "unit": "g"
+              },
+              "denominator": {
+                  "type": "input",
+                  "answer": 1000000,
+                  "unit": "mL"
+              }
+              },
+              {
+              "type": "fraction",
+              "numerator": {
+                "type": "input",
+                "answer": 1000000,
+                "unit": "mcg"
+              },
+              "denominator": {
+                "type": "input",
+                "answer": 1,
+                "unit": "g"
+              }
+              }
+          ],
+          "operators1": ["×"],
+          "hint": "1 g/1,000,000 mL × 1,000,000 mcg/1 g to convert to mcg/mL"
+        },
+        {
+          "text": "Solve for final concentration",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "fraction",
+              "numerator": {
+                  "type": "input",
+                  "answer": 1,
+                  "unit": "mcg"
+              },
+              "denominator": {
+                  "type": "input",
+                  "answer": 1,
+                  "unit": "mL"
+              }
+            },
+            {
+              "type": "input",
+              "answer": 0.03,
+              "unit": "mL"
+            },
+            {
+              "type": "input",
+              "answer": 0.03,
+              "unit": "mcg"
+            }
+          ],
+          "operators1": ["×", "="],
+          "hint": "1 mcg/mL × 0.03 mL = 0.03 mcg of extract administered"
+        }
+      ]
+    },
+    {
+      "number": 26,
+      "tag": "ratio",
+      "question": "How many grams of benzocaine should be used in compounding the following prescription? <br>Benzocaine&nbsp;&nbsp;&nbsp;&nbsp;3% <br> Polyethylene Glycol Base ad&nbsp;&nbsp;&nbsp;&nbsp;4 g <br> Make 16 such suppositories <br> Sig. Insert one as directed. ",
+      "answerValue": [1.92],
+      "answerUnit": ["g"],
+      "rounding": false,
+      "steps": [
+        {
+          "text": "Convert all units to standard units (i.e., g and mL) and calculate the total weight of the mixture",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "input",
+              "answer": 16,
+              "unit": "suppositories"
+            },
+            {
+              "type": "input",
+              "answer": 4,
+              "unit": "g/suppository"
+            },
+            {
+              "type": "input",
+              "answer": 64,
+              "unit": "g"
+            }
+          ],
+          "operators1": ["×", "="],
+          "hint": "Multiply number of suppositories by amount per suppository: 16 × 4 g = 64 g"
+        },
+        {
+          "text": "Set up the ratio and proportion",
+          "type": "OPERATION",
+          "operands1": [
+              {
+              "type": "fraction",
+              "numerator": {
+                  "type": "text",
+                  "value": "X g"
+              },
+              "denominator": {
+                "type": "input",
+                "answer": 64,
+                "unit": "g"
+              }
+              },
+              {
+              "type": "fraction",
+              "numerator": {
+                "type": "input",
+                "answer": 3,
+                "unit": ""
+              },
+              "denominator": {
+                "type": "input",
+                "answer": 100,
+                "unit": ""
+              }
+              }
+          ],
+          "operators1": ["="],
+          "hint": "X g/64 g = 3/100"
+        },
+        {
+          "text": "Solve for X",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "X"
+            },
+            {
+              "type": "input",
+              "answer": 1.92,
+              "unit": "g"
+            }
+          ],
+          "operators1": ["="],
+          "hint": "X = (3 × 64)/100 = 1.92 g of benzocaine needed"
+        }
+      ]
+    },
+    {
+      "number": 27,
+      "tag": "percentage",
+      "question": "A pharmacist adds 50 mL of a 10% solution of NaCl to a liter of water. What is the % of NaCl in the final solution? (Round final percentage to the nearest hundredth)",
+      "answerValue": [0.48],
+      "answerUnit": ["%"],
+      "rounding": false,
+      "steps": [
+        {
+          "text": "Identify the type of percentage strength",
+          "type": "MULTIPLE_CHOICE",
+          "options": ["w/v (weight-in-volume)", "v/v (volume-in-volume)", "w/w (weight-in-weight)"],
+          "answer": "w/v (weight-in-volume)",
+          "hint": "Since we're dealing with weight of NaCl in volume of solution, we use w/v percentage."
+        },
+        {
+          "text": "Convert all units to standard units (Find amount of NaCl in solution)",
+          "type": "OPERATION",
+          "operands1": [
+              {
+              "type": "fraction",
+              "numerator": {
+                  "type": "input",
+                  "answer": 10,
+                  "unit": "g"
+              },
+              "denominator": {
+                  "type": "input",
+                  "answer": 100,
+                  "unit": "mL"
+              }
+              },
+              {
+              "type": "input",
+              "answer": 50,
+              "unit": "mL"
+              },
+              {
+              "type": "input",
+              "answer": 5,
+              "unit": "g"
+              }
+          ],
+          "operators1": ["×", "="],
+          "hint": "10 g/100 mL × 50 mL = 5 g of NaCl"
+        },
+        {
+          "text": "Calculate total volume of solution",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "input",
+              "answer": 1000,
+              "unit": "mL"
+            },
+            {
+              "type": "input",
+              "answer": 50,
+              "unit": "mL"
+            },
+            {
+              "type": "input",
+              "answer": 1050,
+              "unit": "mL"
+            }
+          ],
+          "operators1": ["+", "="],
+          "hint": "1000 mL + 50 mL = 1050 mL total volume"
+        },
+        {
+          "text": "Calculate final percentage",
+          "type": "OPERATION",
+          "operands1": [
+              {
+              "type": "fraction",
+              "numerator": {
+                  "type": "input",
+                  "answer": 5,
+                  "unit": "g"
+              },
+              "denominator": {
+                  "type": "input",
+                  "answer": 1050,
+                  "unit": "mL"
+              }
+              },
+              {
+              "type": "fraction",
+              "numerator": {
+                  "type": "text",
+                  "value": "X"
+              },
+              "denominator": {
+                  "type": "input",
+                  "answer": 100,
+                  "unit": ""
+              }
+              }
+          ],
+          "operators1": ["="],
+          "hint": "5 g/1050 mL = X/100, solving for X gives 0.48%"
+        }
+      ]
+    }
+  ]
+}
+        

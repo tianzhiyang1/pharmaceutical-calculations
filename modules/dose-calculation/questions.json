@@ -1,0 +1,3253 @@
+{
+    "questions": [
+        {
+            "number": 1,
+            "tag": "weights",
+            "question": "Calculate the BMI of a person who is 4 ft 10 in tall and weighs 95 lb. Round your answer to the nearest whole number.",
+            "answerValue": [20],
+            "answerUnit": [""],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Convert height to inches",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "4 ft 10 in"
+                        },
+                        {
+                            "type": "text",
+                            "value": "4 ft"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 12,
+                            "unit": ""
+                        },
+                        {
+                            "type": "input",
+                            "answer": 10,
+                            "unit": "in"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 58,
+                            "unit": "in"
+                        }
+                    ],
+                    "operators1": ["= (", "×", ") +", "="],
+                    "hint": "The conversion factor for feet to inches is 12. Therefore, 4 ft is 4 × 12 = 48 in, and 4 ft 10 in is 48 in + 10 in = 58 in."
+                },
+                {
+                    "text": "Apply the BMI formula",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "BMI"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": "Weight (lbs)",
+                            "denominator": "[Height (in)]<sup>2</sup>"
+                        },
+                        {
+                            "type": "text",
+                            "value": "703"
+                        }
+                    ],
+                    "operators1": ["=", "×"],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "BMI"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 95,
+                                "unit": "lbs"
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": 58,
+                                "unit": "in<sup>2</sup>"
+                            }
+                        },
+                        {
+                            "type": "input",
+                            "answer": 703,
+                            "unit": ""
+                        },
+                        {
+                            "type": "input",
+                            "answer": 19.85,
+                            "unit": "(round to 2 decimal places)"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 20,
+                            "unit": "(round to the nearest whole number)"
+                        }
+                    ],
+                    "operators2": ["=", "×", "=", "="],
+                    "hint": "The weight is 95 lbs and the height is 58 in, so the BMI is 95 × 703 / 58<sup>2</sup> = 19.85. Rounding to the nearest whole number gives 20."
+                }
+            ]
+        },
+        {
+            "number": 2,
+            "tag": "weights",
+            "question": "DT is a 61-year-old female patient with primary humoral immunodeficiency. She is 5 feet 6 inches tall and weighs 303 lb. The dosing range for human immune globulin (BIVIGAM) is 300 to 800 mg/kg given intravenously every 3 to 4 weeks, and the patient's adjusted body weight should be used for dosing this drug since she is obese. What would be the dose range for this patient?",
+            "answerOptions": ["27.2 g - 72.5 g", "41.3 g - 110.2 g", "17.8 g - 47.4 g"],
+            "answerValue": ["27.2 g - 72.5 g"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Calculate the patient's adjusted body weight (AdjBW)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "ABW"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 303,
+                                "unit": "lbs"
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": 2.2,
+                                "unit": ""
+                            }
+                        },
+                        {
+                            "type": "input",
+                            "answer": 137.727,
+                            "unit": "kg (round to 3 decimal places)"
+                        }
+                    ],
+                    "operators1": ["=", "="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "IBW = 45.5 + 2.3 x (inches over 5 ft)"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 45.5,
+                            "unit": ""
+                        },
+                        {
+                            "type": "input",
+                            "answer": 2.3,
+                            "unit": ""
+                        },
+                        {
+                            "type": "input",
+                            "answer": 6,
+                            "unit": "in"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 59.3,
+                            "unit": "kg"
+                        }
+                    ],
+                    "operators2": ["=", "+", "×", "="],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "AdjBW<sub>0.4</sub> = IBW + 0.4 x (ABW – IBW)"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 59.3,
+                            "unit": "kg"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.4,
+                            "unit": ""
+                        },
+                        {
+                            "type": "input",
+                            "answer": 137.727,
+                            "unit": "kg"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 59.3,
+                            "unit": "kg"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 90.6708,
+                            "unit": "kg (keep four decimal places)"
+                        }
+                    ],
+                    "operators3": ["=", "+", "× (", "–", ") ="],
+                    "hint": "The patient's weight is 303 lbs, and the conversion factor from lbs to kg is 2.2. Therefore, the patient's adjusted body weight is 303 lbs / 2.2 = 137.727 kg. <br> IBW = 45.5 + 2.3 x (inches over 5 ft) = 45.5 + 2.3 x (66 – 5 × 12) = 59.3 kg<br>Using the formula AdjBW<sub>0.4</sub> = IBW + 0.4 x (ABW – IBW) = 59.3 + 0.4 x (137.727 – 59.3) = 90.6708 kg"
+                },
+                {
+                    "text": "Calculate the dose range (low and high doses)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "dose (low)"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.3,
+                            "unit": "g/kg"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 90.6708,
+                            "unit": "kg"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 27.2,
+                            "unit": "g (round to 1 decimal place)"
+                        }
+                    ],
+                    "operators1": ["=", "×", "="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "dose (high)"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.8,
+                            "unit": "g/kg"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 90.6708,
+                            "unit": "kg"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 72.5,
+                            "unit": "g (round to 1 decimal place)"
+                        }
+                    ],
+                    "operators2": ["=", "×", "="],
+                    "hint": "The low dose is 0.3 g/kg × 90.6708 kg = 27.2 g, and the high dose is 0.8 g/kg × 90.6708 kg = 72.5 g."
+                }
+            ]
+        },
+        {
+            "number": 3,
+            "tag": "crcl",
+            "question": "MR is a 70-year-old female who is 5′2″ tall and weighs 118 lb. Her serum creatinine is 1.3 mg/dL. Using the Cockcroft-Gault equation, what is her creatinine clearance (CrCl)? Round the final answer to one decimal place.",
+            "answerValue": [31.8],
+            "answerUnit": ["mL/min"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Calculate BMI",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Weight"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 118,
+                                "unit": "lbs"
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": 2.2,
+                                "unit": ""
+                            }
+                        },
+                        {
+                            "type": "input",
+                            "answer": 53.636,
+                            "unit": "kg (round to 3 decimal places)"
+                        }
+                    ],
+                    "operators1": ["=", "="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "Height"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 5,
+                            "unit": "ft"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 2,
+                            "unit": "in"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 62,
+                            "unit": "in"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 62,
+                            "unit": "in"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 2.54,
+                            "unit": "cm/in"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 157.48,
+                            "unit": "cm"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1.5748,
+                            "unit": "m"
+                        }
+                    ],
+                    "operators2": ["=", "", "=", "=", "×", "=", "="],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "BMI"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": "Weight (kg)",
+                            "denominator": "[Height (m)]<sup>2</sup>"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 53.636,
+                                "unit": "kg"
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": 1.5748,
+                                "unit": "m<sup>2</sup>"
+                            }
+                        },
+                        {
+                            "type": "input",
+                            "answer": 21.627,
+                            "unit": "(round to 3 decimal places)"
+                        }
+                    ],
+                    "operators3": ["=", "=", "="],
+                    "hint": "Converting height to meters: 5 ft 2 in = 5 × 12 + 2 = 62 in. 62 in × 2.54 cm/in = 157.48 cm. 157.48 cm / 100 = 1.5748 m. <br> Converting weight to kilograms: 118 lbs / 2.2 = 53.636 kg. <br> BMI = Weight (kg) / [Height (m)]<sup>2</sup> = 53.636 kg / 1.5748<sup>2</sup> m<sup>2</sup> = 21.627 kg/m<sup>2</sup>"
+                },
+                {
+                    "text": "Calculate IBW",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Height"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 5,
+                            "unit": "ft"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 2,
+                            "unit": "in"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 2,
+                            "unit": "inches over 5 ft"
+                        }
+                    ],
+                    "operators1": ["=", "", "→"],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "IBW = 45.5 + 2.3 x (inches over 5 ft)"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 45.5,
+                            "unit": ""
+                        },
+                        {
+                            "type": "input",
+                            "answer": 2.3,
+                            "unit": ""
+                        },
+                        {
+                            "type": "input",
+                            "answer": 2,
+                            "unit": "in"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 50.1,
+                            "unit": "kg"
+                        }
+                    ],
+                    "operators2": ["=", "+ (", "×", ") ="],
+                    "hint": "The patient's height is 5 ft 2 in, so the number of inches over 5 ft is 2 in. Therefore, the patient's IBW is 45.5 + 2.3 x (2 in) = 50.1 kg."
+                },
+                {
+                    "text": "Assess body weight use",
+                    "type": "MULTIPLE_CHOICE",
+                    "options": ["Use TBW because the patient is underweight", "Use IBW because the patient is normal weight", "Use AdjBW because the patient is overweight"],
+                    "answer": "Use IBW because the patient is normal weight",
+                    "hint": "The patient's BMI is 21.627, which is normal weight. Besides, her ABW is 56.636 kg, and her IBW is 50.1 kg, the difference isn't much, so we use IBW."
+                },
+                {
+                    "text": "Cockcroft-Gault to calculate CrCl",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "CrCl = 0.85"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": "(140 – Age in yrs) × (BW in kg)",
+                            "denominator": "72 × (SCr in mg/dL)"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.85,
+                            "unit": ""
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "operands": [
+                                    { "type": "text", "value": "( 140" },
+                                    { "type": "input", "answer": 70, "unit": "" },
+                                    { "type": "input", "answer": 50.1, "unit": "kg" }
+                                ],
+                                "operators": ["–", ") ×", "="]
+                            },
+                            "denominator": {
+                                "operands": [
+                                    { "type": "text", "value": "72" },
+                                    { "type": "input", "answer": 1.3, "unit": "mg/dL" }
+                                ],
+                                "operators": ["×"]
+                            }
+                        },
+                        {
+                            "type": "input",
+                            "answer": 31.8,
+                            "unit": "mL/min (round to 1 decimal place)"
+                        }
+                    ],
+                    "operators1": ["x", "=", "×", "="],
+                    "hint": "The patient's CrCl is 0.85 × (140 – 70) × (50.1 kg) / (72 × 1.3 mg/dL) = 31.8 mL/min."
+                }
+            ]
+        },
+        {
+            "number": 4,
+            "tag": "bsa",
+            "question": "The dose for a drug is 2.2 mg/m². What is the total dose, in mg, for an adult who weighs 156 lb and is 68 inches tall? Round the final answer to the nearest whole number.",
+            "answerValue": [4],
+            "answerUnit": ["mg"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Calculate weight and height",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Weight"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 156,
+                                "unit": "lbs"
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": 2.2,
+                                "unit": ""
+                            }
+                        },
+                        {
+                            "type": "input",
+                            "answer": 70.909,
+                            "unit": "kg (round to 3 decimal places)"
+                        }
+                    ],
+                    "operators1": ["=", "="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "Height"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 68,
+                            "unit": "in"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 2.54,
+                            "unit": "cm/in"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 172.72,
+                            "unit": "cm"
+                        }
+                    ],
+                    "operators2": ["=", "×", "="],
+                    "hint": "The patient's weight is 156 lbs, and the conversion factor from lbs to kg is 2.2. Therefore, the patient's weight is 156 lbs / 2.2 = 70.909 kg. <br> The patient's height is 68 inches, and the conversion factor from inches to cm is 2.54. Therefore, the patient's height is 68 inches × 2.54 cm/in = 172.72 cm."
+                },
+                {
+                    "text": "Calculate BSA (Mosteller formula)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "BSA"
+                        },
+                        {
+                            "type": "squareRoot",
+                            "radicand": {
+                                "type": "fraction",
+                                "numerator": {
+                                    "operands": [
+                                        { "type": "input", "answer": 70.909, "unit": "kg" },
+                                        { "type": "input", "answer": 172.72, "unit": "cm" }
+                                    ],
+                                    "operators": ["×"]
+                                },
+                                "denominator": {
+                                    "type": "input",
+                                    "answer": 3600,
+                                    "unit": ""
+                                }
+                            }
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1.84,
+                            "unit": "m<sup>2</sup>"
+                        }
+                    ],
+                    "operators1": ["=","="],
+                    "hint": "The patient's BSA is √(70.909 kg × 172.72 cm / 3600 cm<sup>2</sup>) = 1.84 m<sup>2</sup>."
+                },
+                {
+                    "text": "Calculate dose",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Dose"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 2.2,
+                            "unit": "mg/m<sup>2</sup>"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1.84,
+                            "unit": "m<sup>2</sup>"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 4.048,
+                            "unit": "mg (exact answer)"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 4,
+                            "unit": "mg (round to the nearest whole number)"
+                        }
+                    ],
+                    "operators1": ["=", "×", "=", "="],
+                    "hint": "The patient's dose is 2.2 mg/m<sup>2</sup> × 1.84 m<sup>2</sup> = 4.408 mg. Rounding to the nearest whole number gives 4 mg."
+                }
+            ]
+        },
+        {
+            "number": 5,
+            "tag": "weights",
+            "question": "Levofloxacin is ordered for an 87-year-old female who is 5′4″ tall and weighs 103 lb. Her SCr is 1.0 mg/dL. Choose the correct dosing regimen of levofloxacin based on the renal dosage adjustments from the package labeling below. ",
+            "answerOptions": ["500 mg Q24 hours", "250 mg Q24 hours", "250 mg Q48 hours"],
+            "answerValue": ["250 mg Q24 hours"],
+            "rounding": false,
+            "tableHeaders": ["CrCl (ml/min)", "> 50", "20-49", "< 20"],
+            "tableRows": [
+                [
+                    [{"type": "text", "value": "Dose"}],
+                    [{"type": "text", "value": "500 mg Q24 hours"}],
+                    [{"type": "text", "value": "250 mg Q24 hours"}],
+                    [{"type": "text", "value": "250 mg Q48 hours"}]
+                ]
+            ],
+            "steps": [
+                {
+                    "text": "Calculate BMI",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Weight"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 103,
+                                "unit": "lbs"
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": 2.2,
+                                "unit": ""
+                            }
+                        },
+                        {
+                            "type": "input",
+                            "answer": 46.818,
+                            "unit": "kg (round to 3 decimal places)"
+                        }
+                    ],
+                    "operators1": ["=", "="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "Height"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 5,
+                            "unit": "ft"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 4,
+                            "unit": "in"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 64,
+                            "unit": "in"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 64,
+                            "unit": "in"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 2.54,
+                            "unit": "cm/in"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 162.56,
+                            "unit": "cm"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1.6256,
+                            "unit": "m"
+                        }
+                    ],
+                    "operators2": ["=", "", "=", "=", "×", "=", "="],
+                    "operands3": [
+                        {
+                            "type": "text",
+                            "value": "BMI"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": "Weight (kg)",
+                            "denominator": "[Height (m)]<sup>2</sup>"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 46.818,
+                                "unit": "kg"
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": 1.6256,
+                                "unit": "m<sup>2</sup>"
+                            }
+                        },
+                        {
+                            "type": "input",
+                            "answer": 17.7,
+                            "unit": "(round to 1 decimal place)"
+                        }
+                    ],
+                    "operators3": ["=", "=", "="],
+                    "operands4": [
+                        {
+                            "type": "text",
+                            "value": "Double check IBW: IBW"
+                        },
+                        {
+                            "type": "text",
+                            "value": "45.5"
+                        },
+                        {
+                            "type": "text",
+                            "value": "2.3"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 4,
+                            "unit": "in"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 54.7,
+                            "unit": "kg"
+                        }
+                    ],
+                    "operators4": ["=", "+ (", "×", ") ="],
+                    "hint": "The patient's IBW is 45.5 kg + (2.3 kg × (54.7 in – 45.5 in)) = 54.7 kg."
+                },
+                {
+                    "text": "Determine which weight to use for CrCl",
+                    "type": "MULTIPLE_CHOICE",
+                    "options": ["IBW; the patient is underweight and her BMI is < 18.5", "ABW; the patient is overweight and her BMI is > 25", "ABW; the patient is normal weight and her BMI is 18.5-25"],
+                    "answer": "ABW; the patient is normal weight and her BMI is 18.5-25",
+                    "hint": "The patient's BMI is 17.7, which is underweight. Besides, her ABW is 54.7 kg, and her IBW is 45.5 kg, since her ABW is greater than her IBW, so we use ABW."
+                },
+                {
+                    "text": "Cockcroft-Gault to calculate CrCl",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "CrCl = 0.85"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": "(140 – Age in yrs) × (BW in kg)",
+                            "denominator": "72 × (SCr in mg/dL)"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.85,
+                            "unit": ""
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "operands": [
+                                    { "type": "text", "value": "( 140" },
+                                    { "type": "input", "answer": 87, "unit": "" },
+                                    { "type": "input", "answer": 46.818, "unit": "kg" }
+                                ],
+                                "operators": ["–", ") ×", "="]
+                            },
+                            "denominator": {
+                                "operands": [
+                                    { "type": "text", "value": "72" },
+                                    { "type": "input", "answer": 1, "unit": "mg/dL" }
+                                ],
+                                "operators": ["×"]
+                            }
+                        },
+                        {
+                            "type": "input",
+                            "answer": 29.2,
+                            "unit": "mL/min (round to 1 decimal place)"
+                        }
+                    ],
+                    "operators1": ["x", "=", "×", "="],
+                    "hint": "The patient's CrCl is (140 – 87) × (54.7 kg) / (72 × 1 mg/dL) = 29.2 mL/min."
+                },
+                {
+                    "text": "Determine which dose to use",
+                    "type": "MULTIPLE_CHOICE",
+                    "options": ["500 mg Q24 hours", "250 mg Q24 hours", "250 mg Q48 hours"],
+                    "answer": "250 mg Q24 hours",
+                    "hint": "The patient's CrCl is 29.2 mL/min, which is in the range of 20-49 mL/min, so we use 250 mg Q24 hours."
+                }
+            ]
+        },
+        {
+            "number": 6,
+            "tag": "weights",
+            "question": "Calculate the BMI of a person who is 150 centimeters tall and weighs 78 kg. Round your answer to the nearest whole number.",
+            "answerValue": [35],
+            "answerUnit": [""],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Convert height to meters",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "150 cm"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 150,
+                            "unit": "cm"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 100,
+                            "unit": ""
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1.5,
+                            "unit": "m"
+                        }
+                    ],
+                    "operators1": ["=", "÷", "="],
+                    "hint": "The conversion factor for centimeters to meters is 100. Therefore, 150 cm is 150 ÷ 100 = 1.5 m."
+                },
+                {
+                    "text": "Apply the BMI formula",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "BMI"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": "Weight (kg)",
+                            "denominator": "[Height (m)]<sup>2</sup>"
+                        }
+                    ],
+                    "operators1": ["="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "BMI"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "type": "input",
+                                "answer": 78,
+                                "unit": "kg"
+                            },
+                            "denominator": {
+                                "type": "input",
+                                "answer": 1.5,
+                                "unit": "m<sup>2</sup>"
+                            }
+                        },
+                        {
+                            "type": "input",
+                            "answer": 34.67,
+                            "unit": "(round to 2 decimal places)"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 35,
+                            "unit": "(round to the nearest whole number)"
+                        }
+                    ],
+                    "operators2": ["=", "=", "="],
+                    "hint": "The weight is 78 kg and the height is 1.5 m, so the BMI is 78 / 1.5<sup>2</sup> = 78 / 2.25 = 34.67. Rounding to the nearest whole number gives 35."
+                }
+            ]
+        },
+        {
+            "number": 7,
+            "tag": "weights",
+            "question": "Calculate the ideal body weight (IBW in kg) for Patient AB, a male who weighs 65 kg and is 172 cm tall. Round the answer to one decimal place.",
+            "answerValue": [67.7],
+            "answerUnit": ["kg"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Convert height from cm to inches",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "172 cm"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 172,
+                            "unit": "cm"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 2.54,
+                            "unit": "cm/in"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 67.72,
+                            "unit": "in (round to 2 decimal places)"
+                        }
+                    ],
+                    "operators1": ["=", "÷", "="],
+                    "hint": "The conversion factor from centimeters to inches is 2.54. Therefore, 172 cm is 172 ÷ 2.54 = 67.72 inches."
+                },
+                {
+                    "text": "Calculate inches over 5 feet",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "5 feet"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 5,
+                            "unit": "ft"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 12,
+                            "unit": "in/ft"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 60,
+                            "unit": "in"
+                        }
+                    ],
+                    "operators1": ["=", "×", "="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "inches over 5 ft"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 67.72,
+                            "unit": "in"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 60,
+                            "unit": "in"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 7.72,
+                            "unit": "in (round to 2 decimal places)"
+                        }
+                    ],
+                    "operators2": ["=", "–", "="],
+                    "hint": "5 feet equals 5 × 12 = 60 inches. The patient's height is 67.72 inches, so inches over 5 ft is 67.72 – 60 = 7.72 inches."
+                },
+                {
+                    "text": "Calculate IBW using male formula",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "IBW = 50 + 2.3 × (inches over 5 ft)"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 50,
+                            "unit": "kg"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 2.3,
+                            "unit": "kg/in"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 7.72,
+                            "unit": "in"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 67.756,
+                            "unit": "kg (exact calculation)"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 67.7,
+                            "unit": "kg (round to 1 decimal place)"
+                        }
+                    ],
+                    "operators1": ["=", "+ (", "×", ") =", "="],
+                    "hint": "Using the male IBW formula: IBW = 50 + 2.3 × (inches over 5 ft) = 50 + 2.3 × 7.72 = 50 + 17.756 = 67.756 kg. Rounding to one decimal place gives 67.7 kg."
+                }
+            ]
+        },
+        {
+            "number": 8,
+            "tag": "weights",
+            "question": "Calculate the ideal body weight (IBW in kg) for Patient JJ, a female who weighs 52 kg and is 165 cm tall. Round the answer to one decimal place.",
+            "answerValue": [56.9],
+            "answerUnit": ["kg"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Convert height from cm to inches",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "165 cm"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 165,
+                            "unit": "cm"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 2.54,
+                            "unit": "cm/in"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 64.96,
+                            "unit": "in (round to 2 decimal places)"
+                        }
+                    ],
+                    "operators1": ["=", "÷", "="],
+                    "hint": "The conversion factor from centimeters to inches is 2.54. Therefore, 165 cm is 165 ÷ 2.54 = 64.96 inches."
+                },
+                {
+                    "text": "Calculate inches over 5 feet",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "5 feet"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 5,
+                            "unit": "ft"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 12,
+                            "unit": "in/ft"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 60,
+                            "unit": "in"
+                        }
+                    ],
+                    "operators1": ["=", "×", "="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "inches over 5 ft"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 64.96,
+                            "unit": "in"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 60,
+                            "unit": "in"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 4.96,
+                            "unit": "in (round to 2 decimal places)"
+                        }
+                    ],
+                    "operators2": ["=", "–", "="],
+                    "hint": "5 feet equals 5 × 12 = 60 inches. The patient's height is 64.96 inches, so inches over 5 ft is 64.96 – 60 = 4.96 inches."
+                },
+                {
+                    "text": "Calculate IBW using female formula",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "IBW = 45.5 + 2.3 × (inches over 5 ft)"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 45.5,
+                            "unit": "kg"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 2.3,
+                            "unit": "kg/in"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 4.96,
+                            "unit": "in"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 56.908,
+                            "unit": "kg (exact calculation)"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 56.9,
+                            "unit": "kg (round to 1 decimal place)"
+                        }
+                    ],
+                    "operators1": ["=", "+ (", "×", ") =", "="],
+                    "hint": "Using the female IBW formula: IBW = 45.5 + 2.3 × (inches over 5 ft) = 45.5 + 2.3 × 4.96 = 45.5 + 11.408 = 56.908 kg. Rounding to one decimal place gives 56.9 kg."
+                }
+            ]
+        },
+        {
+            "number": 9,
+            "tag": "weights",
+            "question": "Calculate the ideal body weight (kg) for a male patient measuring 184 cm in height and weighing 165 lb.",
+            "answerValue": [78.6],
+            "answerUnit": ["kg"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Convert height from cm to inches",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "184 cm"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 184,
+                            "unit": "cm"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 2.54,
+                            "unit": "cm/in"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 72.44,
+                            "unit": "in (round to 2 decimal places)"
+                        }
+                    ],
+                    "operators1": ["=", "÷", "="],
+                    "hint": "The conversion factor from centimeters to inches is 2.54. Therefore, 184 cm is 184 ÷ 2.54 = 72.44 inches."
+                },
+                {
+                    "text": "Calculate inches over 5 feet",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "5 feet"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 5,
+                            "unit": "ft"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 12,
+                            "unit": "in/ft"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 60,
+                            "unit": "in"
+                        }
+                    ],
+                    "operators1": ["=", "×", "="],
+                    "operands2": [
+                        {
+                            "type": "text",
+                            "value": "inches over 5 ft"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 72.44,
+                            "unit": "in"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 60,
+                            "unit": "in"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 12.44,
+                            "unit": "in (round to 2 decimal places)"
+                        }
+                    ],
+                    "operators2": ["=", "–", "="],
+                    "hint": "5 feet equals 5 × 12 = 60 inches. The patient's height is 72.44 inches, so inches over 5 ft is 72.44 – 60 = 12.44 inches."
+                },
+                {
+                    "text": "Calculate IBW using male formula",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "IBW = 50 + 2.3 × (inches over 5 ft)"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 50,
+                            "unit": "kg"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 2.3,
+                            "unit": "kg/in"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 12.44,
+                            "unit": "in"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 78.612,
+                            "unit": "kg (exact calculation)"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 78.6,
+                            "unit": "kg (round to 1 decimal place)"
+                        }
+                    ],
+                    "operators1": ["=", "+ (", "×", ") =", "="],
+                    "hint": "Using the male IBW formula: IBW = 50 + 2.3 × (inches over 5 ft) = 50 + 2.3 × 12.44 = 50 + 28.612 = 78.612 kg. Rounding to one decimal place gives 78.6 kg."
+                }
+            ]
+        },
+        {
+            "number": 10,
+            "tag": "weights",
+            "question": "Jim is a 62-year-old male who is 70 inches tall and weighs 125 kg. What is Jim's adjusted body weight (AdjBW in kg)? Round to one decimal place.",
+            "answerValue": [93.8],
+            "answerUnit": ["kg"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Calculate inches over 5 feet",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "inches over 5 ft"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 70,
+                            "unit": "in"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 60,
+                            "unit": "in"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 10,
+                            "unit": "in"
+                        }
+                    ],
+                    "operators1": ["=", "–", "="],
+                    "hint": "5 feet equals 5 × 12 = 60 inches. The patient's height is 70 inches, so inches over 5 ft is 70 – 60 = 10 inches."
+                },
+                {
+                    "text": "Calculate IBW using male formula",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "IBW = 50 + 2.3 × (inches over 5 ft)"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 50,
+                            "unit": "kg"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 2.3,
+                            "unit": "kg/in"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 10,
+                            "unit": "in"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 73,
+                            "unit": "kg"
+                        }
+                    ],
+                    "operators1": ["=", "+ (", "×", ") ="],
+                    "hint": "Using the male IBW formula: IBW = 50 + 2.3 × (inches over 5 ft) = 50 + 2.3 × 10 = 50 + 23 = 73 kg."
+                },
+                {
+                    "text": "Calculate adjusted body weight (AdjBW)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "AdjBW<sub>0.4</sub> = IBW + 0.4 × (ABW – IBW)"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 73,
+                            "unit": "kg"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.4,
+                            "unit": ""
+                        },
+                        {
+                            "type": "input",
+                            "answer": 125,
+                            "unit": "kg"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 73,
+                            "unit": "kg"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 93.8,
+                            "unit": "kg (round to 1 decimal place)"
+                        }
+                    ],
+                    "operators1": ["=", "+", "× (", "–", ") ="],
+                    "hint": "Using the AdjBW formula: AdjBW<sub>0.4</sub> = IBW + 0.4 × (ABW – IBW) = 73 + 0.4 × (125 – 73) = 73 + 0.4 × 52 = 73 + 20.8 = 93.8 kg."
+                }
+            ]
+        },
+        {
+            "number": 11,
+            "tag": "weights",
+            "question": "Calculate the adjusted body weight (AdjBW) in kilograms for a 50-year-old male who is 5 feet 11 inches tall and weighs 288 lb. Round your final answer to one decimal place.",
+            "answerValue": [97.5],
+            "answerUnit": ["kg"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Convert weight from lbs to kg",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "288 lb"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 288,
+                            "unit": "lbs"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 2.2,
+                            "unit": "lbs/kg"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 130.909,
+                            "unit": "kg (round to 3 decimal places)"
+                        }
+                    ],
+                    "operators1": ["=", "÷", "="],
+                    "hint": "The conversion factor from pounds to kilograms is 2.2. Therefore, 288 lbs is 288 ÷ 2.2 = 130.909 kg."
+                },
+                {
+                    "text": "Calculate total height in inches",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "5 ft 11 in"
+                        },
+                        {
+                            "type": "text",
+                            "value": "5 ft"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 12,
+                            "unit": "in/ft"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 11,
+                            "unit": "in"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 71,
+                            "unit": "in"
+                        }
+                    ],
+                    "operators1": ["= (", "×", ") +", "="],
+                    "hint": "The conversion factor for feet to inches is 12. Therefore, 5 ft is 5 × 12 = 60 in, and 5 ft 11 in is 60 in + 11 in = 71 in."
+                },
+                {
+                    "text": "Calculate inches over 5 feet",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "inches over 5 ft"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 71,
+                            "unit": "in"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 60,
+                            "unit": "in"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 11,
+                            "unit": "in"
+                        }
+                    ],
+                    "operators1": ["=", "–", "="],
+                    "hint": "5 feet equals 5 × 12 = 60 inches. The patient's height is 71 inches, so inches over 5 ft is 71 – 60 = 11 inches."
+                },
+                {
+                    "text": "Calculate IBW using male formula",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "IBW = 50 + 2.3 × (inches over 5 ft)"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 50,
+                            "unit": "kg"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 2.3,
+                            "unit": "kg/in"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 11,
+                            "unit": "in"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 75.3,
+                            "unit": "kg"
+                        }
+                    ],
+                    "operators1": ["=", "+ (", "×", ") ="],
+                    "hint": "Using the male IBW formula: IBW = 50 + 2.3 × (inches over 5 ft) = 50 + 2.3 × 11 = 50 + 25.3 = 75.3 kg."
+                },
+                {
+                    "text": "Calculate adjusted body weight (AdjBW)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "AdjBW<sub>0.4</sub> = IBW + 0.4 × (ABW – IBW)"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 75.3,
+                            "unit": "kg"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.4,
+                            "unit": ""
+                        },
+                        {
+                            "type": "input",
+                            "answer": 130.909,
+                            "unit": "kg"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 75.3,
+                            "unit": "kg"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 97.5,
+                            "unit": "kg (round to 1 decimal place)"
+                        }
+                    ],
+                    "operators1": ["=", "+", "× (", "–", ") ="],
+                    "hint": "Using the AdjBW formula: AdjBW<sub>0.4</sub> = IBW + 0.4 × (ABW – IBW) = 75.3 + 0.4 × (130.909 – 75.3) = 75.3 + 0.4 × 55.609 = 75.3 + 22.244 = 97.544 kg. Rounding to one decimal place gives 97.5 kg."
+                }
+            ]
+        },
+        {
+            "number": 12,
+            "tag": "weights",
+            "question": "Calculate the adjusted body weight (AdjBW) in kilograms for a 64-year-old female who is 5 feet 4 inches tall and weighs 202 lb. Round your final answer to one decimal place.",
+            "answerValue": [69.5],
+            "answerUnit": ["kg"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Convert weight from lbs to kg",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "202 lb"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 202,
+                            "unit": "lbs"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 2.2,
+                            "unit": "lbs/kg"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 91.818,
+                            "unit": "kg (round to 3 decimal places)"
+                        }
+                    ],
+                    "operators1": ["=", "÷", "="],
+                    "hint": "The conversion factor from pounds to kilograms is 2.2. Therefore, 202 lbs is 202 ÷ 2.2 = 91.818 kg."
+                },
+                {
+                    "text": "Calculate total height in inches",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "5 ft 4 in"
+                        },
+                        {
+                            "type": "text",
+                            "value": "5 ft"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 12,
+                            "unit": "in/ft"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 4,
+                            "unit": "in"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 64,
+                            "unit": "in"
+                        }
+                    ],
+                    "operators1": ["= (", "×", ") +", "="],
+                    "hint": "The conversion factor for feet to inches is 12. Therefore, 5 ft is 5 × 12 = 60 in, and 5 ft 4 in is 60 in + 4 in = 64 in."
+                },
+                {
+                    "text": "Calculate inches over 5 feet",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "inches over 5 ft"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 64,
+                            "unit": "in"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 60,
+                            "unit": "in"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 4,
+                            "unit": "in"
+                        }
+                    ],
+                    "operators1": ["=", "–", "="],
+                    "hint": "5 feet equals 5 × 12 = 60 inches. The patient's height is 64 inches, so inches over 5 ft is 64 – 60 = 4 inches."
+                },
+                {
+                    "text": "Calculate IBW using female formula",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "IBW = 45.5 + 2.3 × (inches over 5 ft)"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 45.5,
+                            "unit": "kg"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 2.3,
+                            "unit": "kg/in"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 4,
+                            "unit": "in"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 54.7,
+                            "unit": "kg"
+                        }
+                    ],
+                    "operators1": ["=", "+ (", "×", ") ="],
+                    "hint": "Using the female IBW formula: IBW = 45.5 + 2.3 × (inches over 5 ft) = 45.5 + 2.3 × 4 = 45.5 + 9.2 = 54.7 kg."
+                },
+                {
+                    "text": "Calculate adjusted body weight (AdjBW)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "AdjBW<sub>0.4</sub> = IBW + 0.4 × (ABW – IBW)"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 54.7,
+                            "unit": "kg"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 0.4,
+                            "unit": ""
+                        },
+                        {
+                            "type": "input",
+                            "answer": 91.818,
+                            "unit": "kg"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 54.7,
+                            "unit": "kg"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 69.5,
+                            "unit": "kg (round to 1 decimal place)"
+                        }
+                    ],
+                    "operators1": ["=", "+", "× (", "–", ") ="],
+                    "hint": "Using the AdjBW formula: AdjBW<sub>0.4</sub> = IBW + 0.4 × (ABW – IBW) = 54.7 + 0.4 × (91.818 – 54.7) = 54.7 + 0.4 × 37.118 = 54.7 + 14.847 = 69.547 kg. Rounding to one decimal place gives 69.5 kg."
+                }
+            ]
+        },
+        {
+            "number": 13,
+            "tag": "weights",
+            "question": "A female patient is to receive 5 mg/kg/day of theophylline. The patient is 5'7\" and weighs 243 lb. The dose should be calculated based on ABW in underweight patients and IBW in normal weight, overweight, and obese patients. Calculate the daily theophylline dose the patient should receive in milligrams. Round to the nearest whole number.",
+            "answerValue": [308],
+            "answerUnit": ["mg"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Convert weight from lbs to kg",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "243 lb"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 243,
+                            "unit": "lbs"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 2.2,
+                            "unit": "lbs/kg"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 110.455,
+                            "unit": "kg (round to 3 decimal places)"
+                        }
+                    ],
+                    "operators1": ["=", "÷", "="],
+                    "hint": "The conversion factor from pounds to kilograms is 2.2. Therefore, 243 lbs is 243 ÷ 2.2 = 110.455 kg."
+                },
+                {
+                    "text": "Calculate total height in inches",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "5 ft 7 in"
+                        },
+                        {
+                            "type": "text",
+                            "value": "5 ft"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 12,
+                            "unit": "in/ft"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 7,
+                            "unit": "in"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 67,
+                            "unit": "in"
+                        }
+                    ],
+                    "operators1": ["= (", "×", ") +", "="],
+                    "hint": "The conversion factor for feet to inches is 12. Therefore, 5 ft is 5 × 12 = 60 in, and 5 ft 7 in is 60 in + 7 in = 67 in."
+                },
+                {
+                    "text": "Calculate inches over 5 feet",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "inches over 5 ft"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 67,
+                            "unit": "in"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 60,
+                            "unit": "in"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 7,
+                            "unit": "in"
+                        }
+                    ],
+                    "operators1": ["=", "–", "="],
+                    "hint": "5 feet equals 5 × 12 = 60 inches. The patient's height is 67 inches, so inches over 5 ft is 67 – 60 = 7 inches."
+                },
+                {
+                    "text": "Calculate IBW using female formula",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "IBW = 45.5 + 2.3 × (inches over 5 ft)"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 45.5,
+                            "unit": "kg"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 2.3,
+                            "unit": "kg/in"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 7,
+                            "unit": "in"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 61.6,
+                            "unit": "kg"
+                        }
+                    ],
+                    "operators1": ["=", "+ (", "×", ") ="],
+                    "hint": "Using the female IBW formula: IBW = 45.5 + 2.3 × (inches over 5 ft) = 45.5 + 2.3 × 7 = 45.5 + 16.1 = 61.6 kg."
+                },
+                {
+                    "text": "Determine which weight to use for dosing",
+                    "type": "MULTIPLE_CHOICE",
+                    "options": ["Use ABW because the patient is underweight", "Use IBW because the patient is normal weight", "Use IBW because the patient is overweight/obese"],
+                    "answer": "Use IBW because the patient is overweight/obese",
+                    "hint": "The patient's ABW is 110.455 kg and her IBW is 61.6 kg. Since her ABW is significantly greater than her IBW, she is overweight/obese. Therefore, we use IBW for dosing."
+                },
+                {
+                    "text": "Calculate daily theophylline dose",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "Daily dose"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 5,
+                            "unit": "mg/kg/day"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 61.6,
+                            "unit": "kg"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 308,
+                            "unit": "mg (round to the nearest whole number)"
+                        }
+                    ],
+                    "operators1": ["=", "×", "="],
+                    "hint": "The daily dose is 5 mg/kg/day × 61.6 kg = 308 mg. Rounding to the nearest whole number gives 308 mg."
+                }
+            ]
+        },
+        {
+            "number": 14,
+            "tag": "crcl",
+            "question": "LH is a 65-year-old male who weighs 168 lb and is 5′11″ tall. His serum creatinine is 1.2 mg/dL. Using the Cockcroft-Gault equation, what is his creatinine clearance? Round the final answer to one decimal place.",
+            "answerValue": [65.4],
+            "answerUnit": ["mL/min"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Convert weight from lbs to kg",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "168 lb"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 168,
+                            "unit": "lbs"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 2.2,
+                            "unit": "lbs/kg"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 76.364,
+                            "unit": "kg (round to 3 decimal places)"
+                        }
+                    ],
+                    "operators1": ["=", "÷", "="],
+                    "hint": "The conversion factor from pounds to kilograms is 2.2. Therefore, 168 lbs is 168 ÷ 2.2 = 76.364 kg."
+                },
+                {
+                    "text": "Calculate total height in inches",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "5 ft 11 in"
+                        },
+                        {
+                            "type": "text",
+                            "value": "5 ft"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 12,
+                            "unit": "in/ft"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 11,
+                            "unit": "in"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 71,
+                            "unit": "in"
+                        }
+                    ],
+                    "operators1": ["= (", "×", ") +", "="],
+                    "hint": "The conversion factor for feet to inches is 12. Therefore, 5 ft is 5 × 12 = 60 in, and 5 ft 11 in is 60 in + 11 in = 71 in."
+                },
+                {
+                    "text": "Calculate inches over 5 feet",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "inches over 5 ft"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 71,
+                            "unit": "in"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 60,
+                            "unit": "in"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 11,
+                            "unit": "in"
+                        }
+                    ],
+                    "operators1": ["=", "–", "="],
+                    "hint": "5 feet equals 5 × 12 = 60 inches. The patient's height is 71 inches, so inches over 5 ft is 71 – 60 = 11 inches."
+                },
+                {
+                    "text": "Calculate IBW using male formula",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "IBW = 50 + 2.3 × (inches over 5 ft)"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 50,
+                            "unit": "kg"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 2.3,
+                            "unit": "kg/in"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 11,
+                            "unit": "in"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 75.3,
+                            "unit": "kg"
+                        }
+                    ],
+                    "operators1": ["=", "+ (", "×", ") ="],
+                    "hint": "Using the male IBW formula: IBW = 50 + 2.3 × (inches over 5 ft) = 50 + 2.3 × 11 = 50 + 25.3 = 75.3 kg."
+                },
+                {
+                    "text": "Assess body weight use",
+                    "type": "MULTIPLE_CHOICE",
+                    "options": ["Use TBW because the patient is underweight", "Use TBW because the patient is normal weight", "Use AdjBW because the patient is overweight"],
+                    "answer": "Use IBW because the patient is normal weight",
+                    "hint": "The patient's ABW is 76.364 kg and his IBW is 75.3 kg. Since ABW ≈ IBW (normal weight) and the difference is minimal, we use IBW for the CrCl calculation."
+                },
+                {
+                    "text": "Cockcroft-Gault to calculate CrCl",
+                    "type": "OPERATION",
+                    "operands1": [
+                        {
+                            "type": "text",
+                            "value": "CrCl = 1.0"
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": "(140 – Age in yrs) × (BW in kg)",
+                            "denominator": "72 × (SCr in mg/dL)"
+                        },
+                        {
+                            "type": "input",
+                            "answer": 1.0,
+                            "unit": ""
+                        },
+                        {
+                            "type": "fraction",
+                            "numerator": {
+                                "operands": [
+                                    { "type": "text", "value": "( 140" },
+                                    { "type": "input", "answer": 65, "unit": "" },
+                                    { "type": "input", "answer": 75.3, "unit": "kg" }
+                                ],
+                                "operators": ["–", ") ×", "="]
+                            },
+                            "denominator": {
+                                "operands": [
+                                    { "type": "text", "value": "72" },
+                                    { "type": "input", "answer": 1.2, "unit": "mg/dL" }
+                                ],
+                                "operators": ["×"]
+                            }
+                        },
+                        {
+                            "type": "input",
+                            "answer": 65.4,
+                            "unit": "mL/min (round to 1 decimal place)"
+                        }
+                    ],
+                    "operators1": ["x", "=", "×", "="],
+                    "hint": "The patient's CrCl is 1.0 × (140 – 65) × (75.3 kg) / (72 × 1.2 mg/dL) = 1.0 × 75 × 75.3 / 86.4 = 5647.5 / 86.4 = 65.4 mL/min."
+                }
+            ]
+        },
+        {
+            "number": 15,
+            "tag": "crcl",
+            "question": "KL is a 59-year-old female who weighs 200 lb and is 5′3″ tall. Her serum creatinine is 1.5 mg/dL. Using the Cockcroft-Gault equation, what is her creatinine clearance? Round the final answer to one decimal place.",
+            "answerValue": [43.3],
+            "answerUnit": ["mL/min"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Convert weight from lbs to kg",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "200 lb" },
+                        { "type": "input", "answer": 200, "unit": "lbs" },
+                        { "type": "input", "answer": 2.2, "unit": "lbs/kg" },
+                        { "type": "input", "answer": 90.909, "unit": "kg (round to 3 decimal places)" }
+                    ],
+                    "operators1": ["=", "÷", "="],
+                    "hint": "The conversion factor from pounds to kilograms is 2.2. Therefore, 200 lbs is 200 ÷ 2.2 = 90.909 kg."
+                },
+                {
+                    "text": "Calculate total height in inches",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "5 ft 3 in" },
+                        { "type": "text", "value": "5 ft" },
+                        { "type": "input", "answer": 12, "unit": "in/ft" },
+                        { "type": "input", "answer": 3, "unit": "in" },
+                        { "type": "input", "answer": 63, "unit": "in" }
+                    ],
+                    "operators1": ["= (", "×", ") +", "="],
+                    "hint": "The conversion factor for feet to inches is 12. Therefore, 5 ft is 5 × 12 = 60 in, and 5 ft 3 in is 60 in + 3 in = 63 in."
+                },
+                {
+                    "text": "Calculate inches over 5 feet",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "inches over 5 ft" },
+                        { "type": "input", "answer": 63, "unit": "in" },
+                        { "type": "input", "answer": 60, "unit": "in" },
+                        { "type": "input", "answer": 3, "unit": "in" }
+                    ],
+                    "operators1": ["=", "–", "="],
+                    "hint": "5 feet equals 5 × 12 = 60 inches. The patient's height is 63 inches, so inches over 5 ft is 63 – 60 = 3 inches."
+                },
+                {
+                    "text": "Calculate IBW using female formula",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "IBW = 45.5 + 2.3 × (inches over 5 ft)" },
+                        { "type": "input", "answer": 45.5, "unit": "kg" },
+                        { "type": "input", "answer": 2.3, "unit": "kg/in" },
+                        { "type": "input", "answer": 3, "unit": "in" },
+                        { "type": "input", "answer": 52.4, "unit": "kg" }
+                    ],
+                    "operators1": ["=", "+ (", "×", ") ="],
+                    "hint": "Using the female IBW formula: IBW = 45.5 + 2.3 × (inches over 5 ft) = 45.5 + 2.3 × 3 = 45.5 + 6.9 = 52.4 kg."
+                },
+                {
+                    "text": "Assess body weight use",
+                    "type": "MULTIPLE_CHOICE",
+                    "options": ["Use TBW because the patient is underweight", "Use IBW because the patient is normal weight", "Use AdjBW because the patient is overweight"],
+                    "answer": "Use AdjBW because the patient is overweight",
+                    "hint": "The patient's ABW is 90.909 kg and her IBW is 52.4 kg. Since ABW > 120% of IBW, she is overweight, so we use AdjBW for the CrCl calculation."
+                },
+                {
+                    "text": "Calculate adjusted body weight (AdjBW)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "AdjBW<sub>0.4</sub> = IBW + 0.4 × (ABW – IBW)" },
+                        { "type": "input", "answer": 52.4, "unit": "kg" },
+                        { "type": "input", "answer": 0.4, "unit": "" },
+                        { "type": "input", "answer": 90.909, "unit": "kg" },
+                        { "type": "input", "answer": 52.4, "unit": "kg" },
+                        { "type": "input", "answer": 67.8, "unit": "kg (round to 1 decimal place)" }
+                    ],
+                    "operators1": ["=", "+", "× (", "–", ") ="],
+                    "hint": "Using the AdjBW formula: AdjBW<sub>0.4</sub> = IBW + 0.4 × (ABW – IBW) = 52.4 + 0.4 × (90.909 – 52.4) = 52.4 + 0.4 × 38.509 = 52.4 + 15.4 = 67.3 kg."
+                },
+                {
+                    "text": "Cockcroft-Gault to calculate CrCl",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "CrCl = 0.85" },
+                        { "type": "fraction", "numerator": "(140 – Age in yrs) × (BW in kg)", "denominator": "72 × (SCr in mg/dL)" },
+                        { "type": "input", "answer": 0.85, "unit": "" },
+                        { "type": "fraction",
+                            "numerator": {
+                                "operands": [
+                                    { "type": "text", "value": "( 140" },
+                                    { "type": "input", "answer": 59, "unit": "" },
+                                    { "type": "input", "answer": 67.8, "unit": "kg" }
+                                ],
+                                "operators": ["–", ") ×", "="]
+                            },
+                            "denominator": {
+                                "operands": [
+                                    { "type": "text", "value": "72" },
+                                    { "type": "input", "answer": 1.5, "unit": "mg/dL" }
+                                ],
+                                "operators": ["×"]
+                            }
+                        },
+                        { "type": "input", "answer": 43.3, "unit": "mL/min (round to 1 decimal place)" }
+                    ],
+                    "operators1": ["x", "=", "×", "="],
+                    "hint": "The patient's CrCl is 0.85 × (140 – 59) × (67.8 kg) / (72 × 1.5 mg/dL) = 0.85 × 81 × 67.8 / 108 = 0.85 × 5451.3 / 108 = 4633.6 / 108 = 43.3 mL/min."
+                }
+            ]
+        },
+        {
+            "number": 16,
+            "tag": "crcl",
+            "question": "DS is a 68-year-old male who weighs 260 lb and is 6′0″ tall. His serum creatinine is 1.8 mg/dL. Using the Cockcroft-Gault equation, what is his creatinine clearance? Round the final answer to one decimal place.",
+            "answerValue": [52.1],
+            "answerUnit": ["mL/min"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Convert weight from lbs to kg",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "260 lb" },
+                        { "type": "input", "answer": 260, "unit": "lbs" },
+                        { "type": "input", "answer": 2.2, "unit": "lbs/kg" },
+                        { "type": "input", "answer": 118.182, "unit": "kg (round to 3 decimal places)" }
+                    ],
+                    "operators1": ["=", "÷", "="],
+                    "hint": "The conversion factor from pounds to kilograms is 2.2. Therefore, 260 lbs is 260 ÷ 2.2 = 118.182 kg."
+                },
+                {
+                    "text": "Calculate total height in inches",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "6 ft 0 in" },
+                        { "type": "text", "value": "6 ft" },
+                        { "type": "input", "answer": 12, "unit": "in/ft" },
+                        { "type": "input", "answer": 0, "unit": "in" },
+                        { "type": "input", "answer": 72, "unit": "in" }
+                    ],
+                    "operators1": ["= (", "×", ") +", "="],
+                    "hint": "The conversion factor for feet to inches is 12. Therefore, 6 ft is 6 × 12 = 72 in, and 6 ft 0 in is 72 in + 0 in = 72 in."
+                },
+                {
+                    "text": "Calculate inches over 5 feet",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "inches over 5 ft" },
+                        { "type": "input", "answer": 72, "unit": "in" },
+                        { "type": "input", "answer": 60, "unit": "in" },
+                        { "type": "input", "answer": 12, "unit": "in" }
+                    ],
+                    "operators1": ["=", "–", "="],
+                    "hint": "5 feet equals 5 × 12 = 60 inches. The patient's height is 72 inches, so inches over 5 ft is 72 – 60 = 12 inches."
+                },
+                {
+                    "text": "Calculate IBW using male formula",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "IBW = 50 + 2.3 × (inches over 5 ft)" },
+                        { "type": "input", "answer": 50, "unit": "kg" },
+                        { "type": "input", "answer": 2.3, "unit": "kg/in" },
+                        { "type": "input", "answer": 12, "unit": "in" },
+                        { "type": "input", "answer": 77.6, "unit": "kg" }
+                    ],
+                    "operators1": ["=", "+ (", "×", ") ="],
+                    "hint": "Using the male IBW formula: IBW = 50 + 2.3 × (inches over 5 ft) = 50 + 2.3 × 12 = 50 + 27.6 = 77.6 kg."
+                },
+                {
+                    "text": "Assess body weight use",
+                    "type": "MULTIPLE_CHOICE",
+                    "options": ["Use TBW because the patient is underweight", "Use IBW because the patient is normal weight", "Use AdjBW because the patient is overweight"],
+                    "answer": "Use AdjBW because the patient is overweight",
+                    "hint": "The patient's ABW is 118.182 kg and his IBW is 77.6 kg. Since ABW > 120% of IBW, he is overweight, so we use AdjBW for the CrCl calculation."
+                },
+                {
+                    "text": "Calculate adjusted body weight (AdjBW)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "AdjBW<sub>0.4</sub> = IBW + 0.4 × (ABW – IBW)" },
+                        { "type": "input", "answer": 77.6, "unit": "kg" },
+                        { "type": "input", "answer": 0.4, "unit": "" },
+                        { "type": "input", "answer": 118.182, "unit": "kg" },
+                        { "type": "input", "answer": 77.6, "unit": "kg" },
+                        { "type": "input", "answer": 93.8, "unit": "kg (round to 1 decimal place)" }
+                    ],
+                    "operators1": ["=", "+", "× (", "–", ") ="],
+                    "hint": "Using the AdjBW formula: AdjBW<sub>0.4</sub> = IBW + 0.4 × (ABW – IBW) = 77.6 + 0.4 × (118.182 – 77.6) = 77.6 + 0.4 × 40.582 = 77.6 + 16.2 = 93.8 kg (rounded to 94.1 kg)."
+                },
+                {
+                    "text": "Cockcroft-Gault to calculate CrCl",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "CrCl = 1.0" },
+                        { "type": "fraction", "numerator": "(140 – Age in yrs) × (BW in kg)", "denominator": "72 × (SCr in mg/dL)" },
+                        { "type": "input", "answer": 1.0, "unit": "" },
+                        { "type": "fraction",
+                            "numerator": {
+                                "operands": [
+                                    { "type": "text", "value": "( 140" },
+                                    { "type": "input", "answer": 68, "unit": "" },
+                                    { "type": "input", "answer": 93.8, "unit": "kg" }
+                                ],
+                                "operators": ["–", ") ×", "="]
+                            },
+                            "denominator": {
+                                "operands": [
+                                    { "type": "text", "value": "72" },
+                                    { "type": "input", "answer": 1.8, "unit": "mg/dL" }
+                                ],
+                                "operators": ["×"]
+                            }
+                        },
+                        { "type": "input", "answer": 52.1, "unit": "mL/min (round to 1 decimal place)" }
+                    ],
+                    "operators1": ["x", "=", "×", "="],
+                    "hint": "The patient's CrCl is 1.0 × (140 – 68) × (93.8 kg) / (72 × 1.8 mg/dL) = 1.0 × 72 × 93.8 / 129.6 = 6775.2 / 129.6 = 52.1 mL/min."
+                }
+            ]
+        },
+        {
+            "number": 17,
+            "tag": "crcl",
+            "question": "JS is a 76-year-old female who is 5′5″ tall and weighs 90 lb. Her serum creatinine is 1.1 mg/dL. Using the Cockcroft-Gault equation, what is her creatinine clearance (CrCl)? Round the final answer to one decimal place.",
+            "answerValue": [28.1],
+            "answerUnit": ["mL/min"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Convert weight from lbs to kg",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "90 lb" },
+                        { "type": "input", "answer": 90, "unit": "lbs" },
+                        { "type": "input", "answer": 2.2, "unit": "lbs/kg" },
+                        { "type": "input", "answer": 40.909, "unit": "kg (round to 3 decimal places)" }
+                    ],
+                    "operators1": ["=", "÷", "="],
+                    "hint": "The conversion factor from pounds to kilograms is 2.2. Therefore, 90 lbs is 90 ÷ 2.2 = 40.909 kg."
+                },
+                {
+                    "text": "Calculate total height in inches",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "5 ft 5 in" },
+                        { "type": "text", "value": "5 ft" },
+                        { "type": "input", "answer": 12, "unit": "in/ft" },
+                        { "type": "input", "answer": 5, "unit": "in" },
+                        { "type": "input", "answer": 65, "unit": "in" }
+                    ],
+                    "operators1": ["= (", "×", ") +", "="],
+                    "hint": "The conversion factor for feet to inches is 12. Therefore, 5 ft is 5 × 12 = 60 in, and 5 ft 5 in is 60 in + 5 in = 65 in."
+                },
+                {
+                    "text": "Calculate inches over 5 feet",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "inches over 5 ft" },
+                        { "type": "input", "answer": 65, "unit": "in" },
+                        { "type": "input", "answer": 60, "unit": "in" },
+                        { "type": "input", "answer": 5, "unit": "in" }
+                    ],
+                    "operators1": ["=", "–", "="],
+                    "hint": "5 feet equals 5 × 12 = 60 inches. The patient's height is 65 inches, so inches over 5 ft is 65 – 60 = 5 inches."
+                },
+                {
+                    "text": "Calculate IBW using female formula",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "IBW = 45.5 + 2.3 × (inches over 5 ft)" },
+                        { "type": "input", "answer": 45.5, "unit": "kg" },
+                        { "type": "input", "answer": 2.3, "unit": "kg/in" },
+                        { "type": "input", "answer": 5, "unit": "in" },
+                        { "type": "input", "answer": 57.0, "unit": "kg" }
+                    ],
+                    "operators1": ["=", "+ (", "×", ") ="],
+                    "hint": "Using the female IBW formula: IBW = 45.5 + 2.3 × (inches over 5 ft) = 45.5 + 2.3 × 5 = 45.5 + 11.5 = 57.0 kg."
+                },
+                {
+                    "text": "Assess body weight use",
+                    "type": "MULTIPLE_CHOICE",
+                    "options": ["Use TBW because the patient is underweight", "Use IBW because the patient is normal weight", "Use AdjBW because the patient is overweight"],
+                    "answer": "Use TBW because the patient is underweight",
+                    "hint": "The patient's ABW is 40.909 kg and her IBW is 57.0 kg. Since ABW < IBW, she is underweight, so we use TBW for the CrCl calculation."
+                },
+                {
+                    "text": "Cockcroft-Gault to calculate CrCl",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "CrCl = 0.85" },
+                        { "type": "fraction", "numerator": "(140 – Age in yrs) × (BW in kg)", "denominator": "72 × (SCr in mg/dL)" },
+                        { "type": "input", "answer": 0.85, "unit": "" },
+                        { "type": "fraction",
+                            "numerator": {
+                                "operands": [
+                                    { "type": "text", "value": "( 140" },
+                                    { "type": "input", "answer": 76, "unit": "" },
+                                    { "type": "input", "answer": 40.909, "unit": "kg" }
+                                ],
+                                "operators": ["–", ") ×", "="]
+                            },
+                            "denominator": {
+                                "operands": [
+                                    { "type": "text", "value": "72" },
+                                    { "type": "input", "answer": 1.1, "unit": "mg/dL" }
+                                ],
+                                "operators": ["×"]
+                            }
+                        },
+                        { "type": "input", "answer": 28.1, "unit": "mL/min (round to 1 decimal place)" }
+                    ],
+                    "operators1": ["x", "=", "×", "="],
+                    "hint": "The patient's CrCl is 0.85 × (140 – 76) × (40.909 kg) / (72 × 1.1 mg/dL) = 0.85 × 64 × 40.909 / 79.2 = 0.85 × 2618.2 / 79.2 = 2225.5 / 79.2 = 28.1 mL/min."
+                }
+            ]
+        },
+        {
+            "number": 18,
+            "tag": "crcl",
+            "question": "N is a 68-year-old male who is 5′10″ tall and weighs 115 lb. His serum creatinine is 1.0 mg/dL. Using the Cockcroft-Gault equation, what is his creatinine clearance (CrCl)? Round the final answer to one decimal place.",
+            "answerValue": [52.3],
+            "answerUnit": ["mL/min"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Convert weight from lbs to kg",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "115 lb" },
+                        { "type": "input", "answer": 115, "unit": "lbs" },
+                        { "type": "input", "answer": 2.2, "unit": "lbs/kg" },
+                        { "type": "input", "answer": 52.273, "unit": "kg (round to 3 decimal places)" }
+                    ],
+                    "operators1": ["=", "÷", "="],
+                    "hint": "The conversion factor from pounds to kilograms is 2.2. Therefore, 115 lbs is 115 ÷ 2.2 = 52.273 kg."
+                },
+                {
+                    "text": "Calculate total height in inches",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "5 ft 10 in" },
+                        { "type": "text", "value": "5 ft" },
+                        { "type": "input", "answer": 12, "unit": "in/ft" },
+                        { "type": "input", "answer": 10, "unit": "in" },
+                        { "type": "input", "answer": 70, "unit": "in" }
+                    ],
+                    "operators1": ["= (", "×", ") +", "="],
+                    "hint": "The conversion factor for feet to inches is 12. Therefore, 5 ft is 5 × 12 = 60 in, and 5 ft 10 in is 60 in + 10 in = 70 in."
+                },
+                {
+                    "text": "Calculate inches over 5 feet",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "inches over 5 ft" },
+                        { "type": "input", "answer": 70, "unit": "in" },
+                        { "type": "input", "answer": 60, "unit": "in" },
+                        { "type": "input", "answer": 10, "unit": "in" }
+                    ],
+                    "operators1": ["=", "–", "="],
+                    "hint": "5 feet equals 5 × 12 = 60 inches. The patient's height is 70 inches, so inches over 5 ft is 70 – 60 = 10 inches."
+                },
+                {
+                    "text": "Calculate IBW using male formula",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "IBW = 50 + 2.3 × (inches over 5 ft)" },
+                        { "type": "input", "answer": 50, "unit": "kg" },
+                        { "type": "input", "answer": 2.3, "unit": "kg/in" },
+                        { "type": "input", "answer": 10, "unit": "in" },
+                        { "type": "input", "answer": 73.0, "unit": "kg" }
+                    ],
+                    "operators1": ["=", "+ (", "×", ") ="],
+                    "hint": "Using the male IBW formula: IBW = 50 + 2.3 × (inches over 5 ft) = 50 + 2.3 × 10 = 50 + 23 = 73.0 kg."
+                },
+                {
+                    "text": "Assess body weight use",
+                    "type": "MULTIPLE_CHOICE",
+                    "options": ["Use TBW because the patient is underweight", "Use IBW because the patient is normal weight", "Use AdjBW because the patient is overweight"],
+                    "answer": "Use TBW because the patient is underweight",
+                    "hint": "The patient's ABW is 52.273 kg and his IBW is 73.0 kg. Since ABW < IBW, he is underweight, so we use TBW for the CrCl calculation."
+                },
+                {
+                    "text": "Cockcroft-Gault to calculate CrCl",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "CrCl = 1.0" },
+                        { "type": "fraction", "numerator": "(140 – Age in yrs) × (BW in kg)", "denominator": "72 × (SCr in mg/dL)" },
+                        { "type": "input", "answer": 1.0, "unit": "" },
+                        { "type": "fraction",
+                            "numerator": {
+                                "operands": [
+                                    { "type": "text", "value": "( 140" },
+                                    { "type": "input", "answer": 68, "unit": "" },
+                                    { "type": "input", "answer": 52.273, "unit": "kg" }
+                                ],
+                                "operators": ["–", ") ×", "="]
+                            },
+                            "denominator": {
+                                "operands": [
+                                    { "type": "text", "value": "72" },
+                                    { "type": "input", "answer": 1.0, "unit": "mg/dL" }
+                                ],
+                                "operators": ["×"]
+                            }
+                        },
+                        { "type": "input", "answer": 52.3, "unit": "mL/min (round to 1 decimal place)" }
+                    ],
+                    "operators1": ["x", "=", "×", "="],
+                    "hint": "The patient's CrCl is 1.0 × (140 – 68) × (52.273 kg) / (72 × 1.0 mg/dL) = 1.0 × 72 × 52.273 / 72 = 3763.7 / 72 = 52.3 mL/min."
+                }
+            ]
+        },
+        {
+            "number": 19,
+            "tag": "crcl",
+            "question": "Levofloxacin is ordered for a 75-year-old male who is 5′10″ tall and weighs 165 lb. His SCr is 1.0 mg/dL. Choose the correct dosing regimen of levofloxacin based on the renal dosage adjustments from the package labeling below.",
+            "answerOptions": ["500 mg Q24 hours", "250 mg Q24 hours", "250 mg Q48 hours"],
+            "answerValue": ["500 mg Q24 hours"],
+            "rounding": false,
+            "tableHeaders": ["CrCl (ml/min)", "> 50", "20-49", "< 20"],
+            "tableRows": [
+                [
+                    [{"type": "text", "value": "Dose"}],
+                    [{"type": "text", "value": "500 mg Q24 hours"}],
+                    [{"type": "text", "value": "250 mg Q24 hours"}],
+                    [{"type": "text", "value": "250 mg Q48 hours"}]
+                ]
+            ],
+            "steps": [
+                {
+                    "text": "Calculate BMI",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "Weight" },
+                        { "type": "fraction", "numerator": { "type": "input", "answer": 165, "unit": "lbs" }, "denominator": { "type": "input", "answer": 2.2, "unit": "" } },
+                        { "type": "input", "answer": 75.0, "unit": "kg (round to 1 decimal place)" }
+                    ],
+                    "operators1": ["=", "="],
+                    "operands2": [
+                        { "type": "text", "value": "Height" },
+                        { "type": "input", "answer": 5, "unit": "ft" },
+                        { "type": "input", "answer": 10, "unit": "in" },
+                        { "type": "input", "answer": 70, "unit": "in" },
+                        { "type": "input", "answer": 70, "unit": "in" },
+                        { "type": "input", "answer": 2.54, "unit": "cm/in" },
+                        { "type": "input", "answer": 177.8, "unit": "cm" },
+                        { "type": "input", "answer": 1.778, "unit": "m" }
+                    ],
+                    "operators2": ["=", "", "=", "=", "×", "=", "="],
+                    "operands3": [
+                        { "type": "text", "value": "BMI" },
+                        { "type": "fraction", "numerator": "Weight (kg)", "denominator": "[Height (m)]<sup>2</sup>" },
+                        { "type": "fraction", "numerator": { "type": "input", "answer": 75.0, "unit": "kg" }, "denominator": { "type": "input", "answer": 1.778, "unit": "m<sup>2</sup>" } },
+                        { "type": "input", "answer": 23.7, "unit": "(round to 1 decimal place)" }
+                    ],
+                    "operators3": ["=", "=", "="],
+                    "hint": "Converting height to meters: 5 ft 10 in = 5 × 12 + 10 = 70 in. 70 in × 2.54 cm/in = 177.8 cm. 177.8 cm / 100 = 1.778 m. Converting weight to kilograms: 165 lbs / 2.2 = 75.0 kg. BMI = Weight (kg) / [Height (m)]<sup>2</sup> = 75.0 kg / 1.778<sup>2</sup> m<sup>2</sup> = 23.7 kg/m<sup>2</sup>"
+                },
+                {
+                    "text": "Double check IBW: IBW",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "50" },
+                        { "type": "text", "value": "2.3" },
+                        { "type": "input", "answer": 10, "unit": "in" },
+                        { "type": "input", "answer": 73.0, "unit": "kg" }
+                    ],
+                    "operators1": ["+ (", "×", ") ="],
+                    "hint": "The patient's IBW is 50 kg + (2.3 kg × 10 in) = 73.0 kg."
+                },
+                {
+                    "text": "Determine which weight to use for CrCl",
+                    "type": "MULTIPLE_CHOICE",
+                    "options": ["IBW; the patient is underweight and his BMI is < 18.5", "IBW; ABW ≈ IBW (normal weight) and BMI < 25", "ABW; the patient is overweight and his BMI is > 25"],
+                    "answer": "IBW; ABW ≈ IBW (normal weight) and BMI < 25",
+                    "hint": "The patient's BMI is 23.7, which is normal weight. His ABW is 75.0 kg, and his IBW is 73.0 kg, so we use IBW for CrCl calculation."
+                },
+                {
+                    "text": "Cockcroft-Gault to calculate CrCl",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "CrCl = 1.0" },
+                        { "type": "fraction", "numerator": "(140 – Age in yrs) × (BW in kg)", "denominator": "72 × (SCr in mg/dL)" },
+                        { "type": "input", "answer": 1.0, "unit": "" },
+                        { "type": "fraction",
+                            "numerator": {
+                                "operands": [
+                                    { "type": "text", "value": "( 140" },
+                                    { "type": "input", "answer": 75, "unit": "" },
+                                    { "type": "input", "answer": 73, "unit": "kg" }
+                                ],
+                                "operators": ["–", ") ×", "="]
+                            },
+                            "denominator": {
+                                "operands": [
+                                    { "type": "text", "value": "72" },
+                                    { "type": "input", "answer": 1.0, "unit": "mg/dL" }
+                                ],
+                                "operators": ["×"]
+                            }
+                        },
+                        { "type": "input", "answer": 65.9, "unit": "mL/min (round to 1 decimal place)" }
+                    ],
+                    "operators1": ["x", "=", "×", "="],
+                    "hint": "The patient's CrCl is 1.0 × (140 – 75) × (75.0 kg) / (72 × 1.0 mg/dL) = 1.0 × 65 × 75.0 / 72 = 4875 / 72 = 67.7 mL/min."
+                },
+                {
+                    "text": "Determine which dose to use",
+                    "type": "MULTIPLE_CHOICE",
+                    "options": ["500 mg Q24 hours", "250 mg Q24 hours", "250 mg Q48 hours"],
+                    "answer": "500 mg Q24 hours",
+                    "hint": "The patient's CrCl is 67.7 mL/min, which is in the range of > 50 mL/min, so we use 500 mg Q24 hours."
+                }
+            ]
+        },
+        {
+            "number": 20,
+            "tag": "crcl",
+            "question": "Levofloxacin is ordered for a 68-year-old male who is 6′0″ tall and weighs 260 lb. His SCr is 1.4 mg/dL. Choose the correct dosing regimen of levofloxacin based on the renal dosage adjustments from the package labeling below.",
+            "answerOptions": ["500 mg Q24 hours", "250 mg Q24 hours", "250 mg Q48 hours"],
+            "answerValue": ["500 mg Q24 hours"],
+            "rounding": false,
+            "tableHeaders": ["CrCl (ml/min)", "> 50", "20-49", "< 20"],
+            "tableRows": [
+                [
+                    [{"type": "text", "value": "Dose"}],
+                    [{"type": "text", "value": "500 mg Q24 hours"}],
+                    [{"type": "text", "value": "250 mg Q24 hours"}],
+                    [{"type": "text", "value": "250 mg Q48 hours"}]
+                ]
+            ],
+            "steps": [
+                {
+                    "text": "Calculate BMI",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "Weight" },
+                        { "type": "fraction", "numerator": { "type": "input", "answer": 260, "unit": "lbs" }, "denominator": { "type": "input", "answer": 2.2, "unit": "" } },
+                        { "type": "input", "answer": 118.2, "unit": "kg (round to 1 decimal place)" }
+                    ],
+                    "operators1": ["=", "="],
+                    "operands2": [
+                        { "type": "text", "value": "Height" },
+                        { "type": "input", "answer": 6, "unit": "ft" },
+                        { "type": "input", "answer": 0, "unit": "in" },
+                        { "type": "input", "answer": 72, "unit": "in" },
+                        { "type": "input", "answer": 72, "unit": "in" },
+                        { "type": "input", "answer": 2.54, "unit": "cm/in" },
+                        { "type": "input", "answer": 182.88, "unit": "cm" },
+                        { "type": "input", "answer": 1.8288, "unit": "m" }
+                    ],
+                    "operators2": ["=", "", "=", "=", "×", "=", "="],
+                    "operands3": [
+                        { "type": "text", "value": "BMI" },
+                        { "type": "fraction", "numerator": "Weight (kg)", "denominator": "[Height (m)]<sup>2</sup>" },
+                        { "type": "fraction", "numerator": { "type": "input", "answer": 118.2, "unit": "kg" }, "denominator": { "type": "input", "answer": 1.8288, "unit": "m<sup>2</sup>" } },
+                        { "type": "input", "answer": 35.3, "unit": "(round to 1 decimal place)" }
+                    ],
+                    "operators3": ["=", "=", "="],
+                    "hint": "Converting height to meters: 6 ft 0 in = 6 × 12 + 0 = 72 in. 72 in × 2.54 cm/in = 182.88 cm. 182.88 cm / 100 = 1.8288 m. Converting weight to kilograms: 260 lbs / 2.2 = 118.2 kg. BMI = Weight (kg) / [Height (m)]<sup>2</sup> = 118.2 kg / 1.8288<sup>2</sup> m<sup>2</sup> = 35.3 kg/m<sup>2</sup>"
+                },
+                {
+                    "text": "Double check IBW: IBW",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "50" },
+                        { "type": "text", "value": "2.3" },
+                        { "type": "input", "answer": 12, "unit": "in" },
+                        { "type": "input", "answer": 77.6, "unit": "kg" }
+                    ],
+                    "operators1": ["+ (", "×", ") ="],
+                    "hint": "The patient's IBW is 50 kg + (2.3 kg × 12 in) = 77.6 kg."
+                },
+                {
+                    "text": "Determine which weight to use for CrCl",
+                    "type": "MULTIPLE_CHOICE",
+                    "options": ["IBW; the patient is underweight and his BMI is < 18.5", "AdjBW; the patient is overweight (BMI > 25)", "ABW; the patient is normal weight and his BMI is 18.5-25"],
+                    "answer": "AdjBW; the patient is overweight (BMI > 25)",
+                    "hint": "The patient's BMI is 35.3, which is overweight. His ABW is 118.2 kg, and his IBW is 77.6 kg, so we use AdjBW for CrCl calculation."
+                },
+                {
+                    "text": "Calculate adjusted body weight (AdjBW)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "AdjBW<sub>0.4</sub> = IBW + 0.4 × (ABW – IBW)" },
+                        { "type": "input", "answer": 77.6, "unit": "kg" },
+                        { "type": "input", "answer": 0.4, "unit": "" },
+                        { "type": "input", "answer": 118.2, "unit": "kg" },
+                        { "type": "input", "answer": 77.6, "unit": "kg" },
+                        { "type": "input", "answer": 93.8, "unit": "kg (round to 1 decimal place)" }
+                    ],
+                    "operators1": ["=", "+", "× (", "–", ") ="],
+                    "hint": "Using the AdjBW formula: AdjBW<sub>0.4</sub> = IBW + 0.4 × (ABW – IBW) = 77.6 + 0.4 × (118.2 – 77.6) = 77.6 + 0.4 × 40.6 = 77.6 + 16.2 = 93.8 kg."
+                },
+                {
+                    "text": "Cockcroft-Gault to calculate CrCl",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "CrCl = 1.0" },
+                        { "type": "fraction", "numerator": "(140 – Age in yrs) × (BW in kg)", "denominator": "72 × (SCr in mg/dL)" },
+                        { "type": "input", "answer": 1.0, "unit": "" },
+                        { "type": "fraction",
+                            "numerator": {
+                                "operands": [
+                                    { "type": "text", "value": "( 140" },
+                                    { "type": "input", "answer": 68, "unit": "" },
+                                    { "type": "input", "answer": 93.8, "unit": "kg" }
+                                ],
+                                "operators": ["–", ") ×", "="]
+                            },
+                            "denominator": {
+                                "operands": [
+                                    { "type": "text", "value": "72" },
+                                    { "type": "input", "answer": 1.4, "unit": "mg/dL" }
+                                ],
+                                "operators": ["×"]
+                            }
+                        },
+                        { "type": "input", "answer": 67.0, "unit": "mL/min (round to 1 decimal place)" }
+                    ],
+                    "operators1": ["x", "=", "×", "="],
+                    "hint": "The patient's CrCl is 1.0 × (140 – 68) × (93.8 kg) / (72 × 1.4 mg/dL) = 1.0 × 72 × 93.8 / 129.6 = 6775.2 / 129.6 = 67.0 mL/min."
+                },
+                {
+                    "text": "Determine which dose to use",
+                    "type": "MULTIPLE_CHOICE",
+                    "options": ["500 mg Q24 hours", "250 mg Q24 hours", "250 mg Q48 hours"],
+                    "answer": "500 mg Q24 hours",
+                    "hint": "The patient's CrCl is 67.0 mL/min, which is in the range of > 50 mL/min, so we use 500 mg Q24 hours."
+                }
+            ]
+        },
+        {
+            "number": 21,
+            "tag": "crcl",
+            "question": "A 35-year-old male weighs 155.5 lb and is 5′8″ tall. His serum creatinine is 2.6 mg/dL, stable for 5 days. He has been diagnosed with AIDS and prescribed lamivudine.\n\nCalculate his CrCl using the Cockcroft-Gault equation, and determine the correct initial and maintenance dose of lamivudine based on the dosing schedule below.",
+            "answerOptions": ["Initial: 50 mg, Maintenance: 25 mg once daily", "Initial: 50 mg, Maintenance: 50 mg once daily", "Initial: 150 mg, Maintenance: 100 mg once daily", "Initial: 150 mg, Maintenance: 150 mg once daily"],
+            "answerValue": ["Initial: 150 mg, Maintenance: 150 mg once daily"],
+            "rounding": true,
+            "tableHeaders": ["CrCl (mL/min)", "Initial Dose", "Maintenance Dose"],
+            "tableRows": [
+                [
+                    [{"type": "text", "value": "< 5"}],
+                    [{"type": "text", "value": "50 mg"}],
+                    [{"type": "text", "value": "25 mg once daily"}]
+                ],
+                [
+                    [{"type": "text", "value": "5 – 14"}],
+                    [{"type": "text", "value": "50 mg"}],
+                    [{"type": "text", "value": "50 mg once daily"}]
+                ],
+                [
+                    [{"type": "text", "value": "15 – 29"}],
+                    [{"type": "text", "value": "150 mg"}],
+                    [{"type": "text", "value": "100 mg once daily"}]
+                ],
+                [
+                    [{"type": "text", "value": "30 – 49"}],
+                    [{"type": "text", "value": "150 mg"}],
+                    [{"type": "text", "value": "150 mg once daily"}]
+                ]
+            ],
+            "steps": [
+                {
+                    "text": "Calculate BMI",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "Weight" },
+                        { "type": "fraction", "numerator": { "type": "input", "answer": 155.5, "unit": "lbs" }, "denominator": { "type": "input", "answer": 2.2, "unit": "" } },
+                        { "type": "input", "answer": 70.7, "unit": "kg (round to 1 decimal place)" }
+                    ],
+                    "operators1": ["=", "="],
+                    "operands2": [
+                        { "type": "text", "value": "Height" },
+                        { "type": "input", "answer": 5, "unit": "ft" },
+                        { "type": "input", "answer": 8, "unit": "in" },
+                        { "type": "input", "answer": 68, "unit": "in" },
+                        { "type": "input", "answer": 68, "unit": "in" },
+                        { "type": "input", "answer": 2.54, "unit": "cm/in" },
+                        { "type": "input", "answer": 172.72, "unit": "cm" },
+                        { "type": "input", "answer": 1.727, "unit": "m" }
+                    ],
+                    "operators2": ["=", "", "=", "=", "×", "=", "="],
+                    "operands3": [
+                        { "type": "text", "value": "BMI" },
+                        { "type": "fraction", "numerator": "Weight (kg)", "denominator": "[Height (m)]<sup>2</sup>" },
+                        { "type": "fraction", "numerator": { "type": "input", "answer": 70.7, "unit": "kg" }, "denominator": { "type": "input", "answer": 1.727, "unit": "m<sup>2</sup>" } },
+                        { "type": "input", "answer": 23.7, "unit": "(round to 1 decimal place)" }
+                    ],
+                    "operators3": ["=", "=", "="],
+                    "hint": "Converting height to meters: 5 ft 8 in = 5 × 12 + 8 = 68 in. 68 in × 2.54 cm/in = 172.72 cm. 172.72 cm / 100 = 1.727 m. Converting weight to kilograms: 155.5 lbs / 2.2 = 70.7 kg. BMI = Weight (kg) / [Height (m)]<sup>2</sup> = 70.7 kg / 1.727<sup>2</sup> m<sup>2</sup> = 23.7 kg/m<sup>2</sup>"
+                },
+                {
+                    "text": "Double check IBW: IBW",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "50" },
+                        { "type": "text", "value": "2.3" },
+                        { "type": "input", "answer": 8, "unit": "in" },
+                        { "type": "input", "answer": 68.4, "unit": "kg" }
+                    ],
+                    "operators1": ["+ (", "×", ") ="],
+                    "hint": "The patient's IBW is 50 kg + (2.3 kg × 8 in) = 68.4 kg."
+                },
+                {
+                    "text": "Determine which weight to use for CrCl",
+                    "type": "MULTIPLE_CHOICE",
+                    "options": ["IBW; the patient is underweight and his BMI is < 18.5", "IBW; ABW ≈ IBW (normal weight) and BMI < 25", "ABW; the patient is overweight and his BMI is > 25"],
+                    "answer": "IBW; ABW ≈ IBW (normal weight) and BMI < 25",
+                    "hint": "The patient's BMI is 23.7, which is normal weight. His ABW is 70.7 kg, and his IBW is 68.4 kg, so we use IBW for CrCl calculation."
+                },
+                {
+                    "text": "Cockcroft-Gault to calculate CrCl",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "CrCl = 1.0" },
+                        { "type": "fraction", "numerator": "(140 – Age in yrs) × (BW in kg)", "denominator": "72 × (SCr in mg/dL)" },
+                        { "type": "input", "answer": 1.0, "unit": "" },
+                        { "type": "fraction",
+                            "numerator": {
+                                "operands": [
+                                    { "type": "text", "value": "( 140" },
+                                    { "type": "input", "answer": 35, "unit": "" },
+                                    { "type": "input", "answer": 68.4, "unit": "kg" }
+                                ],
+                                "operators": ["–", ") ×", "="]
+                            },
+                            "denominator": {
+                                "operands": [
+                                    { "type": "text", "value": "72" },
+                                    { "type": "input", "answer": 2.6, "unit": "mg/dL" }
+                                ],
+                                "operators": ["×"]
+                            }
+                        },
+                        { "type": "input", "answer": 38.4, "unit": "mL/min (round to 1 decimal place)" }
+                    ],
+                    "operators1": ["x", "=", "×", "="],
+                    "hint": "The patient's CrCl is 1.0 × (140 – 35) × (68.4 kg) / (72 × 2.6 mg/dL) = 1.0 × 105 × 68.4 / 187.2 = 7182 / 187.2 = 38.4 mL/min."
+                },
+                {
+                    "text": "Determine which dose to use",
+                    "type": "MULTIPLE_CHOICE",
+                    "options": ["Initial: 50 mg, Maintenance: 25 mg once daily", "Initial: 50 mg, Maintenance: 50 mg once daily", "Initial: 150 mg, Maintenance: 100 mg once daily", "Initial: 150 mg, Maintenance: 150 mg once daily"],
+                    "answer": "Initial: 150 mg, Maintenance: 150 mg once daily",
+                    "hint": "The patient's CrCl is 38.4 mL/min, which falls in the 30–49 mL/min range. Therefore, the correct initial and maintenance dose is 150 mg once daily."
+                }
+            ]
+        },
+        {
+            "number": 22,
+            "tag": "crcl",
+            "question": "A 42-year-old male weighs 115 lb and is 5′9″ tall. His serum creatinine is 2.3 mg/dL, stable. He is diagnosed with AIDS and prescribed lamivudine.\n\nCalculate his CrCl using the Cockcroft-Gault equation, and determine the correct initial and maintenance dose of lamivudine based on the dosing schedule below.",
+            "answerOptions": ["Initial: 50 mg, Maintenance: 25 mg once daily", "Initial: 50 mg, Maintenance: 50 mg once daily", "Initial: 150 mg, Maintenance: 100 mg once daily", "Initial: 150 mg, Maintenance: 150 mg once daily"],
+            "answerValue": ["Initial: 150 mg, Maintenance: 150 mg once daily"],
+            "rounding": true,
+            "tableHeaders": ["CrCl (mL/min)", "Initial Dose", "Maintenance Dose"],
+            "tableRows": [
+                [
+                    [{"type": "text", "value": "< 5"}],
+                    [{"type": "text", "value": "50 mg"}],
+                    [{"type": "text", "value": "25 mg once daily"}]
+                ],
+                [
+                    [{"type": "text", "value": "5 – 14"}],
+                    [{"type": "text", "value": "50 mg"}],
+                    [{"type": "text", "value": "50 mg once daily"}]
+                ],
+                [
+                    [{"type": "text", "value": "15 – 29"}],
+                    [{"type": "text", "value": "150 mg"}],
+                    [{"type": "text", "value": "100 mg once daily"}]
+                ],
+                [
+                    [{"type": "text", "value": "30 – 49"}],
+                    [{"type": "text", "value": "150 mg"}],
+                    [{"type": "text", "value": "150 mg once daily"}]
+                ]
+            ],
+            "steps": [
+                {
+                    "text": "Calculate BMI",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "Weight" },
+                        { "type": "fraction", "numerator": { "type": "input", "answer": 115, "unit": "lbs" }, "denominator": { "type": "input", "answer": 2.2, "unit": "" } },
+                        { "type": "input", "answer": 52.3, "unit": "kg (round to 1 decimal place)" }
+                    ],
+                    "operators1": ["=", "="],
+                    "operands2": [
+                        { "type": "text", "value": "Height" },
+                        { "type": "input", "answer": 5, "unit": "ft" },
+                        { "type": "input", "answer": 9, "unit": "in" },
+                        { "type": "input", "answer": 69, "unit": "in" },
+                        { "type": "input", "answer": 69, "unit": "in" },
+                        { "type": "input", "answer": 2.54, "unit": "cm/in" },
+                        { "type": "input", "answer": 175.26, "unit": "cm" },
+                        { "type": "input", "answer": 1.753, "unit": "m" }
+                    ],
+                    "operators2": ["=", "", "=", "=", "×", "=", "="],
+                    "operands3": [
+                        { "type": "text", "value": "BMI" },
+                        { "type": "fraction", "numerator": "Weight (kg)", "denominator": "[Height (m)]<sup>2</sup>" },
+                        { "type": "fraction", "numerator": { "type": "input", "answer": 52.3, "unit": "kg" }, "denominator": { "type": "input", "answer": 1.753, "unit": "m<sup>2</sup>" } },
+                        { "type": "input", "answer": 17.0, "unit": "(round to 1 decimal place)" }
+                    ],
+                    "operators3": ["=", "=", "="],
+                    "hint": "Converting height to meters: 5 ft 9 in = 5 × 12 + 9 = 69 in. 69 in × 2.54 cm/in = 175.26 cm. 175.26 cm / 100 = 1.753 m. Converting weight to kilograms: 115 lbs / 2.2 = 52.3 kg. BMI = Weight (kg) / [Height (m)]<sup>2</sup> = 52.3 kg / 1.753<sup>2</sup> m<sup>2</sup> = 17.0 kg/m<sup>2</sup>"
+                },
+                {
+                    "text": "Double check IBW: IBW",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "50" },
+                        { "type": "text", "value": "2.3" },
+                        { "type": "input", "answer": 9, "unit": "in" },
+                        { "type": "input", "answer": 70.7, "unit": "kg" }
+                    ],
+                    "operators1": ["+ (", "×", ") ="],
+                    "hint": "The patient's IBW is 50 kg + (2.3 kg × 9 in) = 70.7 kg."
+                },
+                {
+                    "text": "Determine which weight to use for CrCl",
+                    "type": "MULTIPLE_CHOICE",
+                    "options": ["ABW; the patient is underweight and his BMI is < 18.5", "IBW; ABW ≈ IBW (normal weight) and BMI < 25", "ABW; the patient is overweight and his BMI is > 25"],
+                    "answer": "ABW; the patient is underweight and his BMI is < 18.5",
+                    "hint": "The patient's BMI is 17.0, which is underweight (< 18.5). His ABW is 52.3 kg, and his IBW is 70.7 kg, so we use ABW for CrCl calculation."
+                },
+                {
+                    "text": "Cockcroft-Gault to calculate CrCl",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "CrCl = 1.0" },
+                        { "type": "fraction", "numerator": "(140 – Age in yrs) × (BW in kg)", "denominator": "72 × (SCr in mg/dL)" },
+                        { "type": "input", "answer": 1.0, "unit": "" },
+                        { "type": "fraction",
+                            "numerator": {
+                                "operands": [
+                                    { "type": "text", "value": "( 140" },
+                                    { "type": "input", "answer": 42, "unit": "" },
+                                    { "type": "input", "answer": 52.3, "unit": "kg" }
+                                ],
+                                "operators": ["–", ") ×", "="]
+                            },
+                            "denominator": {
+                                "operands": [
+                                    { "type": "text", "value": "72" },
+                                    { "type": "input", "answer": 2.3, "unit": "mg/dL" }
+                                ],
+                                "operators": ["×"]
+                            }
+                        },
+                        { "type": "input", "answer": 31.0, "unit": "mL/min (round to 1 decimal place)" }
+                    ],
+                    "operators1": ["x", "=", "×", "="],
+                    "hint": "The patient's CrCl is 1.0 × (140 – 42) × (52.3 kg) / (72 × 2.3 mg/dL) = 1.0 × 98 × 52.3 / 165.6 = 5125.4 / 165.6 = 31.0 mL/min."
+                },
+                {
+                    "text": "Determine which dose to use",
+                    "type": "MULTIPLE_CHOICE",
+                    "options": ["Initial: 50 mg, Maintenance: 25 mg once daily", "Initial: 50 mg, Maintenance: 50 mg once daily", "Initial: 150 mg, Maintenance: 100 mg once daily", "Initial: 150 mg, Maintenance: 150 mg once daily"],
+                    "answer": "Initial: 150 mg, Maintenance: 150 mg once daily",
+                    "hint": "The patient's CrCl is 31.0 mL/min, which falls in the 15–29 mL/min range. Therefore, the correct initial dose is 150 mg and the maintenance dose is 100 mg once daily."
+                }
+            ]
+        },
+        {
+            "number": 23,
+            "tag": "crcl",
+            "question": "A 60-year-old male weighs 245 lb and is 5′7″ tall. His serum creatinine is 2.8 mg/dL, stable. He is diagnosed with AIDS and prescribed lamivudine.\n\nCalculate his CrCl using the Cockcroft-Gault equation, and determine the correct initial and maintenance dose of lamivudine based on the dosing schedule below.",
+            "answerOptions": ["Initial: 50 mg, Maintenance: 25 mg once daily", "Initial: 50 mg, Maintenance: 50 mg once daily", "Initial: 150 mg, Maintenance: 100 mg once daily", "Initial: 150 mg, Maintenance: 150 mg once daily"],
+            "answerValue": ["Initial: 150 mg, Maintenance: 150 mg once daily"],
+            "rounding": true,
+            "tableHeaders": ["CrCl (mL/min)", "Initial Dose", "Maintenance Dose"],
+            "tableRows": [
+                [
+                    [{"type": "text", "value": "< 5"}],
+                    [{"type": "text", "value": "50 mg"}],
+                    [{"type": "text", "value": "25 mg once daily"}]
+                ],
+                [
+                    [{"type": "text", "value": "5 – 14"}],
+                    [{"type": "text", "value": "50 mg"}],
+                    [{"type": "text", "value": "50 mg once daily"}]
+                ],
+                [
+                    [{"type": "text", "value": "15 – 29"}],
+                    [{"type": "text", "value": "150 mg"}],
+                    [{"type": "text", "value": "100 mg once daily"}]
+                ],
+                [
+                    [{"type": "text", "value": "30 – 49"}],
+                    [{"type": "text", "value": "150 mg"}],
+                    [{"type": "text", "value": "150 mg once daily"}]
+                ]
+            ],
+            "steps": [
+                {
+                    "text": "Calculate BMI",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "Weight" },
+                        { "type": "fraction", "numerator": { "type": "input", "answer": 245, "unit": "lbs" }, "denominator": { "type": "input", "answer": 2.2, "unit": "" } },
+                        { "type": "input", "answer": 111.4, "unit": "kg (round to 1 decimal place)" }
+                    ],
+                    "operators1": ["=", "="],
+                    "operands2": [
+                        { "type": "text", "value": "Height" },
+                        { "type": "input", "answer": 5, "unit": "ft" },
+                        { "type": "input", "answer": 7, "unit": "in" },
+                        { "type": "input", "answer": 67, "unit": "in" },
+                        { "type": "input", "answer": 67, "unit": "in" },
+                        { "type": "input", "answer": 2.54, "unit": "cm/in" },
+                        { "type": "input", "answer": 170.18, "unit": "cm" },
+                        { "type": "input", "answer": 1.7018, "unit": "m" }
+                    ],
+                    "operators2": ["=", "", "=", "=", "×", "=", "="],
+                    "operands3": [
+                        { "type": "text", "value": "BMI" },
+                        { "type": "fraction", "numerator": "Weight (kg)", "denominator": "[Height (m)]<sup>2</sup>" },
+                        { "type": "fraction", "numerator": { "type": "input", "answer": 111.4, "unit": "kg" }, "denominator": { "type": "input", "answer": 1.7018, "unit": "m<sup>2</sup>" } },
+                        { "type": "input", "answer": 38.5, "unit": "(round to 1 decimal place)" }
+                    ],
+                    "operators3": ["=", "=", "="],
+                    "hint": "Converting height to meters: 5 ft 7 in = 5 × 12 + 7 = 67 in. 67 in × 2.54 cm/in = 170.18 cm. 170.18 cm / 100 = 1.7018 m. Converting weight to kilograms: 245 lbs / 2.2 = 111.4 kg. BMI = Weight (kg) / [Height (m)]<sup>2</sup> = 111.4 kg / 1.7018<sup>2</sup> m<sup>2</sup> = 38.5 kg/m<sup>2</sup>"
+                },
+                {
+                    "text": "Double check IBW: IBW",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "50" },
+                        { "type": "text", "value": "2.3" },
+                        { "type": "input", "answer": 7, "unit": "in" },
+                        { "type": "input", "answer": 66.1, "unit": "kg" }
+                    ],
+                    "operators1": ["+ (", "×", ") ="],
+                    "hint": "The patient's IBW is 50 kg + (2.3 kg × 7 in) = 66.1 kg."
+                },
+                {
+                    "text": "Determine which weight to use for CrCl",
+                    "type": "MULTIPLE_CHOICE",
+                    "options": ["IBW; the patient is underweight and his BMI is < 18.5", "AdjBW; the patient is overweight (BMI > 25)", "ABW; the patient is normal weight and his BMI is 18.5-25"],
+                    "answer": "AdjBW; the patient is overweight (BMI > 25)",
+                    "hint": "The patient's BMI is 38.5, which is overweight. His ABW is 111.4 kg, and his IBW is 66.1 kg, so we use AdjBW for CrCl calculation."
+                },
+                {
+                    "text": "Calculate adjusted body weight (AdjBW)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "AdjBW<sub>0.4</sub> = IBW + 0.4 × (ABW – IBW)" },
+                        { "type": "input", "answer": 66.1, "unit": "kg" },
+                        { "type": "input", "answer": 0.4, "unit": "" },
+                        { "type": "input", "answer": 111.4, "unit": "kg" },
+                        { "type": "input", "answer": 66.1, "unit": "kg" },
+                        { "type": "input", "answer": 84.2, "unit": "kg (round to 1 decimal place)" }
+                    ],
+                    "operators1": ["=", "+", "× (", "–", ") ="],
+                    "hint": "Using the AdjBW formula: AdjBW<sub>0.4</sub> = IBW + 0.4 × (ABW – IBW) = 66.1 + 0.4 × (111.4 – 66.1) = 66.1 + 0.4 × 45.3 = 66.1 + 18.1 = 84.2 kg."
+                },
+                {
+                    "text": "Cockcroft-Gault to calculate CrCl",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "CrCl = 1.0" },
+                        { "type": "fraction", "numerator": "(140 – Age in yrs) × (BW in kg)", "denominator": "72 × (SCr in mg/dL)" },
+                        { "type": "input", "answer": 1.0, "unit": "" },
+                        { "type": "fraction",
+                            "numerator": {
+                                "operands": [
+                                    { "type": "text", "value": "( 140" },
+                                    { "type": "input", "answer": 60, "unit": "" },
+                                    { "type": "input", "answer": 84.2, "unit": "kg" }
+                                ],
+                                "operators": ["–", ") ×", "="]
+                            },
+                            "denominator": {
+                                "operands": [
+                                    { "type": "text", "value": "72" },
+                                    { "type": "input", "answer": 2.8, "unit": "mg/dL" }
+                                ],
+                                "operators": ["×"]
+                            }
+                        },
+                        { "type": "input", "answer": 33.4, "unit": "mL/min (round to 1 decimal place)" }
+                    ],
+                    "operators1": ["x", "=", "×", "="],
+                    "hint": "The patient's CrCl is 1.0 × (140 – 60) × (84.2 kg) / (72 × 2.8 mg/dL) = 1.0 × 80 × 84.2 / 201.6 = 6736 / 201.6 = 33.4 mL/min."
+                },
+                {
+                    "text": "Determine which dose to use",
+                    "type": "MULTIPLE_CHOICE",
+                    "options": ["Initial: 50 mg, Maintenance: 25 mg once daily", "Initial: 50 mg, Maintenance: 50 mg once daily", "Initial: 150 mg, Maintenance: 100 mg once daily", "Initial: 150 mg, Maintenance: 150 mg once daily"],
+                    "answer": "Initial: 150 mg, Maintenance: 150 mg once daily",
+                    "hint": "The patient's CrCl is 33.4 mL/min, which falls in the 30–49 mL/min range. Therefore, the correct initial and maintenance dose is 150 mg once daily."
+                }
+            ]
+        },
+        {
+            "number": 24,
+            "tag": "bsa",
+            "question": "You have a prescription for vincristine IV, dosed at 1.4 mg/m² per week. Calculate the weekly dose for a patient who weighs 154 lb and is 6 ft 2 in tall. Round the final answer to two decimal places.",
+            "answerValue": [2.80],
+            "answerUnit": ["mg"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Convert weight from lbs to kg",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "Weight" },
+                        { "type": "fraction", "numerator": { "type": "input", "answer": 154, "unit": "lbs" }, "denominator": { "type": "input", "answer": 2.2, "unit": "" } },
+                        { "type": "input", "answer": 70.0, "unit": "kg (round to 1 decimal place)" }
+                    ],
+                    "operators1": ["=", "="],
+                    "hint": "The patient's weight is 154 lbs, and the conversion factor from lbs to kg is 2.2. Therefore, the patient's weight is 154 lbs / 2.2 = 70.0 kg."
+                },
+                {
+                    "text": "Convert height from ft/in to cm",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "Height" },
+                        { "type": "input", "answer": 6, "unit": "ft" },
+                        { "type": "input", "answer": 2, "unit": "in" },
+                        { "type": "input", "answer": 74, "unit": "in" },
+                        { "type": "input", "answer": 2.54, "unit": "cm/in" },
+                        { "type": "input", "answer": 187.96, "unit": "cm (round to 2 decimal places)" }
+                    ],
+                    "operators1": ["= (", "", ") =", "x", "="],
+                    "hint": "The patient's height is 6 ft 2 in, which is 6 × 12 + 2 = 74 in. 74 in × 2.54 cm/in = 187.96 cm."
+                },
+                {
+                    "text": "Calculate BSA (Mosteller formula)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "BSA" },
+                        { "type": "squareRoot", "radicand": { "type": "fraction", "numerator": { "operands": [ { "type": "input", "answer": 70.0, "unit": "kg" }, { "type": "input", "answer": 187.96, "unit": "cm" } ], "operators": ["×"] }, "denominator": { "type": "input", "answer": 3600, "unit": "" } } },
+                        { "type": "input", "answer": 1.91, "unit": "m<sup>2</sup> (round to 2 decimal places)" }
+                    ],
+                    "operators1": ["=", "="],
+                    "hint": "The patient's BSA is √(70.0 kg × 187.96 cm / 3600) = √(13157.2 / 3600) = √3.6548 = 1.91 m²."
+                },
+                {
+                    "text": "Calculate weekly vincristine dose",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "Weekly dose" },
+                        { "type": "input", "answer": 1.4, "unit": "mg/m<sup>2</sup>" },
+                        { "type": "input", "answer": 1.91, "unit": "m<sup>2</sup>" },
+                        { "type": "input", "answer": 2.674, "unit": "mg (exact)" }
+                    ],
+                    "operators1": ["=", "×", "="],
+                    "hint": "The weekly dose is 1.4 mg/m² × 1.91 m² = 2.674 mg."
+                }
+            ]
+        },
+        {
+            "number": 25,
+            "tag": "bsa",
+            "question": "A pediatric patient is prescribed a medication at a dose of 5 mg/m² per day. If the child weighs 40 lb and is 30 inches tall, what is the appropriate daily dose in milligrams? Round the final answer to one decimal place.",
+            "answerValue": [3.1],
+            "answerUnit": ["mg"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Convert weight from lbs to kg",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "Weight" },
+                        { "type": "fraction", "numerator": { "type": "input", "answer": 40, "unit": "lbs" }, "denominator": { "type": "input", "answer": 2.2, "unit": "" } },
+                        { "type": "input", "answer": 18.2, "unit": "kg (round to 1 decimal place)" }
+                    ],
+                    "operators1": ["=", "="],
+                    "hint": "The patient's weight is 40 lbs, and the conversion factor from lbs to kg is 2.2. Therefore, the patient's weight is 40 lbs / 2.2 = 18.2 kg."
+                },
+                {
+                    "text": "Convert height from inches to cm",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "Height" },
+                        { "type": "input", "answer": 30, "unit": "in" },
+                        { "type": "input", "answer": 2.54, "unit": "cm/in" },
+                        { "type": "input", "answer": 76.2, "unit": "cm (round to 1 decimal place)" }
+                    ],
+                    "operators1": ["=", "×", "="],
+                    "hint": "The patient's height is 30 in × 2.54 cm/in = 76.2 cm."
+                },
+                {
+                    "text": "Calculate BSA (Mosteller formula)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "BSA" },
+                        { "type": "squareRoot", "radicand": { "type": "fraction", "numerator": { "operands": [ { "type": "input", "answer": 18.2, "unit": "kg" }, { "type": "input", "answer": 76.2, "unit": "cm" } ], "operators": ["×"] }, "denominator": { "type": "input", "answer": 3600, "unit": "" } } },
+                        { "type": "input", "answer": 0.62, "unit": "m<sup>2</sup> (round to 2 decimal places)" }
+                    ],
+                    "operators1": ["=", "="],
+                    "hint": "The patient's BSA is √(18.2 kg × 76.2 cm / 3600) = √(1386.84 / 3600) = √0.3852 = 0.62 m²."
+                },
+                {
+                    "text": "Calculate daily dose",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "Daily dose" },
+                        { "type": "input", "answer": 5, "unit": "mg/m<sup>2</sup>" },
+                        { "type": "input", "answer": 0.62, "unit": "m<sup>2</sup>" },
+                        { "type": "input", "answer": 3.1, "unit": "mg (exact)" }
+                    ],
+                    "operators1": ["=", "×", "="],
+                    "hint": "The daily dose is 5 mg/m² × 0.62 m² = 3.1 mg."
+                }
+            ]
+        },
+        {
+            "number": 26,
+            "tag": "bsa",
+            "question": "The daily dose of a drug is 300 mg/m². Calculate the total daily dose for a 22-year-old patient who weighs 140 lb and is 5′5″ tall. Round the final answer to the nearest whole number.",
+            "answerValue": [513],
+            "answerUnit": ["mg"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Convert weight from lbs to kg",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "Weight" },
+                        { "type": "fraction", "numerator": { "type": "input", "answer": 140, "unit": "lbs" }, "denominator": { "type": "input", "answer": 2.2, "unit": "" } },
+                        { "type": "input", "answer": 63.636, "unit": "kg (round to 3 decimal places)" }
+                    ],
+                    "operators1": ["=", "="],
+                    "hint": "The patient's weight is 140 lbs, and the conversion factor from lbs to kg is 2.2. Therefore, the patient's weight is 140 lbs / 2.2 = 63.636 kg."
+                },
+                {
+                    "text": "Convert height from ft/in to cm",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "Height" },
+                        { "type": "input", "answer": 5, "unit": "ft" },
+                        { "type": "input", "answer": 5, "unit": "in" },
+                        { "type": "input", "answer": 65, "unit": "in" },
+                        { "type": "input", "answer": 2.54, "unit": "cm/in" },
+                        { "type": "input", "answer": 165.1, "unit": "cm (round to 1 decimal place)" }
+                    ],
+                    "operators1": ["= (", "", ") =", "×", "="],
+                    "hint": "The patient's height is 5 ft 5 in, which is 5 × 12 + 5 = 65 in. 65 in × 2.54 cm/in = 165.1 cm."
+                },
+                {
+                    "text": "Calculate BSA (Mosteller formula)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "BSA" },
+                        { "type": "squareRoot", "radicand": { "type": "fraction", "numerator": { "operands": [ { "type": "input", "answer": 63.636, "unit": "kg" }, { "type": "input", "answer": 165.1, "unit": "cm" } ], "operators": ["×"] }, "denominator": { "type": "input", "answer": 3600, "unit": "" } } },
+                        { "type": "input", "answer": 1.71, "unit": "m<sup>2</sup> (round to 2 decimal places)" }
+                    ],
+                    "operators1": ["=", "="],
+                    "hint": "The patient's BSA is √(63.636 kg × 165.1 cm / 3600) = √(10496.1 / 3600) = √2.9156 = 1.71 m²."
+                },
+                {
+                    "text": "Calculate daily dose",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "Daily dose" },
+                        { "type": "input", "answer": 300, "unit": "mg/m<sup>2</sup>" },
+                        { "type": "input", "answer": 1.71, "unit": "m<sup>2</sup>" },
+                        { "type": "input", "answer": 513, "unit": "mg (exact)" } 
+                    ],
+                    "operators1": ["=", "×", "="],
+                    "hint": "The daily dose is 300 mg/m² × 1.71 m² = 513 mg."
+                }
+            ]
+        },
+        {
+            "number": 27,
+            "tag": "bsa",
+            "question": "If the adult dose of a drug is 1.56 g, calculate the appropriate dose in milligrams for a child who is 102 cm tall and weighs 18 kg. Assume a standard adult BSA of 1.73 m². Round the final answer to whole number.",
+            "answerValue": [644],
+            "answerUnit": ["mg"],
+            "rounding": true,
+            "steps": [
+                {
+                    "text": "Calculate BSA (Mosteller formula)",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "BSA" },
+                        { "type": "squareRoot", "radicand": { "type": "fraction", "numerator": { "operands": [ { "type": "input", "answer": 18, "unit": "kg" }, { "type": "input", "answer": 102, "unit": "cm" } ], "operators": ["×"] }, "denominator": { "type": "input", "answer": 3600, "unit": "" } } },
+                        { "type": "input", "answer": 0.714, "unit": "m<sup>2</sup> (round to 3 decimal places)" }
+                    ],
+                    "operators1": ["=", "="],
+                    "hint": "The child's BSA is √(18 kg × 102 cm / 3600) = √(1836 / 3600) = √0.51 = 0.714 m²."
+                },
+                {
+                    "text": "Set up proportion for dose adjustment",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "Adult dose" },
+                        { "type": "fraction", "numerator": { "type": "input", "answer": 1.56, "unit": "g" }, "denominator": { "type": "input", "answer": 1.73, "unit": "m<sup>2</sup>" } },
+                        { "type": "text", "value": "Child dose" },
+                        { "type": "fraction", "numerator": { "type": "text", "value": "x" }, "denominator": { "type": "input", "answer": 0.714, "unit": "m<sup>2</sup>" } }
+                    ],
+                    "operators1": ["=", "="],
+                    "hint": "Set up the proportion: 1.56 g / 1.73 m² = x / 0.714 m²"
+                },
+                {
+                    "text": "Solve for child's dose",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "x" },
+                        { "type": "fraction", "numerator": { "operands": [ { "type": "input", "answer": 1.56, "unit": "g" }, { "type": "input", "answer": 0.714, "unit": "m<sup>2</sup>" } ], "operators": ["×"] }, "denominator": { "type": "input", "answer": 1.73, "unit": "m<sup>2</sup>" } },
+                        { "type": "input", "answer": 0.6438, "unit": "g (exact)" }
+                    ],
+                    "operators1": ["=", "="],
+                    "hint": "Cross-multiply to solve: x = (1.56 g × 0.714 m²) / 1.73 m² = 1.11384 / 1.73 = 0.6438 g"
+                },
+                {
+                    "text": "Convert to milligrams",
+                    "type": "OPERATION",
+                    "operands1": [
+                        { "type": "text", "value": "Child dose in mg" },
+                        { "type": "input", "answer": 0.6438, "unit": "g" },
+                        { "type": "input", "answer": 1000, "unit": "mg/g" },
+                        { "type": "input", "answer": 644, "unit": "mg (round to whole number)" }
+                    ],
+                    "operators1": ["=", "×", "="],
+                    "hint": "Convert grams to milligrams: 0.6438 g × 1000 mg/g = 643.8 mg. Rounding to the nearest whole number gives 644 mg."
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dose Calculations Based on Patient Parameters</title>
+    <link rel="stylesheet" href="../../master.css">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="index-container">
+        <header>
+            <h1>Pharmacy Calculations:<br>Dose Calculations Based on Patient Parameters</h1>
+        </header>
+
+        <div class="card overview-card">
+            <h2>Overview</h2>
+            <p>In this module, you will:</p>
+            <ul>
+                <li>Calculate and apply different types of body weights for drug dosing</li>
+                <li>Use creatinine clearance calculations for renal drug dosing adjustments</li>
+                <li>Apply body surface area calculations for chemotherapy and pediatric dosing</li>
+            </ul>
+            
+            <div class="method-list">
+                <div class="method-item">
+                    <h3 id="doseCalculationTitle" class="method-title">Dose Calculations Tutorial</h3>
+                    <p class="tutorial-notice">Click the title to view the tutorial</p>
+                </div>
+            </div>
+
+            <div class="button-container">
+                <a href="./practice.html" class="practice-btn">Start Practicing</a>
+            </div>
+        </div>
+
+        <!-- Clinical Dose Calculations Tutorial -->
+        <div class="card tutorial-card" id="doseCalculationTutorial" style="display: none;">
+            <h2>Tutorial - Dose Calculations Using Body Weight, Creatinine Clearance, and BSA</h2>
+            <div class="tutorial-content">
+                
+                <div class="tutorial-section">
+                    <h3>I. Body weights and dosing calculations</h3>
+                    <h4>Types of body weight measurements</h4>
+                    <div class="weight-categories">
+                        <div class="weight-category">
+                            <h4>Actual Body Weight (ABW) or Total Body Weight (TBW)</h4>
+                            <p>Actual weight measured on a scale.</p>
+                        </div>
+                        <div class="weight-category">
+                            <h4>Ideal Body Weight (IBW)</h4>
+                            <p>Estimated healthy body weight based on height and gender.</p>
+                        </div>
+                        <div class="weight-category">
+                            <h4>Adjusted Body Weight (AdjBW)</h4>
+                            <p>Used for dosing in obese patients when TBW significantly exceeds IBW.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tutorial-section">
+                    <h3>1. Body Mass Index (BMI)</h3>
+                    <div class="example-calculation important">
+                        <div class="formula-box-content">
+                            <div class="formula-box">
+                                <p style="text-align: center; color: blue;"><strong>BMI = 
+                                    <span class="fraction">
+                                        <span class="fraction-numerator">Weight (kg)</span>
+                                        <span class="fraction-denominator">[Height (m)]²</span>
+                                    </span>
+                                </strong></p>
+                                <p style="text-align: center; color: blue;"><strong>OR BMI = 
+                                    <span class="fraction">
+                                        <span class="fraction-numerator">Weight (lbs) × 703</span>
+                                        <span class="fraction-denominator">[Height (inches)]²</span>
+                                    </span>
+                                </strong></p>
+                            </div>
+                        </div>
+                        
+                        <table class="wide-metric-table">
+                            <thead>
+                                <tr>
+                                    <th>BMI Category</th>
+                                    <th>BMI Range</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Underweight</td>
+                                    <td>&lt; 18.5</td>
+                                </tr>
+                                <tr>
+                                    <td>Normal</td>
+                                    <td>18.5 – 24.9</td>
+                                </tr>
+                                <tr>
+                                    <td>Overweight</td>
+                                    <td>25 – 29.9</td>
+                                </tr>
+                                <tr>
+                                    <td>Obese</td>
+                                    <td>≥ 30</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <!-- Visual BMI Scale -->
+                        <div class="bmi-scale">
+                            <div class="bmi-scale-line">
+                                <div class="bmi-segment underweight" data-range="under 18.5">
+                                    <span class="bmi-label">under</span>
+                                </div>
+                                <div class="bmi-marker" data-value="18.5">18.5</div>
+                                <div class="bmi-segment normal" data-range="18.5 - 24.9">
+                                    <span class="bmi-label">normal</span>
+                                </div>
+                                <div class="bmi-marker" data-value="25">25</div>
+                                <div class="bmi-segment overweight" data-range="25 - 29.9">
+                                    <span class="bmi-label">over</span>
+                                </div>
+                                <div class="bmi-marker" data-value="30">30</div>
+                                <div class="bmi-segment obese" data-range="30+">
+                                    <span class="bmi-label">obese</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tutorial-section">
+                    <h3>2. Ideal body weight (IBW)</h3>
+                    <div class="example-calculation important">
+                        <div class="formula-box-content">
+                            <div class="formula-box">
+                                <p style="text-align: center; color: blue;"><strong>Males: IBW = 50 + 2.3 x (inches over 5 ft)</strong></p>
+                                <p style="text-align: center; color: blue;"><strong>Females: IBW = 45.5 + 2.3 x (inches over 5 ft)</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tutorial-section">
+                    <h3>3. Adjusted body weight (AdjBW, factor = 0.4)</h3>
+                    <div class="example-calculation important">
+                        <div class="formula-box-content">
+                            <div class="formula-box">
+                                <p style="text-align: center; color: blue;"><strong>AdjBW<sub>0.4</sub> = IBW + 0.4 x (TBW - IBW)</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tutorial-section">
+                    <h3>4. Choosing the Right Weight for Drug Dosing</h3>
+                    <div class="example-calculation">
+                        <ol>
+                            <li>Compare TBW and IBW.</li>
+                            <li>If TBW is close to IBW (normal or underweight), use TBW for most medications.</li>
+                            <li>If the patient is obese (TBW > 120% of IBW), use:
+                                <ul>
+                                    <li>IBW for drugs such as aminophylline, acyclovir, and levothyroxine.</li>
+                                    <li>AdjBW for aminoglycosides (e.g., tobramycin).</li>
+                                    <li>TBW for drugs like vancomycin and heparin.</li>
+                                </ul>
+                            </li>
+                            <li>Follow institutional policy, exam instructions, and current clinical guidelines.</li>
+                        </ol>
+
+                        <div class="image-container" style="display: block; text-align: center;">
+                            <img id="weightFlowchart" src="index/weight.png" alt="Dosing Weight Flowchart" style="width: 100%; max-width: 600px;">
+                            <img src="index/maximize.svg" alt="Enlarge" class="enlarge-icon" onclick="enlargeImage('weightFlowchart')">
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="tutorial-section">
+                    <h3>Example 1 (use TBW)</h3>
+                    <p><strong>A 45-year-old female is admitted with sepsis. She is 5′6″ tall and weighs 175 lb. She is to receive a loading dose of vancomycin at 25 mg/kg.</strong></p>
+                    <p><strong>Hint:</strong> Vancomycin dosing is based on total body weight (TBW), even in obese patients.</p>
+                    <p><strong>What dose should she receive? Round to the nearest 250 mg, and do not exceed 2000 mg.</strong></p>
+                    
+                    <div class="tutorial-steps" id="bodyWeightExample1Steps">
+                        <!-- Step 1 Content -->
+                        <div class="step-content active" id="bw1step1">
+                            <div class="step-instructions">
+                                <div class="step-title">Step 1: Calculate TBW and IBW</div>
+                            </div>
+                            
+                            <div class="example-calculation">
+                                <p>TBW = 175 lb ÷ 2.2 = 79.5 kg</p>
+                                <p>IBW = 45.5 + (2.3 × 6) = 59.3 kg</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 2 Content -->
+                        <div class="step-content" id="bw1step2">
+                            <div class="step-instructions">
+                                <div class="step-title">Step 2: Determine if patient is obese</div>
+                            </div>
+                            
+                            <div class="example-calculation">
+                                <p>TBW/IBW = 79.5 / 59.3 = 1.34 → she is 134% of her IBW → Obese, but vancomycin uses TBW</p>
+                            </div>
+                        </div>
+
+                        <!-- Step 3 Content -->
+                        <div class="step-content" id="bw1step3">
+                            <div class="step-instructions">
+                                <div class="step-title">Step 3: Calculate dose</div>
+                            </div>
+                            
+                            <div class="example-calculation">
+                                <p>Dose = 25 mg/kg × 79.5 kg = 1987.5 mg → round to 2000 mg</p>
+                                <p><strong style="color: green;">Final Answer: 2000 mg</strong></p>
+                            </div>
+                        </div>
+
+                        <!-- Next Button -->
+                        <div class="step-navigation">
+                            <button class="tutorial-next-btn">Next Step ↓</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tutorial-section">
+                    <h3>Example 2 (use IBW)</h3>
+                    <p><strong>A female patient is prescribed theophylline 5 mg/kg/day. She is 5′7″ and weighs 243 lb.</strong></p>
+                    <p><strong>Hint:</strong> For theophylline, use IBW in obese patients.</p>
+                    <p><strong>What is her daily dose? Round to the nearest whole mg.</strong></p>
+                    
+                    <div class="tutorial-steps" id="bodyWeightExample2Steps">
+                        <!-- Step 1 Content -->
+                        <div class="step-content active" id="bw2step1">
+                            <div class="step-instructions">
+                                <div class="step-title">Step 1: Calculate TBW and IBW</div>
+                            </div>
+                            
+                            <div class="example-calculation">
+                                <p>TBW = 243 ÷ 2.2 = 110.5 kg</p>
+                                <p>IBW = 45.5 + (2.3 × 7) = 61.6 kg</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 2 Content -->
+                        <div class="step-content" id="bw2step2">
+                            <div class="step-instructions">
+                                <div class="step-title">Step 2: Determine if patient is obese</div>
+                            </div>
+                            
+                            <div class="example-calculation">
+                                <p>TBW/IBW = 110.5 / 61.6 = 1.79 → Obese, so use IBW</p>
+                            </div>
+                        </div>
+
+                        <!-- Step 3 Content -->
+                        <div class="step-content" id="bw2step3">
+                            <div class="step-instructions">
+                                <div class="step-title">Step 3: Calculate dose</div>
+                            </div>
+                            
+                            <div class="example-calculation">
+                                <p>Dose = 5 mg/kg × 61.6 kg = 308 mg/day</p>
+                                <p><strong style="color: green;">Final Answer: 308 mg/day</strong></p>
+                            </div>
+                        </div>
+
+                        <!-- Next Button -->
+                        <div class="step-navigation">
+                            <button class="tutorial-next-btn">Next Step ↓</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tutorial-section">
+                    <h3>Example 3 (use AdjBW)</h3>
+                    <p><strong>A 34-year-old male (6′7″, 287 lb) is prescribed tobramycin 2 mg/kg IV Q8H for a serious infection.</strong></p>
+                    <p><strong>Hint:</strong> For aminoglycosides like tobramycin, use AdjBW if the patient is obese.</p>
+                    <p><strong>What dose should he receive? Round to the nearest 10 mg.</strong></p>
+                    
+                    <div class="tutorial-steps" id="bodyWeightExample3Steps">
+                        <!-- Step 1 Content -->
+                        <div class="step-content active" id="bw3step1">
+                            <div class="step-instructions">
+                                <div class="step-title">Step 1: Calculate TBW and IBW</div>
+                            </div>
+                            
+                            <div class="example-calculation">
+                                <p>TBW = 287 ÷ 2.2 = 130.5 kg</p>
+                                <p>IBW = 50 + (2.3 × 19) = 93.7 kg</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 2 Content -->
+                        <div class="step-content" id="bw3step2">
+                            <div class="step-instructions">
+                                <div class="step-title">Step 2: Determine if patient is obese</div>
+                            </div>
+                            
+                            <div class="example-calculation">
+                                <p>TBW/IBW = 130.5 / 93.7 = 1.39 → he is 139% of his IBW or 39% above his IBW → obese, so use AdjBW</p>
+                            </div>
+                        </div>
+
+                        <!-- Step 3 Content -->
+                        <div class="step-content" id="bw3step3">
+                            <div class="step-instructions">
+                                <div class="step-title">Step 3: Calculate AdjBW</div>
+                            </div>
+                            
+                            <div class="example-calculation">
+                                <p>AdjBW = 93.7 + 0.4 × (130.5 − 93.7) = 108.4 kg</p>
+                            </div>
+                        </div>
+
+                        <!-- Step 4 Content -->
+                        <div class="step-content" id="bw3step4">
+                            <div class="step-instructions">
+                                <div class="step-title">Step 4: Calculate dose</div>
+                            </div>
+                            
+                            <div class="example-calculation">
+                                <p>Dose = 2 mg/kg × 108.4 kg = 216.8 mg → round to 220 mg IV Q8H</p>
+                                <p><strong style="color: green;">Final Answer: 220 mg IV Q8H</strong></p>
+                            </div>
+                        </div>
+
+                        <!-- Next Button -->
+                        <div class="step-navigation">
+                            <button class="tutorial-next-btn">Next Step ↓</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-divider"></div>
+
+                <div class="tutorial-section">
+                    <h3>II. Creatinine Clearance (CrCl) and Renal Drug Dosing</h3>
+                    <div class="example-calculation important">
+                        <h4>Cockcroft & Gault Equation:</h4>
+                        <div class="formula-box-content">
+                            <div class="formula-box">
+                                <p style="text-align: center; color: blue;"><strong>Male: CrCl<sub>male</sub>  = 
+                                    <span class="fraction">
+                                        <span class="fraction-numerator">(140 – Age) × Weight in kg</span>
+                                        <span class="fraction-denominator">72 × SCr</span>
+                                    </span>
+                                </strong></p>
+                                <p style="text-align: center; color: blue;"><strong>Female: CrCl<sub>female</sub> = 0.85 × CrCl<sub>male</sub> =
+                                    <span class="fraction">
+                                        <span class="fraction-numerator">0.85 × (140 – Age) × Weight in kg</span>
+                                        <span class="fraction-denominator">72 × SCr</span>
+                                    </span>
+                                </strong></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h4 style="color: blue;"><strong><u>Which weight to use:</u></strong></h4>
+
+                    <ul style="color: blue;">
+                        <li>Underweight: Use actual body weight (ABW)</li>
+                        <li>Normal weight: Use ideal body weight (IBW)</li>
+                        <li>Overweight (BMI ≥ 25): Use adjusted body weight (AdjBW)</li>
+                    </ul>
+
+                    <div class="image-container" style="display: block; text-align: center;">
+                        <img id="weightFlowchart2" src="index/weight2.png" alt="CrCl Weight Selection Flowchart" style="width: 100%; max-width: 600px;">
+                        <img src="index/maximize.svg" alt="Enlarge" class="enlarge-icon" onclick="enlargeImage('weightFlowchart2')">
+                    </div>
+
+                    <h4><strong><u>Additional notes on CrCl estimation (institutional variability):</u></strong></h4>
+                    <p>Depending on institutional policy and clinical context, the following considerations may apply:</p>
+                    <ul>
+                        <li><strong>Use of AdjBW in the Cockcroft-Gault Equation:</strong><br>
+                            Many institutions recommend using AdjBW when ABW exceeds IBW by ≥30%, rather than relying solely on a BMI ≥25.</li>
+                        <li><strong>Low serum creatinine in elderly or cachectic patients:</strong><br>
+                            In older adults (≥65 years) or cachectic individuals (ABW ≥20% below IBW), a serum creatinine (SCr) < 1 mg/dL may underestimate renal function. Some clinicians round SCr up to 1 mg/dL to avoid overestimation of creatinine clearance.
+                        </li>
+                        <li><strong>Short stature adjustments:</strong><br>
+                            For patients under 5 feet tall, standard IBW formulas may overestimate ideal weight.
+                            <ul>
+                                <li>IBW is calculated by subtracting from 50 (male) or 45.5 (female), down to 4’10’’.</li>
+                                <li>For individuals under 4’10’’: some protocols recommend capping IBW at 45.5 kg for males and 40.9 kg for females.</li>
+                                <li>Alternatively, for height below 4’10’’, use Jelliffe equation; Schwartz equation may be considered for more accurate estimation in the pediatric population.</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <h4><strong><u>Evaluating Kidney Function: Shift from Cockcroft-Gault to eGFR</u></strong></h4>
+                    <ul>
+                        <li><strong>eGFR (Estimated Glomerular Filtration Rate)</strong>
+                            <ul>
+                                <li>Newer method, based on diverse populations</li>
+                                <li>Uses age, sex, serum creatinine (no race in latest version)</li>
+                                <li>Based on standardized serum creatinine</li>
+                                <li>Auto-reported by labs and preferred for CKD staging/dosing</li>
+                            </ul>
+                        </li>
+                        <li><strong>Cockcroft-Gault (CrCl)</strong>
+                            <ul>
+                                <li>Older method (1976), requires manual calculation</li>
+                                <li>Uses age, weight, sex, serum creatinine</li>
+                                <li>Not based on standardized serum creatinine</li>
+                                <li>Still referenced in some older FDA drug labels</li>
+                            </ul>
+                        </li>
+                        <li><strong>Why eGFR Is Preferred Today</strong>
+                            <ul>
+                                <li>More accurate and consistent with lab tests</li>
+                                <li>Does not require weight</li>
+                                <li>Already used for CKD staging</li>
+                                <li>Supported by updated KDIGO 2024 guidelines</li>
+                                <li>2021 CKD-EPI equation is current gold standard (as of 2025)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <strong>Note:</strong> Some drug labels still use CrCl, so pharmacists must be familiar with both methods.
+                </div>
+
+                <div class="tutorial-section">
+                    <h3>Example:</h3>
+                    <p><strong>A 64-year-old female (5′5″, 205 lb) is hospitalized with nosocomial pneumonia and is receiving ciprofloxacin, Primaxin, and vancomycin. Morning labs: K 4 mEq/L, BUN 60 mg/dL, SCr 2.7 mg/dL, glucose 222 mg/dL.</strong></p>
+                    <p><strong>Based on the renal dosing table below, what is the correct Primaxin dose for this patient?</strong></p>
+
+                    <table class="wide-metric-table">
+                        <thead>
+                            <tr>
+                                <th>CrCl</th>
+                                <th>≥ 71 mL/min</th>
+                                <th>41 - 70 mL/min</th>
+                                <th>21 - 40 mL/min</th>
+                                <th>6 - 20 mL/min</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Primaxin Dose</strong></td>
+                                <td>500 mg IV Q6H</td>
+                                <td>500 mg IV Q8H</td>
+                                <td>250 mg IV Q6H</td>
+                                <td>250 mg IV Q12H</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <div class="tutorial-steps" id="creatinineExample1Steps">
+                        <!-- Step 1 Content -->
+                        <div class="step-content active" id="cr1step1">
+                            <div class="step-instructions">
+                                <div class="step-title">Step 1: Figure out which weight to use for CrCl</div>
+                            </div>
+                            
+                            <div class="example-calculation">
+                                <p>BMI = 205/65² × 703 = 34.1 kg/m²; obese → so use AdjBW for CrCl</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 2 Content -->
+                        <div class="step-content" id="cr1step2">
+                            <div class="step-instructions">
+                                <div class="step-title">Step 2: Calculate AdjBW</div>
+                            </div>
+                            
+                            <div class="example-calculation">
+                                <p>TBW = 205 ÷ 2.2 = 93.18 kg</p>
+                                <p>IBW = 45.5 kg + (2.3 × 5 in) = 57 kg</p>
+                                <p>AdjBW<sub>0.4</sub> = 57 + 0.4 × (93.18 - 57) = 71.47 kg</p>
+                            </div>
+                        </div>
+
+                        <!-- Step 3 Content -->
+                        <div class="step-content" id="cr1step3">
+                            <div class="step-instructions">
+                                <div class="step-title">Step 3: Use Cockcroft & Gault equation to calculate CrCl</div>
+                            </div>
+                            
+                            <div class="example-calculation">
+                                <p>CrCl = 
+                                    <span class="fraction">
+                                        <span class="fraction-numerator">0.85 × (140 – 64) × 71.47</span>
+                                        <span class="fraction-denominator">72 × 2.7</span>
+                                    </span>
+                                     = 23.75 mL/min</p>
+                            </div>
+                        </div>
+
+                        <!-- Step 4 Content -->
+                        <div class="step-content" id="cr1step4">
+                            <div class="step-instructions">
+                                <div class="step-title">Step 4: Check on the package labeling info, and determine the dose</div>
+                            </div>
+                            
+                            <div class="example-calculation">
+                                <p>CrCl = 23.75 mL/min falls in the 21-40 mL/min range</p>
+                                <p><strong style="color: green;">The dose is 250 mg IV Q6H</strong></p>
+                            </div>
+                        </div>
+
+                        <!-- Next Button -->
+                        <div class="step-navigation">
+                            <button class="tutorial-next-btn">Next Step ↓</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-divider"></div>
+
+                <div class="tutorial-section">
+                    <h3>III. Body Surface Area (BSA) and Drug Dosing</h3>
+                    <div class="example-calculation important">
+                        <h4>Mosteller Equation:</h4>
+                        <div class="formula-box-content">
+                            <div class="formula-box">
+                                <p style="text-align: center; color: blue;"><strong>BSA (m²) = 
+                                    <span class="square-root">
+                                        <span class="fraction">
+                                            <span class="fraction-numerator">Weight (kg) × Height (cm)</span>
+                                            <span class="fraction-denominator">3600</span>
+                                        </span>
+                                    </span>
+                                </strong></p>
+                                <p style="text-align: center; color: blue;"><strong>OR</strong></p>
+                                <p style="text-align: center; color: blue;"><strong>BSA (m²) = 
+                                    <span class="square-root">
+                                        <span class="fraction">
+                                            <span class="fraction-numerator">Weight (lbs) × Height (in)</span>
+                                            <span class="fraction-denominator">3131</span>
+                                        </span>
+                                    </span>
+                                </strong></p>
+                            </div>
+                        </div>
+                        <p>BSA is primarily used for chemotherapy and pediatric dosing.</p>
+                    </div>
+                </div>
+
+                <div class="tutorial-section">
+                    <h3>Example:</h3>
+                    <p><strong>A breast cancer regimen includes doxorubicin 30 mg/m²/day for 3 days. How much should a patient who is 5′6″ (167.6 cm) and 144 lb (65.5 kg) receive per day?</strong></p>
+                    
+                    <div class="tutorial-steps" id="bsaExample1Steps">
+                        <!-- Step 1 Content -->
+                        <div class="step-content active" id="bsa1step1">
+                            <div class="step-instructions">
+                                <div class="step-title">Step 1: Use the Mosteller equation to calculate BSA; and convert height/weight if needed</div>
+                            </div>
+                            
+                            <div class="example-calculation">
+                                <p>Wt = 144 lb × 1 kg/2.2 lb = 65.5 kg</p>
+                                <p>Ht = 66 inches × 2.54 cm/1 inch = 167.6 cm</p>
+                                <p>BSA = √(65.5 × 167.6)/3600 = 1.74 m²</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 2 Content -->
+                        <div class="step-content" id="bsa1step2">
+                            <div class="step-instructions">
+                                <div class="step-title">Step 2: Calculate dose</div>
+                            </div>
+                            
+                            <div class="example-calculation">
+                                <p>Dose = 30 mg/m²/day × 1.74 m² = 52.2 mg/day</p>
+                                <p><strong style="color: green;">Final Answer: 52.2 mg/day</strong></p>
+                            </div>
+                        </div>
+
+                        <!-- Next Button -->
+                        <div class="step-navigation">
+                            <button class="tutorial-next-btn">Next Step ↓</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="back-to-top">
+                    <button id="backToOverviewBtn" class="back-btn">← Back to Overview</button>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                // Tutorial Navigation & General Page Logic
+                const doseCalculationTitle = document.getElementById('doseCalculationTitle');
+                const doseCalculationTutorial = document.getElementById('doseCalculationTutorial');
+                const backToOverviewBtn = document.getElementById('backToOverviewBtn');
+
+                if (doseCalculationTitle) {
+                    doseCalculationTitle.addEventListener('click', () => {
+                        doseCalculationTutorial.style.display = 'block';
+                        doseCalculationTitle.classList.add('active');
+                        doseCalculationTutorial.scrollIntoView({ behavior: 'smooth' });
+                    });
+                }
+
+                if (backToOverviewBtn) {
+                    backToOverviewBtn.addEventListener('click', () => {
+                        doseCalculationTutorial.style.display = 'none';
+                        doseCalculationTitle.classList.remove('active');
+                        document.querySelector('.overview-card').scrollIntoView({ behavior: 'smooth' });
+                    });
+                }
+                
+                // Initialize step-by-step tutorials
+                setupTutorialSteps('bodyWeightExample1Steps');
+                setupTutorialSteps('bodyWeightExample2Steps');
+                setupTutorialSteps('bodyWeightExample3Steps');
+                setupTutorialSteps('creatinineExample1Steps');
+                setupTutorialSteps('bsaExample1Steps');
+
+                function setupTutorialSteps(containerId) {
+                    const stepsContainer = document.getElementById(containerId);
+                    if (!stepsContainer) return;
+
+                    const steps = stepsContainer.querySelectorAll('.step-content');
+                    const nextBtn = stepsContainer.querySelector('.tutorial-next-btn');
+                    if (!nextBtn) return; // Ensure button exists
+                    let currentStep = 1;
+                    const totalSteps = steps.length;
+
+                    function updateDisplay() {
+                        steps.forEach((step, index) => {
+                            step.classList.toggle('active', index < currentStep);
+                        });
+                        nextBtn.style.display = currentStep === totalSteps ? 'none' : 'block';
+                    }
+
+                    nextBtn.addEventListener('click', () => {
+                        if (currentStep < totalSteps) {
+                            currentStep++;
+                            updateDisplay();
+                        }
+                    });
+                    updateDisplay(); // Initial display
+                }
+            });
+
+            // Image enlarge functionality
+            function enlargeImage(imageId) {
+                const originalImage = document.getElementById(imageId);
+                const enlargedImage = document.getElementById('enlargedImage');
+                const overlay = document.getElementById('imageOverlay');
+                
+                enlargedImage.src = originalImage.src;
+                enlargedImage.alt = originalImage.alt;
+                overlay.classList.add('active');
+                document.body.style.overflow = 'hidden'; // Prevent background scrolling
+            }
+
+            function closeEnlargedImage(event) {
+                // Prevent closing when clicking on the image itself
+                if (event.target.id === 'enlargedImage') {
+                    return;
+                }
+                
+                const overlay = document.getElementById('imageOverlay');
+                overlay.classList.remove('active');
+                document.body.style.overflow = 'auto'; // Restore scrolling
+            }
+
+            // Make functions globally available
+            window.enlargeImage = enlargeImage;
+            window.closeEnlargedImage = closeEnlargedImage;
+        </script>
+    </div>
+
+    <!-- Image overlay for enlarged view -->
+    <div id="imageOverlay" class="image-overlay" onclick="closeEnlargedImage(event)">
+        <div style="position: relative;">
+            <img id="enlargedImage" src="" alt="" class="enlarged-image">
+            <img src="index/minimize.svg" alt="Minimize" class="minimize-icon" onclick="closeEnlargedImage(event)">
+        </div>
+    </div>
+
+</body>
+</html>

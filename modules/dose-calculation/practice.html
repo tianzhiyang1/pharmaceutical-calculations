@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dose Calculations Practice</title>
+    <link rel="stylesheet" href="../../master.css">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Dose Calculations Practice</h1>
+        </header>
+
+        <div id="questionNavigator" style="text-align: right; margin-bottom: 10px;"></div>
+
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+
+        <div class="stats">
+            <div class="stat-item">
+                <div class="stat-value" id="questionsCompleted">0</div>
+                <div class="stat-label">Completed</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value" id="questionsRemaining">0</div>
+                <div class="stat-label">Remaining</div>
+            </div>
+        </div>
+
+        <!-- Filter Options -->
+        <div class="filter-container">
+            <div class="filter-title">Choose what you want to practice:</div>
+            <div class="filter-options">
+                <label class="filter-option">
+                    <input type="checkbox" id="weightsFilter" checked>
+                    <span class="filter-label">Body weights (BMI, IBW, AdjBW)</span>
+                </label>
+                <label class="filter-option">
+                    <input type="checkbox" id="crClFilter" checked>
+                    <span class="filter-label">CrCl Dosing</span>
+                </label>
+                <label class="filter-option">
+                    <input type="checkbox" id="bsaFilter" checked>
+                    <span class="filter-label">BSA Dosing</span>
+                </label>
+            </div>
+        </div>
+
+        <!-- Question Card -->
+        <div class="card" id="questionCard">
+            <div class="question-container">
+                <div class="question" id="questionText"></div>
+                <div id="answerContainer" class="answer-container">
+                    <label for="answerInput">Answer:</label>
+                    <input type="text" id="answerInput" class="box-input" step="any">
+                    <span id="answerUnit" class="unit"></span>
+                    <button id="answerBtn" class="button-accent" disabled>Show Answer</button>
+                </div>
+                <div id="answerFeedback" class="feedback"></div>
+            </div>
+
+            <div class="button-row">
+                <button id="checkAnswer">Check Answer</button>
+                <button id="showStepsBtn" class="button-accent">Step-by-Step Guide</button>
+                <button id="prevQuestion" class="button-secondary">Previous Question</button>
+                                    <button id="nextQuestion" class="button-secondary">Next Question</button>
+            </div>
+
+            <div class="steps-container" id="stepsContainer">
+                <h3>Step-by-Step Solution</h3>
+                <div id="steps"></div>
+            </div>
+        </div>
+
+        <!-- Results Card (hidden by default) -->
+        <div class="card" id="results" style="display: none;">
+            <div class="results-title">Practice Completed!</div>
+            <div class="results-message">You've successfully completed all practice questions.</div>
+            <div class="button-row">
+                <button id="restartBtn">Practice Again</button>
+            </div>
+        </div>
+
+        <!-- Reference section with collapsible cards -->
+        <div class="reference-container">
+            <div class="reference-card">
+                <div class="reference-header" id="mainReferenceHeader">
+                    <h3>Dose Calculation References</h3>
+                    <span class="expand-icon">+</span>
+                </div>
+                <div class="reference-content" id="mainReferenceContent">
+                    
+                    <!-- Topic: Body Weights -->
+                    <div class="reference-card">
+                        <div class="reference-header" id="bodyWeightsHeader">
+                            <h3>Body Weights (BMI, IBW, AdjBW)</h3>
+                            <span class="expand-icon">+</span>
+                        </div>
+                        <div class="reference-content" id="bodyWeightsContent">
+                            <div class="horizontal-operation" style="font-weight: bold; justify-content: center;">
+                                <span>BMI = </span>
+                                <div class="fraction">
+                                    <div class="fraction-numerator">Weight (kg)</div>
+                                    <div class="fraction-denominator">[Height (m)]²</div>
+                                </div>
+                                <span> OR BMI = </span>
+                                <div class="fraction">
+                                    <div class="fraction-numerator">Weight (lbs) × 703</div>
+                                    <div class="fraction-denominator">[Height (inches)]²</div>
+                                </div>
+                            </div>
+                            
+                            <div class="horizontal-operation" style="font-weight: bold; justify-content: center;">
+                                <span>IBW for males = 50 + 2.3 × (inches over 5 ft)</span>
+                            </div>
+                            <div class="horizontal-operation" style="font-weight: bold; justify-content: center;">
+                                <span>IBW for females = 45.5 + 2.3 × (inches over 5 ft)</span>
+                            </div>
+                            
+                            <div class="horizontal-operation" style="font-weight: bold; justify-content: center;">
+                                <span>AdjBW<sub>0.4</sub> = IBW + 0.4 × (TBW - IBW)</span>
+                            </div>
+
+                            <p><strong>Choosing the Right Weight for Drug Dosing:</strong></p>
+                            <ol>
+                                <li>Compare TBW and IBW.</li>
+                                <li>If TBW is close to IBW (normal or underweight), use TBW for most medications.</li>
+                                <li>If the patient is obese (TBW > 120% of IBW), use:
+                                    <ul>
+                                        <li>IBW for drugs such as aminophylline, acyclovir, and levothyroxine.</li>
+                                        <li>AdjBW for aminoglycosides (e.g., tobramycin).</li>
+                                        <li>TBW for drugs like vancomycin and heparin.</li>
+                                    </ul>
+                                </li>
+                                <li>Follow institutional policy, exam instructions, and current clinical guidelines.</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <!-- Topic: CrCl Dosing -->
+                    <div class="reference-card">
+                        <div class="reference-header" id="crclHeader">
+                            <h3>CrCl Dosing</h3>
+                            <span class="expand-icon">+</span>
+                        </div>
+                        <div class="reference-content" id="crclContent">
+                            <p><strong>Cockcroft & Gault Equation:</strong></p>
+                            <div class="horizontal-operation" style="font-weight: bold; justify-content: center;">
+                                <span>Male: CrCl (mL/min) = </span>
+                                <div class="fraction">
+                                    <div class="fraction-numerator">(140 – Age in yrs) × (BW in kg)</div>
+                                    <div class="fraction-denominator">72 × (SCr in mg/dL)</div>
+                                </div>
+                            </div>
+                            <div class="horizontal-operation" style="font-weight: bold; justify-content: center;">
+                                <span>Female: CrCl (mL/min) = CrCl (male) × 0.85</span>
+                            </div>
+                            
+                            <p><strong>Additional notes on CrCl estimation (institutional variability):</strong></p>
+                            <ul>
+                                <li><strong>Low serum creatinine in elderly or cachectic patients:</strong><br>
+                                    For older adults (≥65 years) or cachectic individuals (actual body weight ≥20% below IBW), it is sometimes recommended to round serum creatinine (SCr) up to 1.0 mg/dL. This adjustment helps avoid overestimating renal function due to falsely low SCr.</li>
+                                <li><strong>Short stature adjustments:</strong><br>
+                                    For patients under 5 feet tall, standard IBW formulas may overestimate ideal weight.
+                                    <ul>
+                                        <li>For individuals under 4′10″: some protocols recommend capping IBW at 45.5 kg for males and 40.9 kg for females.</li>
+                                        <li>The Schwartz equation may be considered for more accurate estimation in pediatric population.</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Weight selection for CrCl calculation:</strong><br>
+                                    Refer to institutional policies to determine whether to use TBW, IBW, or AdjBW in the Cockcroft-Gault equation. Different institutions may have specific policies based on BMI, renal dosing guidelines, or drug-specific recommendations.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Topic: BSA Dosing -->
+                    <div class="reference-card">
+                        <div class="reference-header" id="bsaHeader">
+                            <h3>BSA Dosing</h3>
+                            <span class="expand-icon">+</span>
+                        </div>
+                        <div class="reference-content" id="bsaContent">
+                            <p><strong>Mosteller Equation:</strong></p>
+                            <div class="horizontal-operation" style="font-weight: bold; justify-content: center;">
+                                <span>BSA (m²) = </span>
+                                <span class="square-root">
+                                    <div class="fraction">
+                                        <div class="fraction-numerator">Weight (kg) × Height (cm)</div>
+                                        <div class="fraction-denominator">3600</div>
+                                    </div>
+                                </span>
+                            </div>
+                            <div class="horizontal-operation" style="font-weight: bold; justify-content: center;">
+                                <span>OR &nbsp;&nbsp; BSA (m²) = </span>
+                                <span class="square-root">
+                                    <div class="fraction">
+                                        <div class="fraction-numerator">Weight (lbs) × Height (in)</div>
+                                        <div class="fraction-denominator">3131</div>
+                                    </div>
+                                </span>
+                            </div>
+                            
+                            <p><strong>Clinical Applications:</strong></p>
+                            <ul>
+                                <li>BSA is primarily used for chemotherapy and pediatric dosing.</li>
+                                <li>Provides more accurate dosing than weight alone for certain medications.</li>
+                                <li>Commonly used in oncology protocols and pediatric medicine.</li>
+                            </ul>
+                            
+                            <p><strong>Step-by-step calculation:</strong></p>
+                            <ol>
+                                <li>Convert weight to kg and height to cm (if needed)</li>
+                                <li>Apply the Mosteller equation to calculate BSA</li>
+                                <li>Use BSA in dose calculation: Dose = mg/m² × BSA</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="clear-progress-container">
+            <p>Want to see your question history? 
+                <a href="#" id="viewHistoryBtn" class="clear-data-link">View history</a>
+            </p>
+            <p>Want to clear your saved progress data?
+                <a href="#" id="clearProgressBtn" class="clear-data-link">Clear saved data</a>
+            </p>
+            <p>Want to see the tutorial again?
+                <a href="index.html" class="clear-data-link">Go back to tutorial</a>
+            </p>
+        </div>
+    </div>
+
+    <!-- History Modal -->
+    <div id="historyModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Question History</h2>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <p class="history-description">
+                    Click on any green button to view the solution to a completed question. Gray buttons represent questions that have not been completed yet.
+                </p>
+                <div class="history-list" id="historyList">
+                    <!-- Question buttons will be dynamically inserted here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Solution Modal -->
+    <div id="solutionModal" class="modal">
+        <div class="modal-content solution-modal-content">
+            <div class="modal-header">
+                <h2>Solution</h2>
+                <span class="close-solution-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div id="solutionQuestion" class="solution-question"></div>
+                <div class="steps-container solution-steps" id="solutionSteps">
+                    <!-- Steps will be inserted here -->
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script type="module" src="main.js"></script>
+</body>
+</html>

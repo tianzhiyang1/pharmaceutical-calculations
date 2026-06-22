@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expressions of Concentrations Practice</title>
+    <link rel="stylesheet" href="../../master.css">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Expressions of Concentrations Practice</h1>
+        </header>
+
+        <div id="questionNavigator" style="text-align: right; margin-bottom: 10px;"></div>
+
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+
+        <div class="stats">
+            <div class="stat-item">
+                <div class="stat-value" id="questionsCompleted">0</div>
+                <div class="stat-label">Completed</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value" id="questionsRemaining">0</div>
+                <div class="stat-label">Remaining</div>
+            </div>
+        </div>
+
+        <!-- Filter Options -->
+        <div class="filter-container">
+            <div class="filter-title">Choose what you want to practice:</div>
+            <div class="filter-options">
+                <label class="filter-option">
+                    <input type="checkbox" id="percentageFilter" checked>
+                    <span class="filter-label">Percentage Strength</span>
+                </label>
+                <label class="filter-option">
+                    <input type="checkbox" id="ratioFilter" checked>
+                    <span class="filter-label">Ratio Strength</span>
+                </label>
+            </div>
+        </div>
+
+        <!-- Question Card -->
+        <div class="card" id="questionCard">
+            <div class="question-container">
+                <div class="question" id="questionText"></div>
+                <div class="answer-container" id="answerContainer">
+                    <label for="answerInput">Answer:</label>
+                    <input type="text" id="answerInput" class="box-input" step="any">
+                    <span id="answerUnit" class="unit"></span>
+                    <button id="answerBtn" class="button-accent" disabled>Show Answer</button>
+                </div>
+                <div class="feedback" id="answerFeedback"></div>
+            </div>
+
+            <div class="button-row">
+                <button id="checkAnswer">Check Answer</button>
+                <button id="showStepsBtn" class="button-accent">Step-by-Step Guide</button>
+                <button id="prevQuestion" class="button-secondary">Previous Question</button>
+                <button id="nextQuestion" class="button-secondary">Next Question</button>
+            </div>
+
+            <div class="steps-container" id="stepsContainer">
+                <h3>Step-by-Step Solution</h3>
+                <div id="steps"></div>
+            </div>
+        </div>
+
+        <!-- Results Card (hidden by default) -->
+        <div class="card" id="results" style="display: none;">
+            <div class="results-title">Practice Completed!</div>
+            <div class="results-message">You've successfully completed all practice questions.</div>
+            <div class="button-row">
+                <button id="restartBtn">Practice Again</button>
+            </div>
+        </div>
+
+        <!-- Reference section with collapsible cards -->
+        <div class="reference-container">
+            <!-- Percentage Strength Reference Card -->
+            <div class="reference-card">
+                <div class="reference-header" id="percentageStrengthHeader">
+                    <h3>Percentage Strength</h3>
+                    <span class="expand-icon">+</span>
+                </div>
+                <div class="reference-content" id="percentageStrengthContent">
+                    <p><strong>Steps to solve percentage strength problems:</strong></p>
+                    <ol>
+                        <li>Identify the type of percentage
+                            <ul>
+                                <li>w/v (weight in volume)</li>
+                                <li>v/v (volume in volume)</li>
+                                <li>w/w (weight in weight)</li>
+                            </ul>
+                        </li>
+                        <li>Convert all units to standard units, ie, mL for volume; g for weight</li>
+                        <li>Set up the ratio and proportion by using the format:
+                            <div class="proportion">
+                                <div class="fraction">
+                                    <div class="fraction-numerator">Amount of drug</div>
+                                    <div class="fraction-bar"></div>
+                                    <div class="fraction-denominator">Total amount (mL or g)</div>
+                                </div>
+                                <span>=</span>
+                                <div class="fraction">
+                                    <div class="fraction-numerator">x</div>
+                                    <div class="fraction-bar"></div>
+                                    <div class="fraction-denominator">100</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>Solve for the unknown</li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- Ratio Strength Reference Card -->
+            <div class="reference-card">
+                <div class="reference-header" id="ratioStrengthHeader">
+                    <h3>Ratio Strength</h3>
+                    <span class="expand-icon">+</span>
+                </div>
+                <div class="reference-content" id="ratioStrengthContent">
+                    <p><strong>Steps to solve ratio strength problems:</strong></p>
+                    <ol>
+                        <li>Identify the type of ratio strength
+                            <ul>
+                                <li>w/v: g in mL (eg, 1 g in 1000 mL)</li>
+                                <li>v/v: mL in mL (eg, 1 mL in 1000 mL)</li>
+                                <li>w/w: g in g (eg, 1 g in 1000 g)</li>
+                            </ul>
+                        </li>
+                        <li>Convert all units to standard units, ie, mL for volume; g for weight</li>
+                        <li>Set up the ratio and proportion by using the format:
+                            <div class="proportion">
+                                <div class="fraction">
+                                    <div class="fraction-numerator">Amount of drug</div>
+                                    <div class="fraction-bar"></div>
+                                    <div class="fraction-denominator">Total amount (mL or g)</div>
+                                </div>
+                                <span>=</span>
+                                <div class="fraction">
+                                    <div class="fraction-numerator">1</div>
+                                    <div class="fraction-bar"></div>
+                                    <div class="fraction-denominator">x</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>Solve for the unknown</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="clear-progress-container">
+            <p>Want to see your question history? 
+                <a href="#" id="viewHistoryBtn" class="clear-data-link">View history</a>
+            </p>
+            <p>Want to clear your saved progress data?
+                <a href="#" id="clearProgressBtn" class="clear-data-link">Clear saved data</a>
+            </p>
+            <p>Want to see the tutorial again?
+                <a href="index.html" class="clear-data-link">Go back to tutorial</a>
+            </p>
+        </div>
+    </div>
+
+    <!-- History Modal -->
+    <div id="historyModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Question History</h2>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <p class="history-description">
+                    Click on any green button to view the solution to a completed question. Gray buttons represent questions that have not been completed yet.
+                </p>
+                <div class="history-list" id="historyList">
+                    <!-- Question buttons will be dynamically inserted here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Solution Modal -->
+    <div id="solutionModal" class="modal">
+        <div class="modal-content solution-modal-content">
+            <div class="modal-header">
+                <h2>Solution</h2>
+                <span class="close-solution-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div id="solutionQuestion" class="solution-question"></div>
+                <div class="steps-container solution-steps" id="solutionSteps">
+                    <!-- Steps will be inserted here -->
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script type="module" src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,816 @@
+/* Styles for Expressions of Concentrations module */
+
+/* Tutorial Cards */
+.tutorial-card {
+    animation: fadeIn 0.5s ease;
+}
+
+.tutorial-section {
+    margin-bottom: 2rem;
+}
+
+.section-divider {
+    height: 1px;
+    background-color: var(--border-color);
+    margin: 2rem 0;
+}
+
+/* Example Calculations */
+.example-calculation {
+    border-radius: 6px;
+    border: 2px solid var(--hint-border, var(--border-color));
+    padding: 15px;
+    margin: 15px 0;
+    position: relative; 
+}
+
+.example-calculation p {
+    margin: 8px 0;
+}
+
+.example-calculation ul {
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+/* Important example containers */
+.important {
+    border: 3px solid var(--primary-color);
+    border-radius: var(--card-radius);
+    padding: var(--spacing-md);
+    margin: var(--spacing-lg) 0;
+    background-color: var(--important-bg);
+}
+
+/* Layout for the section containing the percent table and matching button */
+#importantToRememberSection.important {
+    display: flex;
+    flex-direction: column; 
+}
+
+.important-header-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: var(--spacing-xxl); 
+}
+
+.important-header-row .important-text {
+    color: var(--primary-color);
+    text-align: center;
+    margin-top: 0;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/* Tables */
+.wide-metric-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: var(--spacing-md) 0;
+}
+
+.wide-metric-table th {
+    background-color: var(--primary-color);
+    color: white;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    text-align: left;
+}
+
+.wide-metric-table td {
+    border: 1px solid var(--border-color);
+    padding: var(--spacing-xs) var(--spacing-sm);
+}
+
+.prefix-cell {
+    font-weight: 500;
+}
+
+.value-cell {
+    font-family: monospace;
+}
+
+/* Equations and Fractions */
+.equation {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--spacing-xs);
+    margin: var(--spacing-md) 0;
+}
+
+.fraction {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    margin: 0 5px;
+}
+
+.fraction-numerator, 
+.fraction-denominator {
+    display: block;
+    padding: 0 5px;
+}
+
+.fraction-bar {
+    border-bottom: 1px solid var(--text-color);
+    margin: 2px 0;
+}
+
+.horizontal-operation {
+    margin: var(--spacing-sm) 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--spacing-xs);
+}
+
+/* Each OPERATION step can stack multiple equation lines (operands1, operands2,
+   ...); keep them on separate rows with a little breathing room. */
+.operation-line-container {
+    display: block;
+}
+
+.operation-line-container + .operation-line-container {
+    margin-top: var(--spacing-sm);
+}
+
+.eq-operator {
+    margin: 0 var(--spacing-xs);
+    font-weight: bold;
+}
+
+.proportion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: var(--spacing-md) 0;
+}
+
+/* ================== */
+/* Step Navigation Styles */
+/* ================== */
+
+.step-content {
+    display: none; /* Initially hidden */
+    margin-bottom: var(--spacing-lg);
+}
+  
+.step-content.active {
+    display: block;
+    animation: fadeIn 0.3s ease-in-out;
+}
+  
+.step-title {
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-md);
+}
+  
+.step-instructions {
+    border-left: 3px solid var(--primary-color);
+    padding: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+}
+  
+.step-instructions ol {
+    margin: 0;
+    padding-left: var(--spacing-lg);
+}
+  
+.step-instructions li {
+    margin-bottom: var(--spacing-xs);
+}
+  
+.tutorial-steps {
+    position: relative;
+    min-height: 320px;
+    padding: 0 var(--spacing-lg);
+}
+  
+.step-navigation {
+    margin-top: var(--spacing-lg);
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Method Items */
+.method-item {
+    margin-bottom: 25px;
+}
+
+.method-item ul {
+    margin-top: 5px;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 600px) {
+    .equation,
+    .horizontal-operation,
+    .proportion {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .eq-operator {
+        margin: 5px 0;
+    }
+    
+    .wide-metric-table th,
+    .wide-metric-table td {
+        padding: 6px 8px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Matching Game Styles */
+.matching-board {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    margin-bottom: 60px;
+}
+
+.matching-card {
+    height: 90px;
+    cursor: pointer;
+    overflow: hidden; 
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    text-align: center;
+    box-sizing: border-box;
+    background: #F0F8FF;
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+    transition: box-shadow 0.3s, border-color 0.3s;
+}
+
+.matching-card.selected {
+    border: 2px solid var(--accent-color);
+    box-shadow: 0 0 8px var(--accent-color);
+}
+
+.matching-card.matched {
+    box-shadow: 0 0 10px var(--correct-color); 
+    border: 2px solid var(--correct-color);
+}
+
+
+.term-card {
+    background-color: #B3D9FF; 
+    border: 2px solid #1890ff;
+}
+
+.definition-card {
+    background-color: #fff7e6;
+    border: 2px solid #faad14;
+}
+
+.status-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.status-panel .card-counter {
+    font-weight: bold;
+}
+
+#matching-game-container .controls {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    margin-top: 0;
+}
+
+#matchingGameButtonContainer {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 5px;
+}
+
+/* Decimal/Percentage Conversion Visualization*/
+.conversion-steps {
+    display: flex;
+    flex-direction: row; 
+    align-items: baseline;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    margin: 15px auto; 
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.conversion-step-display {
+    font-size: 1em;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0 5px;
+    padding: 4px 6px;
+    border-radius: 4px;
+    display: inline-flex; 
+    align-items: center;
+    text-align: center;
+}
+
+.conversion-step-display .number {
+    font-weight: bold;
+}
+
+.conversion-step-display .operator {
+    font-size: 0.8em;
+    color: var(--accent-color);
+    margin: 0 3px;
+}
+
+.conversion-step-display .percent-sign {
+    color: var(--primary-color);
+    font-weight: bold;
+    margin-left: 1px;
+}
+
+.conversion-step-display .dimmed {
+    opacity: 0.5;
+}
+
+.conversion-arrow-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.conversion-arrow {
+    width: 30px;
+    height: 2px;
+    background-color: var(--accent-color);
+    position: relative;
+    margin-bottom: 8px; 
+}
+
+.conversion-arrow::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -4px; 
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent; 
+    border-bottom: 5px solid transparent;
+    border-left: 7px solid var(--accent-color); 
+}
+
+.conversion-arrow-label {
+    font-size: 0.8rem;
+    color: var(--accent-dark);
+    font-style: italic;
+    white-space: normal;
+    text-align: center;
+    max-width: 150px;
+}
+
+.final-result-box {
+    margin-left: 8px; 
+    color: var(--primary-dark);
+    font-weight: bold;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+/* Definition table for percentages */
+.percent-table {
+    width: 50%; 
+    border-collapse: collapse;
+    margin-bottom: 15px;
+    border: none;
+    background-color: transparent;
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+.percent-table td {
+    padding: 6px 0; 
+    border: none; 
+    background-color: transparent;
+    vertical-align: top;
+    text-align: center; 
+}
+
+.percent-table tr td:first-child {
+    font-weight: bold;
+    white-space: nowrap; 
+}
+
+.percent-table tr td:last-child {
+    color: var(--text-color); 
+}
+
+/* Line Matching Game Styles */
+.line-matching-board {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+    position: relative;
+    min-height: 180px;
+}
+
+.matching-column {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 45%;
+}
+
+.line-matching-item {
+    background-color: #f5f5f5;
+    border: 2px solid var(--border-color);
+    border-radius: 6px;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-align: center;
+}
+
+.line-matching-item.selectable {
+    cursor: pointer;
+}
+
+.line-matching-item.selected {
+    border-color: var(--accent-color);
+    box-shadow: 0 0 5px var(--accent-color);
+}
+
+.line-matching-item.matched {
+    border-color: var(--correct-color);
+    box-shadow: 0 0 5px var(--correct-color);
+    cursor: default;
+}
+
+.left-column-item {
+    background-color: #B3D9FF;
+    border-color: #1890ff;
+}
+
+.right-column-item {
+    background-color: #fff7e6;
+    border-color: #faad14;
+}
+
+/* SVG line overlay for matching game */
+#connection-lines {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.connection-line {
+    stroke: var(--correct-color);
+    stroke-width: 2;
+    fill: none;
+}
+
+#ratioMatchingGameButtonContainer {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 5px;
+}
+
+#ratio-matching-game-container { /* Container for the ratio matching game */
+    position: relative;
+    min-height: 250px;
+    padding-bottom: 50px;
+}
+
+.instruction-text { /* Instruction text for games */
+    text-align: center;
+    margin-bottom: 5px;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.congratulations-message {
+    text-align: center;
+    font-weight: bold;
+    color: var(--correct-color);
+    font-size: inherit;
+    animation: fadeIn 0.5s ease;
+}
+
+#ratio-matching-game-container .controls { /* Controls positioning for ratio matching game */
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    margin-top: 0;
+}
+
+/* Question Tags */
+.question-tag {
+  display: inline-block;
+  font-size: 0.9rem;
+  padding: 2px 8px;
+  margin-bottom: 10px;
+  border: 1px solid var(--filter-color-one);
+  border-radius: 12px;
+  color: var(--filter-color-one);
+  font-weight: 500;
+  align-self: flex-start;
+}
+
+.question-tag.percentage {
+  border-color: var(--filter-color-one);
+  color: var(--filter-color-one);
+}
+
+.question-tag.ratio {
+  border-color: var(--filter-color-two);
+  color: var(--filter-color-two);
+}
+
+.question, .solution-question { /* Ensure tags are positioned above question text */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Filter Option Styling */
+.filter-option:last-child { /* Styles for the last filter option (Ratio Strength) */
+  border-color: var(--filter-color-two);
+  color: var(--filter-color-two);
+}
+
+.filter-option:last-child .filter-label {
+  color: var(--filter-color-two);
+}
+
+
+/* ================== */
+/* Filter Styles */
+/* ================== */
+
+.filter-container {
+  margin: calc(var(--spacing-xl) * 1.5) 0 var(--spacing-md) 0;
+  padding-left: var(--spacing-sm);
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.filter-title {
+  margin-right: var(--spacing-md);
+  color: var(--text-dark);
+}
+
+.filter-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-md);
+}
+
+.filter-option {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  border-radius: 12px;
+  padding: 2px 8px;
+  border: 1px solid var(--filter-color-one);
+  margin-right: 5px;
+  transition: all 0.2s ease;
+}
+
+/* .filter-option:last-child is styled above for ratio strength */
+
+.filter-option input[type="checkbox"] {
+  margin-right: 5px;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+}
+
+.filter-label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--filter-color-one);
+}
+
+.filter-option:hover { /* Hover state for filters */
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.filter-option input[type="checkbox"]:checked + .filter-label { /* Checked state for filters */
+  font-weight: 600;
+}
+
+
+/* ================== */
+/* Reference Card Styles */
+/* ================== */
+
+/* All reference card styles are now in master.css */
+/* This module uses the default side-by-side layout for two cards */
+
+/* ================== */
+/* Step Container Styles */
+/* ================== */
+
+.steps-container {
+  margin-top: var(--spacing-lg);
+  border-left: 3px solid var(--accent-color);
+  padding-left: var(--spacing-md);
+  display: none;
+}
+
+.solution-steps {
+  display: block;
+  margin-top: var(--spacing-md);
+  border-left: 3px solid var(--accent-color);
+  padding-left: var(--spacing-md);
+}
+
+.step {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.step:last-child {
+  border-bottom: none;
+}
+
+.step-label {
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: var(--primary-color);
+  font-size: 1.1rem;
+}
+
+.steps-container .equation-container,
+.steps-container .operation-container,
+.solution-steps .equation-container,
+.solution-steps .operation-container {
+  margin: 15px 0;
+}
+
+/* Answer Area Styles */
+.answer-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: var(--spacing-md);
+}
+
+.answer-container input {
+  flex: 0 0 auto;
+  width: 120px;
+}
+
+.answer-container .unit {
+  flex: 0 0 auto;
+}
+
+
+/* Results Card */
+#results {
+  text-align: center;
+  /* display: none; is controlled by JS */
+}
+
+.results-title {
+  font-size: 1.5rem;
+  margin-bottom: var(--spacing-md);
+  color: var(--primary-color);
+}
+
+.results-message {
+  font-size: 1.2rem;
+  margin-bottom: var(--spacing-xl);
+}
+
+.clear-progress-container {
+  margin-top: var(--spacing-lg);
+  text-align: center;
+}
+
+/* ================== */
+/* Multiple Choice Styles */
+/* ================== */
+
+.multiple-choice-container {
+  margin: 15px 0;
+}
+
+.multiple-choice-options {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.multiple-choice-option {
+  padding: 10px;
+  border: 2px solid var(--accent-color);
+  border-radius: var(--border-radius);
+  background-color: var(--card-background);
+  color: var(--accent-color);
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.multiple-choice-option:hover {
+  background-color: rgba(52, 90, 128, 0.1);
+}
+
+.multiple-choice-option.selected {
+  background-color: var(--accent-color);
+  color: white;
+}
+
+.multiple-choice-option:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.multiple-choice-option.selected.correct {
+  background-color: var(--correct-color);
+  border-color: var(--correct-color);
+  color: white;
+}
+
+.multiple-choice-option.selected.incorrect {
+  background-color: var(--incorrect-color);
+  border-color: var(--incorrect-color);
+  color: white;
+}
+
+/* Step Button Containers */
+.check-btn-container { /* Container for step check buttons */
+  display: flex;
+  justify-content: flex-end; 
+  align-items: center;
+  gap: 10px;
+  margin-top: var(--spacing-md); 
+}
+
+.step-next-btn-container { /* Container for the "Next Question" button within steps */
+  display: flex;
+  justify-content: flex-end;
+  margin-top: var(--spacing-md);
+}
+
+.question-content-wrapper {
+  padding-left: 20px;
+  text-indent: -20px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+/* History Panel Styles */
+/* Base history panel styles are now in master.css */
+
+/* Module-specific history section title colors */
+.history-section-title.percentage-title {
+    color: var(--filter-color-one);
+    border-bottom-color: var(--filter-color-one);
+}
+
+.history-section-title.ratio-title {
+    color: var(--filter-color-two);
+    border-bottom-color: var(--filter-color-two);
+}
+
+/* Mobile responsiveness for the grid */
+@media (max-width: 600px) {
+  .question-button-grid {
+    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+    gap: 8px;
+  }
+  
+  .question-button {
+    width: 50px;
+    height: 50px;
+    font-size: 14px;
+  }
+}

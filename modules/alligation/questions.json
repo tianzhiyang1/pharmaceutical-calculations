@@ -1,0 +1,4858 @@
+{
+  "questions": [
+    {
+      "number": 1,
+      "tag": "medial",
+      "question": "What is the percentage of zinc oxide in an ointment prepared by mixing 100 g of 10% ointment, 150 g of 30% ointment, and 60 g of 5% ointment? Round final answer to the nearest tenth.",
+      "answerValue": [18.7],
+      "answerUnit": ["%"],
+      "rounding": false,
+      "steps": [
+        {
+          "text": "Multiply each component's volume/weight by its concentration to calculate the amount of active ingredient",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "100 g"
+            },
+            {
+              "type": "input",
+              "answer":0.1,
+              "unit": ""
+            },
+            {
+              "type": "input",
+              "answer": 10,
+              "unit": "g"
+            }
+          ],
+          "operators1": ["×", "="],
+          "operands2": [
+            {
+              "type": "text",
+              "value": "150 g"
+            },
+            {
+              "type": "input",
+              "answer": 0.3,
+              "unit": ""
+            },
+            {
+              "type": "input",
+              "answer": 45,
+              "unit": "g"
+            }
+          ],
+          "operators2": ["×", "="],
+          "operands3": [
+            {
+              "type": "text",
+              "value": "60 g"
+            },
+            {
+              "type": "input",
+              "answer": 0.05,
+              "unit": ""
+            },
+            {
+              "type": "input",
+              "answer": 3,
+              "unit": "g"
+            }
+          ],
+          "operators3": ["×", "="],
+          "hint": "Convert percentage to decimal: 10% = 0.1, 30% = 0.3, 5% = 0.05 <br> 100 g × 0.1 = 10 g (zinc oxide) <br> 150 g × 0.3 = 45 g (zinc oxide) <br> 60 g × 0.05 = 3 g (zinc oxide)"
+        },
+        {
+          "text": "Add all the active ingredients to get the total active content",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "Total zinc oxide (active ingredients)"
+            },
+            {
+              "type": "input",
+              "answer": 10,
+              "unit": "g"
+            },
+            {
+              "type": "input",
+              "answer": 45,
+              "unit": "g"
+            },
+            {
+              "type": "input",
+              "answer": 3,
+              "unit": "g"
+            },
+            {
+              "type": "input",
+              "answer": 58,
+              "unit": "g"
+            }
+          ],
+          "operators1": ["=", "+", "+", "="],
+          "hint": "10 g + 45 g + 3 g = 58 g (zinc oxide)"
+        },
+        {
+          "text": "Add all the volumes or weights to get the total quantity of the mixture",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "Total quantity of all components"
+            },
+            {
+              "type": "input",
+              "answer": 100,
+              "unit": "g"
+            },
+            {
+              "type": "input",
+              "answer": 150,
+              "unit": "g"
+            },
+            {
+              "type": "input",
+              "answer": 60,
+              "unit": "g"
+            },
+            {
+              "type": "input",
+              "answer": 310,
+              "unit": "g"
+            }
+          ],
+          "operators1": ["=", "+", "+", "="],
+          "hint": "100 g + 150 g + 60 g = 310 g (total quantity of all components)"
+        },
+        {
+          "text": "Divide total active content by total quantity, then convert to % if needed",
+          "type": "OPERATION",
+          "operands1": [
+              {
+                "type": "fraction",
+                "numerator": {
+                    "type": "input",
+                    "answer": 58,
+                    "unit": "g zinc oxide"
+                },
+                "denominator": {
+                    "type": "input",
+                    "answer": 310,
+                    "unit": "g ointment"
+                }
+              },
+              {
+                "type": "fraction",
+                "numerator": "X g zinc oxide",
+                "denominator": {
+                    "type": "input",
+                    "answer": 100,
+                    "unit": "g ointment"
+                }
+              }
+          ],
+          "operators1": ["="],
+          "operands2": [
+            {
+              "type": "text",
+              "value": "X"
+            },
+            {
+              "type": "input",
+              "answer": 18.7,
+              "unit": "%"
+            }
+          ],
+          "operators2": ["="],
+          "hint": "58 g zinc oxide/310 g ointment = X g zinc oxide/100 g ointment <br> X = 58 g zinc oxide/310 g ointment × 100 g ointment = 18.7%"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "tag": "alternate",
+      "question": "How many milliliters of 25% w/v dextrose solution and how many milliliters of 15% w/v dextrose solution are required to prepare 5000 ml of a 20% w/v solution?",
+      "answerValue": [2500, 2500],
+      "answerUnit": ["mL of 25% w/v dextrose solution", "mL of 15% w/v dextrose solution"],
+      "rounding": false,
+      "steps": [
+        {
+          "text": "Identify known concentrations (one higher, one lower, and one middle/desired)",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "Higher concentration"
+            },
+            {
+              "type": "input",
+              "answer": 25,
+              "unit": "%"
+            }
+          ],
+          "operators1": [":"],
+          "operands2": [
+            {
+              "type": "text",
+              "value": "Lower concentration"
+            },
+            {
+              "type": "input",
+              "answer": 15,
+              "unit": "%"
+            }
+          ],
+          "operators2": [":"],
+          "operands3": [
+            {
+              "type": "text",
+              "value": "Desired concentration"
+            },
+            {
+              "type": "input",
+              "answer": 20,
+              "unit": "%"
+            }
+          ],
+          "operators3": [":"],
+          "hint": "Based on the question, the higher concentration is 25% w/v dextrose solution, the lower concentration is 15% w/v dextrose solution, and the desired concentration is 20% w/v dextrose solution"
+        },
+        {
+          "text": "Set up the allegation scheme (alligation tic-tac-toe), plug in known values, and calculate parts of each component",
+          "type": "TIC_TAC_TOE",
+          "higherConcentration": 25,
+          "lowerConcentration": 15,
+          "desiredConcentration": 20,
+          "higherParts": 5,
+          "lowerParts": 5,
+          "totalParts": 10,
+          "hint": "25% - 20% = 5 parts of 15% solution <br> 20% - 15% = 5 parts of 25% solution <br> Total parts = 10"
+        },
+        {
+          "text": "Convert parts to actual quantity using proportion",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "For 25%"
+            },
+            {
+              "type": "fraction",
+              "numerator": {
+                "type": "input",
+                "answer": 5,
+                "unit": "parts"
+              },
+              "denominator": {
+                "type": "input",
+                "answer": 10,
+                "unit": "parts"
+              }
+            },
+            {
+              "type": "fraction",
+              "numerator": "X ml",
+              "denominator": {
+                "type": "input",
+                "answer": 5000,
+                "unit": "ml"
+              }
+            }
+          ],
+          "operators1": [":", "="],
+          "operands2": [
+            {
+              "type": "text",
+              "value": "X"
+            },
+            {
+              "type": "input",
+              "answer": 2500,
+              "unit": "ml"
+            }
+          ],
+          "operators2": ["="],
+          "operands3": [
+            {
+              "type": "text",
+              "value": "For 15%"
+            },
+            {
+              "type": "fraction",
+              "numerator": {
+                "type": "input",
+                "answer": 5,
+                "unit": "parts"
+              },
+              "denominator": {
+                "type": "input",
+                "answer": 10,
+                "unit": "parts"
+              }
+            },
+            {
+              "type": "fraction",
+              "numerator": "X ml",
+              "denominator": {
+                "type": "input",
+                "answer": 5000,
+                "unit": "ml"
+              }
+            }
+          ],
+          "operators3": [":", "="],
+          "operands4": [
+            {
+              "type": "text",
+              "value": "X"
+            },
+            {
+              "type": "input",
+              "answer": 2500,
+              "unit": "ml"
+            }
+          ],
+          "operators4": ["="],
+          "hint": "For 25%: 5 parts/10 parts = X ml/5000 ml <br> X = 5 parts/10 parts × 5000 ml = 2500 ml <br> For 15%: 5 parts/10 parts = X ml/5000 ml <br> X = 5 parts/10 parts × 5000 ml = 2500 ml"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "tag": "medial",
+      "question": "What is the percentage of bacitracin in an ointment prepared by mixing 50 g of 25% ointment, 100 g of 15% ointment, and 15 g of 5% ointment? Round final answer to the nearest tenth.",
+      "answerValue": [17.1],
+      "answerUnit": ["%"],
+      "rounding": false,
+      "steps": [
+        {
+          "text": "Multiply each component's volume/weight by its concentration to calculate the amount of active ingredient",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "50 g"
+            },
+            {
+              "type": "input",
+              "answer": 0.25,
+              "unit": ""
+            },
+            {
+              "type": "input",
+              "answer": 12.5,
+              "unit": "g"
+            }
+          ],
+          "operators1": ["×", "="],
+          "operands2": [
+            {
+              "type": "text",
+              "value": "100 g"
+            },
+            {
+              "type": "input",
+              "answer": 0.15,
+              "unit": ""
+            },
+            {
+              "type": "input",
+              "answer": 15,
+              "unit": "g"
+            }
+          ],
+          "operators2": ["×", "="],
+          "operands3": [
+            {
+              "type": "text",
+              "value": "15 g"
+            },
+            {
+              "type": "input",
+              "answer": 0.05,
+              "unit": ""
+            },
+            {
+              "type": "input",
+              "answer": 0.75,
+              "unit": "g"
+            }
+          ],
+          "operators3": ["×", "="],
+          "hint": "Convert percentage to decimal: 25% = 0.25, 15% = 0.15, 5% = 0.05 <br> 50 g × 0.25 = 12.5 g (bacitracin) <br> 100 g × 0.15 = 15 g (bacitracin) <br> 15 g × 0.05 = 0.75 g (bacitracin)"
+        },
+        {
+          "text": "Add all the active ingredients to get the total active content",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "Total bacitracin (active ingredients)"
+            },
+            {
+              "type": "input",
+              "answer": 12.5,
+              "unit": "g"
+            },
+            {
+              "type": "input",
+              "answer": 15,
+              "unit": "g"
+            },
+            {
+              "type": "input",
+              "answer": 0.75,
+              "unit": "g"
+            },
+            {
+              "type": "input",
+              "answer": 28.25,
+              "unit": "g"
+            }
+          ],
+          "operators1": ["=", "+", "+", "="],
+          "hint": "12.5 g + 15 g + 0.75 g = 28.25 g (bacitracin)"
+        },
+        {
+          "text": "Add all the volumes or weights to get the total quantity of the mixture",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "Total quantity of all components"
+            },
+            {
+              "type": "input",
+              "answer": 50,
+              "unit": "g"
+            },
+            {
+              "type": "input",
+              "answer": 100,
+              "unit": "g"
+            },
+            {
+              "type": "input",
+              "answer": 15,
+              "unit": "g"
+            },
+            {
+              "type": "input",
+              "answer": 165,
+              "unit": "g"
+            }
+          ],
+          "operators1": ["=", "+", "+", "="],
+          "hint": "50 g + 100 g + 15 g = 165 g (total quantity of all components)"
+        },
+        {
+          "text": "Divide total active content by total quantity, then convert to % if needed",
+          "type": "OPERATION",
+          "operands1": [
+              {
+                "type": "fraction",
+                "numerator": {
+                    "type": "input",
+                    "answer": 28.25,
+                    "unit": "g bacitracin"
+                },
+                "denominator": {
+                    "type": "input",
+                    "answer": 165,
+                    "unit": "g ointment"
+                }
+              },
+              {
+                "type": "fraction",
+                "numerator": "X g bacitracin",
+                "denominator": {
+                    "type": "input",
+                    "answer": 100,
+                    "unit": "g ointment"
+                }
+              }
+          ],
+          "operators1": ["="],
+          "operands2": [
+            {
+              "type": "text",
+              "value": "X"
+            },
+            {
+              "type": "input",
+              "answer": 17.1,
+              "unit": "%"
+            }
+          ],
+          "operators2": ["="],
+          "hint": "28.25 g bacitracin/165 g ointment = X g bacitracin/100 g ointment <br> X = 28.25 g bacitracin/165 g ointment × 100 g ointment = 17.12% (rounded to 17.1%)"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "tag": "medial",
+      "question": "What is the percentage strength of alcohol in a mixture of 250 ml of a solution containing 25% v/v alcohol, 100 ml of a second solution containing 40% v/v alcohol, and a significant quantity of nonalcoholic third solution to make a total of 500 ml? Round final answer to the nearest tenth.",
+      "answerValue": [20.5],
+      "answerUnit": ["%"],
+      "rounding": false,
+      "steps": [
+        {
+          "text": "Multiply each component's volume by its concentration to calculate the amount of alcohol",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "250 ml"
+            },
+            {
+              "type": "input",
+              "answer": 0.25,
+              "unit": ""
+            },
+            {
+              "type": "input",
+              "answer": 62.5,
+              "unit": "ml"
+            }
+          ],
+          "operators1": ["×", "="],
+          "operands2": [
+            {
+              "type": "text",
+              "value": "100 ml"
+            },
+            {
+              "type": "input",
+              "answer": 0.40,
+              "unit": ""
+            },
+            {
+              "type": "input",
+              "answer": 40,
+              "unit": "ml"
+            }
+          ],
+          "operators2": ["×", "="],
+          "operands3": [
+            {
+              "type": "text",
+              "value": "Third solution"
+            },
+            {
+              "type": "input",
+              "answer": 0,
+              "unit": "%"
+            }
+          ],
+          "operators3": [":"],
+          "hint": "Convert percentage to decimal: 25% = 0.25, 40% = 0.40 <br> 250 ml × 0.25 = 62.5 ml (alcohol) <br> 100 ml × 0.40 = 40 ml (alcohol) <br> Third solution contains 0% alcohol"
+        },
+        {
+          "text": "Note the total volume of the mixture",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "Total volume of mixture"
+            },
+            {
+              "type": "input",
+              "answer": 500,
+              "unit": "ml"
+            }
+          ],
+          "operators1": ["="],
+          "hint": "As given in the question, the total volume is 500 ml"
+        },
+        {
+          "text": "Add all the alcohol content to get the total alcohol volume",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "Total alcohol volume"
+            },
+            {
+              "type": "input",
+              "answer": 62.5,
+              "unit": "ml"
+            },
+            {
+              "type": "input",
+              "answer": 40,
+              "unit": "ml"
+            },
+            {
+              "type": "input",
+              "answer": 0,
+              "unit": "ml"
+            },
+            {
+              "type": "input",
+              "answer": 102.5,
+              "unit": "ml"
+            }
+          ],
+          "operators1": ["=", "+", "+", "="],
+          "hint": "62.5 ml + 40 ml + 0 ml = 102.5 ml (total alcohol)"
+        },
+        {
+          "text": "Divide total alcohol content by total volume, then convert to %",
+          "type": "OPERATION",
+          "operands1": [
+              {
+                "type": "fraction",
+                "numerator": {
+                    "type": "input",
+                    "answer": 102.5,
+                    "unit": "ml alcohol"
+                },
+                "denominator": {
+                    "type": "input",
+                    "answer": 500,
+                    "unit": "ml solution"
+                }
+              },
+              {
+                "type": "fraction",
+                "numerator": "X ml alcohol",
+                "denominator": {
+                    "type": "input",
+                    "answer": 100,
+                    "unit": "ml solution"
+                }
+              }
+          ],
+          "operators1": ["="],
+          "operands2": [
+            {
+              "type": "text",
+              "value": "X"
+            },
+            {
+              "type": "input",
+              "answer": 20.5,
+              "unit": "%"
+            }
+          ],
+          "operators2": ["="],
+          "hint": "102.5 ml alcohol/500 ml solution = X ml alcohol/100 ml solution <br> X = 102.5 ml alcohol/500 ml solution × 100 ml solution = 20.5%"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "tag": "medial",
+      "question": "What is the percentage strength of alcohol in a tincture of 450 ml of a solution containing 15% v/v alcohol, 200 ml of a second solution containing 30% v/v alcohol, and a significant quantity of nonalcoholic third solution to make a total of 1000 ml?.",
+      "answerValue": [12.75],
+      "answerUnit": ["%"],
+      "rounding": false,
+      "steps": [
+        {
+          "text": "Multiply each component's volume by its concentration to calculate the amount of alcohol",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "450 ml"
+            },
+            {
+              "type": "input",
+              "answer": 0.15,
+              "unit": ""
+            },
+            {
+              "type": "input",
+              "answer": 67.5,
+              "unit": "ml"
+            }
+          ],
+          "operators1": ["×", "="],
+          "operands2": [
+            {
+              "type": "text",
+              "value": "200 ml"
+            },
+            {
+              "type": "input",
+              "answer": 0.30,
+              "unit": ""
+            },
+            {
+              "type": "input",
+              "answer": 60,
+              "unit": "ml"
+            }
+          ],
+          "operators2": ["×", "="],
+          "operands3": [
+            {
+              "type": "text",
+              "value": "Third solution"
+            },
+            {
+              "type": "input",
+              "answer": 0,
+              "unit": "%"
+            }
+          ],
+          "operators3": [":"],
+          "hint": "Convert percentage to decimal: 15% = 0.15, 30% = 0.30 <br> 450 ml × 0.15 = 67.5 ml (alcohol) <br> 200 ml × 0.30 = 60 ml (alcohol) <br> Third solution contains 0% alcohol"
+        },
+        {
+          "text": "Note the total volume of the mixture",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "Total volume of mixture"
+            },
+            {
+              "type": "input",
+              "answer": 1000,
+              "unit": "ml"
+            }
+          ],
+          "operators1": ["="],
+          "hint": "As given in the question, the total volume is 1000 ml"
+        },
+        {
+          "text": "Add all the alcohol content to get the total alcohol volume",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "Total alcohol volume"
+            },
+            {
+              "type": "input",
+              "answer": 67.5,
+              "unit": "ml"
+            },
+            {
+              "type": "input",
+              "answer": 60,
+              "unit": "ml"
+            },
+            {
+              "type": "input",
+              "answer": 0,
+              "unit": "ml"
+            },
+            {
+              "type": "input",
+              "answer": 127.5,
+              "unit": "ml"
+            }
+          ],
+          "operators1": ["=", "+", "+", "="],
+          "hint": "67.5 ml + 60 ml + 0 ml = 127.5 ml (total alcohol)"
+        },
+        {
+          "text": "Divide total alcohol content by total volume, then convert to %",
+          "type": "OPERATION",
+          "operands1": [
+              {
+                "type": "fraction",
+                "numerator": {
+                    "type": "input",
+                    "answer": 127.5,
+                    "unit": "ml alcohol"
+                },
+                "denominator": {
+                    "type": "input",
+                    "answer": 1000,
+                    "unit": "ml solution"
+                }
+              },
+              {
+                "type": "fraction",
+                "numerator": "X ml alcohol",
+                "denominator": {
+                    "type": "input",
+                    "answer": 100,
+                    "unit": "ml solution"
+                }
+              }
+          ],
+          "operators1": ["="],
+          "operands2": [
+            {
+              "type": "text",
+              "value": "X"
+            },
+            {
+              "type": "input",
+              "answer": 12.75,
+              "unit": "%"
+            }
+          ],
+          "operators2": ["="],
+          "hint": "127.5 ml alcohol/1000 ml solution = X ml alcohol/100 ml solution <br> X = 127.5 ml alcohol/1000 ml solution × 100 ml solution = 12.75%"
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "tag": "alternate",
+      "question": "You need to make a 75% alcohol preparation. You only have 95% alcohol and 50% alcohol in stock. What proportions of each strength do you need?",
+      "answerValue": [25, 20],
+      "answerUnit": ["parts of 95% alcohol", "parts of 50% alcohol"],
+      "rounding": false,
+      "steps": [
+        {
+          "text": "Identify known concentrations (one higher, one lower, and one middle/desired)",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "Higher concentration"
+            },
+            {
+              "type": "input",
+              "answer": 95,
+              "unit": "%"
+            }
+          ],
+          "operators1": [":"],
+          "operands2": [
+            {
+              "type": "text",
+              "value": "Lower concentration"
+            },
+            {
+              "type": "input",
+              "answer": 50,
+              "unit": "%"
+            }
+          ],
+          "operators2": [":"],
+          "operands3": [
+            {
+              "type": "text",
+              "value": "Desired concentration"
+            },
+            {
+              "type": "input",
+              "answer": 75,
+              "unit": "%"
+            }
+          ],
+          "operators3": [":"],
+          "hint": "Based on the question, the higher concentration is 95% alcohol, the lower concentration is 50% alcohol, and the desired concentration is 75% alcohol"
+        },
+        {
+          "text": "Set up the allegation scheme (alligation tic-tac-toe), plug in known values, and calculate parts of each component",
+          "type": "TIC_TAC_TOE",
+          "higherConcentration": 95,
+          "lowerConcentration": 50,
+          "desiredConcentration": 75,
+          "higherParts": 25,
+          "lowerParts": 20,
+          "totalParts": 45,
+          "hint": "95% - 75% = 20 parts of 50% solution <br> 75% - 50% = 25 parts of 95% solution <br> Total parts = 45"
+        },
+        {
+          "text": "Express the result as a ratio of parts",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "Parts of 95% alcohol"
+            },
+            {
+              "type": "input",
+              "answer": 25,
+              "unit": "parts"
+            }
+          ],
+          "operators1": [":"],
+          "operands2": [
+            {
+              "type": "text",
+              "value": "Parts of 50% alcohol"
+            },
+            {
+              "type": "input",
+              "answer": 20,
+              "unit": "parts"
+            }
+          ],
+          "operators2": [":"],
+          "hint": "The ratio is 25 parts of 95% alcohol to 20 parts of 50% alcohol"
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "tag": "alternate",
+      "question": "How many milliliters each of a 7% solution w/v and 15% w/v solution should be used to prepare a gallon of a 10% w/v solution?",
+      "answerValue": [1419, 2366],
+      "answerUnit": ["mL of 15% solution", "mL of 7% solution"],
+      "rounding": false,
+      "steps": [
+        {
+          "text": "Convert all units to standard units (i.e., gallons to mL)",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "1 gallon"
+            },
+            {
+              "type": "input",
+              "answer": 3785,
+              "unit": "mL"
+            }
+          ],
+          "operators1": ["="],
+          "hint": "1 gallon = 3,785 mL (rounded to nearest mL)"
+        },
+        {
+          "text": "Identify known concentrations (one higher, one lower, and one middle/desired)",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "Higher concentration"
+            },
+            {
+              "type": "input",
+              "answer": 15,
+              "unit": "%"
+            }
+          ],
+          "operators1": [":"],
+          "operands2": [
+            {
+              "type": "text",
+              "value": "Lower concentration"
+            },
+            {
+              "type": "input",
+              "answer": 7,
+              "unit": "%"
+            }
+          ],
+          "operators2": [":"],
+          "operands3": [
+            {
+              "type": "text",
+              "value": "Desired concentration"
+            },
+            {
+              "type": "input",
+              "answer": 10,
+              "unit": "%"
+            }
+          ],
+          "operators3": [":"],
+          "hint": "Based on the question, the higher concentration is 15% w/v solution, the lower concentration is 7% w/v solution, and the desired concentration is 10% w/v solution"
+        },
+        {
+          "text": "Set up the allegation scheme (alligation tic-tac-toe), plug in known values, and calculate parts of each component",
+          "type": "TIC_TAC_TOE",
+          "higherConcentration": 15,
+          "lowerConcentration": 7,
+          "desiredConcentration": 10,
+          "higherParts": 3,
+          "lowerParts": 5,
+          "totalParts": 8,
+          "hint": "15% - 10% = 5 parts of 7% solution <br> 10% - 7% = 3 parts of 15% solution <br> Total parts = 8"
+        },
+        {
+          "text": "Express the result as a ratio of parts",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "Parts of 15% solution"
+            },
+            {
+              "type": "input",
+              "answer": 3,
+              "unit": "parts"
+            }
+          ],
+          "operators1": [":"],
+          "operands2": [
+            {
+              "type": "text",
+              "value": "Parts of 7% solution"
+            },
+            {
+              "type": "input",
+              "answer": 5,
+              "unit": "parts"
+            }
+          ],
+          "operators2": [":"],
+          "hint": "The ratio is 3 parts of 15% solution to 5 parts of 7% solution"
+        },
+        {
+          "text": "Convert parts to actual quantity using proportion",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "For 15%"
+            },
+            {
+              "type": "fraction",
+              "numerator": {
+                "type": "input",
+                "answer": 3,
+                "unit": "parts"
+              },
+              "denominator": {
+                "type": "input",
+                "answer": 8,
+                "unit": "parts"
+              }
+            },
+            {
+              "type": "fraction",
+              "numerator": "X mL",
+              "denominator": {
+                "type": "input",
+                "answer": 3785,
+                "unit": "mL"
+              }
+            }
+          ],
+          "operators1": [":", "="],
+          "operands2": [
+            {
+              "type": "text",
+              "value": "X"
+            },
+            {
+              "type": "input",
+              "answer": 1419,
+              "unit": "mL"
+            }
+          ],
+          "operators2": ["="],
+          "operands3": [
+            {
+              "type": "text",
+              "value": "For 7%"
+            },
+            {
+              "type": "fraction",
+              "numerator": {
+                "type": "input",
+                "answer": 5,
+                "unit": "parts"
+              },
+              "denominator": {
+                "type": "input",
+                "answer": 8,
+                "unit": "parts"
+              }
+            },
+            {
+              "type": "fraction",
+              "numerator": "X mL",
+              "denominator": {
+                "type": "input",
+                "answer": 3785,
+                "unit": "mL"
+              }
+            }
+          ],
+          "operators3": [":", "="],
+          "operands4": [
+            {
+              "type": "text",
+              "value": "X"
+            },
+            {
+              "type": "input",
+              "answer": 2366,
+              "unit": "mL"
+            }
+          ],
+          "operators4": ["="],
+          "hint": "For 15%: 3 parts/8 parts = X mL/3785 mL <br> X = 3 parts/8 parts × 3785 mL = 1419.375 mL (rounded to 1419 mL) <br> For 7%: 5 parts/8 parts = X mL/3785 mL <br> X = 5 parts/8 parts × 3785 mL = 2365.625 mL (rounded to 2366 mL)"
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "tag": "medial",
+      "question": "You combined the contents of a 60 g tube of a 10% ointment and a 100 g tube of a 20% ointment. What is the concentration of the mixture?",
+      "answerValue": [16.25],
+      "answerUnit": ["%"],
+      "rounding": false,
+      "steps": [
+        {
+          "text": "Multiply each component's weight by its concentration to calculate the amount of active ingredient",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "60 g"
+            },
+            {
+              "type": "input",
+              "answer": 0.10,
+              "unit": ""
+            },
+            {
+              "type": "input",
+              "answer": 6,
+              "unit": "g"
+            }
+          ],
+          "operators1": ["×", "="],
+          "operands2": [
+            {
+              "type": "text",
+              "value": "100 g"
+            },
+            {
+              "type": "input",
+              "answer": 0.20,
+              "unit": ""
+            },
+            {
+              "type": "input",
+              "answer": 20,
+              "unit": "g"
+            }
+          ],
+          "operators2": ["×", "="],
+          "hint": "Convert percentage to decimal: 10% = 0.10, 20% = 0.20 <br> 60 g × 0.10 = 6 g (active ingredient) <br> 100 g × 0.20 = 20 g (active ingredient)"
+        },
+        {
+          "text": "Add all the active ingredients to get the total active content",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "Total active ingredients"
+            },
+            {
+              "type": "input",
+              "answer": 6,
+              "unit": "g"
+            },
+            {
+              "type": "input",
+              "answer": 20,
+              "unit": "g"
+            },
+            {
+              "type": "input",
+              "answer": 26,
+              "unit": "g"
+            }
+          ],
+          "operators1": ["=", "+", "="],
+          "hint": "6 g + 20 g = 26 g (total active ingredients)"
+        },
+        {
+          "text": "Add all the weights to get the total quantity of the mixture",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "Total quantity of all components"
+            },
+            {
+              "type": "input",
+              "answer": 60,
+              "unit": "g"
+            },
+            {
+              "type": "input",
+              "answer": 100,
+              "unit": "g"
+            },
+            {
+              "type": "input",
+              "answer": 160,
+              "unit": "g"
+            }
+          ],
+          "operators1": ["=", "+", "="],
+          "hint": "60 g + 100 g = 160 g (total quantity)"
+        },
+        {
+          "text": "Divide total active content by total quantity, then convert to %",
+          "type": "OPERATION",
+          "operands1": [
+              {
+                "type": "fraction",
+                "numerator": {
+                    "type": "input",
+                    "answer": 26,
+                    "unit": "g active"
+                },
+                "denominator": {
+                    "type": "input",
+                    "answer": 160,
+                    "unit": "g mixture"
+                }
+              },
+              {
+                "type": "fraction",
+                "numerator": "X g active",
+                "denominator": {
+                    "type": "input",
+                    "answer": 100,
+                    "unit": "g mixture"
+                }
+              }
+          ],
+          "operators1": ["="],
+          "operands2": [
+            {
+              "type": "text",
+              "value": "X"
+            },
+            {
+              "type": "input",
+              "answer": 16.25,
+              "unit": "%"
+            }
+          ],
+          "operators2": ["="],
+          "hint": "26 g active/160 g mixture = X g active/100 g mixture <br> X = 26 g active/160 g mixture × 100 g mixture = 16.25%"
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "tag": "medial",
+      "question": "A pharmacist combined the contents of a 150 g tube of a 66% ointment and a 50 g tube of a 41% ointment. What is the concentration of the mixture?",
+      "answerValue": [59.75],
+      "answerUnit": ["%"],
+      "rounding": false,
+      "steps": [
+        {
+          "text": "Multiply each component's weight by its concentration to calculate the amount of active ingredient",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "150 g"
+            },
+            {
+              "type": "input",
+              "answer": 0.66,
+              "unit": ""
+            },
+            {
+              "type": "input",
+              "answer": 99,
+              "unit": "g"
+            }
+          ],
+          "operators1": ["×", "="],
+          "operands2": [
+            {
+              "type": "text",
+              "value": "50 g"
+            },
+            {
+              "type": "input",
+              "answer": 0.41,
+              "unit": ""
+            },
+            {
+              "type": "input",
+              "answer": 20.5,
+              "unit": "g"
+            }
+          ],
+          "operators2": ["×", "="],
+          "hint": "Convert percentage to decimal: 66% = 0.66, 41% = 0.41 <br> 150 g × 0.66 = 99 g (active ingredient) <br> 50 g × 0.41 = 20.5 g (active ingredient)"
+        },
+        {
+          "text": "Add all the active ingredients to get the total active content",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "Total active ingredients"
+            },
+            {
+              "type": "input",
+              "answer": 99,
+              "unit": "g"
+            },
+            {
+              "type": "input",
+              "answer": 20.5,
+              "unit": "g"
+            },
+            {
+              "type": "input",
+              "answer": 119.5,
+              "unit": "g"
+            }
+          ],
+          "operators1": ["=", "+", "="],
+          "hint": "99 g + 20.5 g = 119.5 g (total active ingredients)"
+        },
+        {
+          "text": "Add all the weights to get the total quantity of the mixture",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "Total quantity of all components"
+            },
+            {
+              "type": "input",
+              "answer": 150,
+              "unit": "g"
+            },
+            {
+              "type": "input",
+              "answer": 50,
+              "unit": "g"
+            },
+            {
+              "type": "input",
+              "answer": 200,
+              "unit": "g"
+            }
+          ],
+          "operators1": ["=", "+", "="],
+          "hint": "150 g + 50 g = 200 g (total quantity)"
+        },
+        {
+          "text": "Divide total active content by total quantity, then convert to %",
+          "type": "OPERATION",
+          "operands1": [
+              {
+                "type": "fraction",
+                "numerator": {
+                    "type": "input",
+                    "answer": 119.5,
+                    "unit": "g active"
+                },
+                "denominator": {
+                    "type": "input",
+                    "answer": 200,
+                    "unit": "g mixture"
+                }
+              },
+              {
+                "type": "fraction",
+                "numerator": "X g active",
+                "denominator": {
+                    "type": "input",
+                    "answer": 100,
+                    "unit": "g mixture"
+                }
+              }
+          ],
+          "operators1": ["="],
+          "operands2": [
+            {
+              "type": "text",
+              "value": "X"
+            },
+            {
+              "type": "input",
+              "answer": 59.75,
+              "unit": "%"
+            }
+          ],
+          "operators2": ["="],
+          "hint": "119.5 g active/200 g mixture = X g active/100 g mixture <br> X = 119.5 g active/200 g mixture × 100 g mixture = 59.75%"
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "tag": "alternate",
+      "question": "How many grams of 6% clotrimazole cream should be mixed with 4.5 g of 17% cream to make a 13% clotrimazole cream? Round final answer to the nearest hundredth.",
+      "answerValue": [2.57],
+      "answerUnit": ["g of 6% cream"],
+      "rounding": false,
+      "steps": [
+        {
+          "text": "Identify known concentrations (one higher, one lower, and one middle/desired)",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "Higher concentration"
+            },
+            {
+              "type": "input",
+              "answer": 17,
+              "unit": "%"
+            }
+          ],
+          "operators1": [":"],
+          "operands2": [
+            {
+              "type": "text",
+              "value": "Lower concentration"
+            },
+            {
+              "type": "input",
+              "answer": 6,
+              "unit": "%"
+            }
+          ],
+          "operators2": [":"],
+          "operands3": [
+            {
+              "type": "text",
+              "value": "Desired concentration"
+            },
+            {
+              "type": "input",
+              "answer": 13,
+              "unit": "%"
+            }
+          ],
+          "operators3": [":"],
+          "hint": "Based on the question, the higher concentration is 17% cream, the lower concentration is 6% cream, and the desired concentration is 13% cream"
+        },
+        {
+          "text": "Set up the allegation scheme (alligation tic-tac-toe), plug in known values, and calculate parts of each component",
+          "type": "TIC_TAC_TOE",
+          "higherConcentration": 17,
+          "lowerConcentration": 6,
+          "desiredConcentration": 13,
+          "higherParts": 7,
+          "lowerParts": 4,
+          "totalParts": 11,
+          "hint": "17% - 13% = 4 parts of 6% cream <br> 13% - 6% = 7 parts of 17% cream <br> Total parts = 11"
+        },
+        {
+          "text": "Set up the ratios and proportions",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "For 6% cream"
+            },
+            {
+              "type": "fraction",
+              "numerator": {
+                "type": "input",
+                "answer": 4,
+                "unit": "parts 6%"
+              },
+              "denominator": {
+                "type": "input",
+                "answer": 7,
+                "unit": "parts 17%"
+              }
+            },
+            {
+              "type": "fraction",
+              "numerator": "X g 6%",
+              "denominator": {
+                "type": "input",
+                "answer": 4.5,
+                "unit": "g 17%"
+              }
+            }
+          ],
+          "operators1": [":", "="],
+          "hint": "4 parts 6%/7 parts 17% = X g 6%/4.5 g 17% <br> X = 4 parts × 4.5 g/7 parts = 2.57 g of 6% cream needed"
+        },
+        {
+          "text": "Solve for X",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "X g"
+            },
+            {
+              "type": "input",
+              "answer": 2.57,
+              "unit": "g"
+            }
+          ],
+          "operators1": ["="],
+          "hint": ""
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "tag": "alternate",
+      "question": "How many milligrams of 12% hydrocortisone cream should be mixed with 160 mg of 20% cream to make a 15% hydrocortisone cream? Round final answer to the nearest whole number.",
+      "answerValue": [267],
+      "answerUnit": ["mg of 12% cream"],
+      "rounding": false,
+      "steps": [
+        {
+          "text": "Identify known concentrations (one higher, one lower, and one middle/desired)",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "Higher concentration"
+            },
+            {
+              "type": "input",
+              "answer": 20,
+              "unit": "%"
+            }
+          ],
+          "operators1": [":"],
+          "operands2": [
+            {
+              "type": "text",
+              "value": "Lower concentration"
+            },
+            {
+              "type": "input",
+              "answer": 12,
+              "unit": "%"
+            }
+          ],
+          "operators2": [":"],
+          "operands3": [
+            {
+              "type": "text",
+              "value": "Desired concentration"
+            },
+            {
+              "type": "input",
+              "answer": 15,
+              "unit": "%"
+            }
+          ],
+          "operators3": [":"],
+          "hint": "Based on the question, the higher concentration is 20% cream, the lower concentration is 12% cream, and the desired concentration is 15% cream"
+        },
+        {
+          "text": "Set up the allegation scheme (alligation tic-tac-toe), plug in known values, and calculate parts of each component",
+          "type": "TIC_TAC_TOE",
+          "higherConcentration": 20,
+          "lowerConcentration": 12,
+          "desiredConcentration": 15,
+          "higherParts": 3,
+          "lowerParts": 5,
+          "totalParts": 8,
+          "hint": "20% - 15% = 5 parts of 12% cream <br> 15% - 12% = 3 parts of 20% cream <br> Total parts = 8"
+        },
+        {
+          "text": "Set up the ratios and proportions",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "For 12% cream"
+            },
+            {
+              "type": "fraction",
+              "numerator": {
+                "type": "input",
+                "answer": 5,
+                "unit": "parts 12%"
+              },
+              "denominator": {
+                "type": "input",
+                "answer": 3,
+                "unit": "parts 20%"
+              }
+            },
+            {
+              "type": "fraction",
+              "numerator": "X mg 12%",
+              "denominator": {
+                "type": "input",
+                "answer": 160,
+                "unit": "mg 20%"
+              }
+            }
+          ],
+          "operators1": [":", "="],
+          "hint": "5 parts 12%/3 parts 20% = X mg 12%/160 mg 20%"
+        },
+        {
+          "text": "Solve for X",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "X mg"
+            },
+            {
+              "type": "input",
+              "answer": 267,
+              "unit": "mg"
+            }
+          ],
+          "operators1": ["="],
+          "hint": "X = 5 parts × 160 mg/3 parts = 266.67 mg, rounded to 267 mg of 12% cream needed"
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "tag": "medial",
+      "question": "If a pharmacist strengthens 20 g of a 0.5% w/w tacrolimus ointment by adding 15 g of an ointment containing 0.06% w/w of the same drug, what would be the percentage strength of the mixture? Round final answer to the nearest tenth.",
+      "answerValue": [0.3],
+      "answerUnit": ["%"],
+      "rounding": false,
+      "steps": [
+        {
+          "text": "Multiply each component's weight by its concentration to calculate the amount of active ingredient",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "20 g"
+            },
+            {
+              "type": "input",
+              "answer": 0.005,
+              "unit": ""
+            },
+            {
+              "type": "input",
+              "answer": 0.1,
+              "unit": "g"
+            }
+          ],
+          "operators1": ["×", "="],
+          "operands2": [
+            {
+              "type": "text",
+              "value": "15 g"
+            },
+            {
+              "type": "input",
+              "answer": 0.0006,
+              "unit": ""
+            },
+            {
+              "type": "input",
+              "answer": 0.009,
+              "unit": "g"
+            }
+          ],
+          "operators2": ["×", "="],
+          "hint": "Convert percentage to decimal: 0.5% = 0.005, 0.06% = 0.0006 <br> 20 g × 0.005 = 0.1 g (active ingredient) <br> 15 g × 0.0006 = 0.009 g (active ingredient)"
+        },
+        {
+          "text": "Add all the active ingredients to get the total active content",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "Total active ingredients"
+            },
+            {
+              "type": "input",
+              "answer": 0.1,
+              "unit": "g"
+            },
+            {
+              "type": "input",
+              "answer": 0.009,
+              "unit": "g"
+            },
+            {
+              "type": "input",
+              "answer": 0.109,
+              "unit": "g"
+            }
+          ],
+          "operators1": ["=", "+", "="],
+          "hint": "0.1 g + 0.009 g = 0.109 g (total active ingredients)"
+        },
+        {
+          "text": "Add all the weights to get the total quantity of the mixture",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "Total quantity of all components"
+            },
+            {
+              "type": "input",
+              "answer": 20,
+              "unit": "g"
+            },
+            {
+              "type": "input",
+              "answer": 15,
+              "unit": "g"
+            },
+            {
+              "type": "input",
+              "answer": 35,
+              "unit": "g"
+            }
+          ],
+          "operators1": ["=", "+", "="],
+          "hint": "20 g + 15 g = 35 g (total quantity)"
+        },
+        {
+          "text": "Divide total active content by total quantity, then convert to %",
+          "type": "OPERATION",
+          "operands1": [
+              {
+                "type": "fraction",
+                "numerator": {
+                    "type": "input",
+                    "answer": 0.109,
+                    "unit": "g active"
+                },
+                "denominator": {
+                    "type": "input",
+                    "answer": 35,
+                    "unit": "g mixture"
+                }
+              },
+              {
+                "type": "fraction",
+                "numerator": "X g active",
+                "denominator": {
+                    "type": "input",
+                    "answer": 100,
+                    "unit": "g mixture"
+                }
+              }
+          ],
+          "operators1": ["="],
+          "operands2": [
+            {
+              "type": "text",
+              "value": "X"
+            },
+            {
+              "type": "input",
+              "answer": 0.3,
+              "unit": "%"
+            }
+          ],
+          "operators2": ["="],
+          "hint": "0.109 g active/35 g mixture = X g active/100 g mixture <br> X = 0.109 g active/35 g mixture × 100 g mixture = 0.31142857...% (rounded to 0.3%)"
+        }
+      ]
+    },
+    {
+      "number": 13,
+      "tag": "alternate",
+      "question": "How many milligrams of zinc oxide should be added to 4500 mg of 8% zinc oxide ointment to prepare an ointment containing 15% zinc oxide?  Round final answer to the nearest tenth.",
+      "answerValue": [370.6],
+      "answerUnit": ["mg of zinc oxide"],
+      "rounding": false,
+      "steps": [
+        {
+          "text": "Identify known concentrations (one higher, one lower, and one middle/desired)",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "Higher concentration"
+            },
+            {
+              "type": "input",
+              "answer": 100,
+              "unit": "%"
+            }
+          ],
+          "operators1": [":"],
+          "operands2": [
+            {
+              "type": "text",
+              "value": "Lower concentration"
+            },
+            {
+              "type": "input",
+              "answer": 8,
+              "unit": "%"
+            }
+          ],
+          "operators2": [":"],
+          "operands3": [
+            {
+              "type": "text",
+              "value": "Desired concentration"
+            },
+            {
+              "type": "input",
+              "answer": 15,
+              "unit": "%"
+            }
+          ],
+          "operators3": [":"],
+          "hint": "Based on the question, the higher concentration is 100% zinc oxide, the lower concentration is 8% zinc oxide, and the desired concentration is 15% zinc oxide"
+        },
+        {
+          "text": "Set up the allegation scheme (alligation tic-tac-toe), plug in known values, and calculate parts of each component",
+          "type": "TIC_TAC_TOE",
+          "higherConcentration": 100,
+          "lowerConcentration": 8,
+          "desiredConcentration": 15,
+          "higherParts": 7,
+          "lowerParts": 85,
+          "totalParts": 92,
+          "hint": "100% - 15% = 85 parts of 8% zinc oxide <br> 15% - 8% = 7 parts of 100% zinc oxide <br> Total parts = 92"
+        },
+        {
+          "text": "Set up the ratios and proportions",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "For 8% zinc oxide"
+            },
+            {
+              "type": "fraction",
+              "numerator": {
+                "type": "input",
+                "answer": 7,
+                "unit": "parts 100%"
+              },
+              "denominator": {
+                "type": "input",
+                "answer": 85,
+                "unit": "parts 8%"
+              }
+            },
+            {
+              "type": "fraction",
+              "numerator": "X mg 100%",
+              "denominator": {
+                "type": "input",
+                "answer": 4500,
+                "unit": "mg 8%"
+              }
+            }
+          ],
+          "operators1": [":", "="],
+          "hint": "7 parts 100%/85 parts 8% = X mg 100%/4500 mg 8%"
+        },
+        {
+          "text": "Solve for X",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "X mg"
+            },
+            {
+              "type": "input",
+              "answer": 370.6,
+              "unit": "mg"
+            }
+          ],
+          "operators1": ["="],
+          "hint": "X = 7 parts × 4500 mg/85 parts = 370.5882352941176 mg, rounded to 370.6 mg of 100% zinc oxide needed"
+        }
+      ]
+    },
+    {
+      "number": 14,
+      "tag": "alternate",
+      "question": "How many microliters of acetic acid would need to be added to 2500 mcl of a 15% acetic acid solution to change its concentration to 18%? Round final answer to the nearest tenth.",
+      "answerValue": [91.5],
+      "answerUnit": ["mcl of acetic acid"],
+      "rounding": false,
+      "steps": [
+        {
+          "text": "Identify known concentrations (one higher, one lower, and one middle/desired)",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "Higher concentration"
+            },
+            {
+              "type": "input",
+              "answer": 100,
+              "unit": "%"
+            }
+          ],
+          "operators1": [":"],
+          "operands2": [
+            {
+              "type": "text",
+              "value": "Lower concentration"
+            },
+            {
+              "type": "input",
+              "answer": 15,
+              "unit": "%"
+            }
+          ],
+          "operators2": [":"],
+          "operands3": [
+            {
+              "type": "text",
+              "value": "Desired concentration"
+            },
+            {
+              "type": "input",
+              "answer": 18,
+              "unit": "%"
+            }
+          ],
+          "operators3": [":"],
+          "hint": "Based on the question, the higher concentration is 100% acetic acid, the lower concentration is 15% acetic acid, and the desired concentration is 18% acetic acid"
+        },
+        {
+          "text": "Set up the allegation scheme (alligation tic-tac-toe), plug in known values, and calculate parts of each component",
+          "type": "TIC_TAC_TOE",
+          "higherConcentration": 100,
+          "lowerConcentration": 15,
+          "desiredConcentration": 18,
+          "higherParts": 3,
+          "lowerParts": 82,
+          "totalParts": 85,
+          "hint": "100% - 18% = 82 parts of 15% acetic acid <br> 18% - 15% = 3 parts of 100% acetic acid <br> Total parts = 85"
+        },
+        {
+          "text": "Set up the ratios and proportions",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "For 15% acetic acid"
+            },
+            {
+              "type": "fraction",
+              "numerator": {
+                "type": "input",
+                "answer": 3,
+                "unit": "parts 100%"
+              },
+              "denominator": {
+                "type": "input",
+                "answer": 82,
+                "unit": "parts 15%"
+              }
+            },
+            {
+              "type": "fraction",
+              "numerator": "X mcl 100%",
+              "denominator": {
+                "type": "input",
+                "answer": 2500,
+                "unit": "mcl 15%"
+              }
+            }
+          ],
+          "operators1": [":", "="],
+          "hint": "3 parts 100%/82 parts 15% = X mcl 100%/2500 mcl 15%"
+        },
+        {
+          "text": "Solve for X",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "X mcl"
+            },
+            {
+              "type": "input",
+              "answer": 91.5,
+              "unit": "mcl"
+            }
+          ],
+          "operators1": ["="],
+          "hint": "X = 3 parts × 2500 mcl/82 parts = 91.4634146341463 mcl, rounded to 91.5 mcl of 100% acetic acid needed"
+        }
+      ]
+    },
+    {
+      "number": 15,
+      "tag": "medial",
+      "question": "If a pharmacist strengthens 5 g of a 22% w/w ketoconazole ointment by adding 18 g of an ointment containing 15% w/w of the same drug, what would be the percentage strength of the mixture? Round final answer to the nearest tenth.",
+      "answerValue": [16.5],
+      "answerUnit": ["%"],
+      "rounding": false,
+      "steps": [
+        {
+          "text": "Multiply each component's weight by its concentration to calculate the amount of active ingredient",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "5 g"
+            },
+            {
+              "type": "input",
+              "answer": 0.22,
+              "unit": ""
+            },
+            {
+              "type": "input",
+              "answer": 1.1,
+              "unit": "g"
+            }
+          ],
+          "operators1": ["×", "="],
+          "operands2": [
+            {
+              "type": "text",
+              "value": "18 g"
+            },
+            {
+              "type": "input",
+              "answer": 0.15,
+              "unit": ""
+            },
+            {
+              "type": "input",
+              "answer": 2.7,
+              "unit": "g"
+            }
+          ],
+          "operators2": ["×", "="],
+          "hint": "Convert percentage to decimal: 22% = 0.22, 15% = 0.15 <br> 5 g × 0.22 = 1.1 g (ketoconazole) <br> 18 g × 0.15 = 2.7 g (ketoconazole)"
+        },
+        {
+          "text": "Add all the active ingredients to get the total active content",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "Total active ingredients"
+            },
+            {
+              "type": "input",
+              "answer": 1.1,
+              "unit": "g"
+            },
+            {
+              "type": "input",
+              "answer": 2.7,
+              "unit": "g"
+            },
+            {
+              "type": "input",
+              "answer": 3.8,
+              "unit": "g"
+            }
+          ],
+          "operators1": ["=", "+", "="],
+          "hint": "1.1 g + 2.7 g = 3.8 g (total ketoconazole)"
+        },
+        {
+          "text": "Add all the weights to get the total quantity of the mixture",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "Total quantity of all components"
+            },
+            {
+              "type": "input",
+              "answer": 5,
+              "unit": "g"
+            },
+            {
+              "type": "input",
+              "answer": 18,
+              "unit": "g"
+            },
+            {
+              "type": "input",
+              "answer": 23,
+              "unit": "g"
+            }
+          ],
+          "operators1": ["=", "+", "="],
+          "hint": "5 g + 18 g = 23 g (total quantity)"
+        },
+        {
+          "text": "Divide total active content by total quantity, then convert to %",
+          "type": "OPERATION",
+          "operands1": [
+              {
+                "type": "fraction",
+                "numerator": {
+                    "type": "input",
+                    "answer": 3.8,
+                    "unit": "g active"
+                },
+                "denominator": {
+                    "type": "input",
+                    "answer": 23,
+                    "unit": "g mixture"
+                }
+              },
+              {
+                "type": "fraction",
+                "numerator": "X g active",
+                "denominator": {
+                    "type": "input",
+                    "answer": 100,
+                    "unit": "g mixture"
+                }
+              }
+          ],
+          "operators1": ["="],
+          "operands2": [
+            {
+              "type": "text",
+              "value": "X"
+            },
+            {
+              "type": "input",
+              "answer": 16.5,
+              "unit": "%"
+            }
+          ],
+          "operators2": ["="],
+          "hint": "3.8 g active/23 g mixture = X g active/100 g mixture <br> X = 3.8 g active/23 g mixture × 100 g mixture = 16.5217391304348% (rounded to 16.5%)"
+        }
+      ]
+    },
+    {
+      "number": 16,
+      "tag": "alternate",
+      "question": "You receive a prescription for 60 g of a 2% w/w voltaren gel. How many grams each of a 5% w/w voltaren gel and gel base must be used to fill this prescription?",
+      "answerValue": [24, 36],
+      "answerUnit": ["g of 5% voltaren gel", "g of gel base"],
+      "rounding": false,
+      "steps": [
+        {
+          "text": "Identify known concentrations (one higher, one lower, and one middle/desired)",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "Higher concentration"
+            },
+            {
+              "type": "input",
+              "answer": 5,
+              "unit": "%"
+            }
+          ],
+          "operators1": [":"],
+          "operands2": [
+            {
+              "type": "text",
+              "value": "Lower concentration"
+            },
+            {
+              "type": "input",
+              "answer": 0,
+              "unit": "%"
+            }
+          ],
+          "operators2": [":"],
+          "operands3": [
+            {
+              "type": "text",
+              "value": "Desired concentration"
+            },
+            {
+              "type": "input",
+              "answer": 2,
+              "unit": "%"
+            }
+          ],
+          "operators3": [":"],
+          "hint": "Based on the question, the higher concentration is 5% voltaren gel, the lower concentration is 0% (gel base), and the desired concentration is 2% voltaren gel"
+        },
+        {
+          "text": "Set up the allegation scheme (alligation tic-tac-toe), plug in known values, and calculate parts of each component",
+          "type": "TIC_TAC_TOE",
+          "higherConcentration": 5,
+          "lowerConcentration": 0,
+          "desiredConcentration": 2,
+          "higherParts": 2,
+          "lowerParts": 3,
+          "totalParts": 5,
+          "hint": "5% - 2% = 3 parts of 0% gel base <br> 2% - 0% = 2 parts of 5% voltaren gel <br> Total parts = 5"
+        },
+        {
+          "text": "Set up the ratios and proportions for 5% voltaren gel",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "For 5% voltaren gel"
+            },
+            {
+              "type": "fraction",
+              "numerator": {
+                "type": "input",
+                "answer": 2,
+                "unit": "parts"
+              },
+              "denominator": {
+                "type": "input",
+                "answer": 5,
+                "unit": "total parts"
+              }
+            },
+            {
+              "type": "fraction",
+              "numerator": "X g",
+              "denominator": {
+                "type": "input",
+                "answer": 60,
+                "unit": "g total"
+              }
+            }
+          ],
+          "operators1": [":", "="],
+          "operands2": [
+            {
+              "type": "text",
+              "value": "Solve for X"
+            },
+            {
+              "type": "input",
+              "answer": 24,
+              "unit": "g"
+            }
+          ],
+          "operators2": ["=", "="],
+          "hint": "2 parts/5 total parts = X g/60 g total <br> X = 2 parts × 60 g ÷ 5 parts = 24 g of 5% voltaren gel needed"
+        },
+        {
+          "text": "Set up the ratios and proportions for gel base",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "For gel base"
+            },
+            {
+              "type": "fraction",
+              "numerator": {
+                "type": "input",
+                "answer": 3,
+                "unit": "parts"
+              },
+              "denominator": {
+                "type": "input",
+                "answer": 5,
+                "unit": "total parts"
+              }
+            },
+            {
+              "type": "fraction",
+              "numerator": "X g",
+              "denominator": {
+                "type": "input",
+                "answer": 60,
+                "unit": "g total"
+              }
+            }
+          ],
+          "operators1": [":", "="],
+          "operands2": [
+            {
+              "type": "text",
+              "value": "Solve for X"
+            },
+            {
+              "type": "input",
+              "answer": 36,
+              "unit": "g"
+            }
+          ],
+          "operators2": ["=", "="],
+          "hint": "3 parts/5 total parts = X g/60 g total <br> X = 3 parts × 60 g ÷ 5 parts = 36 g of gel base needed"
+        }
+      ]
+    },
+    {
+      "number": 17,
+      "tag": "medial",
+      "question": "If equal portions of carbomer gel, 0.5% w/w and .06% w/w, are combined, what would be the resulting percentage strength?",
+      "answerValue": [0.28],
+      "answerUnit": ["%"],
+      "rounding": false,
+      "steps": [
+        {
+          "text": "Multiply each component's weight by its concentration to calculate the amount of active ingredient",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "100 parts"
+            },
+            {
+              "type": "input",
+              "answer": 0.005,
+              "unit": ""
+            },
+            {
+              "type": "input",
+              "answer": 0.5,
+              "unit": "parts"
+            }
+          ],
+          "operators1": ["×", "="],
+          "operands2": [
+            {
+              "type": "text",
+              "value": "100 parts"
+            },
+            {
+              "type": "input",
+              "answer": 0.0006,
+              "unit": ""
+            },
+            {
+              "type": "input",
+              "answer": 0.06,
+              "unit": "parts"
+            }
+          ],
+          "operators2": ["×", "="],
+          "hint": "Convert percentage to decimal: 0.5% = 0.005, 0.06% = 0.0006 <br> 100 parts × 0.005 = 0.5 parts (carbomer) <br> 100 parts × 0.0006 = 0.06 parts (carbomer)"
+        },
+        {
+          "text": "Add all the active ingredients to get the total active content",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "Total active ingredients"
+            },
+            {
+              "type": "input",
+              "answer": 0.5,
+              "unit": "parts"
+            },
+            {
+              "type": "input",
+              "answer": 0.06,
+              "unit": "parts"
+            },
+            {
+              "type": "input",
+              "answer": 0.56,
+              "unit": "parts"
+            }
+          ],
+          "operators1": ["=", "+", "="],
+          "hint": "0.5 parts + 0.06 parts = 0.56 parts (total carbomer)"
+        },
+        {
+          "text": "Add all the portions to get the total quantity of the mixture",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "Total quantity of all components"
+            },
+            {
+              "type": "input",
+              "answer": 100,
+              "unit": "parts"
+            },
+            {
+              "type": "input",
+              "answer": 100,
+              "unit": "parts"
+            },
+            {
+              "type": "input",
+              "answer": 200,
+              "unit": "parts"
+            }
+          ],
+          "operators1": ["=", "+", "="],
+          "hint": "100 parts + 100 parts = 200 parts (total quantity)"
+        },
+        {
+          "text": "Divide total active content by total quantity, then convert to %",
+          "type": "OPERATION",
+          "operands1": [
+              {
+                "type": "fraction",
+                "numerator": {
+                    "type": "input",
+                    "answer": 0.56,
+                    "unit": "parts active"
+                },
+                "denominator": {
+                    "type": "input",
+                    "answer": 200,
+                    "unit": "parts total"
+                }
+              },
+              {
+                "type": "fraction",
+                "numerator": "X parts active",
+                "denominator": {
+                    "type": "input",
+                    "answer": 100,
+                    "unit": "parts total"
+                }
+              }
+          ],
+          "operators1": ["="],
+          "operands2": [
+            {
+              "type": "text",
+              "value": "X"
+            },
+            {
+              "type": "input",
+              "answer": 0.28,
+              "unit": "%"
+            }
+          ],
+          "operators2": ["="],
+          "hint": "0.56 parts active/200 parts total = X parts active/100 parts total <br> X = 0.56/2 = 0.28%"
+        }
+      ]
+    },
+    {
+      "number": 18,
+      "tag": "alternate",
+      "question": "How many grams of ointment base must be added to 30 g of clobetasol ointment, 5% w/w, to change its strength to 2% w/w?",
+      "answerValue": [45],
+      "answerUnit": ["g of ointment base"],
+      "rounding": false,
+      "steps": [
+        {
+          "text": "Identify known concentrations (one higher, one lower, and one middle/desired)",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "Higher concentration"
+            },
+            {
+              "type": "input",
+              "answer": 5,
+              "unit": "%"
+            }
+          ],
+          "operators1": [":"],
+          "operands2": [
+            {
+              "type": "text",
+              "value": "Lower concentration"
+            },
+            {
+              "type": "input",
+              "answer": 0,
+              "unit": "%"
+            }
+          ],
+          "operators2": [":"],
+          "operands3": [
+            {
+              "type": "text",
+              "value": "Desired concentration"
+            },
+            {
+              "type": "input",
+              "answer": 2,
+              "unit": "%"
+            }
+          ],
+          "operators3": [":"],
+          "hint": "Based on the question, the higher concentration is 5% clobetasol ointment, the lower concentration is 0% (ointment base), and the desired concentration is 2% clobetasol ointment"
+        },
+        {
+          "text": "Set up the allegation scheme (alligation tic-tac-toe), plug in known values, and calculate parts of each component",
+          "type": "TIC_TAC_TOE",
+          "higherConcentration": 5,
+          "lowerConcentration": 0,
+          "desiredConcentration": 2,
+          "higherParts": 2,
+          "lowerParts": 3,
+          "totalParts": 5,
+          "hint": "5% - 2% = 3 parts of 0% base <br> 2% - 0% = 2 parts of 5% ointment <br> Total parts = 5"
+        },
+        {
+          "text": "Set up proportion to find amount of base needed",
+          "type": "OPERATION",
+          "operands1": [
+              {
+                "type": "fraction",
+                "numerator": {
+                    "type": "text",
+                    "value": "X g"
+                },
+                "denominator": {
+                    "type": "input",
+                    "answer": 30,
+                    "unit": "g"
+                }
+              },
+              {
+                "type": "fraction",
+                "numerator": {
+                    "type": "input",
+                    "answer": 3,
+                    "unit": "parts"
+                },
+                "denominator": {
+                    "type": "input",
+                    "answer": 2,
+                    "unit": "parts"
+                }
+              }
+          ],
+          "operators1": ["="],
+          "hint": "If 2 parts = 30 g of 5% ointment, then X/30 = 3/2 to find grams of base needed"
+        },
+        {
+          "text": "Solve for X",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "X"
+            },
+            {
+              "type": "input",
+              "answer": 45,
+              "unit": "g"
+            }
+          ],
+          "operators1": ["="],
+          "hint": "Amount of base = 30 g × (3 parts/2 parts) = 45 g of ointment base needed"
+        }
+      ]
+    },
+    {
+      "number": 19,
+      "tag": "alternate",
+      "question": "<br> Retinol Palmitate Ointment 1% 5 g&nbsp;&nbsp;&nbsp;&nbsp; <br> Sig. Apply to the eye <br> How many grams of 5% ophthalmic retinol palmitate ointment and how many grams of ophthalmic base should be used to prepare this prescription?",
+      "answerValue": [1, 4],
+      "answerUnit": ["g of 5% ophthalmic retinol palmitate ointment", "g of ophthalmic base"],
+      "rounding": false,
+      "steps": [
+        {
+          "text": "Identify known concentrations (one higher, one lower, and one middle/desired)",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "Higher concentration"
+            },
+            {
+              "type": "input",
+              "answer": 5,
+              "unit": "%"
+            }
+          ],
+          "operators1": [":"],
+          "operands2": [
+            {
+              "type": "text",
+              "value": "Lower concentration"
+            },
+            {
+              "type": "input",
+              "answer": 0,
+              "unit": "%"
+            }
+          ],
+          "operators2": [":"],
+          "operands3": [
+            {
+              "type": "text",
+              "value": "Desired concentration"
+            },
+            {
+              "type": "input",
+              "answer": 1,
+              "unit": "%"
+            }
+          ],
+          "operators3": [":"],
+          "hint": "Based on the question, the higher concentration is 5% retinol palmitate ointment, the lower concentration is 0% (ophthalmic base), and the desired concentration is 1% retinol palmitate ointment"
+        },
+        {
+          "text": "Set up the allegation scheme (alligation tic-tac-toe), plug in known values, and calculate parts of each component",
+          "type": "TIC_TAC_TOE",
+          "higherConcentration": 5,
+          "lowerConcentration": 0,
+          "desiredConcentration": 1,
+          "higherParts": 1,
+          "lowerParts": 4,
+          "totalParts": 5,
+          "hint": "5% - 1% = 4 parts of 0% base <br> 1% - 0% = 1 part of 5% ointment <br> Total parts = 5"
+        },
+        {
+          "text": "Convert parts to actual quantity using proportion",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "For 5% ointment"
+            },
+            {
+              "type": "fraction",
+              "numerator": {
+                "type": "input",
+                "answer": 1,
+                "unit": "parts"
+              },
+              "denominator": {
+                "type": "input",
+                "answer": 5,
+                "unit": "parts"
+              }
+            },
+            {
+              "type": "fraction",
+              "numerator": "X g",
+              "denominator": {
+                "type": "input",
+                "answer": 5,
+                "unit": "g"
+              }
+            }
+          ],
+          "operators1": [":", "="],
+          "hint": "1 part/5 parts = X g/5 g <br> X = 1 part × 5 g/5 parts = 1 g of 5% ointment needed"
+        },
+        {
+          "text": "Solve for X",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "X"
+            },
+            {
+              "type": "input",
+              "answer": 1,
+              "unit": "g"
+            }
+          ],
+          "operators1": ["="],
+          "hint": "1 g of 5% ointment is needed"
+        },
+        {
+          "text": "Calculate the amount of ophthalmic base needed",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "Total amount"
+            },
+            {
+              "type": "input",
+              "answer": 5,
+              "unit": "g"
+            }
+          ],
+          "operators1": ["-"],
+          "operands2": [
+            {
+              "type": "text",
+              "value": "Amount of 5% ointment"
+            },
+            {
+              "type": "input",
+              "answer": 1,
+              "unit": "g"
+            }
+          ],
+          "operators2": ["="],
+          "operands3": [
+            {
+              "type": "text",
+              "value": "Amount of base"
+            },
+            {
+              "type": "input",
+              "answer": 4,
+              "unit": "g"
+            }
+          ],
+          "operators3": ["="],
+          "hint": "Amount of base = Total amount - Amount of 5% ointment = 5 g - 1 g = 4 g"
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "tag": "alternate",
+      "question": "<br> Cyclosporine&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5% <br> Corn Oil&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;qs <br> Sig. Use as directed. <br><br> In what proportion should corn oil be mixed with a 15% solution of cyclosporine to prepare the prescription?",
+      "answerValue": ["2:1"],
+      "answerUnit": [""],
+      "rounding": false,
+      "steps": [
+        {
+          "text": "Identify known concentrations (one higher, one lower, and one middle/desired)",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "Higher concentration"
+            },
+            {
+              "type": "input",
+              "answer": 15,
+              "unit": "%"
+            }
+          ],
+          "operators1": [":"],
+          "operands2": [
+            {
+              "type": "text",
+              "value": "Lower concentration"
+            },
+            {
+              "type": "input",
+              "answer": 0,
+              "unit": "%"
+            }
+          ],
+          "operators2": [":"],
+          "operands3": [
+            {
+              "type": "text",
+              "value": "Desired concentration"
+            },
+            {
+              "type": "input",
+              "answer": 5,
+              "unit": "%"
+            }
+          ],
+          "operators3": [":"],
+          "hint": "Based on the question, the higher concentration is 15% cyclosporine solution, the lower concentration is 0% (corn oil), and the desired concentration is 5% cyclosporine"
+        },
+        {
+          "text": "Set up the allegation scheme (alligation tic-tac-toe), plug in known values, and calculate parts of each component",
+          "type": "TIC_TAC_TOE",
+          "higherConcentration": 15,
+          "lowerConcentration": 0,
+          "desiredConcentration": 5,
+          "higherParts": 5,
+          "lowerParts": 10,
+          "totalParts": 15,
+          "hint": "15% - 5% = 10 parts of 0% corn oil <br> 5% - 0% = 5 parts of 15% solution <br> Simplify ratio 10:5 to 2:1"
+        },
+        {
+          "text": "Express the final ratio",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "Parts of 15% solution"
+            },
+            {
+              "type": "input",
+              "answer": 5,
+              "unit": "parts"
+            }
+          ],
+          "operators1": [":"],
+          "operands2": [
+            {
+              "type": "text",
+              "value": "Parts of corn oil"
+            },
+            {
+              "type": "input",
+              "answer": 10,
+              "unit": "parts"
+            }
+          ],
+          "operators2": [":"],
+          "operands3": [
+            {
+              "type": "text",
+              "value": "Final ratio corn oil:15% solution"
+            },
+            {
+              "type": "input",
+              "answer": "2",
+              "unit": ""
+            },
+            {
+              "type": "input",
+              "answer": "1",
+              "unit": ""
+            }
+          ],
+          "operators3": [":",":"],
+          "hint": "The ratio should be expressed as 2 parts of 15% cyclosporine solution : 1 part of corn oil"
+        }
+      ]
+    },
+    {
+      "number": 21,
+      "tag": "medial",
+      "question": "If equal portions of clotrimazole gel (0.04% w/w, 0.25% w/w, and 1% w/w) are combined, what would be the resulting percentage strength?",
+      "answerValue": [0.43],
+      "answerUnit": ["%"],
+      "rounding": false,
+      "steps": [
+        {
+          "text": "Multiply each component's weight by its concentration to calculate the amount of active ingredient",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "100 parts"
+            },
+            {
+              "type": "input",
+              "answer": 0.0004,
+              "unit": ""
+            },
+            {
+              "type": "input",
+              "answer": 0.04,
+              "unit": "parts"
+            }
+          ],
+          "operators1": ["×", "="],
+          "operands2": [
+            {
+              "type": "text",
+              "value": "100 parts"
+            },
+            {
+              "type": "input",
+              "answer": 0.0025,
+              "unit": ""
+            },
+            {
+              "type": "input",
+              "answer": 0.25,
+              "unit": "parts"
+            }
+          ],
+          "operators2": ["×", "="],
+          "operands3": [
+            {
+              "type": "text",
+              "value": "100 parts"
+            },
+            {
+              "type": "input",
+              "answer": 0.01,
+              "unit": ""
+            },
+            {
+              "type": "input",
+              "answer": 1.0,
+              "unit": "parts"
+            }
+          ],
+          "operators3": ["×", "="],
+          "hint": "Convert percentages to decimals: 0.04% = 0.0004, 0.25% = 0.0025, 1% = 0.01 <br> 100 parts × 0.0004 = 0.04 parts (clotrimazole) <br> 100 parts × 0.0025 = 0.25 parts (clotrimazole) <br> 100 parts × 0.01 = 1.0 parts (clotrimazole)"
+        },
+        {
+          "text": "Add the amounts of active ingredients",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "input",
+              "answer": 0.04,
+              "unit": "parts"
+            },
+            {
+              "type": "input",
+              "answer": 0.25,
+              "unit": "parts"
+            },
+            {
+              "type": "input",
+              "answer": 1.0,
+              "unit": "parts"
+            },
+            {
+              "type": "input",
+              "answer": 1.29,
+              "unit": "parts total"
+            }
+          ],
+          "operators1": ["+", "+", "="],
+          "hint": "0.04 parts + 0.25 parts + 1.0 parts = 1.29 parts total clotrimazole"
+        },
+        {
+          "text": "Calculate the total volume and divide the total active ingredient by it to get the final concentration",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "Total volume"
+            },
+            {
+              "type": "input",
+              "answer": 300,
+              "unit": "parts"
+            }
+          ],
+          "operators1": ["="],
+          "operands2": [
+            {
+              "type": "fraction",
+              "numerator": {
+                  "type": "input",
+                  "answer": 1.29,
+                  "unit": "parts"
+              },
+              "denominator": {
+                  "type": "input",
+                  "answer": 300,
+                  "unit": "parts"
+              }
+            },
+            {
+              "type": "input",
+              "answer": 0.43,
+              "unit": "%"
+            }
+          ],
+          "operators2": ["="],
+          "hint": "Total volume = 3 × 100 parts = 300 parts (100 parts from each portion) <br> Final concentration = (1.29 parts/300 parts) × 100 = 0.43%"
+        }
+      ]
+    },
+    {
+      "number": 22,
+      "tag": "medial",
+      "question": "A pharmacist combines 4 fluid ounces of a povidone-iodine cleaner, 10% w/v, with 6 fluid ounces of a povidone-iodine topical solution, 18% w/v. What is the resulting strength of the povidone-iodine mixture? Round final answer to the nearest tenth.",
+      "answerValue": [14.8],
+      "answerUnit": ["%"],
+      "rounding": false,
+      "steps": [
+        {
+          "text": "Convert all units to standard units (i.e., fluid ounces to mL)",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "4 fl oz"
+            },
+            {
+              "type": "input",
+              "answer": 30,
+              "unit": "mL/fl oz"
+            },
+            {
+              "type": "input",
+              "answer": 120,
+              "unit": "mL"
+            }
+          ],
+          "operators1": ["×", "="],
+          "operands2": [
+            {
+              "type": "text",
+              "value": "6 fl oz"
+            },
+            {
+              "type": "input",
+              "answer": 30,
+              "unit": "mL/fl oz"
+            },
+            {
+              "type": "input",
+              "answer": 180,
+              "unit": "mL"
+            }
+          ],
+          "operators2": ["×", "="],
+          "hint": "Convert fluid ounces to milliliters: 1 fl oz = 30 mL <br> 4 fl oz × 30 mL/fl oz = 120 mL <br> 6 fl oz × 30 mL/fl oz = 180 mL"
+        },
+        {
+          "text": "Multiply each component's volume by its concentration to calculate the amount of povidone-iodine",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "120 mL"
+            },
+            {
+              "type": "input",
+              "answer": 0.10,
+              "unit": ""
+            },
+            {
+              "type": "input",
+              "answer": 12,
+              "unit": "g"
+            }
+          ],
+          "operators1": ["×", "="],
+          "operands2": [
+            {
+              "type": "text",
+              "value": "180 mL"
+            },
+            {
+              "type": "input",
+              "answer": 0.18,
+              "unit": ""
+            },
+            {
+              "type": "input",
+              "answer": 32.4,
+              "unit": "g"
+            }
+          ],
+          "operators2": ["×", "="],
+          "hint": "Convert percentages to decimals: 10% = 0.10, 18% = 0.18 <br> 120 mL × 0.10 = 12 g povidone-iodine <br> 180 mL × 0.18 = 32.4 g povidone-iodine"
+        },
+        {
+          "text": "Add all the active ingredients to get the total active content and add all volumes to or weights to get the total volume or weight",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "Total povidone-iodine"
+            },
+            {
+              "type": "input",
+              "answer": 44.4,
+              "unit": "g"
+            }
+          ],
+          "operators1": ["="],
+          "operands2": [
+            {
+              "type": "text",
+              "value": "Total volume"
+            },
+            {
+              "type": "input",
+              "answer": 300,
+              "unit": "mL"
+            }
+          ],
+          "operators2": ["="],
+          "hint": "Total povidone-iodine = 12 g + 32.4 g = 44.4 g <br> Total volume = 120 mL + 180 mL = 300 mL"
+        },
+        {
+          "text": "Divide total active content by total quantity, then convert to % if needed",
+          "type": "OPERATION",
+          "operands1": [
+              {
+                "type": "fraction",
+                "numerator": {
+                    "type": "input",
+                    "answer": 44.4,
+                    "unit": "g povidone-iodine"
+                },
+                "denominator": {
+                    "type": "input",
+                    "answer": 300,
+                    "unit": "mL solution"
+                }
+              },
+              {
+                "type": "fraction",
+                "numerator": {
+                    "type": "text",
+                    "value": "X g povidone-iodine"
+                },
+                "denominator": {
+                    "type": "input",
+                    "answer": 100,
+                    "unit": "mL solution"
+                }
+              }
+          ],
+          "operators1": ["="],
+          "operands2": [
+            {
+              "type": "text",
+              "value": "X"
+            },
+            {
+              "type": "input",
+              "answer": 14.8,
+              "unit": "%"
+            }
+          ],
+          "operators2": ["="],
+          "hint": "44.4 g povidone-iodine/300 mL solution = X g povidone-iodine/100 mL solution <br> X = 44.4 g povidone-iodine/300 mL solution × 100 mL solution = 14.8%"
+        }
+      ]
+    },
+    {
+      "number": 23,
+      "tag": "medial",
+      "question": "A technician combined 1250 ml of a NaCl solution, 0.9% w/v, with 500 ml of a NaCl solution, 0.45% w/v. What is the resulting strength of the NaCl solution mixture?",
+      "answerValue": [0.77],
+      "answerUnit": ["%"],
+      "rounding": false,
+      "steps": [
+        {
+          "text": "Multiply each component's volume by its concentration to calculate the amount of active ingredient",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "1250 mL"
+            },
+            {
+              "type": "input",
+              "answer": 0.009,
+              "unit": ""
+            },
+            {
+              "type": "input",
+              "answer": 11.25,
+              "unit": "g"
+            }
+          ],
+          "operators1": ["×", "="],
+          "operands2": [
+            {
+              "type": "text",
+              "value": "500 mL"
+            },
+            {
+              "type": "input",
+              "answer": 0.0045,
+              "unit": ""
+            },
+            {
+              "type": "input",
+              "answer": 2.25,
+              "unit": "g"
+            }
+          ],
+          "operators2": ["×", "="],
+          "hint": "Convert percentages to decimals: 0.9% = 0.009, 0.45% = 0.0045 <br> 1250 mL × 0.009 = 11.25 g NaCl <br> 500 mL × 0.0045 = 2.25 g NaCl"
+        },
+        {
+          "text": "Add all the active ingredients to get the total active content and add all volumes to or weights to get the total volume or weight",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "input",
+              "answer": 11.25,
+              "unit": "g"
+            },
+            {
+              "type": "input",
+              "answer": 2.25,
+              "unit": "g"
+            },
+            {
+              "type": "input",
+              "answer": 13.5,
+              "unit": "g total"
+            }
+          ],
+          "operators1": ["+", "="],
+          "operands2": [
+            {
+              "type": "input",
+              "answer": 1250,
+              "unit": "mL"
+            },
+            {
+              "type": "input",
+              "answer": 500,
+              "unit": "mL"
+            },
+            {
+              "type": "input",
+              "answer": 1750,
+              "unit": "mL total"
+            }
+          ],
+          "operators2": ["+", "="],
+          "hint": "Total NaCl = 11.25 g + 2.25 g = 13.5 g <br> Total volume = 1250 mL + 500 mL = 1750 mL"
+        },
+        {
+          "text": "Divide total active content by total quantity, then convert to % if needed",
+          "type": "OPERATION",
+          "operands1": [
+              {
+                "type": "fraction",
+                "numerator": {
+                    "type": "input",
+                    "answer": 13.5,
+                    "unit": "g NaCl"
+                },
+                "denominator": {
+                    "type": "input",
+                    "answer": 1750,
+                    "unit": "mL solution"
+                }
+              },
+              {
+                "type": "fraction",
+                "numerator": {
+                    "type": "text",
+                    "value": "X g NaCl"
+                },
+                "denominator": {
+                    "type": "input",
+                    "answer": 100,
+                    "unit": "mL solution"
+                }
+              }
+          ],
+          "operators1": ["="],
+          "operands2": [
+            {
+              "type": "text",
+              "value": "X"
+            },
+            {
+              "type": "input",
+              "answer": 0.77,
+              "unit": "%"
+            }
+          ],
+          "operators2": ["="],
+          "hint": "13.5 g NaCl/1750 mL solution = X g NaCl/100 mL solution <br> X = 13.5 g NaCl/1750 mL solution × 100 mL solution = 0.77142...% ≈ 0.77%"
+        }
+      ]
+    },
+    {
+      "number": 24,
+      "tag": "alternate",
+      "question": "Cyclosporine 5% <br> Corn Oil qs <br> Sig. Use as directed. <br> How many milliliters each of corn oil and a 15% solution of cyclosporine would be needed to prepare 50 ml of the prescription?  Round final answers to the nearest tenth.",
+      "answerValue": [16.7, 33.3],
+      "answerUnit": ["mL of 15% cyclosporine solution", "mL of corn oil"],
+      "rounding": false,
+      "steps": [
+        {
+          "text": "Identify known concentrations (one higher, one lower, and one middle/desired)",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "Higher concentration"
+            },
+            {
+              "type": "input",
+              "answer": 15,
+              "unit": "%"
+            }
+          ],
+          "operators1": [":"],
+          "operands2": [
+            {
+              "type": "text",
+              "value": "Lower concentration"
+            },
+            {
+              "type": "input",
+              "answer": 0,
+              "unit": "%"
+            }
+          ],
+          "operators2": [":"],
+          "operands3": [
+            {
+              "type": "text",
+              "value": "Desired concentration"
+            },
+            {
+              "type": "input",
+              "answer": 5,
+              "unit": "%"
+            }
+          ],
+          "operators3": [":"],
+          "hint": "Based on the question, the higher concentration is 15% cyclosporine solution, the lower concentration is 0% (corn oil), and the desired concentration is 5% cyclosporine"
+        },
+        {
+          "text": "Set up the alligation scheme (alligation tic-tac-toe), plug in known values, and calculate parts of each component",
+          "type": "TIC_TAC_TOE",
+          "higherConcentration": 15,
+          "lowerConcentration": 0,
+          "desiredConcentration": 5,
+          "higherParts": 5,
+          "lowerParts": 10,
+          "totalParts": 15,
+          "hint": "15% - 5% = 10 parts of 0% (corn oil) <br> 5% - 0% = 5 parts of 15% solution <br> Total parts = 15"
+        },
+        {
+          "text": "Convert parts to actual quantity using proportion",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "For corn oil"
+            },
+            {
+              "type": "fraction",
+              "numerator": {
+                "type": "input",
+                "answer": 10,
+                "unit": "parts"
+              },
+              "denominator": {
+                "type": "input",
+                "answer": 15,
+                "unit": "parts"
+              }
+            },
+            {
+              "type": "fraction",
+              "numerator": "X ml",
+              "denominator": {
+                "type": "input",
+                "answer": 50,
+                "unit": "ml"
+              }
+            }
+          ],
+          "operators1": [":", "="],
+          "operands2": [
+            {
+              "type": "text",
+              "value": "X"
+            },
+            {
+              "type": "input",
+              "answer": 33.3,
+              "unit": "mL"
+            }
+          ],
+          "operators2": ["="],
+          "operands3": [
+            {
+              "type": "text",
+              "value": "For 15%"
+            },
+            {
+              "type": "fraction",
+              "numerator": {
+                "type": "input",
+                "answer": 5,
+                "unit": "parts"
+              },
+              "denominator": {
+                "type": "input",
+                "answer": 15,
+                "unit": "parts"
+              }
+            },
+            {
+              "type": "fraction",
+              "numerator": "X ml",
+              "denominator": {
+                "type": "input",
+                "answer": 50,
+                "unit": "ml"
+              }
+            }
+          ],
+          "operators3": [":", "="],
+          "operands4": [
+            {
+              "type": "text",
+              "value": "X"
+            },
+            {
+              "type": "input",
+              "answer": 16.7,
+              "unit": "mL"
+            }
+          ],
+          "operators4": ["="],
+          "hint": "For corn oil: 10 parts/15 parts = X ml/50 ml <br> X = 10 parts/15 parts × 50 ml = 33.3 ml <br> For 15% solution: 5 parts/15 parts = X ml/50 ml <br> X = 5 parts/15 parts × 50 ml = 16.7 ml"
+        }
+      ]
+    },
+    {
+      "number": 25,
+      "tag": "alternate",
+      "question": "How many milliliters of a 4% infliximab injection and how many milliliters of normal saline injection should be used to prepare 250 ml of a 2% infliximab injection? Round final answers to the nearest tenth.",
+      "answerValue": [125, 125],
+      "answerUnit": ["mL of 4% infliximab injection", "mL of normal saline"],
+      "rounding": false,
+      "steps": [
+        {
+          "text": "Identify known concentrations (one higher, one lower, and one middle/desired)",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "Higher concentration"
+            },
+            {
+              "type": "input",
+              "answer": 4,
+              "unit": "%"
+            }
+          ],
+          "operators1": [":"],
+          "operands2": [
+            {
+              "type": "text",
+              "value": "Lower concentration"
+            },
+            {
+              "type": "input",
+              "answer": 0,
+              "unit": "%"
+            }
+          ],
+          "operators2": [":"],
+          "operands3": [
+            {
+              "type": "text",
+              "value": "Desired concentration"
+            },
+            {
+              "type": "input",
+              "answer": 2,
+              "unit": "%"
+            }
+          ],
+          "operators3": [":"],
+          "hint": "Based on the question, the higher concentration is 4% infliximab injection, the lower concentration is 0% (normal saline), and the desired concentration is 2% infliximab"
+        },
+        {
+          "text": "Set up the alligation scheme (alligation tic-tac-toe), plug in known values, and calculate parts of each component",
+          "type": "TIC_TAC_TOE",
+          "higherConcentration": 4,
+          "lowerConcentration": 0,
+          "desiredConcentration": 2,
+          "higherParts": 2,
+          "lowerParts": 2,
+          "totalParts": 4,
+          "hint": "4% - 2% = 2 parts of 0% (normal saline) <br> 2% - 0% = 2 parts of 4% injection <br> Total parts = 4"
+        },
+        {
+          "text": "Convert parts to actual quantity using proportion",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "For normal saline"
+            },
+            {
+              "type": "fraction",
+              "numerator": {
+                "type": "input",
+                "answer": 2,
+                "unit": "parts"
+              },
+              "denominator": {
+                "type": "input",
+                "answer": 4,
+                "unit": "parts"
+              }
+            },
+            {
+              "type": "fraction",
+              "numerator": "X ml",
+              "denominator": {
+                "type": "input",
+                "answer": 250,
+                "unit": "ml"
+              }
+            }
+          ],
+          "operators1": [":", "="],
+          "operands2": [
+            {
+              "type": "text",
+              "value": "X"
+            },
+            {
+              "type": "input",
+              "answer": 125,
+              "unit": "mL"
+            }
+          ],
+          "operators2": ["="],
+          "operands3": [
+            {
+              "type": "text",
+              "value": "For 4%"
+            },
+            {
+              "type": "fraction",
+              "numerator": {
+                "type": "input",
+                "answer": 2,
+                "unit": "parts"
+              },
+              "denominator": {
+                "type": "input",
+                "answer": 4,
+                "unit": "parts"
+              }
+            },
+            {
+              "type": "fraction",
+              "numerator": "X ml",
+              "denominator": {
+                "type": "input",
+                "answer": 250,
+                "unit": "ml"
+              }
+            }
+          ],
+          "operators3": [":", "="],
+          "operands4": [
+            {
+              "type": "text",
+              "value": "X"
+            },
+            {
+              "type": "input",
+              "answer": 125,
+              "unit": "mL"
+            }
+          ],
+          "operators4": ["="],
+          "hint": "For normal saline: 2 parts/4 parts = X ml/250 ml <br> X = 2 parts/4 parts × 250 ml = 125 ml <br> For 4% injection: 2 parts/4 parts = X ml/250 ml <br> X = 2 parts/4 parts × 250 ml = 125 ml"
+        }
+      ]
+    },
+    {
+      "number": 26,
+      "tag": "alternate",
+      "question": "Mometasone Furoate Cream 0.1% 15 g <br> Sig. Apply to the affected area four times a day. <br> How many grams of 5% mometasone furoate cream and how many grams of cream base should be used to prepare this prescription? Round final answers to the nearest tenth.",
+      "answerValue": [0.3, 14.7],
+      "answerUnit": ["g of 5% mometasone furoate cream", "g of cream base"],
+      "rounding": false,
+      "steps": [
+        {
+          "text": "Identify known concentrations (one higher, one lower, and one middle/desired)",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "Higher concentration"
+            },
+            {
+              "type": "input",
+              "answer": 5,
+              "unit": "%"
+            }
+          ],
+          "operators1": [":"],
+          "operands2": [
+            {
+              "type": "text",
+              "value": "Lower concentration"
+            },
+            {
+              "type": "input",
+              "answer": 0,
+              "unit": "%"
+            }
+          ],
+          "operators2": [":"],
+          "operands3": [
+            {
+              "type": "text",
+              "value": "Desired concentration"
+            },
+            {
+              "type": "input",
+              "answer": 0.1,
+              "unit": "%"
+            }
+          ],
+          "operators3": [":"],
+          "hint": "Based on the question, the higher concentration is 5% mometasone furoate cream, the lower concentration is 0% (cream base), and the desired concentration is 0.1% mometasone furoate"
+        },
+        {
+          "text": "Set up the alligation scheme (alligation tic-tac-toe), plug in known values, and calculate parts of each component",
+          "type": "TIC_TAC_TOE",
+          "higherConcentration": 5,
+          "lowerConcentration": 0,
+          "desiredConcentration": 0.1,
+          "higherParts": 0.1,
+          "lowerParts": 4.9,
+          "totalParts": 5,
+          "hint": "5% - 0.1% = 4.9 parts of 0% (cream base) <br> 0.1% - 0% = 0.1 parts of 5% cream <br> Total parts = 5"
+        },
+        {
+          "text": "Convert parts to actual quantity using proportion",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "For cream base"
+            },
+            {
+              "type": "fraction",
+              "numerator": {
+                "type": "input",
+                "answer": 4.9,
+                "unit": "parts"
+              },
+              "denominator": {
+                "type": "input",
+                "answer": 5,
+                "unit": "parts"
+              }
+            },
+            {
+              "type": "fraction",
+              "numerator": "X g",
+              "denominator": {
+                "type": "input",
+                "answer": 15,
+                "unit": "g"
+              }
+            }
+          ],
+          "operators1": [":", "="],
+          "operands2": [
+            {
+              "type": "text",
+              "value": "X"
+            },
+            {
+              "type": "input",
+              "answer": 14.7,
+              "unit": "g"
+            }
+          ],
+          "operators2": ["="],
+          "operands3": [
+            {
+              "type": "text",
+              "value": "For 5%"
+            },
+            {
+              "type": "fraction",
+              "numerator": {
+                "type": "input",
+                "answer": 0.1,
+                "unit": "parts"
+              },
+              "denominator": {
+                "type": "input",
+                "answer": 5,
+                "unit": "parts"
+              }
+            },
+            {
+              "type": "fraction",
+              "numerator": "X g",
+              "denominator": {
+                "type": "input",
+                "answer": 15,
+                "unit": "g"
+              }
+            }
+          ],
+          "operators3": [":", "="],
+          "operands4": [
+            {
+              "type": "text",
+              "value": "X"
+            },
+            {
+              "type": "input",
+              "answer": 0.3,
+              "unit": "g"
+            }
+          ],
+          "operators4": ["="],
+          "hint": "For cream base: 4.9 parts/5 parts = X g/15 g <br> X = 4.9 parts/5 parts × 15 g = 14.7 g <br> For 5% cream: 0.1 parts/5 parts = X g/15 g <br> X = 0.1 parts/5 parts × 15 g = 0.3 g"
+        }
+      ]
+    },
+    {
+      "number": 27,
+      "tag": "medial",
+      "question": "What is the percentage strength of dextrose in a mixture of 450 ml of a solution containing 5% w/v dextrose, 100 ml of a second solution containing 15% w/v dextrose, and a third solution containing 500 ml of 0.9% w/v NaCl? Round final answer to the nearest hundredth.",
+      "answerValue": [3.57],
+      "answerUnit": ["%"],
+      "rounding": false,
+      "steps": [
+        {
+          "text": "Multiply each component's volume by its concentration to calculate the amount of active ingredient",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "450 mL"
+            },
+            {
+              "type": "input",
+              "answer": 0.05,
+              "unit": ""
+            },
+            {
+              "type": "input",
+              "answer": 22.5,
+              "unit": "g"
+            }
+          ],
+          "operators1": ["×", "="],
+          "operands2": [
+            {
+              "type": "text",
+              "value": "100 mL"
+            },
+            {
+              "type": "input",
+              "answer": 0.15,
+              "unit": ""
+            },
+            {
+              "type": "input",
+              "answer": 15,
+              "unit": "g"
+            }
+          ],
+          "operators2": ["×", "="],
+          "operands3": [
+            {
+              "type": "text",
+              "value": "500 mL"
+            },
+            {
+              "type": "input",
+              "answer": 0,
+              "unit": ""
+            },
+            {
+              "type": "input",
+              "answer": 0,
+              "unit": "g"
+            }
+          ],
+          "operators3": ["×", "="],
+          "hint": "Convert percentages to decimals: 5% = 0.05, 15% = 0.15 <br> 450 mL × 0.05 = 22.5 g dextrose <br> 100 mL × 0.15 = 15 g dextrose <br> 500 mL × 0 = 0 g dextrose (NaCl solution contains no dextrose)"
+        },
+        {
+          "text": "Add all the active ingredients to get the total dextrose content",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "input",
+              "answer": 22.5,
+              "unit": "g"
+            },
+            {
+              "type": "input",
+              "answer": 15,
+              "unit": "g"
+            },
+            {
+              "type": "input",
+              "answer": 37.5,
+              "unit": "g"
+            }
+          ],
+          "operators1": ["+", "="],
+          "hint": "Total dextrose = 22.5 g + 15 g = 37.5 g"
+        },
+        {
+          "text": "Calculate the total volume of the mixture",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "input",
+              "answer": 450,
+              "unit": "mL"
+            },
+            {
+              "type": "input",
+              "answer": 100,
+              "unit": "mL"
+            },
+            {
+              "type": "input",
+              "answer": 500,
+              "unit": "mL"
+            },
+            {
+              "type": "input",
+              "answer": 1050,
+              "unit": "mL"
+            }
+          ],
+          "operators1": ["+", "+", "="],
+          "hint": "Total volume = 450 mL + 100 mL + 500 mL = 1050 mL"
+        },
+        {
+          "text": "Divide total active content by total quantity, then convert to % if needed",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "fraction",
+              "numerator": {
+                "type": "input",
+                "answer": 37.5,
+                "unit": "g"
+              },
+              "denominator": {
+                "type": "input",
+                "answer": 1050,
+                "unit": "mL"
+              }
+            },
+            {
+              "type": "fraction",
+              "numerator": {
+                "type": "text",
+                "value": "X"
+              },
+              "denominator": {
+                "type": "input",
+                "answer": 100,
+                "unit": ""
+              }
+            }
+          ],
+          "operators1": ["=", "×100="],
+          "operands2": [
+            {
+              "type": "text",
+              "value": "X"
+            },
+            {
+              "type": "input",
+              "answer": 3.57,
+              "unit": "%"
+            }
+          ],
+          "operators2": ["="],
+          "hint": "37.5 g dextrose/1050 mL solution = X g dextrose/100 mL solution <br> X = 37.5 g dextrose/1050 mL solution × 100 mL solution = 3.57%"
+        }
+      ]
+    },
+    {
+      "number": 28,
+      "tag": "alternate",
+      "question": "How many grams of ointment base must be added to 1525 mg of mupirocin ointment, 9% w/w, to change its strength to 1% w/w? Round final answer to the nearest hundredth.",
+      "answerValue": [12.2],
+      "answerUnit": ["g of ointment base"],
+      "rounding": false,
+      "steps": [
+        {
+          "text": "Convert all units to standard units (i.e., mg to g)",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "1525 mg"
+            },
+            {
+              "type": "input",
+              "answer": 1.525,
+              "unit": "g"
+            }
+          ],
+          "operators1": ["="],
+          "hint": "Convert milligrams to grams by dividing by 1000: 1525 mg = 1.525 g"
+        },
+        {
+          "text": "Identify known concentrations (one higher, one lower, and one middle/desired)",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "Higher concentration"
+            },
+            {
+              "type": "input",
+              "answer": 9,
+              "unit": "%"
+            }
+          ],
+          "operators1": [":"],
+          "operands2": [
+            {
+              "type": "text",
+              "value": "Lower concentration"
+            },
+            {
+              "type": "input",
+              "answer": 0,
+              "unit": "%"
+            }
+          ],
+          "operators2": [":"],
+          "operands3": [
+            {
+              "type": "text",
+              "value": "Desired concentration"
+            },
+            {
+              "type": "input",
+              "answer": 1,
+              "unit": "%"
+            }
+          ],
+          "operators3": [":"],
+          "hint": "Based on the question, the higher concentration is 9% mupirocin ointment, the lower concentration is 0% (ointment base), and the desired concentration is 1% mupirocin"
+        },
+        {
+          "text": "Set up the alligation scheme (alligation tic-tac-toe), plug in known values, and calculate parts of each component",
+          "type": "TIC_TAC_TOE",
+          "higherConcentration": 9,
+          "lowerConcentration": 0,
+          "desiredConcentration": 1,
+          "higherParts": 1,
+          "lowerParts": 8,
+          "totalParts": 9,
+          "hint": "9% - 1% = 8 parts of 0% (ointment base) <br> 1% - 0% = 1 part of 9% ointment <br> Total parts = 9"
+        },
+        {
+          "text": "Convert parts to actual quantity using proportion",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "For ointment base"
+            },
+            {
+              "type": "fraction",
+              "numerator": {
+                "type": "input",
+                "answer": 1,
+                "unit": "parts"
+              },
+              "denominator": {
+                "type": "input",
+                "answer": 8,
+                "unit": "parts"
+              }
+            },
+            {
+              "type": "fraction",
+              "numerator": {
+                "type": "input",
+                "answer": 1.525,
+                "unit": "g"
+              },
+              "denominator": "X g"
+            }
+          ],
+          "operators1": [":", "="],
+          "operands2": [
+            {
+              "type": "text",
+              "value": "X"
+            },
+            {
+              "type": "input",
+              "answer": 12.2,
+              "unit": "g"
+            }
+          ],
+          "hint": "For ointment base: 1 part/8 parts = 1.525 g/X g <br> X = 1.525 g × 8/1 = 12.2 g"
+        }
+      ]
+    },
+    {
+      "number": 29,
+      "tag": "alternate",
+      "question": "You receive a prescription for 100 ml of a 3.5% lidocaine hydrochloride ophthalmic gel. How many milliliters each of a 12% and 1% lidocaine hydrochloride ophthalmic gel must be used? Round final answers to the nearest tenth.",
+      "answerValue": [22.7, 77.3],
+      "answerUnit": ["mL of 12% lidocaine gel", "mL of 1% lidocaine gel"],
+      "rounding": false,
+      "steps": [
+        {
+          "text": "Identify known concentrations (one higher, one lower, and one middle/desired)",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "Higher concentration"
+            },
+            {
+              "type": "input",
+              "answer": 12,
+              "unit": "%"
+            }
+          ],
+          "operators1": [":"],
+          "operands2": [
+            {
+              "type": "text",
+              "value": "Lower concentration"
+            },
+            {
+              "type": "input",
+              "answer": 1,
+              "unit": "%"
+            }
+          ],
+          "operators2": [":"],
+          "operands3": [
+            {
+              "type": "text",
+              "value": "Desired concentration"
+            },
+            {
+              "type": "input",
+              "answer": 3.5,
+              "unit": "%"
+            }
+          ],
+          "operators3": [":"],
+          "hint": "Based on the question, the higher concentration is 12% lidocaine gel, the lower concentration is 1% lidocaine gel, and the desired concentration is 3.5% lidocaine gel"
+        },
+        {
+          "text": "Set up the alligation scheme (alligation tic-tac-toe), plug in known values, and calculate parts of each component",
+          "type": "TIC_TAC_TOE",
+          "higherConcentration": 12,
+          "lowerConcentration": 1,
+          "desiredConcentration": 3.5,
+          "higherParts": 2.5,
+          "lowerParts": 8.5,
+          "totalParts": 11,
+          "hint": "12% - 3.5% = 8.5 parts of 1% gel <br> 3.5% - 1% = 2.5 parts of 12% gel <br> Total parts = 11"
+        },
+        {
+          "text": "Convert parts to actual quantity using proportion",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "For 12% gel"
+            },
+            {
+              "type": "fraction",
+              "numerator": {
+                "type": "input",
+                "answer": 2.5,
+                "unit": "parts"
+              },
+              "denominator": {
+                "type": "input",
+                "answer": 11,
+                "unit": "parts"
+              }
+            },
+            {
+              "type": "fraction",
+              "numerator": "X ml",
+              "denominator": {
+                "type": "input",
+                "answer": 100,
+                "unit": "ml"
+              }
+            }
+          ],
+          "operators1": [":", "="],
+          "operands2": [
+            {
+              "type": "text",
+              "value": "X"
+            },
+            {
+              "type": "input",
+              "answer": 22.7,
+              "unit": "mL"
+            }
+          ],
+          "operators2": ["="],
+          "operands3": [
+            {
+              "type": "text",
+              "value": "For 1% gel"
+            },
+            {
+              "type": "fraction",
+              "numerator": {
+                "type": "input",
+                "answer": 8.5,
+                "unit": "parts"
+              },
+              "denominator": {
+                "type": "input",
+                "answer": 11,
+                "unit": "parts"
+              }
+            },
+            {
+              "type": "fraction",
+              "numerator": "X ml",
+              "denominator": {
+                "type": "input",
+                "answer": 100,
+                "unit": "ml"
+              }
+            }
+          ],
+          "operators3": [":", "="],
+          "operands4": [
+            {
+              "type": "text",
+              "value": "X"
+            },
+            {
+              "type": "input",
+              "answer": 77.3,
+              "unit": "mL"
+            }
+          ],
+          "operators4": ["="],
+          "hint": "For 12% gel: 2.5 parts/11 parts = X ml/100 ml <br> X = 2.5 parts/11 parts × 100 ml = 22.7 ml <br> For 1% gel: 8.5 parts/11 parts = X ml/100 ml <br> X = 8.5 parts/11 parts × 100 ml = 77.3 ml"
+        }
+      ]
+    },
+    {
+      "number": 30,
+      "tag": "medial",
+      "question": "If 30 g of a combination cream of 5% w/w neomycin sulfate and 10% w/w polymyxin B sulfate are mixed with 10 g of a cream containing 9% w/w neomycin sulfate and 15% w/w polymyxin B, calculate the percentage strength of each of the two drugs in the mixture.",
+      "answerValue": [6, 11.25],
+      "answerUnit": ["% w/w neomycin sulfate", "% w/w polymyxin B"],
+      "rounding": false,
+      "steps": [
+        {
+          "text": "Calculate the total weight of the mixture",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "input",
+              "answer": 30,
+              "unit": "g"
+            },
+            {
+              "type": "input",
+              "answer": 10,
+              "unit": "g"
+            },
+            {
+              "type": "input",
+              "answer": 40,
+              "unit": "g"
+            }
+          ],
+          "operators1": ["+", "="],
+          "hint": "Total weight = 30 g + 10 g = 40 g"
+        },
+        {
+          "text": "Part 1: Calculate the amount of neomycin sulfate in each cream and total amount",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "First cream"
+            },
+            {
+              "type": "input",
+              "answer": 30,
+              "unit": "g"
+            },
+            {
+              "type": "input",
+              "answer": 5,
+              "unit": "%"
+            },
+            {
+              "type": "input",
+              "answer": 1.5,
+              "unit": "g"
+            }
+          ],
+          "operators1": [":", "×", "="],
+          "operands2": [
+            {
+              "type": "text",
+              "value": "Second cream"
+            },
+            {
+              "type": "input",
+              "answer": 10,
+              "unit": "g"
+            },
+            {
+              "type": "input",
+              "answer": 9,
+              "unit": "%"
+            },
+            {
+              "type": "input",
+              "answer": 0.9,
+              "unit": "g"
+            }
+          ],
+          "operators2": [":", "×", "="],
+          "operands3": [
+            {
+              "type": "text",
+              "value": "Total neomycin"
+            },
+            {
+              "type": "input",
+              "answer": 2.4,
+              "unit": "g"
+            }
+          ],
+          "operators3": ["="],
+          "hint": "First cream: 30 g × 5% = 1.5 g neomycin <br> Second cream: 10 g × 9% = 0.9 g neomycin <br> Total neomycin = 1.5 g + 0.9 g = 2.4 g"
+        },
+        {
+          "text": "Calculate the final percentage of neomycin sulfate",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "input",
+              "answer": 2.4,
+              "unit": "g"
+            },
+            {
+              "type": "input",
+              "answer": 40,
+              "unit": "g"
+            },
+            {
+              "type": "input",
+              "answer": 6,
+              "unit": "%"
+            }
+          ],
+          "operators1": ["÷", "="],
+          "hint": "Neomycin percentage = (2.4 g ÷ 40 g) × 100 = 6%"
+        },
+        {
+          "text": "Part 2: Calculate the amount of polymyxin B in each cream and total amount",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "First cream"
+            },
+            {
+              "type": "input",
+              "answer": 30,
+              "unit": "g"
+            },
+            {
+              "type": "input",
+              "answer": 10,
+              "unit": "%"
+            },
+            {
+              "type": "input",
+              "answer": 3,
+              "unit": "g"
+            }
+          ],
+          "operators1": [":", "×", "="],
+          "operands2": [
+            {
+              "type": "text",
+              "value": "Second cream"
+            },
+            {
+              "type": "input",
+              "answer": 10,
+              "unit": "g"
+            },
+            {
+              "type": "input",
+              "answer": 15,
+              "unit": "%"
+            },
+            {
+              "type": "input",
+              "answer": 1.5,
+              "unit": "g"
+            }
+          ],
+          "operators2": [":", "×", "="],
+          "operands3": [
+            {
+              "type": "text",
+              "value": "Total polymyxin"
+            },
+            {
+              "type": "input",
+              "answer": 4.5,
+              "unit": "g"
+            }
+          ],
+          "operators3": ["="],
+          "hint": "First cream: 30 g × 10% = 3 g polymyxin <br> Second cream: 10 g × 15% = 1.5 g polymyxin <br> Total polymyxin = 3 g + 1.5 g = 4.5 g"
+        },
+        {
+          "text": "Calculate the final percentage of polymyxin B",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "input",
+              "answer": 4.5,
+              "unit": "g"
+            },
+            {
+              "type": "input",
+              "answer": 40,
+              "unit": "g"
+            },
+            {
+              "type": "input",
+              "answer": 11.25,
+              "unit": "%"
+            }
+          ],
+          "operators1": ["÷", "="],
+          "hint": "Polymyxin percentage = (4.5 g ÷ 40 g) × 100 = 11.25%"
+        }
+      ]
+    },
+    {
+      "number": 31,
+      "tag": "alternate",
+      "question": "In what proportion should 0.5% ketoconazole cream be mixed with a 3% ketoconazole cream to produce a 2% ketoconazole cream?",
+      "answerValue": ["1:1.5"],
+      "answerUnit": [""],
+      "rounding": false,
+      "steps": [
+        {
+          "text": "Identify known concentrations (one higher, one lower, and one middle/desired)",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "Higher concentration"
+            },
+            {
+              "type": "input",
+              "answer": 3,
+              "unit": "%"
+            }
+          ],
+          "operators1": [":"],
+          "operands2": [
+            {
+              "type": "text",
+              "value": "Lower concentration"
+            },
+            {
+              "type": "input",
+              "answer": 0.5,
+              "unit": "%"
+            }
+          ],
+          "operators2": [":"],
+          "operands3": [
+            {
+              "type": "text",
+              "value": "Desired concentration"
+            },
+            {
+              "type": "input",
+              "answer": 2,
+              "unit": "%"
+            }
+          ],
+          "operators3": [":"],
+          "hint": "Based on the question, the higher concentration is 3% ketoconazole cream, the lower concentration is 0.5% ketoconazole cream, and the desired concentration is 2% ketoconazole cream"
+        },
+        {
+          "text": "Set up the alligation scheme (alligation tic-tac-toe), plug in known values, and calculate parts of each component",
+          "type": "TIC_TAC_TOE",
+          "higherConcentration": 3,
+          "lowerConcentration": 0.5,
+          "desiredConcentration": 2,
+          "higherParts": 1.5,
+          "lowerParts": 1,
+          "totalParts": 2.5,
+          "hint": "3% - 2% = 1 part of 0.5% cream <br> 2% - 0.5% = 1.5 parts of 3% cream <br> Total parts = 2.5"
+        },
+        {
+          "text": "Find the proportion",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "fraction",
+              "numerator": {
+                "type": "input",
+                "answer": 1,
+                "unit": "parts"
+              },
+              "denominator": {
+                "type": "input",
+                "answer": 1.5,
+                "unit": "parts"
+              }
+            },
+            {
+              "type": "input",
+              "answer": 1,
+              "unit": "parts"
+            },
+            {
+              "type": "input",
+              "answer": 1.5,
+              "unit": "parts"
+            }
+          ],
+          "operators1": ["=", ":"],
+          "hint": "1 part of 0.5% cream <br> 1.5 parts of 3% cream <br> Final ratio is 1:1.5"
+        }
+      ]
+    },
+    {
+      "number": 32,
+      "tag": "medial",
+      "question": "If 120 ml of a combination gel of hydrocortisone acetate 5% w/w, and pramoxine 2% w/w, are mixed with 60 ml of a gel containing hydrocortisone acetate 1% w/w, and pramoxine 2% w/w, calculate the percentage strength of each of the two drugs in the mixture. Round final answer to nearest tenth.",
+      "answerValue": [3.7, 2.0],
+      "answerUnit": ["% w/w hydrocortisone acetate", "% w/w pramoxine"],
+      "rounding": false,
+      "steps": [
+        {
+          "text": "Calculate the total volume of the mixture",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "input",
+              "answer": 120,
+              "unit": "ml"
+            },
+            {
+              "type": "input",
+              "answer": 60,
+              "unit": "ml"
+            },
+            {
+              "type": "input",
+              "answer": 180,
+              "unit": "ml"
+            }
+          ],
+          "operators1": ["+", "="],
+          "hint": "Total volume = 120 ml + 60 ml = 180 ml"
+        },
+        {
+          "text": "Part 1: Calculate the amount of hydrocortisone acetate in each gel and total amount",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "First gel"
+            },
+            {
+              "type": "input",
+              "answer": 120,
+              "unit": "ml"
+            },
+            {
+              "type": "input",
+              "answer": 5,
+              "unit": "%"
+            },
+            {
+              "type": "input",
+              "answer": 6,
+              "unit": "ml"
+            }
+          ],
+          "operators1": [":", "×", "="],
+          "operands2": [
+            {
+              "type": "text",
+              "value": "Second gel"
+            },
+            {
+              "type": "input",
+              "answer": 60,
+              "unit": "ml"
+            },
+            {
+              "type": "input",
+              "answer": 1,
+              "unit": "%"
+            },
+            {
+              "type": "input",
+              "answer": 0.6,
+              "unit": "ml"
+            }
+          ],
+          "operators2": [":", "×", "="],
+          "operands3": [
+            {
+              "type": "text",
+              "value": "Total hydrocortisone"
+            },
+            {
+              "type": "input",
+              "answer": 6.6,
+              "unit": "ml"
+            }
+          ],
+          "operators3": ["="],
+          "hint": "First gel: 120 ml × 5% = 6 ml hydrocortisone <br> Second gel: 60 ml × 1% = 0.6 ml hydrocortisone <br> Total hydrocortisone = 6 ml + 0.6 ml = 6.6 ml"
+        },
+        {
+          "text": "Calculate the final percentage of hydrocortisone acetate",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "input",
+              "answer": 6.6,
+              "unit": "ml"
+            },
+            {
+              "type": "input",
+              "answer": 180,
+              "unit": "ml"
+            },
+            {
+              "type": "input",
+              "answer": 3.7,
+              "unit": "%"
+            }
+          ],
+          "operators1": ["÷", "="],
+          "hint": "Hydrocortisone percentage = (6.6 ml ÷ 180 ml) × 100 = 3.7%"
+        },
+        {
+          "text": "Part 2: Calculate the amount of pramoxine in each gel and total amount",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "First gel"
+            },
+            {
+              "type": "input",
+              "answer": 120,
+              "unit": "ml"
+            },
+            {
+              "type": "input",
+              "answer": 2,
+              "unit": "%"
+            },
+            {
+              "type": "input",
+              "answer": 2.4,
+              "unit": "ml"
+            }
+          ],
+          "operators1": [":", "×", "="],
+          "operands2": [
+            {
+              "type": "text",
+              "value": "Second gel"
+            },
+            {
+              "type": "input",
+              "answer": 60,
+              "unit": "ml"
+            },
+            {
+              "type": "input",
+              "answer": 2,
+              "unit": "%"
+            },
+            {
+              "type": "input",
+              "answer": 1.2,
+              "unit": "ml"
+            }
+          ],
+          "operators2": [":", "×", "="],
+          "operands3": [
+            {
+              "type": "text",
+              "value": "Total pramoxine"
+            },
+            {
+              "type": "input",
+              "answer": 3.6,
+              "unit": "ml"
+            }
+          ],
+          "operators3": ["="],
+          "hint": "First gel: 120 ml × 2% = 2.4 ml pramoxine <br> Second gel: 60 ml × 2% = 1.2 ml pramoxine <br> Total pramoxine = 2.4 ml + 1.2 ml = 3.6 ml"
+        },
+        {
+          "text": "Calculate the final percentage of pramoxine",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "input",
+              "answer": 3.6,
+              "unit": "ml"
+            },
+            {
+              "type": "input",
+              "answer": 180,
+              "unit": "ml"
+            },
+            {
+              "type": "input",
+              "answer": 2.0,
+              "unit": "%"
+            }
+          ],
+          "operators1": ["÷", "="],
+          "hint": "Pramoxine percentage = (3.6 ml ÷ 180 ml) × 100 = 2.0%"
+        }
+      ]
+    },
+    {
+      "number": 33,
+      "tag": "alternate",
+      "question": "How many milliliters of 0.45% NaCl and how many milliliters of 2% NaCl are needed to make 1 pint of normal saline solution? Round final answers to the nearest tenth.",
+      "answerValue": [335.7, 137.3],
+      "answerUnit": ["mL of 0.45% NaCl", "mL of 2% NaCl"],
+      "rounding": false,
+      "steps": [
+        {
+          "text": "Convert 1 pint to milliliters",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "input",
+              "answer": 1,
+              "unit": "pint"
+            },
+            {
+              "type": "input",
+              "answer": 473,
+              "unit": "mL"
+            }
+          ],
+          "operators1": ["="],
+          "hint": "1 pint = 473 mL"
+        },
+        {
+          "text": "Identify known concentrations (one higher, one lower, and one middle/desired)",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "Higher concentration"
+            },
+            {
+              "type": "input",
+              "answer": 2,
+              "unit": "%"
+            }
+          ],
+          "operators1": [":"],
+          "operands2": [
+            {
+              "type": "text",
+              "value": "Lower concentration"
+            },
+            {
+              "type": "input",
+              "answer": 0.45,
+              "unit": "%"
+            }
+          ],
+          "operators2": [":"],
+          "operands3": [
+            {
+              "type": "text",
+              "value": "Desired concentration"
+            },
+            {
+              "type": "input",
+              "answer": 0.9,
+              "unit": "%"
+            }
+          ],
+          "operators3": [":"],
+          "hint": "Based on the question, the higher concentration is 2% NaCl, the lower concentration is 0.45% NaCl, and normal saline is 0.9% NaCl"
+        },
+        {
+          "text": "Set up the alligation scheme (alligation tic-tac-toe), plug in known values, and calculate parts of each component",
+          "type": "TIC_TAC_TOE",
+          "higherConcentration": 2,
+          "lowerConcentration": 0.45,
+          "desiredConcentration": 0.9,
+          "higherParts": 0.45,
+          "lowerParts": 1.1,
+          "totalParts": 1.55,
+          "hint": "2% - 0.9% = 1.1 parts of 0.45% NaCl <br> 0.9% - 0.45% = 0.45 parts of 2% NaCl <br> Total parts = 1.55"
+        },
+        {
+          "text": "Convert parts to actual volumes using proportion",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "For 0.45% NaCl"
+            },
+            {
+              "type": "fraction",
+              "numerator": {
+                "type": "input",
+                "answer": 1.1,
+                "unit": "parts"
+              },
+              "denominator": {
+                "type": "input",
+                "answer": 1.55,
+                "unit": "parts"
+              }
+            },
+            {
+              "type": "fraction",
+              "numerator": "X mL",
+              "denominator": {
+                "type": "input",
+                "answer": 473,
+                "unit": "mL"
+              }
+            }
+          ],
+          "operators1": [":", "="],
+          "operands2": [
+            {
+              "type": "text",
+              "value": "X"
+            },
+            {
+              "type": "input",
+              "answer": 335.7,
+              "unit": "mL"
+            }
+          ],
+          "operators2": ["="],
+          "operands3": [
+            {
+              "type": "text",
+              "value": "For 2% NaCl"
+            },
+            {
+              "type": "fraction",
+              "numerator": {
+                "type": "input",
+                "answer": 0.45,
+                "unit": "parts"
+              },
+              "denominator": {
+                "type": "input",
+                "answer": 1.55,
+                "unit": "parts"
+              }
+            },
+            {
+              "type": "fraction",
+              "numerator": "X mL",
+              "denominator": {
+                "type": "input",
+                "answer": 473,
+                "unit": "mL"
+              }
+            }
+          ],
+          "operators3": [":", "="],
+          "operands4": [
+            {
+              "type": "text",
+              "value": "X"
+            },
+            {
+              "type": "input",
+              "answer": 137.3,
+              "unit": "mL"
+            }
+          ],
+          "operators4": ["="],
+          "hint": "For 0.45% NaCl: 1.1 parts/1.55 parts = X ml/473 ml <br> X = 1.1/1.55 × 473 = 335.7 ml <br> For 2% NaCl: 0.45 parts/1.55 parts = X ml/473 ml <br> X = 0.45/1.55 × 473 = 137.3 ml"
+        }
+      ]
+    },
+    {
+      "number": 34,
+      "tag": "alternate",
+      "question": "In what proportion should betamethasone dipropionate be added to betamethasone dipropionate lotion 1% to make a 5% lotion?",
+      "answerValue": ["4:95"],
+      "answerUnit": [""],
+      "rounding": false,
+      "steps": [
+        {
+          "text": "Identify known concentrations (one higher, one lower, and one middle/desired)",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "text",
+              "value": "Higher concentration"
+            },
+            {
+              "type": "input",
+              "answer": 100,
+              "unit": "%"
+            }
+          ],
+          "operators1": [":"],
+          "operands2": [
+            {
+              "type": "text",
+              "value": "Lower concentration"
+            },
+            {
+              "type": "input",
+              "answer": 1,
+              "unit": "%"
+            }
+          ],
+          "operators2": [":"],
+          "operands3": [
+            {
+              "type": "text",
+              "value": "Desired concentration"
+            },
+            {
+              "type": "input",
+              "answer": 5,
+              "unit": "%"
+            }
+          ],
+          "operators3": [":"],
+          "hint": "Based on the question, the higher concentration is 100% (pure betamethasone dipropionate), the lower concentration is 1% lotion, and the desired concentration is 5% lotion"
+        },
+        {
+          "text": "Set up the alligation scheme (alligation tic-tac-toe), plug in known values, and calculate parts of each component",
+          "type": "TIC_TAC_TOE",
+          "higherConcentration": 100,
+          "lowerConcentration": 1,
+          "desiredConcentration": 5,
+          "higherParts": 4,
+          "lowerParts": 95,
+          "totalParts": 99,
+          "hint": "100% - 5% = 95 parts of 1% lotion <br> 5% - 1% = 4 parts of 100% betamethasone <br> Total parts = 99"
+        },
+        {
+          "text": "Find the proportion",
+          "type": "OPERATION",
+          "operands1": [
+            {
+              "type": "fraction",
+              "numerator": {
+                "type": "input",
+                "answer": 4,
+                "unit": "parts"
+              },
+              "denominator": {
+                "type": "input",
+                "answer": 95,
+                "unit": "parts"
+              }
+            },
+            {
+              "type": "input",
+              "answer": 4,
+              "unit": "parts"
+            },
+            {
+              "type": "input",
+              "answer": 95,
+              "unit": "parts"
+            }
+          ],
+          "operators1": ["=", ":"],
+          "hint": "4 parts of 100% betamethasone <br> 95 parts of 1% lotion <br> Final ratio is 4:95"
+        }
+      ]
+    }
+  ]
+}

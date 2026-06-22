@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expressions of Concentrations</title>
+    <link rel="stylesheet" href="../../master.css">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="index-container">
+        <header>
+            <h1>Pharmacy Calculations:<br>Expressions of Concentrations</h1>
+        </header>
+
+        <div class="card overview-card">
+            <h2>Overview</h2>
+            <p>In this module, you will:</p>
+            <ul>
+                <li>Solve percentage strength problems   </li>
+                <li>Solve ratio strength problems  </li>
+                <li>Solve problems using units of measurement </li>
+            </ul>
+            <p>There are two main types of concentration expressions covered in this module:</p>
+            
+            <div class="method-list">
+                <div class="method-item">
+                    <h3 id="percentageTitle" class="method-title">1. Percentage Strength</h3>
+                    <p class="tutorial-notice">Click the title to view the tutorial</p>
+                </div>
+                
+                <div class="method-item">
+                    <h3 id="ratioTitle" class="method-title">2. Ratio Strength</h3>
+                    <p class="tutorial-notice">Click the title to view the tutorial</p>
+                </div>
+            
+            </div>
+
+            <div class="button-container">
+                <a href="./practice.html" class="practice-btn">Start Practicing</a>
+            </div>
+        </div>
+
+        <!-- Percentage Concentration Tutorial -->
+        <div class="card tutorial-card" id="percentageTutorial" style="display: none;">
+            <h2>Tutorial - Percentage Concentration</h2>
+            <div class="tutorial-content">
+                <div class="tutorial-section">
+                    <h3>Three Types of Percentage Strengths</h3>
+                    
+                    <table class="wide-metric-table">
+                        <tr>
+                            <th>Type</th>
+                            <th>Formula</th>
+                            <th>Application</th>
+                        </tr>
+                        <tr>
+                            <td><strong>Weight-in-volume (w/v)</strong></td>
+                            <td>grams/100 mL</td>
+                            <td>Used for solids dissolved in liquids; Expresses the number of grams (g) of a substance in 100 mL of a solution or liquid prep.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Volume-in-volume (v/v)</strong></td>
+                            <td>mL/100 mL</td>
+                            <td>Used for liquids in liquids; Expresses the number of mL of a substance dissolved in 100 mL of a solution or liquid prep. </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Weight-in-weight (w/w)</strong></td>
+                            <td>grams/100 g</td>
+                            <td>Used for solids in solids or heavy liquids; Expresses the number of grams of a substance in 100 grams of solid or liquid prep. </td>
+                        </tr>
+                    </table>
+                    
+                    <div class="example-calculation important" id="importantToRememberSection">
+                        <div class="content-before-game"> 
+                            <div class="important-header-row">
+                                <div class="important-text">IMPORTANT TO REMEMBER</div>
+                                <div id="matchingGameButtonContainer">
+                                    <button id="matchingGameBtn" class="btn">Matching</button>
+                                </div>
+                            </div>
+                            <table class="percent-table">
+                                <tbody>
+                                    <tr>
+                                        <td>% means:</td>
+                                        <td>x parts per 100 parts</td>
+                                    </tr>
+                                    <tr>
+                                        <td>w/v (weight in volume):</td>
+                                        <td>g per 100 mL</td>
+                                    </tr>
+                                    <tr>
+                                        <td>v/v (volume in volume):</td>
+                                        <td>mL per 100 mL</td>
+                                    </tr>
+                                    <tr>
+                                        <td>w/w (weight in weight):</td>
+                                        <td>g per 100 g</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div> 
+                        <!-- Matching Game container -->
+                        <div id="matching-game-container" style="display: none;">
+                            <div class="status-panel">
+                                <div class="card-counter">Matches: <span id="match-counter">0</span>/<span id="total-matches">0</span></div>
+                            </div>
+                            
+                            <div id="matching-board" class="matching-board">
+                                <!-- Cards will be dynamically generated here -->
+                            </div>
+                            
+                            <div class="controls">
+                                <button class="btn" id="reset-matching-game">Reset Game</button>
+                                <button class="btn back-btn" id="back-from-matching">Back to Tutorial</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h4>Converting Between Decimal and Percentage</h4>
+                    <div class="example-calculation">
+                        <p><strong>To convert percentage to decimal:</strong> Drop the % sign and divide by 100</p>
+                        <p>See the examples below:</p>
+                        
+                        <!-- Visual for 10% -->
+                        <div class="conversion-steps">
+                            <div class="conversion-step-display"><span class="number"> 10</span><span class="percent-sign">%</span></div>
+                            <div class="conversion-arrow-container">
+                                <div class="conversion-arrow"></div>
+                                <div class="conversion-arrow-label">Drop % sign</div>
+                            </div>
+                            <div class="conversion-step-display"><span class="number">10</span></div>
+                            <div class="conversion-arrow-container">
+                                <div class="conversion-arrow"></div>
+                                <div class="conversion-arrow-label">Divide by 100 (move decimal 2 places left)</div>
+                            </div>
+                            <div class="conversion-step-display"><span class="number">10 / 100 = 0.1</span><span class="dimmed">0</span></div>
+                            <div class="final-result-box">Result: 0.1</div>
+                        </div>
+
+                        <!-- Visual for 0.9% -->
+                        <div class="conversion-steps">
+                            <div class="conversion-step-display"><span class="number">0.9</span><span class="percent-sign">%</span></div>
+                            <div class="conversion-arrow-container">
+                                <div class="conversion-arrow"></div>
+                                <div class="conversion-arrow-label">Drop % sign</div>
+                            </div>
+                            <div class="conversion-step-display"><span class="number">0.9</span></div>
+                            <div class="conversion-arrow-container">
+                                <div class="conversion-arrow"></div>
+                                <div class="conversion-arrow-label">Divide by 100 (move decimal 2 places left)</div>
+                            </div>
+                            <div class="conversion-step-display"><span class="number">0.9 / 100 = 0.009</span></div>
+                             <div class="final-result-box">Result: 0.009</div>
+                        </div>
+                        
+                        <p style="margin-top: 25px;"><strong>To convert decimal to percentage:</strong> Multiply by 100 and add the % sign</p>
+                        <p>See the examples below:</p>
+                        <!-- Visual for 0.1 -->
+                        <div class="conversion-steps">
+                            <div class="conversion-step-display"><span class="number">0.1</span></div>
+                            <div class="conversion-arrow-container">
+                                <div class="conversion-arrow"></div>
+                                <div class="conversion-arrow-label">Multiply by 100 (move decimal 2 places right)</div>
+                            </div>
+                            <div class="conversion-step-display"><span class="number">0.1 × 100 = 10</span><span class="dimmed">.0</span></div>
+                            <div class="conversion-arrow-container">
+                                <div class="conversion-arrow"></div>
+                                <div class="conversion-arrow-label">Add % sign</div>
+                            </div>
+                            <div class="conversion-step-display"><span class="number">10</span><span class="percent-sign">%</span></div>
+                            <div class="final-result-box">Result: 10%</div>
+                        </div>
+
+                        <!-- Visual for 0.009 -->
+                        <div class="conversion-steps">
+                            <div class="conversion-step-display"><span class="number">0.009</span></div>
+                            <div class="conversion-arrow-container">
+                                <div class="conversion-arrow"></div>
+                                <div class="conversion-arrow-label">Multiply by 100 (move decimal 2 places right)</div>
+                            </div>
+                            <div class="conversion-step-display"><span class="number">0.009 × 100 = 0.9</span><span class="dimmed"></span></div>
+                            <div class="conversion-arrow-container">
+                                <div class="conversion-arrow"></div>
+                                <div class="conversion-arrow-label">Add % sign</div>
+                            </div>
+                            <div class="conversion-step-display"><span class="number">0.9</span><span class="percent-sign">%</span></div>
+                            <div class="final-result-box">Result: 0.9%</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-divider"></div>
+                
+                <div class="tutorial-section">
+                    <h3>Example 1:</h3>
+                    <p><strong>What is the percentage strength (w/v) of a solution if 4 fl oz contains 6 g of a drug?</strong></p>
+                    <div class="tutorial-steps" id="percentageExample1Steps">
+                        <!-- Step 1 Content -->
+                        <div class="step-content active" id="step1">
+                            <div class="step-instructions">
+                                <div class="step-title">Step 1: Identify the type of percentage</div>
+                            </div>
+                            
+                            <div class="example-calculation">
+                                <p>The type of percentage is weight in volume (w/v).</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 2 Content -->
+                        <div class="step-content" id="step2">
+                            <div class="step-instructions">
+                                <div class="step-title">Step 2: Convert all units to standard units</div>
+                            </div>
+                            
+                            <div class="example-calculation">
+                                <p>We need to convert fluid ounces to mL:</p>
+                                <div class="horizontal-operation">
+                                    <span>4 fl oz × 30 mL/fl oz = 120 mL</span>
+                                </div>
+                                <p>The weight is already in grams (6 g), so no conversion needed.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 3 Content -->
+                        <div class="step-content" id="step3">
+                            <div class="step-instructions">
+                                <div class="step-title">Step 3: Set up the proportion</div>
+                                    <p>Set up the ratio and proportion using the format:</p>
+                                    <div class="proportion">
+                                        <div class="fraction">
+                                            <div class="fraction-numerator">Amount of drug</div>
+                                            <div class="fraction-bar"></div>
+                                        <div class="fraction-denominator">Total amount</div>
+                                    </div>
+                                    <span class="eq-operator">=</span>
+                                    <div class="fraction">
+                                        <div class="fraction-numerator">x</div>
+                                        <div class="fraction-bar"></div>
+                                        <div class="fraction-denominator">100</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="example-calculation">
+                                <div class="proportion">
+                                    <div class="fraction">
+                                        <div class="fraction-numerator">6 g</div>
+                                        <div class="fraction-bar"></div>
+                                        <div class="fraction-denominator">120 mL</div>
+                                    </div>
+                                    <span class="eq-operator">=</span>
+                                    <div class="fraction">
+                                        <div class="fraction-numerator">x g</div>
+                                        <div class="fraction-bar"></div>
+                                        <div class="fraction-denominator">100 mL</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 4 Content -->
+                        <div class="step-content" id="step4">
+                            <div class="step-instructions">
+                                <div class="step-title">Step 4: Solve for x</div>
+                                <ol>
+                                    <li>Cross-multiply and solve the equation</li>
+                                </ol>
+                            </div>
+                            
+                            <div class="example-calculation">
+                                <div class="horizontal-operation">
+                                    <span>6 g × 100 mL = 120 mL × x g</span>
+                                </div>
+                                <div class="horizontal-operation">
+                                    <span>600 = 120 × x</span>
+                                </div>
+                                <div class="horizontal-operation">
+                                    <span>x = 600 ÷ 120 = 5</span>
+                                </div>
+                                <p>Therefore, the percentage strength is <strong>5%</strong> (w/v).</p>
+                            </div>
+                        </div>
+
+                        <!-- Next Button -->
+                        <div class="step-navigation">
+                            <button class="tutorial-next-btn">Next Step ↓</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-divider"></div>
+                
+                <div class="tutorial-section">
+                    <h3>Example 2:</h3>
+                    <p><strong>How many milliliters of alcohol are needed to prepare 1 quart of a 70% (v/v) alcohol solution?</strong></p>
+                    <div class="example-calculation">
+                        <p><strong>Step 1: Identify the type of percentage:</strong></p><p>v/v</p>
+                        <p><strong>Step 2: Convert units:</strong></p><p>1 quart = 946 mL</p>
+                        <p><strong>Step 3: Set up the proportion:</strong></p>
+                        <div class="proportion">
+                            <div class="fraction">
+                                <div class="fraction-numerator">x mL alcohol</div>
+                                <div class="fraction-bar"></div>
+                                <div class="fraction-denominator">946 mL solution</div>
+                            </div>
+                            <span class="eq-operator">=</span>
+                            <div class="fraction">
+                                <div class="fraction-numerator">70 mL alcohol</div>
+                                <div class="fraction-bar"></div>
+                                <div class="fraction-denominator">100 mL solution</div>
+                            </div>
+                        </div>
+                        <p><strong>Step 4: Solve for x:</strong></p>
+                        <div class="horizontal-operation">
+                            <span>x = (70 × 946) ÷ 100 = 662.2 mL</span>
+                        </div>
+                        <p>Therefore, 662 mL of alcohol is needed (rounded to the nearest whole number).</p>
+                    </div>
+                </div>
+
+                <div class="section-divider"></div>
+                
+                <div class="tutorial-section">
+                    <h3>Example 3:</h3>
+                    <p><strong>A pharmacist needs to make 10% (w/w) zinc oxide ointment using 5 g of zinc oxide. How much total ointment can be prepared, and how many grams of vaseline base are required?</strong></p>
+                    <div class="example-calculation">
+                        <p><strong>Step 1: Identify the type of percentage:</strong></p><p>w/w</p>
+                        <p><strong>Step 2: Convert units:</strong></p><p>Units are already in grams, so no conversion is needed.</p>
+                        <p><strong>Step 3: Set up the proportion to find the total ointment weight:</strong></p>
+                        <div class="proportion">
+                            <div class="fraction">
+                                <div class="fraction-numerator">5 g zinc oxide</div>
+                                <div class="fraction-bar"></div>
+                                <div class="fraction-denominator">x g total ointment</div>
+                            </div>
+                            <span class="eq-operator">=</span>
+                            <div class="fraction">
+                                <div class="fraction-numerator">10 g zinc oxide</div>
+                                <div class="fraction-bar"></div>
+                                <div class="fraction-denominator">100 g total ointment</div>
+                            </div>
+                        </div>
+                        <p><strong>Step 4: Solve for x. First find the total ointment weight:</strong></p>
+                        <div class="horizontal-operation">
+                            <span>x = (5 × 100) ÷ 10 = 50 g total ointment</span>
+                        </div>
+                        <p><strong>Calculate vaseline base needed:</strong></p>
+                        <div class="horizontal-operation">
+                            <span>Vaseline base = 50 g - 5 g = 45 g</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="back-to-top">
+                    <button id="backToOverviewBtn" class="back-btn">← Back to Overview</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ratio Strength Tutorial -->
+        <div class="card tutorial-card" id="ratioTutorial" style="display: none;">
+            <h2>Tutorial - Ratio Strength</h2>
+            <div class="tutorial-content">
+                <div class="tutorial-section">
+                    <p style="color: var(--incorrect-color);"><strong>Ratio strength</strong> expresses the concentration of an agent relative to the total preparation in the form of a ratio.</p>
+                    <ul>
+                        <li>The concentrations of weak solutions frequently are expressed as ratio strength <strong>(usually, 1 part in some # of parts)</strong>.</li>
+                        <li>Since percentage strength are ratios of parts per 100, ratio strength is another way of expressing percentage strength. </li>
+                    </ul>
+                    
+                    <div class="example-calculation important" id="ratioImportantToRemember">
+                        <div class="important-header-row">
+                             <div class="important-text">IMPORTANT TO REMEMBER</div> 
+                             <div id="ratioMatchingGameButtonContainer">
+                                <button id="ratioMatchingGameBtn" class="btn">Matching</button>
+                            </div>
+                        </div>
+                        <div class="ratio-content-before-game">
+                            <p style="text-align: center; margin-bottom: 5px;">1:1000 is interpreted as:</p>
+                            <table class="percent-table">
+                                <tbody>
+                                    <tr>
+                                        <td>For solid in liquid:</td>
+                                        <td>1 gram in 1000 mL</td>
+                                    </tr>
+                                    <tr>
+                                        <td>For liquid in liquid:</td>
+                                        <td>1 mL in 1000 mL</td>
+                                    </tr>
+                                    <tr>
+                                        <td>For solid in solid:</td>
+                                        <td>1 gram in 1000 grams</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <!-- Line Matching Game container -->
+                        <div id="ratio-matching-game-container" style="display: none;">
+                            <div class="status-panel">
+                                <div class="instruction-text">Match the condition to its interpretation!</div>
+                                <div class="card-counter">Matches: <span id="ratio-match-counter">0</span>/<span id="ratio-total-matches">0</span></div>
+                            </div>
+                            
+                            <div id="ratio-matching-board" class="line-matching-board">
+                                <!-- Line matching items will be dynamically generated here -->
+                            </div>
+                            
+                            <div class="controls">
+                                <button class="btn" id="reset-ratio-matching-game">Reset Game</button>
+                                <button class="btn back-btn" id="back-from-ratio-matching">Back to Tutorial</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h4>Special Case: Parts Per Million (ppm)</h4>
+                    <div class="example-calculation">
+                        <p>Used for very diluted preparations and set limits</p>
+                        <p>e.g., "not more than 6 ppm" means 6/1,000,000</p>
+                    </div>
+                </div>
+
+                <div class="section-divider"></div>
+                
+                <div class="tutorial-section">
+                    <h3>Example 1:</h3>
+                    <p><strong>Express 0.025% (w/v) as a ratio strength</strong></p>
+                    <div class="tutorial-steps" id="ratioExample1Steps">
+                        <!-- Step 1 Content -->
+                        <div class="step-content active" id="rstep1">
+                            <div class="step-instructions">
+                                <div class="step-title">Step 1: Identify and interpret information</div>
+                            </div>
+                            
+                            <div class="example-calculation">
+                                <p>0.025% (w/v) means: 0.025 g / 100 mL</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 2 Content -->
+                        <div class="step-content" id="rstep2">
+                            <div class="step-instructions">
+                                <div class="step-title">Step 2: Set up the proportion to find the ratio strength</div>
+                            </div>
+                            
+                            <div class="example-calculation">
+                                <div class="proportion">
+                                    <div class="fraction">
+                                        <div class="fraction-numerator">0.025 g</div>
+                                        <div class="fraction-bar"></div>
+                                        <div class="fraction-denominator">100 mL</div>
+                                    </div>
+                                    <span class="eq-operator">=</span>
+                                    <div class="fraction">
+                                        <div class="fraction-numerator">1 g</div>
+                                        <div class="fraction-bar"></div>
+                                        <div class="fraction-denominator">x mL</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 3 Content -->
+                        <div class="step-content" id="rstep3">
+                            <div class="step-instructions">
+                                <div class="step-title">Step 3: Solve for x</div>
+                            </div>
+                            
+                            <div class="example-calculation">
+                                <div class="horizontal-operation">
+                                    <span>x = 4000 mL</span>
+                                </div>
+                                <p>Therefore, the ratio strength is 1:4000 (w/v)</p>
+                            </div>
+                        </div>
+
+                        <!-- Next Button -->
+                        <div class="step-navigation">
+                            <button class="tutorial-next-btn">Next Step ↓</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-divider"></div>
+                
+                <div class="tutorial-section">
+                    <h3>Example 2:</h3>
+                    <p><strong>Express 1:5000 (w/v) as a percentage</strong></p>
+                    <div class="example-calculation">
+                        <p><strong>Identify and interpret information:</strong> 1:5000 (w/v) means: 1 g / 5000 mL.</p>
+                        
+                        <p><strong>Set up the proportion to find the percentage:</strong></p>
+                        <div class="proportion">
+                            <div class="fraction">
+                                <div class="fraction-numerator">1 g</div>
+                                <div class="fraction-bar"></div>
+                                <div class="fraction-denominator">5000 mL</div>
+                            </div>
+                            <span class="eq-operator">=</span>
+                            <div class="fraction">
+                                <div class="fraction-numerator">x g</div>
+                                <div class="fraction-bar"></div>
+                                <div class="fraction-denominator">100 mL</div>
+                            </div>
+                        </div>
+                        
+                        <p><strong>Solve for x:</strong></p>
+                        <div class="horizontal-operation">
+                            <span>x = (1 × 100) ÷ 5000 = 0.02</span>
+                        </div>
+                        <p>Therefore, 1:5000 (w/v) = 0.02% (w/v)</p>
+                    </div>
+                </div>
+
+                <div class="section-divider"></div>
+                
+                <div class="tutorial-section">
+                    <h3>Example 3:</h3>
+                    <p><strong>If there are 100 mg of sodium chloride in 1 liter of solution, calculate the ratio strength (w/v) of the solution.</strong></p>
+                    <div class="example-calculation">
+                        <p><strong>Identify the type of ratio strength:</strong> w/v.</p>
+                        
+                        <p><strong>Convert all units to standard units:</strong></p>
+                        <ul>
+                            <li>100 mg = 0.1 g</li>
+                            <li>1 L = 1000 mL</li>
+                        </ul>
+                        
+                        <p><strong>Set up the proportion:</strong></p>
+                        <div class="proportion">
+                            <div class="fraction">
+                                <div class="fraction-numerator">0.1 g</div>
+                                <div class="fraction-bar"></div>
+                                <div class="fraction-denominator">1000 mL</div>
+                            </div>
+                            <span class="eq-operator">=</span>
+                            <div class="fraction">
+                                <div class="fraction-numerator">1 g</div>
+                                <div class="fraction-bar"></div>
+                                <div class="fraction-denominator">x mL</div>
+                            </div>
+                        </div>
+                        
+                        <p><strong>Solve for x:</strong></p>
+                        <div class="horizontal-operation">
+                            <span>x = (1 × 1000) ÷ 0.1 = 10,000</span>
+                        </div>
+                        <p>Therefore, the ratio strength is 1:10,000 (w/v)</p>
+                    </div>
+                </div>
+
+                <div class="section-divider"></div>
+                
+                <div class="tutorial-section">
+                    <h3>Example 4:</h3>
+                    <p><strong>A preservative is present at a concentration of 5 ppm in a 250 mL ophthalmic solution. How many milligrams of the preservative are in the solution?</strong></p>
+                    <div class="example-calculation">
+                        <p><strong>Identify the type of ratio strength:</strong> w/v.</p>
+                        
+                        <p><strong>Convert units and understand ppm:</strong></p>
+                        <ul>
+                            <li>5 ppm = 5 parts per 1,000,000 parts = 5 g / 1,000,000 mL</li>
+                        </ul>
+                        
+                        <p><strong>Set up the proportion:</strong></p>
+                        <div class="proportion">
+                            <div class="fraction">
+                                <div class="fraction-numerator">5 g</div>
+                                <div class="fraction-bar"></div>
+                                <div class="fraction-denominator">1,000,000 mL</div>
+                            </div>
+                            <span class="eq-operator">=</span>
+                            <div class="fraction">
+                                <div class="fraction-numerator">x g</div>
+                                <div class="fraction-bar"></div>
+                                <div class="fraction-denominator">250 mL</div>
+                            </div>
+                        </div>
+                        
+                        <p><strong>Solve for x:</strong></p>
+                        <div class="horizontal-operation">
+                            <span>x = (5 × 250) ÷ 1,000,000 = 0.00125 g = 1.25 mg</span>
+                        </div>
+                        <p>Therefore, the solution contains 1.25 mg of preservative</p>
+                    </div>
+                </div>
+                
+                <div class="back-to-top">
+                    <button id="backToOverviewBtn2" class="back-btn">← Back to Overview</button>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                // --- Shared Utility Functions ---
+                function shuffleArray(array) {
+                    const newArray = [...array];
+                    for (let i = newArray.length - 1; i > 0; i--) {
+                        const j = Math.floor(Math.random() * (i + 1));
+                        [newArray[i], newArray[j]] = [newArray[j], newArray[i]];
+                    }
+                    return newArray;
+                }
+
+                function setupGameInteractions(config) {
+                    const { gameBtn, gameContainer, contentBeforeGame, backBtn, resetBtn, initGameFn, gameSpecificSetupFn } = config;
+
+                    if (gameBtn && gameContainer && contentBeforeGame) {
+                        gameBtn.addEventListener('click', () => {
+                            contentBeforeGame.style.display = 'none';
+                            gameContainer.style.display = 'block';
+                            if (config.gameButtonContainer) config.gameButtonContainer.style.display = 'none';
+                            if (initGameFn) initGameFn(); 
+                        });
+                    }
+
+                    if (backBtn && gameContainer && contentBeforeGame) {
+                        backBtn.addEventListener('click', () => {
+                            gameContainer.style.display = 'none';
+                            contentBeforeGame.style.display = ''; // Reset to default
+                            if (config.gameButtonContainer) config.gameButtonContainer.style.display = '';
+                        });
+                    }
+
+                    if (resetBtn && initGameFn) {
+                        resetBtn.addEventListener('click', initGameFn);
+                    }
+                    
+                    if (gameSpecificSetupFn) {
+                        gameSpecificSetupFn(); // For any unique event listeners like tutorial next buttons
+                    }
+                }
+                
+                function updateGameStatus(gameContainer, currentMatches, totalMatchesCount, config) {
+                    const counterDisplay = gameContainer.querySelector('.card-counter');
+                    const { scoreSpanId, totalSpanId, congratulationsMessage } = config;
+
+                    if (counterDisplay) {
+                        if (currentMatches === totalMatchesCount && totalMatchesCount > 0) {
+                            counterDisplay.innerHTML = `<span class="congratulations-message">${congratulationsMessage}</span>`;
+                        } else {
+                            counterDisplay.innerHTML = `Matches: <span id="${scoreSpanId}">${currentMatches}</span>/<span id="${totalSpanId}">${totalMatchesCount}</span>`;
+                        }
+                    }
+                }
+
+                // --- Tutorial Navigation & General Page Logic (Original) ---
+                const percentageTitle = document.getElementById('percentageTitle');
+                const ratioTitle = document.getElementById('ratioTitle');
+                const unitsTitle = document.getElementById('unitsTitle');
+                
+                const percentageTutorial = document.getElementById('percentageTutorial');
+                const ratioTutorial = document.getElementById('ratioTutorial');
+                const unitsTutorial = document.getElementById('unitsTutorial');
+                
+                const backToOverviewBtn = document.getElementById('backToOverviewBtn');
+                const backToOverviewBtn2 = document.getElementById('backToOverviewBtn2');
+                const backToOverviewBtn3 = document.getElementById('backToOverviewBtn3');
+                
+                if (percentageTitle) {
+                    percentageTitle.addEventListener('click', () => {
+                        percentageTutorial.style.display = 'block';
+                        ratioTutorial.style.display = 'none';
+                        unitsTutorial.style.display = 'none';
+                        percentageTitle.classList.add('active');
+                        ratioTitle.classList.remove('active');
+                        unitsTitle.classList.remove('active');
+                        percentageTutorial.scrollIntoView({ behavior: 'smooth' });
+                    });
+                }
+                
+                if (ratioTitle) {
+                    ratioTitle.addEventListener('click', () => {
+                        ratioTutorial.style.display = 'block';
+                        percentageTutorial.style.display = 'none';
+                        unitsTutorial.style.display = 'none';
+                        ratioTitle.classList.add('active');
+                        percentageTitle.classList.remove('active');
+                        unitsTitle.classList.remove('active');
+                        ratioTutorial.scrollIntoView({ behavior: 'smooth' });
+                    });
+                }
+                
+                if (unitsTitle) {
+                    unitsTitle.addEventListener('click', () => {
+                        unitsTutorial.style.display = 'block';
+                        percentageTutorial.style.display = 'none';
+                        ratioTutorial.style.display = 'none';
+                        unitsTitle.classList.add('active');
+                        percentageTitle.classList.remove('active');
+                        ratioTitle.classList.remove('active');
+                        unitsTutorial.scrollIntoView({ behavior: 'smooth' });
+                    });
+                }
+                
+                if (backToOverviewBtn) {
+                    backToOverviewBtn.addEventListener('click', () => {
+                        percentageTutorial.style.display = 'none';
+                        percentageTitle.classList.remove('active');
+                        document.querySelector('.overview-card').scrollIntoView({ behavior: 'smooth' });
+                    });
+                }
+                
+                if (backToOverviewBtn2) {
+                    backToOverviewBtn2.addEventListener('click', () => {
+                        ratioTutorial.style.display = 'none';
+                        ratioTitle.classList.remove('active');
+                        document.querySelector('.overview-card').scrollIntoView({ behavior: 'smooth' });
+                    });
+                }
+                
+                if (backToOverviewBtn3) {
+                    backToOverviewBtn3.addEventListener('click', () => {
+                        unitsTutorial.style.display = 'none';
+                        unitsTitle.classList.remove('active');
+                        document.querySelector('.overview-card').scrollIntoView({ behavior: 'smooth' });
+                    });
+                }
+                
+                // Initialize step-by-step tutorials
+                setupTutorialSteps('percentageExample1Steps');
+                setupTutorialSteps('ratioExample1Steps');
+
+                function setupTutorialSteps(containerId) {
+                    const stepsContainer = document.getElementById(containerId);
+                    if (!stepsContainer) return;
+
+                    const steps = stepsContainer.querySelectorAll('.step-content');
+                    const nextBtn = stepsContainer.querySelector('.tutorial-next-btn');
+                    if (!nextBtn) return; // Ensure button exists
+                    let currentStep = 1;
+                    const totalSteps = steps.length;
+
+                    function updateDisplay() {
+                        steps.forEach((step, index) => {
+                            step.classList.toggle('active', index < currentStep);
+                        });
+                        nextBtn.style.display = currentStep === totalSteps ? 'none' : 'block';
+                    }
+
+                    nextBtn.addEventListener('click', () => {
+                        if (currentStep < totalSteps) {
+                            currentStep++;
+                            updateDisplay();
+                        }
+                    });
+                    updateDisplay(); // Initial display
+                }
+
+                // --- Matching Game 1 (Terms vs Definitions) Logic ---
+                const game1Config = {
+                    gameBtn: document.getElementById('matchingGameBtn'),
+                    gameButtonContainer: document.getElementById('matchingGameButtonContainer'),
+                    gameContainer: document.getElementById('matching-game-container'),
+                    contentBeforeGame: document.querySelector('#importantToRememberSection .content-before-game'),
+                    backBtn: document.getElementById('back-from-matching'),
+                    resetBtn: document.getElementById('reset-matching-game'),
+                    initGameFn: initGame1,
+                    scoreSpanId: 'match-counter', // For updating the <span> with current matches
+                    totalSpanId: 'total-matches', // For updating the <span> with total matches
+                    congratulationsMessage: '🎉 Congratulations! All Matched! 🎉'
+                };
+
+                let firstCard = null;
+                let secondCard = null;
+                let lockBoardGame1 = false;
+                let matchCountGame1 = 0;
+                let totalPairsGame1 = 0;
+
+                const matchingPairsGame1 = [
+                    { id: 1, type: 'term', content: '% (percentage)' },
+                    { id: 1, type: 'definition', content: 'x parts per 100 parts' },
+                    { id: 2, type: 'term', content: 'w/v' },
+                    { id: 2, type: 'definition', content: 'grams per 100 mL' },
+                    { id: 3, type: 'term', content: 'v/v' },
+                    { id: 3, type: 'definition', content: 'mL per 100 mL' },
+                    { id: 4, type: 'term', content: 'w/w' },
+                    { id: 4, type: 'definition', content: 'grams per 100 grams' },
+                    { id: 5, type: 'term', content: '5% w/v' },
+                    { id: 5, type: 'definition', content: '5 g in 100 mL' },
+                    { id: 6, type: 'term', content: '10% v/v' },
+                    { id: 6, type: 'definition', content: '10 mL in 100 mL' }
+                ];
+
+                function initGame1() {
+                    matchCountGame1 = 0;
+                    totalPairsGame1 = matchingPairsGame1.length / 2;
+                    updateGameStatus(game1Config.gameContainer, matchCountGame1, totalPairsGame1, game1Config);
+
+                    const matchingBoard = game1Config.gameContainer.querySelector('#matching-board');
+                    if (!matchingBoard) return;
+                    matchingBoard.innerHTML = '';
+                    lockBoardGame1 = false;
+                    firstCard = null; 
+                    secondCard = null;
+
+                    const shuffledCards = shuffleArray([...matchingPairsGame1]);
+                    shuffledCards.forEach(cardData => {
+                        const cardElement = document.createElement('div');
+                        cardElement.classList.add('matching-card');
+                        cardElement.dataset.id = cardData.id;
+                        cardElement.dataset.type = cardData.type;
+                        cardElement.textContent = cardData.content;
+                        cardElement.classList.toggle('term-card', cardData.type === 'term');
+                        cardElement.classList.toggle('definition-card', cardData.type === 'definition');
+                        cardElement.addEventListener('click', selectCardGame1);
+                        matchingBoard.appendChild(cardElement);
+                    });
+                }
+
+                function selectCardGame1() {
+                    if (lockBoardGame1 || this.classList.contains('matched') || this === firstCard) return;
+                    this.classList.add('selected');
+                    if (!firstCard) {
+                        firstCard = this;
+                        return;
+                    }
+                    secondCard = this;
+                    lockBoardGame1 = true;
+                    checkMatchGame1();
+                }
+
+                function checkMatchGame1() {
+                    const isMatch = firstCard.dataset.id === secondCard.dataset.id && firstCard.dataset.type !== secondCard.dataset.type;
+                    isMatch ? handleMatchGame1() : handleMismatchGame1();
+                }
+
+                function handleMatchGame1() {
+                    firstCard.removeEventListener('click', selectCardGame1);
+                    secondCard.removeEventListener('click', selectCardGame1);
+                    firstCard.classList.add('matched');
+                    secondCard.classList.add('matched');
+                    matchCountGame1++;
+                    updateGameStatus(game1Config.gameContainer, matchCountGame1, totalPairsGame1, game1Config);
+                    resetBoardGame1();
+                }
+
+                function handleMismatchGame1() {
+                    setTimeout(() => {
+                        if(firstCard) firstCard.classList.remove('selected');
+                        if(secondCard) secondCard.classList.remove('selected');
+                        resetBoardGame1();
+                    }, 800);
+                }
+
+                function resetBoardGame1() {
+                    [firstCard, secondCard] = [null, null];
+                    lockBoardGame1 = false;
+                }
+                
+                setupGameInteractions(game1Config);
+
+                // --- Matching Game 2 (Line Matching) Logic ---
+                const game2Config = {
+                    gameBtn: document.getElementById('ratioMatchingGameBtn'),
+                    gameButtonContainer: document.getElementById('ratioMatchingGameButtonContainer'),
+                    gameContainer: document.getElementById('ratio-matching-game-container'),
+                    contentBeforeGame: document.querySelector('#ratioImportantToRemember .ratio-content-before-game'),
+                    backBtn: document.getElementById('back-from-ratio-matching'),
+                    resetBtn: document.getElementById('reset-ratio-matching-game'),
+                    initGameFn: initGame2,
+                    scoreSpanId: 'ratio-match-counter', // For updating the <span> with current matches
+                    totalSpanId: 'ratio-total-matches', // For updating the <span> with total matches
+                    congratulationsMessage: '🎉 Congratulations! All Matched! 🎉'
+                };
+
+                const lineMatchingDataGame2 = [
+                    { left: "For solid in liquid", right: "1 gram in 1000 mL" },
+                    { left: "For liquid in liquid", right: "1 mL in 1000 mL" },
+                    { left: "For solid in solid", right: "1 gram in 1000 grams" }
+                ];
+                
+                let currentSelectionGame2 = null;
+                let matchedPairsGame2 = 0;
+                let totalMatchesGame2 = lineMatchingDataGame2.length;
+                // let leftItemsGame2 = []; // Not strictly needed if not re-referenced outside init
+                // let rightItemsGame2 = []; // Not strictly needed
+
+                function initGame2() {
+                    currentSelectionGame2 = null;
+                    matchedPairsGame2 = 0;
+                    updateGameStatus(game2Config.gameContainer, matchedPairsGame2, totalMatchesGame2, game2Config);
+
+                    const matchingBoard = game2Config.gameContainer.querySelector('#ratio-matching-board');
+                    const svgLines = game2Config.gameContainer.querySelector('#connection-lines');
+                    if (!matchingBoard) return;
+                    
+                    matchingBoard.innerHTML = ''; // Clear previous items but keep SVG container
+                    
+                    // Re-create SVG element for drawing connection lines if it was removed or ensure it exists
+                    let svg = game2Config.gameContainer.querySelector('#connection-lines');
+                    if (!svg) {
+                        svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+                        svg.setAttribute('id', 'connection-lines');
+                        matchingBoard.appendChild(svg); // Append to board if it's not there
+                    } else {
+                        svg.innerHTML = ''; // Clear previous lines from SVG
+                    }
+                    
+                    const leftColumn = document.createElement('div');
+                    leftColumn.className = 'matching-column left-column';
+                    const rightColumn = document.createElement('div');
+                    rightColumn.className = 'matching-column right-column';
+
+                    const localLeftItems = [];
+                    const localRightItems = [];
+
+                    const shuffledRightData = shuffleArray([...lineMatchingDataGame2]);
+
+                    lineMatchingDataGame2.forEach((item, index) => {
+                        const leftItemEl = createLineMatchingItem(item.left, 'left', index, item.left); // Pass original text for matching
+                        leftColumn.appendChild(leftItemEl);
+                        localLeftItems.push(leftItemEl);
+                    });
+                    
+                    shuffledRightData.forEach((item, index) => {
+                        // Find the original index of this shuffled item to link it for matching purposes
+                        const originalItem = lineMatchingDataGame2.find(orig => orig.right === item.right);
+                        const originalIndex = lineMatchingDataGame2.indexOf(originalItem);
+                        const rightItemEl = createLineMatchingItem(item.right, 'right', originalIndex, item.right); // Pass original text
+                        rightColumn.appendChild(rightItemEl);
+                        localRightItems.push(rightItemEl);
+                    });
+                    
+                    // Append columns after they are populated
+                    matchingBoard.appendChild(leftColumn);
+                    matchingBoard.appendChild(rightColumn);
+                    matchingBoard.appendChild(svg); // Ensure SVG is on top or correctly layered if needed by CSS
+
+                }
+
+                function createLineMatchingItem(text, side, originalDataIndex, originalText) {
+                    const item = document.createElement('div');
+                    item.className = `line-matching-item selectable ${side === 'left' ? 'left-column-item' : 'right-column-item'}`;
+                    item.textContent = text;
+                    item.dataset.side = side;
+                    item.dataset.originalIndex = originalDataIndex; // Store index from original data for matching
+                    item.dataset.originalText = originalText; // Store original text for matching
+                    item.addEventListener('click', handleLineItemClickGame2);
+                    return item;
+                }
+
+                function handleLineItemClickGame2(event) {
+                    const item = event.target;
+                    if (item.classList.contains('matched')) return;
+
+                    if (!currentSelectionGame2) {
+                        currentSelectionGame2 = item;
+                        item.classList.add('selected');
+                        return;
+                    }
+
+                    if (currentSelectionGame2 === item) {
+                        currentSelectionGame2.classList.remove('selected');
+                        currentSelectionGame2 = null;
+                        return;
+                    }
+
+                    if (currentSelectionGame2.dataset.side === item.dataset.side) {
+                        currentSelectionGame2.classList.remove('selected');
+                        currentSelectionGame2 = item;
+                        item.classList.add('selected');
+                        return;
+                    }
+
+                    const leftItem = currentSelectionGame2.dataset.side === 'left' ? currentSelectionGame2 : item;
+                    const rightItem = currentSelectionGame2.dataset.side === 'right' ? currentSelectionGame2 : item;
+                    
+                    // Match based on original text or a reliable identifier
+                    const correctPair = lineMatchingDataGame2.find(pair => 
+                        pair.left === leftItem.dataset.originalText && pair.right === rightItem.dataset.originalText
+                    );
+
+                    if (correctPair) {
+                        leftItem.classList.remove('selected', 'selectable');
+                        leftItem.classList.add('matched');
+                        rightItem.classList.remove('selected', 'selectable');
+                        rightItem.classList.add('matched');
+                        drawConnectionLine(leftItem, rightItem, game2Config.gameContainer.querySelector('#ratio-matching-board'));
+                        matchedPairsGame2++;
+                        updateGameStatus(game2Config.gameContainer, matchedPairsGame2, totalMatchesGame2, game2Config);
+                    }
+                    currentSelectionGame2.classList.remove('selected'); // Deselect previous if not matched
+                    if (item !== leftItem && item !== rightItem) item.classList.remove('selected'); // Deselect current if not part of a failed match attempt
+                    currentSelectionGame2 = null;
+                }
+
+                function drawConnectionLine(leftItem, rightItem, boardElement) {
+                    const svg = boardElement.querySelector('#connection-lines');
+                    if (!svg) return;
+
+                    const boardRect = boardElement.getBoundingClientRect();
+                    const leftRect = leftItem.getBoundingClientRect();
+                    const rightRect = rightItem.getBoundingClientRect();
+
+                    const x1 = leftRect.right - boardRect.left;
+                    const y1 = leftRect.top + (leftRect.height / 2) - boardRect.top;
+                    const x2 = rightRect.left - boardRect.left;
+                    const y2 = rightRect.top + (rightRect.height / 2) - boardRect.top;
+
+                    const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+                    path.setAttribute('class', 'connection-line');
+                    path.setAttribute('d', `M ${x1} ${y1} C ${(x1 + x2) / 2} ${y1}, ${(x1 + x2) / 2} ${y2}, ${x2} ${y2}`);
+                    svg.appendChild(path);
+                }
+                
+                setupGameInteractions(game2Config);
+
+            });
+        </script>
+    </div>
+</body>

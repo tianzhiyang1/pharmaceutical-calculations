@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial for Pharmaceutical Calculations Practice</title>
+    <link rel="stylesheet" href="../../master.css">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="index-container">
+        <header>
+            <h1>Getting Started with Pharmaceutical Calculations</h1>
+        </header>
+
+        <div class="card tutorial-card">
+            <h2>Overview</h2>
+            <p>Welcome to the Pharmaceutical Calculations Practice! This site is designed to help you practice your pharmacy calculations skills.</p>
+
+            <h2>Modules</h2>
+            <p>This site contains the following 14 modules. Click any module to open its tutorial and start practicing:</p>
+            <ul class="module-list">
+                <li><a href="../basic-methods/index.html">Module 1: Basic Methods</a></li>
+                <li><a href="../prescription-interpretation/index.html">Module 2: Prescription Interpretation</a></li>
+                <li><a href="../weights-and-measures/index.html">Module 3: Systems of Weights and Measures</a></li>
+                <li><a href="../expressions-of-concentrations/index.html">Module 4: Expressions of Concentrations</a></li>
+                <li><a href="../general-dose-calculation/index.html">Module 5: General Dose Calculation</a></li>
+                <li><a href="../dilution/index.html">Module 6: Dilution</a></li>
+                <li><a href="../alligation/index.html">Module 7: Alligation</a></li>
+                <li><a href="../isotonic-solutions/index.html">Module 8: Isotonic Solutions</a></li>
+                <li><a href="../milliequivalent/index.html">Module 9: Milliequivalent</a></li>
+                <li><a href="../osmolarity/index.html">Module 10: mOsmolarity and mOsmole</a></li>
+                <li><a href="../specific-gravity/index.html">Module 11: Specific Gravity; Enlarging and Reducing Formulas</a></li>
+                <li><a href="../iv-flow-rate/index.html">Module 12: IV Flow Rate and IV Admixture</a></li>
+                <li><a href="../nutritional-dosing/index.html">Module 13: Nutritional Dosing</a></li>
+                <li><a href="../dose-calculation/index.html">Module 14: Dose Calculations Based on Patient Parameters</a></li>
+            </ul>
+
+            <h2>Using the Tutorial Page</h2>
+            <p>The tutorial page contains an overview of the module and a list of tutorials you can refer to before starting the practice. Check the images below on some basic features of this page:</p>
+            
+            <div class="image-gallery" id="tutorial-gallery">
+                <div class="gallery-container">
+                    <div class="gallery-image-container">
+                        <img class="gallery-image active" src="images/tutorial.PNG" alt="Tutorial Page Introduction">
+                        <img class="gallery-image" src="images/tutorial-examples.PNG" alt="Tutorial Page Examples">
+                        <img class="gallery-image" src="images/tutorial-practice.PNG" alt="Tutorial Page Practice Button">
+                    </div>
+                </div>
+                <div class="gallery-controls">
+                    <button class="gallery-nav prev" data-gallery="tutorial">‹</button>
+                    <div class="gallery-pagination" id="tutorial-pagination">
+                        <span class="pagination-dot active" data-index="0"></span>
+                        <span class="pagination-dot" data-index="1"></span>
+                        <span class="pagination-dot" data-index="2"></span>
+                    </div>
+                    <button class="gallery-nav next" data-gallery="tutorial">›</button>
+                </div>
+            </div>
+            
+
+            <h2>Using the Practice Page</h2>
+            <p>The practice page includes a list of questions for you to practice. Check the images below on the introductions of this page:</p>
+            
+            <div class="image-gallery" id="practice-gallery">
+                <div class="gallery-container">
+                    <div class="gallery-image-container">
+                        <img class="gallery-image active" src="images/practice-navigation.PNG" alt="Practice Page Navigation">
+                        <img class="gallery-image" src="images/practice-filter.PNG" alt="Practice Page Filter">
+                        <img class="gallery-image" src="images/practice-direct.PNG" alt="Practice Page Direct Way of Completing a Question">
+                        <img class="gallery-image" src="images/practice-direct-incorrect.PNG" alt="Practice Page Direct Way of Completing a Question But Got It Wrong">
+                        <img class="gallery-image" src="images/practice-direct-correct.PNG" alt="Practice Page Direct Way of Completing a Question and Got It Correct">
+                        <img class="gallery-image" src="images/practice-step.PNG" alt="Practice Page Step-by-Step Way of Completing a Question">
+                        <img class="gallery-image" src="images/practice-reference.PNG" alt="Practice Page Reference Cards">
+                        <img class="gallery-image" src="images/practice-bottom.PNG" alt="Practice Page Bottom Navigation Including Question History, Progress Clearing, and Back to Tutorial">
+                    </div>
+                </div>
+                <div class="gallery-controls">
+                    <button class="gallery-nav prev" data-gallery="practice">‹</button>
+                    <div class="gallery-pagination" id="practice-pagination">
+                        <span class="pagination-dot active" data-index="0"></span>
+                        <span class="pagination-dot" data-index="1"></span>
+                        <span class="pagination-dot" data-index="2"></span>
+                        <span class="pagination-dot" data-index="3"></span>
+                        <span class="pagination-dot" data-index="4"></span>
+                        <span class="pagination-dot" data-index="5"></span>
+                        <span class="pagination-dot" data-index="6"></span>
+                        <span class="pagination-dot" data-index="7"></span>
+                    </div>
+                    <button class="gallery-nav next" data-gallery="practice">›</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card practice-card">
+            <p>If you have any questions or feedback as you go through the modules, please feel free to contact Dr. Yang at <a href="mailto:tianzhi.yang@wne.edu">tianzhi.yang@wne.edu</a>, Xiaoyi Liu at <a href="mailto:xiaoyi.liu@wne.edu">xiaoyi.liu@wne.edu</a>, or Dr. Wei at <a href="mailto:quan.wei@wne.edu">quan.wei@wne.edu</a>. Happy practicing!</p>
+        </div>
+    </div>
+
+    <script>
+        // Image Gallery functionality
+        class ImageGallery {
+            constructor(galleryId) {
+                this.galleryId = galleryId;
+                this.gallery = document.getElementById(galleryId);
+                this.images = this.gallery.querySelectorAll('.gallery-image');
+                this.pagination = this.gallery.querySelectorAll('.pagination-dot');
+                this.prevBtn = this.gallery.querySelector('.gallery-nav.prev');
+                this.nextBtn = this.gallery.querySelector('.gallery-nav.next');
+                this.caption = this.gallery.querySelector('.gallery-caption');
+                this.currentIndex = 0;
+                
+                this.init();
+            }
+            
+            init() {
+                // Add event listeners for navigation buttons
+                this.prevBtn.addEventListener('click', () => this.previousImage());
+                this.nextBtn.addEventListener('click', () => this.nextImage());
+                
+                // Add event listeners for pagination dots
+                this.pagination.forEach((dot, index) => {
+                    dot.addEventListener('click', () => this.goToImage(index));
+                });
+                
+                // Add keyboard navigation
+                document.addEventListener('keydown', (e) => {
+                    // Only handle keyboard navigation if this gallery is visible
+                    if (this.isInViewport()) {
+                        if (e.key === 'ArrowLeft') {
+                            e.preventDefault();
+                            this.previousImage();
+                        } else if (e.key === 'ArrowRight') {
+                            e.preventDefault();
+                            this.nextImage();
+                        }
+                    }
+                });
+                
+                // Update initial caption
+                this.updateCaption();
+            }
+            
+            isInViewport() {
+                const rect = this.gallery.getBoundingClientRect();
+                return (
+                    rect.top < window.innerHeight &&
+                    rect.bottom > 0 &&
+                    rect.left < window.innerWidth &&
+                    rect.right > 0
+                );
+            }
+            
+            previousImage() {
+                this.currentIndex = this.currentIndex > 0 ? this.currentIndex - 1 : this.images.length - 1;
+                this.updateDisplay();
+            }
+            
+            nextImage() {
+                this.currentIndex = this.currentIndex < this.images.length - 1 ? this.currentIndex + 1 : 0;
+                this.updateDisplay();
+            }
+            
+            goToImage(index) {
+                this.currentIndex = index;
+                this.updateDisplay();
+            }
+            
+            updateDisplay() {
+                // Update images
+                this.images.forEach((img, index) => {
+                    img.classList.toggle('active', index === this.currentIndex);
+                });
+                
+                // Update pagination
+                this.pagination.forEach((dot, index) => {
+                    dot.classList.toggle('active', index === this.currentIndex);
+                });
+                
+                // Update caption
+                this.updateCaption();
+            }
+            
+            updateCaption() {
+                const currentImage = this.images[this.currentIndex];
+                if (currentImage && this.caption) {
+                    this.caption.textContent = currentImage.alt;
+                }
+            }
+        }
+        
+        // Initialize galleries when the page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            // Create tutorial gallery instance
+            const tutorialGallery = new ImageGallery('tutorial-gallery');
+            
+            // Create practice gallery instance
+            const practiceGallery = new ImageGallery('practice-gallery');
+            
+            // Add touch/swipe support for mobile devices
+            function addTouchSupport(gallery) {
+                let startX = null;
+                let startY = null;
+                const threshold = 50; // minimum distance for swipe
+                
+                gallery.gallery.addEventListener('touchstart', function(e) {
+                    startX = e.touches[0].clientX;
+                    startY = e.touches[0].clientY;
+                });
+                
+                gallery.gallery.addEventListener('touchend', function(e) {
+                    if (startX === null || startY === null) return;
+                    
+                    const endX = e.changedTouches[0].clientX;
+                    const endY = e.changedTouches[0].clientY;
+                    
+                    const diffX = startX - endX;
+                    const diffY = startY - endY;
+                    
+                    // Only trigger swipe if horizontal movement is greater than vertical
+                    if (Math.abs(diffX) > Math.abs(diffY) && Math.abs(diffX) > threshold) {
+                        if (diffX > 0) {
+                            // Swiped left - go to next image
+                            gallery.nextImage();
+                        } else {
+                            // Swiped right - go to previous image
+                            gallery.previousImage();
+                        }
+                    }
+                    
+                    startX = null;
+                    startY = null;
+                });
+            }
+            
+            // Add touch support to both galleries
+            addTouchSupport(tutorialGallery);
+            addTouchSupport(practiceGallery);
+        });
+    </script>
+</body>
+</html>

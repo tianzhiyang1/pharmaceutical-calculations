@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dilution Practice</title>
+    <link rel="stylesheet" href="../../master.css">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Dilution Practice</h1>
+        </header>
+
+        <div id="questionNavigator" style="text-align: right; margin-bottom: 10px;"></div>
+
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+
+        <div class="stats">
+            <div class="stat-item">
+                <div class="stat-value" id="questionsCompleted">0</div>
+                <div class="stat-label">Completed</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value" id="questionsRemaining">0</div>
+                <div class="stat-label">Remaining</div>
+            </div>
+        </div>
+
+        <!-- Question Card -->
+        <div class="card" id="questionCard">
+            <div class="question-container">
+                <div class="question" id="questionText"></div>
+                <div class="answer-container" id="answerContainer">
+                    <label for="answerInput">Answer:</label>
+                    <input type="text" id="answerInput" class="box-input" step="any">
+                    <span id="answerUnit" class="unit"></span>
+                    <button id="answerBtn" class="button-accent" disabled>Show Answer</button>
+                </div>
+                <div class="feedback" id="answerFeedback"></div>
+            </div>
+
+            <div class="button-row">
+                <button id="checkAnswer">Check Answer</button>
+                <button id="showStepsBtn" class="button-accent">Step-by-Step Guide</button>
+                <button id="prevQuestion" class="button-secondary">Previous Question</button>
+                <button id="nextQuestion" class="button-secondary">Next Question</button>
+            </div>
+
+            <div class="steps-container" id="stepsContainer">
+                <h3>Step-by-Step Solution</h3>
+                <div id="steps"></div>
+            </div>
+        </div>
+
+        <!-- Results Card (hidden by default) -->
+        <div class="card" id="results" style="display: none;">
+            <div class="results-title">Practice Completed!</div>
+            <div class="results-message">You've successfully completed all practice questions.</div>
+            <div class="button-row">
+                <button id="restartBtn">Practice Again</button>
+            </div>
+        </div>
+
+        <!-- Reference section with collapsible card -->
+        <div class="reference-container single-column">
+            <!-- Dilution Reference Card -->
+            <div class="reference-card">
+                <div class="reference-header" id="dilutionHeader">
+                    <h3>Dilution Formula</h3>
+                    <span class="expand-icon">+</span>
+                </div>
+                <div class="reference-content" id="dilutionContent">
+                    <div class="formula-box">
+                        <div class="formula-explanation-grid" style="font-size: 0.9em;">
+                            <div class="formula-cell formula-symbol">Q<sub>1</sub></div>
+                            <div class="formula-cell formula-operator">×</div>
+                            <div class="formula-cell formula-symbol">C<sub>1</sub></div>
+                            <div class="formula-cell formula-operator">=</div>
+                            <div class="formula-cell formula-symbol">Q<sub>2</sub></div>
+                            <div class="formula-cell formula-operator">×</div>
+                            <div class="formula-cell formula-symbol">C<sub>2</sub></div>
+
+                            <div class="formula-cell formula-description">original quantity</div>
+                            <div class="formula-cell"></div> <!-- Spacer for operator × -->
+                            <div class="formula-cell formula-description">original concentration</div>
+                            <div class="formula-cell"></div> <!-- Spacer for operator = -->
+                            <div class="formula-cell formula-description">new quantity</div>
+                            <div class="formula-cell"></div> <!-- Spacer for operator × -->
+                            <div class="formula-cell formula-description">new concentration</div>
+                        </div>
+                    </div>
+                    <p><strong>Steps to solve dilution problems:</strong></p>
+                    <ol>
+                        <li>Understand the goal: What do you need to solve for?
+                            <ul>
+                                <li>Q<sub>1</sub> (original quantity)</li>
+                                <li>C<sub>1</sub> (original concentration)</li>
+                                <li>Q<sub>2</sub> (new quantity)</li>
+                                <li>C<sub>2</sub> (new concentration)</li>
+                            </ul>
+                        </li>
+                        <li>Identify the Q1, C1, Q2, and C2, and convert units as needed</li>
+                        <li>Set up the dilution formula and solve for the unknown</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="clear-progress-container">
+            <p>Want to see your question history? 
+                <a href="#" id="viewHistoryBtn" class="clear-data-link">View history</a>
+            </p>
+            <p>Want to clear your saved progress data?
+                <a href="#" id="clearProgressBtn" class="clear-data-link">Clear saved data</a>
+            </p>
+            <p>Want to see the tutorial again?
+                <a href="index.html" class="clear-data-link">Go back to tutorial</a>
+            </p>
+        </div>
+    </div>
+
+    <!-- History Modal -->
+    <div id="historyModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Question History</h2>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <p class="history-description">
+                    Click on any green button to view the solution to a completed question. Gray buttons represent questions that have not been completed yet.
+                </p>
+                <div class="history-list" id="historyList">
+                    <!-- Question buttons will be dynamically inserted here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Solution Modal -->
+    <div id="solutionModal" class="modal">
+        <div class="modal-content solution-modal-content">
+            <div class="modal-header">
+                <h2>Solution</h2>
+                <span class="close-solution-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div id="solutionQuestion" class="solution-question"></div>
+                <div class="steps-container solution-steps" id="solutionSteps">
+                    <!-- Steps will be inserted here -->
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script type="module" src="main.js"></script>
+</body>
+</html>
